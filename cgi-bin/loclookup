@@ -8,8 +8,8 @@
 # *** modules ***
 # ***************
 
-require("cgi-lib.pl");
-&ReadParse;
+use CGI;
+my $q = CGI->new;
 
 # ***********************
 # *** dump it all out ***

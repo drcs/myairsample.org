@@ -8,14 +8,17 @@
 # *** modules ***
 # ***************
 
-require("cgi-lib.pl");
-&ReadParse;
+use strict;
+use warnings;
+use CGI;
 
 # ***********************
 # *** dump it all out ***
 # ***********************
 
-print "Content-type: text/html\n\n";
+my $q = CGI->new;
+
+print $q->header('text/html');
 
 # ***********************
 # Assign chemical name and value inputs to arrays
@@ -27,12 +30,12 @@ for ($j = 1; $j <= 8; $j++) {
          $varname="chem$j";
          $varname2="report$j";
 
-         if ($in{$varname} ne "") {
+         if ($q->param($varname) ne "") {
                  $number++;      # increment $number by 1
-                 $chem[$number]=$in{$varname};
-                 if ($in{$varname2} ne "") { 
-				$report[$number]=$in{$varname2}; 
-				$origrep[$number]=$in{$varname2};
+                 $chem[$number]=$q->param($varname);
+                 if ($q->param($varname2) ne "") { 
+				$report[$number]=$q->param($varname2); 
+				$origrep[$number]=$q->param($varname2);
 				}    
          }
 }          
@@ -68,11 +71,11 @@ close(CONTENT);
 # Convert reported values to ug/m3
 # ***********************
 
-if ($in{'inunits'} eq "ppb") {
+if ($q->param('inunits') eq "ppb") {
 	&convertppb2ugm3(@report);
 }
 
-elsif ($in{'inunits'} eq "ppbv") {
+elsif ($q->param('inunits') eq "ppbv") {
 	@report = &convertppbv2ugm3(@report);
 }
 
@@ -230,7 +233,7 @@ close(CONTENT);
 # ***********************
 
 
-if ($in{'outunits'} eq "ppb") {
+if ($q->param('outunits') eq "ppb") {
 	&convert2ppb(@report);
 	&convert2ppb(@la8);
 	&convert2ppb(@la24);
@@ -247,7 +250,7 @@ if ($in{'outunits'} eq "ppb") {
 	
 }
 
-elsif ($in{'outunits'} eq "ppbv") {
+elsif ($q->param('outunits') eq "ppbv") {
 	@report = &convert2ppbv(@report);
 	@la8 = &convert2ppbv(@la8);
 	@la24 = &convert2ppbv(@la24);
@@ -317,7 +320,7 @@ elsif ($in{'outunits'} eq "ppbv") {
 # Show Regulatory Standards Only
 # *****************************
 
-	if (($in{'laonly'} eq "on") && ($in{'nconly'} ne "on")) { 
+	if (($q->param('laonly') eq "on") && ($q->param('nconly') ne "on")) { 
 	      $sumtshort = 0;
 	      $sumtlong = 0;
 	      $sumr6sl = 0;
@@ -330,7 +333,7 @@ elsif ($in{'outunits'} eq "ppbv") {
       	$sumnc1b = 0;
 		}   
 
-	if (($in{'nconly'} eq "on") && ($in{'laonly'} ne "on")) { 
+	if (($q->param('nconly') eq "on") && ($q->param('laonly') ne "on")) { 
 	      $sumtshort = 0;
 	      $sumtlong = 0;
 	      $sumr6sl = 0;
@@ -341,7 +344,7 @@ elsif ($in{'outunits'} eq "ppbv") {
 	      $sumla24 = 0;
 		}   
 
-	if (($in{'nconly'} eq "on") && ($in{'laonly'} eq "on")) { 
+	if (($q->param('nconly') eq "on") && ($q->param('laonly') eq "on")) { 
 	      $sumtshort = 0;
 	      $sumtlong = 0;
 	      $sumr6sl = 0;
@@ -492,11 +495,11 @@ elsif ($in{'outunits'} eq "ppbv") {
 
 print "<font size = +3><b><center>";
 print "Levels of Concern Report</font>";
-if ($in{'tablename'} ne "") {
-	print "<p><font size=+2><i>for $in{'tablename'}";
+if ($q->param('tablename') ne "") {
+	print "<p><font size=+2><i>for $q->param('tablename')";
 	print "</center></i></b></font>";
 	print "<font size = +2><b><i><center>";
-	print "$in{'tablename2'}";
+	print "$q->param('tablename2')";
 	print "</center></i></b></font>";
 	}
 
@@ -507,7 +510,7 @@ print "<p><br><hr noshade width=65% align=center><br>";
 # Do really short summary
 # ***************************
 
-if ($in{'brief'} eq "on") {
+if ($q->param('brief') eq "on") {
 
 for ($j = 1; $j <= $number; $j++) {
 
@@ -515,7 +518,7 @@ for ($j = 1; $j <= $number; $j++) {
 #  For LA as reference standard
 #  ****************************
 
-	if ($in{'reflevel'} eq "Louisiana Ambient Air Standards") {
+	if ($q->param('reflevel') eq "Louisiana Ambient Air Standards") {
 	  if (($redflagl24[$j] ne "") || ($redflagl8[$j] ne "")) {
 
 		print "<p>";
@@ -528,7 +531,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $in{'outunits'} </b></font>";
+			print " $q->param('outunits') </b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -559,7 +562,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The Louisiana Annual Ambient Air Standard </font>";
 			print "<p><font size = +3><b>";
 			print &signif($la24[$j]);
-			print " $in{'outunits'}</b></font>";
+			print " $q->param('outunits')</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -571,7 +574,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $in{'outunits'} </b></font>";
+			print " $q->param('outunits') </b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -602,7 +605,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The Louisiana 8-Hour Ambient Air Standard </font>";
 			print "<p><font size = +3><b>";
 			print &signif($la8[$j]);
-			print " $in{'outunits'}</b></font>";
+			print " $q->param('outunits')</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -622,7 +625,7 @@ for ($j = 1; $j <= $number; $j++) {
 #  For TX as reference standard
 #  ****************************
 
-	if ($in{'reflevel'} eq "Texas Effects Screening Levels") {
+	if ($q->param('reflevel') eq "Texas Effects Screening Levels") {
 	  if (($redflagts[$j] ne "") || ($redflagtl[$j] ne "")) {
 
 		print "<p>";
@@ -635,7 +638,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $in{'outunits'} </b></font>";
+			print " $q->param('outunits') </b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -666,7 +669,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The <b>Short Term</b> (1-hr) Texas Effects Screening Level </font>";
 			print "<p><font size = +3><b>";
 			print &signif($tshort[$j]);
-			print " $in{'outunits'}</b></font>";
+			print " $q->param('outunits')</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -678,7 +681,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $in{'outunits'} </b></font>";
+			print " $q->param('outunits') </b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -709,7 +712,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The <b>Long-Term</b> Texas Effects Screening Level </font>";
 			print "<p><font size = +3><b>";
 			print &signif($tlong[$j]);
-			print " $in{'outunits'}</b></font>";
+			print " $q->param('outunits')</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -731,7 +734,7 @@ for ($j = 1; $j <= $number; $j++) {
 #  For ATSDR as reference standard
 #  ****************************
 
-	if ($in{'reflevel'} eq "ATSDR Minimal Risk Levels") {
+	if ($q->param('reflevel') eq "ATSDR Minimal Risk Levels") {
 	  if (($redflagaa[$j] ne "") || ($redflagai[$j] ne "") || ($redflagac[$j] ne "")) {
 
 		print "<p>";
@@ -744,7 +747,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $in{'outunits'} </b></font>";
+			print " $q->param('outunits') </b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -775,7 +778,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The <b>Acute</b> (<2 week) ATSDR Minimal Risk Level </font>";
 			print "<p><font size = +3><b>";
 			print &signif($atsdrac[$j]);
-			print " $in{'outunits'}</b></font>";
+			print " $q->param('outunits')</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -787,7 +790,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $in{'outunits'} </b></font>";
+			print " $q->param('outunits') </b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -819,7 +822,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print " Level </font>";
 			print "<p><font size = +3><b>";
 			print &signif($atsdrint[$j]);
-			print " $in{'outunits'}</b></font>";
+			print " $q->param('outunits')</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -831,7 +834,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $in{'outunits'} </b></font>";
+			print " $q->param('outunits') </b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -864,7 +867,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print " Level </font>";
 			print "<p><font size = +3><b>";
 			print &signif($atsdrchr[$j]);
-			print " $in{'outunits'}</b></font>";
+			print " $q->param('outunits')</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -886,7 +889,7 @@ for ($j = 1; $j <= $number; $j++) {
 #  For NC as reference standard
 #  ****************************
 
-	if ($in{'reflevel'} eq "North Carolina Ambient Air Standards") {
+	if ($q->param('reflevel') eq "North Carolina Ambient Air Standards") {
 	  if (($redflagnca[$j] ne "") || ($redflagnc24[$j] ne "") || ($redflagnc1a[$j] ne "") || ($redflagnc1b[$j] ne "")) {
 
 		print "<p>";
@@ -899,7 +902,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $in{'outunits'} </b></font>";
+			print " $q->param('outunits') </b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -930,7 +933,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The North Carolina Annual Standard </font>";
 			print "<p><font size = +3><b>";
 			print &signif($ncann[$j]);
-			print " $in{'outunits'}</b></font>";
+			print " $q->param('outunits')</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -942,7 +945,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $in{'outunits'} </b></font>";
+			print " $q->param('outunits') </b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -973,7 +976,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The North Carolina 24-Hour Standard </font>";
 			print "<p><font size = +3><b>";
 			print &signif($nc24[$j]);
-			print " $in{'outunits'}</b></font>";
+			print " $q->param('outunits')</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -985,7 +988,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $in{'outunits'} </b></font>";
+			print " $q->param('outunits') </b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -1017,7 +1020,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The North Carolina 1-Hour Standard </font>";
 			print "<p><font size = +3><b>";
 			print &signif($nc1a[$j]);
-			print " $in{'outunits'}</b></font>";
+			print " $q->param('outunits')</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -1030,7 +1033,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $in{'outunits'} </b></font>";
+			print " $q->param('outunits') </b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -1062,7 +1065,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The North Carolina 1-Hour Standard </font>";
 			print "<p><font size = +3><b>";
 			print &signif($nc1b[$j]);
-			print " $in{'outunits'}</b></font>";
+			print " $q->param('outunits')</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -1084,7 +1087,7 @@ for ($j = 1; $j <= $number; $j++) {
 #  For Region 6 as reference standard
 #  ****************************
 
-	if ($in{'reflevel'} eq "EPA Region 6 Screening Levels") {
+	if ($q->param('reflevel') eq "EPA Region 6 Screening Levels") {
 
 	  if ($redflagr6[$j] ne "") {
 
@@ -1097,7 +1100,7 @@ for ($j = 1; $j <= $number; $j++) {
 		print "<br><font size=+1>Your reported value</font>";
 		print "<p><font size = +3><b>";
 		print &signif($report[$j]);
-		print " $in{'outunits'} </b></font>";
+		print " $q->param('outunits') </b></font>";
 		print "</td>";
 
 		print "<td width=30% align=center>";
@@ -1128,7 +1131,7 @@ for ($j = 1; $j <= $number; $j++) {
 		print "<font size=+1>The EPA Region 6 Screening Level </font>";
 		print "<p><font size = +3><b>";
 		print &signif($r6sl[$j]);
-		print " $in{'outunits'}</b></font>";
+		print " $q->param('outunits')</b></font>";
 		print "</td>";
 		print "</tr>";
 
@@ -1156,7 +1159,7 @@ print "<p><br><hr noshade width=65% align=center><br>";
 # Do medium length summary
 # ***************************
 
-if ($in{'summary'} eq "on") {
+if ($q->param('summary') eq "on") {
 
 for ($j = 1; $j <= $number; $j++) {
 
@@ -1172,7 +1175,7 @@ for ($j = 1; $j <= $number; $j++) {
 		$error[$j]=1;
 		}
 
-	if ($in{'inunits'} eq "ppbv") {
+	if ($q->param('inunits') eq "ppbv") {
 		if ($cas[$j] ne "" && $MW[$j] eq "") {  
 			print "<br>Conversion from ppb <i>by volume</i> is not available for 
 			$chem[$j].  For better results, enter values in ppb or ug/m3";
@@ -1181,7 +1184,7 @@ for ($j = 1; $j <= $number; $j++) {
 		}
 
 
-	if ($in{'outunits'} eq "ppbv") {
+	if ($q->param('outunits') eq "ppbv") {
 		if ($cas[$j] ne "" && $MW[$j] eq "") {  
 			print "<br>Results in ppb <i>by volume</i> cannot be provided for 
 			$chem[$j].  Select ppb or ug/m3 as your output units instead.";
@@ -1191,14 +1194,14 @@ for ($j = 1; $j <= $number; $j++) {
 
   unless ($error[$j] eq 1) {
 
-	print "<br><font size=+1>Your reported value of <b>$origrep[$j] $in{'inunits'}</b>";
-	if ($in{'inunits'} ne $in{'outunits'}) {
+	print "<br><font size=+1>Your reported value of <b>$origrep[$j] $q->param('inunits')</b>";
+	if ($q->param('inunits') ne $q->param('outunits')) {
 		print "  or  <b>";
 		print &signif($report[$j]); 
-		print "$in{'outunits'}</b>";
+		print "$q->param('outunits')</b>";
 		}
 	         
-	unless (($in{'laonly'} eq "on") || ($in{'nconly'} eq "on")) { 
+	unless (($q->param('laonly') eq "on") || ($q->param('nconly') eq "on")) { 
 		if ($redflagr6[$j] ne "") {
 			print "  is <b>ABOVE</b> the following Levels of Concern:</font><br><br>"; 
 			print "<table border=1 width=85% cellpadding=3>";
@@ -1208,7 +1211,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print " to occur below this level.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>  ";
 			print &signif($r6sl[$j]);
-			print " $in{'outunits'} </font></b></td></tr>";
+			print " $q->param('outunits') </font></b></td></tr>";
 			$noex[$j] = 1;
 			}
                  
@@ -1224,7 +1227,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print " exposure level during <b>one hour</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($tshort[$j]);
-			print " $in{'outunits'}</font></b></td></tr>";
+			print " $q->param('outunits')</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -1240,13 +1243,13 @@ for ($j = 1; $j <= $number; $j++) {
 			print " exposure level during a <b>year</b> \(24 hours for benzene and ethylene dichloride\).</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($tlong[$j]);
-			print " $in{'outunits'}</font></b></td></tr>";
+			print " $q->param('outunits')</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 		}
 
 
-	unless (($in{'nconly'} eq "on") && ($in{'laonly'} ne "on")) { 
+	unless (($q->param('nconly') eq "on") && ($q->param('laonly') ne "on")) { 
 
 		if ($redflagl8[$j] ne "") {
 			unless ($noex[$j] eq 1) {
@@ -1259,7 +1262,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print " period.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($la8[$j]);
-			print " $in{'outunits'}</font></b></td></tr>";
+			print " $q->param('outunits')</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -1274,12 +1277,12 @@ for ($j = 1; $j <= $number; $j++) {
 			print " period of <b>one year</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($la24[$j]);
-			print " $in{'outunits'}</font></b></td></tr>";
+			print " $q->param('outunits')</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 		}
 
-	unless (($in{'laonly'} eq "on") && ($in{'nconly'} ne "on")) { 
+	unless (($q->param('laonly') eq "on") && ($q->param('nconly') ne "on")) { 
 
 		if ($redflagnca[$j] ne "") {
 			unless ($noex[$j] eq 1) {
@@ -1292,7 +1295,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "period of <b>one year</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($ncann[$j]);
-			print " $in{'outunits'}</font></b></td></tr>";
+			print " $q->param('outunits')</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -1307,7 +1310,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<b>24-hour</b> period.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($nc24[$j]);
-			print " $in{'outunits'}</font></b></td></tr>";
+			print " $q->param('outunits')</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -1328,13 +1331,13 @@ for ($j = 1; $j <= $number; $j++) {
 				print "<td valign=top align=right><b><font size=+1>";
 				print &signif($nc1b[$j]);
 				}
-			print " $in{'outunits'}</font></b></td></tr>";
+			print " $q->param('outunits')</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 		}
 
 	
-	unless (($in{'laonly'} eq "on") || ($in{'nconly'} eq "on")) { 
+	unless (($q->param('laonly') eq "on") || ($q->param('nconly') eq "on")) { 
 
 		if ($redflagaa[$j] ne "") {
 			unless ($noex[$j] eq 1) {
@@ -1349,7 +1352,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<b>up to 2 weeks</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($atsdrac[$j]);
-			print " $in{'outunits'}</font></b></td></tr>";
+			print " $q->param('outunits')</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -1366,7 +1369,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<b> between 2 weeks and one year</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($atsdrint[$j]);
-			print " $in{'outunits'}</font></b></td></tr>";
+			print " $q->param('outunits')</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -1383,7 +1386,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<b>longer than one year</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($atsdrchr[$j]);
-			print " $in{'outunits'}</font></b></td></tr>";
+			print " $q->param('outunits')</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 		}
@@ -1413,12 +1416,12 @@ print "<p><br><hr noshade width=65% align=center><br>";
 # Generate Table
 # *****************************
 
-if ($in{'full'} eq "on") {
+if ($q->param('full') eq "on") {
     
 
 print "<font size = +2><b><center>Levels of Concern </b></font>";
 
-print "<br><font size = +1><b>in $in{outunits}</b></font><br>";
+print "<br><font size = +1><b>in $q->param(outunits)</b></font><br>";
 
 print "<table border=1 size=95%>";
 print "<tr><td><center><b>Chemical</b></center></td>";
