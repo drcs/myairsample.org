@@ -1,0 +1,1908 @@
+Abamectin	71751-41-2	0.4	---	0.04	---			
+"Abate, respirable"	3383-96-8	50	---	5	---			
+acenaphthene*	83-32-9	1	---	0.1	---			
+acetal	105-57-7	4924	1029	492	103			
+acetaldehyde (odor)     	75-07-0	90	50	9	5			
+acetamide                 	60-35-5	320	132	32	13			
+acetic acid               	64-19-7	250	100	25	10			
+acetic anhydride          	108-24-7	200	50	20	5			
+"acetoacetoxyethyl methacrylate,2-"	21287-97-3	2000	230	200	23			
+acetone                  	67-64-1	5900	2500	590	250			
+acetone cyanohydrin        	75-86-5	40	10	4	1			
+acetonitrile              	75-05-8	340	200	34	20			
+acetophenone              	98-86-2	490	100	49	10			
+acetyl chloride             	75-36-5	4	0.8	0.4	0.08			
+acetylacetone (odor)	123-54-6	41	8	4	0.8			
+acetylene               	74-86-2	26620	25000	2660	2500			
+acetylene dichloride   	540-59-0	7930	2000	793	200			
+acetylene tetrabromide    	79-27-6	140	10	14	1			
+acetylsalicylic acid    	50-78-2	50	7	5	0.7			
+"Acifluorfen, particulate"	50594-66-6	50	---	5	---			
+acridine	260-94-6	0.5	---	0.05	---			
+acrolein**                  	107-02-8	2.3	1	0.23	0.1			
+Acrylamide	79-06-1	0.3	0.1	0.03	0.01			
+acrylic acid               	79-10-7	60	20	6	2			
+"acrylic acid, ethyl ester (odor)"	140-88-5	5	1.25	0.5	0.125			
+"acrylic acid, methyl ester (odor)"	96-33-3	58	17	5.8	1.7			
+"acrylic acid, n-butyl ester (odor)"	141-32-2	183	35	18.3	3.5			
+acrylic polymer	42767-92-0	40	---	4	---			
+Acryloid	-------	50	---	5	---			
+acrylonitrile**              	107-13-1	43	20	4.3	2			
+adamantane	281-23-2	100	---	10	---			
+adipic acid	124-04-9	50	---	5	---			
+adiponitrile              	111-69-3	88	20	8.8	2			
+Admire	105827-78-9	33	---	3.3	---			
+Affirm                    	71751-41-2	0.4	---	0.04	---			
+Aflatoxin	1402-68-2	0.8	---	0.08	---			
+alcohol ethoxylates	--------	600	---	60	---			
+Aldrin                     	309-00-2	2.5	---	0.25	---			
+aliphatic diisocyanate    	68239-06-5	0.25	---	0.025	---			
+aliphatic esters	--------	500	---	50	---			
+"alkanes (C4-C16), not otherwise specified "	--------	3500	---	350	---			
+"alkanes, C17 and higher"	--------	100	---	10	---			
+alkenyl succinic anhydride	67762-77-0	240	---	24	---			
+alkyd resins	63148-69-6	100	---	10	---			
+alkyl phenol ethoxylate	--------	600	---	60	---			
+"alkyl phenol, C-20            "	--------	1150	75	115	7.5			
+alkylates  	--------	1750	---	175	---			
+allyl alcohol**              	107-18-6	48	20	4.8	2			
+allyl chloride**             	107-05-1	30	10	3	1			
+allyl glycidyl ether	106-92-3	47	10	4.7	1			
+allyl methacrylate	96-05-9	110	22	11	2.2			
+allyl propyl disulfide    	2179-59-1	120	20	12	2			
+allyl succinic anhydride	7539-12-0	6	1	0.6	0.1			
+allylamine**                 	107-11-9	12	5	1.2	0.5			
+alumina                  	1344-28-0	50	---	5	---			
+aluminum alkyls and soluble salts      	-------	20	---	2	---			
+"aluminum pyro powders, welding fumes  "	-------	50	---	5	---			
+aluminum: metal and oxide 	7429-90-5	50	---	5	---			
+Amdro	67485-29-4	14	---	1.4	---			
+"amino-1,2,4-triazole, 3-"	61-82-5	2	---	0.2	---			
+"amino-3-aminomethyl-3,3,5-trimethylcyclohexane"	--------	375	50	38	5			
+aminoethanol	141-43-5	75	30	7.5	3			
+aminoethoxyethanol	929-06-6	380	---	38	---			
+aminoethyl piperazine      	140-31-8	10	---	1	---			
+aminoethylethanolamine    	111-41-1	640	150	64	15			
+1-(2-aminoethyl)-2-n-alkyl imidazoline      	--------	50	---	5	---			
+2-amino-2-methyl-1-propanol	124-68-5	400	---	40	---			
+"aminopropyl morpholine, 4-"	123-00-2	1650	280	165	28			
+"aminopyridine, 2-          "	504-29-0	19	5	2	0.5			
+"aminopyridine, 3-          "	462-08-8	15	3.8	1.5	0.38			
+"aminopyridine, 4-         "	504-24-5	2.5	0.7	0.25	0.07			
+Amitraz      	33089-61-1	35	---	3.5	---			
+Amitrole	61-82-5	2	---	0.2	---			
+"ammonia*,**"	7664-41-7	170	250	17	25			
+ammonium acetate	631-63-8	220	---	22	---			
+ammonium chloride fume    	12125-02-9	100	---	10	---			
+"ammonium fluoride (as HF, 3hr) "	12125-01-8	4.9	5.6	0.5	0.56			
+ammonium hydroxide         	1336-21-6	170	120	17	12			
+ammonium nitrate           	6484-52-2	10	---	1	---			
+ammonium nitrite           	13446-48-5	50	---	5	---			
+ammonium perfluorooctanoate   	3825-26-1	0.1	---	0.01	---			
+"ammonium persulfate, particulate"	7727-54-0	10	---	1	---			
+"ammonium sulfamate, particulate      "	7773-06-0	50	---	5	---			
+ammonium sulfate           	7783-20-2	50	---	5	---			
+"amyl acetate, n- (odor)"	628-63-7	27	5	2.7	0.5			
+"amyl acetate, sec- (odor)        "	628-38-0	11	2	1.1	0.2			
+"amyl alcohol, n- (odor)"	71-41-0	430	120	43	12			
+"amyl amine, n-"	110-58-7	150	---	15	---			
+amyl bromide              	110-53-2	250	40	25	4			
+"amyl hydroperoxide, t-"	3425-61-4	100	24	10	2.4			
+"amyl mercaptan, n- (odor)"	110-66-7	0.1	0.02	0.01	0.002			
+"amyl methyl ether, n- (odor)"	628-80-8	520	125	52	12.5			
+"amyl methyl ether, t- (odor)"	994-05-8	520	125	52	12.5			
+"amyl peroxybenzoate, t-"	4511-39-1	15	---	1.5	---			
+"amyl phenol, p-tert-, particulate"	80-46-6	35	---	3.5	---			
+"amyl phenol, p-tert-, vapor "	80-46-6	700	100	70	10			
+"amylene, alfa- (odor)"	109-67-1	90	30	9	3			
+amylenes                	--------	22950	8000	2295	800			
+aniline                   	62-53-3	76	20	8	2			
+"anisidine, o-, p- isomers    "	29191-52-4	5	1	0.5	0.1			
+anisole	100-66-3	100	22	10	2.2			
+anthracene*	120-12-7	0.5	---	0.05	---			
+"anthraquinone, particulate"	84-65-1	50	---	5	---			
+antimony (as Sb)                    	7440-36-0	5	---	0.5	---			
+antimony trioxide           	1309-64-4	5	---	0.5	---			
+ANTU	86-88-4	3	---	0.3	---			
+apiole (odor)       	--------	57	6	5.7	0.6			
+Aramite	140-57-8	100	---	10	---			
+argon	7440-37-1	simple asphyxiant						
+Aromatic 100	64742-95-6	1230	250	123	25			
+Aromatic 150               	--------	2560	455	256	46			
+Aromatic 200	--------	4200	620	420	62			
+"Aromatic Distillate, Heavy"	67891-79-6	2560	455	256	46			
+"Aromatic Naphtha, Heavy"	64742-06-9	4200	620	420	62			
+Aromatic Solvent 104	64741-68-0	1230	250	123	25			
+arsenic & inorganic cpds       	7440-38-2	0.1	---	0.01	---			
+arsenic pentoxide        	1303-28-2	0.1	---	0.01	---			
+"arsenic, organic (as As)    "	--------	5	---	0.5	---			
+arsine**                   	7784-42-1	1.6	0.5	0.16	0.05			
+"asbestos, all forms "	17068-78-9	0.03	---	0.003	---			
+"asphalt, fumes* (cyclohexane extractable)"	8052-42-4	5	---	0.5	---			
+"asphalt, vapors "	8052-42-4	350	135	35	14			
+Atrazine                   	1912-24-9	50	---	5	---			
+Azaserine	115-02-6	8.8	---	0.88	---			
+azine (odor)	110-86-1	69	23	6.9	2.3			
+azinphos-methyl             	86-50-0	2	---	0.2	---			
+"azoxystrobin, particulate"	131860-33-8	50	---	5	---			
+Banvel (Herbicide)          	--------	100	---	10	---			
+"barite, respirable"	7727-43-7	50	---	5	---			
+barium & compounds (as Ba)   	7440-39-3	5	---	0.5	---			
+"barium sulfate, respirable            "	7727-43-7	50	---	5	---			
+Bauxite	1318-16-7	50	---	5	---			
+Baygon                     	114-26-1	5	---	0.5	---			
+Baytan	5219-65-3	30	---	3	---			
+"Baythroid, particulate                "	68359-37-5	50	---	5	---			
+Beech wood dust	-------	10	---	1	---			
+"Benomyl (Fungicide), respirable"	17804-35-2	50	---	5	---			
+Bentonite	1302-78-9	20	---	2	---			
+benzal chloride            	98-87-3	20	3	2	0.3			
+benzaldehyde (odor)	100-52-7	22	5	2.2	0.5			
+benzene	71-43-2	75	25	3	1			
+benzene (24 hour)	71-43-2	12	4	3	1			
+benzene azimide	95-14-7	100	20	10	2			
+benzene raffinate	68410-71-9	3500	1000	350	100			
+benzenethiol dichloride    	------	20	---	2	---			
+benzine	8032-32-4	3500	875	350	88			
+benzo[a]pyrene*        	50-32-8	0.03	---	0.003	---			
+benzo[b]fluoranthene	205-99-2	0.5	---	0.05	---			
+"benzocyclobutyl pentanone, 1-"	6809-93-4	25	3.3	2.5	0.33			
+benzoic acid               	65-85-0	50	10	5	1			
+benzoin isobutyl ether	22499-12-3	100	---	10	---			
+benzonitrile              	100-47-0	505	120	51	12			
+benzophenone	119-61-9	150	20	15	2			
+benzotriazole	95-14-7	100	20	10	2			
+benzotrichloride	98-07-7	8	1	0.8	0.1			
+benzoyl carbinol	119-53-9	3440	396	344	40			
+benzoyl chloride           	98-88-4	60	10	6	1			
+benzoyl peroxide           	94-36-0	50	---	5	---			
+benzyl acetate            	140-11-4	610	100	61	10			
+benzyl alcohol            	100-51-6	500	100	50	10			
+benzyl benzoate	120-51-4	590	---	59	---			
+benzyl carbinol            	60-12-8	500	---	50	---			
+benzyl chloride            	100-44-7	50	10	5	1			
+benzyl dichloride          	98-87-3	20	3	2	0.3			
+benzyl dimethylamine	103-83-3	108	20	11	2			
+"beryllium, particulate*          "	7440-41-7	0.02	---	0.002	---			
+BHT	128-37-0	100	---	10	---			
+bicycloheptadiene        	121-46-0	2000	---	200	---			
+"Bifenox, particulate"	42576-02-3	50	---	5	---			
+Bifenthrin	82657-04-3	25	---	2.5	---			
+biphenyl (odor)	92-52-4	2.3	0.36	0.23	0.036			
+biphenylyl phenyl ether	28984-89-6	100	---	10	---			
+bis(2-chloroethyl)-2-naphthylamine	494-03-1	380	---	38	---			
+bis(2-chloroethyl)ether     	111-44-4	290	50	29	5			
+bis(chloromethyl)ether**     	542-88-1	0.047	0.01	0.0047	0.001			
+"bismuth telluride, particulate, respirable"	1304-82-1	50	---	5	---			
+"bismuth telluride, selenium-doped          "	------	50	---	5	---			
+"bisphenol A, particulate"	80-05-7	40	---	4	---			
+"bisphenol A, vapor"	80-05-7	800	80	80	8			
+black grit	68475-96-0	50	---	5	---			
+"Blazer, particulate"	62476-59-9	50	---	5	---			
+boiler slag	68475-96-0	50	---	5	---			
+"borates, tetrasodium salts: anhydrous "	1330-43-4	10	---	1	---			
+"borates, tetrasodium salts: decahydrate               "	1303-96-4	50	---	5	---			
+"borates, tetrasodium salts: pentahydrate"	11130-12-4	10	---	1	---			
+boric acid*                 	10043-35-3	10	---	1	---			
+boron                     	7440-42-8	100	---	10	---			
+"boron oxide, respirable"	1303-86-2	50	---	5	---			
+boron tribromide          	10294-33-4	100	10	10	1			
+boron trichloride**           	10294-34-5	5	---	0.5	---			
+"boron trifluoride** (as HF, 3hr) "	7637-07-2	4.9	5.6	0.5	0.56			
+Botran 75W	99-30-9	100	---	10	---			
+Bromacil                  	314-40-9	100	10	10	1			
+brominated hydrocarbons    	------	50	---	5	---			
+"bromine pentafluoride (as HF, 3hr)"	7789-30-2	4.9	5.6	0.5	0.56			
+bromine**	7726-95-6	6.6	1	0.66	0.1			
+"bromo-3-chloropropane, 1- "	109-70-6	0.5	0.075	0.05	0.0075			
+bromobenzene	108-86-1	30	---	3	---			
+bromochloromethane	74-97-5	10600	2000	1060	200			
+bromoethane	74-96-4	220	50	22	5			
+bromofluorobenzene        	------	720	72	72	7			
+bromoform                  	75-25-2	52	5	5	0.5			
+Brucine	357-57-3	20	---	2	---			
+"butadiene, 1,3-*"	106-99-0	110	50	11	5			
+butane	106-97-8	19000	8000	1900	800			
+butanediol	110-63-4	500	136	50	14			
+butanethiol (odor)	109-79-5	1.8	0.5	0.18	0.05			
+butanone (odor)	78-93-3	3900	1320	390	132			
+"butene, 1- (odor)"	25167-67-3	160	69	16	6.9			
+"butene, 2- (odor)"	-------	1300	600	130	60			
+butoxyethanol	111-76-2	240	50	24	5			
+"butoxyethyl acetate, 2- "	112-07-2	310	50	31	5			
+butoxytriglycol	143-22-6	1000	120	100	12			
+"butyl acetate, n- (odor)"	123-86-4	1850	390	185	39			
+"butyl acetate, sec-"	105-46-4	9500	2000	950	200			
+"butyl acetate, tert- (odor)"	540-88-5	19	4	1.9	0.4			
+"butyl acrylate, n- (odor)"	141-32-2	183	35	18.3	3.5			
+"butyl alcohol, n-"	71-36-3	760	250	76	25			
+"butyl alcohol, sec-"	78-92-2	3030	1000	303	100			
+"butyl alcohol, tert-"	75-65-0	3030	1000	303	100			
+butyl aniline	-------	100	16	10	1.6			
+"butyl benzene, all isomers"	-------	2740	500	274	50			
+butyl benzyl phthalate	85-68-7	50	---	5	---			
+butyl Carbitol	112-34-5	1060	160	106	16			
+"butyl catechol, tert-"	-------	350	50	35	5			
+butyl Cellosolve	111-76-2	240	50	24	5			
+butyl Cellosolve acetate	112-07-2	310	50	31	5			
+"butyl chloride, sec-"	78-86-4	4400	1170	440	117			
+"butyl chloride, tert-"	507-20-0	4400	1170	440	117			
+"butyl chromate, tert- (as CrO3)"	1189-85-1	0.1	---	0.01	---			
+"butyl ether, all isomers (odor)"	142-96-1	370	70	37	7			
+butyl formate	592-84-7	21000	5080	2100	508			
+butyl glycidyl ether	2426-08-6	300	56	30	5.6			
+butyl glycolate	7397-62-8	270	50	27	5			
+"butyl hydroperoxide, t-"	75-91-2	35	10	3.5	1			
+"butyl hydroquinone, t-"	1948-33-0	59	---	5.9	---			
+butyl isocyanate	111-36-4	9	2.2	0.9	0.22			
+butyl lactate	138-22-7	300	50	30	5			
+"butyl mercaptan, n- (odor)"	109-79-5	1.8	0.5	0.18	0.05			
+butyl methacrylate	97-88-1	6970	1200	697	120			
+"butyl peroxide, tert-"	110-05-4	100	18	10	1.8			
+"butyl peroxybenzoate, t-"	614-45-9	15	2	1.5	0.2			
+"butyl phenol, o-sec-"	89-72-5	310	50	31	5			
+"butyl phenol, o-tert-"	-------	20	3.3	2	0.33			
+"butyl phenol, p-sec-"	99-71-8	130	21	13	2.1			
+"butyl phenol, p-tert-"	98-54-4	5	0.8	0.5	0.08			
+"butyl propionate, n-"	590-01-2	230	43	23	4.3			
+"butyl toluene diamine, t-"	-------	70	10	7	1			
+"butyl toluene, p-tert-"	98-51-1	61	10	6.1	1			
+"butyl-6-ethylaniline, 2-sec-"	------	100	---	10	---			
+"butylacrylamide, tert-"	107-58-4	2.6	---	0.26	---			
+"butylamine, n-"	109-73-9	150	50	15	5			
+"butylamine, sec-"	13592-84-6	150	50	15	5			
+"butylamine, tert-"	75-64-9	12	4	1.2	0.4			
+butylated hydroxytoluene	128-37-0	100	---	10	---			
+"butylene glycol, 1,2-"	584-03-2	2100	570	210	57			
+"butylene glycol, 1,3-"	107-88-0	4400	1195	440	120			
+"butylene glycol, 1,4-"	110-63-4	500	136	50	14			
+"butylene glycol, 2,3-"	513-85-9	1400	380	140	38			
+butylene oxide (odor)	106-88-7	206	70	20.6	7			
+"butyl-m-xylene, tert- "	98-19-1	3300	500	330	50			
+"butynediol, 1,4-"	110-65-6	200	60	20	6			
+butyraldehyde (odor)	123-72-8	14	5	1.4	0.5			
+butyric acid (odor)	107-92-6	18	5	1.8	0.5			
+butyric anhydride	106-31-0	250	39	25	3.9			
+"butyrolactam, gamma-"	616-45-5	140	---	14	---			
+"butyrolactone, gamma-"	96-48-0	2180	730	218	73			
+butyronitrile	109-74-0	220	80	22	8			
+Cacodylic acid (as As)	75-60-5	5	---	0.5	---			
+cadmium & compounds (as Cd)	--------	0.1	---	0.01	---			
+calcium arsenate (as As)	7778-44-1	0.1	---	0.01	---			
+calcium bromide	7789-41-5	100	---	10	---			
+"calcium carbonate, respirable"	1317-65-3	50	---	5	---			
+calcium chloride	10043-52-4	70	---	7	---			
+calcium chromate (as Cr)	13765-19-0	0.1	---	0.01	---			
+calcium cyanamide	156-62-7	5	---	0.5	---			
+calcium cyanide (as CN)	592-01-8	50	---	5	---			
+calcium hydroxide	1305-62-0	50	---	5	---			
+calcium lignosulfate	-------	50	---	5	---			
+calcium oxide	1305-78-8	20	---	2	---			
+calcium phosphide	1305-99-3	50	---	5	---			
+"calcium silicate, respirable"	1344-95-2	50	---	5	---			
+calcium sulfonate	-------	50	---	5	---			
+camphene	79-92-5	20	---	2	---			
+"camphor, synthetic"	76-22-2	20	3.3	2	0.33			
+capric acid (odor)	334-48-5	14	2	1.4	0.2			
+caproic acid (odor)	142-62-1	29	6	2.9	0.6			
+"caprolactam, dust"	105-60-2	10	---	1	---			
+"caprolactam, vapor"	105-60-2	230	50	23	5			
+caprolactone	502-44-3	2180	---	218	---			
+caprylic acid (odor)	-------	48	8	4.8	0.8			
+Captafol	2425-06-1	1	---	0.1	---			
+Captan	133-06-2	50	---	5	---			
+Carbanil	103-71-9	5	---	0.5	---			
+Carbaryl	63-25-2	50	---	5	---			
+carbazole	86-74-8	100	---	10	---			
+Carbitols	-------	see diethylene glycol ethers						
+Carbofuran	1563-66-2	1	---	0.1	---			
+carbon black	1333-86-4	35	---	3.5	---			
+carbon dioxide	124-38-9	90000	50000	9000	5000			
+carbon disulfide**	75-15-0	30	10	3	1			
+carbon monoxide	630-08-0	must meet NAAQS						
+carbon tetrabromide	558-13-4	14	1	1.4	0.1			
+carbon tetrachloride	56-23-5	126	20	13	2			
+carbon tetrafluoride	75-73-0	18000	5000	1800	500			
+carbon trifluoride	75-46-7	14300	5000	1430	500			
+carbonyl chloride** 	75-44-5	4	1	0.4	0.1			
+"carbonyl fluoride (as HF, 3hr)"	353-50-4	4.9	5.6	0.5	0.56			
+carbonyl sulfide	463-58-1	8	3	0.8	0.3			
+catechol	120-80-9	230	50	23	5			
+Cellosolve	110-80-5	180	50	18	5			
+cellulose acetate	-------	100	---	10	---			
+cellulose acetate butyrate	9004-36-8	100	---	10	---			
+cellulose acetate phthalate	9004-38-0	100	---	10	---			
+cellulose acetate propionate	-------	100	---	10	---			
+"cellulose, respirable"	9004-34-6	50	---	5	---			
+ceric oxide	-------	100	---	10	---			
+cesium hydroxide	21351-79-1	20	---	2	---			
+cetyl mercaptan	2917-26-2	53	5	5.3	0.5			
+"chlodiphenyl, 42% chlorine"	53469-21-9	0.1	---	0.01	---			
+"chlodiphenyl, 54% chlorine"	11097-69-1	0.1	---	0.01	---			
+chlordane	57-74-9	5	---	0.5	---			
+chlordecone	143-50-0	0.01	---	0.001	---			
+chlorinated camphene	8001-35-2	5	---	0.5	---			
+chlorinated diphenyl oxide	31242-93-0	5	---	0.5	---			
+chlorine dioxide**	10049-04-4	2.8	1	0.3	0.1			
+chlorine trifluoride** (also evaluate HF)	7790-91-2	1.9	0.5	0.19	0.05			
+chlorine**	7782-50-5	15	5	1.5	0.5			
+chlorite (chlorine dioxide ion)	14998-27-7	2.8	1	0.3	0.1			
+"chloro-1,3-butadiene,** 2-"	126-99-8	36	10	3.6	1			
+"chloro-2,3-epoxypropane**"	106-89-8	19	5	1.9	0.5			
+"chloro-6-(trichloromethyl)-pyridine, 2-, respirable"	1929-82-4	50	---	5	---			
+chloroacetaldehyde	107-20-0	32	10	3	1			
+chloroacetic acid	79-11-8	12	---	1.2	---			
+chloroacetic acid methyl ester	96-34-4	50	10	5	1			
+chloroacetone	78-95-5	38	10	4	1			
+chloroacetophenone	532-27-4	3.2	0.5	0.32	0.05			
+chloroacetylchloride	79-04-9	2.3	0.5	0.23	0.05			
+chloroacetylene 	593-63-5	3.9	1	0.39	0.1			
+"1-(3-chloroallyl)-3,5,7-aza-1-azoniad adamantane chloride"	-------	5	0.5	0.5	0.05			
+Chloroambucil	305-03-3	5	---	0.5	---			
+chloroamphenicol	56-75-7	50	4	5	0.4			
+"chloroaniline, m-"	108-42-9	31	6	3.1	0.6			
+"chloroaniline, o-"	95-51-2	53	10	5.3	1			
+"chloroaniline, p-"	106-47-8	53	10	5.3	1			
+chlorobenzene	108-90-7	460	100	46	10			
+Chlorobenzilate	510-15-6	100	---	10	---			
+chlorobenzyl chloride	104-83-6	26	4	2.6	0.4			
+"chlorobenzylidene malononitrile, o-"	2698-41-1	4	0.5	0.4	0.05			
+chlorobromomethane	74-97-5	10600	2000	1060	200			
+chlorocresol (odor)	59-50-7	20	3.4	2	0.34			
+"chlorodifluoroethane, 1,1,1-"	75-68-3	61700	18750	6170	1875			
+chlorodifluoromethane	74-45-6	18000	5000	1800	500			
+chlorodifluoromethane	75-45-6	18000	5000	1800	500			
+chloroethane	75-00-3	500	190	50	19			
+"chloroethanol, 2-"	107-07-3	33	10	3.3	1			
+chloroethylene	75-01-4	130	50	13	5			
+chloroform**	67-66-3	98	20	9.8	2			
+chloroglycerin	-------	50	11	5	1			
+"chloroisopropyl ether, bis-"	108-60-1	210	---	21	---			
+chloromethylmethyl ether**	107-30-2	0.5	0.16	0.05	0.016			
+"Chloroneb, particulate"	2675-77-6	50	---	5	---			
+"chloronitrobenzene, p-"	100-00-5	6.4	1	0.64	0.1			
+chloronitropropane	600-25-9	100	20	10	2			
+chloropentafluoroethane	76-15-3	63200	10000	6320	1000			
+"chlorophenol, m- (odor)"	108-43-0	19	3.6	1.9	0.36			
+"chlorophenol, o- (odor)"	95-57-8	2	0.36	0.2	0.036			
+"chlorophenol, p-"	106-48-9	300	57	30	5.7			
+"chlorophenolthiomethyl-O,O-diethyl phosphorodithioate"	--------	1	---	0.1	---			
+"chlorophenolthio-methyl-O,O-diethyl phosphorodithioate "	786-19-6	1	---	0.1	---			
+chlorophenyl phenyl ethers	--------	5	---	0.5	---			
+"1,1-bis-(chlorophenyl)-2,2,2,-trichloroethanol"	115-32-2	10	---	1	---			
+chloropicrin	76-06-2	6.7	1	0.67	0.1			
+"chloroprene,** ß-"	126-99-8	36	10	3.6	1			
+"chloropropionic acid, 2-"	598-78-7	4.4	1	0.44	0.1			
+"chloropropionitrile, 3-"	542-76-7	180	50	18	5			
+"chlorostyrene, o-"	2039-87-4	2850	500	285	50			
+chlorosulfonic acid	7790-94-5	14	2.9	1.4	0.29			
+chlorotetrafluoroethane	2837-89-0	27900	5000	2790	500			
+Chlorothanonil	1897-45-6	15	---	0.5	---			
+"chlorotoluene, all isomers (odor)"	95-49-8	235	45	23.5	4.5			
+chlorotrifluoroethylene	79-38-9	97	20	10	2			
+chlorotrifluoromethane	75-72-9	43300	10000	4330	1000			
+chlorotrifluoromethylphenoxytoluene	-------	300	---	30	---			
+Chlorpyrifos	2921-88-2	2	---	0.2	---			
+chromium (II) & (III) cpds	-------	1	---	0.1	---			
+chromium (VI) cpds	-------	0.1	---	0.01	---			
+chromium metal	7440-47-3	1	---	0.1	---			
+chromium trioxide (CrO3)	1333-82-0	0.1	---	0.01	---			
+chromium: chromic acid (H2CrO4) & chromate 	7738-94-5	0.1	---	0.01	---			
+chromyl chloride	14977-61-8	0.1	---	0.01	---			
+chrysene*	218-01-9	0.5	---	0.05	---			
+citraconic anhydride	616-02-4	60	15	6	1.5			
+citric acid	77-92-9	100	---	10	---			
+"Clopidol, respirable"	2971-90-6	50	---	5	---			
+coal dust: anthracite (also evaluate crystalline silica)	-------	4	---	0.4	---			
+coal dust: bituminous (also evaluate crystalline silica)	-------	9	---	0.9	---			
+coal tar	8007-45-2	1	---	0.1	---			
+coal tar distillate	65996-92-1	3500	875	350	88			
+coal tar naphtha	8030-30-6	3500	875	350	88			
+coal tar oil	8001-58-9	1	---	0.1	---			
+"coal tar pitch volatiles, PAH<10% b(a)p"	65996-93-2	0.5	---	0.05	---			
+"coating pigments, all non-metallic"	-------	40	---	4	---			
+cobalt & inorganic cpds 	7440-48-4	0.2	---	0.02	---			
+"cobalt carbonyl, as Co"	10210-68-1	1	---	0.1	---			
+cobalt hydrocarbonyl	16842-03-8	1	---	0.1	---			
+Cobra	77501-63-4	50	---	5	---			
+coke oven emissions	-------	1.5	---	0.15	---			
+coke oven emissions: total particulates	-------	5	---	0.5	---			
+Combat	67485-29-4	14	---	1.4	---			
+copper dusts & mists	7440-50-8	10	---	1	---			
+copper fume	7440-50-8	1	---	0.1	---			
+creosote	8001-58-9	1	---	0.1	---			
+cresols (odor)	1319-77-3	5	1.1	0.5	0.11			
+cresyl glycidyl ether	26447-14-3	30	---	3	---			
+cresylic acid (odor)	1319-77-3	5	1.1	0.5	0.11			
+cristobalite*	14464-46-1	0.5	---	0.05	---			
+crotonaldehyde**	4170-30-3	8.6	3	0.86	0.3			
+Cruformate	299-86-5	50	4	5	0.4			
+cumeme (odor)	98-82-8	500	100	50	10			
+cumene hydroperoxide	80-15-9	25	4.4	2.5	0.44			
+"cumyl phenol, p-"	599-64-4	140	---	14	---			
+cyanamide	420-04-2	20	---	2	---			
+cyanide compounds (as CN)	-------	50	---	5	---			
+cyanogen	460-19-5	210	100	21	10			
+cyanogen bromide	506-68-3	2.5	0.6	0.25	0.06			
+cyanogen chloride**	506-77-4	6	3	0.6	0.3			
+Cycasin	14901-08-7	40	---	4	---			
+cyclododecane	-------	5150	750	515	75			
+cyclododecanone	-------	1600	150	160	15			
+"cyclododecatriene,1,5,9-"	-------	1320	200	132	20			
+cyclododecyl alcohol	-------	9800	1300	980	130			
+cycloheptane	291-64-5	3400	850	340	85			
+cyclohexane (odor)	110-82-7	1435	415	143.5	41.5			
+cyclohexanediamine	694-83-7	467	100	47	10			
+cyclohexanone (odor)	108-94-1	481	120	48.1	12			
+cyclohexene (odor)	110-83-8	604	180	60	18			
+cyclohexyl alcohol (odor)	108-93-0	613	150	61.3	15			
+cyclohexyl isocyanate	3173-53-3	20	4	2	0.4			
+cyclohexyl-2-pyrrolidone	6837-24-7	82	12	8.2	1.2			
+cyclohexylamine**	108-91-8	80	20	8	2			
+cyclohexylmercaptan	1569-69-3	24	5	2.4	0.5			
+cyclonite	121-82-4	5	---	0.5	---			
+cyclooctadiene	29965-97-7	2000	470	200	47			
+cyclooctane	292-64-8	3500	750	350	75			
+cyclopentadiene	542-92-7	2030	750	203	75			
+cyclopentane	287-92-3	3400	1190	340	119			
+cyclopentanone	120-92-3	1700	500	170	50			
+cyclopentene	142-29-0	8150	2930	815	293			
+cyclopentyl alcohol	96-41-3	7200	2050	720	205			
+cyclotetramethylenetetranitramine	2691-41-0	27	---	2.7	---			
+Cyfluthrin	68359-37-5	50	---	5	---			
+Cyhexatin	13121-70-5	50	---	5	---			
+"cymene, p-"	99-87-6	2745	500	275	50			
+cypermethrin	66841-24-5	50	---	5	---			
+Cyromazine	66215-27-8	100	---	10	---			
+"2,4-D"	94-75-7	10	---	1	---			
+Dalapon	75-99-0	58	10	5.8	1			
+Danitol	39515-41-8	50	---	5	---			
+Daunomycin	20830-81-3	1.4	---	0.14	---			
+DDT	50-29-3	1	---	0.1	---			
+deanol (odor)	108-01-0	55	---	5.5	---			
+decaborane	17702-41-9	2.5	0.5	0.25	0.05			
+decabromodiphenyl oxide	1163-19-5	50	---	5	---			
+decahydronaphthalene	91-17-8	3500	---	350	---			
+decalin	91-17-8	3500	---	350	---			
+decane	124-18-5	10000	1750	1000	175			
+decanoic acid (odor)	334-48-5	14	2	1.4	0.2			
+decyl alcohol (odor)	-------	39	---	3.9	---			
+decylmercaptan	143-10-2	36	5	3.6	0.5			
+Delnav	78-34-2	2	---	0.2	---			
+Demeton	8065-48-3	1	0.1	0.1	0.01			
+demeton-methyl	8022-00-2	5	---	0.5	---			
+Dextrin	9004-53-9	100	---	10	---			
+di(2-ethylhexyl)adipate	103-23-1	1240	80	124	8			
+di(2-ethylhexyl)phthalate	117-81-7	50	---	5	---			
+diacetone alcohol (odor)	123-42-2	1330	280	133	28			
+"diacetoxy-1-butene, 3,4-"	18085-02-4	8750	---	875	---			
+"dialkyl peroxides, all"	-------	100	---	10	---			
+diallylamine	124-02-7	120	---	12	---			
+"diaminodipropylamine, 3,3-"	56-18-8	60	11	6	1			
+"diaminoethane**, 1,2-"	107-15-3	250	100	25	10			
+diatomaceous earth	61790-53-2	40	---	4	---			
+Diazinon	333-41-5	1	---	0.1	---			
+diazomethane**	334-88-3	3.4	2	0.34	0.2			
+dibasic ester	53-60-5	100	---	10	---			
+"dibenzo[b,e]pyridine"	260-94-6	0.5	---	0.05	---			
+dibenzopyrrole	86-74-8	100	---	10	---			
+diborane**	19287-45-7	1.1	1	0.11	0.1			
+dibrom	300-76-5	30	---	3	---			
+dibromoacetonitrile	3252-43-5	33	4	3.3	0.4			
+dibromochloropropane	96-12-8	0.1	0.01	0.01	0.001			
+"dibromoethane, 1,2-"	106-93-4	3.8	0.5	0.38	0.05			
+dibutyl acrylate	-------	550	---	55	---			
+dibutyl maleate	105-76-0	2600	280	260	28			
+dibutyl phenyl phosphate	2528-36-1	35	3	3.5	0.3			
+dibutyl phosphate	107-66-4	86	10	8.6	1			
+dibutyl phthalate 	84-74-2	50	4.4	5	0.44			
+"dibutylamine, n- (odor)"	111-92-2	65	---	6.5	---			
+"dibutylaminoethanol, 2-N-"	102-81-8	140	20	14	2			
+Dicamba	1918-00-9	100	---	10	---			
+"Dichlobenil, particulate"	1194-65-6	25	---	2.5	---			
+"dichloro-1-butene, 3,4-"	760-23-6	135	26	14	2.6			
+"dichloro-1-nitroethane,1,1-"	594-72-9	120	20	12	2			
+"dichloro-2-butene, 1,3-        "	7415-31-8	56	11	5.6	1.1			
+"dichloro-2-butene, 1,4-"	761-41-0	6	1.2	0.6	0.12			
+"dichloro-4-nitroaniline, 2,6-"	-------	100	---	10	---			
+"dichloro-4-nitroaniline, 2,6-"	99-30-9	100	---	10	---			
+dichloroacetylene	7572-29-4	3.9	1	0.39	0.1			
+"dichloroaniline, 2,5-"	95-82-9	210	32	21	3.2			
+"dichloroaniline, 3,4-"	95-76-1	80	12	8	1.2			
+"dichlorobenzene, m-"	541-73-1	2500	415	250	41.5			
+"dichlorobenzene, o-"	95-50-1	1500	250	150	25			
+"dichlorobenzene, p-"	106-46-7	600	100	60	10			
+dichlorobenzotrifluoride	-------	890	---	89	---			
+dichlorobutylene	11069-19-5	18	---	1.8	---			
+dichlorodifluoromethane	75-71-8	49500	10000	4950	1000			
+dichlorodimethylhydantoin	118-52-5	2	---	0.2	---			
+"dichloroethane, 1,1- "	75-34-3	4000	1000	400	100			
+"dichloroethane, 1,2-"	107-06-2	160	40	4	1			
+"dichloroethane, 1,2- (24-hour)"	107-06-2	16	4	4	1			
+dichloroethyl ether	111-44-4	290	50	29	5			
+"dichloroethylene, 1,1-"	75-35-4	40	10	4	1			
+"dichloroethylene, 1,2-"	540-59-0	7930	2000	793	200			
+dichlorofluoroethane	1717-00-6	4350	---	435	---			
+dichlorofluoromethane	75-43-4	420	100	42	10			
+dichlorohydrin	96-23-1	130	25	13	2.5			
+dichloromethane	75-09-2	260	75	26	7.5			
+dichloromethoxybenzoic acid	1918-00-9	100	---	10	---			
+dichloromethyl ether**      	542-88-1	0.047	0.01	0.0047	0.001			
+dichloromethyl phosphine oxide 	676-97-1	3	---	0.3	---			
+"dichloronitrobenzene, all isomers"	-------	9	---	0.9	---			
+"dichlorophenol, 2,4-"	120-83-2	525	---	53	---			
+"dichlorophenol, 2,6- (odor)"	87-65-0	20	---	2	---			
+dichlorophenoxy acetic acid	94-75-7	10	---	1	---			
+"2-(3,4-dichlorophenyl)-methyl-1,2,4-oxadiazolidine-3,5-dione"	-------	35	---	3.5	---			
+"dichloropropane, 1,2- (odor)"	78-87-5	1150	250	115	25			
+"dichloropropene, 1,3-"	542-75-6	45	10	4.5	1			
+dichloropropionanilide	709-98-8	15	---	1.5	---			
+"dichloropropionic acid, 2,2-"	75-99-0	58	10	5.8	1			
+dichlorosilane	4109-96-0	3	0.8	0.3	0.08			
+dichlorotetrafluoroethane	76-14-2	69900	10000	6990	1000			
+dichlorotrifluoroethane	306-83-2	5500	---	550	---			
+Dichlorvos	62-73-7	9	1	0.9	0.1			
+Dicrotophos	141-66-2	2.5	---	0.25	---			
+"dicyclohexylmethane-4,4'- diisocyanate"	5124-30-1	0.54	0.05	0.054	0.005			
+dicyclopentadiene (odor)	77-73-6	31	6	3.1	0.6			
+"dicyclopentadienyl iron, respirable"	102-54-5	50	---	5	---			
+Dieldrin	60-57-1	2.5	---	0.25	---			
+Dienochlor	2227-17-0	8	---	0.8	---			
+"diepoxybutane, 3,4-"	1464-53-5	5	1.4	0.5	0.14			
+diesel fuel (vapor) (MW= appr. 180)	-------	1000	135	100	14			
+diesel fuel combustion products	-------	1.5	---	0.15	---			
+diesel fuel combustion vapors	-------	90	---	9	---			
+diethanolamine	111-42-2	20	4.6	2	0.46			
+diethyl ether (odor)	60-29-7	927	306	93	31			
+diethyl hydroxylamine	3710-84-7	400	---	40	---			
+diethyl ketone	96-22-0	7050	2000	705	200			
+diethyl phosphorochlorodithioate	2524-04-1	70	---	7	---			
+diethyl phthalate	84-66-2	50	5.5	5	0.55			
+diethyl sulfate 	64-67-5	25	---	2.5	---			
+diethyl sulfide (odor)	352-93-2	16	---	1.6	---			
+diethylamine	109-89-7	150	50	15	5			
+"diethylaminoethanol, 2- (odor)"	100-37-8	55	11	5.5	1.1			
+"diethylaniline, N,N-"	91-66-7	100	---	10	---			
+diethylbenzene	25340-17-4	2500	455	250	46			
+diethylene glycol dimethyl ether	111-96-6	270	50	27	5			
+diethylene glycol divinyl ether	764-99-8	550	85	55	8.5			
+diethylene glycol ethyl ether	111-90-0	1500	208	150	21			
+diethylene glycol ethyl methyl ether	1002-67-1	500	80	150	8			
+diethylene glycol ethyl vinyl ether	10143-53-0	720	110	72	11			
+diethylene glycol mono-2-methyl pentyl ether	10143-56-3	260	34	26	3			
+diethylene glycol monobutyl ether	112-34-5	1060	160	106	16			
+diethylene glycol monoisobutyl ether	18912-80-6	1330	200	133	20			
+diethylene glycol monomethyl ether	111-77-3	270	54	27	5			
+diethylene glycol monovinyl ether	929-37-3	290	54	29	5.4			
+"diethylene glycol, particulate"	111-46-6	100	---	10	---			
+"diethylene glycol, vapor"	111-46-6	2200	507	220	51			
+diethylene triamine	111-40-0	42	10	4.2	1			
+diethylthiourea	105-55-5	50	---	5	---			
+difluorodibromomethane	75-61-6	8580	1000	858	100			
+difluoroethane	75-37-6	13500	5000	1350	500			
+difluoromethane	75-10-5	10630	5000	1063	500			
+diglycidyl bisphenol A ether	1675-54-3	14	1	1.4	0.1			
+diglycidyl ether	2238-07-5	5.3	1	0.53	0.1			
+diglycolamine	929-06-6	380	---	38	---			
+dihydroxybenzene	123-31-9	20	---	2	---			
+"dihydroxybenzene, 1,3"	120-80-9	230	50	23	5			
+diisobutyl ketone (odor)	108-83-8	639	110	63.9	11			
+diisobutyl phthalate	84-69-5	50	---	5	---			
+diisobutylamine	110-96-3	125	---	13	---			
+diisobutylcarbinol (odor)	108-82-7	188	---	18.8	---			
+diisobutylene	-------	1800	---	180	---			
+"diisononyl phthalate, particulate"	-------	50	---	5	---			
+diisopropanolamine	110-97-4	460	---	46	---			
+diisopropylamine	108-18-9	210	50	21	5			
+"diisopropylbenzene, all isomers"	-------	3320	500	332	50			
+diisopropylene glycol	-------	100	---	10	---			
+dimeryl diisocyanate	68239-06-5	0.25	---	0.025	---			
+dimethanonaphthalene	465-73-6	3.2	---	0.32	---			
+"dimethoxyethane, 1,2-"	110-71-4	220	60	22	6			
+dimethoxymethane	109-87-5	31100	10000	3110	1000			
+"dimethxoybenzene, 1,2-"	91-16-7	24	4.2	2.4	0.42			
+dimethyl acetamide	127-19-5	360	100	36	10			
+dimethyl adipate	627-93-0	100	---	10	---			
+dimethyl arsenic acid (as As)	75-60-5	5	---	0.5	---			
+dimethyl benzidine	119-93-7	0.2	---	0.02	---			
+dimethyl butane	75-83-2	3500	1000	350	100			
+dimethyl ether	115-10-6	19100	10000	1910	1000			
+"dimethyl ethyl amine, N,N-"	598-56-1	750	250	75	25			
+dimethyl glutarate	1119-40-0	100	---	10	---			
+dimethyl hexynediol	142-30-3	100	---	10	---			
+"dimethyl hydrazine**, 1,1-"	57-14-7	0.25	0.1	0.025	0.01			
+dimethyl oxazolidinone	-------	2500	---	250	---			
+dimethyl propanolamine	3179-63-3	750	---	75	---			
+dimethyl succinate	106-65-0	100	---	10	---			
+dimethyl sulfate	77-78-1	5.2	1	0.52	0.1			
+dimethyl sulfide (odor)	75-18-3	3	---	0.3	---			
+dimethyl sulfoxide	67-68-5	140	---	14	---			
+"dimethyl terephthalate, respirable"	120-61-6	50	---	5	---			
+dimethyl thionates	-------	50	---	5	---			
+dimethyl zinc	-------	10	---	1	---			
+"dimethyl-1,2-dibromo-2,2-dichloroethyl phosphate"	300-76-5	30	---	3	---			
+"dimethyl-3-hydroxythiophene, 2,4-"	-------	100	---	10	---			
+"dimethyl-4-heptanol, 2,6- (odor)"	108-82-7	188	---	18.8	---			
+"dimethyl-4-heptanone, 2,6- (odor)"	108-83-8	639	110	63.9	11			
+dimethylamine (odor)	124-40-3	37	20	3.7	2			
+dimethylamino-2-propanol	108-16-7	750	---	75	---			
+dimethylaminobenzene	1300-73-8	25	5	2.5	0.5			
+"dimethylaminoethanol, 2- (odor)"	108-01-0	55	---	5.5	---			
+dimethylaminoethoxyethanol	1704-62-7	130	24	13	2.4			
+2-(2-(2-dimethylamino ethoxy)-ethylmethylamino)-ethanol	83016-70-0	210	---	21	---			
+"dimethylaminoethyl, ether, bis 2-"	3033-62-3	3.3	0.5	0.33	0.05			
+dimethylaminoethyl methacrylate	2867-47-2	200	31	20	3.1			
+dimethylaminopropylamine	109-55-7	130	32	13	3.2			
+dimethylaminoxylylmethylcarbamate	-------	5	---	0.5	---			
+"dimethylaniline, N,N- (odor)"	121-69-7	64	13	6.4	1.3			
+dimethylbenzene (odor)	1330-20-7	3700	850	370	85			
+"dimethylbenzylamine, N,N-"	103-83-3	108	20	11	2			
+dimethylcarbamoyl chloride	79-44-7	0.5	---	0.05	---			
+"dimethylcyclohexylamine, N,N-"	98-94-2	100	---	10	---			
+dimethylethanolamine (odor)	108-01-0	55	---	5.5	---			
+dimethylethoxysilane	14857-34-2	21	5	2.1	0.5			
+dimethylformamide	68-12-2	300	100	30	10			
+dimethylphenol	1300-71-6	165	---	16.5	---			
+"dimethylphosphorochloridothioate, O,O-"	2524-03-0	30	---	3	---			
+dimethylphthalate	131-11-3	50	---	5	---			
+dimethylpiperazine	25155-35-5	430	90	43	9			
+dinitolmide 	148-01-6	50	---	5	---			
+"dinitrobenzene, all isomers "	528-29-0	10	1.5	1	0.15			
+dinitro-o-cresol	534-52-1	2	---	0.2	---			
+"dinitrophenol, 2,6-"	25550-58-7	3	---	0.3	---			
+"dinitrotoluene, all isomers "	25321-14-6	1.5	---	0.15	---			
+dioctyl azelate	103-24-2	100	---	10	---			
+dioctyldiphenylamine	101-67-7	100	---	10	---			
+"dioxane, 1,4-"	123-91-1	900	250	90	25			
+"dioxans, polychlorinated, dibenzo"	-------	use TCDD toxicity equivalents approach						
+Dioxathion	78-34-2	2	---	0.2	---			
+"dioxins,2,3,7,8-tetrachlorinated, dibenzo-*"	1746-01-6	---	---	3X10-8	---			
+"dioxolane, 1,3-"	646-06-0	520	172	52	17			
+diphenyl ether (odor)	101-84-8	8	1.1	0.8	0.11			
+diphenylamine	122-39-4	100	---	10	---			
+diphenyldimethoxysilane	6843-66-9	1000	100	100	10			
+diphenylethylene	588-59-0	50	---	5	---			
+"diphenylmethane-4,4'-diisocyanate"	101-68-8	0.51	0.05	0.051	0.005			
+dipropyl ether	111-43-3	2500	600	250	60			
+dipropyl ketone	123-19-3	2330	500	233	50			
+dipropylamine	142-84-7	200	48	20	5			
+dipropylene glycol	110-98-5	1200	220	120	22			
+dipropylene glycol dibenzoate	94-51-9	220	---	22	---			
+dipropylene glycol monoethyl ether	15764-24-6	2190	330	219	33			
+dipropylene glycol monomethyl ether	34590-94-8	3000	500	300	50			
+dipropylene triamine	56-18-8	60	11	6	1			
+"Diquat dibromide monohydrate, respirable"	6385-62-2	1	---	0.1	---			
+"Diquat dibromide, respirable"	85-00-7	1	---	0.1	---			
+"Diquat, respirable"	231-36-7	1	---	0.1	---			
+"disodium phosphate, particulate"	7558-79-4	50	---	5	---			
+Disulfiram	99-77-8	20	---	2	---			
+Disulfoton	298-04-4	1	---	0.1	---			
+di-tert-amyl phenol	25231-47-4	700	---	70	---			
+di-tert-butyl peroxide	110-05-4	100	18	10	1.8			
+"di-tert-butyl-p-cresol, 2,6-"	128-37-0	100	---	10	---			
+ditridecyl phthalate	119-06-2	100	---	10	---			
+Diuron	330-54-1	100	---	10	---			
+divinyl benzene	1321-74-0	530	100	53	10			
+DMAEE	3033-62-3	3.3	0.5	0.33	0.05			
+dodecanoic acid (odor)	143-07-7	28	---	2.8	---			
+dodecenylsuccinic anhydride	25377-73-5	40	3.6	4	0.36			
+"dodecyl benzene sulfonic acid, particulate"	25155-30-0	100	---	10	---			
+"dodecyl benzene sulfonic acid, vapor"	25155-30-0	1000	---	100	---			
+dodecyl mercaptan	112-55-0	41	5	4	0.5			
+dodecyl phenol	27193-86-8	1200	110	120	11			
+dodecylamine	124-22-1	100	---	10	---			
+Dowfax 2A1	-------	50	---	5	---			
+Dowtherm 4000 (46% ethylene glycol)	107-21-1	260	100	26	10			
+Dowtherm G	-------	20	---	2	---			
+"Dowtherm LF (mixture of phenyl ether, alkyl biphenyls) "	-------	13	---	1.3	---			
+Dripolene	-------	3500	---	350	---			
+Dursban	2921-88-2	2	---	0.2	---			
+"Dylox, particulate"	52-68-6	50	---	5	---			
+"emery, respirable"	1302-74-5	50	---	5	---			
+Endosulfan	115-29-7	1	---	0.1	---			
+Endrin	72-20-8	1	---	0.1	---			
+enflurane	13838-16-9	5660	750	566	75			
+enzymes	1395-21-7	0.0006	---	0.00006	---			
+epichlorohydrin**	106-89-8	19	5	1.9	0.5			
+Epinephrine	329-65-7	0.4	---	0.04	---			
+EPN	2104-64-5	5	---	0.5	---			
+Epoxide 7	55838-67-0	800	---	80	---			
+Epoxide 8	39390-62-0	800	---	80	---			
+epoxy resin	25068-38-6	40	---	4	---			
+"epoxy-1-propanol, 2,3-"	556-52-5	61	20	6.1	2			
+epoxypropane**	75-56-9	210	84	21	8.4			
+erythromycin	114-07-8	30	---	3	---			
+ethane	74-84-0	simple asphyxiant 						
+ethanolamine	141-43-5	75	30	7.5	3			
+"ethenylcyclohexene, 4-"	100-40-3	4	1	0.4	0.1			
+Ethion	563-12-2	4	---	0.4	---			
+ethoxybenzene	103-73-1	130	26	13	3			
+"ethoxyethanol acetate, 2-"	111-15-9	270	50	27	5			
+"ethoxyethanol, 2-"	110-80-5	180	50	18	5			
+"ethoxypropionitrile, ß-"	14631-45-9	2000	---	200	---			
+ethoxytriglycol	112-50-5	160	---	16	---			
+ethyl acetate	141-78-6	14400	4000	1440	400			
+ethyl acrolein	-------	60	18	6	1.8			
+ethyl acrylate (odor)	140-88-5	5	1.25	0.5	0.125			
+ethyl alcohol	64-17-5	18800	10000	1880	1000			
+ethyl amyl ketone	541-85-5	1310	250	131	25			
+ethyl aniline	103-69-5	20	---	2	---			
+ethyl benzene (odor)	100-41-4	2000	461	200	46.1			
+ethyl benzene hydroperoxide	-------	4350	---	435	---			
+ethyl benzoate	93-89-0	245	40	25	4			
+ethyl bromide	74-96-4	220	50	22	5			
+ethyl butyl ketone	106-35-4	2340	500	234	50			
+ethyl butyrate (odor)	105-54-4	39	---	3.9	---			
+ethyl Carbitol	111-90-0	1500	208	150	21			
+ethyl chloride	75-00-3	500	190	50	19			
+ethyl chlorocarbonate	541-41-3	5	---	0.5	---			
+ethyl cyanide**	107-12-0	140	60	14	6			
+ethyl ether (odor)	60-29-7	927	306	93	31			
+ethyl formate	109-94-4	3000	1000	300	100			
+ethyl hexane	-------	3500	---	350	---			
+"ethyl hexanediol, 2-"	94-96-2	500	---	50	---			
+ethyl mercaptan** (odor)	75-08-1	0.8	---	0.08	---			
+ethyl methacrylate (odor)	97-63-12	32	7	3.2	0.7			
+"ethyl morpholine, N-"	100-74-3	240	50	24	5			
+ethyl propionate	105-37-3	130	32	13	3			
+ethyl silicate	78-10-4	850	100	85	10			
+ethyl sulfide (odor)	352-93-2	16	---	1.6	---			
+ethyl thioacetate	59094-77-8	75	18	7.5	1.8			
+ethyl trichloroacetate 	515-84-4	70	---	7	---			
+ethyl-2-methylallylamine	18328-90-0	50	---	5	---			
+ethyl-3-ethoxypropionate	763-69-9	400	67	40	7			
+ethyl-3-propyl acrolein	645-62-5	150	29	15	3			
+ethylamine	75-04-7	92	50	9.2	5			
+ethylanthraquinone	84-51-5	50	---	5	---			
+ethylcyanoacrylate	7085-85-0	10	2	1	0.2			
+ethylcyclohexane	-------	18670	---	1867	---			
+ethylcyclopentane	-------	16300	---	1630	---			
+ethylene	74-85-1	1170	---	---	---			
+ethylene amine	593-67-9	200	---	20	---			
+ethylene bisdithiocarbamates	-------	50	---	5	---			
+ethylene chlorohydrin	107-07-3	33	10	3.3	1			
+ethylene cyanide	110-61-2	200	60	20	6			
+ethylene cyanohydrin	109-78-4	50	---	5	---			
+ethylene dibromide	106-93-4	3.8	0.5	0.38	0.05			
+ethylene dichloride	107-06-2	160	40	4	1			
+ethylene dichloride (24 hour)	107-06-2	16	4	4	1			
+ethylene glycol butyl ethyl ether	4413-13-2	185	31	19	3			
+ethylene glycol butyl vinyl ether	4223-11-4	940	160	94	16			
+ethylene glycol carbonate	96-49-1	100	---	10	---			
+ethylene glycol diacetate (odor)	111-55-7	555	---	55.5	---			
+ethylene glycol diallyl ether	7529-27-3	90	15	9	1.5			
+ethylene glycol dibutyl ether	112-48-1	1500	210	150	21			
+ethylene glycol diethyl ether	629-14-1	350	70	35	7			
+ethylene glycol dimethyl ether	110-71-4	220	60	22	6			
+ethylene glycol dinitrate	628-96-6	1	0.16	0.1	0.016			
+ethylene glycol mono-2-methylpentyl ether	10137-96-9	110	19	11	2			
+ethylene glycol monobenzyl ether	622-08-2	100	16	10	1.6			
+ethylene glycol monobutyl ether	111-76-2	240	50	24	5			
+ethylene glycol monobutyl ether acetate	112-07-2	310	50	31	5			
+ethylene glycol monoethyl ether	110-80-5	180	50	18	5			
+ethylene glycol monoethyl ether acetate	111-15-9	270	50	27	5			
+ethylene glycol monohexyl ether	112-25-4	420	70	42	7			
+ethylene glycol monoisobutyl ether	4439-24-1	770	160	77	16			
+ethylene glycol monoisopropyl ether	109-59-1	220	50	22	5			
+ethylene glycol monomethyl ether	109-86-4	160	50	16	5			
+ethylene glycol monomethyl ether acetate	110-49-6	240	50	24	5			
+ethylene glycol monophenyl ether	122-99-6	170	30	17	3			
+ethylene glycol monopropyl ether	2807-30-9	1500	250	150	25			
+ethylene glycol mono-sec-butyl ether	7795-91-7	360	75	36	7.5			
+"ethylene glycol, vapor"	107-21-1	260	100	26	10			
+ethylene naphthalene*	83-32-9	1	---	0.1	---			
+ethylene oxide**	75-21-8	18	10	1.8	1			
+ethylene thiourea	96-45-7	50	---	5	---			
+ethylenediamine**	107-15-3	250	100	25	10			
+ethyl lactate 	97-64-3	1930	400	193	40			
+ethyleneimine**	151-56-4	8.8	5	0.88	0.5			
+"ethylhexanoic acid, 2-"	149-57-5	250	---	25	---			
+"ethylhexyl alcohol, 2- (odor)"	104-76-7	735	138	73.5	13.8			
+ethylhexyl aldehyde	123-05-7	1400	267	140	27			
+"ethylhexyl chloride, 2-"	123-04-6	2500	---	250	---			
+ethylhexyl nitrate	27247-96-7	1050	---	105	---			
+ethylidene chloride	75-34-3	4000	1000	400	100			
+"ethylidene-2-norbornene, 5- (odor)"	16219-75-3	70	14	7	1.4			
+ethyl-n-butyl ether	628-81-9	2340	560	234	56			
+"ethylpentane, 3-"	-------	3500	1100	350	110			
+ethyl-t-butyl ether	637-92-3	2500	600	250	60			
+"ethyltoluene, m-"	620-14-4	1250	250	125	25			
+"ethyltoluene, o-"	611-14-3	1250	250	125	25			
+"ethyltoluene, p-"	622-96-8	1250	250	125	25			
+Exxate 600	88230-35-7	2750	---	275	---			
+famotidine	76824-35-6	50	---	5	---			
+Famphur	52-85-7	13	---	1.3	---			
+fatty acids	-------	1000	---	100	---			
+fatty amines	-------	100	---	10	---			
+fatty oils	-------	1000	---	100	---			
+Fenamiphos	22224-92-6	1	---	0.1	---			
+Fenpropathrin	39515-41-8	50	---	5	---			
+Fensulfothion	115-90-2	1	---	0.1	---			
+Fenthion	55-38-9	2	---	0.2	---			
+Fenvalerate	51630-58-1	50	---	5	---			
+"Ferbam, respirable"	14484-64-1	50	---	5	---			
+ferrovanadium dust	12604-58-9	10	---	1	---			
+fibrous glass dust	-------	50	---	5	---			
+fluorene	86-73-7	10	---	1	---			
+"fluorides & HF (as HF, 3hr)"	-------	4.9	5.6	0.5	0.56			
+fluorine**	7782-41-4	2	1	0.2	0.1			
+fluorobenzene	462-06-6	390	110	39	11			
+fluoromethane	593-53-3	6960	5000	696	500			
+fluorotrichloromethane (odor)	75-69-4	28000	5000	2800	500			
+fluroxene	406-90-6	103	20	10	2			
+Fonophos	944-22-9	1	---	0.1	---			
+formaldehyde**	50-00-0	15	12	1.5	1.2			
+formalin** (37-50% formaldehyde)	50-00-0	30	---	3	---			
+formamide	75-12-7	180	100	18	10			
+formic acid	64-18-6	94	50	9.4	5			
+"formic acid, ethyl ester"	109-94-4	3000	1000	300	100			
+"formic acid, methyl ester"	107-31-3	2500	1000	250	100			
+Freon 11(odor)	75-69-4	28000	5000	2800	500			
+Freon 112	76-11-9	41700	5000	4170	500			
+Freon 113	76-13-1	38000	5000	3800	500			
+Freon 114	76-14-2	69900	10000	6990	1000			
+Freon 116	76-16-4	28200	5000	2820	500			
+Freon 12	75-71-8	49500	10000	4950	1000			
+Freon 123	306-83-2	5500	---	550	---			
+Freon 125	354-33-6	24540	5000	2454	500			
+Freon 12B2	75-61-6	8580	1000	858	100			
+Freon 13B1	75-63-8	61000	10000	6100	1000			
+Freon 14	75-73-0	18000	5000	1800	500			
+Freon 141b	1717-00-6	4350	---	435	---			
+Freon 142b	75-68-3	61700	18750	6170	1875			
+Freon 143a	420-46-2	17140	5000	1714	500			
+Freon 152A	75-37-6	13500	5000	1350	500			
+Freon 21	75-43-4	420	100	42	10			
+Freon 22	75-45-6	18000	5000	1800	500			
+Freon 23	75-46-7	14300	5000	1430	500			
+Freon 32	75-10-5	10630	5000	1063	500			
+Freon 41	593-53-3	6960	5000	696	500			
+Freon TE	-------	68300	---	6830	---			
+Freon TF	76-13-1	38000	5000	3800	500			
+Freon TMS	-------	28300	---	2830	---			
+fuel oils	-------	1000	140	100	14			
+furan**	110-00-9	280	100	28	10			
+furanone	-------	600	---	60	---			
+"furans, chlorinated, dibenzo-"	-------	use TCDD toxicity equivalents approach						
+furatone	794-93-4	50	---	5	---			
+furfural	98-01-1	79	20	8	2			
+furfuryl alcohol	98-00-0	400	100	40	10			
+gallium arsenide (as As)	1303-00-0	0.1	---	0.01	---			
+Garlon 3A	57213-61-9	40	---	4	---			
+"gasoline additives, mist"	-------	50	---	5	---			
+"gasoline additives, vapor"	-------	3000	---	300	---			
+"gasoline, < 0.9% benzene"	8006-61-9	3500	1180	350	118			
+germanium tetrahydride	7782-65-2	6.3	2	0.63	0.2			
+glutaraldehyde	111-30-8	2	0.5	0.2	0.05			
+"glycerin mist, respirable"	56-81-5	50	---	5	---			
+glycidol	556-52-5	61	20	6.1	2			
+"glycidyl ether, C10"	-------	800	---	80	---			
+glycolonitrile	107-16-4	50	20	5	2			
+glyoxal	107-22-2	70	---	7	---			
+glyoxylic acid	298-12-4	75	---	7.5	---			
+Glyphosate	38641-30-6	50	---	5	---			
+"grain dust, total (oats, wheat, barley)"	-------	40	---	4	---			
+"graphite, natural, respirable "	7782-42-5	20	---	2	---			
+"graphite, synthetic, respirable"	7782-42-5	20	---	2	---			
+guaifenesin	93-14-1	100	---	10	---			
+guthion	86-50-0	2	---	0.2	---			
+gylcidyl methacrylate	106-91-2	580	100	58	10			
+"gypsum, respirable"	7778-18-9	50	---	5	---			
+hafnium	7440-58-6	5	---	0.5	---			
+HALAR not containing NiO	-------	40	---	4	---			
+halothane	151-67-7	162	20	16	2			
+HCFC-124	2837-89-0	27900	5000	2790	500			
+helium	7440-59-7	simple asphyxiant						
+hemimellitene	526-73-8	1250	250	125	25			
+Heptachlor	76-44-8	0.5	---	0.05	---			
+Heptachlor epoxide	1024-57-3	0.5	---	0.05	---			
+"heptal chloride, n- (odor)"	-------	60	---	6	---			
+heptane                  	142-82-5	3500	850	350	85			
+heptanoic acid (odor)	111-14-8	108	---	10.8	---			
+"heptanone, 2- (odor)"	110-43-0	94	20	9.4	2			
+"heptanone, 3-"	106-35-4	2340	500	234	50			
+heptene (odor)                    	-------	16	---	1.6	---			
+heptyl alcohol (odor)          	111-70-6	1900	400	190	40			
+heptyl aldehyde (odor)         	111-71-7	240	50	24	5			
+heptylmercaptan (odor)            	1639-09-4	1	---	0.1	---			
+hexachlorobenzene       	118-74-1	0.25	---	0.025	---			
+hexachlorobutadiene       	87-68-3	2.1	0.2	0.21	0.02			
+hexachlorobutene           	-------	24	---	2.4	---			
+"hexachlorocyclohexane, gamma-"	58-89-9	5	---	0.5	---			
+hexachlorocyclopentadiene 	77-47-4	1.1	0.1	0.11	0.01			
+hexachloroethane           	67-72-1	97	10	9.7	1			
+hexachloronaphthalene       	1335-87-1	2	---	0.2	---			
+hexachloropropene          	1888-71-7	60	---	6	---			
+hexadecyl mercaptan	2917-26-2	53	5	5.3	0.5			
+hexadiene (odor)	42296-74-2	1675	500	167.5	50			
+hexafluoroacetone         	648-16-2	7	1	0.7	0.1			
+hexafluoroethane	76-16-4	28200	5000	2820	500			
+hexafluoroisobutylene      	-------	34	---	3	---			
+hexamethyl disilizane     	999-97-3	200	---	20	---			
+hexamethylene diamine (odor)     	124-09-4	3.2	0.7	0.32	0.07			
+hexamethylene diisocyanate	822-06-0	0.34	0.05	0.034	0.005			
+hexamethylene diisocyanate polymer	28182-81-2	4	0.2	0.4	0.02			
+hexamethylene glycol      	629-11-8	750	---	75	---			
+hexamethyleneimine       	111-49-9	100	25	10	2.5			
+hexamethylenetetramine   	100-97-0	170	---	17	---			
+"hexane, n-               "	110-54-3	1760	500	176	50			
+"hexane, other isomers           "	-------	3500	1000	350	100			
+"hexanediamine, 1,6- (odor)"	124-09-4	3.2	0.7	0.32	0.07			
+hexanitrostilbene	20062-22-0	20	---	1	---			
+hexanoic acid (odor)	142-62-9	29	6	2.9	0.6			
+"hexanone, 2-"	591-78-6	40	10	4	1			
+Hexazinone	51235-04-2	50	---	5	---			
+hexene (odor)	592-41-5	70	20	7	2			
+hexone	108-10-1	2050	500	205	50			
+"hexyl acetate, sec- (odor)"	108-84-9	412	70	41.2	7			
+hexyl alcohol (odor)	111-27-3	42	---	4.4	---			
+hexyl bromide             	111-25-1	135	20	14	2			
+hexyl mercaptan            	111-31-9	27	5	2.7	0.5			
+hexylene glycol          	107-41-5	1210	250	121	25			
+HFC-134A	811-97-2	20860	5000	2086	500			
+HFC-245fa	460-73-1	27400	5000	2740	500			
+HFC-365mfc	406-58-6	30260	5000	3026	500			
+hydramethylnon	67485-29-4	14	---	1.4	---			
+hydraulic oil  	-------	1000	---	100	---			
+hydrazine**                	302-01-2	0.13	0.1	0.013	0.01			
+hydrazoic acid (N3H)      	7782-79-8	1.8	1	0.18	0.1			
+hydrogen                    	1333-74-0	simple asphyxiant                  						
+hydrogen bromide**           	10035-10-6	99	30	10	3			
+"hydrogen chloride*,**         "	7647-01-0	75	50	0.1	---			
+hydrogen cyanide**           	74-90-8	50	4.7	5	0.47			
+hydrogen fluoride** (3hr)	7664-39-3	4.9	5.6	0.5	0.56			
+hydrogen iodide           	10034-85-2	150	30	15	3			
+hydrogen peroxide          	7722-84-1	14	10	1.4	1			
+hydrogen selenide**      	7783-07-5	1.6	0.5	0.16	0.05			
+hydrogen sulfide**            	7783-06-4	TNRCC Reg II						
+hydrogenated terphenyls    	37275-59-5	50	5	5	0.5			
+hydroquinone               	123-31-9	20	---	2	---			
+hydroquinone monomethyl ether	150-76-5	50	---	5	---			
+1-(2-hydroxyethyl)-2-(tall oil-alkyl)-2-imidazoline	61791-39-7	50	---	5	---			
+4-hydroxy-4-methyl-2-pentanone (odor)	123-42-2	1330	280	133	28			
+hydroxy-2-phenyl acetophenone	119-53-9	3440	396	344	40			
+"hydroxyacetophenone oxime, 4-"	-------	1250	---	125	---			
+"hydroxyacetophenone, 2-  "	118-93-4	1250	---	125	---			
+"hydroxyacetophenone, 4- "	99-93-4	2500	---	250	---			
+"hydroxyanisole, p-"	150-76-5	50	---	5	---			
+"hydroxyethyl acrylate, 2-      "	-------	50	---	5	---			
+hydroxyethyl ethylenediamine	111-64-1	640	150	64	15			
+"hydroxyethyl methacrylate, 2-       "	868-77-9	3170	595	317	60			
+hydroxyethylethylene urea 	-------	100	---	10	---			
+hydroxylamine	7803-49-8	22	---	2.2	---			
+hydroxymethyl amino-nitrofurylethenyltriazine	794-93-4	50	---	5	---			
+hydroxypivaldehyde       	-------	1800	---	180	---			
+"hydroxypivalyl hydroxypivalate, particulate"	1115-20-4	50	---	5	---			
+"hydroxypropyl acrylate, 2-     "	999-61-1	28	5	2.8	0.5			
+hydroxypropyl methacrylate        	-------	90	---	9	---			
+hydroxyquinone	123-31-9	20	---	2	---			
+IBIB	97-85-8	3000	490	300	49			
+Ibuprofen	15687-27-1	40	---	4	---			
+Imidacloprid	105827-78-9	33	---	3.3	---			
+"iminobispropylamine, 3,3'-"	56-18-8	60	11	6	1			
+indene (odor)                 	95-13-6	71	15	7.1	1.5			
+indium & compounds (as In)	7740-74-6	1	---	0.1	---			
+iodine                     	7553-56-2	10	1	1	0.1			
+iodoform (odor)                    	75-47-8	6	0.36	0.6	0.036			
+iodopropynyl butyl carbamate   	-------	100	---	10	---			
+Iprodione                 	36734-19-7	50	---	5	---			
+Irganox	-------	100	---	10	---			
+iron oxide (fume)          	1309-37-1	50	---	5	---			
+iron pentacarbonyl** (as Fe)          	13463-40-6	8	1	0.8	0.1			
+"iron salts, soluble        "	-------	10	---	1	---			
+isatoic anhydride	118-48-9	100	---	10	---			
+isoamyl acetate (odor)        	123-92-2	133	25	13.3	2.5			
+isoamyl alcohol (odor)         	123-51-3	151	42	15	4.2			
+isoamyl ketone           	-------	1000	---	100	---			
+"isoamylene, a- or ß- (odor)"	563-45-1	715	250	72	25			
+isobutane (odor)                	75-28-5	4845	---	484.5	---			
+isobutanolamine           	124-68-5	400	---	40	---			
+isobutene (odor)                	115-11-7	1403	---	140	---			
+isobutyl acetate (odor)         	110-19-0	630	132	63	13.2			
+isobutyl acrylate (odor)        	106-63-8	11	---		---			
+isobutyl alcohol         	78-83-1	1520	500	152	50			
+isobutyl heptyl ketone   	123-17-1	3750	500	375	50			
+isobutyl isobutyrate   	97-85-8	3000	490	300	49			
+isobutyl methacrylate    	97-86-9	1900	330	190	33			
+isobutylamine             	78-81-9	150	50	15	5			
+isobutyraldehyde (odor)         	78-84-2	138	---	13.8	---			
+isobutyric acid (odor)          	79-31-2	3.6	1	0.36	0.1			
+isobutyronitrile**          	78-82-0	220	80	22	8			
+isocyanobenzotrifluoride 	71121-36-3	0.38	---	0.038	---			
+isodecyl acrylate	1330-61-6	550	---	55	---			
+isodecyl methacrylate	29964-84-9	8000	860	800	86			
+Isodrin	465-73-6	3.2	---	0.32	---			
+isoheptane               	-------	3070	750	307	75			
+isoheptyl alcohol        	-------	2700	---	270	---			
+isohexane (odor)	107-83-5	289	---	28.9	---			
+isononyl alcohol         	-------	2700	---	270	---			
+isooctane	540-84-1	3500	750	350	75			
+isooctyl alcohol         	26952-21-6	2660	500	266	50			
+isooctyl thioglycolate	25103-09-7	30	---	3	---			
+"Isopar C,E                  "	-------		4000		400			
+"Isopar G,H,K,L,M            "	-------		3000		300			
+isopentane	78-78-4	3500	1200	350	120			
+isopentanoic acid (odor)	503-74-2	11	2.6	1.1	0.26			
+isopentyl nitrite	110-46-3	100	20	10	2			
+isophorone                	78-59-1	230	40	23	4			
+isophorone diisocyanate**  	4098-71-9	0.45	0.05	0.045	0.005			
+isoprene (odor)       	78-79-5	14	5	1.4	0.5			
+isopropanolamine	78-96-6	200	---	20	---			
+isopropanolamine dodecylbenzene sulfonate    	-------	20	---	2	---			
+isopropoxyethanol	109-59-1	220	50	22	5			
+isopropyl acetate   (odor)      	108-21-4	3755	900	375.5	90			
+isopropyl alcohol (odor)       	67-63-0	7856	3195	785	320			
+isopropyl benzene (odor)	98-82-8	500	100	50	10			
+isopropyl chloride  	75-29-6	15000	---	1500	---			
+isopropyl ether (odor)         	108-20-3	71	---	7.1	---			
+isopropyl glycidyl ether	4016-14-2	2380	500	238	50			
+isopropyl methylthionocarbamate	20753-31-5	100	---	10	---			
+isopropyl phenol          	88-69-7	190	---	19	---			
+isopropyl pyridine        	-------	150	---	15	---			
+isopropylamine            	75-31-0	120	50	12	5			
+isopropylaniline          	768-52-5	110	20	11	2			
+isovaleraldehyde                  	590-86-3	1800	510	180	51			
+isovaleric acid (odor)           	503-74-2	11	2.6	1.1	0.26			
+Jeffamine D-230           	-------	180	---	18	---			
+Jeffamine ED-600          	-------	500	---	50	---			
+jet fuel	-------	1000	---	100	---			
+"kaolin, respirable"	1332-58-7	20	---	2	---			
+Kelthane                   	115-32-2	10	---	1	---			
+Kepone                   	143-50-0	0.01	---	0.001	---			
+kerosene                 	8008-20-6	1000	140	100	14			
+ketene                    	463-51-4	9	5	0.9	0.5			
+Kleen ATMS	-------	10000	---	1000	---			
+lactic acid                	50-21-5	50	---	5	---			
+Lactofen	77501-63-4	50	---	5	---			
+lactol spirits           	64742-89-8	3500	---	350	---			
+lactose	63-42-3	100	---	10	---			
+Laktane                  	-------	3500	---	350	---			
+lanthanum oxide	1312-81-8	50	---	5	---			
+Lasiocarpine	303-34-4	29	---	2.9	---			
+latex                     	-------	100	---	10	---			
+lauric acid (odor)	143-07-7	28	---	2.8	---			
+lauryl amine              	124-22-1	100	---	10	---			
+lauryl mercaptan           	112-55-0	41	5	4	0.5			
+lead                      	7439-92-1	must meet NAAQS						
+lead arsenate (as As)  	7784-40-9	0.1	---	0.01	---			
+lead chromate (as Cr)  	7758-97-6	0.1	---	0.01	---			
+Ligroine	8032-32-4	3500	875	350	88			
+"limestone, respirable"	1317-65-3	50	---	5	---			
+Lindane                     	58-89-9	5	---	0.5	---			
+Linuron                   	330-55-2	40	---	4	---			
+liquid detergent           	-------	50	---	5	---			
+liquid plastic             	-------	50	---	5	---			
+liquid resins              	-------	50	---	5	---			
+liquified petroleum gas	68746-85-7	18000	10000	1800	1000			
+lithium hydride          	7580-67-0	0.25	---	0.025	---			
+lithium hydroxide          	1310-65-2	10	---	1	---			
+lithium oxide              	12057-24-8	10	---	1	---			
+lube oil and additives     	-------	1000	---	100	---			
+Lupersols	-------	100	---	10	---			
+"magnesite, respirable                  "	546-93-0	50	---	5	---			
+magnesium chloride        	7786-30-3	100	---	10	---			
+"magnesium oxide (fume), respirable    "	1309-48-4	50	---	5	---			
+Malathion                 	121-75-5	50	---	5	---			
+maleic acid                	110-16-7	14	---	1.4	---			
+maleic anhydride           	108-31-6	10	2.5	1	0.25			
+maleic hydrazide        	123-33-1	1000	218	100	22			
+malononitrile              	109-77-3	80	30	8	3			
+maneb    	12427-38-2	2	---	0.2	---			
+manganese cyclopentadienyl tricarbonyl       	12079-65-1	1	---	0.1	---			
+manganese dust & inorganic compounds 	7439-96-5	2	---	0.2	---			
+manganese fume             	7439-96-5	2	---	0.2	---			
+"marble, respirable             "	1317-65-3	50	---	5	---			
+Melphalan	148-82-3	0.2	---	0.02	---			
+"menthane-1,8-diamine, p-"	80-52-4	20	3	2	0.3			
+MAPP     	59355-75-8	16400	10000	1640	1000			
+"Mepiquat chloride, particulate         "	24307-26-4	50	---	5	---			
+mercaptobenzothiazole	149-30-4	35	---	3.5	---			
+mercury aryl compounds	--------	1	---	0.1	---			
+mercury metal & inorganic forms 	--------	0.25	---	0.025	---			
+"mercury, alkyls           "	7439-97-6	0.1	---	0.01	---			
+"mercury, vapor"	--------	0.25	---	0.025	---			
+mesityl oxide (odor)             	141-79-7	204	51	20.4	5.1			
+mesitylene	108-67-8	1250	250	125	25			
+Metalaxyl                 	57837-19-1	50	---	5	---			
+methacrolein	78-85-3	3.7	1.3	0.37	0.13			
+methacrylamide	79-39-0	10	---	1	---			
+methacrylic acid          	79-41-4	700	20	70	2			
+methacrylonitrile**	126-98-7	27	10	2.7	1			
+methacryloxyethyl ethylene urea    	-------	100	---	10	---			
+methane                     	74-82-8	simple asphyxiant						
+methanesulfonic acid	75-75-2	100	---	10	---			
+methanethiol** (odor)	74-93-1	2	1	0.2	0.1			
+methapyrilene	91-80-5	38	---	3.8	---			
+Methomyl   	16752-77-5	25	---	2.5	---			
+"methoxy-1-propanol, 2-"	1589-47-5	188	50	18.8	5			
+methoxybenzene	100-66-3	100	22	10	2.2			
+"Methoxychlor, respirable              "	72-43-5	50	---	5	---			
+"methoxyethane, 1,2-"	110-71-4	220	60	22	6			
+"methoxyethanol acetate, 2-"	110-49-6	240	50	24	5			
+"methoxyethanol, 2-"	109-86-4	160	50	16	5			
+"methoxyethyl acetate, 2-"	110-49-6	240	50	24	5			
+methoxyflurane	76-38-0	135	20	13.5	2			
+"methoxyphenol, 4-"	150-76-5	50	---	5	---			
+"methoxypropionitrile, 3-     "	110-67-8	2000	---	200	---			
+"methoxy-1-propyl acetate, 2-"	70657-70-4	275	50	27.5	5			
+"methoxypropylamine, 3-    "	-------	370	---	37	---			
+methyl 2-cyanoacrylate       	137-05-3	91	20	9.1	2			
+methyl acetate           	79-20-9	6060	2000	606	200			
+methyl acetoacetate      	105-45-3	3000	---	300	---			
+methyl acetylene        	74-99-7	16400	10000	1640	1000			
+methyl acetylene-propadiene mixture	59355-75-8	16400	10000	1640	1000			
+methyl acrylate (odor)   	96-33-3	58	17	5.8	1.7			
+methyl alcohol           	67-56-1	2620	2000	262	200			
+methyl amyl acetate (odor)      	108-84-9	412	70	41.2	7			
+methyl amyl alcohol (odor)  	108-11-2	292	70	29.2	7			
+"methyl amyl ether, n- (odor)"	628-80-8	520	125	52	12.5			
+"methyl amyl ether, tert- (odor)"	984-05-2	520	125	52	12.5			
+methyl amyl ketone (odor)         	110-43-0	94	20	9.4	2			
+methyl aniline             	100-61-8	22	5	2.2	0.5			
+methyl benzoate	93-58-3	160	30	16	3			
+methyl bromide**             	74-83-9	117	30	12	3			
+methyl butyraldehyde	590-86-3	1800	510	180	51			
+methyl butyrate (odor)           	623-42-7	8.5	---	0.9	---			
+methyl Cellosolve	109-86-4	160	50	16	5			
+methyl chloride            	74-87-3	1030	500	103	50			
+methyl chloroform	71-55-6	10800	2000	1080	200			
+methyl chloroformate**        	79-22-1	2	0.52	0.2	0.052			
+"methyl cumene, p-"	99-87-6	2745	500	275	50			
+methyl cyclohexane      	108-87-2	16100	4000	1610	400			
+methyl cyclohexanol        	25639-42-3	2340	500	234	50			
+"methyl cyclohexanone, o-      "	583-60-8	2290	500	229	50			
+methyl cyclohexene	1335-86-0	940	240	94	24			
+methyl cyclopentadienyl manganese tricarbonyl (as Mn)        	12108-13-3	2	---	0.2	---			
+methyl cyclopentane      	96-37-7	2580	750	258	75			
+methyl demeton              	8022-00-2	5	---	0.5	---			
+methyl dichlorosilane	75-54-7	7.5	1.6	0.75	0.16			
+methyl diethanolamine     	105-59-9	500	100	50	10			
+methyl disulfide (odor)          	-------	22	---	2.2	---			
+methyl ethanolamine      	109-83-1	140	45	14	4.5			
+methyl ether	115-10-6	19100	10000	1910	1000			
+methyl ethyl aniline      	-------	100	---	10	---			
+"methyl ethyl benzene, all isomers"	-------	1250	250	125	25			
+methyl ethyl ketone (odor)      	78-93-3	3900	1320	390	132			
+methyl ethyl ketone peroxide        	1388-23-4	15	2	1.5	0.2			
+methyl formamide           	123-39-7	110	45	11	4.5			
+methyl formate           	107-31-3	2500	1000	250	100			
+"methyl furan, 2-          "	534-22-5	550	---	55	---			
+methyl glutaronitrile	4553-62-2	84	19	8.4	1.9			
+methyl heptane	540-84-1	3500	750	350	75			
+"methyl hexane, 2-"	-------	3070	750	307	75			
+methyl hexyl ketone	111-13-7	5100	970	510	97			
+methyl hydrazine**         	60-34-4	0.19	0.1	0.019	0.01			
+methyl indenes            	-------	470	---	47	---			
+methyl iodide              	74-88-4	120	20	12	2			
+methyl isoamyl ketone (odor)     	110-12-3	56	12	5.6	1.2			
+methyl isobutyl carbinol (odor)   	108-12-3	292	70	29.2	7			
+methyl isobutyl ketone	108-10-1	2050	500	205	50			
+methyl isobutyrate	547-63-7	100	---	10	---			
+methyl isocyanate**        	624-83-9	0.47	0.2	0.047	0.02			
+methyl isopropyl ketone  	563-80-4	7050	2000	705	200			
+"methyl isopropylbenzene, 4-"	99-87-6	2745	500	275	50			
+methyl isothiocyanate	556-61-6	1	---	0.1	---			
+methyl mercaptan** (odor)           	74-93-1	2	1	0.2	0.1			
+methyl methacrylate (odor)       	80-62-6	339	83	33.9	8.3			
+methyl morpholine         	109-02-4	350	---	35	---			
+methyl mustard oil	556-61-6	1	---	0.1	---			
+"methyl naphthalenes, a-* [odor]            "	90-12-0	58	---	5.8	---			
+"methyl naphthalenes, ß-* (odor)           "	91-57-6	58	---	5.8	---			
+methyl n-butyl ketone      	591-78-6	40	10	4	1			
+Methyl parathion            	298-00-0	2	---	0.2	---			
+"methyl pentane, 2- (odor)"	107-83-5	289	---	28.9	---			
+"methyl pentane, 3-"	96-14-0	3500	1000	350	100			
+methyl phenyl ether	100-66-3	100	22	10	2.2			
+methyl phosphonic dichloride          	676-97-1	3	---	0.3	---			
+methyl propionate         	554-12-1	367	---	37	---			
+methyl propyl ketone	107-87-9	5300	1500	530	150			
+"methyl pyrrolidine, N-   "	102-94-5	70	---	7	---			
+methyl silicate            	681-84-5	60	10	6	1			
+"methyl styrene, a-    "	98-83-9	250	52	25	5.2			
+methyl sulfide (odor)	75-18-3	3	---	0.3	---			
+methyl t-butyl ether* (odor)      	1634-04-4	450	125	45	12.5			
+methyl trichlorosilane**   	75-79-6	14	2.3	1.4	0.23			
+methyl vinyl ketone	78-79-4	6	2	0.6	0.2			
+"methyl-2-pentanol, 4- (odor)   "	108-11-2	292	70	29.2	7			
+"methyl-2-propenenitrile**, 2-       "	126-98-7	27	10	2.7	1			
+"methyl-2-pyrrolidone, N- "	872-50-4	800	200	80	20			
+"methyl-3-heptanone, 5-"	541-85-5	1310	250	131	25			
+methyl-3-methoxy proprionate	3852-09-3	140	28	14	2.8			
+"methyl-5-ethylpyridine, 2- (odor)      "	104-90-5	4	---	0.4	---			
+methylacrylonitrile**	126-98-7	27	10	2.7	1			
+methylal	109-87-5	31100	10000	3110	1000			
+methylamine**               	74-89-5	64	50	6.4	5			
+methylaziridine** 	75-55-8	50	20	5	2			
+methylbenzyl alcohol     	589-18-4	600	120	60	12			
+"methylbutyl acetate, 3- (odor)  "	-------	27	---	2.7	---			
+methylene bis(2-chloroaniline)  	101-14-4	1.1	0.1	0.11	0.01			
+"methylene bis(4,4'-cyclohexylamine)"	19900-65-3	100	---	10	---			
+methylene bis(4-cyclohexylisocyanate) 	5124-30-1	0.54	0.05	0.054	0.005			
+methylene bisphenyl diioscyanate	101-68-8	0.51	0.05	0.051	0.005			
+"methylene bisphenyl diioscyanate, polymer"	9016-87-9	3	0.2	0.3	0.02			
+methylene bromide        	74-95-3	1320	---	132	---			
+methylene chloride         	75-09-2	260	75	26	7.5			
+methylene chlorobromide	74-97-5	10600	2000	1060	200			
+"methylene dianiline, 4,4'-       "	101-77-9	8.1	1	0.81	0.1			
+"methylimidazole, 1-"	616-47-7	100	---	10	---			
+"methylimidazole, 2-"	693-98-1	100	---	10	---			
+"methylimidazole, 4-"	822-36-6	50	---	5	---			
+methylmaleic anhydride	616-02-4	60	15	6	1.5			
+"methyloctanal, 2-"	7786-29-0	1500	258	150	26			
+"methylstyrylphenol, p-    "	-------	140	---	14	---			
+Metolachlor	51218-45-2	100	---	10	---			
+Metribuzin                 	21087-64-9	50	---	5	---			
+Mevinphos                	7786-34-7	0.92	0.1	0.092	0.01			
+mica     	12001-26-2	30	---	3	---			
+milk sugar	63-42-3	100	---	10	---			
+mineral oil mist        	8012-95-1	50	---	5	---			
+mineral spirits	8032-32-4	3500	875	350	88			
+mineral wool fibers       	-------	50	---	5	---			
+molasses                  	-------	100	---	10	---			
+molybdenum  soluble        	7439-98-7	50	---	5	---			
+molybdenum insoluble                	7439-98-7	100	---	10	---			
+monochlorohydrin	96-24-2	50	11	5	1			
+Monocrotophos	6923-22-4	2.5	---	0.25	---			
+morpholine (odor)	110-91-8	36	10	3.6	1			
+"N-(2-hydroxyethyl)-1,2-diaminoethane"	-------	50	---	5	---			
+Naled            	300-76-5	30	---	3	---			
+"naphtha, coal tar"	8030-30-6	3500	875	350	88			
+"naphtha, VM&P"	8032-32-4	3500	875	350	88			
+naphthalene (odor)	91-20-3	440	85	44	8.5			
+naphthalene diisocyanate	25551-28-4	0.4	---	0.04	---			
+"naphthalene diisocyanate, 1,5-"	3173-72-6	0.9	0.1	0.09	0.01			
+naphthenic acid	-------	16000	---	1600	---			
+"naphthoquinone, 1,4-"	130-15-4	1	---	0.1	---			
+"naphthylthiourea, a- "	86-88-4	3	---	0.3	---			
+"naphthylthiourea, beta-"	-------	3	---	0.3	---			
+natural gas condensate  	-------	18000	---	1800	---			
+Neodol	-------	2700	---	270	---			
+neohexane                	75-83-2	3500	1000	350	100			
+neon                        	7440-01-9	simple asphyxiant						
+neopentyl glycol          	126-30-7	500	---	50	---			
+nickel carbonyl**          	13463-39-3	0.15	---	0.015	---			
+nickel oxide              	1313-99-1	0.15	---	0.015	---			
+nickel sulfide            	11113-75-0	0.15	---	0.015	---			
+"nickel sulfide roasting, fume & dust"	-------	0.15	---	0.015	---			
+"nickel, metal & insoluble cpds"	7440-02-0	0.15	---	0.015	---			
+"nickel, soluble compounds"	7440-02-0	0.15	---	0.015	---			
+nicotine                    	54-11-5	5	---	0.5	---			
+"Nitrapyrin, respirable "	1929-82-4	50	---	5	---			
+nitric acid**                	7697-37-2	52	20	5.2	2			
+nitric oxide**              	10102-43-9	310	250	31	25			
+nitrilotriacetic acid	139-13-9	10	---	1	---			
+"nitroaniline, p-               "	100-01-6	30	---	3	---			
+nitrobenzene               	98-95-3	24	5	2.4	0.5			
+"nitrochlorobenzene, p-        "	100-00-5	6.4	1	0.64	0.1			
+nitroethane              	79-24-3	3070	1000	307	100			
+nitroethanol             	625-48-9	3100	---	310	---			
+nitrogen dioxide**           	10102-44-0	must meet NAAQS						
+nitrogen trifluoride	7783-54-2	290	100	29	10			
+nitroglycerin               	55-63-0	1	0.1	0.1	0.01			
+nitromethane              	75-52-5	500	200	50	20			
+"nitrophenol, m-"	554-84-7	40	---	4	---			
+"nitrophenol, o-"	88-75-5	40	---	4	---			
+"nitrophenol, p-"	100-02-7	10	---	1	---			
+"nitropropane, 1-          "	108-03-2	910	250	91	25			
+"nitropropane, 2-           "	79-46-9	50	14	5	1.4			
+nitrosoguanidine	70-25-7	30	---	3	---			
+nitrosomethylvinylamine	4549-40-0	8	---	0.8	---			
+"nitrosomorpholine, N-"	59-89-2	140	30	14	3			
+"nitrotoluene, m-              "	99-08-1	110	20	11	2			
+"nitrotoluene, o-              "	88-72-2	110	20	11	2			
+"nitrotoluene, p-              "	99-99-0	110	20	11	2			
+nitrotrichloromethane	76-06-2	6.7	---	0.67	---			
+nitrous oxide             	10024-97-2	900	500	90	50			
+nonane                  	111-84-2	10500	2000	1050	200			
+nonene (odor)	-------	26	---	2.6	---			
+nonoic acid (odor)  	112-05-0	4.6	---	0.46	---			
+nonyl aldehyde	124-19-6	1500	258	150	26			
+nonyl phenol ethoxylate  	9016-45-9	600	24	60	2.4			
+nonyl phenol propoxylate	9064-15-7	600	---	60	---			
+"nonylmercaptan, n-            "	1455-21-6	33	5	3.3	0.5			
+"nonylphenol, mixed isomers       "	25154-52-3	400	45	40	4.5			
+"nonylphenyl polyethyleneglycol ether, nonionic"	9016-45-9	600	24	60	2.4			
+Norflurazon	27314-13-2	100	---	10	---			
+"Norpar 12, 13, 15           "	------		3000		300			
+octachloronaphthalene       	2234-13-1	1	---	0.1	---			
+octadecenylamine	112-90-3	310	---	31	---			
+octadecyl mercaptan        	2885-00-9	60	5	6	0.5			
+"octadecyl-3,5-di-tert-butyl-4-hydroxyhydrocinnamate       "	------	100	---	10	---			
+"octadiene, 1,7-"	3710-30-3	300	66	30	6.6			
+octane                   	111-65-9	3500	750	350	75			
+octanoic acid (odor)  	124-07-2	48	8	4.8	0.8			
+"octanone, 2-"	111-13-7	5100	970	510	97			
+"octene, 1- (odor)                "	-------	20	---	2	---			
+"octyl alcohol, 1- (odor)"	111-87-5	11	---	1.1	---			
+"octyl alcohol, 2- (odor)     "	123-96-6	13	---	1.3	---			
+octyl amine                	-------	60	11	6	1			
+octyl epoxy tallate	61789-01-3	1000	---	100	---			
+octyl mercaptan            	111-88-6	30	5	3	0.5			
+octyl phenol               	27193-28-8	20	---	2	---			
+"octyl pyrrolidone, N-     "	2687-94-7	100	---	10	---			
+"oil mist, mildly refined containing PAHs"	-------	2	---	0.2	---			
+"oil mist, mineral, severely refined"	8012-95-1	50	---	5	---			
+"oil, crude (vapor)     "	8002-05-9	3500	570	350	57			
+"oil, hydraulic           "	-------	1000	---	100	---			
+"oil, lube (vapor)              "	-------	1000	---	100	---			
+"oils (misc., particulate)               "	-------	100	---	10	---			
+"oils (misc., vapor)               "	-------	1000	---	100	---			
+"oils, fuel               "	77650-28-3	1000	188	100	19			
+oleic acid                	112-80-1	100	---	10	---			
+oleic diethanol amide      	93-83-4	20	---	2	---			
+Orthene	30560-19-1	70	---	7	---			
+osmium tetroxide        	20816-12-0	0.016	0.002	0.0016	0.0002			
+Ovasyn       	33089-61-1	35	---	3.5	---			
+oxalic acid                	144-62-7	10	---	1	---			
+Oxinol             	-------	4570	---	457	---			
+oxo-hexyl acetate	88230-35-7	2750	---	275	---			
+"oxybis(N,N-dimethylethylamine)"	3033-62-3	3.3	0.5	0.33	0.05			
+Oxyfluorfen	42874-03-3	16	---	1.6	---			
+oxygen difluoride**  (also evaluate HF) 	7783-41-7	0.55	0.25	0.055	0.025			
+oxylated glycol ester	-------	190	---	19	---			
+ozone**                       	10028-15-6	must meet NAAQS						
+paraffin oil	8012-95-1	50	---	5	---			
+paraffin wax fume          	8002-74-2	20	---	2	---			
+paraformaldehyde  	30525-89-4	60	---	6	---			
+paraldehyde	123-63-7	440	80	44	8			
+Paraquat 	4685-14-7	1	---	0.1	---			
+Parathion                 	56-38-2	0.5	---	0.05	---			
+parrafinic distillate	64741-89-5	50	---	5	---			
+pelargonic acid (odor)	112-05-0	4.6	---	0.46	---			
+Pendimethalin             	40487-42-1	100	---	10	---			
+pentaborane**              	19624-22-7	0.13	0.05	0.013	0.005			
+pentachlorobenzenes      	-------	1000	---	100	---			
+pentachloroethane         	76-01-7	400	50	40	5			
+pentachloronaphthalene      	1321-64-8	5	---	0.5	---			
+pentachloronitrobenzene     	82-68-8	5	---	0.5	---			
+pentachlorophenol           	87-86-5	5	---	0.5	---			
+pentachloropyridine	2176-62-7	80	---	8	---			
+"pentadiene, 1,3-"	504-60-9	1800	---	180	---			
+"pentadiene, all isomers  "	-------	1800	---	180	---			
+pentaerthryitol tetranitrate	78-11-5	50	---	5	---			
+pentaerthyritol triacrylate       	3524-68-3	10	---	1	---			
+"pentaerythritol, respirable            "	115-77-5	50	---	5	---			
+pentaethylene hexamine    	4067-16-7	625	---	62.5	---			
+pentafluorobutane	406-58-6	30260	5000	3026	500			
+pentafluoroethane	354-33-6	24540	5000	2454	500			
+pentafluoropropane	460-73-1	27400	5000	2740	500			
+pentamethylene diamine    	-------	200	---	20	---			
+pentane                  	109-66-0	3500	1200	350	120			
+pentanedione (odor) 	123-54-6	41	8	4	0.8			
+"pentanone, 2- "	107-87-9	5300	1500	530	150			
+"pentene nitrile, 3-        "	4635-87-4	70	---	7	---			
+"pentene, all isomers (odor)"	------	90	30	9	3			
+pentylmercaptan (odor)	110-66-7	0.1	0.02	0.01	0.002			
+perchloroethylene               	127-18-4	340	50	34	5			
+perchloromethyl mercaptan** 	594-42-3	7.5	1	0.8	0.1			
+"perchloryl fluoride** (as HF, 3 hr)  "	7616-94-6	4.9	5.6	0.5	0.56			
+perfluoro compounds	86508-42-1	200	---	20	---			
+perfluoroethane 	76-16-4	28200	5000	2820	500			
+perfluoroisobutylene     	382-21-8	0.82	0.1	0.082	0.01			
+"perlite, respirable                  "	93763-70-3	50	---	5	---			
+Permethrin	52645-53-1	50	---	5	---			
+peroxydisulfuric acid      	-------	10	---	1	---			
+"persulfates, particulate"	------	10	---	1	---			
+"petroleum coke, calcined            "	-------	100	---	10	---			
+"petroleum coke, uncalcined (green) if PAH content is < 10,000 ppm        "	64741-79-3	50	---	5	---			
+petroleum distillates	-------	3500	875	350	88			
+petroleum ether	8030-30-6	3500	875	350	88			
+petroleum jelly 	-------	100	---	10	---			
+petroleum oil (vapor)	8002-05-9	3500	570	350	57			
+petroleum spirits	8032-32-4	3500	875	350	88			
+petroleum wax             	-------	100	---	10	---			
+phenacyl chloride	532-27-4	3.2	0.5	0.32	0.05			
+phenanthrene	85-01-8	0.5	---	0.05	---			
+"phenetidine, p-           "	156-43-4	150	---	15	---			
+phenetole	103-73-1	130	26	13	3			
+phenol (odor)                    	108-95-2	154	40	15.4	4			
+phenol/formaldehyde resin  	-------	28	---	3	---			
+phenothiazine              	92-84-2	50	---	5	---			
+phenyl ether (odor)               	101-84-8	8	1.1	0.8	0.11			
+phenyl ethyl alcohol      	60-12-8	500	---	50	---			
+phenylethylene (odor)	100-42-5	110	25	11	2.5			
+phenyl ethyl ether	103-73-1	130	26	13	3			
+phenyl glycidyl ether	122-60-1	60	10	6	1			
+phenyl hydrazine          	100-63-0	4.4	1	0.44	0.1			
+phenyl isocyanate	103-71-9	5	---	0.5	---			
+phenyl isothiocyanate	-------	0.5	---	0.05	---			
+phenyl mercaptan (odor)           	108-98-5	4	0.9	0.4	0.09			
+phenyl methyl acetate	140-11-4	600	100	60	10			
+"phenylene diamine, m-       "	108-45-5	1	---	0.1	---			
+"phenylene diamine, o-       "	95-54-5	1	---	0.1	---			
+"phenylene diamine, p-       "	106-50-3	1	---	0.1	---			
+phenylethylene (odor)	100-42-5	215	50	21.5	5			
+phenylphosphine           	638-21-1	2.3	0.5	0.23	0.05			
+phenylpropyl alcohol    	122-97-4	1100	---	110	---			
+phenylthiourea	103-85-5	4	---	0.4	---			
+Phorate                   	298-02-2	0.5	---	0.05	---			
+Phosdrin	7786-34-7	0.92	0.1	0.092	0.01			
+phosgene**                    	75-44-5	4	1	0.4	0.1			
+Phosmet    	732-11-6	20	---	2	---			
+phosphine**                 	7803-51-2	4.2	3	0.42	0.3			
+phosphoric acid            	7664-38-2	10	---	1	---			
+phosphoric fertilizer      	-------	50	---	5	---			
+"phosphorodithioic acid ester, zinc salt "	2929-95-5	1500	---	150	---			
+phosphorous acid           	13598-36-2	10	---	1	---			
+phosphorus (yellow)         	7723-14-0	1	---	0.1	---			
+phosphorus oxychloride**    	10025-87-3	6.3	1	0.63	0.1			
+phosphorus pentasulfide    	1314-80-3	10	---	1	---			
+phosphorus pentoxide	1314-56-3	10	---	1	---			
+phosphorus trichloride**     	7719-12-2	11	2	1.1	0.2			
+phthalate ester	-------	50	---	5	---			
+phthalic acid              	88-99-3	60	---	6	---			
+"phthalic anhydride, particulate         "	85-44-9	10	---	1	---			
+"phthalodinitrile, m-           "	626-17-5	50	---	5	---			
+"Picloram, respirable                  "	1918-02-1	50	---	5	---			
+"picoline, 3-               "	108-99-6	80	21	8	2.1			
+"picoline, 4-               "	108-89-4	46	12	4.6	1.2			
+picric acid (odor)	88-89-1	0.5	---	0.05	---			
+Pindone                     	83-26-1	1	---	0.1	---			
+"pinene, a-              "	---------	64	11	6.4	1.1			
+piperazine                 	110-85-0	35	---	3.5	---			
+piperazine dihydrochloride 	142-64-3	50	---	5	---			
+piperidine**                 	110-89-4	36	10	3.6	1			
+piperylene	504-60-9	1800	---	180	---			
+pivalic acid              	72-98-9	250	---	25	---			
+pivaloyl chloride          	3282-30-2	40	---	4	---			
+"pivaloyl-1,3-indaione, 2-"	83-26-1	1	---	0.1	---			
+"Plaster of Paris, respirable          "	10101-41-4	50	---	5	---			
+plastic dust               	-------	50	---	5	---			
+"platinum, metal                     "	7440-06-4	10	---	1	---			
+"platinum, soluble salts  "	7440-06-4	0.02	---	0.002	---			
+poly(1-vinyl-2-pyrrolidinone)	9003-39-8	100	---	10	---			
+polybutenes	-------	5000	---	500	---			
+polychlorinated biphenyls	1336-36-3	0.1	---	0.01	---			
+"polycyclic aromatic HC's, particulate, <10% b(a)p, not otherwise classified*"	------	0.5	---	0.05	---			
+polyethylene	9002-88-4	100	---	10	---			
+"polyethylene glycol 450 nonyl phenyl ether, nonionic surfactant"	9016-45-9	600	24	60	2.4			
+polyethylene glycol monooleate      	-------	200	---	20	---			
+polyethylene glycols (particulate)	25322-68-3	100	---	10	---			
+polyethylene glycols (vapor) 	25322-68-3	1000	---	100	---			
+polyisobutyleneamine	-------	770	---	77	---			
+polyisobutylenes	9003-27-4	5000	---	500	---			
+polymeric hexamethylene diisocyanate	28182-81-2	4	0.2	0.4	0.02			
+polymethylene polyphenylisocyanate	9016-87-9	3	0.2	0.3	0.02			
+polyoxyethylene sorbitol ether  	-------	100	---	10	---			
+polypropylene              	9003-07-0	50	---	5	---			
+polypropylene glycol      	-------	100	---	10	---			
+"polypropylene glycol, vapor"	-------	1000	---	100	---			
+polysaccharides           	-------	100	---	10	---			
+polystyrene               	9003-53-6	100	---	10	---			
+polyurethane 	9009-54-5	20	---	2	---			
+polyvinyl chloride	9002-86-2	50	---	5	---			
+"Portland cement, respirable          "	65997-15-1	50	---	5	---			
+potassium 	7440-09-7	20	---	2	---			
+potassium bromate           	7758-01-2	1	---	0.1	---			
+potassium carbonate        	584-08-7	50	---	5	---			
+potassium hydroxide        	1310-58-3	20	---	2	---			
+potassium permanganate     	7722-64-7	20	---	2	---			
+"potassium persulfate, particulate"	7727-21-1	10	---	1	---			
+PPG-884	77501-63-4	50	---	5	---			
+Primen	68955-53-3	38	---	3.8	---			
+Probe	-------	35	---	3.5	---			
+propane                 	74-98-6	18000	10000	1800	1000			
+Propanil	709-98-8	15	---	1.5	---			
+propargyl alcohol          	107-19-7	23	10	2.3	1			
+Propazine                	139-40-2	100	---	10	---			
+Propiconazole	60207-90-1	65	---	7	---			
+"propiolactone, ß-       "	57-57-8	15	5	1.5	0.5			
+propionaldehyde (odor)	123-38-6	21	---	2.1	---			
+propionic acid (odor)	79-09-4	103	33	10.3	3.3			
+propionic anhydride       	123-62-6	250	---	25	---			
+propionitrile**             	107-12-0	140	60	14	6			
+propiophenone            	93-55-0	190	35	19	3.5			
+Propoxur	114-26-1	5	---	0.5	---			
+propoxyethanol	2807-30-9	1500	250	150	25			
+propyl acetate (odor)         	109-60-4	626	150	62.6	15			
+propyl acrylate (odor)        	925-60-0	50	---	5	---			
+propyl alcohol           	71-23-8	4920	2000	492	200			
+propyl amines             	107-10-8	120	---	12	---			
+propyl bromide	108-94-5	8000	---	800	---			
+propyl chloride         	540-54-5	30000	---	3000	---			
+propyl ether             	111-43-3	2500	600	250	60			
+propyl formate           	110-74-7	6475	---	648	---			
+"propyl mercaptan, n- (odor)"	107-03-9	2.3	0.7	0.23	0.07			
+propyl nitrate           	627-13-4	1070	250	107	25			
+propyl propasol	1569-01-3	1280	265	128	27			
+propyl propionate        	106-36-5	4750	1000	475	100			
+propylene              	115-07-1	117000	68120	---      	---			
+"propylene carbonate, particulate"	108-32-7	100	---	10	---			
+"propylene carbonate, vapor"	108-32-7	500	---	50	---			
+propylene chlorohydrin    	78-89-7	170	---	17	---			
+propylene diamine (odor)   	78-90-0	42	---	4.2	---			
+propylene dichloride (odor)	78-87-5	1150	250	115	25			
+propylene glycol allyl ether	1331-17-5	330	70	33	7			
+propylene glycol dinitrate      	6433-43-4	3	0.5	0.3	0.05			
+propylene glycol isobutyl ether    	23436-19-3	2500	460	250	46			
+propylene glycol isopropyl ether    	110-48-5	2600	540	260	54			
+propylene glycol-2-methyl ether	1589-47-5	188	50	18.8	5			
+propylene glycol-2-methyl ether acetate	70657-70-4	275	50	27.5	5			
+propylene glycol monoethyl ether	1569-02-4	3830	900	383	90			
+propylene glycol monomethyl ether	107-98-2	3690	1000	369	100			
+propylene glycol monomethyl ether acetate	108-65-6	2750	500	275	50			
+propylene glycol mono-n-butyl ether   	10215-33-5	730	135	73	14			
+propylene glycol monopropyl ether	1569-01-3	1280	265	128	27			
+propylene glycol mono-t-butyl ether   	57018-52-7	730	135	73	14			
+propylene glycol phenyl ether	4169-04-4	1860	300	186	30			
+"propylene glycol, particulate"	57-55-6	20	---	2	---			
+"propylene glycol, vapor "	57-55-6	1560	500	156	50			
+propylene imine** 	75-58-8	47	20	4.7	2			
+propylene oxide**           	75-56-9	210	84	21	8.4			
+propyne	74-99-7	16400	10000	1640	1000			
+pseudocumene 	95-63-6	1250	250	125	25			
+PVC	9002-86-2	50	---	5	---			
+pyrene* 	129-00-0	0.5	---	0.05	---			
+Pyrethrum	8003-34-7	50	---	5	---			
+pyridine (odor)	110-86-1	69	23	6.9	2.3			
+"pyridines, alkyl          "	68391-11-7	150	---	15	---			
+pyrocatechol	120-80-9	230	50	23	5			
+pyromelletic acid	89-05-4	2.5	0.24	0.25	0.024			
+pyromelletic dianhydride	-------	2.5	0.28	0.25	0.028			
+pyronaphtha	-------	40	10	4	1			
+pyrrole	109-97-7	21	---	2.1	---			
+"pyrrolidine, 2-"	123-75-1	70	---	7	---			
+"pyrrolidone, 2-"	616-45-5	140	---	14	---			
+quartz*	14808-60-7	1	---	0.1	---			
+quinoline	91-22-5	5	---	0.5	---			
+quinone	106-51-4	4	1	0.4	0.1			
+RDX 	121-82-4	5	---	0.5	---			
+reformate (reformed naphtha)	-------	2000	---	200	---			
+Reserpine	50-55-5	7	---	0.7	---			
+resinol	-------	190	---	19	---			
+resorcinol	108-46-3	450	100	45	10			
+"rhodium, metal & insoluble cpds "	7440-16-6	1	---	0.1	---			
+"rhodium, soluble cpds "	7440-16-6	0.01	---	0.001	---			
+Ronnel	299-84-3	100	---	10	---			
+"rosin core solder, decomposition products"	8050-09-7	1	---	0.1	---			
+Rotenone	83-79-4	50	---	5	---			
+"rouge, respirable"	1309-37-1	50	---	5	---			
+Roundup herbicide	38641-94-0	50	---	5	---			
+rubber dust 	9006-04-6	50	---	5	---			
+rubber solvent	8030-30-6	3500	875	350	88			
+rubidium	7440-17-7	25	---	2.5	---			
+Saccharine	81-07-2	50	---	5	---			
+safrole	94-59-7	350	---	35	---			
+SC-100	-------	1250	---	125	---			
+SC-150	-------	1250	---	125	---			
+"selenious acid, as Se"	-------	2	---	0.2	---			
+selenium & compounds	7782-49-2	2	---	0.2	---			
+"selenium hexafluoride**, (as Se, also evaluate total HF)"	7783-79-1	1.6	0.5	0.16	0.05			
+selenium oxide	-------	2	---	0.2	---			
+"Sesone, respirable"	136-78-7	50	---	5	---			
+Sevin	63-25-2	50	---	5	---			
+silane	7803-62-5	70	50	7	5			
+silica-amorphos: gel & precipitated silica	112926-00-8	40	---	4	---			
+"silica-amorphos: silica fume, respirable"	69012-64-2	20	---	2	---			
+silica-amorphos: silica fused	60676-86-0	0.5	---	0.05	---			
+silica-amorphous: diatomaceous earth	61790-53-2	40	---	4	---			
+"silica-crystalline: cristobalite, respirable*"	14464-46-1	0.5	---	0.05	---			
+"silica-crystalline: quartz, respirable*"	14808-60-7	1	---	0.1	---			
+"silica-crystalline: tridymite, respirable*"	15468-32-3	0.5	---	0.05	---			
+silica-crystalline: tripoli*	1317-95-9	0.5	---	0.05	---			
+"silicate of soda, particulate"	-------	50	---	5	---			
+silicon carbide	409-21-2	40	---	4	---			
+"silicon fluoride (as HF, 3hr)"	7783-61-1	4.9	5.6	0.5	0.56			
+silicon nitride	-------	100	---	10	---			
+silicon tetrabromide	7789-66-4	25	---	2.5	---			
+silicon tetrachloride	10026-04-7	18	---	1.8	---			
+silicon tetrahydride	7803-62-5	70	50	7	5			
+silicon tetraiodide	-------	37	---	3.7	---			
+"silicon, respirable "	7440-21-3	50	---	5	---			
+"silicone, all"	-------	50	---	5	---			
+silver cyanide	506-64-9	0.1	---	0.01	---			
+silver metal	7440-22-4	0.1	---	0.01	---			
+silver nitrate	7761-88-8	0.1	---	0.01	---			
+"silver, soluble compounds"	7440-22-4	0.1	---	0.01	---			
+"soapstone, respirable "	-------	30	---	3	---			
+soda ash	497-19-8	50	---	5	---			
+"sodium acifluorfen, particulate"	62476-59-9	50	---	5	---			
+sodium acrylamido-2-methypropane sulfonic acid	-------	50	---	5	---			
+sodium alumina	-------	20	---	2	---			
+sodium aluminate	1302-42-7	20	---	2	---			
+sodium azide	26628-22-8	2	0.7	0.2	0.07			
+sodium bisulfite	7631-90-5	50	---	5	---			
+sodium borohydride	16940-66-2	1	---	0.1	---			
+sodium chlorate	7775-09-9	50	---	5	---			
+sodium dimethyldithiocarbamate	148-18-5	50	---	5	---			
+"sodium dodecyl benzene sulfonate, particulate"	25155-30-0	100	---	10	---			
+"sodium dodecyl benzene sulfonate, vapor"	25155-30-0	1000	---	100	---			
+sodium fluoroacetate	62-74-8	0.5	---	0.05	---			
+sodium hydrogen carbonate	144-55-8	20	---	2	---			
+sodium hydrosulfide	7775-14-6	140	---	14	---			
+sodium hydroxide	1310-73-2	20	---	2	---			
+sodium hypochlorite	7681-52-9	15	---	1.5	---			
+sodium metabisulfite	7681-57-4	50	---	5	---			
+sodium metasilicate	6834-92-0	50	---	5	---			
+sodium methylate	124-41-4	20	---	2	---			
+"sodium oxide, particulate"	12401-86-4	20	---	2	---			
+sodium perfluroacetate	62-74-8	0.5	---	0.05	---			
+"sodium persulfate, particulate"	7775-27-1	10	---	1	---			
+sodium pyrithione	3811-73-2	10	---	1	---			
+sodium pyrophosphate	7722-88-5	50	---	5	---			
+sodium sulfate	7757-82-6	50	---	5	---			
+sodium thiosulfate	7772-98-7	50	---	5	---			
+sodium xylenesulfonate	1300-72-7	20	---	2	---			
+"sodium, 2,4-dichlorophenoxyethyl sulfate, respirable"	136-78-7	50	---	5	---			
+Sol 100	64742-95-6	1230	250	123	25			
+Solvesso 100	-------	250	---	25	---			
+Solvesso 150	-------	1000	---	100	---			
+soybean oil epoxide	8013-07-8	100	---	10	---			
+"starch, respirable "	9005-25-8	50	---	5	---			
+stearates	-------	100	---	10	---			
+stearyl mercaptan	2885-00-9	60	5	6	0.5			
+Steptozotocin	18883-66-4	69	---	6.9	---			
+stibine**	7803-52-3	5	1	0.5	0.1			
+stilbene	588-59-0	50	---	5	---			
+Stoddard solvent	8052-41-3	3500	667	350	67			
+strontium and compounds	-------	20	---	2	---			
+"strontium chromate, as Cr"	7789-06-2	0.1	---	0.01	---			
+strychnine	57-24-9	1.5	---	0.15	---			
+styrene oxide	96-09-3	309	---	---	---			
+"styrene, monomer (odor)"	100-42-5	110	25	11	2.5			
+Subtilisins	1395-21-7	0.0006	---	0.00006	---			
+succinic anhydride	108-30-5	25	---	2.5	---			
+succinonitrile	110-61-2	200	60	20	6			
+"sucrose, respirable"	57-50-1	50	---	5	---			
+Sulfinol	-------	230	---	23	---			
+sulfolane	126-33-0	20	---	2	---			
+sulfolane raffinate	68410-71-9	3500	1000	350	100			
+sulfometuron methyl	74222-97-2	50	---	5	---			
+"sulfonates, alkyl"	-------	5	---	0.5	---			
+"sulfonates, inorganic"	-------	20	---	2	---			
+Sulfonic N-95	75-22-4	600	---	60	---			
+Sulfotep	3689-24-5	2	---	0.2	---			
+sulfur	7704-34-9	50	---	5	---			
+sulfur chloride (odor) 	10025-67-9	5.6	1	0.56	0.1			
+sulfur dioxide**	7446-09-5	TNRCC Reg II						
+sulfur hexafluoride	2551-62-4	600	---	60	---			
+sulfur monochloride (odor)	10025-67-9	5.6	1	0.56	0.1			
+sulfur pentafluoride** (also evaluate HF)	5714-22-7	0.5	0.1	0.05	0.01			
+sulfur tetrafluoride** (also evaluate HF)	7783-60-0	2.2	0.5	0.22	0.05			
+sulfur trioxide**	7446-11-9	10	---	1	---			
+sulfuric acid	7664-93-9	TNRCC Reg II						
+sulfurized isobutylenes	------	1750	---	175	---			
+sulfuryl chloride	7791-25-5	36	6.5	3.6	0.7			
+sulfuryl fluoride	2699-79-8	210	50	21	5			
+Sulprofos	35400-43-2	10	---	1	---			
+Surfonamine	-------	180	---	18	---			
+Systox	8065-48-3	1	0.1	0.1	0.01			
+"2,4,5-T"	93-76-5	100	---	10	---			
+"2,4,5-TP"	93-72-1	100	---	10	---			
+"Tackle, particulate"	50594-66-6	50	---	5	---			
+talc (no asbestos)	14807-96-6	20	---	2	---			
+talc (with asbestos)	14807-96-6	0.03	---	0.003	---			
+tall oil	-------	100	---	10	---			
+tallow	-------	100	---	10	---			
+tallow diamine	61791-55-7	100	---	10	---			
+tantalum oxide	1314-61-0	50	---	5	---			
+"tantalum, metal "	7440-25-7	50	---	5	---			
+TEDP	3689-24-5	2	---	0.2	---			
+tellurium and cmpds	13494-80-9	1	---	0.1	---			
+tellurium hexafluoride** (as Te)	7783-80-4	2	0.2	0.2	0.02			
+Temephos	3383-96-8	50	---	5	---			
+Tenneco T500-100	-------	2700	550	270	55			
+TEPP	107-49-3	0.47	0.04	0.047	0.004			
+terephthalic acid	100-21-0	100	---	10	---			
+Tergitol TP-9	9016-45-9	600	24	60	2.4			
+terpenes	68956-56-9	2000	---	200	---			
+terpenol	-------	1000	160	100	16			
+terphenyls	26140-60-3	50	5	5	0.5			
+tert-amyl methyl ether (odor)	994-05-8	520	125	52	12.5			
+"tetrabromoethane, 1,1,2,2-"	79-27-6	140	10	14	1			
+"tetrachloro-1,2-difluoroethane,1,1,1,2-"	76-12-0	16900	2000	1690	200			
+"tetrachloro-2,2-difluoroethane,1,1,1,2-"	76-11-9	41700	5000	4170	500			
+tetrachlorobenzenes (odor)	634-66-2	1000	---	100	---			
+"tetrachlorodibenzo-p-dioxin,2,3,7,8-*"	1746-01-6	---	---	3 x 10-8	---			
+"tetrachloroethane, 1,1,2,2-"	79-34-5	70	10	7	1			
+tetrachloroethylene	127-18-4	340	50	34	5			
+tetrachloromethane	56-23-5	126	20	13	2			
+tetrachloronaphthalene	1335-88-2	20	---	2	---			
+"tetrachlorophenol, 2,3,4,6- (odor)"	58-90-2	20	---	2	---			
+tetraethyl ammonium bromide	71-91-0	10	---	1	---			
+tetraethyl lead	78-00-2	0.75	---	0.075	---			
+tetraethylene glycol	112-60-7	100	---	10	---			
+tetraethylene glycol diacrylate	17831-71-9	10	---	1	---			
+tetraethylene pentamine	112-57-2	400	---	40	---			
+tetraethylorthosilicate	78-10-4	850	100	85	10			
+tetraethylpyrophosphate	107-49-3	0.47	0.04	0.047	0.004			
+tetrafluoromethane	75-73-0	18000	5000	1800	500			
+"tetrafluroethane, 1,1,1,2-"	811-97-2	20860	5000	2086	500			
+tetrahydroammonium hydroxide	-------	20	---	2	---			
+tetrahydrofuran	109-99-9	5900	2000	590	200			
+tetrahydronaphthalene	119-64-2	3030	560	303	56			
+tetramethyl decyndiol	9014-85-1	2200	---	220	---			
+tetramethyl lead**	75-74-1	0.75	---	0.075	---			
+tetramethyl succinonitrile	3333-52-6	28	5	2.8	0.5			
+tetramethylammonium hydroxide	75-59-2	10	---	1	---			
+tetramethylene diamine	110-60-1	180	---	18	---			
+tetranitromethane**	509-14-8	0.4	0.05	0.04	0.005			
+tetrapropenylsuccinic anhydride	26544-38-7	40	3.6	4	0.36			
+tetrasodium pyrophosphate	7722-88-5	50	---	5	---			
+terpineol	-------	1000	160	100	16			
+Tetryl	479-45-8	15	---	1.5	---			
+Texacat ZF-10	83016-70-0	210	---	21	---			
+Texacat ZF-20	3033-62-3	3.3	0.5	0.33	0.05			
+Texanol	25265-77-4	835	140	84	14			
+thallic oxide	1314-32-5	1	---	0.1	---			
+thallium & compounds	7440-28-0	1	---	0.1	---			
+"thiobis(6-t-butyl-m-cresol), 4,4'-"	96-69-5	50	---	5	---			
+Thiofanox	39196-18-4	8	---	0.8	---			
+thioglycolic acid (odor)	68-11-1	1.25	0.4	0.125	0.04			
+thionyl chloride	7719-09-7	50	10	5	1			
+thiourea	62-56-6	50	---	5	---			
+Thiram	137-26-8	10	---	1	---			
+"tin compounds: metal, oxide, and inorganic cpds"	7440-31-5	20	---	2	---			
+tin compounds: organic compounds	7440-31-5	1	---	0.1	---			
+"titanium dioxide, respirable"	13463-67-7	50	---	5	---			
+titanium tetrachloride**	755-45-0	10	---	1	---			
+"tolidine, o-"	119-93-7	0.2	---	0.02	---			
+toluene	108-88-3	1880	500	188	50			
+toluene sulfonyl chloride	-------	50	---	5	---			
+"toluene-2,4-diamine"	95-80-7	50	---	5	---			
+"toluene-2,4-diisocyanate"	584-84-9	0.36	0.05	0.036	0.005			
+"toluene-2,6-diisocyanate"	91-08-7	0.36	0.05	0.036	0.005			
+"toluenesulfonic acid, all isomers"	-------	20	---	2	---			
+"toluidine, m-"	108-44-1	88	20	8.8	2			
+"toluidine, o-"	95-53-4	88	20	8.8	2			
+"toluidine, p-"	106-49-0	88	20	8.8	2			
+tolyl glycidyl ether	26447-14-3	30	---	3	---			
+tolylsulfonyl hydrazine	1576-35-8	30	4	3	0.4			
+Toxaphene	8001-35-2	5	---	0.5	---			
+tri(isobutenyl)succinic anhydride	63979-83-9	10	1	1	0.1			
+triacetone amine	825-36-8	230	---	23	---			
+triadimenol	5219-65-3	30	---	3	---			
+Triagen (>90% propyl bromide)	-------	8000	---	800	---			
+triallylamine	102-70-5	60	---	6	---			
+triaminotrinitrobenzene	3058-38-6	20	---	2	---			
+"triazole-3-thiol, 1H-1,2,4-"	3179-31-5	63	---	6.3	---			
+tributyl phosphate	126-73-8	22	2	2.2	0.2			
+tributyl phosphine	998-40-3	4	---	0.4	---			
+tributyl phosphite	102-85-2	20	2	2	0.2			
+tributyltin oxide	56-35-9	0.5	0.02	0.05	0.002			
+"trichloro-1,2,2-trifluoroethane, 1,1,2-"	76-13-1	38000	5000	3800	500			
+trichloroacetic acid	76-03-9	70	10	7	1			
+trichloroacetyl chloride	76-02-8	9	1.2	0.9	0.12			
+"trichlorobenzene, 1,2,4-"	120-82-1	400	50	40	5			
+"trichloroethane, 1,1,1-"	71-55-6	10800	2000	1080	200			
+"trichloroethane, 1,1,2-"	79-00-5	550	100	55	10			
+trichloroethylene	79-01-6	1350	250	135	25			
+trichlorofluoromethane (odor)	75-69-4	28000	5000	2800	500			
+trichloromethane**	67-66-3	98	20	9.8	2			
+trichloronaphthalene	1321-65-9	50	---	5	---			
+trichloronitromethane	76-06-2	6.7	1	0.67	0.1			
+"trichlorophenol, 2,4,5-"	95-95-4	440	---	44	---			
+"trichlorophenol, 2,4,6 (odor)"	88-06-2	21	---	2.1	---			
+"trichloropropane, 1,2,3-"	96-18-4	600	100	60	10			
+"trichloropropene, 1,2,3-"	96-19-5	80	13.5	8	1.4			
+trichlorotrifluoroethane	76-13-1	38000	5000	3800	500			
+triclopyr	55335-06-3	40	---	4	---			
+tricresyl phosphate	1330-78-5	5	---	0.5	---			
+tricyclohexyltin hydroxide	13121-70-5	50	---	5	---			
+tridecyl alcohol	-------	2700	---	270	---			
+tridymite*	15468-32-3	0.5	---	0.05	---			
+triethanolamine	102-71-6	50	---	5	---			
+triethyl acetyl citrate	77-89-4	100	---	10	---			
+triethyl phosphate	78-40-0	500	67	50	6.7			
+triethyl phosphite	122-52-1	200	30	20	3			
+triethylamine	121-44-8	40	10	4	1			
+triethylene diamine	280-57-9	370	80	37	8			
+triethylene glycol	112-27-6	100	---	10	---			
+triethylene glycol diacrylate	-------	10	---	1	---			
+triethylene glycol monobutyl ether	143-22-6	1000	120	100	12			
+triethylene glycol monoethyl ether	112-50-5	160	---	16	---			
+triethylene tetramine	112-24-3	240	40	24	4			
+trifluoroacetoaceytl chloride	-------	20	---	2	---			
+trifluorobromomethane	75-63-8	61000	10000	6100	1000			
+"trifluoroethane, 1,1,1-"	420-46-2	17140	5000	1714	500			
+trifluoromethane	75-46-7	14300	5000	1430	500			
+Trifluralin	1582-09-8	100	---	10	---			
+triglycidyl-s-triazinetrione	2451-62-9	0.5	---	0.05	---			
+triisopropyl phosphine	-------	4	---	0.4	---			
+trimetacresyl phosphate	563-04-2	3	---	0.3	---			
+"trimethoxybenzoate, 3,4,5-"	50-55-5	7	---	0.7	---			
+trimethyl acetic acid	75-98-9	250	---	25	---			
+trimethyl benzene	25551-13-7	1250	250	125	25			
+"trimethyl benzene, 1,3,5-"	108-67-8	1250	250	125	25			
+"trimethyl bicyclohep-3-ene, 3,7,7-"	13466-78-9	220	40	22	4			
+trimethyl borate	121-43-7	13	---	1.3	---			
+trimethyl phosphite (odor)	121-45-9	0.5	0.1	0.05	0.01			
+trimethyl trioxane	123-63-7	440	80	44	8			
+"trimethyl-1,3-pentanediol isobutyrate, 2,2,4-"	25265-77-4	835	140	84	14			
+"trimethyl-4-nonanone, 2,6,8-"	123-17-1	3750	500	375	50			
+trimethylamine (odor)	75-50-3	1	0.4	0.1	0.04			
+trimethylammoniumacrylate chloride	-------	135	---	14	---			
+trimethylene diamine	109-76-2	50	---	5	---			
+trimethylol propane	77-99-6	50	---	5	---			
+trimethylol propane ethoxytriacrylate	28961-43-5	10	---	1	---			
+trimethylol propane triacrylate	15625-89-5	10	---	1	---			
+trimethylol propane trimethyl acrylate	-------	10	---	1	---			
+"trimethylpentane, 1,2,4-"	540-84-1	3500	750	350	75			
+trinitrophenol (odor)	88-89-1	0.5	---	0.05	---			
+trinitrophenyl methylnitramine	479-45-8	15	---	1.5	---			
+trinitrotoluene	118-96-7	1	---	0.1	---			
+triorthocresyl phosphate	78-30-8	1	---	0.1	---			
+trioxane	110-88-3	190	---	19	---			
+triparacresyl phosphate	78-32-0	3	---	0.3	---			
+triphenyl phosphate	115-86-6	30	---	3	---			
+triphenyl phosphine	603-35-0	4	---	0.4	---			
+triphenyl phosphite	101-02-0	25	2	2.5	0.2			
+triphenylamine	603-34-9	50	---	5	---			
+tripoli*	1317-95-9	0.5	---	0.05	---			
+tripropylamine	102-69-2	16	---	1.6	---			
+"tripropylene glycol, particulate"	24800-44-0	25	---	2.5	---			
+"tripropylene glycol, vapor"	24800-44-0	400	---	40	---			
+tris(1-aziridinyl) phosphine sulfide	52-24-4	0.6	---	0.06	---			
+tris(2-chloroethyl) phosphate	115-96-8	430	---	43	---			
+tris(chloropropyl) phosphate	-------	1250	---	125	---			
+tris(dimethylaminomethyl)phenol	90-72-2	420	---	42	---			
+tris(hydroxyphenyl) ethane	27955-94-8	60	---	6	---			
+tris(nonylphenol)phosphite	26523-78-4	30	---	3	---			
+trisodium phosphate	7601-54-9	50	---	5	---			
+Trithion	786-19-6	1	---	0.1	---			
+tritolyl phosphate	1330-78-5	5	---	0.5	---			
+Triton X-100 Surfactant	9002-93-1	1000	---	100	---			
+"tungsten hexafluoride (as HF, 3hr)"	7783-82-6	4.9	5.6	0.5	0.56			
+"tungsten, insoluble compounds"	7440-33-7	50	---	5	---			
+"tungsten, soluble compounds"	7440-33-7	10	---	1	---			
+turpentine	8006-64-2	5560	1000	556	100			
+Unamine T 	61791-39-7	50	---	5	---			
+undecanoic acid (odor)	112-37-8	11	---	1.1	---			
+undecyl mercaptan	5332-52-5	39	---	3.9	---			
+uracil mustard	66-75-1	0.8	---	0.08	---			
+"uranium, insoluble compounds"	7440-61-1	2	---	0.2	---			
+"uranium, soluble compounds"	7440-61-1	0.5	---	0.05	---			
+urea	57-13-6	100	---	10	---			
+urethane	51-79-6	5	---	0.5	---			
+"V,M&P naphtha"	8032-32-4	3500	875	35	88			
+valeraldehyde (odor)	110-62-3	98	28	9.8	2.8			
+valeric acid (odor)	109-52-4	3	---	0.3	---			
+vanadium pentoxide 	1314-62-1	0.5	---	0.05	---			
+vanillin	121-33-5	100	---	10	---			
+Varsol	-------	3500	---	350	---			
+"vegetable oil mists, respirable"	68956-68-3	50	---	5	---			
+Velpar	51235-04-2	50	---	5	---			
+Veratrole	91-16-7	24	4.2	2.4	0.42			
+Versamine	60-40-2	250	---	25	---			
+"vinyl 2,2-dimethyl propanoate"	3377-92-2	55	11	5.5	1.1			
+vinyl acetate**	108-05-4	150	40	15	4			
+"vinyl acetate polymer, particulate"	9003-20-7	100	---	10	---			
+vinyl benzene (odor)	100-42-5	110	25	11	2.5			
+vinyl bromide	593-60-2	220	50	22	5			
+vinyl chloride	75-01-4	130	50	13	5			
+vinyl cyanide**	107-13-1	43	20	4.3	2			
+vinyl cyclohexene dioxide*	106-87-6	5.7	1	0.57	0.1			
+"vinyl cyclohexene, 4-"	100-40-3	4	1	0.4	0.1			
+vinyl fluoride (water insoluble)	75-02-5	19	10	2	1			
+vinyl methyl ether	107-25-5	9700	---	970	---			
+vinyl methyl ketone	78-79-4	6	2	0.6	0.2			
+vinyl pivalate	3377-92-2	55	11	5.5	1.1			
+vinyl toluene	25013-15-4	2420	500	242	50			
+vinyl-2-ethylhexoate	94-04-2	200	29	20	2.8			
+"vinyl-2-norbornene, 5-"	3048-64-4	425	86	42.5	8.6			
+"vinyl-2-pyrrolidone, 1-"	88-12-0	180	---	18	---			
+vinylidene chloride	75-35-4	40	10	4	1			
+vinylidene fluoride	75-38-7	26	10	2.6	1			
+Warfarin	81-81-2	1	---	0.1	---			
+water conditioners	-------	10	---	1	---			
+welding fumes	-------	50	---	5	---			
+wollastonite	13983-17-0	50	---	5	---			
+"wood dust, hardwoods"	-------	10	---	1	---			
+"wood dust, soft woods"	-------	50	---	5	---			
+"wood dust, Western red cedar"	-------	10	---	1	---			
+"xylene, mixed or all isomers, except p- (odor)"	1330-20-7	3700	850	370	85			
+"xylene, p- (odor)"	106-42-3	2079	480	208	48			
+"xylene-a,a'-diamine, m-"	1477-55-0	1	---	0.1	---			
+"xylenol, all isomers"	1300-71-6	165	---	16.5	---			
+"xylidine, mixed isomers"	1300-73-8	25	5	2.5	0.5			
+yttrium	7440-65-5	10	---	1	---			
+"zinc beryllium silicate, particulate (as Be)"	39413-47-3	0.02	---	0.002	---			
+zinc bromide	7699-45-8	10	---	1	---			
+zinc chloride fume	7646-85-7	10	---	1	---			
+zinc chromates (as Cr)	13530-65-9	0.1	---	0.01	---			
+zinc oxide dust	1314-13-2	50	---	5	---			
+zinc oxide fume	1314-13-2	50	---	5	---			
+"zinc stearate, respirable"	557-05-1	50	---	5	---			
+zirconium compounds (as Zr)	7440-67-7	50	---	5	---			
+zoalene	148-01-6	50	---	5	---			
+Zorial	27314-13-2	100	---	10	---			
