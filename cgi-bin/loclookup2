@@ -36,7 +36,7 @@ for (my $j = 1; $j <= 8; $j++) {
          my $varname="chem$j";
          my $varname2="report$j";
 
-         if ($q->param($varname) ne "") {
+         if ($q->param($varname)) {
                  $number++;      # increment $number by 1
                  $chem[$number]=$q->param($varname);
                  if ($q->param($varname2) ne "") { 
