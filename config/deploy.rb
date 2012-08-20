@@ -3,7 +3,7 @@ set :repository,  "git://github.com/gbenison/gwenomatic.git"
 set :deploy_to,   "/home/gbenison/air-toxics.com"
 
 # Reference: http://stackoverflow.com/questions/3023857/capistrano-and-deployment-of-a-website-from-github
-set :normalize_assert_timestamps, false
+set :normalize_asset_timestamps, false
 
 set :scm, :git
 set :user, "gbenison"
