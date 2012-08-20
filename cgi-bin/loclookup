@@ -489,8 +489,9 @@ elsif ($q->param('outunits') eq "ppbv") {
 # *****************************
     
 if ($q->param('tablename') ne "") {
+  my $name = $q->param('tablename');
 	print "<font size = +2><b><i><center>";
-	print "Summary of Results for $q->param('tablename')";
+	print "Summary of Results for $name";
 	print "</center></i></b></font>";
 	}
 else {
@@ -533,11 +534,12 @@ for ($j = 1; $j <= $number; $j++) {
 
   unless ($error[$j] eq 1) {
 
-	print "<br><font size=+1>Your reported value of <b>$origrep[$j] $q->param('inunits')</b>";
+    my $units = $q->param('inunits');
+	print "<br><font size=+1>Your reported value of <b>$origrep[$j] $units</b>";
 	if ($q->param('inunits') ne $q->param('outunits')) {
 		print "  or  <b>";
 		print &signif($report[$j]); 
-		print "$q->param('outunits')</b>";
+		print $q->param('outunits') . " </b>";
 		}
 	         
 	unless (($q->param('laonly') eq "on") || ($q->param('nconly') eq "on")) { 
@@ -550,7 +552,8 @@ for ($j = 1; $j <= $number; $j++) {
 			print " to occur below this level.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>  ";
 			print &signif($r6sl[$j]);
-			print " $q->param('outunits') </font></b></td></tr>";
+			my $out_units = $q->param('outunits');
+			print " $out_units </font></b></td></tr>";
 			$noex[$j] = 1;
 			}
                  
@@ -566,7 +569,8 @@ for ($j = 1; $j <= $number; $j++) {
 			print " exposure level during <b>one hour</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($tshort[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			my $out_units = $q->param('outunits');
+			print " $out_units </font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -582,7 +586,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print " exposure level during a <b>year</b> \(24 hours for benzene and ethylene dichloride\).</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($tlong[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . " </font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 		}
@@ -601,7 +605,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print " period.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($la8[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . " </font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -616,7 +620,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print " period.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($la24[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . " </font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 		}
@@ -634,7 +638,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "period of <b>one year</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($ncann[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . " </font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -649,7 +653,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<b>24-hour</b> period.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($nc24[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . " </font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -670,7 +674,7 @@ for ($j = 1; $j <= $number; $j++) {
 				print "<td valign=top align=right><b><font size=+1>";
 				print &signif($nc1b[$j]);
 				}
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . " </font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 		}
@@ -691,7 +695,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<b>up to 2 weeks</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($atsdrac[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . " </font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -708,7 +712,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<b> between 2 weeks and one year</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($atsdrint[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . " </font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -725,7 +729,7 @@ for ($j = 1; $j <= $number; $j++) {
 			print "<b>longer than one year</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($atsdrchr[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . " </font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 		}
@@ -750,13 +754,14 @@ print "<p><br><br>";
 # *****************************
     
 if ($q->param('tablename') ne "") {
-	print "<font size = +2><b><i><center>Levels of Concern for $q->param('tablename')</i></b></font>";
+  my $name = $q->param('tablename');
+	print "<font size = +2><b><i><center>Levels of Concern for $name</i></b></font>";
 	}
 else {
 	print "<font size = +2><b><i><center>Levels of Concern for Selected Chemicals</i></b></font>";
 	}
 
-print "<br><font size = +1><b>in $q->param(outunits)</b></font><p>";
+print "<br><font size = +1><b>in " . $q->param(outunits) . " </b></font><p>";
 
 print "<table border=1 size=95%>";
 print "<tr><td><center><b>Chemical</b></center></td>";
