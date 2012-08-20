@@ -1,5 +1,5 @@
 set :application, "air-toxics"
-set :repository,  "/home/greg/software/projects/gwenomatic"
+set :repository,  "git://github.com/gbenison/gwenomatic.git"
 set :deploy_to,   "/home/gbenison/air-toxics.com"
 
 set :scm, :git
