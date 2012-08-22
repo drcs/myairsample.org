@@ -524,10 +524,10 @@ for (my $j = 1; $j <= $number; $j++) {
 print "<font size = +3><b><center>";
 print "Levels of Concern Report</font>";
 if ($q->param('tablename') ne "") {
-	print "<p><font size=+2><i>for $q->param('tablename')";
+	print "<p><font size=+2><i>for " . $q->param('tablename');
 	print "</center></i></b></font>";
 	print "<font size = +2><b><i><center>";
-	print "$q->param('tablename2')";
+	print $q->param('tablename2');
 	print "</center></i></b></font>";
 	}
 
@@ -559,7 +559,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $q->param('outunits') </b></font>";
+			print $q->param('outunits') . " </b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -590,7 +590,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The Louisiana Annual Ambient Air Standard </font>";
 			print "<p><font size = +3><b>";
 			print &signif($la24[$j]);
-			print " $q->param('outunits')</b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -602,7 +602,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $q->param('outunits') </b></font>";
+			print $q->param('outunits') . " </b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -633,7 +633,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The Louisiana 8-Hour Ambient Air Standard </font>";
 			print "<p><font size = +3><b>";
 			print &signif($la8[$j]);
-			print " $q->param('outunits')</b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -666,7 +666,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $q->param('outunits') </b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -697,7 +697,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The <b>Short Term</b> (1-hr) Texas Effects Screening Level </font>";
 			print "<p><font size = +3><b>";
 			print &signif($tshort[$j]);
-			print " $q->param('outunits')</b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -709,7 +709,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $q->param('outunits') </b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -740,7 +740,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The <b>Long-Term</b> Texas Effects Screening Level </font>";
 			print "<p><font size = +3><b>";
 			print &signif($tlong[$j]);
-			print " $q->param('outunits')</b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -775,7 +775,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $q->param('outunits') </b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -806,7 +806,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The <b>Acute</b> (<2 week) ATSDR Minimal Risk Level </font>";
 			print "<p><font size = +3><b>";
 			print &signif($atsdrac[$j]);
-			print " $q->param('outunits')</b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -818,7 +818,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $q->param('outunits') </b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -850,7 +850,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print " Level </font>";
 			print "<p><font size = +3><b>";
 			print &signif($atsdrint[$j]);
-			print " $q->param('outunits')</b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -862,7 +862,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $q->param('outunits') </b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -895,7 +895,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print " Level </font>";
 			print "<p><font size = +3><b>";
 			print &signif($atsdrchr[$j]);
-			print " $q->param('outunits')</b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -930,7 +930,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $q->param('outunits') </b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -961,7 +961,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The North Carolina Annual Standard </font>";
 			print "<p><font size = +3><b>";
 			print &signif($ncann[$j]);
-			print " $q->param('outunits')</b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -973,7 +973,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $q->param('outunits') </b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -1004,7 +1004,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The North Carolina 24-Hour Standard </font>";
 			print "<p><font size = +3><b>";
 			print &signif($nc24[$j]);
-			print " $q->param('outunits')</b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -1016,7 +1016,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $q->param('outunits') </b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -1048,7 +1048,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The North Carolina 1-Hour Standard </font>";
 			print "<p><font size = +3><b>";
 			print &signif($nc1a[$j]);
-			print " $q->param('outunits')</b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -1061,7 +1061,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<br><font size=+1>Your reported value</font>";
 			print "<p><font size = +3><b>";
 			print &signif($report[$j]);
-			print " $q->param('outunits') </b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 
 			print "<td width=30% align=center>";
@@ -1093,7 +1093,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<font size=+1>The North Carolina 1-Hour Standard </font>";
 			print "<p><font size = +3><b>";
 			print &signif($nc1b[$j]);
-			print " $q->param('outunits')</b></font>";
+			print $q->param('outunits') . "</b></font>";
 			print "</td>";
 			print "</tr>";
 
@@ -1128,7 +1128,7 @@ for (my $j = 1; $j <= $number; $j++) {
 		print "<br><font size=+1>Your reported value</font>";
 		print "<p><font size = +3><b>";
 		print &signif($report[$j]);
-		print " $q->param('outunits') </b></font>";
+		print $q->param('outunits') . "</b></font>";
 		print "</td>";
 
 		print "<td width=30% align=center>";
@@ -1159,7 +1159,7 @@ for (my $j = 1; $j <= $number; $j++) {
 		print "<font size=+1>The EPA Region 6 Screening Level </font>";
 		print "<p><font size = +3><b>";
 		print &signif($r6sl[$j]);
-		print " $q->param('outunits')</b></font>";
+		print $q->param('outunits') . "</b></font>";
 		print "</td>";
 		print "</tr>";
 
@@ -1222,7 +1222,7 @@ for (my $j = 1; $j <= $number; $j++) {
 
   unless ($error[$j] eq 1) {
 
-	print "<br><font size=+1>Your reported value of <b>$origrep[$j] $q->param('inunits')</b>";
+	print "<br><font size=+1>Your reported value of <b>$origrep[$j] " . $q->param('inunits') . "</b>";
 	if ($q->param('inunits') ne $q->param('outunits')) {
 		print "  or  <b>";
 		print &signif($report[$j]); 
@@ -1239,7 +1239,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print " to occur below this level.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>  ";
 			print &signif($r6sl[$j]);
-			print " $q->param('outunits') </font></b></td></tr>";
+			print $q->param('outunits') . "</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
                  
@@ -1255,7 +1255,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print " exposure level during <b>one hour</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($tshort[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . "</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -1271,7 +1271,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print " exposure level during a <b>year</b> \(24 hours for benzene and ethylene dichloride\).</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($tlong[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . "</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 		}
@@ -1290,7 +1290,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print " period.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($la8[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . "</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -1305,7 +1305,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print " period of <b>one year</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($la24[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . "</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 		}
@@ -1323,7 +1323,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "period of <b>one year</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($ncann[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . "</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -1338,7 +1338,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<b>24-hour</b> period.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($nc24[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . "</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -1359,7 +1359,7 @@ for (my $j = 1; $j <= $number; $j++) {
 				print "<td valign=top align=right><b><font size=+1>";
 				print &signif($nc1b[$j]);
 				}
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits'). "</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 		}
@@ -1380,7 +1380,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<b>up to 2 weeks</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($atsdrac[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . "</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -1397,7 +1397,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<b> between 2 weeks and one year</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($atsdrint[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . "</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 
@@ -1414,7 +1414,7 @@ for (my $j = 1; $j <= $number; $j++) {
 			print "<b>longer than one year</b>.</font></td>";
 			print "<td valign=top align=right><b><font size=+1>";
 			print &signif($atsdrchr[$j]);
-			print " $q->param('outunits')</font></b></td></tr>";
+			print $q->param('outunits') . "</font></b></td></tr>";
 			$noex[$j] = 1;
 			}
 		}
