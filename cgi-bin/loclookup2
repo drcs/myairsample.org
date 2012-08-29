@@ -1232,7 +1232,7 @@ for (my $j = 1; $j <= $number; $j++) {
 	if ($in{'inunits'} ne $in{'outunits'}) {
 		print "  or  <b>";
 		print &signif($report[$j]);
-		print "$in{'outunits'}</b>";
+		print " $in{'outunits'}</b>";
 		}
 
 	unless (($in{'laonly'} eq "on") || ($in{'nconly'} eq "on")) {
