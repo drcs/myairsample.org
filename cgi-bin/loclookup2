@@ -39,16 +39,15 @@ for (my $j = 1; $j <= 8; $j++) {
          my $varname="chem$j";
          my $varname2="report$j";
 
-         if ($in{$varname} ne "") {
+         if ($in{$varname}) {
                  $number++;      # increment $number by 1
                  $chem[$number]=$in{$varname};
-                 if ($in{$varname2} ne "") { 
+                 if ($in{$varname2}) { 
 				$report[$number]=$in{$varname2}; 
 				$origrep[$number]=$in{$varname2};
-				}    
+				}
          }
-}          
-
+}
 
 # ***********************
 # Match chemical names to CAS numbers
