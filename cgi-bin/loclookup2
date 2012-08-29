@@ -1666,7 +1666,7 @@ print "<table border=1 cellpadding=10>";
 print "<tr><td>";
 print "<b>For more information about the standards and screening levels compiled here, or for ";
 print "links to the sources of these levels, click ";
-print "<a href=\"http://www.creativelement.com/~gwen/locsources.html\">here</a>.";
+print '<a href="/locsources.html">here</a>.';
 print "</td></tr>";
 print "<tr><td bgcolor=\"#FF9966\"><b>";
 print "Remember: The information on this site is not intended to be legal advice.  This information is not a substitute for the ";
