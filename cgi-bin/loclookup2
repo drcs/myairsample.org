@@ -48,7 +48,7 @@ for ($j = 1; $j <= 8; $j++) {
 # Match chemical names to CAS numbers
 # ***********************
 
-open (CONTENT, "/usr/home/gwen/public_html/cgi-bin/datatables/synonyms.txt");
+open (CONTENT, "datatables/synonyms.txt");
 	$sj = 0;
         while ( $line = <CONTENT> ) {
 		chop $line;
@@ -88,7 +88,7 @@ elsif ($in{'inunits'} eq "ppbv") {
 # Convert standards from mg/m3 to ug/m3
 # ***********************
 
-open (CONTENT, "/usr/home/gwen/public_html/cgi-bin/datatables/ncstds.txt");
+open (CONTENT, "datatables/ncstds.txt");
 	$sj = 0;
         while ( $line = <CONTENT> ) {
 		chop $line;
@@ -119,7 +119,7 @@ close(CONTENT);
 # In ug/m3 
 # ***********************
 
-open (CONTENT, "/usr/home/gwen/public_html/cgi-bin/datatables/tesl.txt");
+open (CONTENT, "datatables/tesl.txt");
 	$sj = 0;
         while ( $line = <CONTENT> ) {
 		chop $line;
@@ -147,7 +147,7 @@ close(CONTENT);
 # Look up chemicals in Region 6 Screening Levels
 # ***********************
 
-open (CONTENT, "/usr/home/gwen/public_html/cgi-bin/datatables/r6sls.txt");
+open (CONTENT, "datatables/r6sls.txt");
 	$sj = 0;
         while ( $line = <CONTENT> ) {
 		chop $line;
@@ -175,7 +175,7 @@ close(CONTENT);
 # Convert standards from ppm to ppb and from ppb to ug/m3
 # ***********************
 
-open (CONTENT, "/usr/home/gwen/public_html/cgi-bin/datatables/ATSDRMRLs.txt");
+open (CONTENT, "datatables/ATSDRMRLs.txt");
 	$sj = 0;
        while ( $line = <CONTENT> ) {
 		chop $line;
@@ -206,7 +206,7 @@ close(CONTENT);
 # Look up chemicals in Louisiana Standards
 # ***********************
                       
-open (CONTENT, "/usr/home/gwen/public_html/cgi-bin/datatables/lastds.txt");
+open (CONTENT, "datatables/lastds.txt");
 	$sj = 0;
         while ( $line = <CONTENT> ) {
 		chop $line;
