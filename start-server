@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/sbin/thttpd -dd `pwd` -p 8081 -c 'cgi-bin/*'
