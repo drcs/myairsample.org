@@ -27,11 +27,17 @@ print (join " - ", %in_hash);
 # Assign chemical name and value inputs to arrays
 # ***********************
 
+my (@report, @cas, @chem, @MW, @ncann, @nc24, @nc1a, @nc1b,
+    @error, @noex, @origrep,
+    @tshort, @tlong, @r6sl, @atsdrac, @atsdrint, @atsdrchr,
+    @la8, @la24, @redflagr6, @redflagts, @redflagtl, @redflagl8,
+    @redflagl24, @redflagnca, @redflagnc1a, @redflagnc1b,
+    @redflagaa, @redflagai, @redflagac, @redflagnc24);
 
-$number = 0;
-for ($j = 1; $j <= 8; $j++) {
-         $varname="chem$j";
-         $varname2="report$j";
+my $number = 0;
+for (my $j = 1; $j <= 8; $j++) {
+         my $varname="chem$j";
+         my $varname2="report$j";
 
          if ($in{$varname} ne "") {
                  $number++;      # increment $number by 1
@@ -49,13 +55,13 @@ for ($j = 1; $j <= 8; $j++) {
 # ***********************
 
 open (CONTENT, "datatables/synonyms.txt");
-	$sj = 0;
-        while ( $line = <CONTENT> ) {
+	my $sj = 0;
+        while ( my $line = <CONTENT> ) {
 		chop $line;
 		
-		@variables=split /\t/, $line;
+		my @variables=split /\t/, $line;
 		
-		for ($j = 1; $j <= $number; $j++) {
+		for (my $j = 1; $j <= $number; $j++) {
 			if (&cleanup($chem[$j]) eq &cleanup($variables[0])) {  #compare cleaned-up names
 				$cas[$j] = $variables[1]; 
 				$MW[$j] = $variables[2];
@@ -90,12 +96,12 @@ elsif ($in{'inunits'} eq "ppbv") {
 
 open (CONTENT, "datatables/ncstds.txt");
 	$sj = 0;
-        while ( $line = <CONTENT> ) {
+        while ( my $line = <CONTENT> ) {
 		chop $line;
 		
-		@variables=split /\t/, $line;
+		my @variables=split /\t/, $line;
 		
-		for ($j = 1; $j <= $number; $j++) {
+		for (my $j = 1; $j <= $number; $j++) {
 			if ($cas[$j] eq $variables[1]) {
 				$ncann[$j] = $variables[2]*1000; 
 				$nc24[$j] = $variables[3]*1000;
@@ -121,12 +127,12 @@ close(CONTENT);
 
 open (CONTENT, "datatables/tesl.txt");
 	$sj = 0;
-        while ( $line = <CONTENT> ) {
+        while ( my $line = <CONTENT> ) {
 		chop $line;
 		
-		@variables=split /\t/, $line;
+		my @variables=split /\t/, $line;
 		
-		for ($j = 1; $j <= $number; $j++) {
+		for (my $j = 1; $j <= $number; $j++) {
 			if ($cas[$j] eq $variables[1]) {
 				$tshort[$j] = $variables[2]; 
 				$tlong[$j] = $variables[4];
@@ -149,12 +155,12 @@ close(CONTENT);
 
 open (CONTENT, "datatables/r6sls.txt");
 	$sj = 0;
-        while ( $line = <CONTENT> ) {
+        while ( my $line = <CONTENT> ) {
 		chop $line;
 		
-		@variables=split /\t/, $line;
+		my @variables=split /\t/, $line;
 		
-		for ($j = 1; $j <= $number; $j++) {
+		for (my $j = 1; $j <= $number; $j++) {
 			if ($cas[$j] eq $variables[1]) {
 				$r6sl[$j] = $variables[2]; 
 							
@@ -177,12 +183,12 @@ close(CONTENT);
 
 open (CONTENT, "datatables/ATSDRMRLs.txt");
 	$sj = 0;
-       while ( $line = <CONTENT> ) {
+       while ( my $line = <CONTENT> ) {
 		chop $line;
 		
-		@variables=split /\t/, $line;
+		my @variables=split /\t/, $line;
 		
-		for ($j = 1; $j <= $number; $j++) {
+		for (my $j = 1; $j <= $number; $j++) {
 			if ($cas[$j] eq $variables[1]) {
 				$atsdrac[$j] = $variables[2]*1000;	#converts values from ppm to ppb 
 				$atsdrint[$j] = $variables[3]*1000; 
@@ -208,12 +214,12 @@ close(CONTENT);
                       
 open (CONTENT, "datatables/lastds.txt");
 	$sj = 0;
-        while ( $line = <CONTENT> ) {
+        while ( my $line = <CONTENT> ) {
 		chop $line;
 		
-		@variables=split /\t/, $line;
+		my @variables=split /\t/, $line;
 		
-		for ($j = 1; $j <= $number; $j++) {
+		for (my $j = 1; $j <= $number; $j++) {
 			if ($cas[$j] eq $variables[1]) {
 				$la8[$j] = $variables[2]; 
 				$la24[$j] = $variables[3];
@@ -280,44 +286,70 @@ elsif ($in{'outunits'} eq "ppbv") {
 # Check for null arrays 
 # *************************
 
-      $sumrep = 0;
-      for ($j = 1; $j <= $number; $j++) {$sumrep = $sumrep + $report[$j];}
+my $sumrep = 0;
+for (my $j = 1; $j <= $number; $j++) {
+  $sumrep = $sumrep + $report[$j];
+}
 
-      $sumla8 = 0;
-      for ($j = 1; $j <= $number; $j++) {$sumla8 = $sumla8 + $la8[$j];}
+my $sumla8 = 0;
+for (my $j = 1; $j <= $number; $j++) {
+  $sumla8 = $sumla8 + $la8[$j];
+}
 
-	$sumla24 = 0;
-      for ($j = 1; $j <= $number; $j++) {$sumla24 = $sumla24 + $la24[$j];}
+my $sumla24 = 0;
+for (my $j = 1; $j <= $number; $j++) {
+  $sumla24 = $sumla24 + $la24[$j];
+}
 
-      $sumtshort = 0;
-      for ($j = 1; $j <= $number; $j++) {$sumtshort = $sumtshort + $tshort[$j];}
+my $sumtshort = 0;
+for (my $j = 1; $j <= $number; $j++) {
+  $sumtshort = $sumtshort + $tshort[$j];
+}
 
-      $sumtlong = 0;
-      for ($j = 1; $j <= $number; $j++) {$sumtlong = $sumtlong + $tlong[$j];}
+my $sumtlong = 0;
+for (my $j = 1; $j <= $number; $j++) {
+  $sumtlong = $sumtlong + $tlong[$j];
+}
 
-      $sumr6sl = 0;
-      for ($j = 1; $j <= $number; $j++) {$sumr6sl = $sumr6sl + $r6sl[$j];}
+my $sumr6sl = 0;
+for (my $j = 1; $j <= $number; $j++) {
+  $sumr6sl = $sumr6sl + $r6sl[$j];
+}
 
-      $sumaac = 0;
-      for ($j = 1; $j <= $number; $j++) {$sumaac = $sumaac + $atsdrac[$j];}
+my $sumaac = 0;
+for (my $j = 1; $j <= $number; $j++) {
+  $sumaac = $sumaac + $atsdrac[$j];
+}
 
-      $sumaint = 0;
-      for ($j = 1; $j <= $number; $j++) {$sumaint = $sumaint + $atsdrint[$j];}
+my $sumaint = 0;
+for (my $j = 1; $j <= $number; $j++) {
+  $sumaint = $sumaint + $atsdrint[$j];
+}
 
-      $sumachr = 0;
-      for ($j = 1; $j <= $number; $j++) {$sumachr = $sumachr + $atsdrchr[$j];}
+my $sumachr = 0;
+for (my $j = 1; $j <= $number; $j++) {
+  $sumachr = $sumachr + $atsdrchr[$j];
+}
 
-      $sumncann = 0;
-      for ($j = 1; $j <= $number; $j++) {$sumncann = $sumncann + $ncann[$j];}
+my $sumncann = 0;
+for (my $j = 1; $j <= $number; $j++) {
+  $sumncann = $sumncann + $ncann[$j];
+}
 
-      $sumnc24 = 0;
-      for ($j = 1; $j <= $number; $j++) {$sumnc24 = $sumnc24 + $nc24[$j];}
+my $sumnc24 = 0;
+for (my $j = 1; $j <= $number; $j++) {
+  $sumnc24 = $sumnc24 + $nc24[$j];
+}
 
-      $sumnc1a = 0;
-      for ($j = 1; $j <= $number; $j++) {$sumnc1a = $sumnc1a + $nc1a[$j];}
+my $sumnc1a = 0;
+for (my $j = 1; $j <= $number; $j++) {
+  $sumnc1a = $sumnc1a + $nc1a[$j];
+}
 
-      $sumnc1b = 0;
-      for ($j = 1; $j <= $number; $j++) {$sumnc1b = $sumnc1b + $nc1b[$j];}
+my $sumnc1b = 0;
+for (my $j = 1; $j <= $number; $j++) {
+  $sumnc1b = $sumnc1b + $nc1b[$j];
+}
 
 # *****************************
 # Show Regulatory Standards Only
@@ -360,7 +392,7 @@ elsif ($in{'outunits'} eq "ppbv") {
 # Compare Levels of Concern to Reported Values
 # *****************************
 
-         for ($j = 1; $j <= $number; $j++) {
+         for (my $j = 1; $j <= $number; $j++) {
                  if (($r6sl[$j] < $report[$j]) && ($r6sl[$j] ne "") && ($r6sl[$j] ne 0)) {
                          $redflagr6[$j] = "bgcolor=#FFCC99";
                  }
@@ -463,32 +495,33 @@ elsif ($in{'outunits'} eq "ppbv") {
 # Check for arrays with exceedances
 # *****************************
 
-         for ($j = 1; $j <= $number; $j++) {
-               if ($redflagr6[$j] ne "") {$exceedr6 = 1;}
-                 
-		   if ($redflagts[$j] ne "") {$exceedts = 1;}
+my ($exceedr6,
+    $exceedts,
+    $exceedtl,
+    $exceedl8,
+    $exceedl24,
+    $exceednca,
+    $exceednc24,
+    $exceednc1a,
+    $exceednc1b,
+    $exceedaa,
+    $exceedai,
+    $exceedac);
 
-		   if ($redflagtl[$j] ne "") {$exceedtl = 1;}
-
-		   if ($redflagl8[$j] ne "") {$exceedl8 = 1;}
-
-		    if ($redflagl24[$j] ne "") {$exceedl24 = 1;}
-
-		    if ($redflagnca[$j] ne "") {$exceednca = 1;}
-
-		    if ($redflagnc24[$j] ne "") {$exceednc24 = 1;}
-
-		    if ($redflagnc1a[$j] ne "") {$exceednc1a = 1;}
-
-		    if ($redflagnc1b[$j] ne "") {$exceednc1b = 1;}
-
-		    if ($redflagaa[$j] ne "") {$exceedaa = 1;}
-
-		    if ($redflagai[$j] ne "") {$exceedai = 1;}
-
-		    if ($redflagac[$j] ne "") {$exceedac = 1;}
-
-         }
+for (my $j = 1; $j <= $number; $j++) {
+  $exceedr6 = 1     if ($redflagr6[$j] ne "");
+  $exceedts = 1     if ($redflagts[$j] ne "");
+  $exceedtl = 1     if ($redflagtl[$j] ne "");
+  $exceedl8 = 1     if ($redflagl8[$j] ne "");
+  $exceedl24 = 1    if ($redflagl24[$j] ne "");
+  $exceednca = 1    if ($redflagnca[$j] ne "");
+  $exceednc24 = 1   if ($redflagnc24[$j] ne "");
+  $exceednc1a = 1   if ($redflagnc1a[$j] ne "");
+  $exceednc1b = 1   if ($redflagnc1b[$j] ne "");
+  $exceedaa = 1     if ($redflagaa[$j] ne "");
+  $exceedai = 1     if ($redflagai[$j] ne "");
+  $exceedac = 1     if ($redflagac[$j] ne "");
+}
   
 
 # *****************************
@@ -515,7 +548,7 @@ print "<p><br><hr noshade width=65% align=center><br>";
 
 if ($in{'brief'} eq "on") {
 
-for ($j = 1; $j <= $number; $j++) {
+for (my $j = 1; $j <= $number; $j++) {
 
 #  ****************************
 #  For LA as reference standard
@@ -538,13 +571,13 @@ for ($j = 1; $j <= $number; $j++) {
 			print "</td>";
 
 			print "<td width=30% align=center>";
-			$compare = $report[$j]/$la24[$j];
+			my $compare = $report[$j]/$la24[$j];
 			if ($compare <= 1.8) {
 				print "<font size=+2><b> exceeds </b></font>";
 				}
 			else {
-				$notimes = int($compare);
-				$dec = $compare - $notimes;
+				my $notimes = int($compare);
+				my $dec = $compare - $notimes;
 			
 				if ($dec < .2) 	{
 					print "<font size=+3> is <i>about</i><br>";
@@ -581,13 +614,13 @@ for ($j = 1; $j <= $number; $j++) {
 			print "</td>";
 
 			print "<td width=30% align=center>";
-			$compare = $report[$j]/$la8[$j];
+			my $compare = $report[$j]/$la8[$j];
 			if ($compare <= 1.8) {
 				print "<font size=+2><b> exceeds </b></font>";
 				}
 			else {
-				$notimes = int($compare);
-				$dec = $compare - $notimes;
+				my $notimes = int($compare);
+				my $dec = $compare - $notimes;
 			
 				if ($dec < .2) 	{
 					print "<font size=+3> is <i>about</i><br>";
@@ -645,13 +678,13 @@ for ($j = 1; $j <= $number; $j++) {
 			print "</td>";
 
 			print "<td width=30% align=center>";
-			$compare = $report[$j]/$tshort[$j];
+			my $compare = $report[$j]/$tshort[$j];
 			if ($compare <= 1.8) {
 				print "<font size=+2><b> exceeds </b></font>";
 				}
 			else {
-				$notimes = int($compare);
-				$dec = $compare - $notimes;
+				my $notimes = int($compare);
+				my $dec = $compare - $notimes;
 			
 				if ($dec < .2) 	{
 					print "<font size=+3> is <i>about</i><br>";
@@ -688,13 +721,13 @@ for ($j = 1; $j <= $number; $j++) {
 			print "</td>";
 
 			print "<td width=30% align=center>";
-			$compare = $report[$j]/$tlong[$j];
+			my $compare = $report[$j]/$tlong[$j];
 			if ($compare <= 1.8) {
 				print "<font size=+2><b> exceeds </b></font>";
 				}
 			else {
-				$notimes = int($compare);
-				$dec = $compare - $notimes;
+				my $notimes = int($compare);
+				my $dec = $compare - $notimes;
 			
 				if ($dec < .2) 	{
 					print "<font size=+3> is <i>about</i><br>";
@@ -754,13 +787,13 @@ for ($j = 1; $j <= $number; $j++) {
 			print "</td>";
 
 			print "<td width=30% align=center>";
-			$compare = $report[$j]/$atsdrac[$j];
+			my $compare = $report[$j]/$atsdrac[$j];
 			if ($compare <= 1.8) {
 				print "<font size=+2><b> exceeds </b></font>";
 				}
 			else {
-				$notimes = int($compare);
-				$dec = $compare - $notimes;
+				my $notimes = int($compare);
+				my $dec = $compare - $notimes;
 			
 				if ($dec < .2) 	{
 					print "<font size=+3> is <i>about</i><br>";
@@ -797,13 +830,13 @@ for ($j = 1; $j <= $number; $j++) {
 			print "</td>";
 
 			print "<td width=30% align=center>";
-			$compare = $report[$j]/$atsdrint[$j];
+			my $compare = $report[$j]/$atsdrint[$j];
 			if ($compare <= 1.8) {
 				print "<font size=+2><b> exceeds </b></font>";
 				}
 			else {
-				$notimes = int($compare);
-				$dec = $compare - $notimes;
+				my $notimes = int($compare);
+				my $dec = $compare - $notimes;
 			
 				if ($dec < .2) 	{
 					print "<font size=+3> is <i>about</i><br>";
@@ -841,14 +874,14 @@ for ($j = 1; $j <= $number; $j++) {
 			print "</td>";
 
 			print "<td width=30% align=center>";
-			$compare = $report[$j]/$atsdrchr[$j];
+			my $compare = $report[$j]/$atsdrchr[$j];
 			if ($compare <= 1.8) {
 				print "<font size=+2><b> exceeds </b></font>";
 				}
 
 			else {
-				$notimes = int($compare);
-				$dec = $compare - $notimes;
+				my $notimes = int($compare);
+				my $dec = $compare - $notimes;
 			
 				if ($dec < .2) 	{
 					print "<font size=+3> is <i>about</i><br>";
@@ -909,13 +942,13 @@ for ($j = 1; $j <= $number; $j++) {
 			print "</td>";
 
 			print "<td width=30% align=center>";
-			$compare = $report[$j]/$ncann[$j];
+			my $compare = $report[$j]/$ncann[$j];
 			if ($compare <= 1.8) {
 				print "<font size=+2><b> exceeds </b></font>";
 				}
 			else {
-				$notimes = int($compare);
-				$dec = $compare - $notimes;
+				my $notimes = int($compare);
+				my $dec = $compare - $notimes;
 			
 				if ($dec < .2) 	{
 					print "<font size=+3> is <i>about</i><br>";
@@ -952,13 +985,13 @@ for ($j = 1; $j <= $number; $j++) {
 			print "</td>";
 
 			print "<td width=30% align=center>";
-			$compare = $report[$j]/$nc24[$j];
+			my $compare = $report[$j]/$nc24[$j];
 			if ($compare <= 1.8) {
 				print "<font size=+2><b> exceeds </b></font>";
 				}
 			else {
-				$notimes = int($compare);
-				$dec = $compare - $notimes;
+				my $notimes = int($compare);
+				my $dec = $compare - $notimes;
 			
 				if ($dec < .2) 	{
 					print "<font size=+3> is <i>about</i><br>";
@@ -995,14 +1028,14 @@ for ($j = 1; $j <= $number; $j++) {
 			print "</td>";
 
 			print "<td width=30% align=center>";
-			$compare = $report[$j]/$nc1a[$j];
+			my $compare = $report[$j]/$nc1a[$j];
 			if ($compare <= 1.8) {
 				print "<font size=+2><b> exceeds </b></font>";
 				}
 
 			else {
-				$notimes = int($compare);
-				$dec = $compare - $notimes;
+				my $notimes = int($compare);
+				my $dec = $compare - $notimes;
 			
 				if ($dec < .2) 	{
 					print "<font size=+3> is <i>about</i><br>";
@@ -1040,14 +1073,14 @@ for ($j = 1; $j <= $number; $j++) {
 			print "</td>";
 
 			print "<td width=30% align=center>";
-			$compare = $report[$j]/$nc1b[$j];
+			my $compare = $report[$j]/$nc1b[$j];
 			if ($compare <= 1.8) {
 				print "<font size=+2><b> exceeds </b></font>";
 				}
 
 			else {
-				$notimes = int($compare);
-				$dec = $compare - $notimes;
+				my $notimes = int($compare);
+				my $dec = $compare - $notimes;
 			
 				if ($dec < .2) 	{
 					print "<font size=+3> is <i>about</i><br>";
@@ -1107,13 +1140,13 @@ for ($j = 1; $j <= $number; $j++) {
 		print "</td>";
 
 		print "<td width=30% align=center>";
-		$compare = $report[$j]/$r6sl[$j];
+		my $compare = $report[$j]/$r6sl[$j];
 		if ($compare <= 1.8) {
 			print "<font size=+2><b> exceeds </b></font>";
 			}
 		else {
-			$notimes = int($compare);
-			$dec = $compare - $notimes;
+			my $notimes = int($compare);
+			my $dec = $compare - $notimes;
 			
 			if ($dec < .2) 	{
 				print "<font size=+3> is <i>about</i><br>";
@@ -1164,7 +1197,7 @@ print "<p><br><hr noshade width=65% align=center><br>";
 
 if ($in{'summary'} eq "on") {
 
-for ($j = 1; $j <= $number; $j++) {
+for (my $j = 1; $j <= $number; $j++) {
 
 	print "<p>";
 	print "<font size = +1><b><u>$chem[$j]</u></b></font>";
@@ -1459,7 +1492,7 @@ print "</tr>";
 
 
 
-for ($j = 1; $j <= $number; $j++) {
+for (my $j = 1; $j <= $number; $j++) {
 
   unless ($error[$j] eq 1) {
 	print "<tr><td><b>$chem[$j]</b></td>";
@@ -1663,7 +1696,7 @@ exit;
 
 
 sub convert2ppb {
-	for ($j = 1; $j <= $number; $j++) {
+	for (my $j = 1; $j <= $number; $j++) {
 		
 		$_[$j] = $_[$j] * 0.8347;
 		
@@ -1672,7 +1705,7 @@ sub convert2ppb {
 
 sub convert2ppbv {
 	my @working;
-	for ($j = 1; $j <= $number; $j++) {
+	for (my $j = 1; $j <= $number; $j++) {
 		
 		if ($MW[$j] ne "") {$working[$j] = $_[$j] * 24.04/ $MW[$j];}
 	}
@@ -1681,7 +1714,7 @@ sub convert2ppbv {
 
 
 sub convertppb2ugm3 {
-	for ($j = 1; $j <= $number; $j++) {
+	for (my $j = 1; $j <= $number; $j++) {
 		
 		$_[$j] = $_[$j] * 1.198;
 		
@@ -1691,7 +1724,7 @@ sub convertppb2ugm3 {
 
 sub convertppbv2ugm3 {
 	my @working;
-	for ($j = 1; $j <= $number; $j++) {
+	for (my $j = 1; $j <= $number; $j++) {
 		
 		$working[$j] = $_[$j] * $MW[$j]/ 24.04;
 	
@@ -1702,40 +1735,56 @@ sub convertppbv2ugm3 {
 
 
 sub cleanup {
-         $working = $_[0];
-         $working = "\L$working";   # make it lower case
-         $working =~ s/\s+$//;      # remove trailing spaces
-         $working =~ s/^\s+//;      # remove leading spaces
-         return $working;
+  my $working = $_[0];
+  $working = "\L$working";	# make it lower case
+  $working =~ s/\s+$//;		# remove trailing spaces
+  $working =~ s/^\s+//;		# remove leading spaces
+  return $working;
 }
 
 #fixed and signif together round to 3 significant figures
 
 sub fixed {
-         $intpart = int($_[0]);
-         $decpart = $_[0] - $intpart;
-         $decpart = $decpart . "00000000000000000000000000000";
-         $decpart = substr($decpart, 2, $_[1]);
-         $final = "$intpart.$decpart";
-         return $final;
+  my $intpart = int($_[0]);
+  my $decpart = $_[0] - $intpart;
+  $decpart = $decpart . "00000000000000000000000000000";
+  $decpart = substr($decpart, 2, $_[1]);
+  my $final = "$intpart.$decpart";
+  return $final;
 }
 
 sub signif {
-            if ($_[0] > 10000000) { $working = &fixed ($_[0] / 100000, 0) * 100000; }
-         elsif ($_[0] > 1000000) { $working = &fixed ($_[0] / 10000, 0) * 10000; }
-         elsif ($_[0] > 100000) { $working = &fixed ($_[0] / 1000, 0) * 1000; }
-         elsif ($_[0] > 10000) { $working = &fixed ($_[0]/ 100, 0)*100; }
-         elsif ($_[0] > 1000) { $working = &fixed ($_[0]/ 10, 0)*10; }
-         elsif ($_[0] > 100) { $working = &fixed ($_[0], 0) * 1; }
-         elsif ($_[0] > 10) { $working = &fixed ($_[0], 1); }
-         elsif ($_[0] > 1) { $working = &fixed ($_[0], 2); }
-         elsif ($_[0] > 0.1) { $working = &fixed ($_[0], 3); }
-         elsif ($_[0] > 0.01) { $working = &fixed ($_[0], 4); }
-         elsif ($_[0] > 0.001) { $working = &fixed ($_[0], 5); }
-         elsif ($_[0] > 0.0001) { $working = &fixed ($_[0], 6); }
-         elsif ($_[0] > 0.00001) { $working = &fixed ($_[0], 7); }
-         elsif ($_[0] > 0.000001) { $working = &fixed ($_[0], 8); }
-         return $working;
+  my $working;
+  if ($_[0] > 10000000) {
+    $working = &fixed ($_[0] / 100000, 0) * 100000;
+  } elsif ($_[0] > 1000000) {
+    $working = &fixed ($_[0] / 10000, 0) * 10000;
+  } elsif ($_[0] > 100000) {
+    $working = &fixed ($_[0] / 1000, 0) * 1000;
+  } elsif ($_[0] > 10000) {
+    $working = &fixed ($_[0]/ 100, 0)*100;
+  } elsif ($_[0] > 1000) {
+    $working = &fixed ($_[0]/ 10, 0)*10;
+  } elsif ($_[0] > 100) {
+    $working = &fixed ($_[0], 0) * 1;
+  } elsif ($_[0] > 10) {
+    $working = &fixed ($_[0], 1);
+  } elsif ($_[0] > 1) {
+    $working = &fixed ($_[0], 2);
+  } elsif ($_[0] > 0.1) {
+    $working = &fixed ($_[0], 3);
+  } elsif ($_[0] > 0.01) {
+    $working = &fixed ($_[0], 4);
+  } elsif ($_[0] > 0.001) {
+    $working = &fixed ($_[0], 5);
+  } elsif ($_[0] > 0.0001) {
+    $working = &fixed ($_[0], 6);
+  } elsif ($_[0] > 0.00001) {
+    $working = &fixed ($_[0], 7);
+  } elsif ($_[0] > 0.000001) {
+    $working = &fixed ($_[0], 8);
+  }
+  return $working;
 }
 
 
