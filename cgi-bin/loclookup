@@ -1005,7 +1005,7 @@ unless ($sumr6sl eq 0) {
 unless (($sumtshort eq 0) && ($sumtlong eq 0)) {
 	
 	print "<p><font size=+1>";
-	print "<a href=\"http://www.tnrcc.state.tx.us/permitting/tox/esl.html\">";
+	print "<a href=\"http://www.tceq.texas.gov/toxicology/esl\">";
 	print "Texas Effects Screening Levels</a></font>";
 	print "<br>These levels are based on existing studies of chemical health effects.";
 	print "  Below these levels, no adverse health effects are thought likely to occur.<br>";
@@ -1022,7 +1022,7 @@ unless (($sumtshort eq 0) && ($sumtlong eq 0)) {
 unless (($sumla8 eq 0) && ($sumla24 eq 0)) {
 	
 	print "<p><font size=+1>";
-	print "<a href=\"http://www.deq.state.la.us/planning/reg/title33/33v03.pdf\">";
+	print "<a href=\"http://www.deq.louisiana.gov/portal/tabid/1674/Default.aspx\">";
 	print "Louisiana Ambient Air Quality Standards</a></font>";
 	print "<br>These levels are legally enforceable standards in Louisiana,";
 	print "  developed through Louisiana's regulatory process.<br>";
@@ -1035,7 +1035,7 @@ unless (($sumla8 eq 0) && ($sumla24 eq 0)) {
 unless (($sumncann eq 0) && ($sumnc24 eq 0) && ($sumnc1a eq 0) && ($sumnc1b eq 0)) {
 
 	print "<p><font size=+1>";
-	print "<a href=\"http://daq.state.nc.us/Rules/rules/D1101-06.pdf\">";
+	print "<a href=\"http://daq.state.nc.us/Rules/rules/secD1100.pdf\">";
 	print "North Carolina Ambient Air Standards</a></font>";
 	print "<br>These levels are legally enforceable standards in North Carolina,";
 	print "  developed through North Carolina's regulatory process.<br>";
@@ -1046,7 +1046,7 @@ unless (($sumncann eq 0) && ($sumnc24 eq 0) && ($sumnc1a eq 0) && ($sumnc1b eq 0
 unless (($sumaac eq 0) && ($sumaint eq 0) && ($sumachr eq 0))  {
 
 	print "<p><font size=+1>";
-	print "<a href=\"http://www.atsdr.cdc.gov/mrls.html\">";
+	print "<a href=\"http://www.atsdr.cdc.gov/mrls/index.asp\">";
 	print "ATSDR (American Toxic Substance and Disease Registry) Minimal Risk Levels </a></font>";
 	print "<br>These levels are based on existing studies of chemical health effects.";
 	print "  Exposure at these levels is said to pose \"minimal risks\" of adverse health effects.<br>";
