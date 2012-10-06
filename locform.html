@@ -33,6 +33,9 @@ Other levels of concern are developed by government agencies which survey scient
 what levels of chemical exposure pose minimal risk to your health.  The agencies consider these levels 
 (called "screening levels" or "minimum risk levels") as something like a borderline between levels of chemical exposure
 that <i>could</i> do you harm and levels that <i>probably won't</i> do you any harm.  They are not legally enforceable.
+<p>
+For more details on the standards and screening levels represented in the Levels of Concern, click
+<a href="locsources.html">here</a>.
 </font>
 </td></tr></table>
 <p>
@@ -68,24 +71,69 @@ To look up Levels of Concern:
 1. Enter the name of your organization or sample.</i></b></font>
 <br>This will be used in the titles of your report.
 <p><font size=-.5>Line 1:<input name="tablename" size=80>
-<br>Line 2:<input name="tablename" size=80></font>
+<br>Line 2:<input name="tablename2" size=80></font>
 <p>
 <br><br>
 <font size=+2><b><i>
-2. Choose your units.</i></b></font>
+2. Choose the level of detail for your report.</i></b></font>
+<br>
+<table width=95% cellpadding=15>
+<tr><td width=25% valign=top>
+<input type="checkbox" name="brief">
+<font size=+1><b>
+Brief Comparison
+</b></font>
+</td>
+<td>
+<font size=+1>Shows how your results compare to the standards or screening levels of your choice.  <br>
+<b>Select the levels you would like to use: 
+<select name="reflevel"><option>Louisiana Ambient Air Standards
+<option>North Carolina Ambient Air Standards
+<option>Texas Effects Screening Levels
+<option>EPA Region 6 Screening Levels
+<option>ATSDR Minimal Risk Levels
+</select></b></font>
+<br>
+Click <a href="locsources.html">here</a> for more information about these choices.
+</td></tr>
+<tr><td>
+<input type="checkbox" name="summary">
+<font size=+1><b>
+Results Summary
+</b></font>
+</td>
+<td>
+<font size=+1>
+Lists any of the levels of concern that your reported levels are above. </font>
+</td></tr>
+<tr><td>
+<input type="checkbox" name="full">
+<font size=+1><b>
+Full Report
+</b></font>
+</td>
+<td>
+<font size=+1>
+Compares your results to all available levels of concern.  Highlights levels of concern that your results exceed.</font>
+</td></tr></table>
+<br>
+<p>
+<br><br>
+<font size=+2><b><i>
+3. Choose your units.</i></b></font>
 <table border=0 width=100% cellpadding=15><tr>
 <td width=55%>
 <br>
 <table border=0 width=100%><tr><td>
 <font size=+1><b>What units would you like your report (output) in?  </b></font></td>
-<td><select name="outunits"><option>ppb<option>ug/m3<option>ppbv</select></td></tr></table>
+<td><select name="outunits"><option selected>ppb<option>ppbv<option>ug/m3</select></td></tr></table>
 <br>What you choose here will determine whether the numbers in the report will be expressed in ppb, ug/m3, or ppbv.
 For example, if you choose ppb, you will see both your monitoring results <i>and</i> the levels of concern in
 terms of ppb.  You should <b>choose whatever units you are most comfortable with</b> as the units for your final report.
 <p><br>
 <table border=0 width=100%><tr><td>
 <font size=+1><b>What units are your measured values (input) in?  </b></font></td>
-<td><select name="inunits"><option>ug/m3<option>ppb<option>ppbv</select></td></tr></table>
+<td><select name="inunits"><option>ppb<option>ppbv<option selected>ug/m3</select></td></tr></table>
 <br>Here you should choose the units that the results from your monitoring were reported in.  Choose only
 one type of units for all of the chemicals and values that you will enter in the table below.  <br>
 For example, bucket results are in both ug/m3 and ppbv.  If there are TICs (tentatively identified compounds), 
@@ -124,7 +172,7 @@ or 3 millionths of 1 gram, of chemical in that box, then the concentration would
 
 <p><br>
 <font size=+2><b><i>
-3. Enter chemicals of interest and their measured levels.</i></b></font>
+4. Enter chemicals of interest and their measured levels.</i></b></font>
 <br>If you are working from bucket results, enter the chemicals for which there was a measurable
 concentration (instead of ND).<br>  You should be able to use common synonyms for the chemicals.  <br>
 Be sure that all of the values you enter are in the units that you selected for "measured values" or "input" above.
@@ -146,7 +194,7 @@ Be sure that all of the values you enter are in the units that you selected for 
 
 <p><br>
 <font size=+2><b><i>
-4. Optional: Choose to show regulatory standards only.</i></b></font>
+5. Optional: Choose to show regulatory standards only.</i></b></font>
 <br>The Louisiana and North Carolina Ambient Air Standards are <i>legally enforceable</i> levels of concern.
 If you live in one of these states, you may want to look only at the legal limits which apply to you.  
 <br><b>If you don't check one of these boxes, you will see standards and screening levels from all over the country.</b>
@@ -166,13 +214,12 @@ Only look at the North Carolina Ambient Air Standards.
 </form>
 
 <p><br>
-
 </font>
 
 <hr noshade width=65% align=center><br>
 <center><i>
-Return to 
-<a href=index.html>Resources for Science and Justice</a>
+Return to
+<a href=locform.html>Resources for Science and Justice</a>
 </center><p>
 
 
