@@ -1,16 +1,470 @@
+<?xml version="1.0" standalone="yes"?>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:py="http://genshi.edgewall.org/">
   <head>
-    <title>Levels of concern</title>
+    <title>Levels of Concern</title>
   </head>
   <body>
-    <h1>Levels of concern report</h1>
-    <ul py:for="chemical in chemicals">
-      <li>
-	${chemical.name} is at ${chemical.level}
-	<span py:if="'cas' in chemical.keys()">CAS</span>
-	<span py:if="'ncstds' in chemical.keys()">NC -> ${chemical.ncstds}</span>
-      </li>
-    </ul>
+    <font size="+3">
+      <b/>
+    </font>
+    <center>Levels of Concern Report<p><font size="+2"><i>for Greg</i></font></p></center>
+    <font size="+2">
+      <b>
+        <i/>
+      </b>
+    </font>
+    <center>two sheds</center>
+    <p>
+      <br/>
+    </p>
+    <hr noshade="noshade" width="65%" align="center"/>
+    <br/>
+    <p>
+      <font size="+3">
+        <b/>
+      </font>
+    </p>
+    <center>vinyl chloride</center>
+    <table border="1" width="60%" align="center">
+      <tr>
+        <td width="35%" valign="top" align="center">
+          <br/>
+          <font size="+1">Your reported value</font>
+          <p>
+            <font size="+3">
+              <b>1650 ppb </b>
+            </font>
+          </p>
+        </td>
+        <td width="30%" align="center">
+          <font size="+3"> is <i>over</i><br/><b> 15</b><br/> times </font>
+        </td>
+        <td width="35%" valign="top" align="center">
+          <font size="+1">The <b>Short Term</b> (1-hr) Texas Effects Screening Level </font>
+          <p>
+            <font size="+3">
+              <b>108 ppb</b>
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td width="35%" valign="top" align="center">
+          <br/>
+          <font size="+1">Your reported value</font>
+          <p>
+            <font size="+3">
+              <b>1650 ppb </b>
+            </font>
+          </p>
+        </td>
+        <td width="30%" align="center">
+          <font size="+3"> is <i>nearly</i><br/><b> 153</b><br/> times </font>
+        </td>
+        <td width="35%" valign="top" align="center">
+          <font size="+1">The <b>Long-Term</b> Texas Effects Screening Level </font>
+          <p>
+            <font size="+3">
+              <b>10.8 ppb</b>
+            </font>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <br/>
+    <br/>
+    <p>
+      <font size="+3">
+        <b/>
+      </font>
+    </p>
+    <center>acetaldehyde</center>
+    <table border="1" width="60%" align="center">
+      <tr>
+        <td width="35%" valign="top" align="center">
+          <br/>
+          <font size="+1">Your reported value</font>
+          <p>
+            <font size="+3">
+              <b>18.3 ppb </b>
+            </font>
+          </p>
+        </td>
+        <td width="30%" align="center">
+          <font size="+3"> is <i>over</i><br/><b> 2</b><br/> times </font>
+        </td>
+        <td width="35%" valign="top" align="center">
+          <font size="+1">The <b>Long-Term</b> Texas Effects Screening Level </font>
+          <p>
+            <font size="+3">
+              <b>7.51 ppb</b>
+            </font>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <br/>
+    <br/>
+    <p>
+      <font size="+3">
+        <b/>
+      </font>
+    </p>
+    <center>benzene</center>
+    <table border="1" width="60%" align="center">
+      <tr>
+        <td width="35%" valign="top" align="center">
+          <br/>
+          <font size="+1">Your reported value</font>
+          <p>
+            <font size="+3">
+              <b>15800 ppb </b>
+            </font>
+          </p>
+        </td>
+        <td width="30%" align="center">
+          <font size="+3"> is <i>over</i><br/><b> 1583</b><br/> times </font>
+        </td>
+        <td width="35%" valign="top" align="center">
+          <font size="+1">The <b>Short Term</b> (1-hr) Texas Effects Screening Level </font>
+          <p>
+            <font size="+3">
+              <b>10.0 ppb</b>
+            </font>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td width="35%" valign="top" align="center">
+          <br/>
+          <font size="+1">Your reported value</font>
+          <p>
+            <font size="+3">
+              <b>15800 ppb </b>
+            </font>
+          </p>
+        </td>
+        <td width="30%" align="center">
+          <font size="+3"> is <i>over</i><br/><b> 6333</b><br/> times </font>
+        </td>
+        <td width="35%" valign="top" align="center">
+          <font size="+1">The <b>Long-Term</b> Texas Effects Screening Level </font>
+          <p>
+            <font size="+3">
+              <b>2.50 ppb</b>
+            </font>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <br/>
+    <br/>
+    <p>
+      <br/>
+    </p>
+    <hr noshade="noshade" width="65%" align="center"/>
+    <br/>
+    <p>
+      <font size="+1">
+        <b>
+          <u>vinyl chloride</u>
+        </b>
+      </font>
+      <br/>
+      <font size="+1">Your reported value of <b>1987 ug/m3</b>  or  <b>1650 ppb</b>  is <b>ABOVE</b> the following Levels of Concern:</font>
+      <br/>
+      <br/>
+    </p>
+    <table border="1" width="85%" cellpadding="3">
+      <tr>
+        <td>
+          <font size="+1"><b>EPA Region 6 Screening Level</b> </font>
+          <br/>
+          <font size="-1">  According to Region 6 of the US EPA, <br/>  no health effects are thought to occur below this level.</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">  0.183 ppb </font>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font size="+1">
+            <b>Texas Short-Term Screening Level</b>
+          </font>
+          <br/>
+          <font size="-1">  According to the Texas Natural Resource Conservation Commission, <br/>  no health effects are thought to occur below this level.<br/>"Short-term" levels refer to the average exposure level during <b>one hour</b>.</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">108 ppb</font>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font size="+1">
+            <b>Texas Long-Term Screening Level</b>
+          </font>
+          <br/>
+          <font size="-1">  According to the Texas Natural Resource Conservation Commission, <br/>  no health effects are thought to occur below this level.<br/>"Long-term" levels refer to the average exposure level during a <b>year</b> (24 hours for benzene and ethylene dichloride).</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">10.8 ppb</font>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font size="+1">
+            <b>Louisiana Annual Ambient Air Standard</b>
+          </font>
+          <br/>
+          <font size="-1">  Concentrations above this level are illegal in Louisiana.<br/>  This level refers to the average level over a  period of <b>one year</b>.</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">0.993 ppb</font>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font size="+1">
+            <b>North Carolina Annual Ambient Air Standard</b>
+          </font>
+          <br/>
+          <font size="-1">  Concentrations above this level are illegal in North Carolina.<br/>  This level refers to the average level over a period of <b>one year</b>.</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">0.317 ppb</font>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font size="+1">
+            <b>ATSDR Acute Minimal Risk Level</b>
+          </font>
+          <br/>
+          <font size="-1">  According to the American Toxic Substances and Disease Registry, <br/>  there is no appreciable risk of <i>non-cancer</i> health effects from being exposed to concentrations up to this level over periods of <b>up to 2 weeks</b>.</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">499 ppb</font>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font size="+1">
+            <b>ATSDR Intermediate Minimal Risk Level</b>
+          </font>
+          <br/>
+          <font size="-1">  According to the American Toxic Substances and Disease Registry, <br/>  there is no appreciable risk of <i>non-cancer</i> health effects from being exposed to concentrations up to this level over periods of <b> between 2 weeks and one year</b>.</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">29.9 ppb</font>
+          </b>
+        </td>
+      </tr>
+    </table>
+    <br/>
+    <p>
+      <font size="+1">
+        <b>
+          <u>acetaldehyde</u>
+        </b>
+      </font>
+      <br/>
+      <font size="+1">Your reported value of <b>22 ug/m3</b>  or  <b>18.3 ppb</b>  is <b>ABOVE</b> the following Levels of Concern:</font>
+      <br/>
+      <br/>
+    </p>
+    <table border="1" width="85%" cellpadding="3">
+      <tr>
+        <td>
+          <font size="+1"><b>EPA Region 6 Screening Level</b> </font>
+          <br/>
+          <font size="-1">  According to Region 6 of the US EPA, <br/>  no health effects are thought to occur below this level.</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">  0.726 ppb </font>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font size="+1">
+            <b>Texas Long-Term Screening Level</b>
+          </font>
+          <br/>
+          <font size="-1">  According to the Texas Natural Resource Conservation Commission, <br/>  no health effects are thought to occur below this level.<br/>"Long-term" levels refer to the average exposure level during a <b>year</b> (24 hours for benzene and ethylene dichloride).</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">7.51 ppb</font>
+          </b>
+        </td>
+      </tr>
+    </table>
+    <br/>
+    <p>
+      <font size="+1">
+        <b>
+          <u>benzene</u>
+        </b>
+      </font>
+      <br/>
+      <font size="+1">Your reported value of <b>19000.44 ug/m3</b>  or  <b>15800 ppb</b>  is <b>ABOVE</b> the following Levels of Concern:</font>
+      <br/>
+      <br/>
+    </p>
+    <table border="1" width="85%" cellpadding="3">
+      <tr>
+        <td>
+          <font size="+1"><b>EPA Region 6 Screening Level</b> </font>
+          <br/>
+          <font size="-1">  According to Region 6 of the US EPA, <br/>  no health effects are thought to occur below this level.</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">  0.208 ppb </font>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font size="+1">
+            <b>Texas Short-Term Screening Level</b>
+          </font>
+          <br/>
+          <font size="-1">  According to the Texas Natural Resource Conservation Commission, <br/>  no health effects are thought to occur below this level.<br/>"Short-term" levels refer to the average exposure level during <b>one hour</b>.</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">10.0 ppb</font>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font size="+1">
+            <b>Texas Long-Term Screening Level</b>
+          </font>
+          <br/>
+          <font size="-1">  According to the Texas Natural Resource Conservation Commission, <br/>  no health effects are thought to occur below this level.<br/>"Long-term" levels refer to the average exposure level during a <b>year</b> (24 hours for benzene and ethylene dichloride).</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">2.50 ppb</font>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font size="+1">
+            <b>Louisiana Annual Ambient Air Standard</b>
+          </font>
+          <br/>
+          <font size="-1">  Concentrations above this level are illegal in Louisiana.<br/>  This level refers to the average level over a  period of <b>one year</b>.</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">10.0 ppb</font>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font size="+1">
+            <b>North Carolina Annual Ambient Air Standard</b>
+          </font>
+          <br/>
+          <font size="-1">  Concentrations above this level are illegal in North Carolina.<br/>  This level refers to the average level over a period of <b>one year</b>.</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">0.100 ppb</font>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font size="+1">
+            <b>ATSDR Acute Minimal Risk Level</b>
+          </font>
+          <br/>
+          <font size="-1">  According to the American Toxic Substances and Disease Registry, <br/>  there is no appreciable risk of <i>non-cancer</i> health effects from being exposed to concentrations up to this level over periods of <b>up to 2 weeks</b>.</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">49.9 ppb</font>
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <font size="+1">
+            <b>ATSDR Intermediate Minimal Risk Level</b>
+          </font>
+          <br/>
+          <font size="-1">  According to the American Toxic Substances and Disease Registry, <br/>  there is no appreciable risk of <i>non-cancer</i> health effects from being exposed to concentrations up to this level over periods of <b> between 2 weeks and one year</b>.</font>
+        </td>
+        <td valign="top" align="right">
+          <b>
+            <font size="+1">3.99 ppb</font>
+          </b>
+        </td>
+      </tr>
+    </table>
+    <br/>
+    <p>
+      <br/>
+      <br/>
+    </p>
+    <p>
+      <br/>
+    </p>
+    <hr noshade="noshade" width="65%" align="center"/>
+    <br/>
+    <font size="+2">
+      <b/>
+    </font>
+    <center>Levels of Concern <br/><font size="+1"><b>in ppb</b></font><br/><table border="1" size="95%"><tr><td><center><b>Chemical</b></center></td><td><center><b>Reported Level</b></center></td><td><center><b>EPA Region 6 Screening Level</b></center></td><td><center><b>TX ESL - short term</b></center></td><td><center><b>TX ESL - long term</b></center></td><td><center><b>LA Annual Std.</b></center></td><td><center><b>NC Annual Std.</b></center></td><td><center><b>NC 1-hr Std. (irritants)</b></center></td><td><center><b>ATSDR MRL - Acute</b></center></td><td><center><b>ATSDR MRL - Intermediate</b></center></td></tr><tr><td><b>vinyl chloride</b></td><td bgcolor="#FF9966"><center><b>1650</b></center></td><td bgcolor="#FFCC99"><center>0.183</center></td><td bgcolor="#FFCC99"><center>108</center></td><td bgcolor="#FFCC99"><center>10.8</center></td><td bgcolor="#FFCC99"><center>0.993</center></td><td bgcolor="#FFCC99"><center>0.317</center></td><td><center> --- </center></td><td bgcolor="#FFCC99"><center>499</center></td><td bgcolor="#FFCC99"><center>29.9</center></td></tr><tr><td><b>acetaldehyde</b></td><td bgcolor="#FF9966"><center><b>18.3</b></center></td><td bgcolor="#FFCC99"><center>0.726</center></td><td><center>75.1</center></td><td bgcolor="#FFCC99"><center>7.51</center></td><td><center>37.9</center></td><td><center> --- </center></td><td><center/></td><td><center> --- </center></td><td><center> --- </center></td></tr><tr><td><b>benzene</b></td><td bgcolor="#FF9966"><center><b>15800</b></center></td><td bgcolor="#FFCC99"><center>0.208</center></td><td bgcolor="#FFCC99"><center>10.0</center></td><td bgcolor="#FFCC99"><center>2.50</center></td><td bgcolor="#FFCC99"><center>10.0</center></td><td bgcolor="#FFCC99"><center>0.100</center></td><td><center> --- </center></td><td bgcolor="#FFCC99"><center>49.9</center></td><td bgcolor="#FFCC99"><center>3.99</center></td></tr></table></center>
+    <p>
+      <br/>
+    </p>
+    <hr noshade="noshade" width="65%" align="center"/>
+    <br/>
+    <p>
+      <br/>
+      <br/>
+      <br/>
+    </p>
+    <table border="1" cellpadding="10">
+      <tr>
+        <td>
+          <b>For more information about the standards and screening levels compiled here, or for links to the sources of these levels, click <a href="/locsources.html">here</a>.</b>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#FF9966">
+          <b>Remember: The information on this site is not intended to be legal advice.  This information is not a substitute for the advice of an attorney admitted to practice in the relevant jurisdiction.  Persons using this site should not take or refrain from taking legal action based solely on information provided on this site or generated by using the tools on this site.</b>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <br/>
+    </p>
+    <hr noshade="noshade" width="65%" align="center"/>
+    <br/>
+    <p/>
   </body>
 </html>
