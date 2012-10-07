@@ -77,6 +77,20 @@ r6sls_by_cas       = key_csv_by(csv_file_reader('datatables/r6sls.txt',    field
 atsdr_by_cas       = key_csv_by(csv_file_reader('datatables/ATSDRMRLs.txt',fieldnames=['name','cas','atsdrac','atsdrint','atsdrchr']), 'cas')
 lastds_by_cas      = key_csv_by(csv_file_reader('datatables/lastds.txt',   fieldnames=['name','cas','la8','la24']),                 'cas')
 
+def describe_comparison(level,reference):
+    """Describe the comparison between a level and a reference as an integer ratio,
+       and one of Gwen's descriptive words"""
+    compare = level / reference
+    decimal = compare - int(compare)
+    factor  = int(compare)
+    description = 'unknown'
+    if (compare <= 1.0):
+        return { 'factor': int(compare), 'description': 'ok' }
+    else:
+        if (compare < 1.8):   return { 'factor': int(compare), 'description': 'exceeds' }
+        elif (decimal < 0.2): return { 'factor': int(compare), 'description': 'about'   }
+        elif (decimal < 0.8): return { 'factor': int(compare), 'description': 'over'    }
+        else: return { 'factor' : int(compare) + 1, 'description': 'nearly' }
 
 # append some metadata to chemicals
 for chemical in chemicals:
