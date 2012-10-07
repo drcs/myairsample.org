@@ -43,18 +43,28 @@ def dict_from_csv_fname(fname, col_idx=0, dialect=False, key_xform = lambda(k): 
                 result[key_xform(row[col_idx])] = value_xform(row)
     return result
 
-def select_field(n): return lambda(row): row[n]
+def select_field(n, default=False): return lambda(row): row[n] if len(row) > n else default
 
-cas_nos       = dict_from_csv_fname('datatables/synonyms.txt', 0, value_xform=select_field(1))
+cas_no        = dict_from_csv_fname('datatables/synonyms.txt', 0, value_xform=select_field(1))
+mw_by_cas     = dict_from_csv_fname('datatables/synonyms.txt', 1, value_xform=select_field(2))
 ncstds_by_cas = dict_from_csv_fname('datatables/ncstds.txt',   1)
 
 # append some metadata to chemicals
 for chemical in chemicals:
-    if chemical["name"] in cas_nos:
-        cas = cas_nos[chemical["name"]]
+    if chemical["name"] in cas_no:
+        cas = cas_no[chemical["name"]]
         chemical["cas"] = cas
         if cas in ncstds_by_cas:
             chemical["ncstds"] = ncstds_by_cas[cas]
+
+# ---------------------------------------------------------------------
+# Units conversion
+# ---------------------------------------------------------------------
+def convert_units(level, from_units, to_units, mw=False):
+    factor = { 'ppb'         : 1.0   ,
+               'ugm3'        : 1.198 ,
+               'ppbv'        : 24.04 / mw }
+    return level / factor[from_units] * factor[to_units]
 
 # -------------------------------------------------------------------------------
 # Load the report template and generate the output
