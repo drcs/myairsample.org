@@ -68,9 +68,15 @@ def key_csv_by(reader, key, cleanup=standard_cleanup):
             result[cleanup(row[key])] = row
     return result
 
-synonym_by_name    = key_csv_by(csv_file_reader('datatables/synonyms.txt', fieldnames=['name','cas','mw']),'name')
-synonym_by_cas     = key_csv_by(csv_file_reader('datatables/synonyms.txt', fieldnames=['name','cas','mw']),'cas')
-ncstds_by_cas      = key_csv_by(csv_file_reader('datatables/ncstds.txt',   fieldnames=['name','cas','ncann','nc24','nc1a','nc1b']),'cas')
+synonym_by_name    = key_csv_by(csv_file_reader('datatables/synonyms.txt', fieldnames=['name','cas','mw']),                         'name')
+synonym_by_cas     = key_csv_by(csv_file_reader('datatables/synonyms.txt', fieldnames=['name','cas','mw']),                         'cas')
+
+ncstds_by_cas      = key_csv_by(csv_file_reader('datatables/ncstds.txt',   fieldnames=['name','cas','ncann','nc24','nc1a','nc1b']), 'cas')
+tesl_by_cas        = key_csv_by(csv_file_reader('datatables/tesl.txt',     fieldnames=['name','cas','tshort','tinter','tlong']),    'cas')
+r6sls_by_cas       = key_csv_by(csv_file_reader('datatables/r6sls.txt',    fieldnames=['name','cas','r6sl']),                       'cas')
+atsdr_by_cas       = key_csv_by(csv_file_reader('datatables/ATSDRMRLs.txt',fieldnames=['name','cas','atsdrac','atsdrint','atsdrchr']), 'cas')
+lastds_by_cas      = key_csv_by(csv_file_reader('datatables/lastds.txt',   fieldnames=['name','cas','la8','la24']),                 'cas')
+
 
 # append some metadata to chemicals
 for chemical in chemicals:
