@@ -49,39 +49,34 @@ chemicals = map (chem_lookup, filter (chem_pattern.match, form.keys()))
 # Read the standards tables
 # ---------------------------------------------------------------------
 
-def dict_from_csv_fname(fname, col_idx=0, dialect=False, key_xform = lambda(k): k.strip().lower(), value_xform = lambda(v): v):
-    """Read a CSV file, attempting to determine its dialect if none specified.
-       Create a dictionary keyed on 'col_idx', optionally transforming the key
-       and value (which defaults to the entire row)."""
+def standard_cleanup(s):
+    try: return s.lower().strip()
+    except AttributeError: return s
+
+def csv_file_reader(fname, fieldnames=None, dialect=None):
+    csvfile = open(fname,'rb')
+    if dialect == None:
+        dialect = csv.Sniffer().sniff(csvfile.read(1024))
+        csvfile.seek(0)
+    return csv.DictReader(csvfile, fieldnames, dialect=dialect)
+
+def key_csv_by(reader, key, cleanup=standard_cleanup):
+    """Given a csv.DictReader, return a dictionary of its rows keyed by one of the columns"""
     result = {}
-    with open(fname, 'rb') as csvfile:
-        if not dialect:
-            dialect = csv.Sniffer().sniff(csvfile.read(1024))
-            csvfile.seek(0)
-        for row in csv.reader(csvfile,dialect):
-            if len(row) > col_idx:
-                result[key_xform(row[col_idx])] = value_xform(row)
+    for row in reader:
+        if key in row:
+            result[cleanup(row[key])] = row
     return result
 
-def select_field(n, default=False): return lambda(row): row[n] if len(row) > n else default
-
-def zip_to_dict(keys, values):
-    result = {}
-    for (key,value) in zip (keys, values): result[key] = value
-    return result
-
-def row_mapper(keys):
-    """Convert an array to a dictionary with the given keys"""
-    return lambda(row): zip_to_dict(keys, row)
-
-cas_no        = dict_from_csv_fname('datatables/synonyms.txt', 0, value_xform=select_field(1))
-mw_by_cas     = dict_from_csv_fname('datatables/synonyms.txt', 1, value_xform=select_field(2))
-ncstds_by_cas = dict_from_csv_fname('datatables/ncstds.txt',   1, value_xform=row_mapper(['name','cas','ncann','nc24','nc1a','nc1b']))
+synonym_by_name    = key_csv_by(csv_file_reader('datatables/synonyms.txt', fieldnames=['name','cas','mw']),'name')
+synonym_by_cas     = key_csv_by(csv_file_reader('datatables/synonyms.txt', fieldnames=['name','cas','mw']),'cas')
+ncstds_by_cas      = key_csv_by(csv_file_reader('datatables/ncstds.txt',   fieldnames=['name','cas','ncann','nc24','nc1a','nc1b']),'cas')
 
 # append some metadata to chemicals
 for chemical in chemicals:
-    if chemical["name"] in cas_no:
-        cas = cas_no[chemical["name"]]
+    name = standard_cleanup(chemical["name"])
+    if name in synonym_by_name:
+        cas = synonym_by_name[name]['cas']
         chemical["cas"] = cas
         if cas in ncstds_by_cas:
             chemical["ncstds"] = ncstds_by_cas[cas]
