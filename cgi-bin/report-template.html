@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/">
+  <head>
+    <title>Levels of concern</title>
+  </head>
+  <body>
+    <h1>Levels of concern report</h1>
+    <ul py:for="chemical in chemicals">
+      <li>
+	${chemical.name} is at ${chemical.level}
+	<span py:if="'cas' in chemical.keys()">CAS</span>
+	<span py:if="'ncstds' in chemical.keys()">NC -> ${chemical.ncstds}</span>
+      </li>
+    </ul>
+  </body>
+</html>
