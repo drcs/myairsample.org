@@ -1,0 +1,83 @@
+
+/************ report header *************/
+
+#header {
+    width:       65%;
+    margin:      auto;
+    border-bottom:  1px solid;
+}
+
+h1 {
+    text-align:   center;
+    font-size:    100%;
+}
+
+h2 {
+    text-align:   center;
+    font-size:    200%;
+}
+
+h2.recipient1 {
+    font-style:  italic;
+}
+
+/************ brief report *************/
+
+div#report_brief ul {
+    list-style:  none;
+}
+
+#report_brief h3 {
+    text-align:  center;
+}
+
+#report_brief .bigfont {
+    font-size:   300%;
+}
+
+/************ medium-level report *************/
+
+div#report_medium ul {
+    list-style:  none;
+}
+
+#report_medium .reporting_criteria {
+    font-size:    130%;
+    font-weight:  bold;
+}
+
+#report_medium .reported_value {
+    font-weight:   bold;
+}
+
+/************* full report **********************/
+
+#report_full table tr:first-child {
+    font-weight:   bold;
+}
+
+#report_full tr.chemical td:first-child {
+    font-weight:   bold;
+}
+
+#report_full tr.chemical td:nth-child(2) {
+    background:    #ff9966;
+    font-weight:   bold;
+}
+
+#report_full .concern {
+    background:    #ffcc99;
+}
+
+/************* Footer **********************/
+
+#footer {
+    border-top:   1px solid;
+}
+
+#disclaimer {
+    font-weight: bold;
+    background:  #FF9966;
+    padding:     10px;
+    border:      1px solid;
+}

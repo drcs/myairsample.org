@@ -122,4 +122,4 @@ print "Content-type: text/html"
 print
 
 print chemicals
-print tmpl.generate(chemicals = chemicals).render('html', doctype='html')
+print tmpl.generate(chemicals = chemicals, recipient=['fix','me']).render('html', doctype='html')
