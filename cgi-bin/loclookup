@@ -44,6 +44,8 @@ def chem_lookup(chem_par):
              'level' : form[report_par].value if report_par in form else 'NA' }
 
 chemicals = map (chem_lookup, filter (chem_pattern.match, form.keys()))
+units = {'in'  : form.getvalue('inunits'),
+         'out' : form.getvalue('outunits')}
 
 # ---------------------------------------------------------------------
 # Read the standards tables
@@ -71,11 +73,43 @@ def key_csv_by(reader, key, cleanup=standard_cleanup):
 synonym_by_name    = key_csv_by(csv_file_reader('datatables/synonyms.txt', fieldnames=['name','cas','mw']),                         'name')
 synonym_by_cas     = key_csv_by(csv_file_reader('datatables/synonyms.txt', fieldnames=['name','cas','mw']),                         'cas')
 
-ncstds_by_cas      = key_csv_by(csv_file_reader('datatables/ncstds.txt',   fieldnames=['name','cas','ncann','nc24','nc1a','nc1b']), 'cas')
-tesl_by_cas        = key_csv_by(csv_file_reader('datatables/tesl.txt',     fieldnames=['name','cas','tshort','tinter','tlong']),    'cas')
-r6sls_by_cas       = key_csv_by(csv_file_reader('datatables/r6sls.txt',    fieldnames=['name','cas','r6sl']),                       'cas')
-atsdr_by_cas       = key_csv_by(csv_file_reader('datatables/ATSDRMRLs.txt',fieldnames=['name','cas','atsdrac','atsdrint','atsdrchr']), 'cas')
-lastds_by_cas      = key_csv_by(csv_file_reader('datatables/lastds.txt',   fieldnames=['name','cas','la8','la24']),                 'cas')
+def read_criteria(fname, fieldnames, column, units):
+    criteria_by_cas = key_csv_by(csv_file_reader('datatables/' + fname, fieldnames=fieldnames), 'cas')
+    return [{'source'   : fname,
+             'criteria' : criteria_by_cas,
+             'column'   : column,
+             'units'    : units}]
+
+def list_flatten(xs):
+    result = []
+    for x in xs: result += x
+    return result
+
+# FIXME multiple criteria are available per file
+reporting_criteria = list_flatten([
+        read_criteria('ncstds.txt',
+                      ['name','cas','ncann','nc24','nc1a','nc1b'],
+                      'nc24',
+                      'mg/m3'),
+        read_criteria('tesl.txt',
+                      ['name','cas','tshort','tinter','tlong'],
+                      'tshort',
+                      'ug/m3'),
+        read_criteria('r6sls.txt',
+                      ['name','cas','r6sl'],
+                      'r6sl',
+                      'ug/m3'),
+        read_criteria('ATSDRMRLs.txt',
+                      ['name','cas','atsdrac','atsdrint','atsdrchr'],
+                      'atsdrac',
+                      'ppm'),
+        read_criteria('lastds.txt',
+                      ['name','cas','la8','la24'],
+                      'la8',
+                      'ug/m3')])
+
+# FIXME restrict according to selected criteria
+criteria_full = reporting_criteria
 
 def describe_comparison(level,reference):
     """Describe the comparison between a level and a reference as an integer ratio,
@@ -92,24 +126,23 @@ def describe_comparison(level,reference):
         elif (decimal < 0.8): return { 'factor': int(compare), 'description': 'over'    }
         else: return { 'factor' : int(compare) + 1, 'description': 'nearly' }
 
-# append some metadata to chemicals
-for chemical in chemicals:
-    name = standard_cleanup(chemical["name"])
-    if name in synonym_by_name:
-        cas = synonym_by_name[name]['cas']
-        chemical["cas"] = cas
-        if cas in ncstds_by_cas:
-            chemical["ncstds"] = ncstds_by_cas[cas]
-
 # ---------------------------------------------------------------------
 # Units conversion
 # ---------------------------------------------------------------------
 # FIXME: throw exception when mw lacking
 def convert_units(level, from_units, to_units, mw=False):
-    factor = { 'ppb'         : 1.0   ,
-               'ugm3'        : 1.198 ,
-               'ppbv'        : 24.04 / mw }
+    factor = { 'ppm'         : 1.0 ,
+               'ppb'         : 1000.0 ,
+               'ug/m3'       : 1198.0 ,
+               'mg/m3'       : 1.198 }
+    if ((from_units == 'ppbv') or (to_units == 'ppbv')):
+        factor['ppbv'] = 24040.0 / mw
     return level / factor[from_units] * factor[to_units]
+
+# Add parameter 'out_level' to chemicals; reported level in output units
+for chemical in chemicals:
+    level = float(chemical['level'])
+    chemical['out_level'] = convert_units(level, units['in'], units['out'])
 
 # -------------------------------------------------------------------------------
 # Load the report template and generate the output
@@ -121,9 +154,28 @@ tmpl = loader.load('report-template.html')
 print "Content-type: text/html"
 print
 
+# FIXME debugging output
 print chemicals
 
-document = tmpl.generate(chemicals = chemicals,
-                         recipient=[form.getvalue('tablename',False),
-                                    form.getvalue('tablename2',False)])
+def report_criterion(chemical, criterion):
+    cas = synonym_by_name[standard_cleanup(chemical['name'])]['cas']
+    standard_level = (criterion['criteria'][cas][criterion['column']]).strip()
+    if standard_level != '':
+        return convert_units(float(standard_level), criterion['units'], units['out'])
+    else:
+        return '--'
+
+def over_criterion(chemical, criterion):
+    # FIXME stub -- should return 'concern' only if level should be flagged
+    return 'nac'
+
+
+document = tmpl.generate(chemicals        = chemicals,
+                         recipient        = [form.getvalue('tablename',False),
+                                             form.getvalue('tablename2',False)],
+                         units            = units,
+                         criteria_full    = criteria_full,
+                         report_criterion = report_criterion,
+                         over_criterion   = over_criterion)
+                                 
 print document.render('html', doctype='html')

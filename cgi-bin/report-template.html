@@ -70,21 +70,17 @@
     <!-- Full report -->
     <div id="report_full">
       <h2>Levels of Concern</h2>
-      <h2>in ppb</h2> <!-- FIXME replace with actual units -->
+      <h2>in ${units.out}</h2>
       <table border="1" size="95%">
 	<tr>
 	  <td>Chemical</td>
 	  <td>Reported Level</td>
-	  <td>EPA Region 6 Screening Level</td>  <!-- FIXME: loop over reporting criteria -->
-	  <td>TX ESL - short term</td>
-	  <td>TX ESL - long term</td>
+	  <td py:for="criterion in criteria_full">${criterion.source}</td>
 	</tr>
-	<tr class="chemical"> <!-- FIXME: loop over chemicals of concern -->
-	  <td>vinyl chloride</td>
-          <td>1650</td>
-	  <td class="concern">0.183</td>  <!-- FIXME: loop over reporting criteria -->
-	  <td>108</td>
-	  <td class="concern">0.983</td>
+	<tr py:for="chemical in chemicals" class="chemical">
+	  <td>${chemical.name}</td>
+          <td>${chemical.out_level}</td>
+ 	  <td py:for="criterion in criteria_full" class="${over_criterion(chemical, criterion)}">${report_criterion(chemical, criterion)}</td>
 	</tr>
       </table>
     </div>      
