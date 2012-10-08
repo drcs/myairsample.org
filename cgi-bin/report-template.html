@@ -8,8 +8,8 @@
   <body>
     <div id="header">
       <h1>Levels of Concern Report</h1>
-      <h2 class="recipient1">for ${recipient[0]}</h2>
-      <h2 class="recipient2">${recipient[1]}</h2>
+      <h2 py:if="recipient[0]" class="recipient1">for ${recipient[0]}</h2>
+      <h2 py:if="recipient[1]" class="recipient2">${recipient[1]}</h2>
     </div>
     
     <!-- Brief report -->

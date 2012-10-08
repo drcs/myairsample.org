@@ -122,4 +122,8 @@ print "Content-type: text/html"
 print
 
 print chemicals
-print tmpl.generate(chemicals = chemicals, recipient=['fix','me']).render('html', doctype='html')
+
+document = tmpl.generate(chemicals = chemicals,
+                         recipient=[form.getvalue('tablename',False),
+                                    form.getvalue('tablename2',False)])
+print document.render('html', doctype='html')
