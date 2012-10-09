@@ -42,11 +42,6 @@ div#report_brief ul {
 
 /************ medium-level report *************/
 
-/* DEBUG turn off this report. */
-#report_medium {
-    display:     none;
-}
-
 div#report_medium ul {
     list-style:  none;
 }

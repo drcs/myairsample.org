@@ -117,7 +117,9 @@ reporting_criteria = list_flatten([
                       'ug/m3')])
 
 # FIXME restrict according to selected criteria
-criteria_full = reporting_criteria
+criteria = {'full'   : reporting_criteria,
+            'medium' : reporting_criteria,
+            'brief'  : reporting_criteria}
 
 def describe_comparison(level,reference):
     """Describe the comparison between a level and a reference as an integer ratio,
@@ -192,7 +194,7 @@ document = tmpl.generate(chemicals        = chemicals,
                          recipient        = [form.getvalue('tablename',False),
                                              form.getvalue('tablename2',False)],
                          units            = units,
-                         criteria_full    = criteria_full,
+                         criteria         = criteria,
                          report_criterion = report_criterion,
                          over_criterion   = over_criterion)
                                  
