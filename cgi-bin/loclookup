@@ -73,39 +73,47 @@ def key_csv_by(reader, key, cleanup=standard_cleanup):
 synonym_by_name    = key_csv_by(csv_file_reader('datatables/synonyms.txt', fieldnames=['name','cas','mw']),                         'name')
 synonym_by_cas     = key_csv_by(csv_file_reader('datatables/synonyms.txt', fieldnames=['name','cas','mw']),                         'cas')
 
-def read_criteria(fname, fieldnames, column, units):
+def read_criteria(fname, fieldnames, columns, units):
     criteria_by_cas = key_csv_by(csv_file_reader('datatables/' + fname, fieldnames=fieldnames), 'cas')
-    return [{'source'   : fname,
-             'criteria' : criteria_by_cas,
-             'column'   : column,
-             'units'    : units}]
+    return map (lambda(column): {'source'      : fname,
+                                 'criteria'    : criteria_by_cas,
+                                 'column'      : column['column'],
+                                 'description' : column['description'],
+                                 'units'       : units},
+                columns)
 
 def list_flatten(xs):
     result = []
     for x in xs: result += x
     return result
 
-# FIXME multiple criteria are available per file
 reporting_criteria = list_flatten([
         read_criteria('ncstds.txt',
                       ['name','cas','ncann','nc24','nc1a','nc1b'],
-                      'nc24',
+                      [{'column': 'ncann', 'description': 'NC Annual Std.' },
+                       {'column': 'nc24',  'description': 'NC 24-hr Std.'  },
+                       {'column': 'nc1a',  'description': 'NC 1-hr Std.'   },
+                       {'column': 'nc1b',  'description': 'NC 1-hr Std.'   }],
                       'mg/m3'),
         read_criteria('tesl.txt',
                       ['name','cas','tshort','tinter','tlong'],
-                      'tshort',
+                      [{'column': 'tshort', 'description': 'TX ESL - short term'},
+                       {'column': 'tlong',  'description': 'TX ESL - long term' }],
                       'ug/m3'),
         read_criteria('r6sls.txt',
                       ['name','cas','r6sl'],
-                      'r6sl',
+                      [{'column': 'r6sl',   'description': 'EPA Region 6 Screening Level'}],
                       'ug/m3'),
         read_criteria('ATSDRMRLs.txt',
                       ['name','cas','atsdrac','atsdrint','atsdrchr'],
-                      'atsdrac',
+                      [{'column': 'atsdrac',  'description': 'ATSDR MRL - Acute'           },
+                       {'column': 'atsdrint', 'description': 'ATSDR MRL - Intermediate'    },
+                       {'column': 'atsdrchr', 'description': 'ATSDR MRL - Chronic'         }],
                       'ppm'),
         read_criteria('lastds.txt',
                       ['name','cas','la8','la24'],
-                      'la8',
+                      [{'column': 'la8',  'description': 'LA 8-hr Std.'  },
+                       {'column': 'la24', 'description': 'LA 24-hr Std.' }],
                       'ug/m3')])
 
 # FIXME restrict according to selected criteria
