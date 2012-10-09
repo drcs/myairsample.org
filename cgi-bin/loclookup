@@ -161,7 +161,8 @@ def report_criterion(chemical, criterion):
     cas = synonym_by_name[standard_cleanup(chemical['name'])]['cas']
     standard_level = (criterion['criteria'][cas][criterion['column']]).strip()
     if standard_level != '':
-        return convert_units(float(standard_level), criterion['units'], units['out'])
+        value = convert_units(float(standard_level), criterion['units'], units['out'])
+        return format(value, '.3g')
     else:
         return '--'
 
