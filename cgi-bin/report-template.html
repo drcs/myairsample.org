@@ -74,11 +74,11 @@
       <table border="1" size="95%">
 	<tr>
 	  <td>Chemical</td>
-	  <td py:for="chemical in chemicals" class="chemical">${chemical.name}</td>
+	  <td py:for="chemical in chemicals" class="chemical_name">${chemical.name}</td>
 	</tr>
 	<tr>
 	  <td>Reported Level</td>
-	  <td py:for="chemical in chemicals" class="chemical">${format(chemical.out_level, '.3g')}</td>
+	  <td py:for="chemical in chemicals" class="chemical_level">${format(chemical.out_level, '.3g')}</td>
 	</tr>
  	<tr py:for="criterion in criteria_full">
 	  <td>${criterion.description}</td>
