@@ -74,13 +74,15 @@
       <table border="1" size="95%">
 	<tr>
 	  <td>Chemical</td>
-	  <td>Reported Level</td>
-	  <td py:for="criterion in criteria_full">${criterion.description}</td>
+	  <td py:for="chemical in chemicals" class="chemical">${chemical.name}</td>
 	</tr>
-	<tr py:for="chemical in chemicals" class="chemical">
-	  <td>${chemical.name}</td>
-          <td>${format(chemical.out_level, '.3g')}</td>
- 	  <td py:for="criterion in criteria_full" class="${over_criterion(chemical, criterion)}">
+	<tr>
+	  <td>Reported Level</td>
+	  <td py:for="chemical in chemicals" class="chemical">${format(chemical.out_level, '.3g')}</td>
+	</tr>
+ 	<tr py:for="criterion in criteria_full">
+	  <td>${criterion.description}</td>
+ 	  <td py:for="chemical in chemicals" class="${over_criterion(chemical, criterion)}">
 	    ${report_criterion(chemical, criterion)}
 	  </td>
 	</tr>
