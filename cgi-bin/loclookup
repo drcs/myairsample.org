@@ -163,7 +163,7 @@ print "Content-type: text/html"
 print
 
 # FIXME debugging output
-print chemicals
+# print chemicals
 
 def report_criterion(chemical, criterion):
     cas = synonym_by_name[standard_cleanup(chemical['name'])]['cas']
@@ -175,8 +175,17 @@ def report_criterion(chemical, criterion):
         return '--'
 
 def over_criterion(chemical, criterion):
-    # FIXME stub -- should return 'concern' only if level should be flagged
-    return 'nac'
+    cas = synonym_by_name[standard_cleanup(chemical['name'])]['cas']
+    standard_level = (criterion['criteria'][cas][criterion['column']]).strip()
+    if standard_level == '':
+        over = False
+    else:
+        standard_level_in_out_units = convert_units(float(standard_level), criterion['units'], units['out'])
+        over = (chemical['out_level'] > standard_level_in_out_units)
+    if over:
+        return 'concern'
+    else:
+        return None
 
 
 document = tmpl.generate(chemicals        = chemicals,
