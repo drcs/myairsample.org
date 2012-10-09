@@ -23,6 +23,11 @@ h2.recipient1 {
 
 /************ brief report *************/
 
+/* DEBUG turn off this report. */
+#report_brief {
+    display:     none;
+}
+
 div#report_brief ul {
     list-style:  none;
 }
@@ -36,6 +41,11 @@ div#report_brief ul {
 }
 
 /************ medium-level report *************/
+
+/* DEBUG turn off this report. */
+#report_medium {
+    display:     none;
+}
 
 div#report_medium ul {
     list-style:  none;
