@@ -79,6 +79,7 @@ def read_criteria(fname, fieldnames, columns, units):
                                  'criteria'    : criteria_by_cas,
                                  'column'      : column['column'],
                                  'description' : column['description'],
+                                 'long_description' : column['long_description'] if 'long_description' in column else 'NA',
                                  'units'       : units},
                 columns)
 
@@ -90,33 +91,118 @@ def list_flatten(xs):
 reporting_criteria = list_flatten([
         read_criteria('ncstds.txt',
                       ['name','cas','ncann','nc24','nc1a','nc1b'],
-                      [{'column': 'ncann', 'description': 'NC Annual Std.' },
-                       {'column': 'nc24',  'description': 'NC 24-hr Std.'  },
-                       {'column': 'nc1a',  'description': 'NC 1-hr Std.'   },
-                       {'column': 'nc1b',  'description': 'NC 1-hr Std.'   }],
+                      [{'column': 'ncann',
+                        'description': 'NC Annual Std.',
+                        'medium_description': 'North Carolina Annual Ambient Air Standard',
+                        'long_description':
+                            """Concentrations above this level are illegal in
+                               North Carolina.<br>  This level refers to the average level over a
+                               period of <b>one year</b>."""},
+                       {'column': 'nc24',
+                        'description': 'NC 24-hr Std.',
+                        'medium_description': 'North Carolina 24-Hour Ambient Air Standard',
+                        'long_description':
+                            """Concentrations above this level are illegal in
+                               North Carolina.<br>  This level refers to the average level over a
+                               <b>24-hour</b> period."""},
+                       {'column': 'nc1a',
+                        'description': 'NC 1-hr Std.',
+                        'medium_description': 'North Carolina 1-Hour Ambient Air Standard',
+                        'long_description':
+                            """Concentrations above this level are illegal in
+                               North Carolina.  This level refers to the average level over a
+                               <b>one hour</b> period."""},
+                       # FIXME nc1b and nc1a: synonyms?
+                       {'column': 'nc1b',
+                        'description': 'NC 1-hr Std.',
+                        'medium_description': '',
+                        'long_description':
+                            """
+                            """}],
                       'mg/m3'),
         read_criteria('tesl.txt',
                       ['name','cas','tshort','tinter','tlong'],
-                      [{'column': 'tshort', 'description': 'TX ESL - short term'},
-                       {'column': 'tlong',  'description': 'TX ESL - long term' }],
+                      [{'column': 'tshort',
+                        'description': 'TX ESL - short term',
+                        'medium_description': 'Texas Short-Term Screening Level',
+                        'long_description':
+                            """According to the Texas Natural Resource Conservation
+                             Commission, no health effects are thought
+                             to occur below this level. "Short-term" levels refer to the average
+                             exposure level during <b>one hour</b>."""},
+                       {'column': 'tlong',
+                        'description': 'TX ESL - long term',
+                        'medium_description': 'Texas Long-Term Screening Level',
+                        'long_description':
+                            """According to the Texas Natural Resource Conservation
+                             Commission, <br>  no health effects are thought
+                             to occur below this level. "Long-term" levels refer to the average
+                             exposure level during a <b>year</b> (24 hours for benzene and ethylene dichloride)."""}],
                       'ug/m3'),
         read_criteria('r6sls.txt',
                       ['name','cas','r6sl'],
-                      [{'column': 'r6sl',   'description': 'EPA Region 6 Screening Level'}],
+                      [{'column': 'r6sl',
+                        'description': 'EPA Region 6 Screening Level',
+                        'medium_description': 'EPA Region 6 Screening Level',
+                        'long_description':
+                        """According to Region 6 of the US EPA, no health effects are thought
+                           to occur below this level.
+                        """}],
                       'ug/m3'),
         read_criteria('ATSDRMRLs.txt',
                       ['name','cas','atsdrac','atsdrint','atsdrchr'],
-                      [{'column': 'atsdrac',  'description': 'ATSDR MRL - Acute'           },
-                       {'column': 'atsdrint', 'description': 'ATSDR MRL - Intermediate'    },
-                       {'column': 'atsdrchr', 'description': 'ATSDR MRL - Chronic'         }],
+                      [{'column': 'atsdrac',
+                        'description': 'ATSDR MRL - Acute',
+                        'medium_description': 'ATSDR Acute Minimal Risk Level',
+                        'long_description':
+                            """According to the American Toxic Substances and Disease
+                               Registry, <br>  there is no appreciable
+                               risk of <i>non-cancer</i> health effects from
+                               being exposed to concentrations up to this level over periods of
+                               <b>up to 2 weeks</b>.
+                            """},
+                       {'column': 'atsdrint',
+                        'description': 'ATSDR MRL - Intermediate',
+                        'medium_description': 'ATSDR Intermediate Minimal Risk Level',
+                        'long_description':
+                            """According to the American Toxic Substances and Disease
+                               Registry, <br>  there is no appreciable
+                               risk of <i>non-cancer</i> health effects from
+                               being exposed to concentrations up to this level over periods of
+                               <b> between 2 weeks and one year</b>.
+                            """},
+                       {'column': 'atsdrchr',
+                        'description': 'ATSDR MRL - Chronic',
+                        'medium_description': 'ATSDR Chronic Minimal Risk Level',
+                        'long_description':
+                            """According to the American Toxic Substances and Disease
+                               Registry, <br>  there is no appreciable
+                               risk of non-cancer health effects from
+                               being exposed to concentrations up to this level over periods
+                               <b>longer than one year</b>.
+                            """}],
                       'ppm'),
         read_criteria('lastds.txt',
                       ['name','cas','la8','la24'],
-                      [{'column': 'la8',  'description': 'LA 8-hr Std.'  },
-                       {'column': 'la24', 'description': 'LA 24-hr Std.' }],
+                      [{'column': 'la8',
+                        'description': 'LA 8-hr Std.',
+                        'medium_description': 'Louisiana 8-Hour Ambient Air Standard',
+                        'long_description':
+                            """Concentrations above this level are illegal in
+                                Louisiana. This level refers to the average level over an <b>8-hour</b>  period.
+                            """},
+                       # FIXME is this the annual standard or the 24 hour standard?
+                       {'column': 'la24',
+                        'description': 'LA 24-hr Std.',
+                        'medium_description': 'Louisiana Annual Ambient Air Standard',
+                        'long_description':
+                            """Concentrations above this level are illegal in";
+                               Louisiana. This level refers to the average level over a
+                               period of <b>one year</b>.
+                            """}],
                       'ug/m3')])
 
-# FIXME restrict according to selected criteria
+# FIXME restrict according to selected criteria; use 'source' property
 criteria = {'full'   : reporting_criteria,
             'medium' : reporting_criteria,
             'brief'  : reporting_criteria}
