@@ -29,6 +29,7 @@ import re
 import csv
 
 from genshi.template import TemplateLoader
+from genshi import HTML
 
 # --------------------------------------------------------------------
 # Read the form data
@@ -79,7 +80,8 @@ def read_criteria(fname, fieldnames, columns, units):
                                  'criteria'    : criteria_by_cas,
                                  'column'      : column['column'],
                                  'description' : column['description'],
-                                 'long_description' : column['long_description'] if 'long_description' in column else 'NA',
+                                 'medium_description' : column['medium_description'],
+                                 'long_description' : HTML(column['long_description']) if 'long_description' in column else 'NA',
                                  'units'       : units},
                 columns)
 

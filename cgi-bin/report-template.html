@@ -58,7 +58,7 @@
 	  <table border="1" width="85%" cellpadding="3">
 	    <tr py:for="criterion in criteria.medium" py:if="over_criterion(chemical, criterion)"> <!-- FIXME: filter for only those over -->
 	      <td>
-		<span class="reporting_criteria">${criterion.description}</span>
+		<span class="reporting_criteria">${criterion.medium_description}</span>
 		<p>
 		  ${criterion.long_description}
 		</p>
