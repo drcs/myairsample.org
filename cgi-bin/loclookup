@@ -227,7 +227,6 @@ def describe_comparison(level,reference):
 # ---------------------------------------------------------------------
 # Units conversion
 # ---------------------------------------------------------------------
-# FIXME: throw exception when mw lacking
 def convert_units(level, from_units, to_units, mw=False):
     factor = { 'ppm'         : 1.0 ,
                'ppb'         : 1000.0 ,
@@ -237,10 +236,23 @@ def convert_units(level, from_units, to_units, mw=False):
         factor['ppbv'] = 24040.0 / mw
     return level / factor[from_units] * factor[to_units]
 
+def convert_units_for_chemical(level, chemical, from_units, to_units):
+    mw = 0 # should never trigger
+    if from_units == 'ppbv' or to_units == 'ppbv':
+        try:
+            mw_str  = synonym_by_name[standard_cleanup(chemical['name'])]['mw']
+            if mw_str == '':
+                return None
+            else:
+                mw = float(mw_str)
+        except KeyError:
+            return None
+    return convert_units(level, from_units, to_units, mw)
+
 # Add parameter 'out_level' to chemicals; reported level in output units
 for chemical in chemicals:
     level = float(chemical['level'])
-    chemical['out_level'] = convert_units(level, units['in'], units['out'])
+    chemical['out_level'] = convert_units_for_chemical(level, chemical, units['in'], units['out'])
 
 # -------------------------------------------------------------------------------
 # Load the report template and generate the output
@@ -252,31 +264,30 @@ tmpl = loader.load('report-template.html')
 print "Content-type: text/html"
 print
 
-# FIXME debugging output
-# print chemicals
+def criterion_level_in_outunits(chemical, criterion):
+    try:
+        cas = synonym_by_name[standard_cleanup(chemical['name'])]['cas']
+        standard_level = (criterion['criteria'][cas][criterion['column']]).strip()
+    except KeyError:
+        return None
+    if standard_level == '':
+        return None
+    else:
+        return convert_units_for_chemical(float(standard_level), chemical, criterion['units'], units['out'])
 
 def report_criterion(chemical, criterion):
-    cas = synonym_by_name[standard_cleanup(chemical['name'])]['cas']
-    standard_level = (criterion['criteria'][cas][criterion['column']]).strip()
-    if standard_level != '':
-        value = convert_units(float(standard_level), criterion['units'], units['out'])
-        return format(value, '.3g')
+    level = criterion_level_in_outunits(chemical, criterion)
+    if level:
+        return format(level, '.3g')
     else:
         return '--'
 
 def over_criterion(chemical, criterion):
-    cas = synonym_by_name[standard_cleanup(chemical['name'])]['cas']
-    standard_level = (criterion['criteria'][cas][criterion['column']]).strip()
-    if standard_level == '':
-        over = False
-    else:
-        standard_level_in_out_units = convert_units(float(standard_level), criterion['units'], units['out'])
-        over = (chemical['out_level'] > standard_level_in_out_units)
-    if over:
+    level = criterion_level_in_outunits(chemical, criterion)
+    if level and (chemical['out_level'] > level):
         return 'concern'
     else:
         return None
-
 
 document = tmpl.generate(chemicals        = chemicals,
                          recipient        = [form.getvalue('tablename',False),
