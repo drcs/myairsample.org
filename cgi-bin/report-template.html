@@ -11,6 +11,19 @@
       <h2 py:if="recipient[0]" class="recipient1">for ${recipient[0]}</h2>
       <h2 py:if="recipient[1]" class="recipient2">${recipient[1]}</h2>
     </div>
+
+    <!-- Failed lookups alerts -->
+    <div id="failures">
+      <div id="failed_unit_conversions" py:if="failures.unit_conversions">
+	<p>
+	  Units in ppb <i>by volume</i> is not available for the following chemicals.
+	  For better results, enter values in ppb or ug/m3:
+	</p>
+	<ul>
+	  <li py:for="name in failures.unit_conversions">$name</li>
+	</ul>
+      </div>
+    </div>
     
     <!-- Brief report -->
 
@@ -43,7 +56,7 @@
 
     <div id="report_medium">
       <ul>
-	<li py:for="chemical in chemicals">
+	<li py:for="chemical in chemicals" py:if="chemical.out_level">
 	  <h3>${chemical.name}</h3>
 	  <p>
 	    Your reported value of
@@ -82,7 +95,7 @@
 	  <td>Reported Level</td>
 	  <td py:for="criterion in criteria.full">${criterion.description}</td>
 	</tr>
-	<tr py:for="chemical in chemicals" class="chemical">
+	<tr py:for="chemical in chemicals" py:if="chemical.out_level" class="chemical">
 	  <td>${chemical.name}</td>
           <td>${format(chemical.out_level, '.3g')}</td>
  	  <td py:for="criterion in criteria.full" class="${over_criterion(chemical, criterion)}">
