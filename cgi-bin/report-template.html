@@ -11,6 +11,19 @@
       <h2 py:if="recipient[0]" class="recipient1">for ${recipient[0]}</h2>
       <h2 py:if="recipient[1]" class="recipient2">${recipient[1]}</h2>
     </div>
+
+    <!-- Failed lookups alerts -->
+    <div id="failures">
+      <div id="failed_unit_conversions" py:if="failures.unit_conversions">
+	<p>
+	  Units in ppb <i>by volume</i> is not available for the following chemicals.
+	  For better results, enter values in ppb or ug/m3:
+	</p>
+	<ul>
+	  <li py:for="name in failures.unit_conversions">$name</li>
+	</ul>
+      </div>
+    </div>
     
     <!-- Brief report -->
 
