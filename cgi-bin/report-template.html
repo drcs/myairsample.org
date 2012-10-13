@@ -14,7 +14,16 @@
 
     <!-- Failed lookups alerts -->
     <div id="failures">
-      <div id="failed_unit_conversions" py:if="failures.unit_conversions">
+      <div id="failud_name_lookups" class="failure_alert" py:if="failures.name_lookups">
+	<p>
+	  For the following chemicals, either there are no screening levels available,
+	  or the spelling of the chemical name is incorrect:
+	</p>
+	<ul>
+	  <li py:for="name in failures.name_lookups">$name</li>
+	</ul>
+      </div>
+      <div id="failed_unit_conversions" class="failure_alert" py:if="failures.unit_conversions">
 	<p>
 	  Units in ppb <i>by volume</i> is not available for the following chemicals.
 	  For better results, enter values in ppb or ug/m3:
