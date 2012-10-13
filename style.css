@@ -21,6 +21,16 @@ h2.recipient1 {
     font-style:  italic;
 }
 
+/************ alerts *******************/
+.failure_alert {
+    border:       1px red solid;
+    padding:      10px;
+    width:        85%;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top:   20px;
+}
+
 /************ brief report *************/
 
 /* DEBUG turn off this report. */

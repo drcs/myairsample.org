@@ -44,7 +44,7 @@ def chem_lookup(chem_par):
     return { 'name'  : form[chem_par].value.lower(),
              'level' : form[report_par].value if report_par in form else 'NA' }
 
-chemicals = map (chem_lookup, filter (chem_pattern.match, form.keys()))
+chemicals_raw = map (chem_lookup, filter (chem_pattern.match, form.keys()))
 units = {'in'  : form.getvalue('inunits'),
          'out' : form.getvalue('outunits')}
 
@@ -249,14 +249,22 @@ def convert_units_for_chemical(level, chemical, from_units, to_units):
             return None
     return convert_units(level, from_units, to_units, mw)
 
-failures = {'unit_conversions': []}
+failures = {'unit_conversions': [],
+            'name_lookups':     []}
+
+chemicals = []
 
 # Add parameter 'out_level' to chemicals; reported level in output units
-for chemical in chemicals:
+for chemical in chemicals_raw:
     level = float(chemical['level'])
-    chemical['out_level'] = convert_units_for_chemical(level, chemical, units['in'], units['out'])
-    if not chemical['out_level']:
-        failures['unit_conversions'].append(chemical['name'])
+    if standard_cleanup(chemical['name']) in synonym_by_name:
+        chemical['out_level'] = convert_units_for_chemical(level, chemical, units['in'], units['out'])
+        if chemical['out_level']:
+            chemicals.append(chemical)
+        else:
+            failures['unit_conversions'].append(chemical['name'])
+    else:
+        failures['name_lookups'].append(chemical['name'])
 
 # -------------------------------------------------------------------------------
 # Load the report template and generate the output
