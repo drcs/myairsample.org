@@ -48,6 +48,14 @@ chemicals_raw = map (chem_lookup, filter (chem_pattern.match, form.keys()))
 units = {'in'  : form.getvalue('inunits'),
          'out' : form.getvalue('outunits')}
 
+requested_reports = []
+if form.getvalue('full')    == 'on': requested_reports.append('full')
+if form.getvalue('brief')   == 'on': requested_reports.append('brief')
+if form.getvalue('summary') == 'on': requested_reports.append('medium')
+
+# default to full report if none requested
+if requested_reports == []: requested_reports = ['full']
+
 # ---------------------------------------------------------------------
 # Read the standards tables
 # ---------------------------------------------------------------------
@@ -318,14 +326,15 @@ def over_criterion(chemical, criterion):
     else:
         return None
 
-document = tmpl.generate(chemicals        = chemicals,
-                         recipient        = [form.getvalue('tablename',False),
-                                             form.getvalue('tablename2',False)],
-                         units            = units,
-                         criteria         = criteria,
-                         report_criterion = report_criterion,
+document = tmpl.generate(chemicals         = chemicals,
+                         recipient         = [form.getvalue('tablename',False),
+                                              form.getvalue('tablename2',False)],
+                         units             = units,
+                         criteria          = criteria,
+                         requested_reports = requested_reports,
+                         report_criterion  = report_criterion,
                          describe_comparison_for = describe_comparison_for,
-                         over_criterion   = over_criterion,
-                         failures         = failures)
+                         over_criterion    = over_criterion,
+                         failures          = failures)
                                  
 print document.render('html', doctype='html')

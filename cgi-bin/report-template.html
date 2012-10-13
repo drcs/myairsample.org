@@ -36,7 +36,7 @@
     
     <!-- Brief report -->
 
-    <div id="report_brief"> <!-- FIXME: only if requested -->
+    <div id="report_brief" py:if="'brief' in requested_reports">
       <ul>
 	<li py:for="chemical in chemicals">
 	  <h3>${chemical.name}</h3>
@@ -61,7 +61,7 @@
 
     <!-- Medium report -->
 
-    <div id="report_medium">
+    <div id="report_medium" py:if="'medium' in requested_reports">
       <ul>
 	<li py:for="chemical in chemicals" py:if="chemical.out_level">
 	  <h3>${chemical.name}</h3>
@@ -93,7 +93,7 @@
     </div>
     
     <!-- Full report -->
-    <div id="report_full">
+    <div id="report_full" py:if="'full' in requested_reports">
       <h2>Levels of Concern</h2>
       <h2>in ${units.out}</h2>
       <table border="1" size="95%">
