@@ -33,11 +33,6 @@ h2.recipient1 {
 
 /************ brief report *************/
 
-/* DEBUG turn off this report. */
-#report_brief {
-    display:     none;
-}
-
 div#report_brief ul {
     list-style:  none;
 }

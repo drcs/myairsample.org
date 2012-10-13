@@ -80,8 +80,9 @@ def read_criteria(fname, fieldnames, columns, units):
                                  'criteria'    : criteria_by_cas,
                                  'column'      : column['column'],
                                  'description' : column['description'],
-                                 'medium_description' : column['medium_description'],
-                                 'long_description' : HTML(column['long_description']) if 'long_description' in column else 'NA',
+                                 'brief_description'  : HTML(column['brief_description']) if 'brief_description' in column else '<the limit>',
+                                 'medium_description' : HTML(column['medium_description']),
+                                 'long_description'   : HTML(column['long_description']) if 'long_description' in column else 'NA',
                                  'units'       : units},
                 columns)
 
@@ -95,6 +96,7 @@ reporting_criteria = list_flatten([
                       ['name','cas','ncann','nc24','nc1a','nc1b'],
                       [{'column': 'ncann',
                         'description': 'NC Annual Std.',
+                        'brief_description': 'The North Carolina Annual Standard',
                         'medium_description': 'North Carolina Annual Ambient Air Standard',
                         'long_description':
                             """Concentrations above this level are illegal in
@@ -102,6 +104,7 @@ reporting_criteria = list_flatten([
                                period of <b>one year</b>."""},
                        {'column': 'nc24',
                         'description': 'NC 24-hr Std.',
+                        'brief_description': 'The North Carolina 24-Hour Standard',
                         'medium_description': 'North Carolina 24-Hour Ambient Air Standard',
                         'long_description':
                             """Concentrations above this level are illegal in
@@ -109,6 +112,7 @@ reporting_criteria = list_flatten([
                                <b>24-hour</b> period."""},
                        {'column': 'nc1a',
                         'description': 'NC 1-hr Std.',
+                        'brief_description': 'The North Carolina 1-Hour Standard',
                         'medium_description': 'North Carolina 1-Hour Ambient Air Standard',
                         'long_description':
                             """Concentrations above this level are illegal in
@@ -117,6 +121,7 @@ reporting_criteria = list_flatten([
                        # FIXME nc1b and nc1a: synonyms?
                        {'column': 'nc1b',
                         'description': 'NC 1-hr Std.',
+                        'brief_description': 'The North Carolina 1-Hour Standard',
                         'medium_description': '',
                         'long_description':
                             """
@@ -126,6 +131,7 @@ reporting_criteria = list_flatten([
                       ['name','cas','tshort','tinter','tlong'],
                       [{'column': 'tshort',
                         'description': 'TX ESL - short term',
+                        'brief_description': 'The <b>Short Term</b> (1-hr) Texas Effects Screening Level',
                         'medium_description': 'Texas Short-Term Screening Level',
                         'long_description':
                             """According to the Texas Natural Resource Conservation
@@ -134,6 +140,7 @@ reporting_criteria = list_flatten([
                              exposure level during <b>one hour</b>."""},
                        {'column': 'tlong',
                         'description': 'TX ESL - long term',
+                        'brief_description': 'The <b>Long-Term</b> Texas Effects Screening Level',
                         'medium_description': 'Texas Long-Term Screening Level',
                         'long_description':
                             """According to the Texas Natural Resource Conservation
@@ -145,6 +152,7 @@ reporting_criteria = list_flatten([
                       ['name','cas','r6sl'],
                       [{'column': 'r6sl',
                         'description': 'EPA Region 6 Screening Level',
+                        'brief_description': 'The EPA Region 6 Screening Level',
                         'medium_description': 'EPA Region 6 Screening Level',
                         'long_description':
                         """According to Region 6 of the US EPA, no health effects are thought
@@ -155,6 +163,7 @@ reporting_criteria = list_flatten([
                       ['name','cas','atsdrac','atsdrint','atsdrchr'],
                       [{'column': 'atsdrac',
                         'description': 'ATSDR MRL - Acute',
+                        'brief_description': 'The <b>Acute</b> (<2 week) ATSDR Minimal Risk Level',
                         'medium_description': 'ATSDR Acute Minimal Risk Level',
                         'long_description':
                             """According to the American Toxic Substances and Disease
@@ -165,6 +174,7 @@ reporting_criteria = list_flatten([
                             """},
                        {'column': 'atsdrint',
                         'description': 'ATSDR MRL - Intermediate',
+                        'brief_description': 'The <b>Intermediate</b> (2 wks - 1 yr) ATSDR Minimal Risk',
                         'medium_description': 'ATSDR Intermediate Minimal Risk Level',
                         'long_description':
                             """According to the American Toxic Substances and Disease
@@ -175,6 +185,7 @@ reporting_criteria = list_flatten([
                             """},
                        {'column': 'atsdrchr',
                         'description': 'ATSDR MRL - Chronic',
+                        'brief_description': 'The <b>Chronic</b> (> 1 yr) ATSDR Minimal Risk',
                         'medium_description': 'ATSDR Chronic Minimal Risk Level',
                         'long_description':
                             """According to the American Toxic Substances and Disease
@@ -188,6 +199,7 @@ reporting_criteria = list_flatten([
                       ['name','cas','la8','la24'],
                       [{'column': 'la8',
                         'description': 'LA 8-hr Std.',
+                        'brief_description': 'The Louisiana 8-Hour Ambient Air Standard',
                         'medium_description': 'Louisiana 8-Hour Ambient Air Standard',
                         'long_description':
                             """Concentrations above this level are illegal in
@@ -196,6 +208,7 @@ reporting_criteria = list_flatten([
                        # FIXME is this the annual standard or the 24 hour standard?
                        {'column': 'la24',
                         'description': 'LA 24-hr Std.',
+                        'brief_description': 'The Louisiana Annual Ambient Air Standard',
                         'medium_description': 'Louisiana Annual Ambient Air Standard',
                         'long_description':
                             """Concentrations above this level are illegal in";
@@ -216,13 +229,17 @@ def describe_comparison(level,reference):
     decimal = compare - int(compare)
     factor  = int(compare)
     description = 'unknown'
-    if (compare <= 1.0):
-        return { 'factor': int(compare), 'description': 'ok' }
-    else:
-        if (compare < 1.8):   return { 'factor': int(compare), 'description': 'exceeds' }
-        elif (decimal < 0.2): return { 'factor': int(compare), 'description': 'about'   }
-        elif (decimal < 0.8): return { 'factor': int(compare), 'description': 'over'    }
-        else: return { 'factor' : int(compare) + 1, 'description': 'nearly' }
+    if   (compare <= 1.0): return "is below"
+    elif (compare < 1.8):  return "exceeds"
+    elif (decimal < 0.2):  return "is about " + str(factor) + " times"
+    elif (decimal < 0.8):  return "is <i>over</i> " + str(factor) + " times"
+    else:                  return "is <i>nearly</i> " + str(factor) + " times"
+        
+# Convert 'chemical' and 'criterion' to same units,
+# return a marked-up description of their comparison
+def describe_comparison_for(chemical, criterion):
+    level      = criterion_level_in_outunits(chemical, criterion)
+    return HTML(describe_comparison(chemical['out_level'], level))
 
 # ---------------------------------------------------------------------
 # Units conversion
@@ -307,6 +324,7 @@ document = tmpl.generate(chemicals        = chemicals,
                          units            = units,
                          criteria         = criteria,
                          report_criterion = report_criterion,
+                         describe_comparison_for = describe_comparison_for,
                          over_criterion   = over_criterion,
                          failures         = failures)
                                  
