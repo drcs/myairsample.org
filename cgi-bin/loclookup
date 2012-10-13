@@ -80,8 +80,9 @@ def read_criteria(fname, fieldnames, columns, units):
                                  'criteria'    : criteria_by_cas,
                                  'column'      : column['column'],
                                  'description' : column['description'],
-                                 'medium_description' : column['medium_description'],
-                                 'long_description' : HTML(column['long_description']) if 'long_description' in column else 'NA',
+                                 'brief_description'  : HTML(column['brief_description']) if 'brief_description' in column else '<the limit>',
+                                 'medium_description' : HTML(column['medium_description']),
+                                 'long_description'   : HTML(column['long_description']) if 'long_description' in column else 'NA',
                                  'units'       : units},
                 columns)
 
@@ -126,6 +127,7 @@ reporting_criteria = list_flatten([
                       ['name','cas','tshort','tinter','tlong'],
                       [{'column': 'tshort',
                         'description': 'TX ESL - short term',
+                        'brief_description': 'The <b>Short Term</b> (1-hr) Texas Effects Screening Level',
                         'medium_description': 'Texas Short-Term Screening Level',
                         'long_description':
                             """According to the Texas Natural Resource Conservation
@@ -216,13 +218,17 @@ def describe_comparison(level,reference):
     decimal = compare - int(compare)
     factor  = int(compare)
     description = 'unknown'
-    if (compare <= 1.0):
-        return { 'factor': int(compare), 'description': 'ok' }
-    else:
-        if (compare < 1.8):   return { 'factor': int(compare), 'description': 'exceeds' }
-        elif (decimal < 0.2): return { 'factor': int(compare), 'description': 'about'   }
-        elif (decimal < 0.8): return { 'factor': int(compare), 'description': 'over'    }
-        else: return { 'factor' : int(compare) + 1, 'description': 'nearly' }
+    if   (compare <= 1.0): return "is below"
+    elif (compare < 1.8):  return "exceeds"
+    elif (decimal < 0.2):  return "is about " + str(factor) + " times"
+    elif (decimal < 0.8):  return "is <i>over</i> " + str(factor) + " times"
+    else:                  return "is <i>nearly</i> " + str(factor) + " times"
+        
+# Convert 'chemical' and 'criterion' to same units,
+# return a marked-up description of their comparison
+def describe_comparison_for(chemical, criterion):
+    level      = criterion_level_in_outunits(chemical, criterion)
+    return HTML(describe_comparison(chemical['out_level'], level))
 
 # ---------------------------------------------------------------------
 # Units conversion
@@ -307,6 +313,7 @@ document = tmpl.generate(chemicals        = chemicals,
                          units            = units,
                          criteria         = criteria,
                          report_criterion = report_criterion,
+                         describe_comparison_for = describe_comparison_for,
                          over_criterion   = over_criterion,
                          failures         = failures)
                                  

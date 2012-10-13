@@ -38,22 +38,20 @@
 
     <div id="report_brief"> <!-- FIXME: only if requested -->
       <ul>
-	<li> <!-- First chemical of concern FIXME: loop over chemicals -->
-	  <h3>vinyl chloride</h3> <!-- FIXME: replace with chemical name -->
+	<li py:for="chemical in chemicals">
+	  <h3>${chemical.name}</h3>
 	  <table border="1" width="60%" align="center">
-	    <tr> <!-- FIXME: loop over reporting criteria -->
+	    <tr py:for="criterion in criteria.brief" py:if="over_criterion(chemical, criterion)">
 	      <td width="35%" valign="top" align="center">
 		Your reported value:<br/>
-		<span class="reported_value bigfont">1650 ppb</span>
+		<span class="reported_value bigfont">${format(chemical.out_level, '.3g')} ${units.out}</span>
 	      </td>
 	      <td width="30%" align="center" class="bigfont">
-		is <i>over</i><br/>
-		<span>15</span><br/>
-		times
+		${describe_comparison_for(chemical, criterion)}
 	      </td>
 	      <td width="35%" valign="top" align="center">
-		The <b>Short Term</b> (1-hr) Texas Effects Screening Level
-		<span class="bigfont">108 ppb</span>
+		${criterion.brief_description}
+		<span class="bigfont">${report_criterion(chemical, criterion)} ${units.out}</span>
 	      </td>
 	    </tr>
 	  </table>
@@ -78,7 +76,7 @@
 	  </p>
 
 	  <table border="1" width="85%" cellpadding="3">
-	    <tr py:for="criterion in criteria.medium" py:if="over_criterion(chemical, criterion)"> <!-- FIXME: filter for only those over -->
+	    <tr py:for="criterion in criteria.medium" py:if="over_criterion(chemical, criterion)"> 
 	      <td>
 		<span class="reporting_criteria">${criterion.medium_description}</span>
 		<p>
