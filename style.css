@@ -77,6 +77,16 @@ div#report_medium ul {
 
 /************* full report **********************/
 
+#report_full {
+    margin-left:   0.4in;
+}
+
+#report_full h2 {
+    text-align:    left;
+    font-size:     140%;
+    margin:        5px;
+}
+
 #report_full table tr:first-child {
     font-weight:   bold;
 }
