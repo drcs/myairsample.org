@@ -2,6 +2,7 @@
 /************ global defaults ***********/
 .chemical_name {
     text-transform:   capitalize;
+    font-weight:      bold;
 }
 
 /************ report header *************/
@@ -48,6 +49,10 @@ div#report_brief ul {
 
 #report_brief .bigfont {
     font-size:   200%;
+}
+
+#report_brief ul div.no_exceedance {
+    margin-top:  20px;
 }
 
 /************ medium-level report *************/
