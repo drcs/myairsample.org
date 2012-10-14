@@ -1,4 +1,9 @@
 
+/************ global defaults ***********/
+.chemical_name {
+    text-transform:   capitalize;
+}
+
 /************ report header *************/
 
 #header {

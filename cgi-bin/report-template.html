@@ -39,7 +39,7 @@
     <div id="report_brief" py:if="'brief' in requested_reports">
       <ul>
 	<li py:for="chemical in chemicals">
-	  <h3>${chemical.name}</h3>
+	  <h3 class="chemical_name">${chemical.name}</h3>
 	  <table border="1" width="60%" align="center">
 	    <tr py:for="criterion in criteria.brief" py:if="over_criterion(chemical, criterion)">
 	      <td width="35%" valign="top" align="center">
@@ -64,7 +64,7 @@
     <div id="report_medium" py:if="'medium' in requested_reports">
       <ul>
 	<li py:for="chemical in chemicals" py:if="chemical.out_level">
-	  <h3>${chemical.name}</h3>
+	  <h3 class="chemical_name">${chemical.name}</h3>
 	  <p>
 	    Your reported value of
 	    <span class="reported_value">${chemical.level} ${units['in']}</span>
