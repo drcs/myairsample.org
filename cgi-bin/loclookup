@@ -21,7 +21,7 @@
 #
 #
 
-import cgi;
+import cgi
 import cgitb
 cgitb.enable()
 
@@ -223,7 +223,7 @@ reporting_criteria = list_flatten([
                         'brief_description': 'The Louisiana Annual Ambient Air Standard',
                         'medium_description': 'Louisiana Annual Ambient Air Standard',
                         'long_description':
-                            """Concentrations above this level are illegal in";
+                            """Concentrations above this level are illegal in
                                Louisiana. This level refers to the average level over a
                                period of <b>one year</b>.
                             """}],
