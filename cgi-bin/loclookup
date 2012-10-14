@@ -60,6 +60,9 @@ requested_sources = []
 if form.getvalue('laonly')  == 'on': requested_sources.append('lastds.txt')
 if form.getvalue('nconly')  == 'on': requested_sources.append('ncstds.txt')
 
+# Selection of sources for 'brief' report
+brief_selection = form.getvalue('reflevel')
+
 # ---------------------------------------------------------------------
 # Read the standards tables
 # ---------------------------------------------------------------------
@@ -229,13 +232,14 @@ reporting_criteria = list_flatten([
                             """}],
                       'ug/m3')])
 
+criteria = {'brief'   : filter(lambda c: c['source'] == brief_selection, reporting_criteria)}
+
 # Default to all available criterion sources if none specifically requested.
 if requested_sources != []:
     reporting_criteria = filter(lambda c: c['source'] in requested_sources, reporting_criteria)
 
-criteria = {'full'   : reporting_criteria,
-            'medium' : reporting_criteria,
-            'brief'  : reporting_criteria}
+criteria['medium'] = reporting_criteria
+criteria['full']   = reporting_criteria
 
 def describe_comparison(level,reference):
     """Describe the comparison between a level and a reference as an integer ratio,
@@ -248,7 +252,7 @@ def describe_comparison(level,reference):
     elif (compare < 1.8):  return "exceeds"
     elif (decimal < 0.2):  return "is about " + str(factor) + " times"
     elif (decimal < 0.8):  return "is <i>over</i> " + str(factor) + " times"
-    else:                  return "is <i>nearly</i> " + str(factor) + " times"
+    else:                  return "is <i>nearly</i> " + str(factor + 1) + " times"
         
 # Convert 'chemical' and 'criterion' to same units,
 # return a marked-up description of their comparison
