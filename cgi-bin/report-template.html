@@ -38,23 +38,29 @@
 
     <div id="report_brief" py:if="'brief' in requested_reports">
       <ul>
-	<li py:for="chemical in chemicals">
-	  <h3>${chemical.name}</h3>
-	  <table border="1" width="60%" align="center">
-	    <tr py:for="criterion in criteria.brief" py:if="over_criterion(chemical, criterion)">
-	      <td width="35%" valign="top" align="center">
-		Your reported value:<br/>
-		<span class="reported_value bigfont">${format(chemical.out_level, '.3g')} ${units.out}</span>
-	      </td>
-	      <td width="30%" align="center" class="bigfont">
-		${describe_comparison_for(chemical, criterion)}
-	      </td>
-	      <td width="35%" valign="top" align="center">
-		${criterion.brief_description}<br/>
-		<span class="bigfont">${report_criterion(chemical, criterion)} ${units.out}</span>
-	      </td>
-	    </tr>
-	  </table>
+	<li py:for="chemical in chemicals" py:choose="">
+	  <!-- When there are exceedances -->
+	  <div py:when="filter(lambda criterion: over_criterion(chemical, criterion), criteria.brief)">
+	    <h3>${chemical.name}</h3>
+	    <table border="1" width="60%" align="center">
+	      <tr py:for="criterion in criteria.brief" py:if="over_criterion(chemical, criterion)">
+		<td width="35%" valign="top" align="center">
+		  Your reported value:<br/>
+		  <span class="reported_value bigfont">${format(chemical.out_level, '.3g')} ${units.out}</span>
+		</td>
+		<td width="30%" align="center" class="bigfont">
+		  ${describe_comparison_for(chemical, criterion)}
+		</td>
+		<td width="35%" valign="top" align="center">
+		  ${criterion.brief_description}<br/>
+		  <span class="bigfont">${report_criterion(chemical, criterion)} ${units.out}</span>
+		</td>
+	      </tr>
+	    </table>
+	  </div>
+	  <!-- When there are no exceedances -->
+	  <div py:otherwise="">
+	  </div>
 	</li>
       </ul>
     </div>
