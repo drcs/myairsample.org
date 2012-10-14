@@ -63,6 +63,17 @@ if form.getvalue('nconly')  == 'on': requested_sources.append('ncstds.txt')
 # Selection of sources for 'brief' report
 brief_selection = form.getvalue('reflevel')
 
+# specify brief description based on selection.
+# These definitions shadow those in locform.html... maybe locform.html should also
+# be generated...
+brief_selection_description = {
+    "lastds.txt":    "Louisiana Ambient Air Standards",
+    "ncstds.txt":    "North Carolina Ambient Air Standards",
+    "tesl.txt":      "Texas Effects Screening Levels",
+    "r6sls.txt":     "EPA Region 6 Screening Levels",
+    "ATSDRMRLs.txt": "ATSDR Minimal Risk Levels"
+}[brief_selection]
+
 # ---------------------------------------------------------------------
 # Read the standards tables
 # ---------------------------------------------------------------------
@@ -341,6 +352,7 @@ document = tmpl.generate(chemicals         = chemicals,
                          recipient         = [form.getvalue('tablename',False),
                                               form.getvalue('tablename2',False)],
                          units             = units,
+                         brief_selection_description = brief_selection_description,
                          criteria          = criteria,
                          requested_reports = requested_reports,
                          report_criterion  = report_criterion,
