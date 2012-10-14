@@ -52,12 +52,27 @@ div#report_medium ul {
 }
 
 #report_medium .reporting_criteria {
-    font-size:    130%;
+    font-size:    110%;
     font-weight:  bold;
+}
+
+#report_medium h3 {
+    text-decoration:  underline;
 }
 
 #report_medium .reported_value {
     font-weight:   bold;
+}
+
+#report_medium table tr > td:first-child p {
+    margin-top:    3px;
+    font-size:     80%;
+    margin-bottom: 3px;
+}
+
+#report_medium table tr > td:nth-child(2) {
+    font-weight:   bold;
+    font-size:     120%;
 }
 
 /************* full report **********************/
