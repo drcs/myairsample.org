@@ -127,18 +127,30 @@ Compares your results to all available levels of concern.  Highlights levels of 
 <br>
 <table border=0 width=100%><tr><td>
 <font size=+1><b>What units would you like your report (output) in?  </b></font></td>
-<td><select name="outunits"><option selected>ppb<option>ppbv<option>ug/m3</select></td></tr></table>
-<br>What you choose here will determine whether the numbers in the report will be expressed in ppb, ug/m3, or ppbv.
+<td>
+  <select name="outunits">
+    <option value="ppb" selected>ppb</option>
+    <option value="ppbv">ppbv</option>
+    <option value="ug/m3">&micro;g/m3</option>
+  </select>
+</td></tr></table>
+<br>What you choose here will determine whether the numbers in the report will be expressed in ppb, &micro;g/m3, or ppbv.
 For example, if you choose ppb, you will see both your monitoring results <i>and</i> the levels of concern in
 terms of ppb.  You should <b>choose whatever units you are most comfortable with</b> as the units for your final report.
 <p><br>
 <table border=0 width=100%><tr><td>
 <font size=+1><b>What units are your measured values (input) in?  </b></font></td>
-<td><select name="inunits"><option>ppb<option>ppbv<option selected>ug/m3</select></td></tr></table>
+<td>
+  <select name="inunits">
+    <option value="ppb" selected>ppb</option>
+    <option value="ppbv">ppbv</option>
+    <option value="ug/m3">&micro;g/m3</option>
+  </select>
+</td></tr></table>
 <br>Here you should choose the units that the results from your monitoring were reported in.  Choose only
 one type of units for all of the chemicals and values that you will enter in the table below.  <br>
-For example, bucket results are in both ug/m3 and ppbv.  If there are TICs (tentatively identified compounds), 
-those are reported in ug/m3.  It makes sense, then, to <b>choose ug/m3 if you are using bucket results</b>.
+For example, bucket results are in both &micro;g/m3 and ppbv.  If there are TICs (tentatively identified compounds), 
+those are reported in &micro;g/m3.  It makes sense, then, to <b>choose &micro;g/m3 if you are using bucket results</b>.
 </td>
 <td  bgcolor="#CCFFCC" valign=top><b><i><center>What are "units"?</center></i></b>
 <p>
@@ -150,7 +162,7 @@ different units of measurement.
 <p>
 When we talk about levels of chemicals in the air, we are talking about <b><i>concentrations</i></b>.  While
 length is measured in inches and centimeters, concentrations are commonly measured in <b>Parts per Billion (ppb)</b>,
-or <b>Micrograms per Meters Cubed (ug/m3)</b>.
+or <b>Micrograms per Meters Cubed (&micro;g/m3)</b>.
 <p>
 <b>Parts per billion (ppb)</b> describes how many parts of a chemical are in the same space as 1 billion 
 parts of air.  So 3ppb means there are 3 parts chemical for every 1,000,000,000 parts of air.</font>
@@ -160,9 +172,9 @@ figured out in terms of volume, or how much space the molecules take up.  This i
 of parts per billion.</font>
 <p>
 <font size=-1>
-<b>Micrograms per Meters Cubed (ug/m3)</b> describes how much of a chemical--by weight--is in a volume of air that
+<b>Micrograms per Meters Cubed (&micro;g/m3)</b> describes how much of a chemical--by weight--is in a volume of air that
 takes up one cubic meter.  Imagine a box filled with air that measures one meter on every side.  If there were 3 micrograms,
-or 3 millionths of 1 gram, of chemical in that box, then the concentration would be 3ug/m3.
+or 3 millionths of 1 gram, of chemical in that box, then the concentration would be 3&micro;g/m3.
 </font>
 <p>
 <font size=-2>(Source: The Bucket Brigade Manual, p. 26)</font>
