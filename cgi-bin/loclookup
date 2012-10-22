@@ -222,7 +222,7 @@ reporting_criteria = list_flatten([
                             """}],
                       'ppm'),
         read_criteria('lastds.txt',
-                      ['name','cas','la8','la24'],
+                      ['name','cas','la8','laann'],
                       [{'column': 'la8',
                         'description': 'LA 8-hr Std.',
                         'brief_description': 'The Louisiana 8-Hour Ambient Air Standard',
@@ -231,9 +231,8 @@ reporting_criteria = list_flatten([
                             """Concentrations above this level are illegal in
                                 Louisiana. This level refers to the average level over an <b>8-hour</b>  period.
                             """},
-                       # FIXME is this the annual standard or the 24 hour standard?
-                       {'column': 'la24',
-                        'description': 'LA 24-hr Std.',
+                       {'column': 'laann',
+                        'description': 'LA Annual Std.',
                         'brief_description': 'The Louisiana Annual Ambient Air Standard',
                         'medium_description': 'Louisiana Annual Ambient Air Standard',
                         'long_description':
