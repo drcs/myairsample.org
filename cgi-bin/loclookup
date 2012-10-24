@@ -27,6 +27,7 @@ cgitb.enable()
 
 import re
 import csv
+import locale
 
 from genshi.template import TemplateLoader
 from genshi import HTML
@@ -34,6 +35,9 @@ from genshi import HTML
 # --------------------------------------------------------------------
 # Read the form data
 # --------------------------------------------------------------------
+if (locale.getlocale() == (None, None)):
+    locale.setlocale(locale.LC_ALL, 'en_US.UTF8')
+
 form = cgi.FieldStorage()
 
 # look for all 'chem*' parameters that have a corresponding 'report*' parameter
@@ -290,7 +294,7 @@ def convert_units_for_chemical(level, chemical, from_units, to_units):
             if mw_str == '':
                 return None
             else:
-                mw = float(mw_str)
+                mw = locale.atof(mw_str)
         except KeyError:
             return None
     return convert_units(level, from_units, to_units, mw)
@@ -302,7 +306,7 @@ chemicals = []
 
 # Add parameter 'out_level' to chemicals; reported level in output units
 for chemical in chemicals_raw:
-    level = float(chemical['level'])
+    level = locale.atof(chemical['level'])
     if standard_cleanup(chemical['name']) in synonym_by_name:
         chemical['out_level'] = convert_units_for_chemical(level, chemical, units['in'], units['out'])
         if chemical['out_level']:
@@ -331,7 +335,7 @@ def criterion_level_in_outunits(chemical, criterion):
     if standard_level == '':
         return None
     else:
-        return convert_units_for_chemical(float(standard_level), chemical, criterion['units'], units['out'])
+        return convert_units_for_chemical(locale.atof(standard_level), chemical, criterion['units'], units['out'])
 
 def report_criterion(chemical, criterion):
     level = criterion_level_in_outunits(chemical, criterion)
