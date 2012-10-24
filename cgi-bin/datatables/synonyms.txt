@@ -1831,6 +1831,7 @@ propylene diamine    	78-90-0
 2-Butanone 	78-93-3	72.1
 butanone 	78-93-3	72.1
 Methyl ethyl ketone 	78-93-3	72.1
+MEK 	78-93-3	72.1
 chloroacetone	78-95-5	
 isopropanolamine	78-96-6	
  1,1,2-Trichloroethane 	79-00-5	133.4
