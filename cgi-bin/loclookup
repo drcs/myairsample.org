@@ -32,6 +32,8 @@ import locale
 from genshi.template import TemplateLoader
 from genshi import HTML
 
+from math import log10, floor
+
 # --------------------------------------------------------------------
 # Read the form data
 # --------------------------------------------------------------------
@@ -340,7 +342,7 @@ def criterion_level_in_outunits(chemical, criterion):
 def report_criterion(chemical, criterion):
     level = criterion_level_in_outunits(chemical, criterion)
     if level:
-        return format(level, '.3g')
+        return std_out_format(level)
     else:
         return '--'
 
@@ -351,6 +353,15 @@ def over_criterion(chemical, criterion):
     else:
         return None
 
+def std_out_format(lvl):
+    sig_figs = 3
+    l10 = log10(lvl)
+    if l10 > (sig_figs - 1):
+        return format(int(lvl))
+    else:
+        ndigit = -int(floor(l10)) + sig_figs - 1
+        return format(lvl, '.' + str(ndigit) + 'f')
+
 document = tmpl.generate(chemicals         = chemicals,
                          recipient         = [form.getvalue('tablename',False),
                                               form.getvalue('tablename2',False)],
@@ -360,6 +371,7 @@ document = tmpl.generate(chemicals         = chemicals,
                          requested_reports = requested_reports,
                          report_criterion  = report_criterion,
                          describe_comparison_for = describe_comparison_for,
+                         std_out_format    = std_out_format,
                          over_criterion    = over_criterion,
                          failures          = failures)
                                  

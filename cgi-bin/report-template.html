@@ -46,7 +46,7 @@
 	      <tr py:for="criterion in criteria.brief" py:if="over_criterion(chemical, criterion)">
 		<td width="35%" valign="top" align="center">
 		  Your reported value:<br/>
-		  <span class="reported_value bigfont">${format(chemical.out_level, '.3g')} ${units.out}</span>
+		  <span class="reported_value bigfont">${std_out_format(chemical.out_level)} ${units.out}</span>
 		</td>
 		<td width="30%" align="center" class="bigfont">
 		  ${describe_comparison_for(chemical, criterion)}
@@ -78,7 +78,7 @@
 	    <span class="reported_value">${chemical.level} ${units['in']}</span>
 	    <span py:if="units['out'] != units['in']">
 	      or
-	      <span class="reported_value">${format(chemical.out_level, '.3g')} ${units.out}</span>
+	      <span class="reported_value">${std_out_format(chemical.out_level)} ${units.out}</span>
 	    </span>
 	    is <span class="reported_value">ABOVE</span> the following Levels of Concern:
 	  </p>
@@ -111,7 +111,7 @@
 	</tr>
 	<tr>
 	  <td>Reported Level</td>
-	  <td py:for="chemical in chemicals" class="chemical_level">${format(chemical.out_level, '.3g')}</td>
+	  <td py:for="chemical in chemicals" class="chemical_level">${std_out_format(chemical.out_level)}</td>
 	</tr>
  	<tr py:for="criterion in criteria.full">
 	  <td>${criterion.description}</td>
