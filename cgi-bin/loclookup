@@ -49,7 +49,7 @@ units = {'in'  : form.getvalue('inunits'),
          'out' : form.getvalue('outunits')}
 
 # allow custom representation of units
-unit_representations = {'ug/m3' :   '&micro;g/m3'}  # FIXME superscript
+unit_representations = {'ug/m3' :   '&micro;g/m<sup>3</sup>'}
 
 def represent_unit(name):
     if name in unit_representations:
