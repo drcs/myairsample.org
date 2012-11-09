@@ -158,7 +158,7 @@ reporting_criteria = list_flatten([
                             """}],
                       'mg/m3'),
         read_criteria('tesl.txt',
-                      ['name','cas','tshort','tinter','tlong'],
+                      ['name','cas','tshort','tshortppb','tlong'],
                       [{'column': 'tshort',
                         'description': 'TX ESL - short term',
                         'brief_description': 'The <b>Short Term</b> (1-hr) Texas Effects Screening Level',
