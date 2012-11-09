@@ -48,6 +48,18 @@ chemicals_raw = map (chem_lookup, filter (chem_pattern.match, form.keys()))
 units = {'in'  : form.getvalue('inunits'),
          'out' : form.getvalue('outunits')}
 
+# allow custom representation of units
+unit_representations = {'ug/m3' :   '&micro;g/m3'}  # FIXME superscript
+
+def represent_unit(name):
+    if name in unit_representations:
+        return HTML(unit_representations[name])
+    else:
+        return HTML(name)
+
+units['in_rep']  = represent_unit(units['in'])
+units['out_rep'] = represent_unit(units['out'])
+
 requested_reports = []
 if form.getvalue('full')    == 'on': requested_reports.append('full')
 if form.getvalue('brief')   == 'on': requested_reports.append('brief')
