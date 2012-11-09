@@ -27,6 +27,7 @@ cgitb.enable()
 
 import re
 import csv
+import locale
 
 from genshi.template import TemplateLoader
 from genshi import HTML
@@ -34,6 +35,9 @@ from genshi import HTML
 # --------------------------------------------------------------------
 # Read the form data
 # --------------------------------------------------------------------
+if (locale.getlocale() == (None, None)):
+    locale.setlocale(locale.LC_ALL, 'en_US.UTF8')
+
 form = cgi.FieldStorage()
 
 # look for all 'chem*' parameters that have a corresponding 'report*' parameter
@@ -166,7 +170,7 @@ reporting_criteria = list_flatten([
                             """}],
                       'mg/m3'),
         read_criteria('tesl.txt',
-                      ['name','cas','tshort','tinter','tlong'],
+                      ['name','cas','tshort','tshortppb','tlong'],
                       [{'column': 'tshort',
                         'description': 'TX ESL - short term',
                         'brief_description': 'The <b>Short Term</b> (1-hr) Texas Effects Screening Level',
@@ -234,7 +238,7 @@ reporting_criteria = list_flatten([
                             """}],
                       'ppm'),
         read_criteria('lastds.txt',
-                      ['name','cas','la8','la24'],
+                      ['name','cas','la8','laann'],
                       [{'column': 'la8',
                         'description': 'LA 8-hr Std.',
                         'brief_description': 'The Louisiana 8-Hour Ambient Air Standard',
@@ -243,9 +247,8 @@ reporting_criteria = list_flatten([
                             """Concentrations above this level are illegal in
                                 Louisiana. This level refers to the average level over an <b>8-hour</b>  period.
                             """},
-                       # FIXME is this the annual standard or the 24 hour standard?
-                       {'column': 'la24',
-                        'description': 'LA 24-hr Std.',
+                       {'column': 'laann',
+                        'description': 'LA Annual Std.',
                         'brief_description': 'The Louisiana Annual Ambient Air Standard',
                         'medium_description': 'Louisiana Annual Ambient Air Standard',
                         'long_description':
@@ -303,7 +306,7 @@ def convert_units_for_chemical(level, chemical, from_units, to_units):
             if mw_str == '':
                 return None
             else:
-                mw = float(mw_str)
+                mw = locale.atof(mw_str)
         except KeyError:
             return None
     return convert_units(level, from_units, to_units, mw)
@@ -315,7 +318,7 @@ chemicals = []
 
 # Add parameter 'out_level' to chemicals; reported level in output units
 for chemical in chemicals_raw:
-    level = float(chemical['level'])
+    level = locale.atof(chemical['level'])
     if standard_cleanup(chemical['name']) in synonym_by_name:
         chemical['out_level'] = convert_units_for_chemical(level, chemical, units['in'], units['out'])
         if chemical['out_level']:
@@ -344,7 +347,7 @@ def criterion_level_in_outunits(chemical, criterion):
     if standard_level == '':
         return None
     else:
-        return convert_units_for_chemical(float(standard_level), chemical, criterion['units'], units['out'])
+        return convert_units_for_chemical(locale.atof(standard_level), chemical, criterion['units'], units['out'])
 
 def report_criterion(chemical, criterion):
     level = criterion_level_in_outunits(chemical, criterion)

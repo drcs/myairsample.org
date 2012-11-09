@@ -87,15 +87,25 @@ div#report_medium ul {
 
 /************* full report **********************/
 
+#report_full {
+    margin-left:   0.4in;
+}
+
+#report_full h2 {
+    text-align:    left;
+    font-size:     140%;
+    margin:        5px;
+}
+
 #report_full table tr:first-child {
     font-weight:   bold;
 }
 
-#report_full tr.chemical td:first-child {
+#report_full .chemical_name {
     font-weight:   bold;
 }
 
-#report_full tr.chemical td:nth-child(2) {
+#report_full .chemical_level {
     background:    #ff9966;
     font-weight:   bold;
 }
