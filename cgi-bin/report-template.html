@@ -1,4 +1,4 @@
-<?xml version="1.0" standalone="yes"?>
+<?xml version="1.0" standalone="no"?>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:py="http://genshi.edgewall.org/">
   <head>
@@ -26,7 +26,7 @@
       <div id="failed_unit_conversions" class="failure_alert" py:if="failures.unit_conversions">
 	<p>
 	  Units in ppb <i>by volume</i> is not available for the following chemicals.
-	  For better results, enter values in ppb or ug/m3:
+	  For better results, enter values in ppb or &micro;g/m<sup>3</sup>:
 	</p>
 	<ul>
 	  <li py:for="name in failures.unit_conversions">$name</li>
@@ -75,7 +75,7 @@
 	  <h3 class="chemical_name">${chemical.name}</h3>
 	  <p>
 	    Your reported value of
-	    <span class="reported_value">${chemical.level} ${units['in']}</span>
+	    <span class="reported_value">${chemical.level} ${units.in_rep}</span>
 	    <span py:if="units['out'] != units['in']">
 	      or
 	      <span class="reported_value">${format(chemical.out_level, '.3g')} ${units.out_rep}</span>
