@@ -334,10 +334,6 @@ for chemical in chemicals_raw:
 loader = TemplateLoader('.')
 tmpl = loader.load('report-template.html')
 
-# HTTP headers
-print "Content-type: text/html"
-print
-
 def criterion_level_in_outunits(chemical, criterion):
     try:
         cas = synonym_by_name[standard_cleanup(chemical['name'])]['cas']
@@ -374,5 +370,8 @@ document = tmpl.generate(chemicals         = chemicals,
                          describe_comparison_for = describe_comparison_for,
                          over_criterion    = over_criterion,
                          failures          = failures)
-                                 
+
+# HTTP headers
+print "Content-type: text/html; charset=utf-8"
+print
 print document.render('html', doctype='html')
