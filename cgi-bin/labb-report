@@ -53,7 +53,7 @@ units = {'in'  : form.getvalue('inunits'),
          'out' : form.getvalue('outunits')}
 
 # allow custom representation of units
-unit_representations = {'ug/m3' :   '&micro;g/m<sup>3</sup>'}
+unit_representations = {'ug/m3' :   '{\micro g/m\cubed}'}
 
 def represent_unit(name):
     if name in unit_representations:
@@ -397,17 +397,19 @@ print >>outfile,r"""
 \newcommand{\fc}{\cellcolor{red}}
 \definecolor{salmon}{rgb}{1.0,0.8,0.7}
 \newcommand{\highlightbox}[1]{\colorbox{salmon}{\parbox{\linewidth}{#1}}}
+"""
 
+# ----- BEGIN USER INPUT ---------------
+print >>outfile, r"\newcommand{\user} {" + form.getvalue('tablename',"(no name given)") \
+                                        + " " + form.getvalue('tablename2', "") + "}"
+print >>outfile, r"\newcommand{\samplename}    {(not implemented)}"
+print >>outfile, r"\newcommand{\sampledate}    {(not implemented)}"
+print >>outfile, r"\newcommand{\samplelocation}{(not implemented)}"
+print >>outfile, r"\newcommand{\inunits}       {" + represent_unit(units['in'])  + "}"
+print >>outfile, r"\newcommand{\outunits}      {" + represent_unit(units['out'])  + "}"
+# ----- END USER INPUT -----------------
 
-% ----- BEGIN USER INPUT ---------------
-\newcommand{\user}          {FIXME}
-\newcommand{\samplename}    {FIXME}
-\newcommand{\sampledate}    {FIXME}
-\newcommand{\samplelocation}{FIXME}
-\newcommand{\inunits}       {FIXME}
-\newcommand{\outunits}      {FIXME}
-% ----- END USER INPUT -----------------
-
+print >>outfile,r"""
 \begin{document}
 
 \title{Report}
@@ -539,7 +541,7 @@ outfile.close()
 doc_dir=path.dirname(outfile.name)
 chdir(doc_dir)
 result=system("latex " + outfile.name + ">& /dev/null")
-remove(outfile.name)
+# remove(outfile.name)
 doc_basename=path.splitext(outfile.name)[0]
 
 # HTTP headers
@@ -549,4 +551,3 @@ sys.stdout.flush()
 
 system("dvipdf " + doc_basename + ".dvi -")
 
-# Document contents
