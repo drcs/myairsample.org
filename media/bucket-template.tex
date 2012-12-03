@@ -23,13 +23,15 @@
 \definecolor{salmon}{rgb}{1.0,0.8,0.7}
 \newcommand{\highlightbox}[1]{\colorbox{salmon}{\parbox{\linewidth}{#1}}}
 
-%% Some information supplied by the user:
+
+% ----- BEGIN USER INPUT ---------------
 \newcommand{\user}          {FIXME}
 \newcommand{\samplename}    {FIXME}
 \newcommand{\sampledate}    {FIXME}
 \newcommand{\samplelocation}{FIXME}
 \newcommand{\inunits}       {FIXME}
 \newcommand{\outunits}      {FIXME}
+% ----- END USER INPUT -----------------
 
 \begin{document}
 
@@ -83,17 +85,18 @@ website available at www.atsdr.cdc.gov/sustances/index.asp.}
 
 \subsection*{Hydrogen Sulfide}
 
-Hydrogen sulfide occurs naturally and is also produced by human
-activities. Low, long-term exposure can cause eye irritation, headache,
-and fatigue. Exposure to high levels can be fatal.
+% Example description follows.
+% Hydrogen sulfide occurs naturally and is also produced by human
+% activities. Low, long-term exposure can cause eye irritation, headache,
+% and fatigue. Exposure to high levels can be fatal.
 
 \begin{tabular}{|c|c|c|}
 \hline
-The level in your bucket sample &                 & Comparison Level                             \\
+The level in your bucket sample &                             & Comparison Level                                       \\
 \hline
-\fc 6.27 ppb        & \fc is over 7 times         & \fc The EPA Region 6 Screening Level 0.835 ppb   \\
+\fc 6.27 \outunits              & \fc is over 7 times         & \fc The EPA Region 6 Screening Level 0.835 \outunits   \\
 \hline
-6.27 ppb                        & does not exceed & The Lousiana 8-hr Standard 275 ppb           \\
+6.27 \outunits                  & does not exceed             & The Lousiana 8-hr Standard 275 \outunits               \\
 \hline
 \end{tabular}
 
