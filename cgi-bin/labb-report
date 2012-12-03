@@ -1,0 +1,551 @@
+#!/usr/bin/python
+#-*-python-*-
+#
+# Look-up and Conversion of Levels of Concern; LABB report format
+# (c) 2012 Greg Benison
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+#
+
+import cgi
+import cgitb
+cgitb.enable()
+
+import re
+import csv
+import locale
+
+import sys
+from os import remove,path,chdir,system
+from tempfile import NamedTemporaryFile
+
+# --------------------------------------------------------------------
+# Read the form data
+# --------------------------------------------------------------------
+if (locale.getlocale() == (None, None)):
+    locale.setlocale(locale.LC_ALL, 'en_US.UTF8')
+
+form = cgi.FieldStorage()
+
+# look for all 'chem*' parameters that have a corresponding 'report*' parameter
+chem_pattern = re.compile('^chem(\d+)$')
+def chem_lookup(chem_par):
+    n = chem_pattern.findall(chem_par)[0]
+    report_par = 'report' + n
+    return { 'name'  : form[chem_par].value.lower(),
+             'level' : form[report_par].value if report_par in form else 'NA' }
+
+chemicals_raw = map (chem_lookup, filter (chem_pattern.match, form.keys()))
+units = {'in'  : form.getvalue('inunits'),
+         'out' : form.getvalue('outunits')}
+
+# allow custom representation of units
+unit_representations = {'ug/m3' :   '&micro;g/m<sup>3</sup>'}
+
+def represent_unit(name):
+    if name in unit_representations:
+        return (unit_representations[name])
+    else:
+        return (name)
+
+units['in_rep']  = represent_unit(units['in'])
+units['out_rep'] = represent_unit(units['out'])
+
+requested_reports = []
+if form.getvalue('full')    == 'on': requested_reports.append('full')
+if form.getvalue('brief')   == 'on': requested_reports.append('brief')
+if form.getvalue('summary') == 'on': requested_reports.append('medium')
+
+# default to full report if none requested
+if requested_reports == []: requested_reports = ['full']
+
+requested_sources = []
+if form.getvalue('laonly')  == 'on': requested_sources.append('lastds.txt')
+if form.getvalue('nconly')  == 'on': requested_sources.append('ncstds.txt')
+
+# Selection of sources for 'brief' report
+brief_selection = form.getvalue('reflevel')
+
+# specify brief description based on selection.
+# These definitions shadow those in locform.html... maybe locform.html should also
+# be generated...
+brief_selection_description = {
+    "lastds.txt":    "Louisiana Ambient Air Standards",
+    "ncstds.txt":    "North Carolina Ambient Air Standards",
+    "tesl.txt":      "Texas Effects Screening Levels",
+    "r6sls.txt":     "EPA Region 6 Screening Levels",
+    "ATSDRMRLs.txt": "ATSDR Minimal Risk Levels"
+}[brief_selection]
+
+# ---------------------------------------------------------------------
+# Read the standards tables
+# ---------------------------------------------------------------------
+
+def standard_cleanup(s):
+    try: return s.lower().strip()
+    except AttributeError: return s
+
+def csv_file_reader(fname, fieldnames=None, dialect=None):
+    csvfile = open(fname,'rb')
+    if dialect == None:
+        dialect = csv.Sniffer().sniff(csvfile.read(1024))
+        csvfile.seek(0)
+    return csv.DictReader(csvfile, fieldnames, dialect=dialect)
+
+def key_csv_by(reader, key, cleanup=standard_cleanup):
+    """Given a csv.DictReader, return a dictionary of its rows keyed by one of the columns"""
+    result = {}
+    for row in reader:
+        if key in row:
+            result[cleanup(row[key])] = row
+    return result
+
+synonym_by_name    = key_csv_by(csv_file_reader('datatables/synonyms.txt', fieldnames=['name','cas','mw']),                         'name')
+synonym_by_cas     = key_csv_by(csv_file_reader('datatables/synonyms.txt', fieldnames=['name','cas','mw']),                         'cas')
+
+def read_criteria(fname, fieldnames, columns, units):
+    criteria_by_cas = key_csv_by(csv_file_reader('datatables/' + fname, fieldnames=fieldnames), 'cas')
+    return map (lambda(column): {'source'      : fname,
+                                 'criteria'    : criteria_by_cas,
+                                 'column'      : column['column'],
+                                 'description' : column['description'],
+                                 'brief_description'  : (column['brief_description']) if 'brief_description' in column else '<the limit>',
+                                 'medium_description' : (column['medium_description']),
+                                 'long_description'   : (column['long_description']) if 'long_description' in column else 'NA',
+                                 'units'       : units},
+                columns)
+
+def list_flatten(xs):
+    result = []
+    for x in xs: result += x
+    return result
+
+reporting_criteria = list_flatten([
+        read_criteria('ncstds.txt',
+                      ['name','cas','ncann','nc24','nc1a','nc1b'],
+                      [{'column': 'ncann',
+                        'description': 'NC Annual Std.',
+                        'brief_description': 'The North Carolina Annual Standard',
+                        'medium_description': 'North Carolina Annual Ambient Air Standard',
+                        'long_description':
+                            """Concentrations above this level are illegal in
+                               North Carolina.<br>  This level refers to the average level over a
+                               period of <b>one year</b>."""},
+                       {'column': 'nc24',
+                        'description': 'NC 24-hr Std.',
+                        'brief_description': 'The North Carolina 24-Hour Standard',
+                        'medium_description': 'North Carolina 24-Hour Ambient Air Standard',
+                        'long_description':
+                            """Concentrations above this level are illegal in
+                               North Carolina.<br>  This level refers to the average level over a
+                               <b>24-hour</b> period."""},
+                       {'column': 'nc1a',
+                        'description': 'NC 1-hr Std.',
+                        'brief_description': 'The North Carolina 1-Hour Standard',
+                        'medium_description': 'North Carolina 1-Hour Ambient Air Standard',
+                        'long_description':
+                            """Concentrations above this level are illegal in
+                               North Carolina.  This level refers to the average level over a
+                               <b>one hour</b> period."""},
+                       # FIXME nc1b and nc1a: synonyms?
+                       {'column': 'nc1b',
+                        'description': 'NC 1-hr Std.',
+                        'brief_description': 'The North Carolina 1-Hour Standard',
+                        'medium_description': '',
+                        'long_description':
+                            """
+                            """}],
+                      'mg/m3'),
+        read_criteria('tesl.txt',
+                      ['name','cas','tshort','tshortppb','tlong'],
+                      [{'column': 'tshort',
+                        'description': 'TX ESL - short term',
+                        'brief_description': 'The <b>Short Term</b> (1-hr) Texas Effects Screening Level',
+                        'medium_description': 'Texas Short-Term Screening Level',
+                        'long_description':
+                            """According to the Texas Natural Resource Conservation
+                             Commission, no health effects are thought
+                             to occur below this level. "Short-term" levels refer to the average
+                             exposure level during <b>one hour</b>."""},
+                       {'column': 'tlong',
+                        'description': 'TX ESL - long term',
+                        'brief_description': 'The <b>Long-Term</b> Texas Effects Screening Level',
+                        'medium_description': 'Texas Long-Term Screening Level',
+                        'long_description':
+                            """According to the Texas Natural Resource Conservation
+                             Commission, <br>  no health effects are thought
+                             to occur below this level. "Long-term" levels refer to the average
+                             exposure level during a <b>year</b> (24 hours for benzene and ethylene dichloride)."""}],
+                      'ug/m3'),
+        read_criteria('r6sls.txt',
+                      ['name','cas','r6sl'],
+                      [{'column': 'r6sl',
+                        'description': 'EPA Region 6 Screening Level',
+                        'brief_description': 'The EPA Region 6 Screening Level',
+                        'medium_description': 'EPA Region 6 Screening Level',
+                        'long_description':
+                        """According to Region 6 of the US EPA, no health effects are thought
+                           to occur below this level.
+                        """}],
+                      'ug/m3'),
+        read_criteria('ATSDRMRLs.txt',
+                      ['name','cas','atsdrac','atsdrint','atsdrchr'],
+                      [{'column': 'atsdrac',
+                        'description': 'ATSDR MRL - Acute',
+                        'brief_description': 'The <b>Acute</b> (<2 week) ATSDR Minimal Risk Level',
+                        'medium_description': 'ATSDR Acute Minimal Risk Level',
+                        'long_description':
+                            """According to the American Toxic Substances and Disease
+                               Registry, <br>  there is no appreciable
+                               risk of <i>non-cancer</i> health effects from
+                               being exposed to concentrations up to this level over periods of
+                               <b>up to 2 weeks</b>.
+                            """},
+                       {'column': 'atsdrint',
+                        'description': 'ATSDR MRL - Intermediate',
+                        'brief_description': 'The <b>Intermediate</b> (2 wks - 1 yr) ATSDR Minimal Risk',
+                        'medium_description': 'ATSDR Intermediate Minimal Risk Level',
+                        'long_description':
+                            """According to the American Toxic Substances and Disease
+                               Registry, <br>  there is no appreciable
+                               risk of <i>non-cancer</i> health effects from
+                               being exposed to concentrations up to this level over periods of
+                               <b> between 2 weeks and one year</b>.
+                            """},
+                       {'column': 'atsdrchr',
+                        'description': 'ATSDR MRL - Chronic',
+                        'brief_description': 'The <b>Chronic</b> (> 1 yr) ATSDR Minimal Risk',
+                        'medium_description': 'ATSDR Chronic Minimal Risk Level',
+                        'long_description':
+                            """According to the American Toxic Substances and Disease
+                               Registry, <br>  there is no appreciable
+                               risk of non-cancer health effects from
+                               being exposed to concentrations up to this level over periods
+                               <b>longer than one year</b>.
+                            """}],
+                      'ppm'),
+        read_criteria('lastds.txt',
+                      ['name','cas','la8','laann'],
+                      [{'column': 'la8',
+                        'description': 'LA 8-hr Std.',
+                        'brief_description': 'The Louisiana 8-Hour Ambient Air Standard',
+                        'medium_description': 'Louisiana 8-Hour Ambient Air Standard',
+                        'long_description':
+                            """Concentrations above this level are illegal in
+                                Louisiana. This level refers to the average level over an <b>8-hour</b>  period.
+                            """},
+                       {'column': 'laann',
+                        'description': 'LA Annual Std.',
+                        'brief_description': 'The Louisiana Annual Ambient Air Standard',
+                        'medium_description': 'Louisiana Annual Ambient Air Standard',
+                        'long_description':
+                            """Concentrations above this level are illegal in
+                               Louisiana. This level refers to the average level over a
+                               period of <b>one year</b>.
+                            """}],
+                      'ug/m3')])
+
+criteria = {'brief'   : filter(lambda c: c['source'] == brief_selection, reporting_criteria)}
+
+# Default to all available criterion sources if none specifically requested.
+if requested_sources != []:
+    reporting_criteria = filter(lambda c: c['source'] in requested_sources, reporting_criteria)
+
+criteria['medium'] = reporting_criteria
+criteria['full']   = reporting_criteria
+
+def describe_comparison(level,reference):
+    """Describe the comparison between a level and a reference as an integer ratio,
+       and one of Gwen's descriptive words"""
+    compare = level / reference
+    decimal = compare - int(compare)
+    factor  = int(compare)
+    description = 'unknown'
+    if   (compare <= 1.0): return "is below"
+    elif (compare < 1.8):  return "exceeds"
+    elif (decimal < 0.2):  return "is about " + str(factor) + " times"
+    elif (decimal < 0.8):  return "is <i>over</i> " + str(factor) + " times"
+    else:                  return "is <i>nearly</i> " + str(factor + 1) + " times"
+        
+# Convert 'chemical' and 'criterion' to same units,
+# return a marked-up description of their comparison
+def describe_comparison_for(chemical, criterion):
+    level      = criterion_level_in_outunits(chemical, criterion)
+    return (describe_comparison(chemical['out_level'], level))
+
+# ---------------------------------------------------------------------
+# Units conversion
+# ---------------------------------------------------------------------
+def convert_units(level, from_units, to_units, mw=False):
+    factor = { 'ppm'         : 1.0 ,
+               'ppb'         : 1000.0 ,
+               'ug/m3'       : 1198.0 ,
+               'mg/m3'       : 1.198 }
+    if ((from_units == 'ppbv') or (to_units == 'ppbv')):
+        factor['ppbv'] = 24040.0 / mw
+    return level / factor[from_units] * factor[to_units]
+
+def convert_units_for_chemical(level, chemical, from_units, to_units):
+    mw = 0 # should never trigger
+    if from_units == 'ppbv' or to_units == 'ppbv':
+        try:
+            mw_str  = synonym_by_name[standard_cleanup(chemical['name'])]['mw']
+            if mw_str == '':
+                return None
+            else:
+                mw = locale.atof(mw_str)
+        except KeyError:
+            return None
+    return convert_units(level, from_units, to_units, mw)
+
+failures = {'unit_conversions': [],
+            'name_lookups':     []}
+
+chemicals = []
+
+# Add parameter 'out_level' to chemicals; reported level in output units
+for chemical in chemicals_raw:
+    level = locale.atof(chemical['level'])
+    if standard_cleanup(chemical['name']) in synonym_by_name:
+        chemical['out_level'] = convert_units_for_chemical(level, chemical, units['in'], units['out'])
+        if chemical['out_level']:
+            chemicals.append(chemical)
+        else:
+            failures['unit_conversions'].append(chemical['name'])
+    else:
+        failures['name_lookups'].append(chemical['name'])
+
+# -------------------------------------------------------------------------------
+# Load the report template and generate the output
+# -------------------------------------------------------------------------------
+
+outfile=NamedTemporaryFile(delete=False,suffix=".tex")
+
+def criterion_level_in_outunits(chemical, criterion):
+    try:
+        cas = synonym_by_name[standard_cleanup(chemical['name'])]['cas']
+        standard_level = (criterion['criteria'][cas][criterion['column']]).strip()
+    except KeyError:
+        return None
+    if standard_level == '':
+        return None
+    else:
+        return convert_units_for_chemical(locale.atof(standard_level), chemical, criterion['units'], units['out'])
+
+def report_criterion(chemical, criterion):
+    level = criterion_level_in_outunits(chemical, criterion)
+    if level:
+        return format(level, '.3g')
+    else:
+        return '--'
+
+def over_criterion(chemical, criterion):
+    level = criterion_level_in_outunits(chemical, criterion)
+    if level and (chemical['out_level'] > level):
+        return 'concern'
+    else:
+        return None
+
+# document = tmpl.generate(chemicals         = chemicals,
+#                          recipient         = [form.getvalue('tablename',False),
+#                                               form.getvalue('tablename2',False)],
+#                          units             = units,
+#                          brief_selection_description = brief_selection_description,
+#                          criteria          = criteria,
+#                          requested_reports = requested_reports,
+#                          report_criterion  = report_criterion,
+#                          describe_comparison_for = describe_comparison_for,
+#                          over_criterion    = over_criterion,
+#                          failures          = failures)
+# 
+
+print >>outfile,r"""
+\documentclass{article}
+
+\usepackage{fancyhdr, graphicx}
+\usepackage[table]{xcolor}
+
+\newcommand{\stdfooter}{%
+  \fancyhf{}
+  \fancyhfoffset{0.5in}
+  \fancyfoot[C]{\includegraphics{footer}}
+}
+
+\fancypagestyle{plain}{\stdfooter}
+\pagestyle{fancy}
+\stdfooter
+
+\setlength{\parindent}{0pt}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+
+\newcommand{\cubed}{$^3$}
+\newcommand{\micro}{$\mu$}
+\newcommand{\fc}{\cellcolor{red}}
+\definecolor{salmon}{rgb}{1.0,0.8,0.7}
+\newcommand{\highlightbox}[1]{\colorbox{salmon}{\parbox{\linewidth}{#1}}}
+
+
+% ----- BEGIN USER INPUT ---------------
+\newcommand{\user}          {FIXME}
+\newcommand{\samplename}    {FIXME}
+\newcommand{\sampledate}    {FIXME}
+\newcommand{\samplelocation}{FIXME}
+\newcommand{\inunits}       {FIXME}
+\newcommand{\outunits}      {FIXME}
+% ----- END USER INPUT -----------------
+
+\begin{document}
+
+\title{Report}
+\author{\user}
+\date{}
+\maketitle
+
+\section*{Sample information}
+\begin{itemize}
+\item Sample identifying name:   \samplename
+\item Date sample was taken:     \sampledate
+\item Location sample was taken: \samplelocation
+\item Report date:               \today
+\item Report input units:        \inunits$^*$
+\item Report output units:       \outunits$^*$
+\item Report web location: http://air-toxics.dreamhosters.com/locform2.html
+\end{itemize}
+
+\section*{Unit information$^*$}
+Parts per billion (ppb) describes how many weighed parts of a chemical there
+are for 1 billion parts of air. For example, a recipe says to add a just a drop of
+vanilla for every 100 pounds of flour. The drop of vanilla weighs hardly
+anything, but it has a big effect on the cookies' flavor. Similarly, if we measure
+benzene in the air, we might find 3 "drops" of benzene for 1,000,000,000
+(billion) "drops" of air. It seems like a small amount, but it is significant.
+Parts per billion by volume, or ppbv, means the concentration has been figured
+out in terms of how much space the molecules take up. For example, if we
+make a mixture of 3 cups of vanilla and 1 billion cups of flour, then our
+concentration is 3 parts volume (cups of vanilla) per billion parts volume (cups
+of flour), or 3ppbv sugar in flour. When 3 volumes of benzene are in a billion
+volumes of air, the concentration is 3ppbv benzene in air.
+Micrograms per meters cubed (\micro g/m\cubed) describes how much of a chemical's
+weight is in a volume of air that takes up one cubic meter. Imagine an empty
+box that is three feet long on both sides, and three feet tall. One meter is about
+three feet long. So the box's volume is 1 cubic meter, or 1 m 3. A microgram
+(\micro g) is a very small weight, like that of a grain of sand. You put 3 grains of sand
+into the box. The concentration of sand inside the box is 3 \micro g divided by the
+volume of the box 1 m3, or 3 \micro g /m3. Like grains of sand, chemicals can also be
+reported by weight and volume. For example, a monitor might read 5 \micro g /m\cubed
+benzene, or 5 \micro g of benzene in 1 m\cubed of air.
+
+\newpage
+\includegraphics{logo}
+\section*{Sample Analysis}
+
+\highlightbox{The information below is provided to guide discussion on how
+exposure to chemicals can affect you, your family, and your
+community. This information is paraphrased from the ATSDR "ToxFAQs"
+website available at www.atsdr.cdc.gov/sustances/index.asp.}
+
+\subsection*{Hydrogen Sulfide}
+
+% Example description follows.
+% Hydrogen sulfide occurs naturally and is also produced by human
+% activities. Low, long-term exposure can cause eye irritation, headache,
+% and fatigue. Exposure to high levels can be fatal.
+
+\begin{tabular}{|c|c|c|}
+\hline
+The level in your bucket sample &                             & Comparison Level                                       \\
+\hline
+\fc 6.27 \outunits              & \fc is over 7 times         & \fc The EPA Region 6 Screening Level 0.835 \outunits   \\
+\hline
+6.27 \outunits                  & does not exceed             & The Lousiana 8-hr Standard 275 \outunits               \\
+\hline
+\end{tabular}
+
+\subsection*{Methylene Chloride}
+
+Exposure to methylene chloride occurs mostly from breathing
+contaminated air. Breathing in large amounts of methylene chloride can
+damage the central nervous system. Contact of eyes or skin with
+methylene chloride can result in burns.
+
+\begin{tabular}{|c|c|c|}
+\hline
+The level in your bucket sample &                   & Comparison Level                             \\
+\hline
+164 ppb                        & is about 48 times  & The EPA Region 6 Screening Level 3.42 ppb    \\
+\hline
+164 ppb                        & does not exceed    & The Lousiana 24-hr Standard 178 ppb           \\
+\hline
+\end{tabular}
+
+
+
+\newpage
+\includegraphics{logo}
+\section*{Sample screening levels}
+
+\highlightbox{Some government agencies have developed standards and screening levels for
+toxic chemicals in the air based on health information about the chemicals.
+There is no information available for some toxic chemicals. The agencies are
+listed below, with a brief description of the methods used in establishing their
+levels. States may not be required to adhere to national standards.}
+
+\begin{itemize}
+\item EPA Region 6 Screening Levels\newline
+http://www.epa.gov/earth1r6/6pd/rcra\_c/pd-n/screen.htm\newline
+These levels are based on existing studies of chemical health effects.
+They levels are calculated for residential (as opposed to workplace)
+exposures. They reflect the risks of exposure to a certain level of the
+chemical. The levels listed as screening levels correspond to pre-
+determined levels of risk from exposure: either 1 in a million cancer risk
+or a "hazard quotient" of 1 for non-cancer effects, whichever
+corresponds to a lower concentration. These screening levels are not
+legally enforceable.
+
+\item Louisiana Ambient Air Quality Standards\newline
+http://www.deq.louisiana.gov/portal/tabid/1674/Default.aspx\newline
+These levels are legally enforceable standards in Louisiana, developed
+through Louisiana's regulatory process. They are found in Table 51.2 of
+Title 33, Part III.
+They are based on health effects information about the chemicals: the
+eight-hour standard modifies occupational exposure levels to be
+appropriate for residential exposures; the annual standard is based on
+EPA procedures for calculating cancer risks.
+\end{itemize}
+
+
+\end{document}
+"""
+
+outfile.close()
+doc_dir=path.dirname(outfile.name)
+chdir(doc_dir)
+result=system("latex " + outfile.name + ">& /dev/null")
+remove(outfile.name)
+doc_basename=path.splitext(outfile.name)[0]
+
+# HTTP headers
+print "Content-type: application/pdf"
+# print "Content-type: text/plain"
+print
+
+sys.stdout.flush()
+
+# print outfile.name
+system("dvipdf " + doc_basename + ".dvi -")
+
+# Document contents
