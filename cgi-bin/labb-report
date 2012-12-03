@@ -29,7 +29,7 @@ import csv
 import locale
 
 import sys
-from os import remove,path,chdir,system
+from os import remove,path,chdir,system,getcwd,environ
 from tempfile import NamedTemporaryFile
 
 # --------------------------------------------------------------------
@@ -531,6 +531,10 @@ EPA procedures for calculating cancer risks.
 \end{document}
 """
 
+# Set up a search path so tex can find the image files
+image_dir=path.dirname(getcwd()) + "/media"
+environ["TEXINPUTS"]=".:" + image_dir + ":"
+
 outfile.close()
 doc_dir=path.dirname(outfile.name)
 chdir(doc_dir)
@@ -540,12 +544,9 @@ doc_basename=path.splitext(outfile.name)[0]
 
 # HTTP headers
 print "Content-type: application/pdf"
-# print "Content-type: text/plain"
 print
-
 sys.stdout.flush()
 
-# print outfile.name
 system("dvipdf " + doc_basename + ".dvi -")
 
 # Document contents
