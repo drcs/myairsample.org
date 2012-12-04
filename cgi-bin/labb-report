@@ -277,8 +277,8 @@ def describe_comparison(level,reference):
     if   (compare <= 1.0): return "is below"
     elif (compare < 1.8):  return "exceeds"
     elif (decimal < 0.2):  return "is about " + str(factor) + " times"
-    elif (decimal < 0.8):  return "is <i>over</i> " + str(factor) + " times"
-    else:                  return "is <i>nearly</i> " + str(factor + 1) + " times"
+    elif (decimal < 0.8):  return "is \emph{over} " + str(factor) + " times"
+    else:                  return "is \emph{nearly} " + str(factor + 1) + " times"
         
 # Convert 'chemical' and 'criterion' to same units,
 # return a marked-up description of their comparison
