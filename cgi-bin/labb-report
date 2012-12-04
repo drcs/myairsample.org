@@ -372,6 +372,9 @@ def over_criterion(chemical, criterion):
 #                          failures          = failures)
 # 
 
+def ltx_tr(xs):
+  str.join(' & ',map(str,xs)) + r'\\'
+
 print >>outfile,r"""
 \documentclass{article}
 
@@ -400,13 +403,23 @@ print >>outfile,r"""
 """
 
 # ----- BEGIN USER INPUT ---------------
-print >>outfile, r"\newcommand{\user} {" + form.getvalue('tablename',"(no name given)") \
-                                        + " " + form.getvalue('tablename2', "") + "}"
-print >>outfile, r"\newcommand{\samplename}    {(not implemented)}"
-print >>outfile, r"\newcommand{\sampledate}    {(not implemented)}"
-print >>outfile, r"\newcommand{\samplelocation}{(not implemented)}"
-print >>outfile, r"\newcommand{\inunits}       {" + represent_unit(units['in'])  + "}"
-print >>outfile, r"\newcommand{\outunits}      {" + represent_unit(units['out'])  + "}"
+def ltx_def(name,value):
+    print >>outfile, '\\newcommand{\\' + name + r"} {" + value + "} \n"
+
+def ltx_def_if(name, default=False):
+    value = form.getvalue(name, default)
+    if value:
+        ltx_def(name, value)
+    
+if (form.getvalue('tablename')):
+    ltx_def('user', form.getvalue('tablename') + " " + form.getvalue('tablename2', ""))
+
+ltx_def_if('samplename')
+ltx_def_if('sampledate')
+ltx_def_if('samplelocation')
+
+ltx_def('inunits', represent_unit(units['in']))
+ltx_def('outunits', represent_unit(units['out']))
 # ----- END USER INPUT -----------------
 
 print >>outfile,r"""
@@ -419,9 +432,9 @@ print >>outfile,r"""
 
 \section*{Sample information}
 \begin{itemize}
-\item Sample identifying name:   \samplename
-\item Date sample was taken:     \sampledate
-\item Location sample was taken: \samplelocation
+\ifx\samplename\undefined\relax\else\item Sample identifying name:   \samplename\fi
+\ifx\sampledate\undefined\relax\else\item Date sample was taken:     \sampledate\fi
+\ifx\samplelocation\undefined\relax\else\item Location sample was taken: \samplelocation\fi
 \item Report date:               \today
 \item Report input units:        \inunits$^*$
 \item Report output units:       \outunits$^*$
@@ -459,43 +472,36 @@ benzene, or 5 \micro g of benzene in 1 m\cubed of air.
 exposure to chemicals can affect you, your family, and your
 community. This information is paraphrased from the ATSDR "ToxFAQs"
 website available at www.atsdr.cdc.gov/sustances/index.asp.}
+"""
 
-\subsection*{Hydrogen Sulfide}
+for chemical in chemicals:
+  print >>outfile, r'\subsection*{' + chemical['name'] + r"""}
 
-% Example description follows.
-% Hydrogen sulfide occurs naturally and is also produced by human
-% activities. Low, long-term exposure can cause eye irritation, headache,
-% and fatigue. Exposure to high levels can be fatal.
+\emph{Chemical description would go here when implemented}
 
 \begin{tabular}{|c|c|c|}
 \hline
 The level in your bucket sample &                             & Comparison Level                                       \\
 \hline
-\fc 6.27 \outunits              & \fc is over 7 times         & \fc The EPA Region 6 Screening Level 0.835 \outunits   \\
-\hline
-6.27 \outunits                  & does not exceed             & The Lousiana 8-hr Standard 275 \outunits               \\
-\hline
-\end{tabular}
+"""
+  for criterion in criteria['full']:
+      outrep = ' ' + units['out_rep']
+      fc=''
+      if over_criterion(chemical,criterion):
+          fc=r' \fc '
+      print >>outfile, fc + str(chemical['out_level']) + outrep + ' & ' + fc + 'is FIXME' + ' & ' + fc + criterion['brief_description'] + r'\\ '
 
-\subsection*{Methylene Chloride}
+# \fc 6.27 \outunits              & \fc is over 7 times         & \fc The EPA Region 6 Screening Level 0.835 \outunits   \\
+# \hline
+# 6.27 \outunits                  & does not exceed             & The Lousiana 8-hr Standard 275 \outunits               \\
 
-Exposure to methylene chloride occurs mostly from breathing
-contaminated air. Breathing in large amounts of methylene chloride can
-damage the central nervous system. Contact of eyes or skin with
-methylene chloride can result in burns.
-
-\begin{tabular}{|c|c|c|}
-\hline
-The level in your bucket sample &                   & Comparison Level                             \\
-\hline
-164 ppb                        & is about 48 times  & The EPA Region 6 Screening Level 3.42 ppb    \\
-\hline
-164 ppb                        & does not exceed    & The Lousiana 24-hr Standard 178 ppb           \\
+  pass                                    
+  print >>outfile, r"""
 \hline
 \end{tabular}
+"""
 
-
-
+print >>outfile, r"""
 \newpage
 \includegraphics{logo}
 \section*{Sample screening levels}
