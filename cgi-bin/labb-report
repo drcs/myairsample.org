@@ -284,7 +284,10 @@ def describe_comparison(level,reference):
 # return a marked-up description of their comparison
 def describe_comparison_for(chemical, criterion):
     level      = criterion_level_in_outunits(chemical, criterion)
-    return (describe_comparison(chemical['out_level'], level))
+    if level:
+        return (describe_comparison(chemical['out_level'], level))
+    else:
+        return "-"
 
 # ---------------------------------------------------------------------
 # Units conversion
@@ -373,7 +376,7 @@ def over_criterion(chemical, criterion):
 # 
 
 def ltx_tr(xs):
-  str.join(' & ',map(str,xs)) + r'\\'
+  return str.join(' & ',map(str,xs)) + r'\\'
 
 print >>outfile,r"""
 \documentclass{article}
@@ -487,15 +490,15 @@ The level in your bucket sample &                             & Comparison Level
   for criterion in criteria['full']:
       outrep = ' ' + units['out_rep']
       fc=''
-      if over_criterion(chemical,criterion):
-          fc=r' \fc '
-      print >>outfile, fc + str(chemical['out_level']) + outrep + ' & ' + fc + 'is FIXME' + ' & ' + fc + criterion['brief_description'] + r'\\ '
+      if criterion_level_in_outunits(chemical, criterion):
+          if over_criterion(chemical,criterion):
+              fc=r' \fc '
+          print >>outfile, ltx_tr([
+                  fc + str(chemical['out_level']) + outrep,
+                  fc + describe_comparison_for(chemical, criterion),
+                  fc + criterion['brief_description'] + ' ' + report_criterion(chemical, criterion) + outrep
+                  ])
 
-# \fc 6.27 \outunits              & \fc is over 7 times         & \fc The EPA Region 6 Screening Level 0.835 \outunits   \\
-# \hline
-# 6.27 \outunits                  & does not exceed             & The Lousiana 8-hr Standard 275 \outunits               \\
-
-  pass                                    
   print >>outfile, r"""
 \hline
 \end{tabular}
