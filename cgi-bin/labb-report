@@ -564,8 +564,11 @@ result=system("latex " + outfile.name + ">& /dev/null")
 # remove(outfile.name)
 doc_basename=path.splitext(outfile.name)[0]
 
+username=form.getvalue('tablename','') + '_' + form.getvalue('tablename2','')
+
 # HTTP headers
 print "Content-type: application/pdf"
+print "Content-disposition: attachment; filename=LABB-%s.pdf" % username
 print
 sys.stdout.flush()
 
