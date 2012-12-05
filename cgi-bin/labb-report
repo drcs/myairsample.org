@@ -32,6 +32,17 @@ import sys
 from os import remove,path,chdir,system,getcwd,environ
 from tempfile import NamedTemporaryFile
 
+from math import log10
+
+def fmt_sigfigs(x,n):
+    digits = int(log10(x))
+    fmt = '%d'
+    if (digits < n):
+        fmt = '%%.%df' % (n - digits)
+    return fmt % x
+
+n_sigfigs=3
+
 # --------------------------------------------------------------------
 # Read the form data
 # --------------------------------------------------------------------
@@ -421,7 +432,7 @@ ltx_def_if('samplename')
 ltx_def_if('sampledate')
 ltx_def_if('samplelocation')
 
-ltx_def('inunits', represent_unit(units['in']))
+ltx_def('inunits',  represent_unit(units['in']))
 ltx_def('outunits', represent_unit(units['out']))
 # ----- END USER INPUT -----------------
 
@@ -494,7 +505,7 @@ The level in your bucket sample &                             & Comparison Level
           if over_criterion(chemical,criterion):
               fc=r' \fc '
           print >>outfile, ltx_tr([
-                  fc + str(chemical['out_level']) + outrep,
+                  fc + fmt_sigfigs(chemical['out_level'], n_sigfigs) + outrep,
                   fc + describe_comparison_for(chemical, criterion),
                   fc + criterion['brief_description'] + ' ' + report_criterion(chemical, criterion) + outrep
                   ])
