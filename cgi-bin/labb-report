@@ -426,7 +426,7 @@ def ltx_def_if(name, default=False):
         ltx_def(name, value)
     
 if (form.getvalue('tablename')):
-    ltx_def('user', form.getvalue('tablename') + " " + form.getvalue('tablename2', ""))
+    ltx_def('user', "for " + form.getvalue('tablename') + r"\\ " + form.getvalue('tablename2', ""))
 
 ltx_def_if('samplename')
 ltx_def_if('sampledate')
@@ -439,7 +439,7 @@ ltx_def('outunits', represent_unit(units['out']))
 print >>outfile,r"""
 \begin{document}
 
-\title{Report}
+\title{Levels of Concern Report}
 \author{\user}
 \date{}
 \maketitle
