@@ -558,7 +558,11 @@ EPA procedures for calculating cancer risks.
 
 # Set up a search path so tex can find the image files
 image_dir=path.dirname(getcwd()) + "/media"
-environ["TEXINPUTS"]=".:" + image_dir + ":"
+try:
+  texinputs_env=environ['TEXINPUTS']
+except KeyError:
+  texinputs_env=":"
+environ["TEXINPUTS"]=image_dir + ":" + texinputs_env
 
 outfile.close()
 doc_dir=path.dirname(outfile.name)
