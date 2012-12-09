@@ -495,7 +495,7 @@ for chemical in chemicals:
 
 \emph{Chemical description would go here when implemented}
 
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c|p{3in}|}
 \hline
 The level in your bucket sample &                             & Comparison Level                                       \\
 \hline
@@ -511,6 +511,7 @@ The level in your bucket sample &                             & Comparison Level
                   fc + describe_comparison_for(chemical, criterion),
                   fc + criterion['brief_description'] + ' ' + report_criterion(chemical, criterion) + outrep
                   ])
+          print >>outfile, r'\hline '
 
   print >>outfile, r"""
 \hline
