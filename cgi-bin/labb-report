@@ -452,7 +452,7 @@ print >>outfile,r"""
 \item Report date:               \today
 \item Report input units:        \inunits$^*$
 \item Report output units:       \outunits$^*$
-\item Report web location: http://air-toxics.dreamhosters.com/locform2.html
+\item Report web location:       http://myairsample.org
 \end{itemize}
 
 \section*{Unit information$^*$}
@@ -485,7 +485,7 @@ benzene, or 5 \micro g of benzene in 1 m\cubed of air.
 \highlightbox{The information below is provided to guide discussion on how
 exposure to chemicals can affect you, your family, and your
 community. This information is paraphrased from the ATSDR "ToxFAQs"
-website available at www.atsdr.cdc.gov/sustances/index.asp.}
+website available at http://www.atsdr.cdc.gov/substances/index.asp.}
 """
 
 for chemical in chemicals:
