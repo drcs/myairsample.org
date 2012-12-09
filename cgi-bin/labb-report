@@ -362,7 +362,7 @@ def criterion_level_in_outunits(chemical, criterion):
 def report_criterion(chemical, criterion):
     level = criterion_level_in_outunits(chemical, criterion)
     if level:
-        return format(level, '.3g')
+        return fmt_sigfigs(level, n_sigfigs)
     else:
         return '--'
 
