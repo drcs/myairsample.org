@@ -111,7 +111,7 @@
 	</tr>
 	<tr>
 	  <td>Reported Level</td>
-	  <td py:for="chemical in chemicals" class="chemical_level">${format(chemical.out_level, '.3g')}</td>
+	  <td py:for="chemical in chemicals" class="chemical_level">${std_out_format(chemical.out_level)}</td>
 	</tr>
  	<tr py:for="criterion in criteria.full">
 	  <td>${criterion.description}</td>
