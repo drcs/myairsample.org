@@ -398,7 +398,7 @@ print >>outfile,r"""
 \newcommand{\stdfooter}{%
   \fancyhf{}
   \fancyhfoffset{0.5in}
-  \fancyfoot[C]{\includegraphics{footer}}
+  \fancyfoot[C]{\includegraphics[width=\textwidth]{footer}}
 }
 
 \fancypagestyle{plain}{\stdfooter}
@@ -481,7 +481,7 @@ reported by weight and volume. For example, a monitor might read 5 \micro g /m\c
 benzene, or 5 \micro g of benzene in 1 m\cubed of air.
 
 \newpage
-\includegraphics{logo}
+\includegraphics[width=\textwidth]{logo}
 \section*{Sample Analysis}
 
 \highlightbox{The information below is provided to guide discussion on how
@@ -567,7 +567,7 @@ environ["TEXINPUTS"]=image_dir + ":" + texinputs_env
 outfile.close()
 doc_dir=path.dirname(outfile.name)
 chdir(doc_dir)
-result=system("latex " + outfile.name + ">& /dev/null")
+result=system("pdflatex " + outfile.name + ">& /dev/null")
 doc_basename=path.splitext(outfile.name)[0]
 
 username=form.getvalue('tablename','') + '_' + form.getvalue('tablename2','')
@@ -578,12 +578,19 @@ print "Content-disposition: attachment; filename=LABB-%s.pdf" % username
 print
 sys.stdout.flush()
 
-system("dvipdf " + doc_basename + ".dvi -")
-try:
-    remove(outfile.name)
-    remove(doc_basename + '.log')
-    remove(doc_basename + '.dvi')
-    remove(doc_basename + '.aux')
-except OSError:
-    pass
+system("cat " + doc_basename + ".pdf")
+
+# cleanup
+def cleanup(fname):
+    try:
+        remove(fname)
+    except OSError:
+        pass
+
+cleanup(outfile.name)
+cleanup(doc_basename + '.log')
+cleanup(doc_basename + '.aux')
+cleanup(doc_basename + '.pdf')
+
+
 
