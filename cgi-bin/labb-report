@@ -163,22 +163,14 @@ reporting_criteria = list_flatten([
                             r"""Concentrations above this level are illegal in
                                North Carolina.  This level refers to the average level over a
                                {\bf 24-hour} period."""},
-                       {'column': 'nc1a',
-                        'description': r'NC 1-hr Std.',
-                        'brief_description': r'The North Carolina 1-Hour Standard',
-                        'medium_description': r'North Carolina 1-Hour Ambient Air Standard',
+                       {'column': 'nc1',
+                        'description': 'NC 1-hr Std.',
+                        'brief_description': 'The North Carolina 1-Hour Standard',
+                        'medium_description': 'North Carolina 1-Hour Ambient Air Standard',
                         'long_description':
                             r"""Concentrations above this level are illegal in
                                North Carolina.  This level refers to the average level over a
-                               {\bf one hour} period."""},
-                       # FIXME nc1b and nc1a: synonyms?
-                       {'column': 'nc1b',
-                        'description': r'NC 1-hr Std.',
-                        'brief_description': r'The North Carolina 1-Hour Standard',
-                        'medium_description': r'',
-                        'long_description':
-                            r"""
-                            """}],
+                               {\bf one hour}> period."""}],
                       'mg/m3'),
         read_criteria('tesl.txt',
                       ['name','cas','tshort','tshortppb','tlong'],
