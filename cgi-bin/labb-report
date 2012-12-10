@@ -520,7 +520,7 @@ The level in your bucket sample &                             & Comparison Level
 
 print >>outfile, r"""
 \newpage
-\includegraphics{logo}
+\includegraphics[width=\textwidth]{logo}
 \section*{Sample screening levels}
 
 \highlightbox{Some government agencies have developed standards and screening levels for
