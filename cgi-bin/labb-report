@@ -510,6 +510,13 @@ The level in your bucket sample &                             & Comparison Level
 \end{tabular}
 """
 
+for name in failures['name_lookups']:
+  print >>outfile, r'\subsection*{' + name + r"""}
+
+Health effects are not available
+"""
+    
+
 print >>outfile, r"""
 \newpage
 \includegraphics[width=\textwidth]{logo}
