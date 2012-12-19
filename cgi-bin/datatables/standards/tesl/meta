@@ -1,0 +1,18 @@
+{
+  "descriptions":
+  {
+    "brief":  "The **Short Term** (1-hr) Texas Effects Screening Level",
+    "medium": "Texas Short-Term Screening Level",
+    "long":   "According to the Texas Natural Resource Conservation
+               Commission, no health effects are thought
+               to occur below this level. \"Short-term\" levels refer to the average
+               exposure level during **one hour**."
+  },
+  "units": "ug/m3",
+  "columns":
+  [
+    { "description": "pollutant" },
+    { "description": "cas"       },
+    { "description": "tshort"    }
+  ]
+}
