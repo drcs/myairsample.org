@@ -384,7 +384,7 @@ def ltx_tr(xs):
 print >>outfile,r"""
 \documentclass{article}
 
-\usepackage{fancyhdr, graphicx}
+\usepackage{fancyhdr, graphicx, pslatex}
 \usepackage[table]{xcolor}
 
 \newcommand{\stdfooter}{%
