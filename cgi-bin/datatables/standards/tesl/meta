@@ -1,18 +1,36 @@
 {
-  "descriptions":
-  {
-    "brief":  "The **Short Term** (1-hr) Texas Effects Screening Level",
-    "medium": "Texas Short-Term Screening Level",
-    "long":   "According to the Texas Natural Resource Conservation
-               Commission, no health effects are thought
-               to occur below this level. \"Short-term\" levels refer to the average
-               exposure level during **one hour**."
-  },
-  "units": "ug/m3",
-  "columns":
-  [
-    { "description": "pollutant" },
-    { "description": "cas"       },
-    { "description": "tshort"    }
-  ]
+    "units": "ug/m3", 
+    "name": "tesl", 
+    "columns": [
+        {
+            "use": false, 
+            "name": "pollutant"
+        }, 
+        {
+            "use": false, 
+            "name": "CAS"
+        }, 
+        {
+            "use": true, 
+            "description": {
+                "short": "TX ESL - short term", 
+                "brief": "The **Short Term** (1-hr) Texas Effects Screening Level", 
+                "long": "According to the Texas Natural Resource Conservation Commission, no health effects are thought to occur below this level. \"Short-term\" levels refer to the average exposure level during **one hour**."
+            }, 
+            "name": "tshort"
+        },
+	{
+	    "name": "tshortppb",
+            "use":  false
+        },	
+        {
+            "use": true, 
+            "description": {
+                "short": "TX ESL - long term", 
+                "brief": "The **Long-Term** Texas Effects Screening Level", 
+                "long": "According to the Texas Natural Resource Conservation Commission,   no health effects are thought to occur below this level. \"Long-term\" levels refer to the average exposure level during a **year** (24 hours for benzene and ethylene dichloride)."
+            }, 
+            "name": "tlong"
+        }
+    ]
 }

@@ -1,0 +1,32 @@
+{
+    "units": "ug/m3", 
+    "name": "lastds", 
+    "columns": [
+        {
+            "use": false, 
+            "name": "pollutant"
+        }, 
+        {
+            "use": false, 
+            "name": "CAS"
+        }, 
+        {
+            "use": true, 
+            "description": {
+                "short": "LA 8-hr Std.", 
+                "brief": "The Louisiana 8-Hour Ambient Air Standard", 
+                "long": "Concentrations above this level are illegal in Louisiana. This level refers to the average level over an **8-hour**  period. "
+            }, 
+            "name": "la8"
+        }, 
+        {
+            "use": true, 
+            "description": {
+                "short": "LA Annual Std.", 
+                "brief": "The Louisiana Annual Ambient Air Standard", 
+                "long": "Concentrations above this level are illegal in Louisiana. This level refers to the average level over a period of **one year**. "
+            }, 
+            "name": "laann"
+        }
+    ]
+}

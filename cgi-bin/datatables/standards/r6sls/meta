@@ -1,0 +1,23 @@
+{
+    "units": "ug/m3", 
+    "name": "r6sls", 
+    "columns": [
+        {
+            "use": false, 
+            "name": "pollutant"
+        }, 
+        {
+            "use": false, 
+            "name": "CAS"
+        }, 
+        {
+            "use": true, 
+            "description": {
+                "short": "EPA Region 6 Screening Level", 
+                "brief": "The EPA Region 6 Screening Level", 
+                "long": "According to Region 6 of the US EPA, no health effects are thought to occur below this level. "
+            }, 
+            "name": "r6sl"
+        }
+    ]
+}

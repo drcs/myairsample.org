@@ -1,0 +1,41 @@
+{
+    "units": "ppm", 
+    "name": "ATSDRMRLs", 
+    "columns": [
+        {
+            "use": false, 
+            "name": "pollutant"
+        }, 
+        {
+            "use": false, 
+            "name": "CAS"
+        }, 
+        {
+            "use": true, 
+            "description": {
+                "short": "ATSDR MRL - Acute", 
+                "brief": "The **Acute** ($<2$ week) ATSDR Minimal Risk Level", 
+                "long": "According to the American Toxic Substances and Disease Registry,   there is no appreciable risk of _non-cancer_ health effects from being exposed to concentrations up to this level over periods of **up to 2 weeks**. "
+            }, 
+            "name": "atsdrac"
+        }, 
+        {
+            "use": true, 
+            "description": {
+                "short": "ATSDR MRL - Intermediate", 
+                "brief": "The **Intermediate** (2 wks - 1 yr) ATSDR Minimal Risk", 
+                "long": "According to the American Toxic Substances and Disease Registry,   there is no appreciable risk of _non-cancer_ health effects from being exposed to concentrations up to this level over periods of ** between 2 weeks and one year**. "
+            }, 
+            "name": "atsdrint"
+        }, 
+        {
+            "use": true, 
+            "description": {
+                "short": "ATSDR MRL - Chronic", 
+                "brief": "The **Chronic** (> 1 yr) ATSDR Minimal Risk", 
+                "long": "According to the American Toxic Substances and Disease Registry,   there is no appreciable risk of non-cancer health effects from being exposed to concentrations up to this level over periods **longer than one year**. "
+            }, 
+            "name": "atsdrchr"
+        }
+    ]
+}

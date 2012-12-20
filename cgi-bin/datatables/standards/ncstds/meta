@@ -1,0 +1,41 @@
+{
+    "units": "mg/m3", 
+    "name": "ncstds", 
+    "columns": [
+        {
+            "use": false, 
+            "name": "pollutant"
+        }, 
+        {
+            "use": false, 
+            "name": "CAS"
+        }, 
+        {
+            "use": true, 
+            "description": {
+                "short": "NC Annual Std.", 
+                "brief": "The North Carolina Annual Standard", 
+                "long": "Concentrations above this level are illegal in North Carolina.  This level refers to the average level over a period of **one year**."
+            }, 
+            "name": "ncann"
+        }, 
+        {
+            "use": true, 
+            "description": {
+                "short": "NC 24-hr Std.", 
+                "brief": "The North Carolina 24-Hour Standard", 
+                "long": "Concentrations above this level are illegal in North Carolina.  This level refers to the average level over a **24-hour** period."
+            }, 
+            "name": "nc24"
+        }, 
+        {
+            "use": true, 
+            "description": {
+                "short": "NC 1-hr Std.", 
+                "brief": "The North Carolina 1-Hour Standard", 
+                "long": "Concentrations above this level are illegal in North Carolina.  This level refers to the average level over a **one hour** period."
+            }, 
+            "name": "nc1"
+        }
+    ]
+}

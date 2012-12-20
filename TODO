@@ -1,0 +1,5 @@
++ implement chemical descriptions from ATSDR ToxFAQ's
++ implement failed chemical name lookups
++ implement failed chemical unit conversions
++ add final-page standards description text
+
