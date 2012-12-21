@@ -20,19 +20,14 @@
 #
 #
 
-import cgi
-import cgitb
+import cgi, cgitb, re, csv, locale, sys
+from loc.standards import read_standards_directory
 cgitb.enable()
 
-import re
-import csv
-import locale
-
-import sys
 from os import remove,path,chdir,system,getcwd,environ
 from tempfile import NamedTemporaryFile
-
 from math import log10
+
 
 def fmt_sigfigs(x,n):
     digits = int(log10(x))
@@ -104,6 +99,14 @@ brief_selection_description = {
 # ---------------------------------------------------------------------
 # Read the standards tables
 # ---------------------------------------------------------------------
+
+reporting_criteria = []
+all_standards = read_standards_directory(['datatables','standards'])
+if form.getvalue('laonly')  == 'on': requested_sources.append(all_standards['lastds'])
+if form.getvalue('nconly')  == 'on': requested_sources.append(all_standards['ncstds'])
+if reporting_criteria == []:
+    for k in all_standards.keys():
+        reporting_criteria.append(all_standards[k])
 
 def standard_cleanup(s):
     try: return s.lower().strip()

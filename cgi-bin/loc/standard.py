@@ -1,16 +1,42 @@
 
-import csv
-import json
+import csv, json, os
+
+def canonical_name(s):
+    try: return s.lower().strip()
+    except AttributeError: return s
+
+def read_standards_directory(dir_path):
+    """
+    'dir_path' is a path to standards directories e.g. ['datatables','standards']
+
+    Each standards directory is expected to contain two files:
+    1) 'data'  -- tab-delimited standards
+    2) 'meta'  -- JSON description of the columns
+
+    Returns a dict of Standard objects keyed by standard directory name
+    """
+    result={}
+    for std in os.listdir(apply (os.path.join, dir_path)):
+        result[std]=Standard(apply (os.path.join, dir_path + [std]))
+    return result
 
 class Standard():
+    """A set of standards from one source.
+       
+       Standard.lookup(CAS)
+       Standard.prefetch([cas1, cas2])
+    """
     
     def __init__(self, dir):
-        metafile=open(dir + '/meta', 'r')
+        metafile=open(os.path.join(dir, 'meta'), 'r')
         # FIXME check return value
         self.meta=(json.load(metafile))
         # FIXME check return value
         metafile.close()
-        self.datafile=dir + '/data'
+        self.datafile=os.path.join(dir, 'data')
+        self._std_types = []
+        for c in self.meta['columns']:
+            if c['use']: self._std_types.append(c['name'])
         self._cache = {}
         self._csv_dialect = None
         self._fh_data     = None
@@ -28,9 +54,16 @@ class Standard():
         reader = self._f_csv_reader()
         for row in reader:
             if 'CAS' in row:
-                cas = row['CAS']
+                cas = canonical_name(row['CAS'])
                 if cas in l_cas:
-                    self._cache[cas] = row
+                    this_entry = {}
+                    for k in row:
+                        if k in self._std_types:
+                            try:
+                                this_entry[k] = float(canonical_name(row[k]))
+                            except ValueError:
+                                pass
+                    self._cache[cas] = this_entry
         return self
 
     def _pull_from_cache(self, cas):

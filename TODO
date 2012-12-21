@@ -1,3 +1,4 @@
++ standards.py: clean up whitespace in datatables
 + implement chemical descriptions from ATSDR ToxFAQ's
 + implement failed chemical name lookups
 + implement failed chemical unit conversions
