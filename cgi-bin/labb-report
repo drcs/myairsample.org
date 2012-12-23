@@ -21,7 +21,7 @@
 #
 
 import cgi, cgitb, re, csv, locale, sys
-from loc.standards import read_standards_directory
+from loc.standard import read_standards_directory
 cgitb.enable()
 
 from os import remove,path,chdir,system,getcwd,environ

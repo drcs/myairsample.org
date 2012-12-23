@@ -1,9 +1,6 @@
 
 import csv, json, os
-
-def canonical_name(s):
-    try: return s.lower().strip()
-    except AttributeError: return s
+from loc.util import canonical_name
 
 def read_standards_directory(dir_path):
     """
