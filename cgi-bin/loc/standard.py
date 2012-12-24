@@ -32,8 +32,11 @@ class Standard():
         metafile.close()
         self.datafile=os.path.join(dir, 'data')
         self._std_types = []
+        self.criteria={}
         for c in self.meta['columns']:
-            if c['use']: self._std_types.append(c['name'])
+            if c['use']:
+                self._std_types.append(c['name'])
+                self.criteria[c['name']]=c
         self._cache = {}
         self._csv_dialect = None
         self._fh_data     = None
