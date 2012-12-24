@@ -18,16 +18,17 @@ class LocReport():
         'chemicals': list of common names of chemicals to report on
         'criteria':  list of names of criterion sources
         """
-        # Remember requested units
+        # Remember requested units, sample info, and user
         self._units = units;
         self._units['in_rep']  = represent_units(units['in'])
         self._units['out_rep'] = represent_units(units['out'])
 
-        # Remember requested sample
         self._sample = {'name':      None,
                         'date':      None,
                         'location':  None}
         for k in sample.keys(): self._sample[k] = sample[k]
+
+        self._user=user
 
         # Remember requested standards; if none specified, use all available
         if standards is None:
@@ -100,3 +101,9 @@ class LocReport():
         
     def sample(self):
         return self._sample
+
+    def user(self, field='first'):
+        if field in self._user:
+            return self.user[field]
+        else:
+            return None
