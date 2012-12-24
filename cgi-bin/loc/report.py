@@ -32,8 +32,8 @@ class LocReport():
                 if name in all_standards:
                     self._standards[name]=all_standards[name]
 
-        self._failed_lookups={}
-        self._failed_conversions={}
+        self._failed_lookups=[]
+        self._failed_conversions=[]
         self._chemicals=[]
 
         # map input chemical names to chemical objects
@@ -46,11 +46,12 @@ class LocReport():
                 try:
                     level=float(chemical['level'])
                     level_in_outunits = convert_units(level,units['in'],units['out'],mw)
-                    entry={'name':  chemical['name'],
-                           'cas':   cas,
-                           'mw':    mw,
-                           'level': level_in_outunits,
-                           'level_rep': fmt_sigfigs(level_in_outunits)}
+                    entry={'name':        chemical['name'],
+                           'cas':         cas,
+                           'mw':          mw,
+                           'level':       level_in_outunits,
+                           'level_rep':   fmt_sigfigs(level_in_outunits),
+                           'comparisons': []}
                     self._chemicals.append(entry)
 
                 except TypeError:
@@ -62,8 +63,20 @@ class LocReport():
         cas_list = map(lambda c: c['cas'], self._chemicals)
         for (name,standard) in zip(self._standards.keys(),self._standards.values()):
             standard.prefetch(cas_list)
+            standard_units=standard.meta['units']
             for chemical in self._chemicals:
                 # Unfold requested standards into individual criteria
+                report_levels = standard.lookup(chemical['cas'])
+                for criterion_name in report_levels.keys():
+                    try:
+                        criterion_level = convert_units(report_levels[criterion_name],standard.meta['units'],units['out'],chemical['mw'])
+                        chemical['comparisons'].append({'level':         criterion_level,
+                                                        'level_rep':     fmt_sigfigs(criterion_level),
+                                                        'description':   describe_comparison(chemical['level'],criterion_level),
+                                                        'criterion':     standard.criteria[criterion_name],
+                                                        'source':        standard.meta['name']})
+                    except TypeError:
+                        self._failed_conversions.append(chemical['name'])
                 # FIXME
                 pass
 
