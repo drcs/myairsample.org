@@ -23,6 +23,12 @@ class LocReport():
         self._units['in_rep']  = represent_units(units['in'])
         self._units['out_rep'] = represent_units(units['out'])
 
+        # Remember requested sample
+        self._sample = {'name':      None,
+                        'date':      None,
+                        'location':  None}
+        for k in sample.keys(): self._sample[k] = sample[k]
+
         # Remember requested standards; if none specified, use all available
         if standards is None:
             self._standards=all_standards
@@ -59,7 +65,6 @@ class LocReport():
                 except ValueError:
                     self._failed_conversions.append(chemical['name'])
 
-        # prefetch standards
         cas_list = map(lambda c: c['cas'], self._chemicals)
         for (name,standard) in zip(self._standards.keys(),self._standards.values()):
             standard.prefetch(cas_list)
@@ -77,13 +82,21 @@ class LocReport():
                                                         'source':        standard.meta['name']})
                     except TypeError:
                         self._failed_conversions.append(chemical['name'])
-                # FIXME
-                pass
 
-                    
+    def failed_lookups(self):
+        return self._failed_lookups
 
-                
-        # flatten standards list
+    def failed_conversions(self):
+        return self._failed_conversions
 
+    def chemicals(self):
+        return self._chemicals
+
+    def standards(self):
+        return self._standards
+
+    def units(self):
+        return self._units
         
-
+    def sample(self):
+        return self._sample
