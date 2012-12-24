@@ -1,7 +1,10 @@
 
 from loc.report import LocReport
+from loc.markdown_ltx import MarkdownLtx
 from sys import stdout
 
+# Markdown converter for use globally
+md=MarkdownLtx()
 
 class LabbReport(LocReport):
 
@@ -134,8 +137,8 @@ The level in your bucket sample &                             & Comparison Level
                     fc = ''
                 print >>fh, ltx_tr([
                         fc + chemical['level_rep'] + outunits,
-                        fc + comparison['description'],  # FIXME markdown
-                        fc + comparison['criterion']['description']['brief'] + ' ' + comparison['level_rep'] + outunits
+                        fc + md.convert(comparison['description']),
+                        fc + md.convert(comparison['criterion']['description']['brief']) + ' ' + comparison['level_rep'] + outunits
                         ])
                 print >>fh, r'\hline '
 
