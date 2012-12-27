@@ -8,12 +8,22 @@ from tempfile import NamedTemporaryFile
 # Markdown converter for use globally
 md=MarkdownLtx()
 
+def should_cleanup():
+    try:
+        if os.environ['CLEANUP'] == 'no':
+            return False
+        else:
+            return True
+    except KeyError:
+        return True
+
 # cleanup
 def cleanup(fname):
-    try:
-        os.remove(fname)
-    except OSError:
-        pass
+    if should_cleanup():
+        try:
+            os.remove(fname)
+        except OSError:
+            pass
 
 class LabbReport(LocReport):
 
@@ -215,7 +225,7 @@ EPA procedures for calculating cancer risks.
             texinputs_env=""
         os.environ["TEXINPUTS"]=image_dir + ":" + texinputs_env
             
-        outfile=NamedTemporaryFile(delete=True,suffix=".tex")
+        outfile=NamedTemporaryFile(delete=should_cleanup(),suffix=".tex")
             
         self.generate(outfile)
         outfile.flush()

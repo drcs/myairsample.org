@@ -14,7 +14,7 @@
             "use": true, 
             "description": {
                 "short": "ATSDR MRL - Acute", 
-                "brief": "The **Acute** ($<2$ week) ATSDR Minimal Risk Level", 
+                "brief": "The **Acute** (< 2 week) ATSDR Minimal Risk Level", 
                 "long": "According to the American Toxic Substances and Disease Registry,   there is no appreciable risk of _non-cancer_ health effects from being exposed to concentrations up to this level over periods of **up to 2 weeks**. "
             }, 
             "name": "atsdrac"

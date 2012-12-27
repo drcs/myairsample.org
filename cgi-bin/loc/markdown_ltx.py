@@ -40,6 +40,8 @@ def _serialize_latex(write, elem):
         write(elem.text)
         for e in elem:
             _serialize_latex(write, e)
+    if elem.tail:
+        write(elem.tail)
 
 def _write_latex(root):
     assert root is not None
