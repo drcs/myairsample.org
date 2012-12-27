@@ -104,6 +104,6 @@ class LocReport():
 
     def user(self, field='first'):
         if field in self._user:
-            return self.user[field]
+            return self._user[field]
         else:
             return None
