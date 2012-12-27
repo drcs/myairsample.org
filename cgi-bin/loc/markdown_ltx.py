@@ -21,27 +21,39 @@ def _serialize_latex(write, elem):
         write("%% %s\n"%text)
     elif tag is None:
         if text:
-            write(text)
+            write(_ltx_escape(text))
         for e in elem:
             _serialize_latex(write,e)
     elif tag=="strong":
         write(r'{\bf')
-        write(text)
+        write(_ltx_escape(text))
         for e in elem:
             _serialize_latex(write, e)
         write("}")
     elif tag=="em":
         write(r'\emph{')
-        write(text)
+        write(_ltx_escape(text))
         for e in elem:
             _serialize_latex(write, e)
         write("}")
     else:
-        write(elem.text)
+        write(_ltx_escape(text))
         for e in elem:
             _serialize_latex(write, e)
     if elem.tail:
-        write(elem.tail)
+        write(_ltx_escape(elem.tail))
+
+def _ltx_escape(text):
+    try:
+        if "&" in text:
+            text = text.replace("&", "\&")
+        if "<" in text:
+            text = text.replace("<", "$<$")
+        if ">" in text:
+            text = text.replace(">", "$>$")
+        return text
+    except (TypeError, AttributeError):
+        _raise_serialization_error(text)
 
 def _write_latex(root):
     assert root is not None
