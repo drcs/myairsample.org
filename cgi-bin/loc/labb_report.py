@@ -149,15 +149,14 @@ The level in your bucket sample &                             & Comparison Level
                 # comparison.keys=='source','level_rep','level',
                 #                  'criterion','description'
                 # comparison['criterion']['description']['brief']
-                outunits = self.units()['out_rep']
                 if comparison['level'] > chemical['level']:
                     fc=r' \fc '
                 else:
                     fc = ''
                 print >>fh, ltx_tr([
-                        fc + chemical['level_rep'] + outunits,
+                        fc + chemical['level_rep'] + '\ \outunits',
                         fc + md.convert(comparison['description']),
-                        fc + md.convert(comparison['criterion']['description']['brief']) + ' ' + comparison['level_rep'] + outunits
+                        fc + md.convert(comparison['criterion']['description']['brief']) + ' ' + comparison['level_rep'] + '\ \outunits'
                         ])
                 print >>fh, r'\hline '
 
