@@ -149,7 +149,7 @@ The level in your bucket sample &                             & Comparison Level
                 # comparison.keys=='source','level_rep','level',
                 #                  'criterion','description'
                 # comparison['criterion']['description']['brief']
-                if comparison['level'] > chemical['level']:
+                if comparison['level'] < chemical['level']:
                     fc=r' \fc '
                 else:
                     fc = ''
