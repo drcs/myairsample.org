@@ -2,9 +2,18 @@
 from loc.report import LocReport
 from loc.markdown_ltx import MarkdownLtx
 from sys import stdout
+import os
+from tempfile import NamedTemporaryFile
 
 # Markdown converter for use globally
 md=MarkdownLtx()
+
+# cleanup
+def cleanup(fname):
+    try:
+        os.remove(fname)
+    except OSError:
+        pass
 
 class LabbReport(LocReport):
 
@@ -197,3 +206,27 @@ EPA procedures for calculating cancer risks.
 
 \end{document}
 """
+
+    def generate_pdf(self):
+        image_dir = os.path.join(os.getcwd(), 'media')
+        try:
+            texinputs_env=os.environ['TEXINPUTS']
+        except KeyError:
+            texinputs_env=""
+        os.environ["TEXINPUTS"]=image_dir + ":" + texinputs_env
+            
+        outfile=NamedTemporaryFile(delete=True,suffix=".tex")
+            
+        self.generate(outfile)
+        outfile.flush()
+        doc_dir=os.path.dirname(outfile.name)
+        os.chdir(doc_dir)
+        result=os.system("pdflatex " + outfile.name + ">& /dev/null")
+        doc_basename=os.path.splitext(outfile.name)[0]
+
+        os.system("cat " + doc_basename + ".pdf")
+        stdout.flush()
+            
+        cleanup(doc_basename + '.log')
+        cleanup(doc_basename + '.aux')
+        cleanup(doc_basename + '.pdf')

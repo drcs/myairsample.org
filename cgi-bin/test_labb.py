@@ -8,4 +8,4 @@ report1 = LabbReport(chemicals=[{'name':  'benzene',           'level': '0.1442'
                                 {'name':  'trichloroethylene', 'level': '1143.3252'}
                                 ])
 
-report1.generate()
+report1.generate_pdf()
