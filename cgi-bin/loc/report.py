@@ -58,6 +58,7 @@ class LocReport():
                            'mw':          mw,
                            'level':       level_in_outunits,
                            'level_rep':   fmt_sigfigs(level_in_outunits),
+                           'level_inunits_rep': fmt_sigfigs(level),
                            'comparisons': []}
                     self._chemicals.append(entry)
 
@@ -101,6 +102,9 @@ class LocReport():
         
     def sample(self):
         return self._sample
+
+    def users(self):
+        return self._user
 
     def user(self, field='first'):
         if field in self._user:

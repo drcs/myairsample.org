@@ -1,4 +1,5 @@
 + standards.py: clean up whitespace in datatables
++ implement HTML style report
 + implement chemical descriptions from ATSDR ToxFAQ's
 + add final-page standards description text
 
