@@ -44,13 +44,14 @@ class LabbReport(LocReport):
         print >>fh,r"""
 \documentclass{article}
 
-\usepackage{fancyhdr, graphicx}
+\usepackage{fancyhdr, graphicx, pslatex}
 \usepackage[table]{xcolor}
 
 \newcommand{\stdfooter}{%
   \fancyhf{}
   \fancyhfoffset{0.5in}
   \fancyfoot[C]{\includegraphics[width=\textwidth]{footer}}
+  \fancyhead[R]{\includegraphics[width=2in]{logo}}
 }
 
 \fancypagestyle{plain}{\stdfooter}
@@ -125,7 +126,6 @@ reported by weight and volume. For example, a monitor might read 5 \micro g /m\c
 benzene, or 5 \micro g of benzene in 1 m\cubed of air.
 
 \newpage
-\includegraphics[width=\textwidth]{logo}
 \section*{Sample Analysis}
 
 \highlightbox{The information below is provided to guide discussion on how
@@ -180,7 +180,6 @@ Unit conversions failed.  (Try ppb or ug/m3?)
         # FIXME this is where you'd put in standards descriptions
         print >>fh, r"""
 \newpage
-\includegraphics[width=\textwidth]{logo}
 \section*{Sample screening levels}
 
 \highlightbox{Some government agencies have developed standards and screening levels for
