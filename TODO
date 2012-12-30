@@ -1,4 +1,6 @@
 + standards.py: clean up whitespace in datatables
++ report.py: implement "fill from CGI" to replace redundant
+  content in loclookup, labb-report
 + implement chemical descriptions from ATSDR ToxFAQ's
 + use markdown for unit representations
 

@@ -24,8 +24,14 @@ def _serialize_latex(write, elem):
             write(_ltx_escape(text))
         for e in elem:
             _serialize_latex(write,e)
+    elif tag=="p":
+        write("\n")
+        write(_ltx_escape(text))
+        for e in elem:
+            _serialize_latex(write, e)
+        write("\n")
     elif tag=="strong":
-        write(r'{\bf')
+        write(r'{\bf ')
         write(_ltx_escape(text))
         for e in elem:
             _serialize_latex(write, e)
@@ -59,7 +65,7 @@ def _write_latex(root):
     assert root is not None
     data = []
     _serialize_latex(data.append, root)
-    return " ".join(data)
+    return "".join(data)
 
 
 
