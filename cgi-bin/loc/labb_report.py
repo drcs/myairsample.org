@@ -139,7 +139,7 @@ website available at http://www.atsdr.cdc.gov/substances/index.asp.}
             #                    'mw','cas','comparisons'
             print >>fh,r'\subsection*{' + chemical['name'] + r"""}
 
-\emph{Chemical description would go here when implemented}
+% Chemical description would go here when implemented
 
 \begin{tabular}{|c|c|p{3in}|}
 \hline
