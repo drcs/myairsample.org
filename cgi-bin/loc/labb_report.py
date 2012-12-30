@@ -5,6 +5,7 @@ from sys import stdout
 import os
 from tempfile import NamedTemporaryFile
 
+
 # Markdown converter for use globally
 md=MarkdownLtx()
 
@@ -238,3 +239,8 @@ EPA procedures for calculating cancer risks.
         cleanup(doc_basename + '.log')
         cleanup(doc_basename + '.aux')
         cleanup(doc_basename + '.pdf')
+
+
+    def _unit_representations(self):
+        return {'ug/m3' :   '{\micro g/m\cubed}'}
+

@@ -1,6 +1,6 @@
 from loc.synonyms import name2cas,cas2mw
 from loc.standard import read_standards_directory
-from loc.util     import describe_comparison,convert_units,fmt_sigfigs,represent_units
+from loc.util     import describe_comparison,convert_units,fmt_sigfigs
 
 all_standards=read_standards_directory(['datatables','standards'])
 
@@ -20,8 +20,8 @@ class LocReport():
         """
         # Remember requested units, sample info, and user
         self._units = units;
-        self._units['in_rep']  = represent_units(units['in'])
-        self._units['out_rep'] = represent_units(units['out'])
+        self._units['in_rep']  = self._represent_units(units['in'])
+        self._units['out_rep'] = self._represent_units(units['out'])
 
         self._sample = {'name':      None,
                         'date':      None,
@@ -84,6 +84,20 @@ class LocReport():
                                                         'source':        standard.meta['name']})
                     except TypeError:
                         self._failed_conversions.append(chemical['name'])
+
+    def _represent_units(self, name):
+        """Given a key 'name', return a markdown representation of how that
+        unit should be represented in the output
+        """
+        unit_representations = self._unit_representations()
+
+        if name in unit_representations:
+            return (unit_representations[name])
+        else:
+            return (name)
+
+    def _unit_representations(self):
+        return {}
 
     def failed_lookups(self):
         return self._failed_lookups

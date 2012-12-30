@@ -40,10 +40,10 @@
 	  <h3 class="chemical_name">${chemical.name}</h3>
 	  <p>
 	    Your reported value of
-	    <span class="reported_value">${chemical.level_rep} ${units.in_rep}</span>
+	    <span class="reported_value">${chemical.level_rep} $units_in_rep</span>
 	    <span py:if="units['out'] != units['in']">
 	      or
-	      <span class="reported_value">${chemical.level_inunits_rep} ${md(units.out_rep)}</span>
+	      <span class="reported_value">${chemical.level_inunits_rep} $units_out_rep</span>
 	    </span>
 	    is <span class="reported_value">ABOVE</span> the following Levels of Concern:
 	  </p>
@@ -57,7 +57,7 @@
 		</p>
               </td>
 	      <td>
-		${comparison.level_rep} ${md(units.out_rep)}
+		${comparison.level_rep} $units_out_rep
 	      </td>
 	    </tr>
 	  </table>

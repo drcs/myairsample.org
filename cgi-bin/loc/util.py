@@ -26,17 +26,6 @@ def convert_units(level, from_units, to_units, mw=None):
         factor['ppbv'] = 24040.0 / mw
     return level / factor[from_units] * factor[to_units]
 
-def represent_units(name):
-    """Given a key 'name', return a markdown representation of how that
-       unit should be represented in the output
-    """
-    # FIXME how to represent ug/m3 in markdown??
-    unit_representations = {'ug/m3' :   '{\micro g/m\cubed}'}
-    if name in unit_representations:
-        return (unit_representations[name])
-    else:
-        return (name)
-
 def fmt_sigfigs(x,n=3):
     digits = int(log10(x))
     fmt = '%d'
