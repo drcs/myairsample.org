@@ -178,7 +178,7 @@ Health effects are not available
 Unit conversions failed.  (Try ppb or ug/m3?)
 """
 
-        # FIXME this is where you'd put in standards descriptions
+        # Standards descriptions
         print >>fh, r"""
 \newpage
 \section*{Sample screening levels}
@@ -190,26 +190,14 @@ listed below, with a brief description of the methods used in establishing their
 levels. States may not be required to adhere to national standards.}
 
 \begin{itemize}
-\item EPA Region 6 Screening Levels\newline
-http://www.epa.gov/earth1r6/6pd/rcra\_c/pd-n/screen.htm\newline
-These levels are based on existing studies of chemical health effects.
-They levels are calculated for residential (as opposed to workplace)
-exposures. They reflect the risks of exposure to a certain level of the
-chemical. The levels listed as screening levels correspond to pre-
-determined levels of risk from exposure: either 1 in a million cancer risk
-or a ``hazard quotient'' of 1 for non-cancer effects, whichever
-corresponds to a lower concentration. These screening levels are not
-legally enforceable.
+"""
+        for standard in self.standards():
+            description = self.standards()[standard].description()
+            if description is not None:
+                print >>fh, '\item ' + md.convert(description)
 
-\item Louisiana Ambient Air Quality Standards\newline
-http://www.deq.louisiana.gov/portal/tabid/1674/Default.aspx\newline
-These levels are legally enforceable standards in Louisiana, developed
-through Louisiana's regulatory process. They are found in Table 51.2 of
-Title 33, Part III.
-They are based on health effects information about the chemicals: the
-eight-hour standard modifies occupational exposure levels to be
-appropriate for residential exposures; the annual standard is based on
-EPA procedures for calculating cancer risks.
+
+        print >>fh,"""
 \end{itemize}
 
 

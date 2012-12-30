@@ -41,6 +41,12 @@ class Standard():
         self._csv_dialect = None
         self._fh_data     = None
         self._csv_reader  = None
+        try:
+            fh=open(os.path.join(dir, 'description'), 'r')
+            self._description = fh.read()
+            fh.close()
+        except IOError:
+            self._description = None
 
     def lookup(self, cas):
         if not cas in self._cache:
@@ -49,6 +55,9 @@ class Standard():
             return self._cache[cas]
         else:
             return None
+
+    def description(self):
+        return self._description
 
     def prefetch(self, l_cas):
         reader = self._f_csv_reader()
