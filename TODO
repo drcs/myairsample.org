@@ -2,5 +2,6 @@
 + report.py: implement "fill from CGI" to replace redundant
   content in loclookup, labb-report
 + implement chemical descriptions from ATSDR ToxFAQ's
++ implement links in PDF documents (and markdown_ltx)
 + use markdown for unit representations
 

@@ -24,9 +24,11 @@ def _serialize_latex(write, elem):
             write(_ltx_escape(text))
         for e in elem:
             _serialize_latex(write,e)
+    elif tag=="a":
+        write(text)
     elif tag=="p":
         write("\n")
-        write(_ltx_escape(text))
+        if text: write(_ltx_escape(text))
         for e in elem:
             _serialize_latex(write, e)
         write("\n")
