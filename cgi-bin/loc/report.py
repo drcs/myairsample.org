@@ -1,6 +1,7 @@
 from loc.synonyms import name2cas,cas2mw
 from loc.standard import read_standards_directory
 from loc.util     import describe_comparison,convert_units,fmt_sigfigs
+from sys          import stdout
 
 all_standards=read_standards_directory(['datatables','standards'])
 
@@ -125,3 +126,11 @@ class LocReport():
             return self._user[field]
         else:
             return None
+
+    def http_reply(self):
+        for hdr in self.http_headers():
+            print hdr
+        print
+        stdout.flush()
+
+        self.generate()

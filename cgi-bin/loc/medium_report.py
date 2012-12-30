@@ -32,6 +32,9 @@ class MediumReport(LocReport):
         print >>fh,document.render('html', doctype='html')
         fh.flush()
 
+    def http_headers(self):
+        return ["Content-type: text/html"]
+
     def _unit_representations(self):
         return {'ug/m3' :   '&micro;g/m<sup>3</sup>'}
 

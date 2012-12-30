@@ -21,7 +21,6 @@
 #
 
 import cgi, cgitb, re, locale
-from sys import stdout
 from loc.labb_report import LabbReport
 
 cgitb.enable()
@@ -56,15 +55,9 @@ report = LabbReport(chemicals=chemicals,
                     user=user)
 
 # ---------------------------------------------------------------------
-# Read the standards tables
+# Generate the response
 # ---------------------------------------------------------------------
 
-# HTTP headers
-print "Content-type: application/pdf"
-print "Content-disposition: attachment; filename=LABB-%s.pdf" % username
-print
-stdout.flush()
-
-report.generate_pdf()
+report.http_reply()
 
 

@@ -28,7 +28,7 @@ def cleanup(fname):
 
 class LabbReport(LocReport):
 
-    def generate(self, fh=stdout):
+    def generate_tex(self, fh=stdout):
 
         def ltx_tr(xs):
             return str.join(' & ',map(str,xs)) + r'\\'
@@ -204,7 +204,7 @@ levels. States may not be required to adhere to national standards.}
 \end{document}
 """
 
-    def generate_pdf(self):
+    def generate(self):
         image_dir = os.path.join(os.getcwd(), 'media')
         try:
             texinputs_env=os.environ['TEXINPUTS']
@@ -214,7 +214,7 @@ levels. States may not be required to adhere to national standards.}
             
         outfile=NamedTemporaryFile(delete=should_cleanup(),suffix=".tex")
             
-        self.generate(outfile)
+        self.generate_tex(outfile)
         outfile.flush()
         doc_dir=os.path.dirname(outfile.name)
         os.chdir(doc_dir)
@@ -228,6 +228,10 @@ levels. States may not be required to adhere to national standards.}
         cleanup(doc_basename + '.aux')
         cleanup(doc_basename + '.pdf')
 
+    def http_headers(self):
+        username = self.user('first') + '_' + self.user('second')
+        return ["Content-type: application/pdf",
+                "Content-disposition: attachment; filename=LABB-%s.pdf" % username]
 
     def _unit_representations(self):
         return {'ug/m3' :   '{\micro g/m\cubed}'}

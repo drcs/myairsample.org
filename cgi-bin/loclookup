@@ -28,7 +28,6 @@ cgitb.enable()
 import re
 import csv
 import locale
-from sys import stdout
 
 from loc.medium_report import MediumReport
 
@@ -62,9 +61,4 @@ report = MediumReport(chemicals = chemicals,
                       units     = units,
                       user      = user)
 
-# HTTP headers
-print "Content-type: text/html; charset=utf-8"
-print
-stdout.flush()
-
-report.generate()
+report.http_reply()
