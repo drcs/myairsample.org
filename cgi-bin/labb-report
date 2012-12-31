@@ -22,7 +22,7 @@
 
 from loc.labb_report import LabbReport
 
-LabbReport(read_cgi=True).http_reply()
+LabbReport(read_cgi=True, standards=['lastds','r6sls']).http_reply()
 
 
 
