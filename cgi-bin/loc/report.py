@@ -2,6 +2,9 @@ from loc.synonyms import name2cas,cas2mw
 from loc.standard import read_standards_directory
 from loc.util     import describe_comparison,convert_units,fmt_sigfigs
 from sys          import stdout
+from locale       import getlocale,setlocale,LC_ALL
+
+import cgitb, cgi, re
 
 all_standards=read_standards_directory(['datatables','standards'])
 
@@ -10,15 +13,29 @@ class LocReport():
     """
 
     def __init__(self,
-                 chemicals=[],
-                 standards=None,
-                 units={'in':'ppb','out':'ppb'},
-                 user={},     # can contain: first, second
-                 sample={}):  # can contain: location, date, name
+                 read_cgi   = False,  # Draw other parameters from CGI input?
+                 chemicals  = None,
+                 standards  = None,
+                 units      = None,
+                 user       = None,     # can contain: first, second
+                 sample     = None):    # can contain: location, date, name
         """
         'chemicals': list of common names of chemicals to report on
         'criteria':  list of names of criterion sources
         """
+        if read_cgi:
+            cgi_pars  = self._pull_from_cgi()
+            
+            chemicals = cgi_pars['chemicals']
+            user      = cgi_pars['user']
+            units     = cgi_pars['units']
+
+        # Default parameters
+        if chemicals is None: chemicals = []
+        if sample    is None: sample    = {}
+        if user      is None: user      = {}
+        if units     is None: units     = {'in':'ppb', 'out':'ppb'}
+
         # Remember requested units, sample info, and user
         self._units = units;
         self._units['in_rep']  = self._represent_units(units['in'])
@@ -85,6 +102,34 @@ class LocReport():
                                                         'source':        standard.meta['name']})
                     except TypeError:
                         self._failed_conversions.append(chemical['name'])
+
+    def _pull_from_cgi(self):
+        """PUll the report parameters from expected locations in an HTML form.
+        """
+        result = {}
+
+        cgitb.enable()
+        if (getlocale() == (None, None)):
+            setlocale(LC_ALL, 'en_US.UTF8')
+
+        form = cgi.FieldStorage()
+        # look for all 'chem*' parameters that have a corresponding 'report*' parameter
+        chem_pattern = re.compile('^chem(\d+)$')
+        
+        def chem_lookup(chem_par):
+            n = chem_pattern.findall(chem_par)[0]
+            report_par = 'report' + n
+            return { 'name'  : form[chem_par].value.lower(),
+                     'level' : form[report_par].value if report_par in form else 'NA' }
+
+        result['chemicals'] = map (chem_lookup, filter (chem_pattern.match, form.keys()))
+        result['units']     = {'in'  : form.getvalue('inunits'),
+                               'out' : form.getvalue('outunits')}
+
+        result['user']      = {'first':  form.getvalue('tablename'),
+                               'second': form.getvalue('tablename2')}
+
+        return result
 
     def _represent_units(self, name):
         """Given a key 'name', return a markdown representation of how that

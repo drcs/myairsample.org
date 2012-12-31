@@ -21,44 +21,8 @@
 #
 #
 
-import cgi
-import cgitb
-cgitb.enable()
-
-import re
-import csv
-import locale
-
 from loc.medium_report import MediumReport
 
-# --------------------------------------------------------------------
-# Read the form data
-# --------------------------------------------------------------------
-if (locale.getlocale() == (None, None)):
-    locale.setlocale(locale.LC_ALL, 'en_US.UTF8')
+MediumReport(read_cgi=True).http_reply()
 
-form = cgi.FieldStorage()
 
-# look for all 'chem*' parameters that have a corresponding 'report*' parameter
-chem_pattern = re.compile('^chem(\d+)$')
-def chem_lookup(chem_par):
-    n = chem_pattern.findall(chem_par)[0]
-    report_par = 'report' + n
-    return { 'name'  : form[chem_par].value.lower(),
-             'level' : form[report_par].value if report_par in form else 'NA' }
-
-chemicals = map (chem_lookup, filter (chem_pattern.match, form.keys()))
-units = {'in'  : form.getvalue('inunits'),
-         'out' : form.getvalue('outunits')}
-
-user = {'first':  form.getvalue('tablename'),
-        'second': form.getvalue('tablename2')}
-
-# -------------------------------------------------------------------------------
-# Load the report template and generate the output
-# -------------------------------------------------------------------------------
-report = MediumReport(chemicals = chemicals,
-                      units     = units,
-                      user      = user)
-
-report.http_reply()
