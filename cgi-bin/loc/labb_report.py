@@ -79,14 +79,14 @@ class LabbReport(LocReport):
 
         user="N/A"
         if self.user('first'):  user = self.user('first')
-        if self.user('second'): user = user + '\\ ' + self.user('second')
+        if self.user('second'): user = user + r'\\ ' + self.user('second')
         ltx_def('user', user)
 
         print >>fh,r"""
 \begin{document}
 
 \title{Levels of Concern Report}
-\author{\user}
+\author{For \user}
 \date{}
 \maketitle
 

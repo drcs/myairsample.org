@@ -29,6 +29,7 @@ class LocReport():
             chemicals = cgi_pars['chemicals']
             user      = cgi_pars['user']
             units     = cgi_pars['units']
+            sample    = cgi_pars['sample']
 
         # Default parameters
         if chemicals is None: chemicals = []
@@ -128,6 +129,11 @@ class LocReport():
 
         result['user']      = {'first':  form.getvalue('tablename'),
                                'second': form.getvalue('tablename2')}
+
+        result['sample']    = {'name':   form.getvalue('samplename'),
+                               'date':   form.getvalue('sampledate'),
+                               'location': form.getvalue('samplelocation')
+                              }
 
         return result
 
