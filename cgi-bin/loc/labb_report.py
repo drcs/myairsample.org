@@ -52,7 +52,7 @@ class LabbReport(LocReport):
   \fancyhf{}
   \fancyhfoffset{0.5in}
   \fancyfoot[C]{\includegraphics[width=\textwidth]{footer}}
-  \fancyhead[R]{\includegraphics[width=2in]{logo}}
+%  \fancyhead[R]{\includegraphics[width=2in]{logo}}
 }
 
 \fancypagestyle{plain}{\stdfooter}
