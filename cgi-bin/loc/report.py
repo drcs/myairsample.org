@@ -39,8 +39,10 @@ class LocReport():
 
         # Remember requested units, sample info, and user
         self._units = units;
-        self._units['in_rep']  = self._represent_units(units['in'])
-        self._units['out_rep'] = self._represent_units(units['out'])
+        self._units['in_rep']   = self._represent_units(units['in'])
+        self._units['out_rep']  = self._represent_units(units['out'])
+        self._units['in_long']  = self._describe_units(units['in'])
+        self._units['out_long'] = self._describe_units(units['out'])
 
         self._sample = {'name':      None,
                         'date':      None,
@@ -148,7 +150,19 @@ class LocReport():
         else:
             return (name)
 
+    def _describe_units(self, name):
+        """Given a key 'name', return a markdown description of those units
+        """
+        unit_descriptions = self._unit_descriptions()
+        if name in unit_descriptions:
+            return (unit_descriptions[name])
+        else:
+            return (name)
+
     def _unit_representations(self):
+        return {}
+    
+    def _unit_descriptions(self):
         return {}
 
     def failed_lookups(self):
@@ -163,8 +177,8 @@ class LocReport():
     def standards(self):
         return self._standards
 
-    def units(self):
-        return self._units
+    def units(self, key):
+        return self._units[key]
         
     def sample(self):
         return self._sample

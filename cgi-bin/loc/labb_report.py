@@ -70,8 +70,10 @@ class LabbReport(LocReport):
 \newcommand{\highlightbox}[1]{\colorbox{salmon}{\parbox{\linewidth}{#1}}}
 """
 
-        ltx_def('inunits', self.units()['in_rep'])
-        ltx_def('outunits', self.units()['out_rep'])
+        ltx_def('inunits',  self.units('in_rep'))
+        ltx_def('outunits', self.units('out_rep'))
+        ltx_def('longinunits',  self.units('in_long'))
+        ltx_def('longoutunits', self.units('out_long'))
 
         ltx_def_if('samplename',     self.sample()['name'])
         ltx_def_if('sampledate',     self.sample()['date'])
@@ -96,8 +98,8 @@ class LabbReport(LocReport):
 \ifx\sampledate\undefined\relax\else\item Date sample was taken:     \sampledate\fi
 \ifx\samplelocation\undefined\relax\else\item Location sample was taken: \samplelocation\fi
 \item Report date:               \today
-\item Report input units:        \inunits$^*$
-\item Report output units:       \outunits$^*$
+\item Report input units:        \longinunits\ (\inunits)$^*$
+\item Report output units:       \longoutunits\ (\outunits)$^*$
 \item Report web location:       http://myairsample.org
 \end{itemize}
 
@@ -235,4 +237,10 @@ levels. States may not be required to adhere to national standards.}
 
     def _unit_representations(self):
         return {'ug/m3' :   '{\micro g/m\cubed}'}
+
+    def _unit_descriptions(self):
+        return {'ug/m3' : 'micrograms per cubic meter',
+                'ppbv'  : 'parts per billion by volume',
+                'ppb'   : 'parts per billion'}
+    
 

@@ -24,9 +24,10 @@ class MediumReport(LocReport):
                                  user              = self.users(),
                                  failures          = {'name_lookups':     self.failed_lookups(),
                                                       'unit_conversions': self.failed_conversions()},
-                                 units             = self.units(),
-                                 units_out_rep     = HTML(self.units()['out_rep']),
-                                 units_in_rep      = HTML(self.units()['in_rep']),
+                                 units_in          = self.units('in'),
+                                 units_out         = self.units('out'),
+                                 units_out_rep     = HTML(self.units('out_rep')),
+                                 units_in_rep      = HTML(self.units('in_rep')),
                                  md                = md)
 
         print >>fh,document.render('html', doctype='html')
