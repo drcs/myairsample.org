@@ -59,7 +59,8 @@ class LabbReport(LocReport):
 \pagestyle{fancy}
 \stdfooter
 
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{0pt}%
+\setlength{\parskip}{\baselineskip}%
 \setlength{\oddsidemargin}{0in}
 \setlength{\textwidth}{6.5in}
 
@@ -103,7 +104,10 @@ class LabbReport(LocReport):
 \item Report made on web at:     http://myairsample.org
 \end{itemize}
 
-\section*{Unit information$^*$}
+$^*$For a description of what units mean, see ``Unit Information'' section later in this report
+
+\newcommand{\unitssection}{
+\section*{Unit information}
 Parts per billion (ppb) describes how many weighed parts of a chemical there
 are for 1 billion parts of air. For example, a recipe says to add a just a drop of
 vanilla for every 100 pounds of flour. The drop of vanilla weighs hardly
@@ -127,6 +131,7 @@ into the box. The concentration of sand inside the box is 3 \micro g divided by 
 volume of the box 1 m3, or 3 \micro g /m3. Like grains of sand, chemicals can also be
 reported by weight and volume. For example, a monitor might read 5 \micro g /m\cubed
 benzene, or 5 \micro g of benzene in 1 m\cubed of air.
+}
 
 \newpage
 \section*{Sample Analysis}
@@ -182,6 +187,7 @@ Unit conversions failed.  (Try ppb or ug/m3?)
 
         # Standards descriptions
         print >>fh, r"""
+\unitssection
 \newpage
 \section*{Sample screening levels}
 
