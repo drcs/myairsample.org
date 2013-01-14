@@ -52,15 +52,23 @@ class LabbReport(LocReport):
   \fancyhf{}
   \fancyhfoffset{0.5in}
   \fancyfoot[L]{
-This report was generated at www.myairsample.org, a site developed and
-maintained by the Louisiana Bucket Brigade and Digitial Resources for
-Community and Science.  For questions and comments about air data,
-Louisiana Bucket Brigade can contacted at www.labucketbrigade.org,
-4226 Canal St, New Orleans, LA 70119, phone: 504-484-3433, fax:
-504-324-0332.  For comments, feedback, or errors in the web site,
-please contact the LA Bucket Brigade or email Digital Resources for
-Community and Science at drcsdirector@gmail.com
-}
+     \parbox{1.1in}{
+       \includegraphics[width=1in]{labb_logo-200}\\
+       \includegraphics[width=1in]{drcs_logo-200}
+     }
+     \setlength\acklength{\textwidth}
+     \addtolength\acklength{-1.1in}
+     \parbox{\acklength}{
+       This report was generated at www.myairsample.org, a site developed and
+       maintained by the Louisiana Bucket Brigade and Digitial Resources for
+       Community and Science.  For questions and comments about air data,
+       Louisiana Bucket Brigade can contacted at www.labucketbrigade.org,
+       4226 Canal St, New Orleans, LA 70119, phone: 504-484-3433, fax:
+       504-324-0332.  For comments, feedback, or errors in the web site,
+       please contact the LA Bucket Brigade or email Digital Resources for
+       Community and Science at drcsdirector@gmail.com
+     }
+  }
 }
 
 \fancypagestyle{plain}{\stdfooter}
@@ -72,6 +80,7 @@ Community and Science at drcsdirector@gmail.com
 \setlength{\parskip}{\baselineskip}%
 \setlength{\oddsidemargin}{0in}
 \setlength{\textwidth}{6.5in}
+\newlength\acklength
 
 \newcommand{\cubed}{$^3$}
 \newcommand{\micro}{$\mu$}
@@ -197,7 +206,7 @@ Unit conversions failed.  (Try ppb or ug/m3?)
         # Standards descriptions
         print >>fh, r"""
 \unitssection
-\newpage
+
 \section*{Sample screening levels}
 
 \highlightbox{Some government agencies have developed standards and screening levels for
