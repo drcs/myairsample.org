@@ -50,14 +50,17 @@ class LabbReport(LocReport):
 
 \newcommand{\stdfooter}{%
   \fancyhf{}
-  \fancyhfoffset{0.5in}
+  \fancyhfoffset{0.2in}
   \fancyfoot[L]{
-     \parbox{1.1in}{
-       \includegraphics[width=1in]{labb_logo-200}\\
-       \includegraphics[width=1in]{drcs_logo-200}
+     \parbox{\logowidth}{
+       \includegraphics[width=\logowidth]{labb_logo}\\
+       \vskip 0.1in
+       \includegraphics[width=\logowidth]{drcs_logo-200}
      }
      \setlength\acklength{\textwidth}
-     \addtolength\acklength{-1.1in}
+     \addtolength\acklength{-\logowidth}
+     \addtolength\acklength{-0.5in}
+     \hskip 0.5in
      \parbox{\acklength}{
        This report was generated at www.myairsample.org, a site developed and
        maintained by the Louisiana Bucket Brigade and Digitial Resources for
@@ -81,6 +84,9 @@ class LabbReport(LocReport):
 \setlength{\oddsidemargin}{0in}
 \setlength{\textwidth}{6.5in}
 \newlength\acklength
+\newlength\logowidth
+\setlength\logowidth{1.8in}
+\addtolength\voffset{-0.5in}
 
 \newcommand{\cubed}{$^3$}
 \newcommand{\micro}{$\mu$}
