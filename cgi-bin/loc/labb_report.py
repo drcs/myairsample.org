@@ -199,8 +199,20 @@ The level in your bucket sample &                             & Comparison Level
 
         for name in self.failed_lookups():
             print >>fh, r'\subsection*{' + name + r"""}
+\begin{tabular}{|c|c|p{3in}|}
+\hline
+The level in your bucket sample &                             & Comparison Level                                       \\
+\hline
+"""
 
-Health effects are not available
+            print >>fh, ltx_tr([
+                    chemical['level_rep'] + '\ \outunits',
+                    "",
+                    r'Either a comparison level is not available for ' + name + ' or the spelling of the chemical name is incorrect.'
+            ])
+            print >>fh, r"""
+\hline
+\end{tabular}
 """
 
         for name in self.failed_conversions():
