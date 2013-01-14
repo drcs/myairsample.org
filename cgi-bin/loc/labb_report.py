@@ -100,7 +100,7 @@ class LabbReport(LocReport):
 \item Report date:               \today
 \item Report input units:        \longinunits\ (\inunits)$^*$
 \item Report output units:       \longoutunits\ (\outunits)$^*$
-\item Report web location:       http://myairsample.org
+\item Report made on web at:     http://myairsample.org
 \end{itemize}
 
 \section*{Unit information$^*$}
