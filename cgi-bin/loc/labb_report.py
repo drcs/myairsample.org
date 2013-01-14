@@ -51,12 +51,21 @@ class LabbReport(LocReport):
 \newcommand{\stdfooter}{%
   \fancyhf{}
   \fancyhfoffset{0.5in}
-  \fancyfoot[C]{\includegraphics[width=\textwidth]{footer}}
-%  \fancyhead[R]{\includegraphics[width=2in]{logo}}
+  \fancyfoot[L]{
+This report was generated at www.myairsample.org, a site developed and
+maintained by the Louisiana Bucket Brigade and Digitial Resources for
+Community and Science.  For questions and comments about air data,
+Louisiana Bucket Brigade can contacted at www.labucketbrigade.org,
+4226 Canal St, New Orleans, LA 70119, phone: 504-484-3433, fax:
+504-324-0332.  For comments, feedback, or errors in the web site,
+please contact the LA Bucket Brigade or email Digital Resources for
+Community and Science at drcsdirector@gmail.com
+}
 }
 
 \fancypagestyle{plain}{\stdfooter}
-\pagestyle{fancy}
+\pagestyle{empty}
+% \pagestyle{fancy}
 \stdfooter
 
 \setlength{\parindent}{0pt}%
