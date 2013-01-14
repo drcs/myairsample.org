@@ -48,6 +48,10 @@ class LabbReport(LocReport):
 \usepackage{fancyhdr, graphicx, pslatex}
 \usepackage[table]{xcolor}
 
+\raggedbottom
+\widowpenalty=1000
+\clubpenalty=1000
+
 \newcommand{\stdfooter}{%
   \fancyhf{}
   \fancyhfoffset{0.2in}
