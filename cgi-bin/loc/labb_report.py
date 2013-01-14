@@ -154,10 +154,10 @@ benzene, or 5 \micro g of benzene in 1 m\cubed of air.
 \newpage
 \section*{Sample Analysis}
 
-\highlightbox{The information below is provided to guide discussion on how
-exposure to chemicals can affect you, your family, and your
-community. This information is paraphrased from the ATSDR ``ToxFAQs''
-website available at http://www.atsdr.cdc.gov/substances/index.asp.}
+% \highlightbox{The information below is provided to guide discussion on how
+% exposure to chemicals can affect you, your family, and your
+% community. This information is paraphrased from the ATSDR ``ToxFAQs''
+% website available at http://www.atsdr.cdc.gov/substances/index.asp.}
 """
         for chemical in self.chemicals():
             # chemical.keys() == 'name','level','level_rep',
