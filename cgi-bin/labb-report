@@ -20,10 +20,14 @@
 #
 #
 
+import cgitb, cgi, re
+
+cgitb.enable()
+
 from loc.labb_brief   import LabbBrief
 from loc.labb_summary import LabbSummary
 
-LabbSummary(read_cgi=True, standards=['lastds','r6sls']).http_reply()
+LabbSummary(standards=['lastds','r6sls'], form=cgi.FieldStorage()).http_reply()
 
 
 

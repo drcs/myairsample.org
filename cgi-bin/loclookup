@@ -21,8 +21,12 @@
 #
 #
 
+import cgitb, cgi, re
+
+cgitb.enable()
+
 from loc.medium_report import MediumReport
 
-MediumReport(read_cgi=True).http_reply()
+MediumReport(form=cgi.FieldStorage()).http_reply()
 
 

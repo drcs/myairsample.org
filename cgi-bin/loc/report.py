@@ -4,16 +4,19 @@ from loc.util     import describe_comparison,convert_units,fmt_sigfigs
 from sys          import stdout
 from locale       import getlocale,setlocale,LC_ALL
 
-import cgitb, cgi, re
+import re
 
 all_standards=read_standards_directory(['datatables','standards'])
+
+if (getlocale() == (None, None)):
+    setlocale(LC_ALL, 'en_US.UTF8')
 
 class LocReport():
     """A levels of concern report.
     """
 
     def __init__(self,
-                 read_cgi   = False,  # Draw other parameters from CGI input?
+                 form       = None,     # a form containing cgi input
                  chemicals  = None,
                  standards  = None,
                  units      = None,
@@ -23,8 +26,8 @@ class LocReport():
         'chemicals': list of common names of chemicals to report on
         'criteria':  list of names of criterion sources
         """
-        if read_cgi:
-            cgi_pars  = self._pull_from_cgi()
+        if form:
+            cgi_pars  = self._pull_from_cgi(form)
             
             chemicals = cgi_pars['chemicals']
             user      = cgi_pars['user']
@@ -106,16 +109,11 @@ class LocReport():
                     except TypeError:
                         self._failed_conversions.append(chemical['name'])
 
-    def _pull_from_cgi(self):
+    def _pull_from_cgi(self, form):
         """PUll the report parameters from expected locations in an HTML form.
         """
         result = {}
 
-        cgitb.enable()
-        if (getlocale() == (None, None)):
-            setlocale(LC_ALL, 'en_US.UTF8')
-
-        form = cgi.FieldStorage()
         # look for all 'chem*' parameters that have a corresponding 'report*' parameter
         chem_pattern = re.compile('^chem(\d+)$')
         
