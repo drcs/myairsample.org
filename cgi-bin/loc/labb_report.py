@@ -5,8 +5,6 @@ from sys import stdout
 import os
 from tempfile import NamedTemporaryFile
 
-
-# Markdown converter for use globally
 md=MarkdownLtx()
 
 def should_cleanup():
@@ -26,12 +24,12 @@ def cleanup(fname):
         except OSError:
             pass
 
+def ltx_tr(xs):
+    return str.join(' & ',map(str,xs)) + r'\\'
+
 class LabbReport(LocReport):
 
     def generate_tex(self, fh=stdout):
-
-        def ltx_tr(xs):
-            return str.join(' & ',map(str,xs)) + r'\\'
 
         def ltx_def(name,value):
             print >>fh, '\\newcommand{\\' + name + r"} {" + value + "} \n"
@@ -160,70 +158,8 @@ volume of the box 1 m3, or 3 \micro g /m3. Like grains of sand, chemicals can al
 reported by weight and volume. For example, a monitor might read 5 \micro g /m\cubed
 benzene, or 5 \micro g of benzene in 1 m\cubed of air.
 }
-
-\newpage
-\section*{Sample Analysis}
-
-% \highlightbox{The information below is provided to guide discussion on how
-% exposure to chemicals can affect you, your family, and your
-% community. This information is paraphrased from the ATSDR ``ToxFAQs''
-% website available at http://www.atsdr.cdc.gov/substances/index.asp.}
 """
-        for chemical in self.chemicals():
-            # chemical.keys() == 'name','level','level_rep',
-            #                    'mw','cas','comparisons'
-            print >>fh,r'\subsection*{' + chemical['name'] + r"""}
-
-% Chemical description would go here when implemented
-
-\begin{tabular}{|c|c|p{3in}|}
-\hline
-The level in your bucket sample &                             & Comparison Level                                       \\
-\hline
-"""
-            for comparison in chemical['comparisons']:
-                # comparison.keys=='source','level_rep','level',
-                #                  'criterion','description'
-                # comparison['criterion']['description']['brief']
-                if chemical['level'] > comparison['level']:
-                    fc=r' \fc '
-                else:
-                    fc = ''
-                print >>fh, ltx_tr([
-                        fc + chemical['level_rep'] + '\ \outunits',
-                        fc + md.convert(comparison['description']),
-                        fc + md.convert(comparison['criterion']['description']['brief']) + ' ' + comparison['level_rep'] + '\ \outunits'
-                        ])
-                print >>fh, r'\hline '
-
-            print >>fh, r"""
-\hline
-\end{tabular}
-"""
-
-        for name in self.failed_lookups():
-            print >>fh, r'\subsection*{' + name + r"""}
-\begin{tabular}{|c|c|p{3in}|}
-\hline
-The level in your bucket sample &                             & Comparison Level                                       \\
-\hline
-"""
-
-            print >>fh, ltx_tr([
-                    chemical['level_rep'] + '\ \outunits',
-                    "",
-                    r'Either a comparison level is not available for ' + name + ' or the spelling of the chemical name is incorrect.'
-            ])
-            print >>fh, r"""
-\hline
-\end{tabular}
-"""
-
-        for name in self.failed_conversions():
-            print >>fh, r'\subsection*{' + name + r"""}
-
-Unit conversions failed.  (Try ppb or ug/m3?)
-"""
+        self._results_section(fh)
 
         # Standards descriptions
         print >>fh, r"""
