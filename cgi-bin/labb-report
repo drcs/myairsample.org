@@ -20,9 +20,10 @@
 #
 #
 
-from loc.labb_brief import LabbBrief
+from loc.labb_brief   import LabbBrief
+from loc.labb_summary import LabbSummary
 
-LabbBrief(read_cgi=True, standards=['lastds','r6sls']).http_reply()
+LabbSummary(read_cgi=True, standards=['lastds','r6sls']).http_reply()
 
 
 
