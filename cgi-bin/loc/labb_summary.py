@@ -2,11 +2,18 @@
 LABB report (PDF format), following Gwen's "brief comparison" style
 """
 
-from labb_report import LabbReport, ltx_tr, md
+from labb_brief import LabbBrief
 
-class LabbSummary(LabbReport):
+class LabbSummary(LabbBrief):
     
-    def _results_section(self, fh):
+    def _reported_chemicals(self):
+
+        def inc(chemical):
+            return any(map(lambda comparison: chemical['level'] > comparison['level'], chemical['comparisons']))
+        
+        return filter(inc, self.chemicals())
+    
+    def _results_section_depr(self, fh):
         print >>fh, r"""
 \newpage
 \section*{Sample Analysis}

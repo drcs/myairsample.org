@@ -6,12 +6,18 @@ from labb_report import LabbReport, ltx_tr, md
 
 class LabbBrief(LabbReport):
 
+    def _reported_chemicals(self):
+        """
+        Returns a list like self.chemicals(), but include only those that should be reported on.
+        """
+        return self.chemicals()
+
     def _results_section(self, fh):
         print >>fh, r"""
         \newpage
         \section*{Sample Analysis}
 """
-        for chemical in self.chemicals():
+        for chemical in self._reported_chemicals():
             # chemical.keys() == 'name','level','level_rep',
             #                    'mw','cas','comparisons'
             print >>fh,r'\subsection*{' + chemical['name'] + r"""}
