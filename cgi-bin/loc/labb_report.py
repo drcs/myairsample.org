@@ -197,25 +197,30 @@ levels. States may not be required to adhere to national standards.}
         os.environ["TEXINPUTS"]=image_dir + ":" + texinputs_env
             
         outfile=NamedTemporaryFile(delete=should_cleanup(),suffix=".tex")
-            
+
         self.generate_tex(outfile)
         outfile.flush()
         doc_dir=os.path.dirname(outfile.name)
         os.chdir(doc_dir)
-        result=os.system("pdflatex " + outfile.name + ">& /dev/null")
+        self._pdflatex_stat=os.system("pdflatex -interaction nonstopmode " + outfile.name + ">& /dev/null")
         doc_basename=os.path.splitext(outfile.name)[0]
 
-        os.system("cat " + doc_basename + ".pdf")
-        stdout.flush()
-            
-        cleanup(doc_basename + '.log')
         cleanup(doc_basename + '.aux')
-        cleanup(doc_basename + '.pdf')
+
+        if self._pdflatex_stat:
+            return doc_basename + '.log'
+        else:
+            cleanup(doc_basename + '.log')
+            return doc_basename + '.pdf'
 
     def http_headers(self):
         username = self.user('first') + '_' + self.user('second')
-        return ["Content-type: application/pdf",
-                "Content-disposition: attachment; filename=LABB-%s.pdf" % username]
+
+        if self._pdflatex_stat:
+            return ["Content-type: text/plain"]
+        else:
+            return ["Content-type: application/pdf",
+                    "Content-disposition: attachment; filename=LABB-%s.pdf" % username]
 
     def _unit_representations(self):
         return {'ug/m3' :   '{\micro g/m\cubed}'}

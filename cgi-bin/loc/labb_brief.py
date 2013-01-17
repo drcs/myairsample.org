@@ -6,6 +6,11 @@ from labb_report import LabbReport, ltx_tr, md
 
 class LabbBrief(LabbReport):
 
+    def _standards_from_cgi(self, form):
+        # return [ 'ncstds' ]
+        requested = form.getvalue('reflevel')
+        return [ requested ]
+
     def _reported_chemicals(self):
         """
         Returns a list like self.chemicals(), but include only those that should be reported on.

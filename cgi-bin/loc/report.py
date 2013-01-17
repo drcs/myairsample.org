@@ -4,7 +4,7 @@ from loc.util     import describe_comparison,convert_units,fmt_sigfigs
 from sys          import stdout
 from locale       import getlocale,setlocale,LC_ALL
 
-import re
+import re, os
 
 all_standards=read_standards_directory(['datatables','standards'])
 
@@ -33,6 +33,7 @@ class LocReport():
             user      = cgi_pars['user']
             units     = cgi_pars['units']
             sample    = cgi_pars['sample']
+            standards = self._standards_from_cgi(form)
 
         # Default parameters
         if chemicals is None: chemicals = []
@@ -108,6 +109,12 @@ class LocReport():
                                                         'source':        standard.meta['name']})
                     except TypeError:
                         self._failed_conversions.append(chemical['name'])
+
+    def _standards_from_cgi(self, form):
+        """
+        report base class just uses all available standards.
+        """
+        return all_standards.keys()
 
     def _pull_from_cgi(self, form):
         """PUll the report parameters from expected locations in an HTML form.
@@ -191,9 +198,27 @@ class LocReport():
             return None
 
     def http_reply(self):
-        for hdr in self.http_headers():
-            print hdr
-        print
-        stdout.flush()
+        content_fname=self.generate()
 
-        self.generate()
+        try:
+            fh = open(content_fname)
+
+            for hdr in self.http_headers():
+                print hdr
+            print
+            stdout.flush()
+        
+            content = fh.read()
+            stdout.write(content)
+            fh.close()
+            os.remove(content_fname)
+
+        except (IOError, TypeError):
+            print """Content-type: text/plain
+
+Something went wrong generating content.  That's all I know.
+"""
+        
+
+
+
