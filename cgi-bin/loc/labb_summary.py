@@ -5,6 +5,9 @@ LABB report (PDF format), following Gwen's "brief comparison" style
 from labb_brief import LabbBrief
 
 class LabbSummary(LabbBrief):
+
+    def _standards_from_cgi(self, form):
+        return None   # In this case 'None' means 'all'.
     
     def _reported_chemicals(self):
 
