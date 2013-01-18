@@ -2,6 +2,7 @@
 from loc.report import LocReport
 from markdown import Markdown
 from sys import stdout
+from tempfile import NamedTemporaryFile
 
 from genshi.template import TemplateLoader
 from genshi import HTML
@@ -19,7 +20,9 @@ def md(str):
 
 class MediumReport(LocReport):
     
-    def generate(self, fh=stdout):
+    def generate(self, fh=None):
+        if fh is None:
+            fh = NamedTemporaryFile(delete=False)
         document = tmpl.generate(chemicals         = self.chemicals(),
                                  user              = self.users(),
                                  failures          = {'name_lookups':     self.failed_lookups(),
@@ -31,7 +34,8 @@ class MediumReport(LocReport):
                                  md                = md)
 
         print >>fh,document.render('html', doctype='html')
-        fh.flush()
+        fh.close()
+        return fh.name
 
     def http_headers(self):
         return ["Content-type: text/html; charset=utf-8"]
