@@ -179,6 +179,8 @@ levels. States may not be required to adhere to national standards.}
             description = self.standards()[standard].description()
             if description is not None:
                 print >>fh, '\item ' + md.convert(description)
+            else:
+                print >>fh, '\item ' + standard + ': description not available'
 
 
         print >>fh,"""
