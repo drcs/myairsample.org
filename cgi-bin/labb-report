@@ -28,11 +28,14 @@ form=cgi.FieldStorage()
 
 from loc.labb_brief   import LabbBrief
 from loc.labb_summary import LabbSummary
+from loc.labb_full    import LabbFull
 
-if form.getvalue('summary') == 'on':
-    report=LabbSummary(standards=['lastds','r6sls'], form=form)
+if form.getvalue('full') == 'on':
+    report=LabbFull(form=form)
+elif form.getvalue('summary') == 'on':
+    report=LabbSummary(form=form)
 else:
-    report=LabbBrief(standards=['lastds','r6sls'], form=form)
+    report=LabbBrief(form=form)
 
 report.http_reply()
 
