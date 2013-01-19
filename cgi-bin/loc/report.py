@@ -70,6 +70,7 @@ class LocReport():
 
         # map input chemical names to chemical objects
         for chemical in chemicals:
+            chemical['name']=chemical['name'].title()
             cas = name2cas(chemical['name'])
             if cas is None:
                 self._failed_lookups.append(chemical['name'])
