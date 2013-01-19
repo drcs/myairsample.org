@@ -100,16 +100,17 @@ class LocReport():
             for chemical in self._chemicals:
                 # Unfold requested standards into individual criteria
                 report_levels = standard.lookup(chemical['cas'])
-                for criterion_name in report_levels.keys():
-                    try:
-                        criterion_level = convert_units(report_levels[criterion_name],standard.meta['units'],units['out'],chemical['mw'])
-                        chemical['comparisons'].append({'level':         criterion_level,
-                                                        'level_rep':     fmt_sigfigs(criterion_level),
-                                                        'description':   describe_comparison(chemical['level'],criterion_level),
-                                                        'criterion':     standard.criteria[criterion_name],
-                                                        'source':        standard.meta['name']})
-                    except TypeError:
-                        self._failed_conversions.append(chemical['name'])
+                if report_levels:
+                    for criterion_name in report_levels.keys():
+                        try:
+                            criterion_level = convert_units(report_levels[criterion_name],standard.meta['units'],units['out'],chemical['mw'])
+                            chemical['comparisons'].append({'level':         criterion_level,
+                                                            'level_rep':     fmt_sigfigs(criterion_level),
+                                                            'description':   describe_comparison(chemical['level'],criterion_level),
+                                                            'criterion':     standard.criteria[criterion_name],
+                                                            'source':        standard.meta['name']})
+                        except TypeError:
+                            self._failed_conversions.append(chemical['name'])
 
     def _standards_from_cgi(self, form):
         """
