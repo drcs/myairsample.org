@@ -11,6 +11,9 @@ class LabbBrief(LabbReport):
         requested = form.getvalue('reflevel')
         return [ requested ]
 
+    def _should_report_comparison(self, chemical, comparison):
+        return True
+
     def _reported_chemicals(self):
         """
         Returns a list like self.chemicals(), but include only those that should be reported on.
@@ -38,16 +41,17 @@ The level in your bucket sample &                             & Comparison Level
                 # comparison.keys=='source','level_rep','level',
                 #                  'criterion','description'
                 # comparison['criterion']['description']['brief']
-                if chemical['level'] > comparison['level']:
-                    fc=r' \fc '
-                else:
-                    fc = ''
-                print >>fh, ltx_tr([
-                        fc + chemical['level_rep'] + '\ \outunits',
-                        fc + md.convert(comparison['description']),
-                        fc + md.convert(comparison['criterion']['description']['brief']) + ' ' + comparison['level_rep'] + '\ \outunits'
-                        ])
-                print >>fh, r'\hline '
+                if self._should_report_comparison(chemical, comparison):
+                    if chemical['level'] > comparison['level']:
+                        fc=r' \fc '
+                    else:
+                        fc = ''
+                    print >>fh, ltx_tr([
+                            fc + chemical['level_rep'] + '\ \outunits',
+                            fc + md.convert(comparison['description']),
+                            fc + md.convert(comparison['criterion']['description']['brief']) + ' ' + comparison['level_rep'] + '\ \outunits'
+                            ])
+                    print >>fh, r'\hline '
 
             print >>fh, r"""
 \hline

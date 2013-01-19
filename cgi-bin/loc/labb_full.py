@@ -8,3 +8,7 @@ class LabbFull(LabbSummary):
     
     def _reported_chemicals(self):
         return self.chemicals()
+
+    def _should_report_comparison(self, chemical, comparison):
+        return True
+

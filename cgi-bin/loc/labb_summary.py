@@ -15,5 +15,10 @@ class LabbSummary(LabbBrief):
             return any(map(lambda comparison: chemical['level'] > comparison['level'], chemical['comparisons']))
         
         return filter(inc, self.chemicals())
-    
+
+    def _should_report_comparison(self, chemical, comparison):
+        if (chemical['level'] > comparison['level']):
+            return True
+        else:
+            return False
 
