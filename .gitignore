@@ -2,3 +2,4 @@
 *.aux
 bucket-template.log
 *.pyc
+*~
