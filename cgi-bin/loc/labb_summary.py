@@ -14,16 +14,17 @@ class LabbSummary(LabbBrief):
         else:
             return None   # In this case 'None' means 'all'.
     
-    def _reported_chemicals(self):
-
-        def inc(chemical):
-            return any(map(lambda comparison: chemical['level'] > comparison['level'], chemical['comparisons']))
-        
-        return filter(inc, self.chemicals())
+    def _should_report_chemical(self, chemical):
+        return any(map(lambda comparison: chemical['level'] > comparison['level'], chemical['comparisons']))
 
     def _should_report_comparison(self, chemical, comparison):
         if (chemical['level'] > comparison['level']):
             return True
         else:
             return False
+
+    def _unreport_chemical(self, chemical, fh):
+        print >>fh,r'\subsection*{' + chemical['name'] + r"""}
+Your reported value of """ + chemical['level_rep'] + '\ \outunits\ '
+        print >>fh, r'is not above any levels of concern in the myairsample.org system'
 
