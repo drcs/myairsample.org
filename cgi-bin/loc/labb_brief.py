@@ -14,21 +14,29 @@ class LabbBrief(LabbReport):
     def _should_report_comparison(self, chemical, comparison):
         return True
 
-    def _reported_chemicals(self):
+    def _should_report_chemical(self, chemical):
         """
-        Returns a list like self.chemicals(), but include only those that should be reported on.
+        Should this chemical be included in the report?
         """
-        return self.chemicals()
+        return True
+
+    def _unreport_chemical(self, chemical, fh):
+        """
+        Alternative action to take for chemicals that are "not reported".
+        Write results to 'fh'.
+        """
+        pass
 
     def _results_section(self, fh):
         print >>fh, r"""
         \newpage
         \section*{Sample Analysis}
 """
-        for chemical in self._reported_chemicals():
+        for chemical in self.chemicals():
             # chemical.keys() == 'name','level','level_rep',
             #                    'mw','cas','comparisons'
-            print >>fh,r'\subsection*{' + chemical['name'] + r"""}
+            if self._should_report_chemical(chemical):
+                print >>fh,r'\subsection*{' + chemical['name'] + r"""}
 
 % Chemical description would go here when implemented
 
@@ -37,26 +45,28 @@ class LabbBrief(LabbReport):
 The level in your bucket sample &                             & Comparison Level                                       \\
 \hline
 """
-            for comparison in chemical['comparisons']:
-                # comparison.keys=='source','level_rep','level',
-                #                  'criterion','description'
-                # comparison['criterion']['description']['brief']
-                if self._should_report_comparison(chemical, comparison):
-                    if chemical['level'] > comparison['level']:
-                        fc=r' \fc '
-                    else:
-                        fc = ''
-                    print >>fh, ltx_tr([
-                            fc + chemical['level_rep'] + '\ \outunits',
-                            fc + md.convert(comparison['description']),
-                            fc + md.convert(comparison['criterion']['description']['brief']) + ' ' + comparison['level_rep'] + '\ \outunits'
-                            ])
-                    print >>fh, r'\hline '
+                for comparison in chemical['comparisons']:
+                    # comparison.keys=='source','level_rep','level',
+                    #                  'criterion','description'
+                    # comparison['criterion']['description']['brief']
+                    if self._should_report_comparison(chemical, comparison):
+                        if chemical['level'] > comparison['level']:
+                            fc=r' \fc '
+                        else:
+                            fc = ''
+                        print >>fh, ltx_tr([
+                                fc + chemical['level_rep'] + '\ \outunits',
+                                fc + md.convert(comparison['description']),
+                                fc + md.convert(comparison['criterion']['description']['brief']) + ' ' + comparison['level_rep'] + '\ \outunits'
+                                ])
+                        print >>fh, r'\hline '
 
-            print >>fh, r"""
+                print >>fh, r"""
 \hline
 \end{tabular}
 """
+            else:
+                self._unreport_chemical(chemical, fh)
 
         for name in self.failed_lookups():
             print >>fh, r'\subsection*{' + name + r"""}
