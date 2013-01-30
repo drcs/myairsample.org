@@ -90,6 +90,8 @@ class LabbReport(LocReport):
 \setlength\logowidth{1.8in}
 \addtolength\voffset{-0.5in}
 
+\setlength{\arrayrulewidth}{1.5pt}
+
 \newcommand{\cubed}{$^3$}
 \newcommand{\micro}{$\mu$}
 \newcommand{\fc}{\cellcolor{red}}
