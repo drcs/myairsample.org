@@ -6,9 +6,12 @@ from labb_summary import LabbSummary
 
 class LabbFull(LabbSummary):
     
-    def _reported_chemicals(self):
-        return self.chemicals()
+    def _should_report_chemical(self, chemical):
+        return True
 
     def _should_report_comparison(self, chemical, comparison):
         return True
+
+    def _unreport_chemical(self, chemical, fh):
+        pass
 
