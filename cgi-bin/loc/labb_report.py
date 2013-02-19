@@ -43,7 +43,7 @@ class LabbReport(LocReport):
         print >>fh,r"""
 \documentclass{article}
 
-\usepackage{fancyhdr, graphicx, pslatex}
+\usepackage{fancyhdr, graphicx, pslatex, array}
 \usepackage[table]{xcolor}
 
 \raggedbottom
@@ -95,6 +95,7 @@ class LabbReport(LocReport):
 \newcommand{\cubed}{$^3$}
 \newcommand{\micro}{$\mu$}
 \newcommand{\fc}{\cellcolor{red}}
+\newcommand{\nfc}{\cellcolor{white}}
 \definecolor{salmon}{rgb}{1.0,0.8,0.7}
 \newcommand{\highlightbox}[1]{\colorbox{salmon}{\parbox{\linewidth}{#1}}}
 """

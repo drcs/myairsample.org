@@ -53,7 +53,7 @@ The level in your bucket sample &                             & Comparison Level
                         if chemical['level'] > comparison['level']:
                             fc=r' \fc '
                         else:
-                            fc = ''
+                            fc = r'\nfc '
                         print >>fh, ltx_tr([
                                 fc + chemical['level_rep'] + '\ \outunits',
                                 fc + md.convert(comparison['description']),
