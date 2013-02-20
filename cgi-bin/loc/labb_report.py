@@ -94,7 +94,7 @@ class LabbReport(LocReport):
 
 \newcommand{\cubed}{$^3$}
 \newcommand{\micro}{$\mu$}
-\newcommand{\fc}{\cellcolor{red}}
+\newcommand{\fc}{\cellcolor{salmon}}
 \newcommand{\nfc}{\cellcolor{white}}
 \definecolor{salmon}{rgb}{1.0,0.8,0.7}
 \newcommand{\highlightbox}[1]{\colorbox{salmon}{\parbox{\linewidth}{#1}}}
@@ -133,33 +133,34 @@ class LabbReport(LocReport):
 \item Report made on web at:     http://myairsample.org
 \end{itemize}
 
-$^*$For a description of what units mean, see ``Unit Information'' section later in this report
+$^*$For a description of what units mean, see ``Units Information'' section later in this report
 
 \newcommand{\unitssection}{
-\section*{Unit information}
+\section*{Units information}
 Parts per billion (ppb) describes how many weighed parts of a chemical there
-are for 1 billion parts of air. For example, a recipe says to add a just a drop of
+are for 1 billion parts of air. For example, a recipe says to add just a drop of
 vanilla for every 100 pounds of flour. The drop of vanilla weighs hardly
 anything, but it has a big effect on the cookies' flavor. Similarly, if we measure
 benzene in the air, we might find 3 ``drops'' of benzene for 1,000,000,000
-(billion) ``drops'' of air. It seems like a small amount, but it is significant.
+(one billion) ``drops'' of air. It seems like a small amount, but it is significant.
 
 Parts per billion by volume, or ppbv, means the concentration has been figured
 out in terms of how much space the molecules take up. For example, if we
 make a mixture of 3 cups of vanilla and 1 billion cups of flour, then our
 concentration is 3 parts volume (cups of vanilla) per billion parts volume (cups
-of flour), or 3ppbv sugar in flour. When 3 volumes of benzene are in a billion
-volumes of air, the concentration is 3ppbv benzene in air.
+of flour), or 3 ppbv sugar in flour. When 3 volumes of benzene are in a billion
+volumes of air, the concentration is 3 ppbv benzene in air.
 
 Micrograms per meters cubed (\micro g/m\cubed) describes how much of a chemical's
 weight is in a volume of air that takes up one cubic meter. Imagine an empty
 box that is three feet long on both sides, and three feet tall. One meter is about
-three feet long. So the box's volume is 1 cubic meter, or 1 m 3. A microgram
+three feet long. So the box's volume is 1 cubic meter, or 1 m\cubed. A microgram
 (\micro g) is a very small weight, like that of a grain of sand. You put 3 grains of sand
-into the box. The concentration of sand inside the box is 3 \micro g divided by the
-volume of the box 1 m3, or 3 \micro g /m3. Like grains of sand, chemicals can also be
-reported by weight and volume. For example, a monitor might read 5 \micro g /m\cubed
-benzene, or 5 \micro g of benzene in 1 m\cubed of air.
+into the box. The concentration of sand inside the box is the weight of the sand
+(3 \micro g) divided by the
+volume of the box (1 m\cubed), or 3 \micro g /m\cubed. Like grains of sand, chemicals can also be
+reported by weight and volume. For example, a monitor might read 5 \micro g /m\cubed\ %
+benzene, or 5 \micro g of benzene in 1 m\cubed\ of air.
 }
 """
         self._results_section(fh)
