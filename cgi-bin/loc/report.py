@@ -136,8 +136,8 @@ class LocReport():
         result['units']     = {'in'  : form.getvalue('inunits'),
                                'out' : form.getvalue('outunits')}
 
-        result['user']      = {'first':  form.getvalue('tablename'),
-                               'second': form.getvalue('tablename2')}
+        result['user']      = {'first':  form.getvalue('tablename')  or 'N/A',
+                               'second': form.getvalue('tablename2') or ''}
 
         result['sample']    = {'name':   form.getvalue('samplename'),
                                'date':   form.getvalue('sampledate'),
