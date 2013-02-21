@@ -220,7 +220,8 @@ levels. States may not be required to adhere to national standards.}
             return doc_basename + '.pdf'
 
     def http_headers(self):
-        username = self.user('first') + '_' + self.user('second')
+        username = self.user('first')
+        if self.user('second'): username = username + '_' + self.user('second')
 
         if self._pdflatex_stat:
             return ["Content-type: text/plain"]
