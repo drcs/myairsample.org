@@ -67,8 +67,8 @@ The level in your bucket sample &                             & Comparison Level
             else:
                 self._unreport_chemical(chemical, fh)
 
-        for name in self.failed_lookups():
-            print >>fh, r'\subsection*{' + name + r"""}
+        for chemical in self.failed_lookups():
+            print >>fh, r'\subsection*{' + chemical['name'] + r"""}
 \begin{tabular}{|c|c|p{3in}|}
 \hline
 The level in your bucket sample &                             & Comparison Level                                       \\
@@ -76,9 +76,9 @@ The level in your bucket sample &                             & Comparison Level
 """
 
             print >>fh, ltx_tr([
-                    chemical['level_rep'] + '\ \outunits',
+                    chemical['level'] + '\ \inunits',
                     "",
-                    r'Either a comparison level is not available for ' + name + ' or the spelling of the chemical name is incorrect.'
+                    r'Either a comparison level is not available for ' + chemical['name'] + ' or the spelling of the chemical name is incorrect.'
             ])
             print >>fh, r"""
 \hline

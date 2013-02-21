@@ -73,7 +73,7 @@ class LocReport():
             chemical['name']=chemical['name'].title()
             cas = name2cas(chemical['name'])
             if cas is None:
-                self._failed_lookups.append(chemical['name'])
+                self._failed_lookups.append(chemical)
             else:
                 mw = cas2mw(cas)
                 try:
