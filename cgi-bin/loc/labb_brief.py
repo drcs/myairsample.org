@@ -62,7 +62,6 @@ The level in your bucket sample &                             & Comparison Level
                         print >>fh, r'\hline '
 
                 print >>fh, r"""
-\hline
 \end{tabular}
 """
             else:
