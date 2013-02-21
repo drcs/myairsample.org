@@ -109,8 +109,8 @@ class LabbReport(LocReport):
         ltx_def_if('sampledate',     self.sample()['date'])
         ltx_def_if('samplelocation', self.sample()['location'])
 
-        user="N/A"
-        if self.user('first'):  user = self.user('first')
+        user=""
+        if self.user('first'):  user = 'For ' + self.user('first')
         if self.user('second'): user = user + r'\\ ' + self.user('second')
         ltx_def('user', user)
 
@@ -118,7 +118,7 @@ class LabbReport(LocReport):
 \begin{document}
 
 \title{Levels of Concern Report}
-\author{For \user}
+\author{\user}
 \date{}
 \maketitle
 
