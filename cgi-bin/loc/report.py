@@ -133,6 +133,7 @@ class LocReport():
                      'level' : form[report_par].value if report_par in form else 'NA' }
 
         result['chemicals'] = map (chem_lookup, filter (chem_pattern.match, form.keys()))
+        result['chemicals'].sort(key=lambda c:c['name'])
         result['units']     = {'in'  : form.getvalue('inunits'),
                                'out' : form.getvalue('outunits')}
 
