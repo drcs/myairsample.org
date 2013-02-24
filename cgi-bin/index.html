@@ -1,0 +1,78 @@
+<?xml version="1.0" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/">
+  <head>
+    <title>Levels of Concern</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+  </head>
+  <body>
+    <div id="header">
+      <h1>MyAirSample.org</h1>
+      <h2>An online tool to compare air data to pollutant levels of concern</h2>
+      <div id="logos">
+	<ul>
+	  <li><a href="#"><img src="media/labb_logo.png" alt="LABB logo"></img></a></li>
+	  <li><a href="#"><img src="media/drcs_logo.png" alt="DRCS logo"></img></a></li>
+	</ul>
+      </div>
+    </div>
+    <div id="nav">
+      <ul>
+	<li><a href="/create_report">Create a report</a></li>
+	<li><a href="/about/levels">About the levels of concern</a></li>
+	<li><a href="/faqs">FAQs</a></li>
+	<li><a href="/about/tool">About this tool</a></li>
+	<li><a href="/contact">Contact us</a></li>
+	<li><a href="/about/implementation">Technical details</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <div id="input">
+	<form method="post" action="/report">
+	  <div id="left_form_panel">
+	    <div>
+	      <h4>1.</h4>
+	      <table>
+		<tr>
+		  <td>Chemical name</td>
+		  <td>Measured value</td>
+		</tr>
+		<tr>
+		  <td><input name="chem1"/></td>
+		  <td><input name="report1"/></td>
+		</tr>
+		<tr>
+		  <td><input name="chem2"/></td>
+		  <td><input name="report2"/></td>
+		</tr>
+		<tr>
+		  <td><input name="chem3"/></td>
+		  <td><input name="report3"/></td>
+		</tr>
+	      </table>
+	    </div>
+	    <div>
+	      <h4>2. Report Title</h4>
+	      <table>
+		<tr>
+		  <td>Organization name 1</td><td><input name="tablename"/></td>
+		</tr>
+		<tr>
+		  <td>Organization name 2</td><td><input name="tablename2"/></td>
+		</tr>
+	      </table>
+	    </div>
+	  </div>
+	  <div id="right_form_panel">
+	    <div>
+	      <h4>4. Choose report style</h4>
+	    </div>
+	    <input type="submit" value="    Submit     "/>
+	  </div>
+	</form>
+      </div>
+      <div id="sidebar">
+      </div>
+    </div>
+  </body>
+</html>
