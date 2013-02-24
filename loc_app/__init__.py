@@ -3,7 +3,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 
 import cherrypy
 from genshi.template import TemplateLoader
-loader = TemplateLoader('', auto_reload=True)
+loader = TemplateLoader(os.path.join(current_dir, 'templates'), auto_reload=True)
 
 class Root():
     def index(self):
