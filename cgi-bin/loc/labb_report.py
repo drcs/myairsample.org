@@ -140,19 +140,21 @@ $^*$For a description of what units mean, see ``Units Information'' section late
 
 \newcommand{\unitssection}{
 \section*{Units information}
-Parts per billion (ppb) describes how many weighed parts of a chemical there
-are for 1 billion parts of air. For example, a recipe says to add just a drop of
-vanilla for every 100 pounds of flour. The drop of vanilla weighs hardly
-anything, but it has a big effect on the cookies' flavor. Similarly, if we measure
-benzene in the air, we might find 3 ``drops'' of benzene for 1,000,000,000
-(one billion) ``drops'' of air. It seems like a small amount, but it is significant.
+Parts per billion (ppb) describes how many parts of a chemical are in
+the same place as 1 billion parts of air. For example, a recipe says
+to add a spoonful of vanilla for every 10 cups of flour. A drop of
+vanilla is hardly anything, but it has a big effect on the cookies'
+flavor. Similarly, if we measure benzene in the air, we might find 3
+``drops'' of benzene for 1,000,000,000 (one billion) ``drops'' of air. Three
+drops of benzene seems like a small amount, but it is significant.
 
-Parts per billion by volume, or ppbv, means the concentration has been figured
-out in terms of how much space the molecules take up. For example, if we
-make a mixture of 3 cups of vanilla and 1 billion cups of flour, then our
-concentration is 3 parts volume (cups of vanilla) per billion parts volume (cups
-of flour), or 3 ppbv sugar in flour. When 3 volumes of benzene are in a billion
-volumes of air, the concentration is 3 ppbv benzene in air.
+Parts per billion by volume, or ppbv, means the concentration has been
+figured out in terms of how much space the molecules take up. For
+example, if we make a mixture of 3 cups of vanilla and 1 billion cups
+of flour, then our concentration is 3 parts volume (cups of vanilla)
+per billion parts volume (cups of flour), or 3 ppbv vanilla in
+flour. When 3 volumes of benzene are in a billion volumes of air, the
+concentration is 3 ppbv benzene in air.
 
 Micrograms per meters cubed (\micro g/m\cubed) describes how much of a chemical's
 weight is in a volume of air that takes up one cubic meter. Imagine an empty
