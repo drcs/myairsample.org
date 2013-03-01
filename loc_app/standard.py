@@ -1,6 +1,6 @@
 
 import csv, json, os
-from loc.util import canonical_name
+from util import canonical_name
 
 def read_standards_directory(dir_path):
     """

@@ -3,7 +3,7 @@
 """
 from os import path
 import csv
-from loc.util import canonical_name
+from util import canonical_name
 
 _fh=open(path.join('datatables','synonyms.txt'), 'r')
 # FIXME check return value

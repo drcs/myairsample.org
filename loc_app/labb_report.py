@@ -1,6 +1,6 @@
 
-from loc.report import LocReport
-from loc.markdown_ltx import MarkdownLtx
+from report import LocReport
+from markdown_ltx import MarkdownLtx
 from sys import stdout
 import os
 from tempfile import NamedTemporaryFile
@@ -195,7 +195,7 @@ levels. States may not be required to adhere to national standards.}
 """
 
     def generate(self):
-        image_dir = os.path.join(os.getcwd(), 'media')
+        image_dir = os.path.join(os.getcwd(), 'loc_app', 'data', 'media')
         try:
             texinputs_env=os.environ['TEXINPUTS']
         except KeyError:
@@ -224,10 +224,10 @@ levels. States may not be required to adhere to national standards.}
         if self.user('second'): username = username + '_' + self.user('second')
 
         if self._pdflatex_stat:
-            return ["Content-type: text/plain"]
+            return {"Content-type": "text/plain"}
         else:
-            return ["Content-type: application/pdf",
-                    "Content-disposition: attachment; filename=LABB-%s.pdf" % username]
+            return {"Content-type":        "application/pdf",
+                    "Content-disposition": "attachment; filename=LABB-%s.pdf" % username}
 
     def _unit_representations(self):
         return {'ug/m3' :   '{\micro g/m\cubed}'}

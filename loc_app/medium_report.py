@@ -38,7 +38,7 @@ class MediumReport(LocReport):
         return fh.name
 
     def http_headers(self):
-        return ["Content-type: text/html; charset=utf-8"]
+        return {"Content-type:", "text/html; charset=utf-8"}
 
     def _unit_representations(self):
         return {'ug/m3' :   '&micro;g/m<sup>3</sup>'}

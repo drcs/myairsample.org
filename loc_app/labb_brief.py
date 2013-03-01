@@ -6,7 +6,7 @@ from labb_report import LabbReport, ltx_tr, md
 
 class LabbBrief(LabbReport):
 
-    def _standards_from_cgi(self, form):
+    def _standards_from_form_data(self, form):
         # return [ 'ncstds' ]
         requested = form.getvalue('reflevel')
         return [ requested ]
