@@ -69,7 +69,8 @@ class LabbReport(LocReport):
        Community and Science.  For questions and comments about air data,
        Louisiana Bucket Brigade can contacted at www.labucketbrigade.org,
        4226 Canal St, New Orleans, LA 70119, phone: 504-484-3433, fax:
-       504-324-0332.  For comments, feedback, or errors in the web site,
+       504-324-0332, email: info@labucketbrigade.org.
+       For comments, feedback, or errors in the web site,
        please contact the LA Bucket Brigade or email Digital Resources for
        Community and Science at drcsdirector@gmail.com
      }
