@@ -118,7 +118,9 @@ class LabbReport(LocReport):
         print >>fh,r"""
 \begin{document}
 
-\title{Levels of Concern Report}
+\title{Levels of Concern Report \\
+       \large
+       A comparison of air sampling results to pollutant levels of concern}
 \author{\user}
 \date{}
 \maketitle
