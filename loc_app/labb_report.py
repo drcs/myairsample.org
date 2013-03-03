@@ -4,6 +4,9 @@ from markdown_ltx import MarkdownLtx
 from sys import stdout
 import os
 from tempfile import NamedTemporaryFile
+from string import maketrans
+
+ltx_special_chars=maketrans(r'_$^&', "----")
 
 md=MarkdownLtx()
 
@@ -112,6 +115,7 @@ class LabbReport(LocReport):
         user=""
         if self.user('first'):  user = 'For ' + self.user('first')
         if self.user('second'): user = user + r'\\ ' + self.user('second')
+        user=str(user).translate(ltx_special_chars)
         ltx_def('user', user)
 
         print >>fh,r"""
