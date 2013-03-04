@@ -31,6 +31,24 @@ comparison_template = LatexTemplate(r"""
 \hline 
 """)
 
+failed_lookup_template = LatexTemplate(r"""
+\subsection{\subst{name}}
+\begin{tabular}{|c|p{3in}|}
+\hline
+The level in your bucket sample  & Comparison Level     \\
+\hline
+\subst{level} \inunits &
+Either a comparison level is not available for \subst{name} or the spelling of the chemical name is incorrect. \\
+\hline
+\end{tabular}
+""")
+
+conversion_failed_template = LatexTemplate(r"""
+\subsection*{\subst{name}}
+Unit conversions failed.  (Try ppb or \micro g/m$^3$?)
+""")
+
+
 class LabbBrief(LabbReport):
 
     def _standards_from_form_data(self, form):
@@ -54,48 +72,32 @@ class LabbBrief(LabbReport):
         """
         pass
 
+    def _report_chemical(self, chemical):
+        """
+        Generate a member of the "results section" for this chemical
+        """
+        if self._should_report_chemical(chemical):
+            def _comp(comparison):
+                values = ({'level':                  chemical['level_rep'],
+                           'comparison_description': md.convert(comparison['description']),
+                           'criterion_description':  md.convert(comparison['criterion']['description']['brief']),
+                           'comparison_level':       comparison['level_rep'],
+                           'fc': r' \fc ' if chemical['level'] > comparison['level'] else r' \nfc '})
+                return comparison_template.substitute(values)
+
+            included_comparisons = filter(lambda comparison: self._should_report_comparison(chemical, comparison), chemical['comparisons'])
+            comparison_txt = join(map(_comp, included_comparisons))
+            return result_template.substitute({'name':        chemical['name'],
+                                               'comparisons': comparison_txt})
+        else:
+            return self._unreport_chemical(chemical)
+
     def _results_section(self):
-        def _report_chemical(chemical):
-            if self._should_report_chemical(chemical):
-                def _comp(comparison):
-                    values = ({'level':                  chemical['level_rep'],
-                               'comparison_description': md.convert(comparison['description']),
-                               'criterion_description':  md.convert(comparison['criterion']['description']['brief']),
-                               'comparison_level':       comparison['level_rep'],
-                               'fc': r' \fc ' if chemical['level'] > comparison['level'] else r' \nfc '})
-                    return comparison_template.substitute(values)
 
-                included_comparisons = filter(lambda comparison: self._should_report_comparison(chemical, comparison), chemical['comparisons'])
-                comparison_txt = join(map(_comp, included_comparisons))
-                return result_template.substitute({'name':        chemical['name'],
-                                                   'comparisons': comparison_txt})
-            else:
-                return self._unreport_chemical(chemical)
+        reports            = map(self._report_chemical, self.chemicals())
+        failed_lookups     = map(failed_lookup_template.substitute, self.failed_lookups())
+        failed_conversions = map(conversion_failed_template.substitute, self.failed_conversions())
 
-        result = join(map(_report_chemical, self.chemicals()))
+        return result_section_template.substitute({'results': join(reports + failed_lookups + failed_conversions)})
 
-        for chemical in self.failed_lookups():
-            result += r'\subsection*{' + chemical['name'] + r"""}
-\begin{tabular}{|c|c|p{3in}|}
-\hline
-The level in your bucket sample &                             & Comparison Level                                       \\
-\hline
-"""
 
-            result += ltx_tr([
-                    chemical['level'] + '\ \inunits',
-                    "",
-                    r'Either a comparison level is not available for ' + chemical['name'] + ' or the spelling of the chemical name is incorrect.'
-            ])
-            result += r"""
-\hline
-\end{tabular}
-"""
-
-        for name in self.failed_conversions():
-            result += r'\subsection*{' + name + r"""}
-
-Unit conversions failed.  (Try ppb or ug/m3?)
-"""
-
-        return result_section_template.substitute({'results': result})
