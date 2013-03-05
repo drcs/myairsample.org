@@ -16,6 +16,7 @@ class Root():
     index.exposed = True
 
     def report(self,
+               report_type,
                inunits    = 'ppb',
                outunits   = 'ppb',
                username   = '',
@@ -25,24 +26,28 @@ class Root():
                samplelocation = '',
                **kwargs):
         """Handles "submit" actions from the main entry form"""
-        report=LabbFull(
-            units  = {'in'  : inunits,
-                      'out' : outunits},
-            sample = {'name': samplename,
-                      'date': sampledate,
-                      'location': samplelocation },
-            user   = {'first':  username,
-                      'second': username2 },
-            form=kwargs)
-        (content_fname, headers) = report.reply()
-        try:
-            content=open(content_fname, 'r').read()
-            for key,value in headers.items():
-                cherrypy.response.headers[key]=value
-            return content
-        except (IOError, TypeError):
-            cherrypy.response.headers['Content-Type']='text/plain'
-            return "Something went wrong generating content.  That's all I know."
+        if (report_type == 'html'):
+            return "HTML report... coming soon!"
+        else:
+            report=LabbFull(
+                units  = {'in'  : inunits,
+                          'out' : outunits},
+                sample = {'name': samplename,
+                          'date': sampledate,
+                          'location': samplelocation },
+                user   = {'first':  username,
+                          'second': username2 },
+                form   = kwargs)
+            (content_fname, headers) = report.reply()
+            try:
+                content=open(content_fname, 'r').read()
+                for key,value in headers.items():
+                    cherrypy.response.headers[key]=value
+                return content
+            except (IOError, TypeError):
+                cherrypy.response.headers['Content-Type']='text/plain'
+                return "Something went wrong generating content.  That's all I know."
+
     report.exposed = True
 
 
