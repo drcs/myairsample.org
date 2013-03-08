@@ -16,13 +16,13 @@ class Root():
     index.exposed = True
 
     def report(self,
-               report_type,
-               inunits    = 'ppb',
-               outunits   = 'ppb',
-               username   = '',
-               username2  = '',
-               samplename = '',
-               sampledate = '',
+               report_type    = 'pdf',
+               inunits        = 'ppb',
+               outunits       = 'ppb',
+               username       = '',
+               username2      = '',
+               samplename     = '',
+               sampledate     = '',
                samplelocation = '',
                **kwargs):
         """Handles "submit" actions from the main entry form"""
