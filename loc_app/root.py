@@ -9,11 +9,13 @@ from labb_full    import LabbFull
 from labb_brief   import LabbBrief
 from labb_summary import LabbSummary
 
+from standard     import all_standards
+
 class Root():
     def index(self):
         """Serves the landing page, including entry form"""
         tmpl = loader.load('index.html')
-        page = tmpl.generate()
+        page = tmpl.generate(all_standards=all_standards)
         return page.render('html', doctype='html')
     index.exposed = True
 

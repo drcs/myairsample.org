@@ -99,12 +99,9 @@
 	      <li>
 		<input type="radio" name="standards_source" value="single" checked="checked">one set of standards</input>
 		<select name="standards">
-		  <!-- FIXME generate these -->
-		  <option value="lastds">Louisiana Ambient Air Standards</option>
-		  <option value="ncstds">North Carolina Ambient Air Standards</option>
-		  <option value="tesl">Texas Effects Screening Levels</option>
-		  <option value="r6sls">EPA Region 6 Screening Levels</option>
-		  <option value="ATSDRMRLs">ATSDR Minimal Risk Levels</option>
+		  <option py:for="key in all_standards.keys()" value="${key}">
+		    ${all_standards[key].oneline_description()}
+		  </option>
 		</select>
 	      </li>
 	      <li><input type="radio" name="standards_source" value="above">all standards your sample is above</input></li>

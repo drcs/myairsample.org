@@ -59,6 +59,9 @@ class Standard():
     def description(self):
         return self._description
 
+    def oneline_description(self):
+        return self._description.split("\n")[0]
+
     def prefetch(self, l_cas):
         reader = self._f_csv_reader()
         for row in reader:
@@ -94,4 +97,6 @@ class Standard():
                                              dialect=self._csv_dialect)
         self._fh_data.seek(0)
         return self._csv_reader
+
+all_standards=read_standards_directory(['datatables','standards'])
 
