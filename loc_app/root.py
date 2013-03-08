@@ -5,7 +5,9 @@ import cherrypy
 from genshi.template import TemplateLoader
 loader = TemplateLoader(os.path.join(current_dir, 'templates'), auto_reload=True)
 
-from labb_full import LabbFull
+from labb_full    import LabbFull
+from labb_brief   import LabbBrief
+from labb_summary import LabbSummary
 
 class Root():
     def index(self):
@@ -29,7 +31,13 @@ class Root():
         if (report_type == 'html'):
             return "HTML report... coming soon!"
         else:
-            report=LabbFull(
+            report_class = LabbSummary
+            report_map = {'single': LabbBrief,
+                          'above':  LabbSummary,
+                          'all':    LabbFull}
+            if 'standards_source' in kwargs and kwargs['standards_source'] in report_map:
+                report_class=report_map[kwargs['standards_source']]
+            report=report_class(
                 units  = {'in'  : inunits,
                           'out' : outunits},
                 sample = {'name': samplename,

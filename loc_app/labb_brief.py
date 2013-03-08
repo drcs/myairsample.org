@@ -52,9 +52,10 @@ Unit conversions failed.  (Try ppb or \micro g/m$^3$?)
 class LabbBrief(LabbReport):
 
     def _standards_from_form_data(self, form):
-        # return [ 'ncstds' ]
-        requested = form.getvalue('reflevel')
-        return [ requested ]
+        requested = [ 'ncstds' ]
+        if 'standards' in form:
+            requested = [ form['standards'] ]
+        return requested
 
     def _should_report_comparison(self, chemical, comparison):
         return True
