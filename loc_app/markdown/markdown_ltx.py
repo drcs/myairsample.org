@@ -11,6 +11,8 @@ class MarkdownLtx(Markdown):
 
     def __init__(self, *args, **kwargs):
         Markdown.__init__(self, args, kwargs)
+        if 'extensions' in kwargs:
+            self.registerExtensions(kwargs['extensions'], {})
         self.serializer=_write_latex
         self.stripTopLevelTags = False
 
@@ -44,6 +46,12 @@ def _serialize_latex(write, elem):
         for e in elem:
             _serialize_latex(write, e)
         write("}")
+    elif tag=="sup":
+        write(r'$^{')
+        write(_ltx_escape(text))
+        for e in elem:
+            _serialize_latex(write, e)
+        write(r'}$')
     else:
         write(_ltx_escape(text))
         for e in elem:

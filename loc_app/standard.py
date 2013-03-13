@@ -1,4 +1,3 @@
-
 import csv, json, os
 from util import canonical_name
 

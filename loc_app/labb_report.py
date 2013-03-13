@@ -1,6 +1,7 @@
 
 from report import LocReport
-from markdown_ltx import MarkdownLtx
+from markdown.markdown_ltx import MarkdownLtx
+from markdown.superscript import SuperscriptExtension
 from sys import stdout
 import os
 from tempfile import NamedTemporaryFile
@@ -11,7 +12,7 @@ ltx_special_chars=maketrans(r'_$^&', "----")
 class LatexTemplate(Template):
     delimiter='\subst'
 
-md=MarkdownLtx()
+md=MarkdownLtx(extensions=[SuperscriptExtension()])
 
 def should_cleanup():
     try:
