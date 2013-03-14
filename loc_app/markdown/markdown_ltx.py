@@ -2,10 +2,16 @@
 Extends Markdown with a Latex output type.
 """
 
-from markdown import Markdown, util
+from markdown import Markdown, util, inlinepatterns, postprocessors
+import re
 
 ElementTree = util.etree.ElementTree
 Comment = util.etree.Comment
+
+class ConvertEntitiesPostProcessor(postprocessors.Postprocessor):
+
+    def run(self, text):
+        return re.sub('&(.+);',lambda(m):'$\\' + m.group(1) + '$',text)
 
 class MarkdownLtx(Markdown):
 
@@ -15,6 +21,7 @@ class MarkdownLtx(Markdown):
             self.registerExtensions(kwargs['extensions'], {})
         self.serializer=_write_latex
         self.stripTopLevelTags = False
+        self.postprocessors.add('entities_to_macros', ConvertEntitiesPostProcessor(), '_end')
 
 def _serialize_latex(write, elem):
     tag = elem.tag
