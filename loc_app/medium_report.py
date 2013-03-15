@@ -1,8 +1,8 @@
 
 from loc.report import LocReport
-from markdown import Markdown
 from sys import stdout
 from tempfile import NamedTemporaryFile
+from markdown import Markdown
 from markdown.superscript import SuperscriptExtension
 
 from genshi.template import TemplateLoader

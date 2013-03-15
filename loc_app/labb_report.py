@@ -1,7 +1,7 @@
 
 from report import LocReport
-from markdown.markdown_ltx import MarkdownLtx
-from markdown.superscript import SuperscriptExtension
+from loc_markdown.markdown_ltx import MarkdownLtx
+from loc_markdown.superscript  import SuperscriptExtension
 from sys import stdout
 import os
 from tempfile import NamedTemporaryFile
