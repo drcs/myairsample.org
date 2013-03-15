@@ -56,40 +56,20 @@ class LabbReport(LocReport):
             'samplename':       self.sample()['name'],
             'sampledate':       self.sample()['date'],
             'samplelocation':   self.sample()['location'],
-            'resultssection':   self._results_section()
+            'resultssection':   self._results_section(),
+            'standardblurbs':   self._standards_blurbs(),
         }
         print >>fh, template.substitute(values)
 
-        fh_null = open('/dev/null', 'w')
-
-        # Standards descriptions
-        print >>fh_null, r"""
-\unitssection
-
-\section*{Sample screening levels}
-
-\highlightbox{Some government agencies have developed standards and screening levels for
-toxic chemicals in the air based on health information about the chemicals.
-There is no information available for some toxic chemicals. The agencies are
-listed below, with a brief description of the methods used in establishing their
-levels. States may not be required to adhere to national standards.}
-
-\begin{itemize}
-"""
+    def _standards_blurbs(self):
+        result = ''
         for standard in self.standards():
             description = self.standards()[standard].description()
             if description is not None:
-                print >>fh_null, '\item ' + md.convert(description)
+                result += '\item ' + md.convert(description)
             else:
-                print >>fh_null, '\item ' + standard + ': description not available'
-
-
-        print >>fh_null,"""
-\end{itemize}
-
-
-\end{document}
-"""
+                result += '\item ' + standard + ': description not available'
+        return result
 
     def generate(self):
         image_dir = os.path.join(os.getcwd(), 'loc_app', 'data', 'media')

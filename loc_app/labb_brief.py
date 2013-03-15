@@ -101,4 +101,3 @@ class LabbBrief(LabbReport):
 
         return result_section_template.substitute({'results': join(reports + failed_lookups + failed_conversions)})
 
-
