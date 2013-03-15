@@ -75,20 +75,14 @@
 		<p>Units your measured values are in (input)</p> <!-- FIXME blue mark here -->
 		Select
 		<select name="inunits">
-		  <!-- FIXME dynamically generate these... -->
-		  <option value="ppb" selected="">ppb</option>
-		  <option value="ppbv">ppbv</option>
-		  <option value="ug/m3">&micro;g/m<sup>3</sup></option>
+		  <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
 		</select>
 	      </div>
 	      <div>
 		<p>Units you would like your report in (output)</p> <!-- FIXME blue mark here -->
 		Select
 		<select name="outunits">
-		  <!-- FIXME dynamically generate these... -->
-		  <option value="ppb" selected="">ppb</option>
-		  <option value="ppbv">ppbv</option>
-		  <option value="ug/m3">&micro;g/m<sup>3</sup></option>
+		  <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
 		</select>
 	      </div>
 	    </div>

@@ -4,7 +4,7 @@ from util         import describe_comparison,convert_units,fmt_sigfigs
 from sys          import stdout
 from locale       import getlocale,setlocale,LC_ALL
 
-import re, os
+import re, os, units
 
 all_standards=read_standards_directory(['datatables','standards'])
 
@@ -126,32 +126,20 @@ class LocReport():
                      'level' : form[report_par] if report_par in form else 'NA' }
 
         return map (chem_lookup, chem_used_keys)
+
+    def _markdown_convert(self, string):
+        return string
         
     def _represent_units(self, name):
         """Given a key 'name', return a markdown representation of how that
         unit should be represented in the output
         """
-        unit_representations = self._unit_representations()
-
-        if name in unit_representations:
-            return (unit_representations[name])
-        else:
-            return (name)
-
+        return self._markdown_convert(units.represent(name))
+        
     def _describe_units(self, name):
         """Given a key 'name', return a markdown description of those units
         """
-        unit_descriptions = self._unit_descriptions()
-        if name in unit_descriptions:
-            return (unit_descriptions[name])
-        else:
-            return (name)
-
-    def _unit_representations(self):
-        return {}
-    
-    def _unit_descriptions(self):
-        return {}
+        return self._markdown_convert(units.describe(name))
 
     def failed_lookups(self):
         return self._failed_lookups
