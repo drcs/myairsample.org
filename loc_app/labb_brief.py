@@ -2,7 +2,7 @@
 LABB report (PDF format), following Gwen's "brief comparison" style
 """
 
-from labb_report import LabbReport, LatexTemplate, ltx_tr, md
+from labb_report import LabbReport, LatexTemplate, md
 from string import join
 
 result_section_template = LatexTemplate(r"""

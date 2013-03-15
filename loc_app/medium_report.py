@@ -3,6 +3,7 @@ from loc.report import LocReport
 from markdown import Markdown
 from sys import stdout
 from tempfile import NamedTemporaryFile
+from markdown.superscript import SuperscriptExtension
 
 from genshi.template import TemplateLoader
 from genshi import HTML
@@ -13,13 +14,13 @@ from genshi import HTML
 loader = TemplateLoader('.')
 tmpl = loader.load('report-templates/medium.html')
 
-md_converter=Markdown()
-
-def md(str):
-    return HTML(md_converter.convert(str))
+md=Markdown(extensions=[SuperscriptExtension()])
 
 class MediumReport(LocReport):
     
+    def _markdown_convert(self, string):
+        return HTML(md.convert(string))
+
     def generate(self, fh=None):
         if fh is None:
             fh = NamedTemporaryFile(delete=False)
@@ -39,7 +40,4 @@ class MediumReport(LocReport):
 
     def http_headers(self):
         return {"Content-type:", "text/html; charset=utf-8"}
-
-    def _unit_representations(self):
-        return {'ug/m3' :   '&micro;g/m<sup>3</sup>'}
 

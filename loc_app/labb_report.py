@@ -12,8 +12,6 @@ ltx_special_chars=maketrans(r'_$^&', "----")
 class LatexTemplate(Template):
     delimiter='\subst'
 
-md=MarkdownLtx(extensions=[SuperscriptExtension()])
-
 def should_cleanup():
     try:
         if os.environ['CLEANUP'] == 'no':
@@ -31,10 +29,12 @@ def cleanup(fname):
         except OSError:
             pass
 
-def ltx_tr(xs):
-    return str.join(' & ',map(str,xs)) + r'\\'
+md=MarkdownLtx(extensions=[SuperscriptExtension()])
 
 class LabbReport(LocReport):
+
+    def _markdown_convert(self, string):
+        return md.convert(string)
 
     def generate_tex(self, fh=stdout):
 
@@ -119,19 +119,13 @@ levels. States may not be required to adhere to national standards.}
     def http_headers(self):
         username = self.user('first')
         if self.user('second'): username = username + '_' + self.user('second')
-
+ 
         if self._pdflatex_stat:
             return {"Content-type": "text/plain"}
         else:
             return {"Content-type":        "application/pdf",
                     "Content-disposition": "attachment; filename=LABB-%s.pdf" % username}
+ 
 
-    def _unit_representations(self):
-        return {'ug/m3' :   '{\micro g/m\cubed}'}
-
-    def _unit_descriptions(self):
-        return {'ug/m3' : 'micrograms per cubic meter',
-                'ppbv'  : 'parts per billion by volume',
-                'ppb'   : 'parts per billion'}
     
 
