@@ -1,5 +1,7 @@
++ honor standards selection
++ implement 'blue question marks'
++ style the index page
++ templatize the html report
 + standards.py: clean up whitespace in datatables
-+ implement chemical descriptions from ATSDR ToxFAQ's
 + implement links in PDF documents (and markdown_ltx)
-+ use markdown for unit representations
 

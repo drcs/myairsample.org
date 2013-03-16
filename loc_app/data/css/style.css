@@ -1,0 +1,10 @@
+ul {
+    list-style: none;
+}
+
+a {
+    color: red;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans;
+}

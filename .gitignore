@@ -3,3 +3,4 @@
 bucket-template.log
 *.pyc
 *~
+site.log

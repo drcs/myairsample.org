@@ -1,46 +1,4 @@
 
-from loc.report import LocReport
-from loc.markdown_ltx import MarkdownLtx
-from sys import stdout
-import os
-from tempfile import NamedTemporaryFile
-
-md=MarkdownLtx()
-
-def should_cleanup():
-    try:
-        if os.environ['CLEANUP'] == 'no':
-            return False
-        else:
-            return True
-    except KeyError:
-        return True
-
-# cleanup
-def cleanup(fname):
-    if should_cleanup():
-        try:
-            os.remove(fname)
-        except OSError:
-            pass
-
-def ltx_tr(xs):
-    return str.join(' & ',map(str,xs)) + r'\\'
-
-class LabbReport(LocReport):
-
-    def generate_tex(self, fh=stdout):
-
-        def ltx_def(name,value):
-            print >>fh, '\\newcommand{\\' + name + r"} {" + value + "} \n"
-
-        def ltx_def_if(name, value, default=None):
-            if value is not None:
-                ltx_def(name, value)
-            elif default is not None:
-                ltx_def(name, default)
-
-        print >>fh,r"""
 \documentclass{article}
 
 \usepackage{fancyhdr, graphicx, pslatex, array}
@@ -93,28 +51,22 @@ class LabbReport(LocReport):
 \setlength{\arrayrulewidth}{1.5pt}
 
 \newcommand{\cubed}{$^3$}
-\newcommand{\micro}{$\mu$}
+\newcommand{\micro}{\ensuremath{\mu}}
 \newcommand{\fc}{\cellcolor{salmon}}
 \newcommand{\nfc}{\cellcolor{white}}
 \definecolor{salmon}{rgb}{1.0,0.8,0.7}
 \newcommand{\highlightbox}[1]{\colorbox{salmon}{\parbox{\linewidth}{#1}}}
-"""
 
-        ltx_def('inunits',  self.units('in_rep'))
-        ltx_def('outunits', self.units('out_rep'))
-        ltx_def('longinunits',  self.units('in_long'))
-        ltx_def('longoutunits', self.units('out_long'))
+\newcommand{\inunits}        {\subst{inunits}} 
+\newcommand{\outunits}       {\subst{outunits}} 
+\newcommand{\longinunits}    {\subst{longinunits}} 
+\newcommand{\longoutunits}   {\subst{longoutunits}} 
+\newcommand{\samplename}     {\subst{samplename}} 
+\newcommand{\sampledate}     {\subst{sampledate}} 
+\newcommand{\samplelocation} {\subst{samplelocation}} 
+\newcommand{\user}           {\subst{user}}
 
-        ltx_def_if('samplename',     self.sample()['name'])
-        ltx_def_if('sampledate',     self.sample()['date'])
-        ltx_def_if('samplelocation', self.sample()['location'])
 
-        user=""
-        if self.user('first'):  user = 'For ' + self.user('first')
-        if self.user('second'): user = user + r'\\ ' + self.user('second')
-        ltx_def('user', user)
-
-        print >>fh,r"""
 \begin{document}
 
 \title{Levels of Concern Report}
@@ -162,11 +114,9 @@ volume of the box (1 m\cubed), or 3 \micro g /m\cubed. Like grains of sand, chem
 reported by weight and volume. For example, a monitor might read 5 \micro g /m\cubed\ %
 benzene, or 5 \micro g of benzene in 1 m\cubed\ of air.
 }
-"""
-        self._results_section(fh)
 
-        # Standards descriptions
-        print >>fh, r"""
+\subst{resultssection}
+
 \unitssection
 
 \section*{Sample screening levels}
@@ -178,63 +128,8 @@ listed below, with a brief description of the methods used in establishing their
 levels. States may not be required to adhere to national standards.}
 
 \begin{itemize}
-"""
-        for standard in self.standards():
-            description = self.standards()[standard].description()
-            if description is not None:
-                print >>fh, '\item ' + md.convert(description)
-            else:
-                print >>fh, '\item ' + standard + ': description not available'
-
-
-        print >>fh,"""
+\subst{standardblurbs}
 \end{itemize}
 
-
 \end{document}
-"""
-
-    def generate(self):
-        image_dir = os.path.join(os.getcwd(), 'media')
-        try:
-            texinputs_env=os.environ['TEXINPUTS']
-        except KeyError:
-            texinputs_env=""
-        os.environ["TEXINPUTS"]=image_dir + ":" + texinputs_env
-            
-        outfile=NamedTemporaryFile(delete=should_cleanup(),suffix=".tex")
-
-        self.generate_tex(outfile)
-        outfile.flush()
-        doc_dir=os.path.dirname(outfile.name)
-        os.chdir(doc_dir)
-        self._pdflatex_stat=os.system("pdflatex -interaction nonstopmode " + outfile.name + ">& /dev/null")
-        doc_basename=os.path.splitext(outfile.name)[0]
-
-        cleanup(doc_basename + '.aux')
-
-        if self._pdflatex_stat:
-            return doc_basename + '.log'
-        else:
-            cleanup(doc_basename + '.log')
-            return doc_basename + '.pdf'
-
-    def http_headers(self):
-        username = self.user('first')
-        if self.user('second'): username = username + '_' + self.user('second')
-
-        if self._pdflatex_stat:
-            return ["Content-type: text/plain"]
-        else:
-            return ["Content-type: application/pdf",
-                    "Content-disposition: attachment; filename=LABB-%s.pdf" % username]
-
-    def _unit_representations(self):
-        return {'ug/m3' :   '{\micro g/m\cubed}'}
-
-    def _unit_descriptions(self):
-        return {'ug/m3' : 'micrograms per cubic meter',
-                'ppbv'  : 'parts per billion by volume',
-                'ppb'   : 'parts per billion'}
-    
 

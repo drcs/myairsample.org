@@ -6,10 +6,10 @@ from labb_brief import LabbBrief
 
 class LabbSummary(LabbBrief):
 
-    def _standards_from_cgi(self, form):
-        if form.getvalue('laonly') == 'on':
+    def _standards_from_form_data(self, form):
+        if 'laonly' in form and form['laonly'] == 'on':
             return ['lastds']
-        elif form.getvalue('nconly') == 'on':
+        elif 'nconly' in form and form['nconly'] == 'on':
             return ['ncstds']
         else:
             return None   # In this case 'None' means 'all'.

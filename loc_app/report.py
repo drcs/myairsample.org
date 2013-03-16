@@ -1,10 +1,10 @@
-from loc.synonyms import name2cas,cas2mw
-from loc.standard import read_standards_directory
-from loc.util     import describe_comparison,convert_units,fmt_sigfigs
+from synonyms     import name2cas,cas2mw
+from standard     import read_standards_directory
+from util         import describe_comparison,convert_units,fmt_sigfigs
 from sys          import stdout
 from locale       import getlocale,setlocale,LC_ALL
 
-import re, os
+import re, os, units
 
 all_standards=read_standards_directory(['datatables','standards'])
 
@@ -16,25 +16,16 @@ class LocReport():
     """
 
     def __init__(self,
-                 form       = None,     # a form containing cgi input
-                 chemicals  = None,
-                 standards  = None,
                  units      = None,
-                 user       = None,     # can contain: first, second
-                 sample     = None):    # can contain: location, date, name
+                 sample     = None,
+                 user       = None,
+                 form       = {}):  # any remaing form data; contains i.e. chemicals
         """
         'chemicals': list of common names of chemicals to report on
         'criteria':  list of names of criterion sources
         """
-        if form:
-            cgi_pars  = self._pull_from_cgi(form)
-            
-            chemicals = cgi_pars['chemicals']
-            user      = cgi_pars['user']
-            units     = cgi_pars['units']
-            sample    = cgi_pars['sample']
-            standards = self._standards_from_cgi(form)
-
+        chemicals = self._chemicals_from_form_data(form)
+        
         # Default parameters
         if chemicals is None: chemicals = []
         if sample    is None: sample    = {}
@@ -54,6 +45,8 @@ class LocReport():
         for k in sample.keys(): self._sample[k] = sample[k]
 
         self._user=user
+
+        standards = self._standards_from_form_data(form)
 
         # Remember requested standards; if none specified, use all available
         if standards is None:
@@ -112,66 +105,41 @@ class LocReport():
                         except TypeError:
                             self._failed_conversions.append(chemical['name'])
 
-    def _standards_from_cgi(self, form):
+    def _standards_from_form_data(self, form):
         """
         report base class just uses all available standards.
         """
         return all_standards.keys()
 
-    def _pull_from_cgi(self, form):
-        """PUll the report parameters from expected locations in an HTML form.
-        """
-        result = {}
-
+    def _chemicals_from_form_data(self, form):
         # look for all 'chem*' parameters that have a corresponding 'report*' parameter
         chem_pattern = re.compile('^chem(\d+)$')
-        
+
+        chem_all_keys  = filter (chem_pattern.match, form.keys())
+        chem_used_keys = filter (lambda k: form[k], chem_all_keys)
+        chem_used_keys.sort()
+
         def chem_lookup(chem_par):
             n = chem_pattern.findall(chem_par)[0]
             report_par = 'report' + n
-            return { 'name'  : form[chem_par].value.lower(),
-                     'level' : form[report_par].value if report_par in form else 'NA' }
+            return { 'name'  : form[chem_par].lower(),
+                     'level' : form[report_par] if report_par in form else 'NA' }
 
-        result['chemicals'] = map (chem_lookup, filter (chem_pattern.match, form.keys()))
-        result['chemicals'].sort(key=lambda c:c['name'])
-        result['units']     = {'in'  : form.getvalue('inunits'),
-                               'out' : form.getvalue('outunits')}
+        return map (chem_lookup, chem_used_keys)
 
-        result['user']      = {'first':  form.getvalue('tablename')  or '',
-                               'second': form.getvalue('tablename2') or ''}
-
-        result['sample']    = {'name':   form.getvalue('samplename'),
-                               'date':   form.getvalue('sampledate'),
-                               'location': form.getvalue('samplelocation')
-                              }
-
-        return result
-
+    def _markdown_convert(self, string):
+        return string
+        
     def _represent_units(self, name):
         """Given a key 'name', return a markdown representation of how that
         unit should be represented in the output
         """
-        unit_representations = self._unit_representations()
-
-        if name in unit_representations:
-            return (unit_representations[name])
-        else:
-            return (name)
-
+        return self._markdown_convert(units.represent(name))
+        
     def _describe_units(self, name):
         """Given a key 'name', return a markdown description of those units
         """
-        unit_descriptions = self._unit_descriptions()
-        if name in unit_descriptions:
-            return (unit_descriptions[name])
-        else:
-            return (name)
-
-    def _unit_representations(self):
-        return {}
-    
-    def _unit_descriptions(self):
-        return {}
+        return self._markdown_convert(units.describe(name))
 
     def failed_lookups(self):
         return self._failed_lookups
@@ -200,8 +168,11 @@ class LocReport():
         else:
             return None
 
-    def http_reply(self):
-        content_fname=self.generate()
+    def reply(self):
+        content_fname = self.generate()
+        headers       = self.http_headers()
+
+        return (content_fname, headers)
 
         try:
             fh = open(content_fname)
