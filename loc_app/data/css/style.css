@@ -1,10 +1,93 @@
+body, html {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
 ul {
-    list-style: none;
+    list-style:  none;
 }
 
 a {
-    color: red;
+    color: green;
     text-transform: uppercase;
     text-decoration: none;
     font-family: sans;
+}
+
+div#header {
+    width:  100%;
+    float:  left;
+    border-bottom: 5px solid green;
+    border-top: 10px solid green;
+}
+
+div#header #titles { float: left;  }
+div#header #logos  { float: right; }
+
+div#logos ul {
+    float:    left;
+}
+
+div#logos ul li {
+    float:    left;
+}
+
+div#logos img {
+    width:   150px;
+}
+
+div#nav {
+    position:  relative;
+    width:     100%;
+    float:     left;
+    border-bottom: 5px solid green;
+}
+
+div.centering {
+    position:  relative;
+    clear:     left;
+    float:     left;
+    right:     50%;
+}
+
+div#nav ul {
+    float:     left;
+    position:  relative;
+    left:      100%;
+    margin:    0;
+    padding:   0;
+    list-style: none;
+    text-align: center;
+}
+
+div#nav ul li {
+    float:        left;
+    margin-left:  0.5em;
+    margin-right: 0.5em;
+    padding:      0.5em;
+}
+
+div#nav ul li:hover {
+    background-color: #cccccc;
+}
+
+div#main {
+    width: 100%;
+}
+
+div#input_container {
+    width: 100%;
+    float: left;
+    margin-right: -550px;
+}
+
+div#input {
+    float: left;
+    margin-right: 500px;
+}
+
+div#sidebar {
+    float: right;
+    width: 500px;
 }

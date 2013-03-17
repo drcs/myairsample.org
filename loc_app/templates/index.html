@@ -7,8 +7,10 @@
   </head>
   <body>
     <div id="header">
-      <h1>MyAirSample.org</h1>
-      <h2>An online tool to compare air data to pollutant levels of concern</h2>
+      <div id="titles">
+	<h1>MyAirSample.org</h1>
+	<h2>An online tool to compare air data to pollutant levels of concern</h2>
+      </div>
       <div id="logos">
 	<ul>
 	  <li><a href="#"><img src="media/labb_logo.png" alt="LABB logo"></img></a></li>
@@ -17,103 +19,106 @@
       </div>
     </div>
     <div id="nav">
-      <ul>
-	<li><a href="/create_report">Create a report</a></li>
-	<li><a href="/about/levels">About the levels of concern</a></li>
-	<li><a href="/faqs">FAQs</a></li>
-	<li><a href="/about/tool">About this tool</a></li>
-	<li><a href="/contact">Contact us</a></li>
-	<li><a href="/about/implementation">Technical details</a></li>
-      </ul>
+      <div class="centering">
+	<ul>
+	  <li><a href="/create_report">Create a report</a></li>
+	  <li><a href="/about/levels">About the levels of concern</a></li>
+	  <li><a href="/faqs">FAQs</a></li>
+	  <li><a href="/about/tool">About this tool</a></li>
+	  <li><a href="/contact">Contact us</a></li>
+	  <li><a href="/about/implementation">Technical details</a></li>
+	</ul>
+      </div>
     </div>
     <div id="main">
-      <div id="input">
-	<form method="post" action="/report/">
-	  <div id="left_form_panel">
-	    <div>
-	      <h4>1.</h4>
-	      <table>
-		<tr>
-		  <td>Chemical name</td>
-		  <td>Measured value</td>
-		</tr>
-		<tr>
-		  <td><input name="chem1"/></td>
-		  <td><input name="report1"/></td>
-		</tr>
-		<tr>
-		  <td><input name="chem2"/></td>
-		  <td><input name="report2"/></td>
-		</tr>
-		<tr>
-		  <td><input name="chem3"/></td>
-		  <td><input name="report3"/></td>
-		</tr>
-	      </table>
-	    </div>
-	    <div>
-	      <h4>2. Report Title</h4>
-	      <table>
-		<tr>
-		  <td>Organization name 1</td><td><input name="username"/></td>
-		</tr>
-		<tr>
-		  <td>Organization name 2</td><td><input name="username2"/></td>
-		</tr>
-	      </table>
-	    </div>
-	    <!-- sample information -->
-	    Sample identifying name
-	    <input name="samplename"></input>
-	    Date sample was taken
-	    <input name="sampledate"></input>
-	    Location sample was taken at
-	    <input name="samplelocation"></input>
-	    <!-- units -->
-	    <div>
-	      <div> <!-- input units -->
-		<p>Units your measured values are in (input)</p> <!-- FIXME blue mark here -->
-		Select
-		<select name="inunits">
-		  <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
-		</select>
+      <div id="input_container">
+	<div id="input">
+	  <form method="post" action="/report/">
+	    <div id="left_form_panel">
+	      <div>
+		<h4>1.</h4>
+		<table>
+		  <tr>
+		    <td>Chemical name</td>
+		    <td>Measured value</td>
+		  </tr>
+		  <tr>
+		    <td><input name="chem1"/></td>
+		    <td><input name="report1"/></td>
+		  </tr>
+		  <tr>
+		    <td><input name="chem2"/></td>
+		    <td><input name="report2"/></td>
+		  </tr>
+		  <tr>
+		    <td><input name="chem3"/></td>
+		    <td><input name="report3"/></td>
+		  </tr>
+		</table>
 	      </div>
 	      <div>
-		<p>Units you would like your report in (output)</p> <!-- FIXME blue mark here -->
-		Select
-		<select name="outunits">
-		  <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
-		</select>
+		<h4>2. Report Title</h4>
+		<table>
+		  <tr>
+		    <td>Organization name 1</td><td><input name="username"/></td>
+		  </tr>
+		  <tr>
+		    <td>Organization name 2</td><td><input name="username2"/></td>
+		  </tr>
+		</table>
+	      </div>
+	      <!-- sample information -->
+	      Sample identifying name
+	      <input name="samplename"></input>
+	      Date sample was taken
+	      <input name="sampledate"></input>
+	      Location sample was taken at
+	      <input name="samplelocation"></input>
+	      <!-- units -->
+	      <div>
+		<div> <!-- input units -->
+		  <p>Units your measured values are in (input)</p> <!-- FIXME blue mark here -->
+		  Select
+		  <select name="inunits">
+		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
+		  </select>
+		</div>
+		<div>
+		  <p>Units you would like your report in (output)</p> <!-- FIXME blue mark here -->
+		  Select
+		  <select name="outunits">
+		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
+		  </select>
+		</div>
 	      </div>
 	    </div>
-	  </div>
-	  <div>
-	    <h4>3. Compare your air data to these standards: </h4>
-	    <ul>
-	      <li>
-		<input type="radio" name="standards_source" value="single" checked="checked">one set of standards</input>
-		<select name="standards">
-		  <option py:for="key in all_standards.keys()" value="${key}">
-		    ${all_standards[key].oneline_description()}
-		  </option>
-		</select>
-	      </li>
-	      <li><input type="radio" name="standards_source" value="above">all standards your sample is above</input></li>
-	      <li><input type="radio" name="standards_source" value="all">all available standards</input></li>
-	    </ul>
-	  </div>
-	  <div id="right_form_panel">
 	    <div>
-	      <h4>4. Choose report style</h4>
-	      <input type="radio" name="report_type" value="pdf" checked="checked">PDF</input>
-	      <input type="radio" name="report_type" value="html">HTML</input>
+	      <h4>3. Compare your air data to these standards: </h4>
+	      <ul>
+		<li>
+		  <input type="radio" name="standards_source" value="single" checked="checked">one set of standards</input>
+		  <select name="standards">
+		    <option py:for="key in all_standards.keys()" value="${key}">
+		      ${all_standards[key].oneline_description()}
+		    </option>
+		  </select>
+		</li>
+		<li><input type="radio" name="standards_source" value="above">all standards your sample is above</input></li>
+		<li><input type="radio" name="standards_source" value="all">all available standards</input></li>
+	      </ul>
 	    </div>
-	    <input type="submit" value="    Submit     "/>
-	  </div>
-	</form>
+	    <div id="right_form_panel">
+	      <div>
+		<h4>4. Choose report style</h4>
+		<input type="radio" name="report_type" value="pdf" checked="checked">PDF</input>
+		<input type="radio" name="report_type" value="html">HTML</input>
+	      </div>
+	      <input type="submit" value="    Submit     "/>
+	    </div>
+	  </form>
+	</div>
       </div>
       <div id="sidebar">
-	<p>
 	  Paragraph briefly describing the tool/web site -assuming we want to
 	  keep the "levels of concern" language in the headers, perhaps this
 	  paragraph can draw the connection between "levels of concern" and
@@ -121,7 +126,6 @@
 	  the report generator -- "standards" makes it easier to fit into a
 	  tight space, which in turn makes generating reports less work on the
 	  user (e.g., less scrolling)
-	</p>
       </div>
     </div>
   </body>
