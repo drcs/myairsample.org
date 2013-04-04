@@ -44,17 +44,26 @@ div#nav {
     border-bottom: 5px solid green;
 }
 
-div.centering {
-    position:  relative;
-    clear:     left;
-    float:     left;
-    right:     50%;
+.centering {
+    float:  left;
+    width:  100%;
+    position: relative;
+}
+
+.centering > * {
+    position: relative;
+    clear: left;
+    float: right;
+    right: 50%;
+}
+
+.centering > * > * {
+    position: relative;
+    float: left;
+    left: 50%;
 }
 
 div#nav ul {
-    float:     left;
-    position:  relative;
-    left:      100%;
     margin:    0;
     padding:   0;
     list-style: none;
@@ -62,7 +71,6 @@ div#nav ul {
 }
 
 div#nav ul li {
-    float:        left;
     margin-left:  0.5em;
     margin-right: 0.5em;
     padding:      0.5em;
@@ -88,6 +96,22 @@ div#input {
 }
 
 div#sidebar {
+    float: right;
+    width: 500px;
+}
+
+div#left_form_panel_container {
+    width: 100%;
+    float: left;
+    margin-right: -520px;
+}
+
+div#left_form_panel {
+    float: left;
+    margin-right: 500px;
+}
+
+div#right_form_panel {
     float: right;
     width: 500px;
 }
