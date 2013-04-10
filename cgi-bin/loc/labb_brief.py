@@ -88,7 +88,8 @@ The level in your bucket sample &                             & Comparison Level
         for name in self.failed_conversions():
             print >>fh, r'\subsection*{' + name + r"""}
 
-Unit conversions failed.  (Try ppb or ug/m3?)
+Our system cannot handle units of ppbv for """ + name + """.
+Please try units of ppb or \micro g/m\cubed.
 """
 
 
