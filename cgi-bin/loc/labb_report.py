@@ -43,53 +43,22 @@ class LabbReport(LocReport):
         print >>fh,r"""
 \documentclass{article}
 
-\usepackage{fancyhdr, graphicx, pslatex, array}
+\usepackage{graphicx, pslatex, array}
 \usepackage[table]{xcolor}
 
-\raggedbottom
 \widowpenalty=1000
 \clubpenalty=1000
 
-\newcommand{\stdfooter}{%
-  \fancyhf{}
-  \fancyhfoffset{0.2in}
-  \fancyfoot[L]{
-     \parbox{\logowidth}{
-       \includegraphics[width=\logowidth]{labb_logo}\\
-       \vskip 0.1in
-       \includegraphics[width=\logowidth]{drcs_logo-200}
-     }
-     \setlength\acklength{\textwidth}
-     \addtolength\acklength{-\logowidth}
-     \addtolength\acklength{-0.5in}
-     \hskip 0.5in
-     \parbox{\acklength}{
-       This report was generated at www.myairsample.org, a site developed and
-       maintained by the Louisiana Bucket Brigade and Digitial Resources for
-       Community and Science.  For questions and comments about air data,
-       Louisiana Bucket Brigade can contacted at www.labucketbrigade.org,
-       4226 Canal St, New Orleans, LA 70119, phone: 504-484-3433, fax:
-       504-324-0332, email: info@labucketbrigade.org.
-       For comments, feedback, or errors in the web site,
-       please contact the LA Bucket Brigade or email Digital Resources for
-       Community and Science at drcsdirector@gmail.com
-     }
-  }
-}
-
-\fancypagestyle{plain}{\stdfooter}
-\pagestyle{empty}
-% \pagestyle{fancy}
-\stdfooter
+\pagestyle{plain}
 
 \setlength{\parindent}{0pt}%
 \setlength{\parskip}{\baselineskip}%
 \setlength{\oddsidemargin}{0in}
 \setlength{\textwidth}{6.5in}
+\setlength{\textheight}{8.5in}
 \newlength\acklength
 \newlength\logowidth
 \setlength\logowidth{1.8in}
-\addtolength\voffset{-0.5in}
 
 \setlength{\arrayrulewidth}{1.5pt}
 
@@ -168,6 +137,33 @@ reported by weight and volume. For example, a monitor might read 5 \micro g /m\c
 benzene, or 5 \micro g of benzene in 1 m\cubed\ of air.
 }
 """
+
+        print >>fh, r"""
+     \vfill
+     \parbox{\logowidth}{
+       \includegraphics[width=\logowidth]{labb_logo}\\
+       \vskip 0.1in
+       \includegraphics[width=\logowidth]{drcs_logo-200}
+     }
+     \setlength\acklength{\textwidth}
+     \addtolength\acklength{-\logowidth}
+     \addtolength\acklength{-0.5in}
+     \hskip 0.5in
+     \parbox{\acklength}{
+       This report was generated at www.myairsample.org, a site developed and
+       maintained by the Louisiana Bucket Brigade and Digitial Resources for
+       Community and Science.  For questions and comments about air data,
+       Louisiana Bucket Brigade can contacted at www.labucketbrigade.org,
+       4226 Canal St, New Orleans, LA 70119, phone: 504-484-3433, fax:
+       504-324-0332, email: info@labucketbrigade.org.
+       For comments, feedback, or errors in the web site,
+       please contact the LA Bucket Brigade or email Digital Resources for
+       Community and Science at drcsdirector@gmail.com
+     }
+
+\thispagestyle{empty}
+"""
+
         self._results_section(fh)
 
         # Standards descriptions
