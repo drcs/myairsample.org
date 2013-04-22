@@ -84,36 +84,69 @@ div#nav ul li:hover {
 
 div#main {
     width: 100%;
+    clear: both;
 }
 
-div#input_container {
-    width: 100%;
+#main > form > div {
     float: left;
-    margin-right: -550px;
 }
 
-div#input {
+#main > p {
+    min-width: 30%;
+}
+
+#main > form > div > fieldset {
+    width: 30em
+}
+
+#chemical_input label {
+    width:   49%;
+    display: block;
+    float:   left;
+}
+
+#chemical_input input {
+    display: block;
+}
+
+#user_input label {
+    display: block;
+}
+
+#user_input input {
+}
+
+#sample_info label {
+    display: block;
+}
+
+#sample_info input {
+    display: block;
+}
+
+#units_choice label {
+    display: block;
+}
+
+#units_choice p {
+    width: 50%;
     float: left;
-    margin-right: 500px;
 }
 
-div#sidebar {
-    float: right;
-    width: 500px;
+#standards_choice label {
+    display: block;
 }
 
-div#left_form_panel_container {
-    width: 100%;
-    float: left;
-    margin-right: -520px;
+#standards_choice label > input {
+    float:   left;
 }
 
-div#left_form_panel {
-    float: left;
-    margin-right: 500px;
+#report_style_choice label {
+    display: block;
+    float:   left;
+    margin-right: 2em;
 }
 
-div#right_form_panel {
-    float: right;
-    width: 500px;
+#report_style_choice label > input {
+    float:   left;
 }

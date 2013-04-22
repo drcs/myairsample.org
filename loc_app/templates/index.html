@@ -29,104 +29,118 @@
       </ul>
     </div>
     <div id="main">
-      <div id="input_container">
-	<div id="input">
-	  <form method="post" action="/report/">
-	    <div id="left_form_panel_container">
-	      <div id="left_form_panel">
-		<div>
-		  <h4>1.</h4>
-		  <table>
-		    <tr>
-		      <td>Chemical name</td>
-		      <td>Measured value</td>
-		    </tr>
-		    <tr>
-		      <td><input name="chem1"/></td>
-		      <td><input name="report1"/></td>
-		    </tr>
-		    <tr>
-		      <td><input name="chem2"/></td>
-		      <td><input name="report2"/></td>
-		    </tr>
-		    <tr>
-		      <td><input name="chem3"/></td>
-		      <td><input name="report3"/></td>
-		    </tr>
-		  </table>
-		</div>
-		<div>
-		  <h4>2. Report Title</h4>
-		  <table>
-		    <tr>
-		      <td>Organization name 1</td><td><input name="username"/></td>
-		    </tr>
-		    <tr>
-		      <td>Organization name 2</td><td><input name="username2"/></td>
-		    </tr>
-		  </table>
-		</div>
-		<!-- sample information -->
+
+      <form method="post" action="/report/">
+
+	<div id="form_panel_1">
+	    <fieldset id="chemical_input">
+	      <legend>1.</legend>
+	      <label>
+		Chemical name
+		<input name="chem1"/>
+		<input name="chem2"/>
+		<input name="chem3"/>
+	      </label>
+	      <label>
+		Measured value
+		<input name="report1"/>
+		<input name="report2"/>
+		<input name="report3"/>
+	      </label>
+	    </fieldset>
+	    <fieldset id="user_input">
+	      <legend>2. Report Title</legend>
+	      <label for="username">
+		Organization name 1
+		<input name="username"/>
+	      </label>
+	      <label for="username2">
+		Organization name 2
+		<input name="username2"/>
+	      </label>
+	    </fieldset>
+	    <!-- sample information -->
+	    <fieldset id="sample_info">
+	      <label>
 		Sample identifying name
 		<input name="samplename"></input>
+	      </label>
+	      <label>
 		Date sample was taken
 		<input name="sampledate"></input>
+	      </label>
+	      <label>
 		Location sample was taken at
 		<input name="samplelocation"></input>
-	      </div>
-	    </div>
-	    <div id="right_form_panel">
-	      <!-- units -->
-	      <div>
-		<div> <!-- input units -->
-		  <p>Units your measured values are in (input)</p> <!-- FIXME blue mark here -->
-		  Select
-		  <select name="inunits">
-		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
-		  </select>
-		</div>
-		<div>
-		  <p>Units you would like your report in (output)</p> <!-- FIXME blue mark here -->
-		  Select
-		  <select name="outunits">
-		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
-		  </select>
-		</div>
-	      </div>
-	      <div>
-		<h4>3. Compare your air data to these standards: </h4>
-		<ul>
-		  <li>
-		    <input type="radio" name="standards_source" value="single" checked="checked">one set of standards</input>
-		    <select name="standards">
-		      <option py:for="key in all_standards.keys()" value="${key}">
-			${all_standards[key].oneline_description()}
-		      </option>
-		    </select>
-		  </li>
-		  <li><input type="radio" name="standards_source" value="above">all standards your sample is above</input></li>
-		  <li><input type="radio" name="standards_source" value="all">all available standards</input></li>
-		</ul>
-	      </div>
-	      <div>
-		<h4>4. Choose report style</h4>
-		<input type="radio" name="report_type" value="pdf" checked="checked">PDF</input>
-		<input type="radio" name="report_type" value="html">HTML</input>
-	      </div>
-	      <input type="submit" value="    Submit     "/>
-	    </div>
-	  </form>
+	      </label>
+	    </fieldset>
 	</div>
-      </div>
-      <div id="sidebar">
-	  Paragraph briefly describing the tool/web site -assuming we want to
-	  keep the "levels of concern" language in the headers, perhaps this
-	  paragraph can draw the connection between "levels of concern" and
-	  "standards" so that there is not a disconnect between the headers and
-	  the report generator -- "standards" makes it easier to fit into a
-	  tight space, which in turn makes generating reports less work on the
-	  user (e.g., less scrolling)
-      </div>
+	
+	<div id="form_panel_2">
+	  <!-- units -->
+	  <fieldset id="units_choice">
+	    <p>
+	      Units your measured values are in (input) <!-- FIXME blue mark here -->
+	      <label>
+		Select
+		<select name="inunits">
+		  <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
+		</select>
+	      </label>
+	    </p>
+	    <p>Units you would like your report in (output) <!-- FIXME blue mark here -->
+	      <label>
+		Select
+		<select name="outunits">
+		  <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
+		</select>
+	      </label>
+	    </p>
+	  </fieldset>
+	  <fieldset id="standards_choice">
+	    <legend>3. Compare your air data to these standards: </legend>
+	    <label for="single">
+	      one set of standards
+	      <input type="radio" name="standards_source" value="single" checked="checked"/>
+	      <select name="standards">
+		<option py:for="key in all_standards.keys()" value="${key}">
+		  ${all_standards[key].oneline_description()}
+		</option>
+	      </select>
+	    </label>
+	    <label for="above">
+	      all standards your sample is above
+	      <input type="radio" name="standards_source" id="above"/>
+	    </label>
+	    <label for="all">
+	      all available standards
+	      <input type="radio" name="standards_source" id="all"/>
+	    </label>
+	  </fieldset>
+	  <fieldset id="report_style_choice">
+	    <legend>4. Choose report style</legend>
+	    <label>
+	      PDF
+	      <input type="radio" name="report_type" value="pdf" checked="checked"></input>
+	    </label>
+	    <label>
+	      Display on web
+	      <input type="radio" name="report_type" value="html"></input>
+	    </label>
+	  </fieldset>
+	  <input type="submit" value="    Submit     "/>
+	</div>
+      </form>
+
+      <p id="sidebar">
+	Paragraph briefly describing the tool/web site -assuming we want to
+	keep the "levels of concern" language in the headers, perhaps this
+	paragraph can draw the connection between "levels of concern" and
+	"standards" so that there is not a disconnect between the headers and
+	the report generator -- "standards" makes it easier to fit into a
+	tight space, which in turn makes generating reports less work on the
+	user (e.g., less scrolling)
+      </p>
     </div>
   </body>
 </html>
