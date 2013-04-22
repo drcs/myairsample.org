@@ -59,7 +59,10 @@ class Standard():
         return self._description
 
     def oneline_description(self):
-        return self._description.split("\n")[0]
+        if 'oneline_description' in self.meta:
+            return self.meta['oneline_description']
+        else:
+            return self._description.split("\n")[0]
 
     def prefetch(self, l_cas):
         reader = self._f_csv_reader()
