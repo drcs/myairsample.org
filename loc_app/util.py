@@ -18,12 +18,17 @@ def describe_comparison(level,reference):
     else:                  return "is _nearly_ " + str(factor + 1) + " times"
         
 def convert_units(level, from_units, to_units, mw=None):
+    mw_air = 28.9666      # g mol-1
+    R      = 8.2057e-5    # m^3 atm K-1 mol-1
+    T      = 298          # K ; standard ambient temperature
+    P      = 0.986        # atm; standard pressure
     factor = { 'ppm'         : 1.0 ,
                'ppb'         : 1000.0 ,
-               'ug/m3'       : 1198.0 ,
-               'mg/m3'       : 1.198 }
+               'ug/m3'       : mw_air * P / (R * T) ,
+               'mg/m3'       : 1000 * mw_air * P / (R * T) ,
+    }
     if ((from_units == 'ppbv') or (to_units == 'ppbv')):
-        factor['ppbv'] = 24040.0 / mw
+        factor['ppbv'] = mw_air * 1000 / mw
     return level / factor[from_units] * factor[to_units]
 
 def fmt_sigfigs(x,n=3):
