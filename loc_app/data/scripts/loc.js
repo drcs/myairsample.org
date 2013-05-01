@@ -1,6 +1,9 @@
 $( document ).ready(function () {
+    var chem_n = 4;
     $( "#add_chemicals_button" ).click(function (event) {
-	alert("hello world!");
+	$("#chemical_name_input").append($("<input />").attr("name","chem" + chem_n))
+	$("#chemical_level_input").append($("<input />").attr("name","report" + chem_n))
+	chem_n = chem_n + 1;
 	event.preventDefault();
     });
 });
