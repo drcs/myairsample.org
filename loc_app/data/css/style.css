@@ -150,3 +150,8 @@ div#main {
 #report_style_choice label > input {
     float:   left;
 }
+
+#sidebar {
+    float:   left;
+    width:   180pt;
+}
