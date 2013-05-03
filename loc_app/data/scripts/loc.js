@@ -6,4 +6,10 @@ $( document ).ready(function () {
 	chem_n = chem_n + 1;
 	event.preventDefault();
     });
+    
+    $("a.help").click(function (event) {
+	$("#help_div > div").removeClass('selected');
+	$($(this).attr('href')).addClass('selected');
+	event.preventDefault();
+    });
 });

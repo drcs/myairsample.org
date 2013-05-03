@@ -15,6 +15,14 @@ a {
     font-family: sans;
 }
 
+a.help {
+    color:       blue;
+    font-weight: bold;
+    border:      1px solid blue;
+    padding:     1px;
+    margin:      2px;
+}
+
 div#header {
     width:  100%;
     float:  left;
@@ -154,4 +162,22 @@ div#main {
 #sidebar {
     float:   left;
     width:   180pt;
+}
+
+#add_chemicals {
+    clear:   both;
+}
+
+#help_div {
+    clear:   both;
+    width:   60%;
+    margin:  auto;
+}
+
+#help_div > div {
+    display: none;
+}
+
+#help_div > div.selected {
+    display: block;
 }
