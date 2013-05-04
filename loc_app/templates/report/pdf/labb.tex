@@ -50,6 +50,10 @@
 
 \setlength{\arrayrulewidth}{1.5pt}
 
+% Allow this template to be latex'd directly.
+% Can't just say \newcommand{\ subst} because that confuses templater.
+\expandafter\newcommand\csname subst\endcsname[1]{{\bf #1}}
+
 \newcommand{\cubed}{$^3$}
 \newcommand{\micro}{\ensuremath{\mu}}
 \newcommand{\fc}{\cellcolor{salmon}}
