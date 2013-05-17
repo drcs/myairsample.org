@@ -27,7 +27,7 @@ def describe_comparison(level,reference):
        and one of Gwen's descriptive words"""
     compare = level / reference
 
-    if compare > 10:       return "is " + int(round(compare)) + " times"
+    if compare > 10:       return "is " + str(int(round(compare))) + " times"
     if compare > 1.25:     return "is " + _first_decile_comparison_description(compare)
     if compare > 1.0:      return "exceeds"
     
