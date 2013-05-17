@@ -25,7 +25,7 @@ def convert_units(level, from_units, to_units, mw=None):
     factor = { 'ppm'         : 1.0 ,
                'ppb'         : 1000.0 ,
                'ug/m3'       : mw_air * P / (R * T) ,
-               'mg/m3'       : 1000 * mw_air * P / (R * T) ,
+               'mg/m3'       : 0.001 * mw_air * P / (R * T) ,
     }
     if ((from_units == 'ppbv') or (to_units == 'ppbv')):
         factor['ppbv'] = mw_air * 1000 / mw
