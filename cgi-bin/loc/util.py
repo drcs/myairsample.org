@@ -27,7 +27,7 @@ def describe_comparison(level,reference):
        and one of Gwen's descriptive words"""
     compare = level / reference
 
-    if compare > 10:       return "is " + int(round(compare)) + " times"
+    if compare > 10:       return "is " + str(int(round(compare))) + " times"
     if compare > 1.25:     return "is " + _first_decile_comparison_description(compare)
     if compare > 1.0:      return "exceeds"
     
@@ -41,7 +41,7 @@ def convert_units(level, from_units, to_units, mw=None):
     factor = { 'ppm'         : 1.0 ,
                'ppb'         : 1000.0 ,
                'ug/m3'       : mw_air * P / (R * T) ,
-               'mg/m3'       : 1000 * mw_air * P / (R * T) ,
+               'mg/m3'       : 0.001 * mw_air * P / (R * T) ,
     }
     if ((from_units == 'ppbv') or (to_units == 'ppbv')):
         factor['ppbv'] = mw_air * 1000 / mw
