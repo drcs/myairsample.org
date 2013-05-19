@@ -12,6 +12,6 @@ class LabbFull(LabbSummary):
     def _should_report_comparison(self, chemical, comparison):
         return True
 
-    def _unreport_chemical(self, chemical, fh):
+    def _unreport_chemical(self, chemical):
         pass
 
