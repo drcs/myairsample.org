@@ -1,10 +1,34 @@
 require 'rubygems'
 require 'railsless-deploy'
 
-load 'deploy' if respond_to?(:namespace) # cap2 differentiator
-Dir['vendor/gems/*/recipes/*.rb','vendor/plugins/*/recipes/*.rb'].each { |plugin| load(plugin) }
+set :application, "air-toxics"
+set :repository,  "git://github.com/gbenison/gwenomatic.git"
+set :scm,         :git
+set :user,        "gbenison"
+set :use_sudo,    false
+set :branch,      "release/production"
+set :deploy_to,   "/home/gbenison/gwenomatic/production"
 
-load 'config/deploy' # remove this line to skip loading any of the default tasks
+# Reference: http://stackoverflow.com/questions/3023857/capistrano-and-deployment-of-a-website-from-github
+set :normalize_asset_timestamps, false
+
+role :web,        "watanabe.dreamhost.com"
+
+namespace :version do
+  desc "Beta version"
+  task :beta do
+    set :branch,      "release/beta"
+    set :deploy_to,   "/home/gbenison/gwenomatic/beta"
+  end
+  desc "Alpha version"
+  task :alpha do
+    set :branch,      "release/alpha"
+    set :deploy_to,   "/home/gbenison/gwenomatic/alpha"
+  end
+end
+
+
+load 'deploy' if respond_to?(:namespace) # cap2 differentiator
 
 namespace :deploy do
   task :restart do
