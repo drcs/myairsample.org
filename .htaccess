@@ -1,0 +1,18 @@
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^(media|css|html|scripts)/(.*)$ loc_app/data/$1/$2 [L]
+
+RewriteRule ^(.*)fcgi/ - [L]
+
+RewriteCond %{REQUEST_URI} !data/
+RewriteRule ^(.*)$ loc.fcgi/$1 [L]
+
+AuthType Basic
+AuthName "Restricted Files"
+AuthBasicProvider file
+AuthUserFile /home/gbenison/gwenomatic/passwords.alpha
+require valid-user
+
+

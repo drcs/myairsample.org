@@ -84,9 +84,11 @@ class LabbReport(LocReport):
         self.generate_tex(outfile)
         outfile.flush()
         doc_dir=os.path.dirname(outfile.name)
+        saved_dir=os.getcwd()
         os.chdir(doc_dir)
         self._pdflatex_stat=os.system("pdflatex -interaction nonstopmode " + outfile.name + ">& /dev/null")
         doc_basename=os.path.splitext(outfile.name)[0]
+        os.chdir(saved_dir)
 
         cleanup(doc_basename + '.aux')
 
