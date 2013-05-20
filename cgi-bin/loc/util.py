@@ -1,4 +1,4 @@
-from math import log10
+from math import log10, floor
 
 def canonical_name(s):
     try: return s.lower().strip()
@@ -37,7 +37,7 @@ def convert_units(level, from_units, to_units, mw=None):
     mw_air = 28.9666      # g mol-1
     R      = 8.2057e-5    # m^3 atm K-1 mol-1
     T      = 298          # K ; standard ambient temperature
-    P      = 0.986        # atm; standard pressure
+    P      = 1.0          # atm; standard pressure
     factor = { 'ppm'         : 1.0 ,
                'ppb'         : 1000.0 ,
                'ug/m3'       : mw_air * P / (R * T) ,
@@ -47,11 +47,16 @@ def convert_units(level, from_units, to_units, mw=None):
         factor['ppbv'] = mw_air * 1000 / mw
     return level / factor[from_units] * factor[to_units]
 
-def fmt_sigfigs(x,n=3):
+def fmt_sigfigs_past_decimal(x,n=3):
     digits = int(log10(x))
     fmt = '%d'
     if (digits < n):
         fmt = '%%.%df' % (n - digits)
     return fmt % x
 
-
+def fmt_sigfigs(x, n=2):
+    factor=10**floor(log10(x)-n+1)
+    result = factor * round(x / factor)
+    if (factor > 0.2):
+        result = int(result)
+    return str(result)
