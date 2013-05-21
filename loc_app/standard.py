@@ -74,7 +74,8 @@ class Standard():
                     for k in row:
                         if k in self._std_types:
                             try:
-                                this_entry[k] = float(canonical_name(row[k]))
+                                float(canonical_name(row[k]))
+                                this_entry[k] = canonical_name(row[k])
                             except ValueError:
                                 pass
                     self._cache[cas] = this_entry

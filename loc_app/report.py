@@ -102,12 +102,20 @@ class LocReport():
                 if report_levels:
                     for criterion_name in report_levels.keys():
                         try:
-                            criterion_level = convert_units(report_levels[criterion_name],standard.meta['units'],units['out'],chemical['mw'])
-                            chemical['comparisons'].append({'level':         criterion_level,
-                                                            'level_rep':     fmt_sigfigs(criterion_level),
-                                                            'description':   describe_comparison(chemical['level'],criterion_level),
-                                                            'criterion':     standard.criteria[criterion_name],
-                                                            'source':        standard.meta['name']})
+                            entry = {'source':     standard.meta['name'],
+                                     'criterion':  standard.criteria[criterion_name]}
+                            if (standard.meta['units'] == units['out']):
+                                entry.update({'level_rep':   report_levels[criterion_name],
+                                              'level':       float(report_levels[criterion_name])})
+                            else:
+                                criterion_level = convert_units(float(report_levels[criterion_name]),
+                                                                standard.meta['units'],
+                                                                units['out'],
+                                                                chemical['mw'])
+                                entry.update({'level':     criterion_level,
+                                              'level_rep': fmt_sigfigs(criterion_level)})
+                            entry['description'] = describe_comparison(chemical['level'], entry['level'])
+                            chemical['comparisons'].append(entry)
                         except TypeError:
                             self._failed_conversions.append(chemical['name'])
 
