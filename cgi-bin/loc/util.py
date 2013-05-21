@@ -10,6 +10,8 @@ def canonical_name(s):
     return s
     
 def _first_decile_comparison_description(compare):
+    if (compare >= 9.75):
+        return str(int(round(compare))) + " times"
     factor  = int(compare + 0.25)
     decimal = (compare + 0.25) - factor
     factor_str = {
@@ -32,7 +34,6 @@ def describe_comparison(level,reference):
        and one of Gwen's descriptive words"""
     compare = level / reference
 
-    if compare > 10:       return "is " + str(int(round(compare))) + " times"
     if compare > 1.25:     return "is " + _first_decile_comparison_description(compare)
     if compare > 1.0:      return "exceeds"
     
