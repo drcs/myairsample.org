@@ -70,15 +70,21 @@ class LocReport():
             else:
                 mw = cas2mw(cas)
                 try:
-                    level=float(chemical['level'])
-                    level_in_outunits = convert_units(level,units['in'],units['out'],mw)
                     entry={'name':        chemical['name'],
                            'cas':         cas,
                            'mw':          mw,
-                           'level':       level_in_outunits,
-                           'level_rep':   fmt_sigfigs(level_in_outunits),
-                           'level_inunits_rep': fmt_sigfigs(level),
+                           'level_inunits_rep': chemical['level'],
+                           'level_inunits':     float(chemical['level']),
                            'comparisons': []}
+
+                    if (units['in'] == units['out']):
+                        entry.update({'level_rep': entry['level_inunits_rep'],
+                                      'level':     entry['level_inunits']})
+                    else:
+                        level_outunits = convert_units(entry['level_inunits'],units['in'],units['out'],mw)
+                        entry.update({'level':     level_outunits,
+                                      'level_rep': fmt_sigfigs(level_outunits)})
+
                     self._chemicals.append(entry)
 
                 except TypeError:
