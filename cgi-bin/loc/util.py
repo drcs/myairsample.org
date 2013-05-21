@@ -1,8 +1,13 @@
 from math import log10, floor
+import re
 
 def canonical_name(s):
-    try: return s.lower().strip()
-    except AttributeError: return s
+    try:
+        s=s.lower().strip()
+    except AttributeError:
+        pass
+    s = unscientific(s)
+    return s
     
 def _first_decile_comparison_description(compare):
     factor  = int(compare + 0.25)
@@ -60,3 +65,15 @@ def fmt_sigfigs(x, n=2):
     if (factor > 0.2):
         result = int(result)
     return str(result)
+
+def unscientific(x):
+    if (not(re.match('[\d.]+e[-+]?\d+', x))):
+        return x
+    else:
+        x_f = float(x)
+        if (floor(x_f) == x_f):
+            return str(int(x_f))
+        else:
+            return str(x_f)
+
+
