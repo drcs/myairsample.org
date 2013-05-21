@@ -123,8 +123,11 @@ class LocReport():
                                               'level_rep': fmt_sigfigs(criterion_level)})
                             entry['description'] = describe_comparison(chemical['level'], entry['level'])
                             chemical['comparisons'].append(entry)
+                            if (entry['level'] > chemical['level']):
+                                chemical['has_overages'] = True
                         except TypeError:
                             self._failed_conversions.append(chemical['name'])
+        self._chemicals.sort(key=lambda c: [c['name'], 'aaaa' + c['name']]['has_overages' in c])
 
     def _standards_from_cgi(self, form):
         """
