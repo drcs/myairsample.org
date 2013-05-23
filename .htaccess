@@ -1,10 +1,4 @@
 RewriteEngine On
 RewriteRule ^cgi-bin/* /wrapper.cgi
 
-AuthType Basic
-AuthName "Restricted Files"
-AuthBasicProvider file
-AuthUserFile /home/gbenison/gwenomatic/passwords
-require valid-user
-
 
