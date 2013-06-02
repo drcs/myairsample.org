@@ -9,6 +9,15 @@ body {
     font-size: 90%;
 }
 
+h1 {
+    padding: 2pt;
+    margin:  0pt;
+}
+
+h2 {
+    margin:  2pt;
+}
+
 ul {
     list-style:  none;
 }
@@ -37,6 +46,7 @@ div#header {
 
 div#header #titles { float: left;  }
 div#header #logos  { float: right; }
+#logos ul { margin: 2pt; }
 
 div#logos ul {
     float:    left;
@@ -109,10 +119,13 @@ div#main {
     width: 65em;
 }
 
-#main > form > div > fieldset {
+#main > form > div > div {
     width:   45%;
-    border:  none;
     float:   left;
+}
+
+#main > form > div fieldset {
+    border:  none;
 }
 
 #chemical_input label {
