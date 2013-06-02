@@ -31,56 +31,39 @@
       </ul>
     </div>
     <div id="main">
+      <div id="sidebar">
+	<p>
+	  Paragraph briefly describing the tool/web site -assuming we want to
+	  keep the "levels of concern" language in the headers, perhaps this
+	  paragraph can draw the connection between "levels of concern" and
+	  "standards" so that there is not a disconnect between the headers and
+	  the report generator -- "standards" makes it easier to fit into a
+	  tight space, which in turn makes generating reports less work on the
+	  user (e.g., less scrolling)
+	</p>
+      </div>
 
       <form method="post" action="/report/">
 
 	<div id="form_panel_1">
-	    <fieldset id="chemical_input">
-	      <legend>1.</legend>
-	      <label id="chemical_name_input">
-		Chemical name<a class="help" href="#help_chemical_name">?</a>
-		<input name="chem1"/>
-		<input name="chem2"/>
-		<input name="chem3"/>
-	      </label>
-	      <label id="chemical_level_input">
-		Measured value<a class="help" href="#help_chemical_level">?</a>
-		<input name="report1"/>
-		<input name="report2"/>
-		<input name="report3"/>
-	      </label>
-	      <div id="add_chemicals"><a id="add_chemicals_button" href="#">+ Add more chemicals</a></div>
-	    </fieldset>
-	    <fieldset id="user_input">
-	      <legend>2. Report Title</legend>
-	      <label for="username">
-		Organization name 1
-		<input name="username"/>
-	      </label>
-	      <label for="username2">
-		Organization name 2
-		<input name="username2"/>
-	      </label>
-	    </fieldset>
-	    <!-- sample information -->
-	    <fieldset id="sample_info">
-	      <label>
-		Sample identifying name
-		<input name="samplename"></input>
-	      </label>
-	      <label>
-		Date sample was taken
-		<input name="sampledate"></input>
-	      </label>
-	      <label>
-		Location sample was taken at
-		<input name="samplelocation"></input>
-	      </label>
-	    </fieldset>
-	</div>
-	
-	<div id="form_panel_2">
-	  <!-- units -->
+	  <fieldset id="chemical_input">
+	    <legend>1.</legend>
+	    <label id="chemical_name_input">
+	      Chemical name<a class="help" href="#help_chemical_name">?</a>
+	      <input name="chem1"/>
+	      <input name="chem2"/>
+	      <input name="chem3"/>
+	    </label>
+	    <label id="chemical_level_input">
+	      Measured value<a class="help" href="#help_chemical_level">?</a>
+	      <input name="report1"/>
+	      <input name="report2"/>
+	      <input name="report3"/>
+	    </label>
+	    <div id="add_chemicals"><a id="add_chemicals_button" href="#">+ Add more chemicals</a></div>
+	  </fieldset>
+
+ 	  <!-- units -->
 	  <fieldset id="units_choice">
 	    <p>
 	      Units your measured values are in (input) <!-- FIXME blue mark here -->
@@ -100,6 +83,22 @@
 	      </label>
 	    </p>
 	  </fieldset>
+	</div>
+	
+	<div id="form_panel_2">
+	  <fieldset id="user_input">
+	    <legend>2. Report Title</legend>
+	    <label for="username">
+	      Organization name 1
+	      <input name="username"/>
+	    </label>
+	    <label for="username2">
+	      Organization name 2
+	      <input name="username2"/>
+	    </label>
+	  </fieldset>
+
+	  <!-- Standards choice -->
 	  <fieldset id="standards_choice">
 	    <legend>3. Compare your air data to these standards: </legend>
 	    <label for="single">
@@ -120,6 +119,24 @@
 	      <input type="radio" name="standards_source" id="all"/>
 	    </label>
 	  </fieldset>
+
+	  <!-- sample information -->
+	  <fieldset id="sample_info">
+	    <label>
+	      Sample identifying name
+	      <input name="samplename"></input>
+	    </label>
+	    <label>
+	      Date sample was taken
+	      <input name="sampledate"></input>
+	    </label>
+	    <label>
+	      Location sample was taken at
+	      <input name="samplelocation"></input>
+	    </label>
+	  </fieldset>
+
+	  <!-- Report style -->
 	  <fieldset id="report_style_choice">
 	    <legend>4. Choose report style</legend>
 	    <label>
@@ -135,17 +152,6 @@
 	</div>
       </form>
 
-      <div id="sidebar">
-	<p>
-	  Paragraph briefly describing the tool/web site -assuming we want to
-	  keep the "levels of concern" language in the headers, perhaps this
-	  paragraph can draw the connection between "levels of concern" and
-	  "standards" so that there is not a disconnect between the headers and
-	  the report generator -- "standards" makes it easier to fit into a
-	  tight space, which in turn makes generating reports less work on the
-	  user (e.g., less scrolling)
-	</p>
-      </div>
     </div>
     <div id="help_div">
       <div id="help_chemical_name">

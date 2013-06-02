@@ -100,17 +100,19 @@ div#main {
     clear: both;
 }
 
-#main > form > div {
-    float: left;
-}
-
 #main > p {
     min-width: 30%;
 }
 
+#main > form > div {
+    float: left;
+    width: 65em;
+}
+
 #main > form > div > fieldset {
-    width:   30em;
+    width:   45%;
     border:  none;
+    float:   left;
 }
 
 #chemical_input label {
@@ -166,8 +168,8 @@ div#main {
 }
 
 #sidebar {
-    float:   left;
-    width:   180pt;
+    float:   right;
+    width:   15em;
 }
 
 #add_chemicals {
