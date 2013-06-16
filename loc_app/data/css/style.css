@@ -10,12 +10,14 @@ body {
 }
 
 h1 {
-    padding: 2pt;
-    margin:  0pt;
+    padding:   2pt;
+    margin:    0pt;
+    font-size: 3em;
 }
 
 h2 {
-    margin:  2pt;
+    margin:    2pt;
+    font-size: 1.5em;
 }
 
 ul {
