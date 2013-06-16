@@ -1,6 +1,5 @@
 + title font bigger
 + subtitle font smaller
-+ logos, flush left against title
 + templatize the html report
 + standards.py: clean up whitespace in datatables
 + implement links in PDF documents (and markdown_ltx)
