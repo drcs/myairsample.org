@@ -6,9 +6,6 @@
 + help text: center below form
 + help text: blue; no title
 + Add "Click on blue question..."
-+ literal "select" left of standards selection
-+ literal "select"'s: smaller font
-+ increase spacing btwn units sel / other selection
 + logos, flush left against title
 + templatize the html report
 + standards.py: clean up whitespace in datatables

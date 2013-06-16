@@ -128,6 +128,16 @@ div#main {
     border:  none;
 }
 
+fieldset label {
+    margin-bottom: 3px;
+}
+
+fieldset label p {
+    margin-top:    0px;
+    margin-bottom: 0px;
+    margin-left:   2em;
+}
+
 #chemical_input label {
     width:   49%;
     display: block;
@@ -158,8 +168,12 @@ div#main {
 }
 
 #units_choice p {
-    width: 50%;
+    width: 45%;
     float: left;
+}
+
+#units_choice select {
+    max-width: 5em;
 }
 
 #standards_choice label {
@@ -201,4 +215,9 @@ div#main {
 
 #help_div > div.selected {
     display: block;
+}
+
+span.select_label {
+    font-family: courier;
+    font-size:   90%;
 }
