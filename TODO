@@ -3,9 +3,6 @@
 + right sidebar, flush left against form
 + green line separate right sidebar and form,
   extend to bottom of help text
-+ help text: center below form
-+ help text: blue; no title
-+ Add "Click on blue question..."
 + logos, flush left against title
 + templatize the html report
 + standards.py: clean up whitespace in datatables

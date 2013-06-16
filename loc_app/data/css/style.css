@@ -29,8 +29,11 @@ a {
     font-family: sans;
 }
 
-a.help {
+.help {
     color:       blue;
+}
+
+a.help {
     font-weight: bold;
     border:      1px solid blue;
     padding:     1px;
@@ -205,11 +208,16 @@ fieldset label p {
 
 #help_div {
     clear:   both;
-    width:   60%;
-    margin:  auto;
+    width:   65em;
+}
+
+#help_div h4 {
+    text-align: center;
 }
 
 #help_div > div {
+    margin:  auto;
+    width:   80%;
     display: none;
 }
 
