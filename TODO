@@ -1,8 +1,5 @@
 + title font bigger
 + subtitle font smaller
-+ right sidebar, flush left against form
-+ green line separate right sidebar and form,
-  extend to bottom of help text
 + logos, flush left against title
 + templatize the html report
 + standards.py: clean up whitespace in datatables

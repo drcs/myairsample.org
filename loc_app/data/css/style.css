@@ -47,6 +47,11 @@ div#header {
     border-top: 10px solid green;
 }
 
+.left-column {
+    margin-right:  5px;
+    border-right:  3px solid green;
+}
+
 div#header #titles { float: left;  }
 div#header #logos  { float: right; }
 #logos ul { margin: 2pt; }
@@ -120,6 +125,7 @@ div#main {
 #main > form {
     float: left;
     width: 65em;
+    margin-bottom: 0px;
 }
 
 #main > form > div {
@@ -204,7 +210,7 @@ fieldset label p {
 
 #sidebar {
     float:   left;
-    width:   15em;
+    width:   14em;
 }
 
 #add_chemicals {
