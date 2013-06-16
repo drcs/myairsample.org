@@ -31,20 +31,7 @@
       </ul>
     </div>
     <div id="main">
-      <div id="sidebar">
-	<p>
-	  Paragraph briefly describing the tool/web site -assuming we want to
-	  keep the "levels of concern" language in the headers, perhaps this
-	  paragraph can draw the connection between "levels of concern" and
-	  "standards" so that there is not a disconnect between the headers and
-	  the report generator -- "standards" makes it easier to fit into a
-	  tight space, which in turn makes generating reports less work on the
-	  user (e.g., less scrolling)
-	</p>
-      </div>
-
-      <form method="post" action="/report/">
-
+      <form method="post" action="/report/" class="left-column">
 	<div>
 	  <div>
 	    <fieldset id="chemical_input">
@@ -71,7 +58,7 @@
 	      <p>
 		Units your measured values are in (input) <!-- FIXME blue mark here -->
 		<label>
-		  Select
+		  <span class="select_label">Select</span>
 		  <select name="inunits">
 		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
 		  </select>
@@ -79,7 +66,7 @@
 	      </p>
 	      <p>Units you would like your report in (output) <!-- FIXME blue mark here -->
 		<label>
-		  Select
+		  <span class="select_label">Select</span>
 		  <select name="outunits">
 		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
 		  </select>
@@ -125,24 +112,26 @@
 	    <fieldset id="standards_choice">
 	      <legend>3. Compare your air data to these standards: </legend>
 	      <label for="single">
-		one set of standards
 		<input type="radio" name="standards_source" value="single" checked="checked"/>
-		<select name="standards">
-		  <option py:for="key in all_standards.keys()" value="${key}">
-		    ${all_standards[key].oneline_description()}
-		  </option>
-		</select>
+		<p>one set of standards</p>
+		<p>
+		  <span class="select_label">Select</span>
+		  <select name="standards">
+		    <option py:for="key in all_standards.keys()" value="${key}">
+		      ${all_standards[key].oneline_description()}
+		    </option>
+		  </select>
+		</p>
 	      </label>
 	      <label for="above">
-		all standards your sample is above
 		<input type="radio" name="standards_source" id="above"/>
+		<p>all standards your sample is above</p>
 	      </label>
 	      <label for="all">
-		all available standards
 		<input type="radio" name="standards_source" id="all"/>
+		<p>all available standards</p>
 	      </label>
 	    </fieldset>
-
 
 	    <!-- Report style -->
 	    <fieldset id="report_style_choice">
@@ -160,11 +149,21 @@
 	  </div>
 	</div>
       </form>
-
+            <div id="sidebar">
+	<p>
+	  Paragraph briefly describing the tool/web site -assuming we want to
+	  keep the "levels of concern" language in the headers, perhaps this
+	  paragraph can draw the connection between "levels of concern" and
+	  "standards" so that there is not a disconnect between the headers and
+	  the report generator -- "standards" makes it easier to fit into a
+	  tight space, which in turn makes generating reports less work on the
+	  user (e.g., less scrolling)
+	</p>
+      </div>
     </div>
-    <div id="help_div">
+    <div id="help_div" class="help left-column">
+      <h4>Click on the blue question marks for instructions and tips about each data entry item</h4>
       <div id="help_chemical_name">
-	<h2>Help for "chemical name"</h2>
 	<p>
 	  A Bird came down the Walk—
 	  He did not know I saw—
@@ -179,7 +178,6 @@
 	</p>
       </div>
       <div id="help_chemical_level">
-	<h2>Help for "chemical level"</h2>
 	<p>
 	  He glanced with rapid eyes
 	  That hurried all around—

@@ -5,17 +5,19 @@ body, html {
 }
 
 body {
-    min-width: 80em;
+    min-width: 82em;
     font-size: 90%;
 }
 
 h1 {
-    padding: 2pt;
-    margin:  0pt;
+    padding:   2pt;
+    margin:    0pt;
+    font-size: 3em;
 }
 
 h2 {
-    margin:  2pt;
+    margin:    2pt;
+    font-size: 1.5em;
 }
 
 ul {
@@ -29,8 +31,11 @@ a {
     font-family: sans;
 }
 
-a.help {
+.help {
     color:       blue;
+}
+
+a.help {
     font-weight: bold;
     border:      1px solid blue;
     padding:     1px;
@@ -44,8 +49,13 @@ div#header {
     border-top: 10px solid green;
 }
 
+.left-column {
+    margin-right:  5px;
+    border-right:  3px solid green;
+}
+
 div#header #titles { float: left;  }
-div#header #logos  { float: right; }
+div#header #logos  { float: left; }
 #logos ul { margin: 2pt; }
 
 div#logos ul {
@@ -114,9 +124,15 @@ div#main {
     min-width: 30%;
 }
 
-#main > form > div {
+#main > form {
     float: left;
     width: 65em;
+    margin-bottom: 0px;
+}
+
+#main > form > div {
+    width: 100%;
+    float: left;
 }
 
 #main > form > div > div {
@@ -126,6 +142,16 @@ div#main {
 
 #main > form > div fieldset {
     border:  none;
+}
+
+fieldset label {
+    margin-bottom: 3px;
+}
+
+fieldset label p {
+    margin-top:    0px;
+    margin-bottom: 0px;
+    margin-left:   2em;
 }
 
 #chemical_input label {
@@ -158,8 +184,12 @@ div#main {
 }
 
 #units_choice p {
-    width: 50%;
+    width: 45%;
     float: left;
+}
+
+#units_choice select {
+    max-width: 5em;
 }
 
 #standards_choice label {
@@ -181,8 +211,8 @@ div#main {
 }
 
 #sidebar {
-    float:   right;
-    width:   15em;
+    float:   left;
+    width:   14em;
 }
 
 #add_chemicals {
@@ -191,14 +221,24 @@ div#main {
 
 #help_div {
     clear:   both;
-    width:   60%;
-    margin:  auto;
+    width:   65em;
+}
+
+#help_div h4 {
+    text-align: center;
 }
 
 #help_div > div {
+    margin:  auto;
+    width:   80%;
     display: none;
 }
 
 #help_div > div.selected {
     display: block;
+}
+
+span.select_label {
+    font-family: courier;
+    font-size:   90%;
 }
