@@ -216,7 +216,12 @@ fieldset label p {
 }
 
 #add_chemicals {
-    clear:   both;
+    clear:       both;
+    margin-left: 3em;
+}
+
+#add_chemicals_plus {
+    border:      1px solid green;
 }
 
 #help_div {
