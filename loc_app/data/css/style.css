@@ -37,7 +37,7 @@ a {
 a.help {
     font-weight: bold;
     border:      1px solid blue;
-    padding:     1px;
+    padding:     1px 5px;
     margin:      2px;
 }
 
@@ -223,6 +223,7 @@ fieldset label p {
 
 #add_chemicals_plus {
     border:      1px solid green;
+    padding:     1px 3px;
 }
 
 #help_div {
