@@ -12,9 +12,6 @@ chemical name
 
 Tabbing should not tab to blue question marks or add more chemical option
 
-Select font same type as the rest of report, just smaller – right now it looks like it's courier or something 
-like that
-
 If possible, implement a warning that a chemical is not in the database or is misspelled here, 
 once they tab or move out of a chemical name box – have that warning come up in red text 
 with three exclamation points at the beginning and end of the warning.
