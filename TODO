@@ -10,68 +10,6 @@ If possible, implement a warning that a chemical is not in the database or is mi
 once they tab or move out of a chemical name box – have that warning come up in red text 
 with three exclamation points at the beginning and end of the warning.
 
-Blue question mark material to enter:
-
-
-add more chemicals
-
-Click on the green plus sign to enter additional chemicals into your report.
-
-Report title
-
-Organization name 1
-
-Organization name 2
-
-Have the above three blue question marks all bring up this same blurb about all three of 
-them:
-
-What you enter for Organization name 1 and Organization name 2 will be
-used for the sub-titles of your report.  Your entries will appear at
-the top of the first page of your report.  If you would prefer to
-title your report with information other than an organization name,
-you can enter whatever you would like for report sub-titles into one
-or both of these two boxes.  Text entered under Organization name 1
-appears on the second line of the first page of your report as "For
-Organization name 1", and text entered under Organization name 2
-appears on the third line as "Organization name 2".  If they are left
-blank, they do not appear in the report.  The first line (title) of
-all reports is "Levels of Concern Report" regardless of what is
-entered in Organization name 1 and 2.
-
-Sample identifying name
-
-You can enter a name for the sample here.  If you are working with
-bucket results, the air collected in one bucket on one date is the
-sample.  You might have a name you want to use for this bucket sample
-or you might not.  It is optional to enter a sample identifying name.
-If entered, the sample identifying name will appear on the first page
-of the report.  Examples of possible sample identifying names include
-"Sample from Ms. Jones' house" and "RAN project sample 1" – these
-would return on the report as "Sample identifying name: Sample from
-Ms.  Jones' house" and "Sample identifying name: RAN project sample 1"
-
-Date sample was taken
-
-You can enter the date the sample was taken here.  It is optional to enter a date.  If entered, 
-this date will appear on the first page of the report.  If you are working with bucket results, 
-the date the sample was taken would be the date the bucket was used to collect the air at the 
-sample location.  You can also enter a time here, and you can enter the date and/or time in 
-any format you want.  Examples of possible entries here include "6/22/2013", "June 22, 2013 
-5pm", "6:42 pm on 6-22-2013", and "summertime" – these would return on the report as "Date 
-sample was taken: 6/22/2013", "Date sample was taken: June 22, 2013 5pm", etc.
-
-Location sample was taken at
-
-Here you can enter the location where the sample was taken.  If you
-are working with bucket results, this would be the address or some
-other name for the location where the bucket was put to collect the
-air sample.  It is optional to enter a location for the sample.  If
-entered, the location will appear on the first page of the report.
-For example, if you enter "1200 Main Street" it will appear on the
-report as "Location sample was taken at: 1200 Main Street" and if you
-enter "My house" it will appear as "Location sample was taken at: my
-house"
 
 + templatize the html report
 + standards.py: clean up whitespace in datatables
