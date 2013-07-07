@@ -22,12 +22,12 @@
     </div>
     <div id="nav">
       <ul>
-	<li><a href="/create_report">Create a report</a></li>
-	<li><a href="/about/levels">About the levels of concern</a></li>
-	<li><a href="/faqs">FAQs</a></li>
-	<li><a href="/about/tool">About this tool</a></li>
-	<li><a href="/contact">Contact us</a></li>
-	<li><a href="/about/implementation">Technical details</a></li>
+	<li><a tabindex="1000" href="/create_report">Create a report</a></li>
+	<li><a tabindex="1000" href="/about/levels">About the levels of concern</a></li>
+	<li><a tabindex="1000" href="/faqs">FAQs</a></li>
+	<li><a tabindex="1000" href="/about/tool">About this tool</a></li>
+	<li><a tabindex="1000" href="/contact">Contact us</a></li>
+	<li><a tabindex="1000" href="/about/implementation">Technical details</a></li>
       </ul>
     </div>
     <div id="main">
@@ -37,20 +37,22 @@
 	    <fieldset id="chemical_input">
 	      <legend>1.</legend>
 	      <label id="chemical_name_input">
-		Chemical name<a class="help" href="#help_chemical_entry">?</a>
-		<input name="chem1"/>
-		<input name="chem2"/>
-		<input name="chem3"/>
+		Chemical name<a class="help" tabindex="1500" href="#help_chemical_entry">?</a>
+		<input name="chem1" tabindex="010"/>
+		<input name="chem2" tabindex="020"/>
+		<input name="chem3" tabindex="030"/>
 	      </label>
 	      <label id="chemical_level_input">
-		Measured value<a class="help" href="#help_chemical_entry">?</a>
-		<input name="report1"/>
-		<input name="report2"/>
-		<input name="report3"/>
+		Measured value<a class="help" tabindex="1500" href="#help_chemical_entry">?</a>
+		<input name="report1" tabindex="011"/>
+		<input name="report2" tabindex="021"/>
+		<input name="report3" tabindex="031"/>
 	      </label>
 	      <div id="add_chemicals">
-		<a id="add_chemicals_button" href="#"><span id="add_chemicals_plus">+</span> add chemicals</a>
-		<a class="help" href="#help_add_chemicals">?</a>
+		<a id="add_chemicals_button" href="#" tabindex="1500">
+		  <span id="add_chemicals_plus">+</span> add chemicals
+		</a>
+		<a class="help" tabindex="1500" href="#help_add_chemicals">?</a>
 	      </div>
 	    </fieldset>
 	  </div>
@@ -60,19 +62,19 @@
 	    <fieldset id="units_choice">
 	      <p>
 		Units your measured values are in (input)
-		<a class="help" href="#help_inunits">?</a>
+		<a class="help" tabindex="1500" href="#help_inunits">?</a>
 		<label>
 		  <span class="select_label">Select</span>
-		  <select name="inunits">
+		  <select name="inunits" tabindex="301">
 		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
 		  </select>
 		</label>
 	      </p>
 	      <p>Units you would like your report in (output)
-		<a class="help" href="#help_outunits">?</a>
+		<a class="help" tabindex="1500" href="#help_outunits">?</a>
 		<label>
 		  <span class="select_label">Select</span>
-		  <select name="outunits">
+		  <select name="outunits" tabindex="302">
 		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
 		  </select>
 		</label>
@@ -86,17 +88,17 @@
 	    <fieldset id="user_input">
 	      <legend>
 		2. Report Title
-		<a class="help" href="#help_report_title">?</a>
+		<a class="help" tabindex="1500" href="#help_report_title">?</a>
 	      </legend>
 	      <label for="username">
 		Organization name 1
-		<a class="help" href="#help_report_title">?</a>
-		<input name="username"/>
+		<a class="help" tabindex="1500" href="#help_report_title">?</a>
+		<input name="username" tabindex="100"/>
 	      </label>
 	      <label for="username2">
 		Organization name 2
-		<a class="help" href="#help_report_title">?</a>
-		<input name="username2"/>
+		<a class="help" tabindex="1500" href="#help_report_title">?</a>
+		<input name="username2" tabindex="101"/>
 	      </label>
 	    </fieldset>
 
@@ -104,18 +106,18 @@
 	    <fieldset id="sample_info">
 	      <label>
 		Sample identifying name
-		<a class="help" href="#help_sample_name">?</a>
-		<input name="samplename"></input>
+		<a class="help" tabindex="1500" href="#help_sample_name">?</a>
+		<input name="samplename" tabindex="201"></input>
 	      </label>
 	      <label>
 		Date sample was taken
-		<a class="help" href="#help_sample_date">?</a>
-		<input name="sampledate"></input>
+		<a class="help" tabindex="1500" href="#help_sample_date">?</a>
+		<input name="sampledate" tabindex="202"></input>
 	      </label>
 	      <label>
 		Location sample was taken at
-		<a class="help" href="#help_sample_location">?</a>
-		<input name="samplelocation"></input>
+		<a class="help" tabindex="1500" href="#help_sample_location">?</a>
+		<input name="samplelocation" tabindex="203"></input>
 	      </label>
 	    </fieldset>
 	  </div>
@@ -125,10 +127,10 @@
 	    <fieldset id="standards_choice">
 	      <legend>
 		3. Compare your air data to these standards:
-		<a class="help" href="#help_standards">?</a>
+		<a class="help" tabindex="1500" href="#help_standards">?</a>
 	      </legend>
 	      <label for="single">
-		<input type="radio" name="standards_source" value="single" checked="checked"/>
+		<input type="radio" name="standards_source" value="single" checked="checked" tabindex="401"/>
 		<p>one set of standards</p>
 		<p>
 		  <span class="select_label">Select</span>
@@ -140,11 +142,11 @@
 		</p>
 	      </label>
 	      <label for="above">
-		<input type="radio" name="standards_source" id="above"/>
+		<input type="radio" name="standards_source" id="above" tabindex="402"/>
 		<p>all standards your sample is above</p>
 	      </label>
 	      <label for="all">
-		<input type="radio" name="standards_source" id="all"/>
+		<input type="radio" name="standards_source" id="all" tabindex="403"/>
 		<p>all available standards</p>
 	      </label>
 	    </fieldset>
@@ -153,19 +155,19 @@
 	    <fieldset id="report_style_choice">
 	      <legend>
 		4. Choose report style
-		<a class="help" href="#help_report_style">?</a>
+		<a class="help" tabindex="1500" href="#help_report_style">?</a>
 	      </legend>
 	      <label>
 		PDF
-		<input type="radio" name="report_type" value="pdf" checked="checked"></input>
+		<input type="radio" name="report_type" value="pdf" checked="checked" tabindex="501"></input>
 	      </label>
 	      <label>
 		Display on web
-		<input type="radio" name="report_type" value="html"></input>
+		<input type="radio" name="report_type" value="html" tabindex="502"></input>
 	      </label>
 	    </fieldset>
-	    <input type="submit" value="Generate report"/>
-	    <a class="help" href="#help_generate_report">?</a>
+	    <input type="submit" value="Generate report" tabindex="503"/>
+	    <a class="help" tabindex="1500" href="#help_generate_report">?</a>
 	  </div>
 	</div>
       </form>
