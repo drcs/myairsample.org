@@ -2,6 +2,7 @@
 To do list for Greg on myairsample-alpha – 6/22/2013
 
 + "chemical not found" warning: don't mess up input alignment
++ "chemical not found": ensure working with newly-added chemical fields
 + templatize the html report
 + standards.py: clean up whitespace in datatables
 + implement links in PDF documents (and markdown_ltx)
