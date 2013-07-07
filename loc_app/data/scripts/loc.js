@@ -1,8 +1,10 @@
 $( document ).ready(function () {
     var chem_n = 4;
     $( "#add_chemicals_button" ).click(function (event) {
-	$("#chemical_name_input").append($("<input />").attr("name","chem" + chem_n))
-	$("#chemical_level_input").append($("<input />").attr("name","report" + chem_n))
+	var newinput = $("<input />").attr("name","chem" + chem_n).attr("tabindex", chem_n*10)
+	$("#chemical_name_input").append(newinput)
+	newinput.focus()
+	$("#chemical_level_input").append($("<input />").attr("name","report" + chem_n).attr("tabindex", chem_n*10 + 1))
 	chem_n = chem_n + 1;
 	event.preventDefault();
     });
