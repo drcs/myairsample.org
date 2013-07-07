@@ -1,11 +1,7 @@
 
 To do list for Greg on myairsample-alpha – 6/22/2013
 
-If possible, implement a warning that a chemical is not in the database or is misspelled here, 
-once they tab or move out of a chemical name box – have that warning come up in red text 
-with three exclamation points at the beginning and end of the warning.
-
-
++ "chemical not found" warning: don't mess up input alignment
 + templatize the html report
 + standards.py: clean up whitespace in datatables
 + implement links in PDF documents (and markdown_ltx)

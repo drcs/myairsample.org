@@ -171,6 +171,11 @@ fieldset label p {
     display: block;
 }
 
+#chemical_input span.warning {
+    color:     red;
+    font-size: 90%;
+}
+
 #user_input label {
     display: block;
 }
