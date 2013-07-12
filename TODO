@@ -1,5 +1,147 @@
 
-To do list for Greg on myairsample-alpha – 6/22/2013
+PDF report isn't working right:
+
+-if sample identifying name, date sample was taken and/or location
+ sample was taken at is left blank, then those should not appear in
+ the report at all; right now, these titles are showing in the report
+ when left blank
+
+Make boxes around blue question marks smaller; they should just
+enclose the question mark, and not go into other text or boxes'
+territory
+
+ 
+
+Make the blue text a much darker blue
+
+Make the blue question marks and boxes a sky blue
+
+Add periods to blue text where I didn't have ending periods.
+
+Make LABB logo size smaller
+
+Make "An online tool to compare air sampling results to pollutant
+levels of concern" smaller font
+
+Make DRCS logo a little bigger to be same size as a smaller LABB logo
+
+Make the LABB logo a link to LABB's web site
+
+Make DRCS logo a link to our GitHub page
+
+Even more space between the two logos
+
+Line break for Units text should be as follows:
+
+Units your measured
+values are in (input)
+
+&
+
+Units you would like
+your report in (output)
+
+And these two items need much more space between them
+
+Chemical name and Measured value boxes need much less space between
+them – like switch it so that Units items have the space that Chemical
+name and Measured value have between them, and make Chemical name and
+Measured value have just a little bit more space than the units items
+currently have between them
+ 
+Longer boxes for Sample identifying name, Date sample was taken and
+Location sample was taken at
+
+Smaller font size for "Select"s
+
+Less space between report entry boxes and the vertical green line/paragraph
+
+Have the green links not exactly centered – move them left more, but
+not completely justified left
+
+Replace standards in the #3 like so:
+
+"Compare your air data to these levels of concern:"
+
+"one set of levels"
+
+"all levels your sample is above"
+
+"all available levels of concern"
+ 
+
+Replace "FAQs" with "About bucket samples and monitoring"
+
+Tab to the units before tabbing to the report title
+
+Have it say "add more chemicals" not just "add chemicals"
+
+Remove the three exclamation points from the front and back of the
+warning – just red text
+
+Would it be possible for the warning to be on a single line spanning
+the chemical name and measured value box?  (This is lower priority
+than other fixes, so if it's difficult to implement, do this one last)
+
+Green box above MyAirSample.org title, a little thicker than the other
+green lines
+ 
+
+Put this in for the paragraph on the right:
+
+Taking samples with buckets can get your community valuable
+information about what's in the air that you're breathing.  But how do
+you know what the levels of chemicals in your air mean to your health?
+
+One way of interpreting monitoring results – from either bucket
+samples or monitoring done by agencies – is to compare them to what we
+call "levels of concern."  The "levels of concern" in this tool
+include legally enforceable "standards" designated by state
+governments, as well as "screening levels" or "minimum risk levels"
+that are not legally enforceable but are developed by government
+agencies from scientific studies about what levels of chemical
+exposure pose minimal risk to your health.
+
+This tool looks up levels of concern for chemicals that you are
+interested in and compares them to results you have from monitoring.
+The report it generates tells you whether any of the levels of
+chemicals in your air are above the levels of concern you choose to
+compare to.
+
+ 
+
+Blue help text to add in:
+
+ 
+
+Units your measured values are in (input)
+
+Here you should choose the units that the results from your monitoring
+were reported in. Choose only one type of units for all of the
+chemicals and values that you enter in the table to the left.
+
+For example, bucket results are in both µg/m3 and ppbv. If there are
+TICs (tentatively identified compounds), those are reported in
+µg/m3. It makes sense, then, to choose µg/m3 if you are using bucket
+results.  For more information about what units are, click here.
+
+When the user clicks here, replace the above with the Units
+information blurb from the pdf report.
+
+Units you would like your report in (output)
+
+What you choose here will determine whether the numbers in the report
+will be expressed in ppb, µg/m3, or ppbv. For example, if you choose
+ppb, you will see both your monitoring results and the levels of
+concern in terms of ppb. You should choose whatever units you are most
+comfortable with as the units for your final report.  For more
+information about what units are, click here.
+
+When the user clicks here, replace the above with the Units
+information blurb from the pdf report.
+
+
+
 
 + "chemical not found" warning: don't mess up input alignment
 + templatize the html report
