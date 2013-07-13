@@ -3,7 +3,7 @@ function validateChemicalName() {
     $.get('api/validate/' + elem.val() , function(data) {
 	if (data == "NA") {
 	    if (elem.next(".warning").length == 0) {
-		elem.after($("<span class='warning'> !!!\"" + elem.val() + "\" is either misspelled, or not in the database !!!</span>"))
+		elem.after($("<span class='warning'> \"" + elem.val() + "\" is either misspelled, or not in the database</span>"))
 	    }
 	} else {
 	    elem.next(".warning").remove()
