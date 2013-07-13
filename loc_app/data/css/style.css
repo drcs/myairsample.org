@@ -56,7 +56,6 @@ div#header {
 
 .left-column {
     margin-right:  5px;
-    border-right:  3px solid green;
 }
 
 div#header #titles { float: left;  }
@@ -124,8 +123,8 @@ div#nav ul li:hover {
 }
 
 div#main {
-    width: 100%;
-    clear: both;
+    width:        70em;
+    float:        left;
 }
 
 #main > p {
@@ -225,7 +224,9 @@ fieldset label p {
 
 #sidebar {
     float:   left;
-    width:   14em;
+    width:   15em;
+    border-left: 3px solid green;
+    padding-left: 3px;
 }
 
 #add_chemicals {
