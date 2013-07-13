@@ -35,8 +35,6 @@ not completely justified left
 
 Tab to the units before tabbing to the report title
 
-Have it say "add more chemicals" not just "add chemicals"
-
 Would it be possible for the warning to be on a single line spanning
 the chemical name and measured value box?  (This is lower priority
 than other fixes, so if it's difficult to implement, do this one last)
