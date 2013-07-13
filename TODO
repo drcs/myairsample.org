@@ -16,22 +16,8 @@ Make the blue text a much darker blue
 
 Make the blue question marks and boxes a sky blue
 
-Make LABB logo size smaller
-
 Make "An online tool to compare air sampling results to pollutant
 levels of concern" smaller font
-
-Line break for Units text should be as follows:
-
-Units your measured
-values are in (input)
-
-&
-
-Units you would like
-your report in (output)
-
-And these two items need much more space between them
 
 Chemical name and Measured value boxes need much less space between
 them – like switch it so that Units items have the space that Chemical
