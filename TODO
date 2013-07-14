@@ -7,45 +7,9 @@ Make the blue text a much darker blue
 
 Make the blue question marks and boxes a sky blue
 
-Tab to the units before tabbing to the report title
-
 Would it be possible for the warning to be on a single line spanning
 the chemical name and measured value box?  (This is lower priority
 than other fixes, so if it's difficult to implement, do this one last)
-
- 
-
-Blue help text to add in:
-
- 
-
-Units your measured values are in (input)
-
-Here you should choose the units that the results from your monitoring
-were reported in. Choose only one type of units for all of the
-chemicals and values that you enter in the table to the left.
-
-For example, bucket results are in both µg/m3 and ppbv. If there are
-TICs (tentatively identified compounds), those are reported in
-µg/m3. It makes sense, then, to choose µg/m3 if you are using bucket
-results.  For more information about what units are, click here.
-
-When the user clicks here, replace the above with the Units
-information blurb from the pdf report.
-
-Units you would like your report in (output)
-
-What you choose here will determine whether the numbers in the report
-will be expressed in ppb, µg/m3, or ppbv. For example, if you choose
-ppb, you will see both your monitoring results and the levels of
-concern in terms of ppb. You should choose whatever units you are most
-comfortable with as the units for your final report.  For more
-information about what units are, click here.
-
-When the user clicks here, replace the above with the Units
-information blurb from the pdf report.
-
-
 
 
 + "chemical not found" warning: don't mess up input alignment

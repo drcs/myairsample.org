@@ -64,7 +64,7 @@
 		<a class="help" tabindex="1500" href="#help_inunits">?</a>
 		<label>
 		  <span class="select_label">Select</span>
-		  <select name="inunits" tabindex="301">
+		  <select name="inunits" tabindex="101">
 		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
 		  </select>
 		</label>
@@ -73,7 +73,7 @@
 		<a class="help" tabindex="1500" href="#help_outunits">?</a>
 		<label>
 		  <span class="select_label">Select</span>
-		  <select name="outunits" tabindex="302">
+		  <select name="outunits" tabindex="102">
 		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
 		  </select>
 		</label>
@@ -91,12 +91,12 @@
 	      <label for="username">
 		Organization name 1
 		<a class="help" tabindex="1500" href="#help_report_title">?</a>
-		<input name="username" tabindex="100"/>
+		<input name="username" tabindex="200"/>
 	      </label>
 	      <label for="username2">
 		Organization name 2
 		<a class="help" tabindex="1500" href="#help_report_title">?</a>
-		<input name="username2" tabindex="101"/>
+		<input name="username2" tabindex="201"/>
 	      </label>
 	    </fieldset>
 	    <!-- sample information -->
@@ -104,17 +104,17 @@
 	      <label>
 		Sample identifying name
 		<a class="help" tabindex="1500" href="#help_sample_name">?</a>
-		<input name="samplename" tabindex="201"></input>
+		<input name="samplename" tabindex="301"></input>
 	      </label>
 	      <label>
 		Date sample was taken
 		<a class="help" tabindex="1500" href="#help_sample_date">?</a>
-		<input name="sampledate" tabindex="202"></input>
+		<input name="sampledate" tabindex="302"></input>
 	      </label>
 	      <label>
 		Location sample was taken at
 		<a class="help" tabindex="1500" href="#help_sample_location">?</a>
-		<input name="samplelocation" tabindex="203"></input>
+		<input name="samplelocation" tabindex="303"></input>
 	      </label>
 	    </fieldset>
 	  </div>
@@ -188,10 +188,65 @@
 	  </p>
 	</div>
 	<div id="help_inunits">
-	  <p>(This help item not yet implemented)</p>
+	  <p>
+	    Here you should choose the units that the results from your monitoring
+	    were reported in. Choose only one type of units for all of the
+	    chemicals and values that you enter in the table to the left.
+	  </p>
+	  <p>
+	    For example, bucket results are in both &micro;g/m<sup>3</sup> and ppbv. If there are
+	    TICs (tentatively identified compounds), those are reported in
+	    &micro;g/m<sup>3</sup>. It makes sense, then, to choose &micro;g/m<sup>3</sup> if you are using bucket
+	    results.  For more information about what units are, click <a class="help" href="#help_units_definition">here</a>.
+	    <!--
+		When the user clicks here, replace the above with the Units
+		information blurb from the pdf report.
+	      -->
+	  </p>
 	</div>
 	<div id="help_outunits">
-	  <p>(This help item not yet implemented)</p>
+	  <p>
+	    What you choose here will determine whether the numbers in the report
+	    will be expressed in ppb, &micro;g/m<sup>3</sup>, or ppbv. For example, if you choose
+	    ppb, you will see both your monitoring results and the levels of
+	    concern in terms of ppb. You should choose whatever units you are most
+	    comfortable with as the units for your final report.  For more
+	    information about what units are, click <a class="help" href="#help_units_definition">here</a>.
+	    <!--
+		When the user clicks here, replace the above with the Units
+		information blurb from the pdf report.
+	      -->
+	  </p>
+	</div>
+	<div id="help_units_definition">
+	  <p>
+	    Parts per billion (ppb) describes how many weighed parts of a chemical there
+	    are for 1 billion parts of air. For example, a recipe says to add just a drop of
+	    vanilla for every 100 pounds of flour. The drop of vanilla weighs hardly
+	    anything, but it has a big effect on the cookies' flavor. Similarly, if we measure
+	    benzene in the air, we might find 3 "drops" of benzene for 1,000,000,000
+	    (one billion) "drops" of air. It seems like a small amount, but it is significant.
+	  </p>
+	  <p>
+	    Parts per billion by volume, or ppbv, means the concentration has been figured
+	    out in terms of how much space the molecules take up. For example, if we
+	    make a mixture of 3 cups of vanilla and 1 billion cups of flour, then our
+	    concentration is 3 parts volume (cups of vanilla) per billion parts volume (cups
+	    of flour), or 3 ppbv sugar in flour. When 3 volumes of benzene are in a billion
+	    volumes of air, the concentration is 3 ppbv benzene in air.
+	  </p>
+	  <p>
+	    Micrograms per meters cubed (&micro;g/m<sup>3</sup>) describes how much of a chemical's
+	    weight is in a volume of air that takes up one cubic meter. Imagine an empty
+	    box that is three feet long on both sides, and three feet tall. One meter is about
+	    three feet long. So the box's volume is 1 cubic meter, or 1 m<sup>3</sup>. A microgram
+	    (&micro;g) is a very small weight, like that of a grain of sand. You put 3 grains of sand
+	    into the box. The concentration of sand inside the box is the weight of the sand
+	    (3 &micro;g) divided by the
+	    volume of the box (1 m<sup>3</sup>), or 3 &micro;g /m<sup>3</sup>. Like grains of sand, chemicals can also be
+	    reported by weight and volume. For example, a monitor might read 5 &micro;g /m<sup>3</sup>
+	    benzene, or 5 &micro;g of benzene in 1 m<sup>3</sup> of air.
+	  </p>
 	</div>
 	<div id="help_report_title">
 	  <p>
