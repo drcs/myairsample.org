@@ -169,6 +169,7 @@ fieldset label p {
 
 #chemical_input input {
     display: block;
+    width:   95%;
 }
 
 #chemical_input span.warning {
@@ -189,6 +190,7 @@ fieldset label p {
 
 #sample_info input {
     display: block;
+    width:   65%;
 }
 
 #units_choice label {
