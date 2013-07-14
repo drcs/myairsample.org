@@ -5,7 +5,6 @@ body, html {
 }
 
 body {
-    min-width: 90em;
     font-size: 90%;
 }
 
@@ -105,7 +104,7 @@ div#nav {
 }
 
 div#nav ul {
-    margin:     0;
+    margin:     0 10em 0 0;
     padding:    0;
     list-style: none;
     text-align: center;
@@ -123,7 +122,6 @@ div#nav ul li:hover {
 }
 
 div#main {
-    width:        70em;
     float:        left;
 }
 
@@ -143,7 +141,7 @@ div#main {
 }
 
 #main > form > div > div {
-    width:   49%;
+    width:   50%;
     float:   left;
 }
 
