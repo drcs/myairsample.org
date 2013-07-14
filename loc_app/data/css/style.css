@@ -51,7 +51,7 @@ div#header {
 }
 
 .left-column {
-    margin-right:  5px;
+    width:  60em;
 }
 
 div#header #titles { float: left;  }
@@ -128,7 +128,6 @@ div#main {
 
 #main > form {
     float: left;
-    width: 65em;
     margin-bottom: 0px;
 }
 
@@ -193,7 +192,7 @@ fieldset label p {
 }
 
 #units_choice p {
-    width: 48%;
+    width: 50%;
     float: left;
 }
 
@@ -221,9 +220,9 @@ fieldset label p {
 
 #sidebar {
     float:   left;
-    width:   15em;
+    width:   18em;
     border-left: 3px solid green;
-    padding-left: 3px;
+    padding-left: 1.5em;
 }
 
 #add_chemicals {
@@ -238,7 +237,6 @@ fieldset label p {
 
 #help_div {
     clear:   both;
-    width:   65em;
     color:   #090b82;
 }
 

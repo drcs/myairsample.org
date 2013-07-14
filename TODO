@@ -1,14 +1,6 @@
 
-Make boxes around blue question marks smaller; they should just
-enclose the question mark, and not go into other text or boxes'
-territory
-
-Would it be possible for the warning to be on a single line spanning
-the chemical name and measured value box?  (This is lower priority
-than other fixes, so if it's difficult to implement, do this one last)
-
-
-+ "chemical not found" warning: don't mess up input alignment
++ "chemical not found" warning: don't mess up input alignment;
+  warning appear on one line that spans both columns
 + templatize the html report
 + standards.py: clean up whitespace in datatables
 + implement links in PDF documents (and markdown_ltx)
