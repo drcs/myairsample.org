@@ -32,16 +32,12 @@ a {
 }
 
 .help {
-    color:       #7777ff;
-}
-
-.help h4 {
-    color:       black;
+    color:       #6993dd;
 }
 
 a.help {
     font-weight: bold;
-    border:      1px solid blue;
+    border:      1px solid #6993dd;
     padding:     1px 5px;
     margin:      2px;
 }
@@ -242,10 +238,12 @@ fieldset label p {
 #help_div {
     clear:   both;
     width:   65em;
+    color:   #090b82;
 }
 
 #help_div h4 {
-    text-align: center;
+    color:       black;
+    text-align:  center;
 }
 
 #help_div > div {
