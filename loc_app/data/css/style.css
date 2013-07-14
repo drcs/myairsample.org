@@ -48,6 +48,10 @@ a.help > img {
     padding:        0;
 }
 
+input ~ a.help > img {
+    vertical-align: middle;
+}
+
 div#header {
     width:  100%;
     float:  left;
