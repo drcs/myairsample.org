@@ -42,10 +42,10 @@ a.help {
 }
 
 a.help > img {
-    height:         1.3em;
+    height:         1.1em;
     vertical-align: bottom;
     margin:         0;
-    padding:        0;
+    padding:        0 0 1px;
 }
 
 input ~ a.help > img {
