@@ -36,11 +36,16 @@ a {
 }
 
 a.help {
-    padding:     1px 1px;
+    padding:     0px;
+    margin-left: 4px;
+    margin-bottom: 0px;
 }
 
 a.help > img {
-    height:       1em;
+    height:         1.3em;
+    vertical-align: bottom;
+    margin:         0;
+    padding:        0;
 }
 
 div#header {
