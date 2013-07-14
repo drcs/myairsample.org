@@ -36,10 +36,11 @@ a {
 }
 
 a.help {
-    font-weight: bold;
-    border:      1px solid #6993dd;
-    padding:     1px 5px;
-    margin:      2px;
+    padding:     1px 1px;
+}
+
+a.help > img {
+    height:       1em;
 }
 
 div#header {
