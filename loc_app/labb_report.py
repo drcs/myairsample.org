@@ -36,6 +36,17 @@ class LabbReport(LocReport):
     def _markdown_convert(self, string):
         return md.convert(string)
 
+    def _render_sample_info(self, values={}):
+        def maybe_include(prefix, key):
+            if key in values and values[key].strip() != '':
+                return "\item " + prefix + ": " + values[key].strip() + "\n"
+            else:
+                return ""
+
+        return maybe_include("Sample identifying name", 'samplename') \
+            + maybe_include("Date sample was taken", 'sampledate') \
+            + maybe_include("Location sample was taken", 'samplelocation')
+
     def generate_tex(self, fh=stdout):
 
         template_file=open(os.path.join('loc_app', 'templates','report','pdf','labb.tex'))
@@ -53,9 +64,11 @@ class LabbReport(LocReport):
             'outunits':         self.units('out_rep'),
             'longinunits':      self.units('in_long'),
             'longoutunits':     self.units('out_long'),
-            'samplename':       self.sample()['name'],
-            'sampledate':       self.sample()['date'],
-            'samplelocation':   self.sample()['location'],
+            'sampleinfo':       self._render_sample_info({
+                    'samplename':       self.sample()['name'],
+                    'sampledate':       self.sample()['date'],
+                    'samplelocation':   self.sample()['location'],
+                    }),
             'resultssection':   self._results_section(),
             'standardblurbs':   self._standards_blurbs(),
         }

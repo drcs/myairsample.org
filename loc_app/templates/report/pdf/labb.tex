@@ -65,9 +65,7 @@
 \newcommand{\outunits}       {\subst{outunits}} 
 \newcommand{\longinunits}    {\subst{longinunits}} 
 \newcommand{\longoutunits}   {\subst{longoutunits}} 
-\newcommand{\samplename}     {\subst{samplename}} 
-\newcommand{\sampledate}     {\subst{sampledate}} 
-\newcommand{\samplelocation} {\subst{samplelocation}} 
+\newcommand{\sampleinfo}     {\subst{sampleinfo}} 
 \newcommand{\user}           {\subst{user}}
 
 
@@ -80,9 +78,7 @@
 
 \section*{Sample information}
 \begin{itemize}
-\ifx\samplename\undefined\relax\else\item Sample identifying name:   \samplename\fi
-\ifx\sampledate\undefined\relax\else\item Date sample was taken:     \sampledate\fi
-\ifx\samplelocation\undefined\relax\else\item Location sample was taken: \samplelocation\fi
+\sampleinfo
 \item Report date:               \today
 \item Report input units:        \longinunits\ (\inunits)$^*$
 \item Report output units:       \longoutunits\ (\outunits)$^*$

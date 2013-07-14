@@ -1,16 +1,7 @@
 
-PDF report isn't working right:
-
--if sample identifying name, date sample was taken and/or location
- sample was taken at is left blank, then those should not appear in
- the report at all; right now, these titles are showing in the report
- when left blank
-
 Make boxes around blue question marks smaller; they should just
 enclose the question mark, and not go into other text or boxes'
 territory
-
- 
 
 Make the blue text a much darker blue
 
