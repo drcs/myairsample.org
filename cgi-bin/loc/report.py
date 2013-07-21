@@ -95,9 +95,9 @@ class LocReport():
                     self._chemicals.append(entry)
 
                 except TypeError:
-                    self._failed_conversions.append(chemical['name'])
+                    self._failed_conversions.append(chemical)
                 except ValueError:
-                    self._failed_conversions.append(chemical['name'])
+                    self._failed_conversions.append(chemical)
 
         cas_list = map(lambda c: c['cas'], self._chemicals)
         for (name,standard) in zip(self._standards.keys(),self._standards.values()):

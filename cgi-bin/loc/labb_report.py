@@ -1,11 +1,16 @@
 
-from loc.report import LocReport
-from loc.markdown_ltx import MarkdownLtx
+from report import LocReport
+from loc_markdown.markdown_ltx import MarkdownLtx
+from loc_markdown.superscript  import SuperscriptExtension
 from sys import stdout
 import os
 from tempfile import NamedTemporaryFile
+from string import maketrans, Template
 
-md=MarkdownLtx()
+ltx_special_chars=maketrans(r'_$^&', "----")
+
+class LatexTemplate(Template):
+    delimiter='\subst'
 
 def should_cleanup():
     try:
@@ -24,179 +29,63 @@ def cleanup(fname):
         except OSError:
             pass
 
-def ltx_tr(xs):
-    return str.join(' & ',map(str,xs)) + r'\\'
+md=MarkdownLtx(extensions=[SuperscriptExtension()])
 
 class LabbReport(LocReport):
 
+    def _markdown_convert(self, string):
+        return md.convert(string)
+
+    def _render_sample_info(self, values={}):
+        def maybe_include(prefix, key):
+            if key in values and values[key].strip() != '':
+                return "\item " + prefix + ": " + values[key].strip() + "\n"
+            else:
+                return ""
+
+        return maybe_include("Sample identifying name", 'samplename') \
+            + maybe_include("Date sample was taken", 'sampledate') \
+            + maybe_include("Location sample was taken", 'samplelocation')
+
     def generate_tex(self, fh=stdout):
 
-        def ltx_def(name,value):
-            print >>fh, '\\newcommand{\\' + name + r"} {" + value + "} \n"
-
-        def ltx_def_if(name, value, default=None):
-            if value is not None:
-                ltx_def(name, value)
-            elif default is not None:
-                ltx_def(name, default)
-
-        print >>fh,r"""
-\documentclass{article}
-
-\usepackage{graphicx, pslatex, array}
-\usepackage[table]{xcolor}
-
-\widowpenalty=1000
-\clubpenalty=1000
-
-\pagestyle{plain}
-
-\setlength{\parindent}{0pt}%
-\setlength{\parskip}{\baselineskip}%
-\setlength{\oddsidemargin}{0in}
-\setlength{\textwidth}{6.5in}
-\setlength{\textheight}{8.5in}
-\newlength\acklength
-\newlength\logowidth
-\setlength\logowidth{1.8in}
-
-\setlength{\arrayrulewidth}{1.5pt}
-
-\newcommand{\cubed}{$^3$}
-\newcommand{\micro}{$\mu$}
-\newcommand{\fc}{\cellcolor{salmon}}
-\newcommand{\nfc}{\cellcolor{white}}
-\definecolor{salmon}{rgb}{1.0,0.8,0.7}
-\newcommand{\highlightbox}[1]{\colorbox{salmon}{\parbox{\linewidth}{#1}}}
-"""
-
-        ltx_def('inunits',  self.units('in_rep'))
-        ltx_def('outunits', self.units('out_rep'))
-        ltx_def('longinunits',  self.units('in_long'))
-        ltx_def('longoutunits', self.units('out_long'))
-
-        ltx_def_if('samplename',     self.sample()['name'])
-        ltx_def_if('sampledate',     self.sample()['date'])
-        ltx_def_if('samplelocation', self.sample()['location'])
+        template_file=open(os.path.join('loc_app', 'templates','report','pdf','labb.tex'))
+        template = LatexTemplate(template_file.read())
+        template_file.close()
 
         user=""
         if self.user('first'):  user = 'For ' + self.user('first')
         if self.user('second'): user = user + r'\\ ' + self.user('second')
-        ltx_def('user', user)
+        user=str(user).translate(ltx_special_chars)
 
-        print >>fh,r"""
-\begin{document}
+        values = {
+            'user':             user,
+            'inunits':          self.units('in_rep'),
+            'outunits':         self.units('out_rep'),
+            'longinunits':      self.units('in_long'),
+            'longoutunits':     self.units('out_long'),
+            'sampleinfo':       self._render_sample_info({
+                    'samplename':       self.sample()['name'],
+                    'sampledate':       self.sample()['date'],
+                    'samplelocation':   self.sample()['location'],
+                    }),
+            'resultssection':   self._results_section(),
+            'standardblurbs':   self._standards_blurbs(),
+        }
+        print >>fh, template.substitute(values)
 
-\title{Levels of Concern Report \\
-       \large
-       A comparison of air sampling results to pollutant levels of concern}
-\author{\user}
-\date{}
-\maketitle
-
-\section*{Sample information}
-\begin{itemize}
-\ifx\samplename\undefined\relax\else\item Sample identifying name:   \samplename\fi
-\ifx\sampledate\undefined\relax\else\item Date sample was taken:     \sampledate\fi
-\ifx\samplelocation\undefined\relax\else\item Location sample was taken: \samplelocation\fi
-\item Report date:               \today
-\item Report input units:        \longinunits\ (\inunits)$^*$
-\item Report output units:       \longoutunits\ (\outunits)$^*$
-\item Report made on web at:     http://myairsample.org
-\end{itemize}
-
-$^*$For a description of what units mean, see ``Units Information'' section later in this report
-
-\newcommand{\unitssection}{
-\section*{Units information}
-Parts per billion (ppb) describes how many parts of a chemical are in
-the same place as 1 billion parts of air. For example, a recipe says
-to add a spoonful of vanilla for every 10 cups of flour. A drop of
-vanilla is hardly anything, but it has a big effect on the cookies'
-flavor. Similarly, if we measure benzene in the air, we might find 3
-``drops'' of benzene for 1,000,000,000 (one billion) ``drops'' of air. Three
-drops of benzene seems like a small amount, but it is significant.
-
-Parts per billion by volume, or ppbv, means the concentration has been
-figured out in terms of how much space the molecules take up. For
-example, if we make a mixture of 3 cups of vanilla and 1 billion cups
-of flour, then our concentration is 3 parts volume (cups of vanilla)
-per billion parts volume (cups of flour), or 3 ppbv vanilla in
-flour. When 3 volumes of benzene are in a billion volumes of air, the
-concentration is 3 ppbv benzene in air.
-
-Micrograms per meters cubed (\micro g/m\cubed) describes how much of a chemical's
-weight is in a volume of air that takes up one cubic meter. Imagine an empty
-box that is three feet long on both sides, and three feet tall. One meter is about
-three feet long. So the box's volume is 1 cubic meter, or 1 m\cubed. A microgram
-(\micro g) is a very small weight, like that of a grain of sand. You put 3 grains of sand
-into the box. The concentration of sand inside the box is the weight of the sand
-(3 \micro g) divided by the
-volume of the box (1 m\cubed), or 3 \micro g /m\cubed. Like grains of sand, chemicals can also be
-reported by weight and volume. For example, a monitor might read 5 \micro g /m\cubed\ %
-benzene, or 5 \micro g of benzene in 1 m\cubed\ of air.
-}
-"""
-
-        print >>fh, r"""
-     \vfill
-     \parbox{\logowidth}{
-       \includegraphics[width=\logowidth]{labb_logo}\\
-       \vskip 0.1in
-       \includegraphics[width=\logowidth]{drcs_logo-200}
-     }
-     \setlength\acklength{\textwidth}
-     \addtolength\acklength{-\logowidth}
-     \addtolength\acklength{-0.5in}
-     \hskip 0.5in
-     \parbox{\acklength}{
-       This report was generated at www.myairsample.org, a site developed and
-       maintained by the Louisiana Bucket Brigade and Digitial Resources for
-       Community and Science.  For questions and comments about air data,
-       Louisiana Bucket Brigade can contacted at www.labucketbrigade.org,
-       4226 Canal St, New Orleans, LA 70119, phone: 504-484-3433, fax:
-       504-324-0332, email: info@labucketbrigade.org.
-       For comments, feedback, or errors in the web site,
-       please contact the LA Bucket Brigade or email Digital Resources for
-       Community and Science at drcsdirector@gmail.com
-     }
-
-\thispagestyle{empty}
-"""
-
-        self._results_section(fh)
-
-        # Standards descriptions
-        print >>fh, r"""
-\unitssection
-
-\section*{Sample screening levels}
-
-\highlightbox{Some government agencies have developed standards and screening levels for
-toxic chemicals in the air based on health information about the chemicals.
-There is no information available for some toxic chemicals. The agencies are
-listed below, with a brief description of the methods used in establishing their
-levels. States may not be required to adhere to national standards.}
-
-\begin{itemize}
-"""
+    def _standards_blurbs(self):
+        result = ''
         for standard in self.standards():
             description = self.standards()[standard].description()
             if description is not None:
-                print >>fh, '\item ' + md.convert(description)
+                result += '\item ' + md.convert(description)
             else:
-                print >>fh, '\item ' + standard + ': description not available'
-
-
-        print >>fh,"""
-\end{itemize}
-
-
-\end{document}
-"""
+                result += '\item ' + standard + ': description not available'
+        return result
 
     def generate(self):
-        image_dir = os.path.join(os.getcwd(), 'media')
+        image_dir = os.path.join(os.getcwd(), 'loc_app', 'data', 'media')
         try:
             texinputs_env=os.environ['TEXINPUTS']
         except KeyError:
@@ -208,9 +97,11 @@ levels. States may not be required to adhere to national standards.}
         self.generate_tex(outfile)
         outfile.flush()
         doc_dir=os.path.dirname(outfile.name)
+        saved_dir=os.getcwd()
         os.chdir(doc_dir)
         self._pdflatex_stat=os.system("pdflatex -interaction nonstopmode " + outfile.name + ">& /dev/null")
         doc_basename=os.path.splitext(outfile.name)[0]
+        os.chdir(saved_dir)
 
         cleanup(doc_basename + '.aux')
 
@@ -223,19 +114,13 @@ levels. States may not be required to adhere to national standards.}
     def http_headers(self):
         username = self.user('first')
         if self.user('second'): username = username + '_' + self.user('second')
-
+ 
         if self._pdflatex_stat:
-            return ["Content-type: text/plain"]
+            return {"Content-type": "text/plain"}
         else:
-            return ["Content-type: application/pdf",
-                    "Content-disposition: attachment; filename=LABB-%s.pdf" % username]
+            return {"Content-type":        "application/pdf",
+                    "Content-disposition": "attachment; filename=LABB-%s.pdf" % username}
+ 
 
-    def _unit_representations(self):
-        return {'ug/m3' :   '{\micro g/m\cubed}'}
-
-    def _unit_descriptions(self):
-        return {'ug/m3' : 'micrograms per cubic meter',
-                'ppbv'  : 'parts per billion by volume',
-                'ppb'   : 'parts per billion'}
     
 
