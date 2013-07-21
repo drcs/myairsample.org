@@ -2,14 +2,20 @@
 LABB report (PDF format), following Gwen's "brief comparison" style
 """
 
-from labb_brief import LabbBrief
+from labb_brief import LabbBrief, LatexTemplate
+
+not_above_template = LatexTemplate(r"""
+\subsection*{\subst{name}}
+Your reported value of \subst{level} \outunits\ %
+is not above any levels of concern in the myairsample.org system
+""")
 
 class LabbSummary(LabbBrief):
 
-    def _standards_from_cgi(self, form):
-        if form.getvalue('laonly') == 'on':
+    def _standards_from_form_data(self, form):
+        if 'laonly' in form and form['laonly'] == 'on':
             return ['lastds']
-        elif form.getvalue('nconly') == 'on':
+        elif 'nconly' in form and form['nconly'] == 'on':
             return ['ncstds']
         else:
             return None   # In this case 'None' means 'all'.
@@ -23,8 +29,7 @@ class LabbSummary(LabbBrief):
         else:
             return False
 
-    def _unreport_chemical(self, chemical, fh):
-        print >>fh,r'\subsection*{' + chemical['name'] + r"""}
-Your reported value of """ + chemical['level_rep'] + '\ \outunits\ '
-        print >>fh, r'is not above any levels of concern in the myairsample.org system'
+    def _unreport_chemical(self, chemical):
+        return not_above_template.substitute({'name': chemical['name'], 'level': chemical['level_rep']})
+
 
