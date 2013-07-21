@@ -223,8 +223,9 @@ class LocReport():
         try:
             fh = open(content_fname)
 
-            for hdr in self.http_headers():
-                print hdr
+            headers=self.http_headers()
+            for key in headers:
+                print key + ": " + headers[key]
             print
             stdout.flush()
         
