@@ -49,13 +49,16 @@ Our system cannot handle units of ppbv for \subst{name}.
 Please try units of ppb or \micro g/m\cubed.
 """)
 
+from pprint import pformat
+logfile=open('/tmp/labb.log','w')
 
 class LabbBrief(LabbReport):
 
     def _standards_from_form_data(self, form):
+#        print >>logfile, "reflevel: " + pformat(form['reflevel'].value)
         requested = [ 'ncstds' ]
         if 'reflevel' in form:
-            requested = [ form['reflevel'] ]
+            requested = [ form['reflevel'].value ]
         return requested
 
     def _should_report_comparison(self, chemical, comparison):
