@@ -54,8 +54,8 @@ class LabbBrief(LabbReport):
 
     def _standards_from_form_data(self, form):
         requested = [ 'ncstds' ]
-        if 'standards' in form:
-            requested = [ form['standards'] ]
+        if 'reflevel' in form:
+            requested = [ form['reflevel'] ]
         return requested
 
     def _should_report_comparison(self, chemical, comparison):

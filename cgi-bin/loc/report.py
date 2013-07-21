@@ -33,7 +33,7 @@ class LocReport():
             user      = cgi_pars['user']
             units     = cgi_pars['units']
             sample    = cgi_pars['sample']
-            standards = self._standards_from_cgi(form)
+            standards = self._standards_from_form_data(form)
 
         # Default parameters
         if chemicals is None: chemicals = []
@@ -129,7 +129,7 @@ class LocReport():
                             self._failed_conversions.append(chemical['name'])
         self._chemicals.sort(key=lambda c: ['aaaa' + c['name'], c['name']]['has_overages' in c])
 
-    def _standards_from_cgi(self, form):
+    def _standards_from_form_data(self, form):
         """
         report base class just uses all available standards.
         """
