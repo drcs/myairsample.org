@@ -38,7 +38,7 @@ class LabbReport(LocReport):
 
     def _render_sample_info(self, values={}):
         def maybe_include(prefix, key):
-            if key in values and values[key].strip() != '':
+            if key in values and values[key] and values[key].strip() != '':
                 return "\item " + prefix + ": " + values[key].strip() + "\n"
             else:
                 return ""
