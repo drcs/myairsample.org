@@ -45,7 +45,8 @@ Either a comparison level is not available for \subst{name} or the spelling of t
 
 conversion_failed_template = LatexTemplate(r"""
 \subsection*{\subst{name}}
-Unit conversions failed.  (Try ppb or \micro g/m$^3$?)
+Our system cannot handle units of ppbv for \subst{name}.
+Please try units of ppb or \micro g/m\cubed.
 """)
 
 

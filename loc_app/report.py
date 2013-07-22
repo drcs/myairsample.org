@@ -70,15 +70,21 @@ class LocReport():
             else:
                 mw = cas2mw(cas)
                 try:
-                    level=float(chemical['level'])
-                    level_in_outunits = convert_units(level,units['in'],units['out'],mw)
                     entry={'name':        chemical['name'],
                            'cas':         cas,
                            'mw':          mw,
-                           'level':       level_in_outunits,
-                           'level_rep':   fmt_sigfigs(level_in_outunits),
-                           'level_inunits_rep': fmt_sigfigs(level),
+                           'level_inunits_rep': chemical['level'],
+                           'level_inunits':     float(chemical['level']),
                            'comparisons': []}
+
+                    if (units['in'] == units['out']):
+                        entry.update({'level_rep': entry['level_inunits_rep'],
+                                      'level':     entry['level_inunits']})
+                    else:
+                        level_outunits = convert_units(entry['level_inunits'],units['in'],units['out'],mw)
+                        entry.update({'level':     level_outunits,
+                                      'level_rep': fmt_sigfigs(level_outunits)})
+
                     self._chemicals.append(entry)
 
                 except TypeError:
@@ -96,14 +102,25 @@ class LocReport():
                 if report_levels:
                     for criterion_name in report_levels.keys():
                         try:
-                            criterion_level = convert_units(report_levels[criterion_name],standard.meta['units'],units['out'],chemical['mw'])
-                            chemical['comparisons'].append({'level':         criterion_level,
-                                                            'level_rep':     fmt_sigfigs(criterion_level),
-                                                            'description':   describe_comparison(chemical['level'],criterion_level),
-                                                            'criterion':     standard.criteria[criterion_name],
-                                                            'source':        standard.meta['name']})
+                            entry = {'source':     standard.meta['name'],
+                                     'criterion':  standard.criteria[criterion_name]}
+                            if (standard.meta['units'] == units['out']):
+                                entry.update({'level_rep':   report_levels[criterion_name],
+                                              'level':       float(report_levels[criterion_name])})
+                            else:
+                                criterion_level = convert_units(float(report_levels[criterion_name]),
+                                                                standard.meta['units'],
+                                                                units['out'],
+                                                                chemical['mw'])
+                                entry.update({'level':     criterion_level,
+                                              'level_rep': fmt_sigfigs(criterion_level)})
+                            entry['description'] = describe_comparison(chemical['level'], entry['level'])
+                            chemical['comparisons'].append(entry)
+                            if (chemical['level'] > entry['level']):
+                                chemical['has_overages'] = True
                         except TypeError:
                             self._failed_conversions.append(chemical['name'])
+        self._chemicals.sort(key=lambda c: ['aaaa' + c['name'], c['name']]['has_overages' in c])
 
     def _standards_from_form_data(self, form):
         """
