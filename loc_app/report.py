@@ -42,9 +42,9 @@ class LocReport():
         self._sample = {'name':      None,
                         'date':      None,
                         'location':  None}
-        for k in sample.keys(): self._sample[k] = sample[k]
+        for k in sample.keys(): self._sample[k] = self.sanitize(sample[k])
 
-        self._user=user
+        self._user={k: self.sanitize(v) for k,v in user.items()}
 
         standards = self._standards_from_form_data(form)
 
@@ -121,6 +121,10 @@ class LocReport():
                         except TypeError:
                             self._failed_conversions.append(chemical['name'])
         self._chemicals.sort(key=lambda c: ['aaaa' + c['name'], c['name']]['has_overages' in c])
+
+    @staticmethod
+    def sanitize(str):
+        return str
 
     def _standards_from_form_data(self, form):
         """

@@ -56,11 +56,11 @@ class Root():
             report=report_class(
                 units  = {'in'  : inunits,
                           'out' : outunits},
-                sample = {'name': samplename,
-                          'date': sampledate,
+                sample = {'name'    : samplename,
+                          'date'    : sampledate,
                           'location': samplelocation },
-                user   = {'first':  username,
-                          'second': username2 },
+                user   = {'first'   : username,
+                          'second'  : username2 },
                 form   = kwargs)
             (content_fname, headers) = report.reply()
             try:
