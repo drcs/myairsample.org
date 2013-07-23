@@ -4,6 +4,7 @@ from loc_markdown.markdown_ltx import MarkdownLtx
 from loc_markdown.superscript  import SuperscriptExtension
 from sys import stdout
 import os
+import re
 from tempfile import NamedTemporaryFile
 from string import maketrans, Template
 
@@ -33,6 +34,10 @@ md=MarkdownLtx(extensions=[SuperscriptExtension()])
 
 class LabbReport(LocReport):
 
+    @staticmethod
+    def sanitize(str):
+        return re.sub('([#&^\%_])',r'\\\1',str)
+
     def _markdown_convert(self, string):
         return md.convert(string)
 
@@ -56,7 +61,6 @@ class LabbReport(LocReport):
         user=""
         if self.user('first'):  user = 'For ' + self.user('first')
         if self.user('second'): user = user + r'\\ ' + self.user('second')
-        user=str(user).translate(ltx_special_chars)
 
         values = {
             'user':             user,
