@@ -53,7 +53,8 @@ class LocReport():
                         'location':  None}
         for k in sample.keys(): self._sample[k] = self.sanitize(sample[k])
 
-        self._user={k: self.sanitize(v) for k,v in user.items()}
+        self._user = {}
+        for k in user: self._user[k] = self.sanitize(user[k])
 
         # Remember requested standards; if none specified, use all available
         if standards is None:
