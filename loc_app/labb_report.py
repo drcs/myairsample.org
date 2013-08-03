@@ -36,7 +36,7 @@ class LabbReport(LocReport):
 
     @staticmethod
     def sanitize(str):
-        return re.sub('([#&^\%_])',r'\\\1',str)
+        return re.sub('([$#&^\%_])',r'\\\1',str)
 
     def _markdown_convert(self, string):
         return md.convert(string)

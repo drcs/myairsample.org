@@ -13,13 +13,6 @@ mark (i.e. for Chemical name/Measured value help text, Sample
 identifying name help text, and Location sample was taken at help
 text)
 
- 
-
-The # sign entered in various boxes returns gobbledygook
-
--fix it so that the # sign can be entered
-
--are there other symbols that return gobbledygook that need to be fixed?
 
 -make it so that if the system fails, you first get a professional message?  Perhaps it could be:
 
