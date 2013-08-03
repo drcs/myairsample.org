@@ -1,18 +1,9 @@
-Choosing "all available levels of concern" is not returning the right thing – it's returning on the levels the sample is above
-
+Choosing "all available levels of concern" is not returning the right
+thing – it's returning on the levels the sample is above
  
 
 Clicking in a chemical name or measured value box below the first one
 doesn't "stick" – it moves the cursor up to the first box
-
- 
-
-Change the sub-title to: An online tool to compare air sample results
-to levels of concern
-
-(change sampling to sample and take out pollutant)
-
-Do this for both the web site and the pdf report
 
 Next to the boxes for Organization name 1, Organization name 2, Sample
 identifying name, Date sample was taken, and Location sample was taken
