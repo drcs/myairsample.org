@@ -180,11 +180,12 @@ fieldset label p {
     font-size: 90%;
 }
 
-#user_input label {
-    display: block;
+#user_input div {
+    margin-bottom: 1em;
 }
 
-#user_input input {
+#user_input a.help > img {
+    margin-bottom: 3px;
 }
 
 #sample_info label {
@@ -192,7 +193,6 @@ fieldset label p {
 }
 
 #sample_info input {
-    display: block;
     width:   65%;
 }
 

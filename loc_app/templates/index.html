@@ -88,47 +88,40 @@
 		2. Report Title
 		<a class="help" tabindex="1500" href="#help_report_title"><img src="media/Question_Circle.svg" alt="?"></img></a>
 	      </legend>
-	      <table>
-		<tr>
-		  <td>
-		    <label for="username">
-		      Organization name 1
-		      <a class="help" tabindex="1500" href="#help_report_title"><img src="media/Question_Circle.svg" alt="?"></img></a>
-		    </label>
-		  </td>
-		  <td>
-		    <input name="username" tabindex="200"/>
-		  </td>
-		</tr>
-		<tr>
-		  <td>
-		    <label for="username2">
-		      Organization name 2
-		      <a class="help" tabindex="1500" href="#help_report_title"><img src="media/Question_Circle.svg" alt="?"></img></a>
-		    </label>
-		  </td>
-		  <td>
-		    <input name="username2" tabindex="201"/>
-		  </td>
-		</tr>
-	      </table>
+	      <div>
+		<label for="username">
+		  Organization name 1
+		  <a class="help" tabindex="1500" href="#help_report_title"><img src="media/Question_Circle.svg" alt="?"></img></a>
+		</label>
+		<input name="username" tabindex="200"/><span class="select_label">(optional)</span>
+	      </div>
+	      <div>
+		<label for="username2">
+		  Organization name 2
+		  <a class="help" tabindex="1500" href="#help_report_title"><img src="media/Question_Circle.svg" alt="?"></img></a>
+		</label>
+		<input name="username2" tabindex="201"/><span class="select_label">(optional)</span>
+	      </div>
 	    </fieldset>
 	    <!-- sample information -->
 	    <fieldset id="sample_info">
 	      <label>
 		Sample identifying name
 		<a class="help" tabindex="1500" href="#help_sample_name"><img src="media/Question_Circle.svg" alt="?"></img></a>
-		<input name="samplename" tabindex="301"></input>
+		  <input name="samplename" tabindex="301"></input>
+		  <span class="select_label">(optional)</span>
 	      </label>
 	      <label>
 		Date sample was taken
 		<a class="help" tabindex="1500" href="#help_sample_date"><img src="media/Question_Circle.svg" alt="?"></img></a>
 		<input name="sampledate" tabindex="302"></input>
+		<span class="select_label">(optional)</span>
 	      </label>
 	      <label>
 		Location sample was taken at
 		<a class="help" tabindex="1500" href="#help_sample_location"><img src="media/Question_Circle.svg" alt="?"></img></a>
 		<input name="samplelocation" tabindex="303"></input>
+		<span class="select_label">(optional)</span>
 	      </label>
 	    </fieldset>
 	  </div>
