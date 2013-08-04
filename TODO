@@ -10,12 +10,6 @@ information about what went wrong.  If you have time, it would be
 helpful to us if you copied and pasted the technical information about
 what went wrong into an email and sent it to drcsdirector@gmail.com
 
- 
-
-0.000012 is returning at 1.2 e -5 in the pdf report – fix that so
-there is either no limit or a much ridiculously higher limit ... like
-10 or 20 zeros
- 
 
 In the box where you choose the one set of levels, have those listed in alphabetical order
 

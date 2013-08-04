@@ -61,11 +61,11 @@ def fmt_sigfigs_past_decimal(x,n=3):
     return fmt % x
 
 def fmt_sigfigs(x, n=2):
-    factor=10**floor(log10(x)-n+1)
+    digits = int(floor(log10(x)))
+    factor=10**(digits-n+1)
     result = factor * round(x / factor)
-    if (factor > 0.2):
-        result = int(result)
-    return str(result)
+    fmt = '%%.%df' % max(-(digits - n + 1), 0)
+    return fmt % result
 
 def unscientific(x):
     if (not(re.match('[\d.]+e[-+]?\d+', x))):
