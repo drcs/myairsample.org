@@ -3,12 +3,6 @@ Clicking in a chemical name or measured value box below the first one
 doesn't "stick" – it moves the cursor up to the first box
 
 
-Put the ending periods in the blue question mark text inside the quote
-mark (i.e. for Chemical name/Measured value help text, Sample
-identifying name help text, and Location sample was taken at help
-text)
-
-
 -make it so that if the system fails, you first get a professional message?  Perhaps it could be:
 
 Whoops!  Something went wrong in our system.  Click here for technical
