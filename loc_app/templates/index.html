@@ -138,7 +138,7 @@
 		<p>
 		  <span class="select_label">Select</span>
 		  <select name="standards">
-		    <option py:for="key in all_standards.keys()" value="${key}">
+		    <option py:for="key in sorted(all_standards.keys(), key=lambda k:all_standards[k].oneline_description())" value="${key}">
 		      ${all_standards[key].oneline_description()}
 		    </option>
 		  </select>
