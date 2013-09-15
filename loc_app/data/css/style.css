@@ -188,6 +188,11 @@ fieldset label p {
     margin-bottom: 3px;
 }
 
+#user_input input {
+    width:          40%;
+    margin-right:   3pt;
+}
+
 #sample_info label {
     display: block;
 }
