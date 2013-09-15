@@ -22,6 +22,7 @@ md=Markdown(extensions=[SuperscriptExtension()])
 class Root():
     def __init__(self):
         self.api = API()
+        self.about = About()
 
     @cherrypy.expose
     def index(self):
@@ -82,3 +83,9 @@ class API():
     def validate(self, chemical_name):
         cherrypy.response.headers['Content-Type']='text/plain'
         return name2cas(chemical_name) or "NA"
+
+class About():
+    @cherrypy.expose
+    def levels(self):
+        cherrypy.response.headers['Content-Type']='text/plain'
+        return "Hello, world!"
