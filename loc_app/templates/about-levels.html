@@ -1,0 +1,139 @@
+<?xml version="1.0" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/">
+  <head>
+    <title>Levels of Concern</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+  </head>
+  <body>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/loc.js"></script>
+    <div id="header">
+      <div id="titles">
+	<h1>MyAirSample.org</h1>
+	<h2>An online tool to compare air sample results to levels of concern</h2>
+      </div>
+      <div id="logos">
+	<ul>
+	  <li><a href="http://www.labucketbrigade.org/"><img src="/media/labb_logo" alt="LABB logo"></img></a></li>
+	  <li><a href="https://github.com/drcs"><img src="/media/drcs_logo.png" alt="DRCS logo"></img></a></li>
+	</ul>
+      </div>
+    </div>
+    <div id="nav">
+      <ul>
+	<li><a tabindex="1000" href="/">Create a report</a></li>
+	<li><a tabindex="1000" href="/about/levels">About the levels of concern</a></li>
+	<li><a tabindex="1000" href="/faqs">About bucket samples and monitoring</a></li>
+	<li><a tabindex="1000" href="/about/tool">About this tool</a></li>
+	<li><a tabindex="1000" href="/contact">Contact us</a></li>
+	<li><a tabindex="1000" href="/about/implementation">Technical details</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <p>      
+	Some government agencies have developed standards and screening levels for
+	toxic chemicals in the air based on health information about the chemicals.
+	Some levels of concern are levels that state governments have designated
+	as the maximum levels of toxics that are allowed to be in the air.  These
+	levels are called "standards" and are legally enforceable in states that
+	have them.
+      </p>
+      <p>
+	Other levels of concern are developed by government agencies which survey
+	scientific studies to figure out what levels of chemical exposure pose
+	minimal risk to your health. The agencies consider these levels (called
+	"screening levels" or "minimum risk levels") as something like a borderline
+	between levels of chemical exposure that <i>could</i> do you harm and levels
+	that <i>probably won't</i> do you any harm. They are not legally enforceable.
+      </p>
+      <p>
+	The levels of concern in our tool and the agencies that have developed them
+	are listed below, with a brief description of the methods used in
+	establishing the levels.  Click on the agencies' web sites to go to the
+	agencies' detailed and technical descriptions of these levels of concern.  To
+	compare your air data to these levels of concern, click on <a href="/">Create a report</a>.
+      </p>
+      <h2>ATSDR Minimal Risk Levels</h2>
+      <p>
+	Agency web site: <a href="http://www.atsdr.cdc.gov/mrls/index.asp">http://www.atsdr.cdc.gov/mrls/index.asp</a>
+      </p>
+      <p>
+	ATSDR Minimal Risk Levels are based on existing studies of chemical health
+	effects.  ATSDR stands for "American Toxic Substance and Disease Registry."
+	Exposure at these levels is said to pose "minimal risks" of adverse health
+	effects.  The levels were derived from the experimentally-determined levels
+	at which the chemicals caused adverse effects in study populations of
+	people or animals, combined with uncertainty factors to account for the
+	differences among human populations and between humans and animals.  "Acute"
+	exposure is defined as up to two weeks, "Intermediate" as between two weeks
+	and one year, and "Chronic" as longer than a year.  These levels reflect
+	only non-cancer health effects. They are not legally enforceable.
+      </p>
+      <h2>EPA Region 6 Screening Levels</h2>
+      <p>
+	Agency web site: <a href="http://www.epa.gov/earth1r6/6pd/rcra_c/pd-n/screen.htm">http://www.epa.gov/earth1r6/6pd/rcra_c/pd-n/screen.htm</a>
+      </p>
+      <p>
+	EPA Region 6 Screening Levels are based on existing studies of chemical
+	health effects.  These levels are calculated for residential (as opposed to
+	workplace) exposures.  They reflect the risks of exposure to a certain
+	level of the chemical. The levels listed as screening levels correspond to
+	pre-determined levels of risk from exposure: either 1 in a million cancer
+	risk or a "hazard quotient" of 1 for non-cancer effects, whichever
+	corresponds to a lower concentration.  These screening levels are not
+	legally enforceable.
+      </p>
+      <h2>Louisiana Ambient Air Quality Standards</h2>
+      <p>
+	Agency web site: <a href="http://www.deq.louisiana.gov/portal/tabid/1674/Default.aspx">http://www.deq.louisiana.gov/portal/tabid/1674/Default.aspx</a>
+      </p>
+      <p>
+	The Louisiana Ambient Air Quality Standards are legally enforceable
+	standards in Louisiana, developed through Louisiana's regulatory process.  If
+	you live in Louisiana, you may want to look only at the legal limits which
+	apply to you.  They are found in Table 51.2 of Title 33, Part III.  They
+	are based on health effects information about the chemicals: the eight-hour
+	standard modifies occupational exposure levels to be appropriate for
+	residential exposures; the annual standard is based on EPA procedures for
+	calculating cancer risks.
+      </p>
+      <h2>North Carolina Ambient Air Standards</h2>
+      <p>
+	Agency web site: <a href="http://daq.state.nc.us/Rules/rules/secD1100.pdf">http://daq.state.nc.us/Rules/rules/secD1100.pdf</a>
+      </p>
+      <p>
+	The North Carolina Ambient Air Standards are legally enforceable in North
+	Carolina, developed through North Carolina's regulatory process.  If you
+	live in North Carolina, you may want to look only at the legal limits which
+	apply to you.  They are based on health effects information about the
+	chemicals.
+      </p>
+
+      <h2>Texas Effects Screening Levels</h2>
+      <p>
+	Agency web site: <a href="http://www.tceq.texas.gov/toxicology/esl">http://www.tceq.texas.gov/toxicology/esl</a>
+      </p>
+      <p>
+	Texas Effects Screening Levels are based on existing studies of chemical
+	health effects. Below these levels, no adverse health effects are thought
+	likely to occur.  They reflect the experimentally-determined levels at
+	which the chemicals caused adverse effects in study populations of people
+	or animals, combined with safety factors to account for the differences
+	among human populations and between humans and animals.  "Short-term"
+	refers to an exposure duration of one hour. "Long-term" refers in most
+	cases to a duration of one year; for benzene and ethylene dichloride, it
+	indicates a 24-hour period.  Texas Effects Screening Levels reflect both
+	cancer and non-cancer effects.  They are not legally enforceable.
+      </p>
+      <p>
+	Remember: Levels of Concern are only part of the story. There are
+	limitations to what is known about the health effects of chemicals. There
+	may be health impacts associated even with levels of chemicals below the
+	levels of concern.
+      </p>
+    </div>
+  </body>
+</html>
+
+
