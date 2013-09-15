@@ -47,7 +47,7 @@ Have #2 have the entry boxes in a vertical column on the left, and the pop-up he
 Have #2 have the pop-up help in a vertical column on the left, and the entry boxes in a column in the middle
 
 
-
++ Abstract the common elements of all templates
 + "chemical not found" warning: don't mess up input alignment;
   warning appear on one line that spans both columns
 + templatize the html report

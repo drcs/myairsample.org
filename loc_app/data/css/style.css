@@ -15,6 +15,10 @@ h1 {
     font-weight: normal;
 }
 
+h1 a {
+    color:       black;
+}
+
 h2 {
     margin:      2pt;
     font-size:   1.3em;

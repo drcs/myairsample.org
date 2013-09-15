@@ -87,5 +87,8 @@ class API():
 class About():
     @cherrypy.expose
     def levels(self):
-        cherrypy.response.headers['Content-Type']='text/plain'
-        return "Hello, world!"
+        """Serves the "About the levels of concern" page"""
+        tmpl = loader.load('about-levels.html')
+        page = tmpl.generate()
+        return page.render('html', doctype='html')
+
