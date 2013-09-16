@@ -92,3 +92,10 @@ class About():
         page = tmpl.generate()
         return page.render('html', doctype='html')
 
+    @cherrypy.expose
+    def faq(self):
+        """Serves the "About bucket samples and monitoring" page"""
+        tmpl = loader.load('about-faq.html')
+        page = tmpl.generate()
+        return page.render('html', doctype='html')
+
