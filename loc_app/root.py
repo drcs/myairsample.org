@@ -99,3 +99,10 @@ class About():
         page = tmpl.generate()
         return page.render('html', doctype='html')
 
+    @cherrypy.expose
+    def tool(self):
+        """Serves the "About this tool" page"""
+        tmpl = loader.load('about-tool.html')
+        page = tmpl.generate()
+        return page.render('html', doctype='html')
+
