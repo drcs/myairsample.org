@@ -1,0 +1,30 @@
+<html xmlns:py="http://genshi.edgewall.org/">
+  <head py:def="head()">
+    <title>Levels of Concern</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+  </head>
+  <body>
+    <div py:def="header()" id="header">
+      <div id="titles">
+	<h1>MyAirSample.org</h1>
+	<h2>An online tool to compare air sample results to levels of concern</h2>
+      </div>
+      <div id="logos">
+	<ul>
+	  <li><a href="http://www.labucketbrigade.org/"><img src="/media/labb_logo" alt="LABB logo"></img></a></li>
+	  <li><a href="https://github.com/drcs"><img src="/media/drcs_logo.png" alt="DRCS logo"></img></a></li>
+	</ul>
+      </div>
+    </div>
+    <div py:def="nav()" id="nav">
+      <ul>
+	<li><a tabindex="1000" href="/">Create a report</a></li>
+	<li><a tabindex="1000" href="/about/levels">About the levels of concern</a></li>
+	<li><a tabindex="1000" href="/about/faq">About bucket samples and monitoring</a></li>
+	<li><a tabindex="1000" href="/about/tool">About this tool</a></li>
+	<li><a tabindex="1000" href="/contact">Contact us</a></li>
+	<li><a tabindex="1000" href="/about/implementation">Technical details</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
