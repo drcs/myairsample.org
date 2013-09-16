@@ -32,6 +32,13 @@ class Root():
                              unit_keys      = units.units.keys(),
                              unit_represent = lambda key: HTML(md.convert(units.represent(key))))
         return page.render('html', doctype='html')
+    
+    @cherrypy.expose
+    def contact(self):
+        """Serves the "contact us" page"""
+        tmpl = loader.load('contact.html')
+        page = tmpl.generate()
+        return page.render('html', doctype='html')
 
     @cherrypy.expose
     def report(self,
@@ -105,4 +112,12 @@ class About():
         tmpl = loader.load('about-tool.html')
         page = tmpl.generate()
         return page.render('html', doctype='html')
+
+    @cherrypy.expose
+    def implementation(self):
+        """Serves the "Technical details" page"""
+        tmpl = loader.load('about-implementation.html')
+        page = tmpl.generate()
+        return page.render('html', doctype='html')
+
 
