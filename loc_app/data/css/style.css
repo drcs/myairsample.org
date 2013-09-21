@@ -131,6 +131,12 @@ div#nav ul li:hover {
     background-color: #cccccc;
 }
 
+div.static {
+    margin-left:  8em;
+    margin-right: 8em;
+    float:        left;
+}
+
 div#main {
     float:        left;
 }
