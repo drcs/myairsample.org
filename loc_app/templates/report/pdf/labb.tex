@@ -26,6 +26,9 @@
 \definecolor{salmon}{rgb}{1.0,0.8,0.7}
 \newcommand{\highlightbox}[1]{\colorbox{salmon}{\parbox{\linewidth}{#1}}}
 
+\hyphenation{Neutralization}
+\hyphenation{Orleans}
+
 % Allow this template to be latex'd directly.
 % Can't just say \newcommand{\ subst} because that confuses templater.
 \expandafter\newcommand\csname subst\endcsname[1]{{\bf #1}}
@@ -91,22 +94,30 @@ benzene, or 5 \micro g of benzene in 1 m\cubed\ of air.
      \parbox{\logowidth}{
        \includegraphics[width=\logowidth]{labb_logo}\\
        \vskip 0.1in
-       \includegraphics[width=\logowidth]{drcs_logo-200}
+       \includegraphics[width=\logowidth]{drcs_logo-200}\\
+       \vskip 0.1in
+       \includegraphics[width=\logowidth]{RANlogo-text}
      }
      \setlength\acklength{\textwidth}
      \addtolength\acklength{-\logowidth}
-     \addtolength\acklength{-0.5in}
+     \addtolength\acklength{-0.7in}
      \hskip 0.5in
      \parbox{\acklength}{
-       This report was generated at www.myairsample.org, a site developed and
-       maintained by the Louisiana Bucket Brigade and Digitial Resources for
-       Community and Science.  For questions and comments about air data,
-       Louisiana Bucket Brigade can contacted at www.labucketbrigade.org,
-       4226 Canal St, New Orleans, LA 70119, phone: 504-484-3433, fax:
-       504-324-0332, email: info@labucketbrigade.org.
-       For comments, feedback, or errors in the web site,
-       please contact the LA Bucket Brigade or email Digital Resources for
-       Community and Science at drcsdirector@gmail.com
+       \sloppy
+       This report was generated at www.myairsample.org, a site
+       \linebreak
+       developed and maintained by the Louisiana Bucket Brigade,
+       \linebreak
+       Residents for Air Neutralization, and Digitial Resources for
+       \linebreak
+       Community and Science.  For questions and comments about air
+       data, Louisiana Bucket Brigade can contacted at
+       www.labucketbrigade.org, 4226 Canal St, New Orleans, LA 70119,
+       phone: 504-484-3433, fax: 504-324-0332, email:
+       info@labucketbrigade.org.  For comments, feedback, or errors in
+       the web site, please contact the LA Bucket Brigade or email
+       Digital Resources for Community and Science at
+       drcsdirector@gmail.com
      }
 
 \thispagestyle{empty}
