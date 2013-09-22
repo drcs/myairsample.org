@@ -28,7 +28,7 @@
             "description": {
                 "short": "TX ESL - long term", 
                 "brief": "The **Long-Term** Texas Effects Screening Level", 
-                "long": "According to the Texas Natural Resource Conservation Commission,   no health effects are thought to occur below this level. \"Long-term\" levels refer to the average exposure level during a **year** (24 hours for benzene and ethylene dichloride)."
+                "long": "According to the Texas Natural Resource Conservation Commission,   no health effects are thought to occur below this level. \"Long-term\" levels refer to the average exposure level during a **year**."
             }, 
             "name": "tlong"
         }
