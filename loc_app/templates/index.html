@@ -15,18 +15,20 @@
 	  <div>
 	    <fieldset id="chemical_input">
 	      <legend>1.</legend>
-	      <label id="chemical_name_input">
-		Chemical name<a class="help" tabindex="1500" href="#help_chemical_entry"><img src="media/Question_Circle.svg" alt="?"></img></a>
+	      <div class="inputs">
+		<label id="chemical_name_input">
+		  Chemical name<a class="help" tabindex="1500" href="#help_chemical_entry"><img src="media/Question_Circle.svg" alt="?"></img></a>
+		</label>
+		<label id="chemical_level_input">
+		  Measured value<a class="help" tabindex="1500" href="#help_chemical_entry"><img src="media/Question_Circle.svg" alt="?"></img></a>
+		</label>
 		<input name="chem1" tabindex="010"/>
-		<input name="chem2" tabindex="020"/>
-		<input name="chem3" tabindex="030"/>
-	      </label>
-	      <label id="chemical_level_input">
-		Measured value<a class="help" tabindex="1500" href="#help_chemical_entry"><img src="media/Question_Circle.svg" alt="?"></img></a>
 		<input name="report1" tabindex="011"/>
+		<input name="chem2" tabindex="020"/>
 		<input name="report2" tabindex="021"/>
+		<input name="chem3" tabindex="030"/>
 		<input name="report3" tabindex="031"/>
-	      </label>
+	      </div>
 	      <div id="add_chemicals">
 		<a id="add_chemicals_button" href="#" tabindex="1500">
 		  <span id="add_chemicals_plus">+</span> add more chemicals

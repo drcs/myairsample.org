@@ -2,11 +2,11 @@ function validateChemicalName() {
     var elem = $(this)
     $.get('api/validate/' + elem.val() , function(data) {
 	if (data == "NA") {
-	    if (elem.next(".warning").length == 0) {
-		elem.after($("<span class='warning'> \"" + elem.val() + "\" is either misspelled, or not in the database</span>"))
+	    if (elem.next().next(".warning").length == 0) {
+		elem.next().after($("<span class='warning'> \"" + elem.val() + "\" is either misspelled, or not in the database</span>"))
 	    }
 	} else {
-	    elem.next(".warning").remove()
+	    elem.next().next(".warning").remove()
 	}
     });
 }
@@ -15,10 +15,10 @@ $( document ).ready(function () {
     var chem_n = 4;
     $( "#add_chemicals_button" ).click(function (event) {
 	var newinput = $("<input />").attr("name","chem" + chem_n).attr("tabindex", chem_n*10)
-	$("#chemical_name_input").append(newinput)
+	$("#chemical_input div.inputs").append(newinput)
 	newinput.focusout(validateChemicalName)
 	newinput.focus()
-	$("#chemical_level_input").append($("<input />").attr("name","report" + chem_n).attr("tabindex", chem_n*10 + 1))
+	$("#chemical_input div.inputs").append($("<input />").attr("name","report" + chem_n).attr("tabindex", chem_n*10 + 1))
 	chem_n = chem_n + 1;
 	event.preventDefault();
     });
@@ -29,5 +29,5 @@ $( document ).ready(function () {
 	event.preventDefault();
     });
 
-    $("#chemical_name_input input").focusout(validateChemicalName)
+    $("#chemical_input input[name*=chem]").focusout(validateChemicalName)
 });

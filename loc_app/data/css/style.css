@@ -174,20 +174,17 @@ fieldset label p {
     margin-left:   2em;
 }
 
-#chemical_input label {
-    width:   49%;
+#chemical_input label,input {
+    width:   45%;
     display: block;
     float:   left;
-}
-
-#chemical_input input {
-    display: block;
-    width:   95%;
 }
 
 #chemical_input span.warning {
     color:     red;
     font-size: 90%;
+    float:     left;
+    clear:     both;
 }
 
 #user_input div {
