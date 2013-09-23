@@ -6,6 +6,7 @@ body, html {
 
 body {
     font-size: 90%;
+    min-width: 85em;
 }
 
 h1 {
