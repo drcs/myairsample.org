@@ -13,6 +13,7 @@ from labb_summary import LabbSummary
 
 from standard     import all_standards
 from synonyms     import name2cas
+from options      import TextOptions
 
 from markdown import Markdown
 from loc_markdown.superscript import SuperscriptExtension
@@ -27,8 +28,10 @@ class Root():
     @cherrypy.expose
     def index(self):
         """Serves the landing page, including entry form"""
+        text_options = TextOptions()
         tmpl = loader.load('index.html')
         page = tmpl.generate(all_standards  = all_standards,
+                             text_options   = text_options.group_names(),
                              unit_keys      = units.units.keys(),
                              unit_represent = lambda key: HTML(md.convert(units.represent(key))))
         return page.render('html', doctype='html')
@@ -43,6 +46,7 @@ class Root():
     @cherrypy.expose
     def report(self,
                report_type    = 'pdf',
+               text_options   = None,
                inunits        = 'ppb',
                outunits       = 'ppb',
                username       = '',

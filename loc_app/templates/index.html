@@ -134,10 +134,21 @@
 		<p>all available levels of concern</p>
 	      </label>
 	    </fieldset>
+	    <fieldset id="units_explanations_choice">
+	      <legend>
+		4. Choose text options for the end of the report
+		<a class="help" tabindex="1500" href="#help_text_options"><img src="media/Question_Circle.svg" alt="?"></img></a>
+	      </legend>
+	      <select name="text_options">
+		<option py:for="(key,desc) in text_options" value="${key}">
+		  ${desc}
+		</option>
+	      </select>
+	    </fieldset>
 	    <!-- Report style -->
 	    <fieldset id="report_style_choice">
 	      <legend>
-		4. Choose report style
+		5. Choose report style
 		<a class="help" tabindex="1500" href="#help_report_style"><img src="media/Question_Circle.svg" alt="?"></img></a>
 	      </legend>
 	      <label>
@@ -326,6 +337,11 @@
 	    documents.  One popular free program that allows you to view PDFs is
 	    Adobe Reader, which you can download for free here:
 	    <a href="http://get.adobe.com/reader/">http://get.adobe.com/reader/</a>
+	  </p>
+	</div>
+	<div id="help_text_options">
+	  <p>
+	    <!-- FIXME implement -->
 	  </p>
 	</div>
 	<div id="help_generate_report">
