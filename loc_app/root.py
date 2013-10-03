@@ -73,6 +73,7 @@ class Root():
                           'location': samplelocation },
                 user   = {'first'   : username,
                           'second'  : username2 },
+                text_options = ['units', 'levels'],  # FIXME here fill in the actual request
                 form   = kwargs)
             (content_fname, headers) = report.reply()
             try:

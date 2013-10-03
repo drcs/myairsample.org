@@ -16,10 +16,11 @@ class LocReport():
     """
 
     def __init__(self,
-                 units      = None,
-                 sample     = None,
-                 user       = None,
-                 form       = {}):  # any remaing form data; contains i.e. chemicals
+                 units        = None,
+                 sample       = None,
+                 user         = None,
+                 text_options = [],
+                 form         = {}):  # any remaing form data; contains i.e. chemicals
         """
         'chemicals': list of common names of chemicals to report on
         'criteria':  list of names of criterion sources
@@ -33,6 +34,7 @@ class LocReport():
         if units     is None: units     = {'in':'ppb', 'out':'ppb'}
 
         # Remember requested units, sample info, and user
+        self._text_options = text_options;
         self._units = units;
         self._units['in_rep']   = self._represent_units(units['in'])
         self._units['out_rep']  = self._represent_units(units['out'])
