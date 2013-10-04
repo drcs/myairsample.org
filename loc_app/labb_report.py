@@ -78,7 +78,11 @@ class LabbReport(LocReport):
                 'units' in self._text_options
                 and r'\unitssection'
                 or  r'\relax',
-            'standardblurbs':   self._standards_blurbs(),
+            'standardssection':
+                'levels' in self._text_options
+                and r'\standardssection'
+                or  r'\relax',
+            'standardblurbs': self._standards_blurbs()
         }
         print >>fh, template.substitute(values)
 
