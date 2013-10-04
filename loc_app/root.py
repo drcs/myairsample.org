@@ -24,14 +24,14 @@ class Root():
     def __init__(self):
         self.api = API()
         self.about = About()
+        self.text_options = TextOptions()
 
     @cherrypy.expose
     def index(self):
         """Serves the landing page, including entry form"""
-        text_options = TextOptions()
         tmpl = loader.load('index.html')
         page = tmpl.generate(all_standards  = all_standards,
-                             text_options   = text_options.group_names(),
+                             text_options   = self.text_options.group_names(),
                              unit_keys      = units.units.keys(),
                              unit_represent = lambda key: HTML(md.convert(units.represent(key))))
         return page.render('html', doctype='html')
@@ -59,6 +59,7 @@ class Root():
         if (report_type == 'html'):
             return "HTML report... coming soon!"
         else:
+            self.text_options.select_group(text_options)
             report_class = LabbSummary
             report_map = {'single': LabbBrief,
                           'above':  LabbSummary,
@@ -73,7 +74,7 @@ class Root():
                           'location': samplelocation },
                 user   = {'first'   : username,
                           'second'  : username2 },
-                text_options = ['units', 'levels'],  # FIXME here fill in the actual request
+                text_options = self.text_options.selection(),
                 form   = kwargs)
             (content_fname, headers) = report.reply()
             try:

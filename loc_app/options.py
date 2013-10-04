@@ -1,6 +1,6 @@
 class TextOptions:
 
-  selection = []  
+  _selection = []  
 
   groups = [
     ('both',
@@ -19,10 +19,13 @@ class TextOptions:
   def select_group(self, group_name):
       for (name,desc,selection) in self.groups:
           if name == group_name:
-              self.selection = selection
+              self._selection = selection
 
   def selected(self, item):
-      return item in self.selection
+      return item in self._selection
+
+  def selection(self):
+      return self._selection
 
   def group_names(self):
       return map(lambda (k,d,x): (k, d), self.groups)
