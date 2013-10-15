@@ -73,17 +73,17 @@ class LabbReport(LocReport):
                     'sampledate':       self.sample()['date'],
                     'samplelocation':   self.sample()['location'],
                     }),
-            'resultssection':   self._results_section(),
-            'unitssection'  :
-                'units' in self._text_options
-                and r'\unitssection'
-                or  r'\relax',
-            'standardssection':
-                'levels' in self._text_options
-                and r'\standardssection'
-                or  r'\relax',
-            'standardblurbs': self._standards_blurbs()
+            'resultssection'   : self._results_section(),
+            'unitssection'     : r'\relax',
+            'unitsnote'        : r'\relax',
+            'standardssection' : r'\relax',
+            'standardblurbs'   : self._standards_blurbs()
         }
+        if 'units' in self._text_options:
+            values['unitsnote']    = r'\unitsnote'
+            values['unitssection'] = r'\unitssection'
+        if 'levels' in self._text_options:
+            values['standardssection'] = r'\standardssection'
         print >>fh, template.substitute(values)
 
     def _standards_blurbs(self):
