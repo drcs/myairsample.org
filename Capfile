@@ -20,6 +20,11 @@ namespace :version do
     set :branch,      "release/beta"
     set :deploy_to,   "/home/gbenison/gwenomatic/beta"
   end
+  desc "Beta version"
+  task :archive do
+    set :branch,      "release/archive"
+    set :deploy_to,   "/home/gbenison/gwenomatic/archive"
+  end
 end
 
 
