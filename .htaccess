@@ -9,10 +9,5 @@ RewriteRule ^(.*)fcgi/ - [L]
 RewriteCond %{REQUEST_URI} !data/
 RewriteRule ^(.*)$ loc.fcgi/$1 [L]
 
-AuthType Basic
-AuthName "Restricted Files"
-AuthBasicProvider file
-AuthUserFile /home/gbenison/gwenomatic/passwords.alpha
-require valid-user
 
 
