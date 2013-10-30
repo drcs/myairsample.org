@@ -2,7 +2,7 @@ require 'rubygems'
 require 'railsless-deploy'
 
 set :application, "air-toxics"
-set :repository,  "git://github.com/gbenison/gwenomatic.git"
+set :repository,  "git://github.com/drcs/myairsample.org.git"
 set :scm,         :git
 set :user,        "gbenison"
 set :use_sudo,    false
