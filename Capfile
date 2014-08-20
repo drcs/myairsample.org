@@ -12,7 +12,7 @@ set :deploy_to,   "/home/gbenison/gwenomatic/production"
 # Reference: http://stackoverflow.com/questions/3023857/capistrano-and-deployment-of-a-website-from-github
 set :normalize_asset_timestamps, false
 
-role :web,        "watanabe.dreamhost.com"
+role :web,        "cameronbridge.dreamhost.com"
 
 namespace :version do
   desc "Beta version"
