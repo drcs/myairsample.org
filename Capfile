@@ -2,7 +2,7 @@ require 'rubygems'
 require 'railsless-deploy'
 
 set :application, "air-toxics"
-set :repository,  "git://github.com/gbenison/gwenomatic.git"
+set :repository,  "git://github.com/drcs/myairsample.org.git"
 set :scm,         :git
 set :user,        "gbenison"
 set :use_sudo,    false
@@ -19,6 +19,11 @@ namespace :version do
   task :beta do
     set :branch,      "release/beta"
     set :deploy_to,   "/home/gbenison/gwenomatic/beta"
+  end
+  desc "Alpha version"
+  task :alpha do
+    set :branch,      "release/alpha"
+    set :deploy_to,   "/home/gbenison/gwenomatic/alpha"
   end
 end
 

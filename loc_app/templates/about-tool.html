@@ -1,0 +1,136 @@
+<?xml version="1.0" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="header.html" />
+  ${head()}
+  <body>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/loc.js"></script>
+    ${header()}
+    ${nav()}
+    <div class="static">
+      <ul>
+	<li>
+	  <a href="#how_you_can_help">
+	    How you can help support MyAirSample.org
+	  </a>
+	</li>
+	<li>
+	  <a href="#how_our_program_helps">
+	    How our Create a report program helps fenceline community members interpret
+	    data from bucket samples
+	  </a>
+	</li>
+	<li>
+	  <a href="#who_we_are">
+	    Who we are and how we develop MyAirSample.org
+	  </a>
+	</li>
+      </ul>
+      <a name="how_you_can_help" />
+      <h2>How you can help support MyAirSample.org</h2>
+      <p>
+	Donate!
+      </p>
+      <p>
+	We are committed to improving and developing the MyAirSample.org site in
+	the long-term.  You can help us by making a tax-deductible contribution to
+	the Louisiana Bucket Brigade and specifying that you have a special purpose
+	for your donation and enter "MyAirSample.org" in the "I want my donation to
+	be dedicated to" box at Louisiana Bucket Brigade's donation page:
+	<a href="https://donatenow.networkforgood.org/1429869">
+	  https://donatenow.networkforgood.org/1429869
+	</a>
+      </p>
+      <p>
+	Send us feedback!
+      </p>
+      <p>
+	See <a href="/contact">Contact us</a> for our contact information in order to send us comments,
+	feedback, or errors to fix.
+      </p>
+      <a name="how_our_program_helps" />
+      <h2>
+	How our Create a report program helps fenceline community members
+	interpret data from bucket samples
+      </h2>
+      <p>
+	The data produced from the <a href="/about/faq">bucket samples</a> are just as good as monitoring
+	data from agencies, but the data can also be confusing.  After a community
+	member has taken a sample with a bucket, that sample is then sent to an
+	analytical laboratory which measures how much of each chemical was in the
+	sample.  The analytical laboratory sends back a detailed, technical report
+	that includes a listing of chemicals that were in the air and the measured
+	values of those chemicals.  An example of results listed in a typical
+	report from the analytical laboratory might look like this:
+      </p>
+
+      <img src="/media/analyticallabreportexample.png" alt="analytical report results" />
+
+      <p>
+	This example tells us that many chemicals such as carbonyl sulfide and
+	methyl mercaptan were "ND" or "not detected."  This example also tells us
+	the minimum value of these chemicals that the laboratory was able to
+	detect, or the "MRL."  An MRL of 12 ug/m3 for carbonyl sulfide means that
+	there could have been 6 &micro;g/m<sup>3</sup> of carbonyl sulfide in the sample but the lab
+	can only get an accurate measurement of the carbonyl sulfide in the sample
+	if it is greater than 12 &micro;g/m<sup>3</sup>.
+      </p>
+      <p>
+	Most interestingly, this example tells us that the air from this sample had
+	7.4 &micro;g/m<sup>3</sup> of hydrogen sulfide and 8.1 &micro;g/m<sup>3</sup>
+	of carbon disulfide.  But what
+	do those numbers mean?  Are they high or low?  How is a community member to
+	know if those values are above or below state standards?
+	Our <a href="/">Create a report</a> program
+	here at MyAirSample.org helps community members who have
+	results from bucket samples understand what these kinds of bucket results
+	mean and see how they compare to state standards and screening levels
+	developed by government agencies or what we call levels of concern.
+      </p>
+      <a name="who_we_are" />
+      <h2>
+	Who we are and how we develop MyAirSample.org
+      </h2>
+      <p>
+	The tool behind MyAirSample.org was originally developed by
+	<a href="http://www.uwb.edu/ias/faculty-and-staff/gwenottinger">Gwen Ottinger</a>,
+	professor in the School of Interdisciplinary Arts and
+	Sciences at the University of Washington, Bothell.  Current
+	development of MyAirSample.org is a collaboration between Professor
+	Ottinger, the Louisiana Bucket Brigade, Residents for Air
+	Neutralization, and Digital Resources for Community and Science.
+      </p>
+      <p>
+	The <a href="http://www.labucketbrigade.org/">Louisiana Bucket Brigade</a>
+	is a 501(c)(3) environmental health and
+	justice organization working with communities that neighbor the
+	state's oil refineries and chemical plants. Their mission is to
+	support communities' use of grassroots action to create informed,
+	sustainable neighborhoods free from industrial pollution.
+      </p>
+      <p>
+	Residents for Air Neutralization is a fenceline community group
+	neighboring a refinery in Shreveport, Louisiana, advocating for clean
+	air and a better quality of life.
+      </p>
+      <p>
+	The mission of <a href="https://github.com/drcs">
+	  Digital Resources for Community and Science</a> is to help
+	non-profits, academics, and communities, both local and online,
+	leverage  open-source
+	and web-based tools and strategies to advance knowledge, facilitate
+	communication and achieve individual and organizational goals.
+      </p>
+      <p>
+	LABB, RAN, DRCS and Professor Ottinger currently collaborate on the
+	design of MyAirSample.org, and DRCS implements and maintains the
+	design and the web site, using open source code.  MyAirSample.org is
+	an open source project, licensed under a GNU General Public License –
+	to get the source code,
+	go to <a href="https://github.com/drcs/myairsample.org">https://github.com/drcs/myairsample.org</a>.
+      </p>
+    </div>
+  </body>
+</html>

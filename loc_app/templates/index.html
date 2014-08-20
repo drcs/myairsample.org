@@ -1,0 +1,405 @@
+<?xml version="1.0" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="header.html" />
+  ${head()}
+  <body>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/loc.js"></script>
+    ${header()}
+    ${nav()}
+    <div id="main">
+      <form method="post" action="/report/" class="left-column">
+	<div>
+	  <div>
+	    <fieldset id="chemical_input">
+	      <legend>1.</legend>
+	      <div class="inputs">
+		<label id="chemical_name_input">
+		  Chemical name<a class="help" tabindex="1500" href="#help_chemical_entry"><img src="media/Question_Circle.svg" alt="?"></img></a>
+		</label>
+		<label id="chemical_level_input">
+		  Measured value<a class="help" tabindex="1500" href="#help_chemical_entry"><img src="media/Question_Circle.svg" alt="?"></img></a>
+		</label>
+		<input name="chem1" tabindex="010"/>
+		<input name="report1" tabindex="011"/>
+		<input name="chem2" tabindex="020"/>
+		<input name="report2" tabindex="021"/>
+		<input name="chem3" tabindex="030"/>
+		<input name="report3" tabindex="031"/>
+	      </div>
+	      <div id="add_chemicals">
+		<a id="add_chemicals_button" href="#" tabindex="1500">
+		  <span id="add_chemicals_plus">+</span> add more chemicals
+		</a>
+		<a class="help" tabindex="1500" href="#help_add_chemicals"><img src="media/Question_Circle.svg" alt="?"></img></a>
+	      </div>
+	    </fieldset>
+	  </div>
+	  <div>
+ 	    <!-- units -->
+	    <fieldset id="units_choice">
+	      <p>
+		Units your measured<br/> values are in (input)
+		<a class="help" tabindex="1500" href="#help_inunits"><img src="media/Question_Circle.svg" alt="?"></img></a>
+		<label>
+		  <span class="select_label">Select</span>
+		  <select name="inunits" tabindex="101">
+		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
+		  </select>
+		</label>
+	      </p>
+	      <p>Units you would like<br/> your report in (output)
+		<a class="help" tabindex="1500" href="#help_outunits"><img src="media/Question_Circle.svg" alt="?"></img></a>
+		<label>
+		  <span class="select_label">Select</span>
+		  <select name="outunits" tabindex="102">
+		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
+		  </select>
+		</label>
+	      </p>
+	    </fieldset>
+	  </div>
+	</div>
+	<div>
+	  <div>
+	    <fieldset id="user_input">
+	      <legend>
+		2. Report Title
+		<a class="help" tabindex="1500" href="#help_report_title"><img src="media/Question_Circle.svg" alt="?"></img></a>
+	      </legend>
+	      <div>
+		<label for="username">
+		  Organization name 1
+		  <a class="help" tabindex="1500" href="#help_report_title"><img src="media/Question_Circle.svg" alt="?"></img></a>
+		</label>
+		<input name="username" tabindex="200"/><span class="select_label">(optional)</span>
+	      </div>
+	      <div>
+		<label for="username2">
+		  Organization name 2
+		  <a class="help" tabindex="1500" href="#help_report_title"><img src="media/Question_Circle.svg" alt="?"></img></a>
+		</label>
+		<input name="username2" tabindex="201"/><span class="select_label">(optional)</span>
+	      </div>
+	    </fieldset>
+	    <!-- sample information -->
+	    <fieldset id="sample_info">
+	      <label>
+		Sample identifying name
+		<a class="help" tabindex="1500" href="#help_sample_name"><img src="media/Question_Circle.svg" alt="?"></img></a>
+		  <input name="samplename" tabindex="301"></input>
+		  <span class="select_label">(optional)</span>
+	      </label>
+	      <label>
+		Date sample was taken
+		<a class="help" tabindex="1500" href="#help_sample_date"><img src="media/Question_Circle.svg" alt="?"></img></a>
+		<input name="sampledate" tabindex="302"></input>
+		<span class="select_label">(optional)</span>
+	      </label>
+	      <label>
+		Location sample was taken at
+		<a class="help" tabindex="1500" href="#help_sample_location"><img src="media/Question_Circle.svg" alt="?"></img></a>
+		<input name="samplelocation" tabindex="303"></input>
+		<span class="select_label">(optional)</span>
+	      </label>
+	    </fieldset>
+	  </div>
+	  <div>
+	    <!-- Standards choice -->
+	    <fieldset id="standards_choice">
+	      <legend>
+		3. Compare your air data to these levels of concern:
+		<a class="help" tabindex="1500" href="#help_standards"><img src="media/Question_Circle.svg" alt="?"></img></a>
+	      </legend>
+	      <label for="single">
+		<input type="radio" name="standards_source" value="single" checked="checked" tabindex="401"/>
+		<p>one set of levels</p>
+		<p>
+		  <span class="select_label">Select</span>
+		  <select name="standards">
+		    <option py:for="key in sorted(all_standards.keys(), key=lambda k:all_standards[k].oneline_description())" value="${key}">
+		      ${all_standards[key].oneline_description()}
+		    </option>
+		  </select>
+		</p>
+	      </label>
+	      <label for="above">
+		<input type="radio" name="standards_source" value="above" tabindex="402"/>
+		<p>all levels your sample is above</p>
+	      </label>
+	      <label for="all">
+		<input type="radio" name="standards_source" value="all" tabindex="403"/>
+		<p>all available levels of concern</p>
+	      </label>
+	    </fieldset>
+	    <fieldset id="units_explanations_choice">
+	      <legend>
+		4. Choose text options for the end of the report
+		<a class="help" tabindex="1500" href="#help_text_options"><img src="media/Question_Circle.svg" alt="?"></img></a>
+	      </legend>
+	      <select name="text_options">
+		<option py:for="(key,desc) in text_options" value="${key}">
+		  ${desc}
+		</option>
+	      </select>
+	    </fieldset>
+	    <!-- Report style -->
+	    <fieldset id="report_style_choice">
+	      <legend>
+		5. Choose report style
+		<a class="help" tabindex="1500" href="#help_report_style"><img src="media/Question_Circle.svg" alt="?"></img></a>
+	      </legend>
+	      <label>
+		PDF
+		<input type="radio" name="report_type" value="pdf" checked="checked" tabindex="501"></input>
+	      </label>
+	      <label>
+		Display on web
+		<input type="radio" name="report_type" value="html" tabindex="502"></input>
+	      </label>
+	    </fieldset>
+	    <input type="submit" value="Generate report" tabindex="503"/>
+	    <a class="help" tabindex="1500" href="#help_generate_report"><img src="media/Question_Circle.svg" alt="?"></img></a>
+	  </div>
+	</div>
+      </form>
+      <div id="help_div" class="left-column">
+	<div class="selected">
+	  <h4>Click on the blue question marks for instructions and tips about each data entry item</h4>
+	  <!--
+	      Source for blue "help" icons:
+	      http://upload.wikimedia.org/wikipedia/commons/9/98/Question_Circle.svg
+	    -->
+	</div>
+	<div id="help_chemical_entry">
+	  <p>
+	    Enter chemicals of interest and their measured levels.  If you are
+	    working from bucket results, enter the chemicals for which there was a
+	    measurable concentration (instead of ND or nondetect).  You should be
+	    able to use common synonyms for the chemicals, but abbreviations might
+	    need to be spelled out.  Be sure that all of the values you enter are
+	    in the units that you select for "Units your measured values are in
+	    (input)."
+	  </p>
+	</div>
+	<div id="help_add_chemicals">
+	  <p>
+	    Click on the green plus sign to enter additional chemicals
+	    into your report.
+	  </p>
+	</div>
+	<div id="help_inunits">
+	  <p>
+	    Here you should choose the units that the results from your monitoring
+	    were reported in. Choose only one type of units for all of the
+	    chemicals and values that you enter in the table to the left.
+	  </p>
+	  <p>
+	    For example, bucket results are in both &micro;g/m<sup>3</sup> and ppbv. If there are
+	    TICs (tentatively identified compounds), those are reported in
+	    &micro;g/m<sup>3</sup>. It makes sense, then, to choose &micro;g/m<sup>3</sup> if you are using bucket
+	    results.  For more information about what units are, click <a class="help" href="#help_units_definition">here</a>.
+	    <!--
+		When the user clicks here, replace the above with the Units
+		information blurb from the pdf report.
+	      -->
+	  </p>
+	</div>
+	<div id="help_outunits">
+	  <p>
+	    What you choose here will determine whether the numbers in the report
+	    will be expressed in ppb, &micro;g/m<sup>3</sup>, or ppbv. For example, if you choose
+	    ppb, you will see both your monitoring results and the levels of
+	    concern in terms of ppb. You should choose whatever units you are most
+	    comfortable with as the units for your final report.  For more
+	    information about what units are, click <a class="help" href="#help_units_definition">here</a>.
+	    <!--
+		When the user clicks here, replace the above with the Units
+		information blurb from the pdf report.
+	      -->
+	  </p>
+	</div>
+	<div id="help_units_definition">
+	  <p>
+	    Parts per billion (ppb) describes how many weighed parts of a chemical there
+	    are for 1 billion parts of air. For example, a recipe says to add just a drop of
+	    vanilla for every 100 pounds of flour. The drop of vanilla weighs hardly
+	    anything, but it has a big effect on the cookies' flavor. Similarly, if we measure
+	    benzene in the air, we might find 3 "drops" of benzene for 1,000,000,000
+	    (one billion) "drops" of air. It seems like a small amount, but it is significant.
+	  </p>
+	  <p>
+	    Parts per billion by volume, or ppbv, means the concentration has been figured
+	    out in terms of how much space the molecules take up. For example, if we
+	    make a mixture of 3 cups of vanilla and 1 billion cups of flour, then our
+	    concentration is 3 parts volume (cups of vanilla) per billion parts volume (cups
+	    of flour), or 3 ppbv sugar in flour. When 3 volumes of benzene are in a billion
+	    volumes of air, the concentration is 3 ppbv benzene in air.
+	  </p>
+	  <p>
+	    Micrograms per meters cubed (&micro;g/m<sup>3</sup>) describes how much of a chemical's
+	    weight is in a volume of air that takes up one cubic meter. Imagine an empty
+	    box that is three feet long on both sides, and three feet tall. One meter is about
+	    three feet long. So the box's volume is 1 cubic meter, or 1 m<sup>3</sup>. A microgram
+	    (&micro;g) is a very small weight, like that of a grain of sand. You put 3 grains of sand
+	    into the box. The concentration of sand inside the box is the weight of the sand
+	    (3 &micro;g) divided by the
+	    volume of the box (1 m<sup>3</sup>), or 3 &micro;g /m<sup>3</sup>. Like grains of sand, chemicals can also be
+	    reported by weight and volume. For example, a monitor might read 5 &micro;g /m<sup>3</sup>
+	    benzene, or 5 &micro;g of benzene in 1 m<sup>3</sup> of air.
+	  </p>
+	</div>
+	<div id="help_report_title">
+	  <p>
+	    What you enter for Organization name 1 and Organization name 2 will be
+	    used for the sub-titles of your report.  Your entries will appear at
+	    the top of the first page of your report.  If you would prefer to
+	    title your report with information other than an organization name,
+	    you can enter whatever you would like for report sub-titles into one
+	    or both of these two boxes.  Text entered under Organization name 1
+	    appears on the second line of the first page of your report as "For
+	    Organization name 1", and text entered under Organization name 2
+	    appears on the third line as "Organization name 2".  If they are left
+	    blank, they do not appear in the report.  The first line (title) of
+	    all reports is "Levels of Concern Report" regardless of what is
+	    entered in Organization name 1 and 2.
+	  </p>
+	</div>
+	<div id="help_sample_name">
+	  <p>
+	    You can enter a name for the sample here.  If you are working with
+	    bucket results, the air collected in one bucket on one date is the
+	    sample.  You might have a name you want to use for this bucket sample
+	    or you might not.  It is optional to enter a sample identifying name.
+	    If entered, the sample identifying name will appear on the first page
+	    of the report.  Examples of possible sample identifying names include
+	    "Sample from Ms. Jones' house" and "RAN project sample 1" – these
+	    would return on the report as "Sample identifying name: Sample from
+	    Ms.  Jones' house" and "Sample identifying name: RAN project sample 1."
+	  </p>
+	</div>
+	<div id="help_sample_date">
+	  <p>
+	    You can enter the date the sample was taken here.  It is optional to enter a date.  If entered, 
+	    this date will appear on the first page of the report.  If you are working with bucket results, 
+	    the date the sample was taken would be the date the bucket was used to collect the air at the 
+	    sample location.  You can also enter a time here, and you can enter the date and/or time in 
+	    any format you want.  Examples of possible entries here include "6/22/2013", "June 22, 2013 
+	    5pm", "6:42 pm on 6-22-2013", and "summertime" – these would return on the report as "Date 
+	    sample was taken: 6/22/2013", "Date sample was taken: June 22, 2013 5pm", etc.
+	  </p>
+	</div>
+	<div id="help_sample_location">
+	  <p>
+	    Here you can enter the location where the sample was taken.  If you
+	    are working with bucket results, this would be the address or some
+	    other name for the location where the bucket was put to collect the
+	    air sample.  It is optional to enter a location for the sample.  If
+	    entered, the location will appear on the first page of the report.
+	    For example, if you enter "1200 Main Street" it will appear on the
+	    report as "Location sample was taken at: 1200 Main Street" and if you
+	    enter "My house" it will appear as "Location sample was taken at: my
+	    house."
+	  </p>
+	</div>
+	<div id="help_standards">
+	  <p>
+	    Use this section to choose which standards, screening levels and
+	    minimal risk levels you want to compare your measured values to.
+	    Choosing "one set of levels" returns a brief report comparing your
+	    measured values to the standards or screening levels of your choice.
+	    For more information on each of these choices, click on
+	    <a href="/about/levels">About the levels of concern</a>.
+	    Choosing "all
+	    levels your sample is above" lists any of the levels of concern that
+	    your measured values are above.  Choosing "all available levels of
+	    concern" returns a full report that compares your measured values to
+	    all levels of concern in this tool, whether above or below, and
+	    highlights the levels that your measured values are above.
+	  </p>
+	  <p>
+	    Note: For EPA Region 6 Screening Levels, the tool currently uses
+	    levels from when the tool was originally developed in ~2003.  EPA
+	    Region 6 levels have changed since the tool was developed, and we are
+	    in the process of updating these levels in our tool. For ATSDR Minimal
+	    Risk Levels, Louisiana Ambient Air Quality Standards, North Carolina
+	    Ambient Air Standards, and Texas Effects Screening Levels, we recently
+	    updated these to their 2014 values -- so these are up to date.
+	  </p>
+	</div>
+	<div id="help_report_style">
+	  <p>
+	    Currently, only the PDF report option is working.  We will be adding
+	    an option to display the report on the web soon.  Viewing a PDF
+	    requires you to have software on your computer for viewing PDF
+	    documents.  One popular free program that allows you to view PDFs is
+	    Adobe Reader, which you can download for free here:
+	    <a href="http://get.adobe.com/reader/">http://get.adobe.com/reader/</a>
+	  </p>
+	</div>
+	<div id="help_text_options">
+	  <p>
+	    You can use this drop-down menu to choose whether to include explanatory
+	    material at the end of the report which describes units and levels of
+	    concern.  If you are creating a report using our system for the first time,
+	    or if you plan to share your report with others, we recommend you choose
+	    "an explanation of both units and levels of concern."  If you have created
+	    reports using our system before and are familiar with the text in the
+	    explanations, you might want to choose to include only one of the
+	    explanations ("an explanation of units only" or "an explanation of levels
+	    of concern only") or you might want to choose "no text at the end of the
+	    report."
+	  </p>
+	  <p>
+	    The optional units description is a three-paragraph explanation.  The
+	    optional description of the levels of concern gives a paragraph describing
+	    the government agency and methods involved in the development of the levels
+	    of concern used in your report.  Explanatory paragraphs for levels of
+	    concern included at the end of the report are only those levels actually
+	    reported on in your report.  For example, if you choose to compare to only
+	    one set of air standards, and you choose the "EPA Region 6 Screening
+	    Levels," only the explanatory paragraph for "EPA Region 6 Screen Levels"
+	    will be included at the end of the report.
+	  </p>
+	</div>
+	<div id="help_generate_report">
+	  <p>
+	    When you press this button, your report will be generated – that is,
+	    if everything in our system is working correctly!  If you have trouble
+	    getting your report to generate, please email us at
+	    <a href="email:drcsdirector@gmail.com">drcsdirector@gmail.com</a>
+	  </p>
+	</div>
+      </div>
+    </div>
+    <div id="sidebar">
+      <p>
+	Taking air samples can get your community valuable information
+	about what's in the air that you're breathing.  But how do
+	you know what the levels of chemicals in your air mean to your health?
+      </p>
+      <p>
+	One way of interpreting monitoring results – from bucket samples,
+	canister samples or
+	other kinds of grab samples – is to compare them to what we
+	call "levels of concern."  The "levels of concern" in this tool
+	include legally enforceable "standards" designated by state
+	governments, as well as "screening levels" or "minimum risk levels"
+	that are not legally enforceable but are developed by government
+	agencies from scientific studies about what levels of chemical
+	exposure pose minimal risk to your health.
+      </p>
+      <p>
+	This tool looks up levels of concern for chemicals that you are
+	interested in and compares them to results you have from monitoring.
+	The report it generates tells you whether any of the levels of
+	chemicals in your air are above the levels of concern you choose to
+	compare to.
+      </p>
+    </div>
+  </body>
+</html>
+
+

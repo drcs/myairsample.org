@@ -1,0 +1,283 @@
+body, html {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 90%;
+    min-width: 85em;
+}
+
+h1 {
+    padding:     2pt;
+    margin:      0pt;
+    font-size:   3em;
+    font-weight: normal;
+}
+
+h1 a {
+    color:       black;
+}
+
+h2 {
+    margin:      2pt;
+    font-size:   1.3em;
+    font-weight: normal;
+}
+
+ul {
+    list-style:  none;
+}
+
+a {
+    color:           green;
+    text-decoration: none;
+    font-family:     sans-serif;
+}
+
+.help {
+    color:       #6993dd;
+}
+
+a.help {
+    padding:     0px;
+    margin-left: 4px;
+    margin-bottom: 0px;
+}
+
+a.help > img {
+    height:         1.1em;
+    vertical-align: bottom;
+    margin:         0;
+    padding:        0 0 1px;
+}
+
+input ~ a.help > img {
+    vertical-align: middle;
+}
+
+div#header {
+    width:  100%;
+    float:  left;
+    border-bottom: 5px solid green;
+    border-top: 15px solid green;
+}
+
+.left-column {
+    width:  60em;
+}
+
+div#header #titles { float: left;  }
+div#header #logos  { float: left; }
+
+div#logos ul {
+    float:    left;
+    padding:  0pt;
+    margin:   4pt;
+}
+
+div#logos ul li {
+    float:    left;
+    margin:   2pt;
+}
+
+div#logos img {
+    height:      70px;
+    margin-left: 10px;
+}
+
+div#nav {
+    border-bottom:  5px solid green;
+    float:          left;
+    width:          100%;
+    padding-top:    0.4em;
+    padding-bottom: 0.4em;
+}
+
+.centering {
+    float:  left;
+    width:  100%;
+    position: relative;
+}
+
+.centering > * {
+    position: relative;
+    clear: left;
+    float: right;
+    right: 50%;
+}
+
+.centering > * > * {
+    position: relative;
+    float: left;
+    left: 50%;
+}
+
+div#nav ul {
+    margin:     0 10em 0 0;
+    padding:    0;
+    list-style: none;
+    text-align: center;
+}
+
+div#nav ul li {
+    display:      inline;
+    margin-left:  0.5em;
+    margin-right: 0.5em;
+    padding:      0.5em;
+}
+
+div#nav ul li:hover {
+    background-color: #cccccc;
+}
+
+div.static {
+    margin-left:  8em;
+    margin-right: 8em;
+    float:        left;
+}
+
+div#main {
+    float:        left;
+}
+
+#main > p {
+    min-width: 30%;
+}
+
+#main > form {
+    float: left;
+    margin-bottom: 0px;
+}
+
+#main > form > div {
+    width: 100%;
+    float: left;
+}
+
+#main > form > div > div {
+    width:   50%;
+    float:   left;
+}
+
+#main > form > div fieldset {
+    border:  none;
+}
+
+fieldset label {
+    margin-bottom: 3px;
+}
+
+fieldset label p {
+    margin-top:    0px;
+    margin-bottom: 0px;
+    margin-left:   2em;
+}
+
+#chemical_input label, #chemical_input input {
+    width:        42%;
+    margin-right: 1em;
+    display:      block;
+    float:        left;
+}
+
+#chemical_input span.warning {
+    color:     red;
+    font-size: 90%;
+    float:     left;
+    clear:     both;
+}
+
+#user_input div {
+    margin-bottom: 1em;
+}
+
+#user_input a.help > img {
+    margin-bottom: 3px;
+}
+
+#user_input input {
+    width:          40%;
+    margin-right:   3pt;
+}
+
+#sample_info label {
+    display: block;
+}
+
+#sample_info input {
+    width:   65%;
+}
+
+#units_choice label {
+    display: block;
+}
+
+#units_choice p {
+    width: 50%;
+    float: left;
+}
+
+#units_choice select {
+    max-width: 5em;
+}
+
+#standards_choice label {
+    display: block;
+}
+
+#standards_choice label > input {
+    float:   left;
+}
+
+#report_style_choice label {
+    display: block;
+    float:   left;
+    margin-right: 2em;
+}
+
+#report_style_choice label > input {
+    float:   left;
+}
+
+#sidebar {
+    float:   left;
+    width:   22em;
+    border-left: 3px solid green;
+    padding-left: 1.5em;
+}
+
+#add_chemicals {
+    clear:       both;
+    margin-left: 3em;
+}
+
+#add_chemicals_plus {
+    border:      1px solid green;
+    padding:     1px 3px;
+}
+
+#help_div {
+    clear:   both;
+    color:   #090b82;
+}
+
+#help_div h4 {
+    color:       black;
+    text-align:  center;
+}
+
+#help_div > div {
+    margin:  auto;
+    width:   80%;
+    display: none;
+}
+
+#help_div > div.selected {
+    display: block;
+}
+
+span.select_label {
+    font-size:   75%;
+}
