@@ -5,4 +5,4 @@ export PATH=${PATH}:${USER_HOME}/software/bin:${USER_HOME}/usr/bin
 export PYTHONPATH=${PYTHONPATH}:${USER_HOME}/usr/lib/python2.6/site-packages
 export TEXINPUTS=${USER_HOME}/texmf///:${USER_HOME}/texmf/tex/latex///:${DOCUMENT_ROOT}/media//:
 
-python /home/gbenison/gwenomatic/alpha/current/loc.py
+python /home/gbenison/gwenomatic/beta/current/loc.py
