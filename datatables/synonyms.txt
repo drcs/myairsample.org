@@ -1537,8 +1537,8 @@ Thallium sulfate	7446-18-6
 methane                     	74-82-8	
 Bromomethane	74-83-9	94.94
 Methyl Bromide	74-83-9	94.94
-ethane	74-84-0		30.07
-ethylene	74-85-1			    28.05	
+ethane	74-84-0	30.07
+ethylene	74-85-1	28.05	
 acetylene               	74-86-2	
 Chloromethane	74-87-3	50.49
 Methyl Chloride	74-87-3	50.49
@@ -1555,7 +1555,7 @@ ethyl bromide	74-96-4
 bromochloromethane	74-97-5	
 chlorobromomethane	74-97-5	
 methylene chlorobromide	74-97-5	
-propane                 	74-98-6	    44.1	
+propane                 	74-98-6	44.1	
 methyl acetylene        	74-99-7	
 propyne	74-99-7	
 Chloroethane	75-00-3	64.51
