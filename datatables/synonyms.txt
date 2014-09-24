@@ -1,157 +1,157 @@
- chloronitrobenzene, p- 	100-00-5	
- nitrochlorobenzene, p-         	100-00-5	
-p-Chloronitrobenzene	100-00-5	
- nitroaniline, p-                	100-01-6	
-4-Nitrophenol	100-02-7	
- nitrophenol, p- 	100-02-7	
-p-nitrophenol	100-02-7	
-p-Phthalic acid	100-21-0	
-terephthalic acid	100-21-0	
-nitrous oxide             	10024-97-2	
- 1,4-Dinitrobenzene 	100-25-4	
-sulfur chloride 	10025-67-9	
-sulfur monochloride 	10025-67-9	
-phosphorus oxychloride	10025-87-3	
-silicon tetrachloride	10026-04-7	
-diethylene glycol ethyl methyl ether	1002-67-1	
-ozone                	10028-15-6	
-hydrogen iodide           	10034-85-2	
-hydrogen bromide     	10035-10-6	
- diethylaminoethanol, 2-  	100-37-8	
- ethenylcyclohexene, 4- 	100-40-3	
- vinyl cyclohexene, 4- 	100-40-3	
+ chloronitrobenzene, p- 	100-00-5	157.554
+ nitrochlorobenzene, p-         	100-00-5	157.554
+p-Chloronitrobenzene	100-00-5	157.554
+ nitroaniline, p-                	100-01-6	138.1240
+4-Nitrophenol	100-02-7	139.1088
+ nitrophenol, p- 	100-02-7	139.1088
+p-nitrophenol	100-02-7	139.1088
+p-Phthalic acid	100-21-0	166.1308
+terephthalic acid	100-21-0	166.1308
+nitrous oxide             	10024-97-2	44.0128
+ 1,4-Dinitrobenzene 	100-25-4	168.1070
+sulfur chloride 	10025-67-9	135.036
+sulfur monochloride 	10025-67-9	135.036
+phosphorus oxychloride	10025-87-3	153.332
+silicon tetrachloride	10026-04-7	169.898
+diethylene glycol ethyl methyl ether	1002-67-1	148.2001
+ozone                	10028-15-6	47.9982
+hydrogen iodide           	10034-85-2	127.91241
+hydrogen bromide     	10035-10-6	80.912
+ diethylaminoethanol, 2-  	100-37-8	117.1894
+ ethenylcyclohexene, 4- 	100-40-3	108.1809
+ vinyl cyclohexene, 4- 	100-40-3	108.1809
 ETHYL BENZENE	100-41-4	106.16
 Ethylbenzene	100-41-4	106.16
 phenylethylene 	100-42-5	104.14
 Styrene	100-42-5	104.14
 vinyl benzene 	100-42-5	104.14
-boric acid                 	10043-35-3	
-calcium chloride	10043-52-4	
+boric acid                 	10043-35-3	61.833
+calcium chloride	10043-52-4	110.984
 Benzyl Chloride	100-44-7	126.58
 Tolyl chloride	100-44-7	126.58
-benzonitrile              	100-47-0	
-CHLORINE DIOXIDE	10049-04-4	
-Benzyl alcohol	100-51-6	
-Benzaldehyde	100-52-7	
+benzonitrile              	100-47-0	103.1213
+CHLORINE DIOXIDE	10049-04-4	67.452
+Benzyl alcohol	100-51-6	108.1378
+Benzaldehyde	100-52-7	106.1219
  cis-1,3-Dichloropropene 	10061-01-5	110.97
  trans-1,3-Dichloropropene 	10061-02-6	110.97
-methyl aniline             	100-61-8	
-phenyl hydrazine          	100-63-0	
-anisole	100-66-3	
-methoxybenzene	100-66-3	
-methyl phenyl ether	100-66-3	
- ethyl morpholine, N- 	100-74-3	
-hexamethylenetetramine   	100-97-0	
- Plaster of Paris, respirable           	10101-41-4
-triphenyl phosphite	101-02-0
-Nitric Oxide	10102-43-9
-nitrogen dioxide   	10102-44-0
-Thallium nitrate	10102-45-1
- 4,4'-Methylene bis(2-chloroaniline) 	101-14-4
-MBOCA	101-14-4
-methylene bis(2-chloroaniline)  	101-14-4
-MOCA	101-14-4
-ethylene glycol mono-2-methylpentyl ether	10137-96-9
-diethylene glycol ethyl vinyl ether	10143-53-0
-diethylene glycol mono-2-methyl pentyl ether	10143-56-3
- 4,4'-Methylene bis(N,N'-dimethyl)aniline 	101-61-1
-dioctyldiphenylamine	101-67-7
- 4,4'-Methylenediphenyl isocyanate 	101-68-8
- diphenylmethane-4,4'-diisocyanate 	101-68-8
-MDI	101-68-8
-methylene bisphenyl diioscyanate	101-68-8
-MDA	101-77-9
- methylene dianiline, 4,4'-        	101-77-9
- p,p?-diaminodiphenylmethane 	101-77-9
-diphenyl ether	101-84-8
-phenyl ether       	101-84-8
-cobalt carbonyl	10210-68-1
-propylene glycol mono-n-butyl ether   	10215-33-5
-Heptachlor epoxide	1024-57-3
- dicyclopentadienyl iron, respirable 	102-54-5
-tripropylamine	102-69-2
-triallylamine	102-70-5
-triethanolamine	102-71-6
- dibutylaminoethanol, 2-N- 	102-81-8
-tributyl phosphite	102-85-2
-boron tribromide          	10294-33-4
-boron trichloride           	10294-34-5
- methyl pyrrolidine, N-    	102-94-5
-di(2-ethylhexyl)adipate	103-23-1
-Di(2-ethylhexyl)adipate	103-23-1
-dioctyl azelate	103-24-2
-Azobenzene	103-33-3
-ethyl aniline	103-69-5
-Carbanil	103-71-9
-phenyl isocyanate	103-71-9
-ethoxybenzene	103-73-1
-phenetole	103-73-1
-phenyl ethyl ether	103-73-1
-benzyl dimethylamine	103-83-3
- dimethylbenzylamine, N,N- 	103-83-3
-phenylthiourea	103-85-5
-iso-Propylbenzene	104-5-18
-tert-Butylbenzene	104-5-18
-n-Butylbenzene	104-51-8
-n-Propylbenzene	104-51-8
-Resmethrin	10453-86-8
- ethylhexyl alcohol, 2-  	104-76-7
-chlorobenzyl chloride	104-83-6
- methyl-5-ethylpyridine, 2-        	104-90-5
-ethyl propionate	105-37-3
-methyl acetoacetate      	105-45-3
- butyl acetate, sec- 	105-46-4
-ethyl butyrate 	105-54-4
-diethylthiourea	105-55-5
-acetal	105-57-7
-methyl diethanolamine     	105-59-9
-Caprolactam	105-60-2
- 2,4-Dimethylphenol 	105-67-9
-dibutyl maleate	105-76-0
-Admire	105827-78-9
-Imidacloprid	105827-78-9
-N-Nitroso-N-methylethylamine	10595-95-6
-Monochloramine	10599-90-3
-butyric anhydride	106-31-0
-ethyl butyl ketone	106-35-4
- heptanone, 3- 	106-35-4
-propyl propionate        	106-36-5
- 1,4-Dibromobenzene 	106-37-6
+methyl aniline             	100-61-8	107.1531
+phenyl hydrazine          	100-63-0	108.1411
+anisole	100-66-3	108.1378
+methoxybenzene	100-66-3	108.1378
+methyl phenyl ether	100-66-3	108.1378
+ ethyl morpholine, N- 	100-74-3	115.1735
+hexamethylenetetramine   	100-97-0	140.1863
+ Plaster of Paris, respirable           	10101-41-4	136.141
+triphenyl phosphite	101-02-0	310.2837
+Nitric Oxide	10102-43-9	30.0061
+nitrogen dioxide   	10102-44-0	46.0055
+Thallium nitrate	10102-45-1	266.3882
+ 4,4'-Methylene bis(2-chloroaniline) 	101-14-4	267.154
+MBOCA	101-14-4	267.154
+methylene bis(2-chloroaniline)  	101-14-4	267.154
+MOCA	101-14-4	267.154
+ethylene glycol mono-2-methylpentyl ether	10137-96-9	
+diethylene glycol ethyl vinyl ether	10143-53-0	
+diethylene glycol mono-2-methyl pentyl ether	10143-56-3	
+ 4,4'-Methylene bis(N,N'-dimethyl)aniline 	101-61-1	254.3700
+dioctyldiphenylamine	101-67-7	393.6477
+ 4,4'-Methylenediphenyl isocyanate 	101-68-8	250.2521
+ diphenylmethane-4,4'-diisocyanate 	101-68-8	250.2521
+MDI	101-68-8	250.2521
+methylene bisphenyl diioscyanate	101-68-8	250.2521
+MDA	101-77-9	198.2637
+ methylene dianiline, 4,4'-        	101-77-9	198.2637
+ p,p?-diaminodiphenylmethane 	101-77-9	198.2637
+diphenyl ether	101-84-8	170.2072
+phenyl ether       	101-84-8	170.2072
+cobalt carbonyl	10210-68-1	341.9472
+propylene glycol mono-n-butyl ether   	10215-33-5	
+Heptachlor epoxide	1024-57-3	389.317
+ dicyclopentadienyl iron, respirable 	102-54-5	186.031
+tripropylamine	102-69-2	143.2697
+triallylamine	102-70-5	137.2221
+triethanolamine	102-71-6	149.1882
+ dibutylaminoethanol, 2-N- 	102-81-8	173.2957
+tributyl phosphite	102-85-2	250.3147
+boron tribromide          	10294-33-4	250.523
+boron trichloride           	10294-34-5	117.170
+ methyl pyrrolidine, N-    	102-94-5	
+di(2-ethylhexyl)adipate	103-23-1	370.5665
+Di(2-ethylhexyl)adipate	103-23-1	370.5665
+dioctyl azelate	103-24-2	412.6462
+Azobenzene	103-33-3	182.2212
+ethyl aniline	103-69-5	121.1796
+Carbanil	103-71-9	119.1207
+phenyl isocyanate	103-71-9	119.1207
+ethoxybenzene	103-73-1	122.1644
+phenetole	103-73-1	122.1644
+phenyl ethyl ether	103-73-1	122.1644
+benzyl dimethylamine	103-83-3	135.2062
+ dimethylbenzylamine, N,N- 	103-83-3	135.2062
+phenylthiourea	103-85-5	152.217
+iso-Propylbenzene	104-5-18	134.2182
+tert-Butylbenzene	104-5-18	134.2182
+n-Butylbenzene	104-51-8	134.2182
+n-Propylbenzene	104-51-8	134.2182
+Resmethrin	10453-86-8	338.4400
+ ethylhexyl alcohol, 2-  	104-76-7	130.2279
+chlorobenzyl chloride	104-83-6	161.029
+ methyl-5-ethylpyridine, 2-        	104-90-5	121.1796
+ethyl propionate	105-37-3	102.1317
+methyl acetoacetate      	105-45-3	116.1152
+ butyl acetate, sec- 	105-46-4	116.1583
+ethyl butyrate 	105-54-4	116.1583
+diethylthiourea	105-55-5	132.227
+acetal	105-57-7	118.1742
+methyl diethanolamine     	105-59-9	119.1622
+Caprolactam	105-60-2	113.1576
+ 2,4-Dimethylphenol 	105-67-9	122.1644
+dibutyl maleate	105-76-0	228.2848
+Admire	105827-78-9	
+Imidacloprid	105827-78-9	
+N-Nitroso-N-methylethylamine	10595-95-6	88.1084
+Monochloramine	10599-90-3	51.476
+butyric anhydride	106-31-0	158.1950
+ethyl butyl ketone	106-35-4	114.1855
+ heptanone, 3- 	106-35-4	114.1855
+propyl propionate        	106-36-5	116.1583
+ 1,4-Dibromobenzene 	106-37-6	235.904
 p-Xylene	106-42-3	106.167
  xylene, p-  	106-42-3	106.167
 m,p-Xylene	106-42-3	106.167
 m,p-Xylenes	106-42-3	106.167
-4-Methylphenol	106-44-5
+4-Methylphenol	106-44-5	108.1378
  1,4-Dichlorobenzene 	106-46-7	147
  1,4-Dichlorobenzene (p-) 	106-46-7	147
  dichlorobenzene, p- 	106-46-7	147
 p-dichlorobenzene 	106-46-7	147
-4-Chloroaniline	106-47-8	
- chloroaniline, p- 	106-47-8	
- chlorophenol, p- 	106-48-9	
-p-Toluidine	106-49-0	
- toluidine, p- 	106-49-0	
-p-diaminobenzene	106-50-3	
- phenylene diamine, p-        	106-50-3	
-p-Phenylenediamine	106-50-3	
- 1,4-benzoquinone 	106-51-4	
-Chinone	106-51-4	
-p-benzoquinone	106-51-4	
-quinone	106-51-4	
-isobutyl acrylate         	106-63-8	
-dimethyl succinate	106-65-0	
+4-Chloroaniline	106-47-8	127.572
+ chloroaniline, p- 	106-47-8	127.572
+ chlorophenol, p- 	106-48-9	128.556
+p-Toluidine	106-49-0	107.1531
+ toluidine, p- 	106-49-0	107.1531
+p-diaminobenzene	106-50-3	108.1411
+ phenylene diamine, p-        	106-50-3	108.1411
+p-Phenylenediamine	106-50-3	108.1411
+ 1,4-benzoquinone 	106-51-4	108.0948
+Chinone	106-51-4	108.0948
+p-benzoquinone	106-51-4	108.0948
+quinone	106-51-4	108.0948
+isobutyl acrylate         	106-63-8	128.1690
+dimethyl succinate	106-65-0	146.1412
 vinyl cyclohexene dioxide	106-87-6	
- 1,2-butylene oxide 	106-88-7	
-1-butene oxide	106-88-7	
-butylene oxide	106-88-7	
+ 1,2-butylene oxide 	106-88-7	72.1057
+1-butene oxide	106-88-7	72.1057
+butylene oxide	106-88-7	72.1057
  chloro-2,3-epoxypropane 	106-89-8	92.52
 Epichlorohydrin	106-89-8	92.52
-gylcidyl methacrylate	106-91-2	
-allyl glycidyl ether	106-92-3	
+gylcidyl methacrylate	106-91-2	142.1525
+allyl glycidyl ether	106-92-3	114.1424
  1,2-Dibromoethane  	106-93-4	187.86
  dibromoethane, 1,2- 	106-93-4	187.86
 Ethylene dibromide 	106-93-4	187.86
-butane	106-97-8	
+butane	106-97-8	58.1222
  1,3-Butadiene 	106-99-0	54.09
  butadiene, 1,3- 	106-99-0	54.09
 Acrolein	107-02-8	56.06
@@ -162,1070 +162,1070 @@ Allyl Chloride	107-05-1	76.53
 EDC	107-06-2	98.96
  dichloroethane, 1,2- 	107-06-2	98.96
 ethylene dichloride	107-06-2	98.96
- chloroethanol, 2- 	107-07-3	
-ethylene chlorohydrin	107-07-3	
-propyl amines             	107-10-8	
-allylamine	107-11-9	
-ethyl cyanide	107-12-0	
-propionitrile            	107-12-0	
+ chloroethanol, 2- 	107-07-3	80.513
+ethylene chlorohydrin	107-07-3	80.513
+propyl amines             	107-10-8	59.1103
+allylamine	107-11-9	57.0944
+ethyl cyanide	107-12-0	55.0785
+propionitrile            	107-12-0	55.0785
 Acrylonitrile	107-13-1	53.06
 vinyl cyanide	107-13-1	53.06
- diaminoethane, 1,2- 	107-15-3	
-Ethylene diamine	107-15-3	
-Ethylenediamine 	107-15-3	
-glycolonitrile	107-16-4	
+ diaminoethane, 1,2- 	107-15-3	60.0983
+Ethylene diamine	107-15-3	60.0983
+Ethylenediamine 	107-15-3	60.0983
+glycolonitrile	107-16-4	57.0513
 Glyphosate	1071-83-6	
-allyl alcohol         	107-18-6	
-Propargyl alcohol	107-19-7	
-chloroacetaldehyde	107-20-0	
-Dowtherm 4000 	107-21-1	
-Ethylene glycol	107-21-1	
-glyoxal	107-22-2	
-vinyl methyl ether	107-25-5	
-chlorodimethyl ether	107-30-2	
-chloromethylmethyl ether	107-30-2	
-CMME	107-30-2	
- formic acid, methyl ester 	107-31-3
-methyl formate           	107-31-3
-hexylene glycol          	107-41-5
-TEPP	107-49-3
-tetraethylpyrophosphate	107-49-3
- butylacrylamide, tert- 	107-58-4
-dibutyl phosphate	107-66-4
-isohexane 	107-83-5
- methyl pentane, 2-  	107-83-5
-methyl propyl ketone	107-87-9
- pentanone, 2-  	107-87-9
- butylene glycol, 1,3- 	107-88-0
-butyric acid 	107-92-6
- Propylene glycol, monomethyl ether 	107-98-2
-deanol 	108-01-0
- dimethylaminoethanol, 2-  	108-01-0	
-dimethylethanolamine 	108-01-0	
- nitropropane, 1-           	108-03-2	
+allyl alcohol         	107-18-6	58.0791
+Propargyl alcohol	107-19-7	56.0633
+chloroacetaldehyde	107-20-0	78.498
+Dowtherm 4000 	107-21-1	62.0678
+Ethylene glycol	107-21-1	62.0678
+glyoxal	107-22-2	58.0361
+vinyl methyl ether	107-25-5	58.0791
+chlorodimethyl ether	107-30-2	80.513
+chloromethylmethyl ether	107-30-2	80.513
+CMME	107-30-2	80.513
+ formic acid, methyl ester 	107-31-3	60.0520
+methyl formate           	107-31-3	60.0520
+hexylene glycol          	107-41-5	118.1742
+TEPP	107-49-3	290.1877
+tetraethylpyrophosphate	107-49-3	290.1877
+ butylacrylamide, tert- 	107-58-4	127.1842
+dibutyl phosphate	107-66-4	
+isohexane 	107-83-5	86.1754
+ methyl pentane, 2-  	107-83-5	86.1754
+methyl propyl ketone	107-87-9	86.1323
+ pentanone, 2-  	107-87-9	86.1323
+ butylene glycol, 1,3- 	107-88-0	90.1210
+butyric acid 	107-92-6	88.1051
+ Propylene glycol, monomethyl ether 	107-98-2	90.1210
+deanol 	108-01-0	89.1362
+ dimethylaminoethanol, 2-  	108-01-0	89.1362
+dimethylethanolamine 	108-01-0	89.1362
+ nitropropane, 1-           	108-03-2	89.0932
 Vinyl Acetate	108-05-4	86.09
 4-Methyl-2-pentanone  	108-10-1	100.16
 hexone	108-10-1	100.16
 Methyl isobutyl ketone 	108-10-1	100.16
-methyl amyl alcohol 	108-11-2	
- methyl-2-pentanol, 4-  	108-11-2	
-methyl isobutyl carbinol 	108-12-3	
-dimethylamino-2-propanol	108-16-7	
-diisopropylamine	108-18-9	
-isopropyl ether 	108-20-3	
-isopropyl acetate  	108-21-4	
-acetic anhydride          	108-24-7	
-succinic anhydride	108-30-5	
-Maleic anhydride 	108-31-6	
- propylene carbonate, particulate 	108-32-7	
- propylene carbonate, vapor 	108-32-7	
-m-Xylene	108-38-3	
-3-Methylphenol	108-39-4	
- chloroaniline, m- 	108-42-9	
- chlorophenol, m-  	108-43-0	
- toluidine, m- 	108-44-1	
-m-Phenylenediamine	108-45-2	
+methyl amyl alcohol 	108-11-2	102.1748
+ methyl-2-pentanol, 4-  	108-11-2	102.1748
+methyl isobutyl carbinol 	108-12-3	120.577
+dimethylamino-2-propanol	108-16-7	103.1628
+diisopropylamine	108-18-9	101.1900
+isopropyl ether 	108-20-3	102.1748
+isopropyl acetate  	108-21-4	102.1317
+acetic anhydride          	108-24-7	102.0886
+succinic anhydride	108-30-5	100.0728
+Maleic anhydride 	108-31-6	98.0569
+ propylene carbonate, particulate 	108-32-7	102.0886
+ propylene carbonate, vapor 	108-32-7	102.0886
+m-Xylene	108-38-3	106.1650
+3-Methylphenol	108-39-4	108.1378
+ chloroaniline, m- 	108-42-9	127.572
+ chlorophenol, m-  	108-43-0	128.556
+ toluidine, m- 	108-44-1	107.1531
+m-Phenylenediamine	108-45-2	108.1411
  phenylene diamine, m-        	108-45-5	
-resorcinol	108-46-3	
- chloroisopropyl ether, bis- 	108-60-1	
-propylene glycol monomethyl ether acetate	108-65-6	
+resorcinol	108-46-3	110.1106
+ chloroisopropyl ether, bis- 	108-60-1	171.065
+propylene glycol monomethyl ether acetate	108-65-6	132.1577
  1,3,5-Trimethylbenzene 	108-67-8	120.19
 mesitylene	108-67-8	120.19
  trimethyl benzene, 1,3,5- 	108-67-8	120.19
-diisobutylcarbinol 	108-82-7	
- dimethyl-4-heptanol, 2,6-  	108-82-7	
-diisobutyl ketone 	108-83-8	
- dimethyl-4-heptanone, 2,6-  	108-83-8	
- hexyl acetate, sec-  	108-84-9	
-methyl amyl acetate 	108-84-9	
-bromobenzene	108-86-1	
-methyl cyclohexane      	108-87-2	
-Methylcyclohexane	108-87-2	
+diisobutylcarbinol 	108-82-7	144.2545
+ dimethyl-4-heptanol, 2,6-  	108-82-7	144.2545
+diisobutyl ketone 	108-83-8	142.2386
+ dimethyl-4-heptanone, 2,6-  	108-83-8	142.2386
+ hexyl acetate, sec-  	108-84-9	144.2114
+methyl amyl acetate 	108-84-9	144.2114
+bromobenzene	108-86-1	157.008
+methyl cyclohexane      	108-87-2	98.1861
+Methylcyclohexane	108-87-2	98.1861
 Toluene	108-88-3	92.13
- picoline, 4-                	108-89-4	
+ picoline, 4-                	108-89-4	93.1265
 Chlorobenzene	108-90-7	112.56
-cyclohexylamine	108-91-8	
-cyclohexyl alcohol 	108-93-0	
-Cyclohexanone	108-94-1	
+cyclohexylamine	108-91-8	99.1741
+cyclohexyl alcohol 	108-93-0	100.1589
+Cyclohexanone	108-94-1	98.1430
 propyl bromide	108-94-5	
-Phenol 	108-95-2
-phenyl mercaptan         	108-98-5
- picoline, 3-                	108-99-6
-methyl morpholine         	109-02-4
-valeric acid 	109-52-4
-dimethylaminopropylamine	109-55-7
-ethylene glycol monoisopropyl ether	109-59-1
-isopropoxyethanol	109-59-1
-propyl acetate 	109-60-4
-pentane                  	109-66-0
- amylene, alfa-  	109-67-1
-1-Chlorobutane	109-69-3
- bromo-3-chloropropane, 1-  	109-70-6
- butylamine, n- 	109-73-9
-butyronitrile	109-74-0
-trimethylene diamine	109-76-2
-malononitrile              	109-77-3	
-ethylene cyanohydrin	109-78-4	
+Phenol 	108-95-2	94.1112
+phenyl mercaptan         	108-98-5	110.177
+ picoline, 3-                	108-99-6	93.1265
+methyl morpholine         	109-02-4	101.1469
+valeric acid 	109-52-4	102.1317
+dimethylaminopropylamine	109-55-7	102.1781
+ethylene glycol monoisopropyl ether	109-59-1	104.1476
+isopropoxyethanol	109-59-1	104.1476
+propyl acetate 	109-60-4	102.1317
+pentane                  	109-66-0	72.1488
+ amylene, alfa-  	109-67-1	70.1329
+1-Chlorobutane	109-69-3	92.567
+ bromo-3-chloropropane, 1-  	109-70-6	157.437
+ butylamine, n- 	109-73-9	73.1368
+butyronitrile	109-74-0	69.1051
+trimethylene diamine	109-76-2	74.1249
+malononitrile              	109-77-3	66.0614
+ethylene cyanohydrin	109-78-4	71.0779
 butanethiol 	109-79-5	90.18
  butyl mercaptan, n-  	109-79-5	90.18
 n-Butylmercaptan	109-79-5	90.18
-methyl ethanolamine      	109-83-1	
-ethylene glycol monomethyl ether	109-86-4	
-GLYCOL ETHERS 	109-86-4	
- methoxyethanol, 2- 	109-86-4	
-methyl Cellosolve	109-86-4	
-dimethoxymethane	109-87-5	
-methylal	109-87-5	
-diethylamine	109-89-7	
-ethyl formate	109-94-4	
- formic acid, ethyl ester 	109-94-4	
-pyrrole	109-97-7	
-Tetrahydrofuran	109-99-9	
-Furan	110-00-9	
+methyl ethanolamine      	109-83-1	75.1097
+ethylene glycol monomethyl ether	109-86-4	76.0944
+GLYCOL ETHERS 	109-86-4	76.0944
+ methoxyethanol, 2- 	109-86-4	76.0944
+methyl Cellosolve	109-86-4	76.0944
+dimethoxymethane	109-87-5	76.0944
+methylal	109-87-5	76.0944
+diethylamine	109-89-7	73.1368
+ethyl formate	109-94-4	74.0785
+ formic acid, ethyl ester 	109-94-4	74.0785
+pyrrole	109-97-7	67.0892
+Tetrahydrofuran	109-99-9	72.1057
+Furan	110-00-9	68.0740
 Tetrahydrothiophene	110-01-0	88.17
 Thiophene	110-02-1	84.14
- butyl peroxide, tert- 	110-05-4	
-di-tert-butyl peroxide	110-05-4	
-methyl isoamyl ketone 	110-12-3	
-maleic acid                	110-16-7	
-isobutyl acetate 	110-19-0	
- heptanone, 2-  	110-43-0	
-methyl amyl ketone  	110-43-0	
-isopentyl nitrite	110-46-3	
+ butyl peroxide, tert- 	110-05-4	146.2273
+di-tert-butyl peroxide	110-05-4	146.2273
+methyl isoamyl ketone 	110-12-3	114.1855
+maleic acid                	110-16-7	116.0722
+isobutyl acetate 	110-19-0	116.1583
+ heptanone, 2-  	110-43-0	114.1855
+methyl amyl ketone  	110-43-0	114.1855
+isopentyl nitrite	110-46-3	117.1463
 propylene glycol isopropyl ether    	110-48-5	
-ethylene glycol monomethyl ether acetate	110-49-6	
- methoxyethanol acetate, 2- 	110-49-6	
- methoxyethyl acetate, 2- 	110-49-6	
-amyl bromide              	110-53-2	
+ethylene glycol monomethyl ether acetate	110-49-6	118.1311
+ methoxyethanol acetate, 2- 	110-49-6	118.1311
+ methoxyethyl acetate, 2- 	110-49-6	118.1311
+amyl bromide              	110-53-2	151.045
  hexane, n-                	110-54-3	86.18
 n-Hexane	110-54-3	86.18
- amyl amine, n- 	110-58-7	
-tetramethylene diamine	110-60-1	
-ethylene cyanide	110-61-2	
-succinonitrile	110-61-2	
-valeraldehyde 	110-62-3	
-butanediol	110-63-4	
- butylene glycol, 1,4- 	110-63-4	
- butynediol, 1,4- 	110-65-6	
- amyl mercaptan, n-  	110-66-7	
-pentylmercaptan 	110-66-7	
- methoxypropionitrile, 3-      	110-67-8	
+ amyl amine, n- 	110-58-7	87.1634
+tetramethylene diamine	110-60-1	88.1515
+ethylene cyanide	110-61-2	80.0880
+succinonitrile	110-61-2	80.0880
+valeraldehyde 	110-62-3	86.1323
+butanediol	110-63-4	90.1210
+ butylene glycol, 1,4- 	110-63-4	90.1210
+ butynediol, 1,4- 	110-65-6	86.0892
+ amyl mercaptan, n-  	110-66-7	104.214
+pentylmercaptan 	110-66-7	104.214
+ methoxypropionitrile, 3-      	110-67-8	69.1051
 dichlorobutylene	11069-19-5	
- dimethoxyethane, 1,2- 	110-71-4	
-ethylene glycol dimethyl ether	110-71-4	
- methoxyethane, 1,2- 	110-71-4	
-propyl formate           	110-74-7	
-2-Ethoxyethanol	110-80-5	
-Cellosolve	110-80-5	
- ethoxyethanol, 2- 	110-80-5	
-Ethylene glycol monoethyl ether 	110-80-5	
+ dimethoxyethane, 1,2- 	110-71-4	90.1210
+ethylene glycol dimethyl ether	110-71-4	90.1210
+ methoxyethane, 1,2- 	110-71-4	90.1210
+propyl formate           	110-74-7	88.1051
+2-Ethoxyethanol	110-80-5	90.1210
+Cellosolve	110-80-5	90.1210
+ ethoxyethanol, 2- 	110-80-5	90.1210
+Ethylene glycol monoethyl ether 	110-80-5	90.1210
 Diethyl Disulfide	110-81-6	122.24
-cyclohexane 	110-82-7	
-cyclohexene 	110-83-8	
-piperazine                 	110-85-0	
-azine 	110-86-1	
-Pyridine	110-86-1	
-trioxane	110-88-3	
-piperidine                 	110-89-4	
-morpholine 	110-91-8	
-diisobutylamine	110-96-3
-  Aroclor 1260	11096-82-5
-diisopropanolamine	110-97-4
-  Aroclor 1254	11097-69-1
- chlodiphenyl, 54% chlorine 	11097-69-1
-dipropylene glycol	110-98-5
-  Aroclor 1221	11104-28-2
-methyl hexyl ketone	111-13-7
- octanone, 2- 	111-13-7
-nickel sulfide            	11113-75-0
-heptanoic acid 	111-14-8
-2-Ethoxyethanol acetate	111-15-9
- ethoxyethanol acetate, 2- 	111-15-9
-ethylene glycol monoethyl ether acetate	111-15-9
-hexyl bromide             	111-25-1
-hexyl alcohol 	111-27-3
+cyclohexane 	110-82-7	84.1595
+cyclohexene 	110-83-8	82.1436
+piperazine                 	110-85-0	86.1356
+azine 	110-86-1	79.0999
+Pyridine	110-86-1	79.0999
+trioxane	110-88-3	90.0779
+piperidine                 	110-89-4	85.1475
+morpholine 	110-91-8	87.1204
+diisobutylamine	110-96-3	129.2432
+  Aroclor 1260	11096-82-5	
+diisopropanolamine	110-97-4	133.1888
+  Aroclor 1254	11097-69-1	
+ chlodiphenyl, 54% chlorine 	11097-69-1	
+dipropylene glycol	110-98-5	134.1736
+  Aroclor 1221	11104-28-2	
+methyl hexyl ketone	111-13-7	128.2120
+ octanone, 2- 	111-13-7	128.2120
+nickel sulfide            	11113-75-0	90.758
+heptanoic acid 	111-14-8	130.1849
+2-Ethoxyethanol acetate	111-15-9	132.1577
+ ethoxyethanol acetate, 2- 	111-15-9	132.1577
+ethylene glycol monoethyl ether acetate	111-15-9	132.1577
+hexyl bromide             	111-25-1	165.071
+hexyl alcohol 	111-27-3	102.1748
  borates, tetrasodium salts: pentahydrate 	11130-12-4	
-glutaraldehyde	111-30-8	
-hexyl mercaptan            	111-31-9	
- Propylene glycol, monoethyl ether 	111-35-3	
-butyl isocyanate	111-36-4	
-diethylene triamine	111-40-0	
-aminoethylethanolamine    	111-41-1	
+glutaraldehyde	111-30-8	100.1158
+hexyl mercaptan            	111-31-9	118.240
+ Propylene glycol, monoethyl ether 	111-35-3	104.1476
+butyl isocyanate	111-36-4	99.1311
+diethylene triamine	111-40-0	103.1661
+aminoethylethanolamine    	111-41-1	104.1509
   Aroclor 1232	11141-16-5	
-Bis (2-hydroxy ethyl)amine	111-42-2	
-DEA 	111-42-2	
-diethanolamine	111-42-2	
-dipropyl ether	111-43-3	
-propyl ether             	111-43-3	
+Bis (2-hydroxy ethyl)amine	111-42-2	105.1356
+DEA 	111-42-2	105.1356
+diethanolamine	111-42-2	105.1356
+dipropyl ether	111-43-3	102.1748
+propyl ether             	111-43-3	102.1748
 BIS (2-CHLOROETHYL) ETHER	111-44-4	143.01
 bis-(-2-Chloroethyl) Ether	111-44-4	143.01
 Bis(2-chloroethyl)ether	111-44-4	143.01
 dichloroethyl ether	111-44-4	143.01
- diethylene glycol, particulate 	111-46-6	
- diethylene glycol, vapor 	111-46-6	
-hexamethyleneimine       	111-49-9	
+ diethylene glycol, particulate 	111-46-6	106.1204
+ diethylene glycol, vapor 	111-46-6	106.1204
+hexamethyleneimine       	111-49-9	99.1741
  hydroxypivalyl hydroxypivalate, particulate 	1115-20-4	
-ethylene glycol diacetate 	111-55-7	
+ethylene glycol diacetate 	111-55-7	146.1412
 hydroxyethyl ethylenediamine	111-64-1	
 N-Nitrosodiethanolamine	1116-54-7	
 Octane	111-65-9	114.23
-adiponitrile              	111-69-3	
+adiponitrile              	111-69-3	108.1411
 1-Heptanol	111-70-6	116.2
 heptyl alcohol	111-70-6	116.2
-heptyl aldehyde          	111-71-7	
-2-BUTOXYETHANOL	111-76-2	
-butoxyethanol	111-76-2	
-butyl Cellosolve	111-76-2	
-ethylene glycol monobutyl ether	111-76-2	
- Ethylene glycol, monobutyl ether 	111-76-2	
-diethylene glycol monomethyl ether	111-77-3	
+heptyl aldehyde          	111-71-7	114.1855
+2-BUTOXYETHANOL	111-76-2	118.1742
+butoxyethanol	111-76-2	118.1742
+butyl Cellosolve	111-76-2	118.1742
+ethylene glycol monobutyl ether	111-76-2	118.1742
+ Ethylene glycol, monobutyl ether 	111-76-2	118.1742
+diethylene glycol monomethyl ether	111-77-3	120.1470
 Nonane	111-84-2	128.26
- octyl alcohol, 1-  	111-87-5	
-octyl mercaptan            	111-88-6	
-diethylene glycol ethyl ether	111-90-0	
- Diethylene glycol, monoethyl ether 	111-90-0	
-ethyl Carbitol	111-90-0	
- dibutylamine, n-  	111-92-2	
-dimethyl glutarate	1119-40-0	
-diethylene glycol dimethyl ether	111-96-6	
+ octyl alcohol, 1-  	111-87-5	130.2279
+octyl mercaptan            	111-88-6	146.294
+diethylene glycol ethyl ether	111-90-0	134.1736
+ Diethylene glycol, monoethyl ether 	111-90-0	134.1736
+ethyl Carbitol	111-90-0	134.1736
+ dibutylamine, n-  	111-92-2	129.2432
+dimethyl glutarate	1119-40-0	160.1678
+diethylene glycol dimethyl ether	111-96-6	134.1736
 n-Undecane	1120-21-4	156.31
-nonoic acid   	112-05-0	
-pelargonic acid 	112-05-0	
- 1,2-oxathiolane-2 	1120-71-4	
-2-dioxode	1120-71-4	
- butoxyethyl acetate, 2-  	112-07-2	
-butyl Cellosolve acetate	112-07-2	
-ethylene glycol monobutyl ether acetate	112-07-2	
-triethylene tetramine	112-24-3	
-ethylene glycol monohexyl ether	112-25-4	
-triethylene glycol	112-27-6	
-butyl Carbitol	112-34-5	
-diethylene glycol monobutyl ether	112-34-5	
- Diethylene glycol, monobutyl ether 	112-34-5	
-undecanoic acid 	112-37-8	
+nonoic acid   	112-05-0	158.2380
+pelargonic acid 	112-05-0	158.2380
+ 1,2-oxathiolane-2 	1120-71-4	122.143
+2-dioxode	1120-71-4	122.143
+ butoxyethyl acetate, 2-  	112-07-2	160.2108
+butyl Cellosolve acetate	112-07-2	160.2108
+ethylene glycol monobutyl ether acetate	112-07-2	160.2108
+triethylene tetramine	112-24-3	146.2339
+ethylene glycol monohexyl ether	112-25-4	146.2273
+triethylene glycol	112-27-6	150.1730
+butyl Carbitol	112-34-5	162.2267
+diethylene glycol monobutyl ether	112-34-5	162.2267
+ Diethylene glycol, monobutyl ether 	112-34-5	162.2267
+undecanoic acid 	112-37-8	186.2912
 n-Dodecane	112-40-3	170.34
-ethylene glycol dibutyl ether	112-48-1	
-ethoxytriglycol	112-50-5	
-triethylene glycol monoethyl ether	112-50-5	
-dodecyl mercaptan	112-55-0	
-lauryl mercaptan           	112-55-0	
-tetraethylene pentamine	112-57-2	
-tetraethylene glycol	112-60-7	
-oleic acid                	112-80-1	
+ethylene glycol dibutyl ether	112-48-1	174.2805
+ethoxytriglycol	112-50-5	178.2261
+triethylene glycol monoethyl ether	112-50-5	178.2261
+dodecyl mercaptan	112-55-0	202.400
+lauryl mercaptan           	112-55-0	202.400
+tetraethylene pentamine	112-57-2	189.3017
+tetraethylene glycol	112-60-7	194.2255
+oleic acid                	112-80-1	282.4614
 octadecenylamine	112-90-3	
 silica-amorphos: gel & precipitated silica	112926-00-8	
 erythromycin	114-07-8	
-Baygon	114-26-1	
-o-isopropoxyphenyl methylcarbamate	114-26-1	
-Propoxur	114-26-1	
+Baygon	114-26-1	213.2735
+o-isopropoxyphenyl methylcarbamate	114-26-1	213.2735
+Propoxur	114-26-1	213.2735
 Azaserine	115-02-6	
 Propene	115-07-1	42.08
 propylene              	115-07-1	42.08
-dimethyl ether	115-10-6	
-methyl ether	115-10-6	
-isobutene                 	115-11-7	
-Endosulfan	115-29-7
- 1,1-bis-(chlorophenyl)-2,2,2,-trichloroethanol 	115-32-2
-Dicofol	115-32-2
-Kelthane                   	115-32-2
- pentaerythritol, respirable             	115-77-5
-triphenyl phosphate	115-86-6
-Fensulfothion	115-90-2
-tris(2-chloroethyl) phosphate	115-96-8
-Aldicarb	116-06-3
-decabromodiphenyl oxide	1163-19-5
-Bis(2-ethylhexyl)phthalate 	117-81-7
-DEHP	117-81-7
-di(2-ethylhexyl)phthalate	117-81-7
-Di-(2-ethylhexyl)phthalate	117-81-7
-di-n-Octyl phthalate	117-84-0
-isatoic anhydride	118-48-9
-dichlorodimethylhydantoin	118-52-5
-Hexachlorobenzene	118-74-1
-Chloranil	118-75-2
- hydroxyacetophenone, 2-   	118-93-4
- 2,4,6-Trinitrotoluene 	118-96-7
-trinitrotoluene	118-96-7
- butyl chromate, tert-  	1189-85-1
-ditridecyl phthalate	119-06-2
- Dichlobenil, particulate 	1194-65-6
-benzoyl carbinol	119-53-9
-hydroxy-2-phenyl acetophenone	119-53-9
-benzophenone	119-61-9
-tetrahydronaphthalene	119-64-2
- 3,3'-Dimethoxybenzidine 	119-90-4
-o-dianisidine	119-90-4
- 3,3'-Dimethylbenzidine 	119-93-7
- 3,3?-tolidine 	119-93-7
-diaminoditolyl	119-93-7
-dimethyl benzidine	119-93-7
- tolidine, o- 	119-93-7
-mica     	12001-26-2
-  Anthracene	120-12-7
-Nickel subsulfide	12035-72-2
-Thallium selenite	12039-52-0
-benzyl benzoate	120-51-4
-lithium oxide              	12057-24-8
- dimethyl terephthalate, respirable 	120-61-6
-Manganese cyclopentadienyl tricarbonyl 	12079-65-1
-catechol	120-80-9
- dihydroxybenzene, 1,3 	120-80-9
-o-benzenenedrol	120-80-9
-Pyrocatechol 	120-80-9
+dimethyl ether	115-10-6	46.0684
+methyl ether	115-10-6	46.0684
+isobutene                 	115-11-7	56.1063
+Endosulfan	115-29-7	406.925
+ 1,1-bis-(chlorophenyl)-2,2,2,-trichloroethanol 	115-32-2	370.486
+Dicofol	115-32-2	370.486
+Kelthane                   	115-32-2	370.486
+ pentaerythritol, respirable             	115-77-5	136.1464
+triphenyl phosphate	115-86-6	326.2831
+Fensulfothion	115-90-2	308.354
+tris(2-chloroethyl) phosphate	115-96-8	285.490
+Aldicarb	116-06-3	190.263
+decabromodiphenyl oxide	1163-19-5	959.168
+Bis(2-ethylhexyl)phthalate 	117-81-7	390.5561
+DEHP	117-81-7	390.5561
+di(2-ethylhexyl)phthalate	117-81-7	390.5561
+Di-(2-ethylhexyl)phthalate	117-81-7	390.5561
+di-n-Octyl phthalate	117-84-0	390.5561
+isatoic anhydride	118-48-9	163.1302
+dichlorodimethylhydantoin	118-52-5	
+Hexachlorobenzene	118-74-1	284.782
+Chloranil	118-75-2	245.875
+ hydroxyacetophenone, 2-   	118-93-4	136.1479
+ 2,4,6-Trinitrotoluene 	118-96-7	227.1311
+trinitrotoluene	118-96-7	227.1311
+ butyl chromate, tert-  	1189-85-1	
+ditridecyl phthalate	119-06-2	530.8219
+ Dichlobenil, particulate 	1194-65-6	172.011
+benzoyl carbinol	119-53-9	212.2439
+hydroxy-2-phenyl acetophenone	119-53-9	212.2439
+benzophenone	119-61-9	182.2179
+tetrahydronaphthalene	119-64-2	132.2023
+ 3,3'-Dimethoxybenzidine 	119-90-4	244.2890
+o-dianisidine	119-90-4	244.2890
+ 3,3'-Dimethylbenzidine 	119-93-7	212.2902
+ 3,3?-tolidine 	119-93-7	212.2902
+diaminoditolyl	119-93-7	212.2902
+dimethyl benzidine	119-93-7	212.2902
+ tolidine, o- 	119-93-7	212.2902
+mica     	12001-26-2	
+  Anthracene	120-12-7	178.2292
+Nickel subsulfide	12035-72-2	240.210
+Thallium selenite	12039-52-0	
+benzyl benzoate	120-51-4	212.2439
+lithium oxide              	12057-24-8	29.881
+ dimethyl terephthalate, respirable 	120-61-6	194.1840
+Manganese cyclopentadienyl tricarbonyl 	12079-65-1	204.0615
+catechol	120-80-9	110.1106
+ dihydroxybenzene, 1,3 	120-80-9	110.1106
+o-benzenenedrol	120-80-9	110.1106
+Pyrocatechol 	120-80-9	110.1106
  1,2,4-Trichlorobenzene 	120-82-1	181.45
  trichlorobenzene, 1,2,4- 	120-82-1	181.45
 unsym-trichlorobenzene	120-82-1	181.45
- 2,4-Dichlorophenol 	120-83-2	
- dichlorophenol, 2,4- 	120-83-2	
-cyclopentanone	120-92-3	
-methyl cyclopentadienyl manganese tricarbonyl 	12108-13-3	
- 2,4-Dinitrotoluene 	121-14-2	
+ 2,4-Dichlorophenol 	120-83-2	163.001
+ dichlorophenol, 2,4- 	120-83-2	163.001
+cyclopentanone	120-92-3	84.1164
+methyl cyclopentadienyl manganese tricarbonyl 	12108-13-3	218.0881
+ 2,4-Dinitrotoluene 	121-14-2	182.1335
 Zineb	12122-67-7	
  ammonium fluoride   	12125-01-8	
-ammonium chloride fume    	12125-02-9	
-vanillin	121-33-5	
-trimethyl borate	121-43-7	
-Triethylamine	121-44-8	
-trimethyl phosphite 	121-45-9	
-bicycloheptadiene        	121-46-0	
- dimethylaniline, N,N-  	121-69-7
-N-N-Dimethylaniline	121-69-7
-Malathion	121-75-5
-cyclonite	121-82-4
- Hexahydro-1,3,5-trinitro-1,3,5-triazine 	121-82-4
-RDX 	121-82-4
-Dimethylphenethylamine	122-09-8
-Simazine	122-34-9
-Diphenylamine	122-39-4
-triethyl phosphite	122-52-1
-phenyl glycidyl ether	122-60-1
- 1,2-Diphenylhydrazine 	122-66-7
-Hydrazobenzene	122-66-7
-phenylpropyl alcohol    	122-97-4
-ethylene glycol monophenyl ether	122-99-6
- aminopropyl morpholine, 4- 	123-00-2
- ethylhexyl chloride, 2- 	123-04-6
-ethylhexyl aldehyde	123-05-7
-isobutyl heptyl ketone   	123-17-1
- trimethyl-4-nonanone, 2,6,8- 	123-17-1
-dipropyl ketone	123-19-3
-dihydroxybenzene	123-31-9
-hydroquinol	123-31-9
-hydroquinone               	123-31-9
-hydroxyquinone	123-31-9
-p-Hydroquinone	123-31-9
-p-hydroxybenzene	123-31-9
-Quinol	123-31-9
-maleic hydrazide        	123-33-1
-PROPIONALDEHYDE	123-38-6
-methyl formamide           	123-39-7	
-4-hydroxy-4-methyl-2-pentanone 	123-42-2	
-diacetone alcohol 	123-42-2	
-isoamyl alcohol          	123-51-3	
-acetylacetone 	123-54-6	
-pentanedione  	123-54-6	
-propionic anhydride       	123-62-6	
-paraldehyde	123-63-7	
-trimethyl trioxane	123-63-7	
-butyraldehyde 	123-72-8	
-Crotonaldehyde	123-73-9	
- pyrrolidine, 2- 	123-75-1	
+ammonium chloride fume    	12125-02-9	53.491
+vanillin	121-33-5	152.1473
+trimethyl borate	121-43-7	103.913
+Triethylamine	121-44-8	101.1900
+trimethyl phosphite 	121-45-9	124.0755
+bicycloheptadiene        	121-46-0	92.1384
+ dimethylaniline, N,N-  	121-69-7	121.1796
+N-N-Dimethylaniline	121-69-7	121.1796
+Malathion	121-75-5	330.358
+cyclonite	121-82-4	222.1163
+ Hexahydro-1,3,5-trinitro-1,3,5-triazine 	121-82-4	222.1163
+RDX 	121-82-4	222.1163
+Dimethylphenethylamine	122-09-8	149.2328
+Simazine	122-34-9	201.657
+Diphenylamine	122-39-4	169.2224
+triethyl phosphite	122-52-1	166.1553
+phenyl glycidyl ether	122-60-1	150.1745
+ 1,2-Diphenylhydrazine 	122-66-7	184.2371
+Hydrazobenzene	122-66-7	184.2371
+phenylpropyl alcohol    	122-97-4	136.1910
+ethylene glycol monophenyl ether	122-99-6	138.1638
+ aminopropyl morpholine, 4- 	123-00-2	144.2147
+ ethylhexyl chloride, 2- 	123-04-6	148.674
+ethylhexyl aldehyde	123-05-7	128.2120
+isobutyl heptyl ketone   	123-17-1	186.3342
+ trimethyl-4-nonanone, 2,6,8- 	123-17-1	186.3342
+dipropyl ketone	123-19-3	114.1855
+dihydroxybenzene	123-31-9	110.1106
+hydroquinol	123-31-9	110.1106
+hydroquinone               	123-31-9	110.1106
+hydroxyquinone	123-31-9	110.1106
+p-Hydroquinone	123-31-9	110.1106
+p-hydroxybenzene	123-31-9	110.1106
+Quinol	123-31-9	110.1106
+maleic hydrazide        	123-33-1	112.0868
+PROPIONALDEHYDE	123-38-6	58.0791
+methyl formamide           	123-39-7	59.0672
+4-hydroxy-4-methyl-2-pentanone 	123-42-2	116.1583
+diacetone alcohol 	123-42-2	116.1583
+isoamyl alcohol          	123-51-3	88.1482
+acetylacetone 	123-54-6	100.1158
+pentanedione  	123-54-6	100.1158
+propionic anhydride       	123-62-6	130.1418
+paraldehyde	123-63-7	132.1577
+trimethyl trioxane	123-63-7	132.1577
+butyraldehyde 	123-72-8	72.1057
+Crotonaldehyde	123-73-9	70.0898
+ pyrrolidine, 2- 	123-75-1	71.1210
 Butyl Acetate	123-86-4	116.16
  butyl acetate, n-  	123-86-4	116.16
  1,4-Dioxane 	123-91-1	88.1
  dioxane, 1,4- 	123-91-1	88.1
-isoamyl acetate         	123-92-2	
- octyl alcohol, 2-       	123-96-6	
- sodium oxide, particulate 	12401-86-4	
-diallylamine	124-02-7	
-adipic acid	124-04-9	
-octanoic acid   	124-07-2	
-hexamethylene diamine      	124-09-4	
- hexanediamine, 1,6-  	124-09-4	
+isoamyl acetate         	123-92-2	130.1849
+ octyl alcohol, 2-       	123-96-6	130.2279
+ sodium oxide, particulate 	12401-86-4	38.9892
+diallylamine	124-02-7	97.1582
+adipic acid	124-04-9	146.1412
+octanoic acid   	124-07-2	144.2114
+hexamethylene diamine      	124-09-4	116.2046
+ hexanediamine, 1,6-  	124-09-4	116.2046
 decane	124-18-5	142.28
 n-Decane	124-18-5	142.28
-nonyl aldehyde	124-19-6	
-dodecylamine	124-22-1	
-lauryl amine              	124-22-1	
+nonyl aldehyde	124-19-6	142.2386
+dodecylamine	124-22-1	185.3495
+lauryl amine              	124-22-1	185.3495
 maneb    	12427-38-2	
-carbon dioxide	124-38-9	
-Dimethylamine	124-40-3	
-sodium methylate	124-41-4	
+carbon dioxide	124-38-9	44.0095
+Dimethylamine	124-40-3	45.0837
+sodium methylate	124-41-4	54.0237
 Dibromochloromethane	124-48-1	208.28
-2-amino-2-methyl-1-propanol	124-68-5	
-isobutanolamine           	124-68-5	
+2-amino-2-methyl-1-propanol	124-68-5	89.1362
+isobutanolamine           	124-68-5	89.1362
 ferrovanadium dust	12604-58-9	
-neopentyl glycol          	126-30-7	
-sulfolane	126-33-0	
+neopentyl glycol          	126-30-7	104.1476
+sulfolane	126-33-0	120.170
   Aroclor 1248	12672-29-6	
-tributyl phosphate	126-73-8	
+tributyl phosphate	126-73-8	266.3141
   Aroclor 1016	12674-11-2	
-Methacrylonitrile	126-98-7	
- methyl-2-propenenitrile, 2-        	126-98-7	
-methylacrylonitrile	126-98-7	
- 2-Chloro-1,3-butadiene 	126-99-8	
- chloro-1,3-butadiene, 2- 	126-99-8	
-Chloroprene 	126-99-8	
+Methacrylonitrile	126-98-7	67.0892
+ methyl-2-propenenitrile, 2-        	126-98-7	67.0892
+methylacrylonitrile	126-98-7	67.0892
+ 2-Chloro-1,3-butadiene 	126-99-8	88.536
+ chloro-1,3-butadiene, 2- 	126-99-8	88.536
+Chloroprene 	126-99-8	88.536
 Perchloroethylene 	127-18-4	165.83
 TETRACHLORO ETHYLENE	127-18-4	165.83
 Tetrachloroethene	127-18-4	165.83
 tetrachloroethylene	127-18-4	165.83
 PCE	127-18-4	165.83
-dimethyl acetamide	127-19-5	
-Diphenyl sulfone	127-63-9	
+dimethyl acetamide	127-19-5	87.1204
+Diphenyl sulfone	127-63-9	218.272
 beta-Pinene	127-91-3	136.24
-BHT	128-37-0	
-butylated hydroxytoluene	128-37-0	
- di-tert-butyl-p-cresol, 2,6- 	128-37-0	
-  Pyrene	129-00-0	
-dimethylphenol	1300-71-6	
- xylenol, all isomers 	1300-71-6	
-sodium xylenesulfonate	1300-72-7	
-dimethylaminobenzene	1300-73-8	
- xylidine, mixed isomers 	1300-73-8
- naphthoquinone, 1,4- 	130-15-4
-sodium aluminate	1302-42-7
- emery, respirable 	1302-74-5
-Bentonite	1302-78-9
-gallium arsenide 	1303-00-0
-arsenic pentoxide        	1303-28-2
- boron oxide, respirable 	1303-86-2
- borates, tetrasodium salts: decahydrate                	1303-96-4
- bismuth telluride, particulate, respirable 	1304-82-1
-calcium hydroxide	1305-62-0
-calcium oxide	1305-78-8
-calcium phosphide	1305-99-3
-iron oxide           	1309-37-1
- rouge, respirable 	1309-37-1
- magnesium oxide, respirable     	1309-48-4
-Antimony trioxide	1309-64-4
-potassium hydroxide        	1310-58-3
-lithium hydroxide          	1310-65-2
-sodium hydroxide	1310-73-2
-Dimethyl phthalate	131-11-3
-dimethylphthalate	131-11-3
-Phthalic acid methyl ester 	131-11-3
-Cyhexatin	13121-70-5
-tricyclohexyltin hydroxide	13121-70-5
-lanthanum oxide	1312-81-8
-nickel oxide              	1313-99-1
-zinc oxide dust	1314-13-2
-zinc oxide fume	1314-13-2
-Thallic oxide	1314-32-5
-phosphorus pentoxide	1314-56-3
-Antimony pentoxide	1314-60-9
-tantalum oxide	1314-61-0
-Vanadium pentoxide	1314-62-1
-phosphorus pentasulfide    	1314-80-3
-Zinc phosphide	1314-84-7
-Manganese tetroxide 	1317-35-7
- calcium carbonate, respirable 	1317-65-3
- limestone, respirable 	1317-65-3
- marble, respirable              	1317-65-3
-silica-crystalline: tripoli	1317-95-9
-tripoli	1317-95-9
-Bauxite	1318-16-7
- azoxystrobin, particulate 	131860-33-8
- 4,6-Dinitro-o-cyclohexyl phenol 	131-89-5
-Cresol 	1319-77-3
-cresylic acid 	1319-77-3
-pentachloronaphthalene      	1321-64-8
-trichloronaphthalene	1321-65-9	
-divinyl benzene	1321-74-0	
-Dibenzofuran	132-64-9	
+BHT	128-37-0	220.3505
+butylated hydroxytoluene	128-37-0	220.3505
+ di-tert-butyl-p-cresol, 2,6- 	128-37-0	220.3505
+  Pyrene	129-00-0	202.2506
+dimethylphenol	1300-71-6	122.1644
+ xylenol, all isomers 	1300-71-6	122.1644
+sodium xylenesulfonate	1300-72-7	208.210
+dimethylaminobenzene	1300-73-8	121.1796
+ xylidine, mixed isomers 	1300-73-8	121.1796
+ naphthoquinone, 1,4- 	130-15-4	158.1534
+sodium aluminate	1302-42-7	81.9701
+ emery, respirable 	1302-74-5	
+Bentonite	1302-78-9	
+gallium arsenide 	1303-00-0	144.645
+arsenic pentoxide        	1303-28-2	229.8402
+ boron oxide, respirable 	1303-86-2	69.620
+ borates, tetrasodium salts: decahydrate                	1303-96-4	
+ bismuth telluride, particulate, respirable 	1304-82-1	800.76
+calcium hydroxide	1305-62-0	74.093
+calcium oxide	1305-78-8	56.077
+calcium phosphide	1305-99-3	
+iron oxide           	1309-37-1	159.688
+ rouge, respirable 	1309-37-1	159.688
+ magnesium oxide, respirable     	1309-48-4	40.3044
+Antimony trioxide	1309-64-4	291.518
+potassium hydroxide        	1310-58-3	56.1056
+lithium hydroxide          	1310-65-2	23.948
+sodium hydroxide	1310-73-2	39.9971
+Dimethyl phthalate	131-11-3	194.1840
+dimethylphthalate	131-11-3	194.1840
+Phthalic acid methyl ester 	131-11-3	194.1840
+Cyhexatin	13121-70-5	
+tricyclohexyltin hydroxide	13121-70-5	
+lanthanum oxide	1312-81-8	325.8091
+nickel oxide              	1313-99-1	74.6928
+zinc oxide dust	1314-13-2	81.38
+zinc oxide fume	1314-13-2	81.38
+Thallic oxide	1314-32-5	456.7648
+phosphorus pentoxide	1314-56-3	141.9445
+Antimony pentoxide	1314-60-9	323.517
+tantalum oxide	1314-61-0	441.8928
+Vanadium pentoxide	1314-62-1	181.8800
+phosphorus pentasulfide    	1314-80-3	
+Zinc phosphide	1314-84-7	258.09
+Manganese tetroxide 	1317-35-7	228.8117
+ calcium carbonate, respirable 	1317-65-3	
+ limestone, respirable 	1317-65-3	
+ marble, respirable              	1317-65-3	
+silica-crystalline: tripoli	1317-95-9	
+tripoli	1317-95-9	
+Bauxite	1318-16-7	
+ azoxystrobin, particulate 	131860-33-8	403.3875
+ 4,6-Dinitro-o-cyclohexyl phenol 	131-89-5	266.2500
+Cresol 	1319-77-3	108.1378
+cresylic acid 	1319-77-3	108.1378
+pentachloronaphthalene      	1321-64-8	
+trichloronaphthalene	1321-65-9	231.506
+divinyl benzene	1321-74-0	130.1864
+Dibenzofuran	132-64-9	168.1913
 dimethylbenzene 	1330-20-7	106.2
 m- & p-Xylene	1330-20-7	106.2
 Xylene 	1330-20-7	106.2
- borates, tetrasodium salts: anhydrous  	1330-43-4	
+ borates, tetrasodium salts: anhydrous  	1330-43-4	201.219
 isodecyl acrylate	1330-61-6	
-Captan	133-06-2	
-tricresyl phosphate	1330-78-5	
-tritolyl phosphate	1330-78-5	
+Captan	133-06-2	300.589
+tricresyl phosphate	1330-78-5	368.3628
+tritolyl phosphate	1330-78-5	368.3628
 propylene glycol allyl ether	1331-17-5	
 Asbestos 	1332-21-4	
- kaolin, respirable 	1332-58-7	
-Antimony tetroxide	1332-81-6	
-hydrogen                    	1333-74-0	
-chromium trioxide 	1333-82-0
-carbon black	1333-86-4
-methyl cyclohexene	1335-86-0
-hexachloronaphthalene       	1335-87-1
-tetrachloronaphthalene	1335-88-2
-ammonium hydroxide         	1336-21-6
-Aroclors	1336-36-3
-PCB	1336-36-3
-Polychlorinated biphenyls 	1336-36-3
- 3-amino-2,5-dichlorobenzoic acid 	133-90-4
-alumina                  	1344-28-0
-ammonium nitrite           	13446-48-5
- calcium silicate, respirable 	1344-95-2
-Nickel carbonyl 	13463-39-3
-iron pentacarbonyl (as Fe)          	13463-40-6
- titanium dioxide, respirable 	13463-67-7
- trimethyl bicyclohep-3-ene, 3,7,7- 	13466-78-9
-tellurium and cmpds	13494-80-9
-zinc chromates (as Cr)	13530-65-9
- butylamine, sec- 	13592-84-6
-Beryllium nitrate 	13597-99-4
-phosphorous acid           	13598-36-2
-sec-Butylbenzene	135-9-88
- Sesone, respirable 	136-78-7
- sodium, 2,4-dichlorophenoxyethyl sulfate, respirable 	136-78-7
-Vanadium sulfate	13701-70-7
-methyl 2-cyanoacrylate       	137-05-3
-Sodium metavanadate	13718-26-8
-Thiram	137-26-8
-calcium chromate (as Cr)	13765-19-0
-butyl lactate	138-22-7
-enflurane	13838-16-9
-methyl ethyl ketone peroxide        	1388-23-4
-nitrilotriacetic acid	139-13-9
-Propazine	139-40-2
-enzymes	1395-21-7
-Subtilisins	1395-21-7
-wollastonite	13983-17-0
-benzyl acetate            	140-11-4
-phenyl methyl acetate	140-11-4
-aminoethyl piperazine      	140-31-8
-Aramite	140-57-8
- acrylic acid, ethyl ester  	140-88-5
-ETHYL ACRYLATE	140-88-5
- acrylic acid, n-butyl ester  	141-32-2
- butyl acrylate, n-  	141-32-2
-aminoethanol	141-43-5
-ethanolamine	141-43-5
-Dicrotophos	141-66-2	
+ kaolin, respirable 	1332-58-7	222.1299
+Antimony tetroxide	1332-81-6	307.518
+hydrogen                    	1333-74-0	2.01588
+chromium trioxide 	1333-82-0	99.9943
+carbon black	1333-86-4	
+methyl cyclohexene	1335-86-0	
+hexachloronaphthalene       	1335-87-1	334.841
+tetrachloronaphthalene	1335-88-2	265.951
+ammonium hydroxide         	1336-21-6	
+Aroclors	1336-36-3	
+PCB	1336-36-3	
+Polychlorinated biphenyls 	1336-36-3	
+ 3-amino-2,5-dichlorobenzoic acid 	133-90-4	206.026
+alumina                  	1344-28-0	
+ammonium nitrite           	13446-48-5	
+ calcium silicate, respirable 	1344-95-2	
+Nickel carbonyl 	13463-39-3	170.7338
+iron pentacarbonyl (as Fe)          	13463-40-6	195.895
+ titanium dioxide, respirable 	13463-67-7	79.866
+ trimethyl bicyclohep-3-ene, 3,7,7- 	13466-78-9	136.2340
+tellurium and cmpds	13494-80-9	127.60
+zinc chromates (as Cr)	13530-65-9	
+ butylamine, sec- 	13592-84-6	
+Beryllium nitrate 	13597-99-4	
+phosphorous acid           	13598-36-2	81.9958
+sec-Butylbenzene	135-9-88	134.2182
+ Sesone, respirable 	136-78-7	
+ sodium, 2,4-dichlorophenoxyethyl sulfate, respirable 	136-78-7	
+Vanadium sulfate	13701-70-7	
+methyl 2-cyanoacrylate       	137-05-3	111.0987
+Sodium metavanadate	13718-26-8	121.9295
+Thiram	137-26-8	240.433
+calcium chromate (as Cr)	13765-19-0	156.072
+butyl lactate	138-22-7	146.1843
+enflurane	13838-16-9	184.492
+methyl ethyl ketone peroxide        	1388-23-4	
+nitrilotriacetic acid	139-13-9	191.1388
+Propazine	139-40-2	229.710
+enzymes	1395-21-7	
+Subtilisins	1395-21-7	
+wollastonite	13983-17-0	116.162
+benzyl acetate            	140-11-4	150.1745
+phenyl methyl acetate	140-11-4	150.1745
+aminoethyl piperazine      	140-31-8	129.2034
+Aramite	140-57-8	334.859
+ acrylic acid, ethyl ester  	140-88-5	100.1158
+ETHYL ACRYLATE	140-88-5	100.1158
+ acrylic acid, n-butyl ester  	141-32-2	128.1690
+ butyl acrylate, n-  	141-32-2	128.1690
+aminoethanol	141-43-5	61.0831
+ethanolamine	141-43-5	61.0831
+Dicrotophos	141-66-2	237.1901
 Ethyl Acetate	141-78-6	88.11
-mesityl oxide              	141-79-7	
-cyclopentene	142-29-0	
-dimethyl hexynediol	142-30-3	
-caproic acid 	142-62-1	
+mesityl oxide              	141-79-7	98.1430
+cyclopentene	142-29-0	68.1170
+dimethyl hexynediol	142-30-3	142.1956
+caproic acid 	142-62-1	116.1583
 hexanoic acid 	142-62-9	
-piperazine dihydrochloride 	142-64-3	
-heptane                  	142-82-5	
-dipropylamine	142-84-7	
- butyl ether, all isomers  	142-96-1	
-dodecanoic acid 	143-07-7	
-lauric acid 	143-07-7	
+piperazine dihydrochloride 	142-64-3	159.057
+heptane                  	142-82-5	100.2019
+dipropylamine	142-84-7	101.1900
+ butyl ether, all isomers  	142-96-1	130.2279
+dodecanoic acid 	143-07-7	200.3178
+lauric acid 	143-07-7	200.3178
 1-Nonanol	143-08-8	144.26
-decylmercaptan	143-10-2	
-butoxytriglycol	143-22-6	
-triethylene glycol monobutyl ether	143-22-6
-  Sodium cyanide	143-33-9
-chlordecone	143-50-0
-Kepone	143-50-0
-sodium hydrogen carbonate	144-55-8
-Diisopropyl methylphosphonate	1445-75-6
-oxalic acid                	144-62-7
-cristobalite	14464-46-1
- silica-crystalline: cristobalite, respirable 	14464-46-1
- Ferbam, respirable 	14484-64-1
- nonylmercaptan, n-             	1455-21-6
-Endothall	145-73-3
- ethoxypropionitrile, ß- 	14631-45-9
- diepoxybutane, 3,4- 	1464-53-5
- xylene-a,a'-diamine, m- 	1477-55-0
-Nitrate	14797-55-8
-Nitrite	14797-65-0
-dinitolmide 	148-01-6
-zoalene	148-01-6
-talc (no asbestos)	14807-96-6
-talc (with asbestos)	14807-96-6
-quartz	14808-60-7
- silica-crystalline: quartz, respirable 	14808-60-7
-Sodium diethyldithiocarbamate	148-18-5
-sodium dimethyldithiocarbamate	148-18-5
-dimethylethoxysilane	14857-34-2
-Melphalan	148-82-3
-Cycasin	14901-08-7
-2-Mercaptobenzothiazole	149-30-4
-mercaptobenzothiazole	149-30-4
- ethylhexanoic acid, 2- 	149-57-5
-chromyl chloride	14977-61-8
-chlorite (chlorine dioxide ion)	14998-27-7	
-hydroquinone monomethyl ether	150-76-5	
- hydroxyanisole, p- 	150-76-5	
- methoxyphenol, 4- 	150-76-5	
-  Potassium cyanide	151-50-8	
-Aziridine	151-56-4	
-ethyleneimine	151-56-4	
-halothane	151-67-7	
+decylmercaptan	143-10-2	174.347
+butoxytriglycol	143-22-6	206.2793
+triethylene glycol monobutyl ether	143-22-6	206.2793
+  Sodium cyanide	143-33-9	49.0072
+chlordecone	143-50-0	490.636
+Kepone	143-50-0	490.636
+sodium hydrogen carbonate	144-55-8	
+Diisopropyl methylphosphonate	1445-75-6	180.1818
+oxalic acid                	144-62-7	90.0349
+cristobalite	14464-46-1	60.0843
+ silica-crystalline: cristobalite, respirable 	14464-46-1	60.0843
+ Ferbam, respirable 	14484-64-1	416.494
+ nonylmercaptan, n-             	1455-21-6	160.320
+Endothall	145-73-3	186.1620
+ ethoxypropionitrile, ß- 	14631-45-9	99.1311
+ diepoxybutane, 3,4- 	1464-53-5	86.0892
+ xylene-a,a'-diamine, m- 	1477-55-0	136.1943
+Nitrate	14797-55-8	62.0054
+Nitrite	14797-65-0	46.0060
+dinitolmide 	148-01-6	
+zoalene	148-01-6	
+talc (no asbestos)	14807-96-6	379.2657
+talc (with asbestos)	14807-96-6	379.2657
+quartz	14808-60-7	60.0843
+ silica-crystalline: quartz, respirable 	14808-60-7	60.0843
+Sodium diethyldithiocarbamate	148-18-5	171.259
+sodium dimethyldithiocarbamate	148-18-5	171.259
+dimethylethoxysilane	14857-34-2	
+Melphalan	148-82-3	
+Cycasin	14901-08-7	
+2-Mercaptobenzothiazole	149-30-4	167.251
+mercaptobenzothiazole	149-30-4	167.251
+ ethylhexanoic acid, 2- 	149-57-5	144.2114
+chromyl chloride	14977-61-8	154.901
+chlorite (chlorine dioxide ion)	14998-27-7	67.452
+hydroquinone monomethyl ether	150-76-5	124.1372
+ hydroxyanisole, p- 	150-76-5	124.1372
+ methoxyphenol, 4- 	150-76-5	124.1372
+  Potassium cyanide	151-50-8	65.1157
+Aziridine	151-56-4	43.0678
+ethyleneimine	151-56-4	43.0678
+halothane	151-67-7	197.382
  silica-crystalline: tridymite, respirable 	15468-32-3	
 tridymite	15468-32-3	
-trimethylol propane triacrylate	15625-89-5	
-Carbofuran	1563-66-2	
- phenetidine, p-            	156-43-4	
+trimethylol propane triacrylate	15625-89-5	296.3157
+Carbofuran	1563-66-2	221.2524
+ phenetidine, p-            	156-43-4	137.1790
  1,2-Dichloroethylene (cis) 	156-59-2	96.94
  cis-1,2-Dichloroethane 	156-59-2	96.94
  1,2-DICHLOROETHENE, TRANS- 	156-60-5	96.94
  1,2-Dichloroethylene (trans) 	156-60-5	96.94
  trans-1,2-Dichloroethene 	156-60-5	96.94
 calcium cyanamide	156-62-7	
-Ibuprofen	15687-27-1	
-propyl propasol	1569-01-3	
-propylene glycol monopropyl ether	1569-01-3	
-propylene glycol monoethyl ether	1569-02-4	
-cyclohexylmercaptan	1569-69-3	
+Ibuprofen	15687-27-1	206.2808
+propyl propasol	1569-01-3	118.1742
+propylene glycol monopropyl ether	1569-01-3	118.1742
+propylene glycol monoethyl ether	1569-02-4	104.1476
+cyclohexylmercaptan	1569-69-3	116.224
 tolylsulfonyl hydrazine	1576-35-8	
 dipropylene glycol monoethyl ether	15764-24-6	
- 2,6-dinitro-N,N-dipropyl-4-(trifluoromethyl) benzamine 	1582-09-8	
-Trifluralin	1582-09-8	
- methoxy-1-propanol, 2- 	1589-47-5	
-propylene glycol-2-methyl ether	1589-47-5	
-Alar	1596-84-5	
-Alachlor	15972-60-8	
+ 2,6-dinitro-N,N-dipropyl-4-(trifluoromethyl) benzamine 	1582-09-8	335.2790
+Trifluralin	1582-09-8	335.2790
+ methoxy-1-propanol, 2- 	1589-47-5	90.1210
+propylene glycol-2-methyl ether	1589-47-5	90.1210
+Alar	1596-84-5	160.1711
+Alachlor	15972-60-8	269.767
 Chromium III	16065-83-1	
-Prometon	1610-18-0	
- ethylidene-2-norbornene, 5-  	16219-75-3	
+Prometon	1610-18-0	225.2908
+ ethylidene-2-norbornene, 5-  	16219-75-3	120.1916
 Methyl tertbutyl ether	1634-04-4	88.15
 Methyl tert-Butyl Ether 	1634-04-4	88.15
 METHYL-T-BUTYL ETHER	1634-04-4	88.15
 MTBE	1634-04-4	88.15
-heptylmercaptan             	1639-09-4	
-Aldicarb sulfone	1646-88-4	
+heptylmercaptan             	1639-09-4	132.267
+Aldicarb sulfone	1646-88-4	222.262
  2-(2-Methyl-1,4-chlorophenoxy) propionic acid (MCPP) 	16484-77-8	
-Methomyl   	16752-77-5	
-diglycidyl bisphenol A ether	1675-54-3	
-cobalt hydrocarbonyl	16842-03-8	
-Bromoxynil	1689-84-5	
-sodium borohydride	16940-66-2	
-Fluoride	16984-48-8	
-dimethylaminoethoxyethanol	1704-62-7
- asbestos, all forms  	17068-78-9
-dichlorofluoroethane	1717-00-6
-Freon 141b	1717-00-6
- 2,3,7,8-TCDD (dioxin) 	1746-01-6
- Dioxin (2,3,7,8-TCDD) 	1746-01-6
- dioxins,2,3,7,8-tetrachlorinated, dibenzo- 	1746-01-6
-Tetrachlorodibenzo-p-dioxin 	1746-01-6
- tetrachlorodibenzo-p-dioxin,2,3,7,8- 	1746-01-6
-decaborane	17702-41-9
- Benomyl (Fungicide), respirable 	17804-35-2
-tetraethylene glycol diacrylate	17831-71-9
- diacetoxy-1-butene, 3,4- 	18085-02-4
-Isopropyl methyl phosphonic acid	1832-54-8
-ethyl-2-methylallylamine	18328-90-0
-Chromium VI	18540-29-9
-Dacthal	1861-32-1
-Steptozotocin	18883-66-4
-hexachloropropene          	1888-71-7
-diethylene glycol monoisobutyl ether	18912-80-6
-Chlorothanonil	1897-45-6
-Oryzalin	19044-88-3
-Atrazine                   	1912-24-9
-Dicamba	1918-00-9
-dichloromethoxybenzoic acid	1918-00-9
- Picloram, respirable                   	1918-02-1
-Propachlor	1918-16-7
-diborane	19287-45-7
- chloro-6-(trichloromethyl)-pyridine, 2-, respirable 	1929-82-4
- Nitrapyrin, respirable  	1929-82-4
-   Indeno[1,2,3-cd]pyrene 	193-39-5
-Hexachlorodibenzo-p-dioxin mixture (HxCDD)	19408-74-3
- butyl hydroquinone, t- 	1948-33-0
-pentaborane              	19624-22-7
-Oxadiazon	19666-30-9
- methylene bis(4,4'-cyclohexylamine) 	19900-65-3
-hexanitrostilbene	20062-22-0
-Butylate	2008-41-5
- chlorostyrene, o- 	2039-87-4
-  Benzo[b]fluoranthene	205-99-2
-benzo[b]fluoranthene	205-99-2
-  Fluoranthene	206-44-0
-POLYNUCLEAR AROMATIC HYDROCARBONS 	206-44-0
-  Benzo[k]fluoranthene	207-08-9
-isopropyl methylthionocarbamate	20753-31-5
-osmium tetroxide        	20816-12-0
-Daunomycin	20830-81-3
-EPN	2104-64-5
-Bromophos	2104-96-3
-Metribuzin                 	21087-64-9
- acetoacetoxyethyl methacrylate,2- 	21287-97-3
-cesium hydroxide	21351-79-1
- 2,4-Dimethylaniline hydrochloride 	21436-96-4
-Fluometuron	2164-17-2
-Cyanazine	21725-46-2
-pentachloropyridine	2176-62-7
-allyl propyl disulfide    	2179-59-1
-  Chrysene	218-01-9
-Fenamiphos	22224-92-6
-Dienochlor	2227-17-0
-octachloronaphthalene       	2234-13-1
-diglycidyl ether	2238-07-5
-benzoin isobutyl ether	22499-12-3
-Mercury (methyl)	22967-92-6
-Propargite	2312-35-8
-Oxamyl	23135-22-0
- Diquat, respirable 	231-36-7
-propylene glycol isobutyl ether    	23436-19-3
-Mirex	2385-85-5
-Captafol	2425-06-1
-butyl glycidyl ether	2426-08-6
-Mepiquat	24307-26-4
- Mepiquat chloride, particulate          	24307-26-4
-triglycidyl-s-triazinetrione	2451-62-9
- tripropylene glycol, particulate 	24800-44-0
- tripropylene glycol, vapor 	24800-44-0
-Methyl styrene 	25013-15-4
-vinyl toluene	25013-15-4
-Bentazon	25057-89-0
-epoxy resin	25068-38-6
-isooctyl thioglycolate	25103-09-7
- nonylphenol, mixed isomers        	25154-52-3
- dodecyl benzene sulfonic acid, particulate 	25155-30-0
- dodecyl benzene sulfonic acid, vapor 	25155-30-0
- sodium dodecyl benzene sulfonate, particulate 	25155-30-0
- sodium dodecyl benzene sulfonate, vapor 	25155-30-0
-dimethylpiperazine	25155-35-5
- butene, 1-  	25167-67-3
-di-tert-amyl phenol	25231-47-4
- dimethylphosphorochloridothioate, O,O- 	2524-03-0
-diethyl phosphorochlorodithioate	2524-04-1
-Texanol	25265-77-4
- trimethyl-1,3-pentanediol isobutyrate, 2,2,4- 	25265-77-4
-dibutyl phenyl phosphate	2528-36-1
-Dinitrotoluene mixture	25321-14-6
- dinitrotoluene, all isomers  	25321-14-6
-polyethylene glycols (particulate)	25322-68-3
-polyethylene glycols (vapor) 	25322-68-3
-diethylbenzene	25340-17-4
-DIAMINOTOLUENE	25376-45-8
-dodecenylsuccinic anhydride	25377-73-5
-sulfur hexafluoride	2551-62-4
- dinitrophenol, 2,6- 	25550-58-7
-trimethyl benzene	25551-13-7
-naphthalene diisocyanate	25551-28-4
-methyl cyclohexanol        	25639-42-3
-acridine	260-94-6
- dibenzo[b,e]pyridine 	260-94-6
-terphenyls	26140-60-3
-cresyl glycidyl ether	26447-14-3
-tolyl glycidyl ether	26447-14-3
-tris(nonylphenol)phosphite	26523-78-4
-tetrapropenylsuccinic anhydride	26544-38-7
-Sodium azide	26628-22-8
- Chloroneb, particulate 	2675-77-6
- octyl pyrrolidone, N-      	2687-94-7
-cyclotetramethylenetetranitramine	2691-41-0
-Octahydro-1357-tetranitro-1357- tetrazocine 	2691-41-0
-isooctyl alcohol         	26952-21-6
- chlorobenzylidene malononitrile, o- 	2698-41-1
-sulfuryl fluoride	2699-79-8
-octyl phenol               	27193-28-8
-dodecyl phenol	27193-86-8
-ethylhexyl nitrate	27247-96-7
-Norflurazon	27314-13-2
-Zorial	27314-13-2
-tris(hydroxyphenyl) ethane	27955-94-8
-triethylene diamine	280-57-9
-ethylene glycol monopropyl ether	2807-30-9
-propoxyethanol	2807-30-9
-adamantane	281-23-2
-hexamethylene diisocyanate polymer	28182-81-2
-polymeric hexamethylene diisocyanate	28182-81-2
-Thiobencarb	28249-77-6
-chlorotetrafluoroethane	2837-89-0
-HCFC-124	2837-89-0
-dimethylaminoethyl methacrylate	2867-47-2
-cyclopentane	287-92-3
-octadecyl mercaptan        	2885-00-9
-stearyl mercaptan	2885-00-9
-trimethylol propane ethoxytriacrylate	28961-43-5
-biphenylyl phenyl ether	28984-89-6
-cycloheptane	291-64-5
-cetyl mercaptan	2917-26-2
-hexadecyl mercaptan	2917-26-2
- anisidine, o-, p- isomers     	29191-52-4
-Chlorpyrifos	2921-88-2
-Dursban	2921-88-2
-cyclooctane	292-64-8
- phosphorodithioic acid ester, zinc salt  	2929-95-5
- Clopidol, respirable 	2971-90-6
-Methyl parathion	298-00-0
-Phorate                   	298-02-2
-Disulfoton	298-04-4
-glyoxylic acid	298-12-4
-isodecyl methacrylate	29964-84-9
-cyclooctadiene	29965-97-7
-Ronnel	299-84-3
-Cruformate	299-86-5
-dibrom	300-76-5
- dimethyl-1,2-dibromo-2,2-dichloroethyl phosphate 	300-76-5
-Naled	300-76-5
-Hydrazine 	302-01-2
-hydrazine sulfate	302-01-2
-Chloral	302-17-0
-Lasiocarpine	303-34-4
- dimethylaminoethyl, ether, bis 2- 	3033-62-3
-DMAEE	3033-62-3
- oxybis(N,N-dimethylethylamine) 	3033-62-3
-Texacat ZF-20	3033-62-3
- vinyl-2-norbornene, 5- 	3048-64-4
-Chloroambucil	305-03-3
-paraformaldehyde  	30525-89-4
-Orthene	30560-19-1
-triaminotrinitrobenzene	3058-38-6
-dichlorotrifluoroethane	306-83-2
-Freon 123	306-83-2
-Aldrin                     	309-00-2
-chlorinated diphenyl oxide	31242-93-0
-Bromacil                  	314-40-9
-cyclohexyl isocyanate	3173-53-3
- naphthalene diisocyanate, 1,5- 	3173-72-6
- triazole-3-thiol, 1H-1,2,4- 	3179-31-5
-dimethyl propanolamine	3179-63-3
-HCH (alpha)	319-84-6
-HCH (beta)	319-85-7
-dibromoacetonitrile	3252-43-5
-CHLORINATED DIBENZO-p-DIOXINS	3268-87-9
-pivaloyl chloride          	3282-30-2
-Epinephrine	329-65-7
-Diuron	330-54-1
-Linuron                   	330-55-2
-Amitraz      	33089-61-1
-Ovasyn       	33089-61-1
-tetramethyl succinonitrile	3333-52-6
-Diazinon	333-41-5
-capric acid 	334-48-5
-decanoic acid 	334-48-5
-Azinethylene	334-88-3
-diazirine	334-88-3
-diazomethane	334-88-3
- vinyl 2,2-dimethyl propanoate 	3377-92-2
-vinyl pivalate	3377-92-2
-Isopropalin	33820-53-0
- Abate, respirable 	3383-96-8	
-Temephos	3383-96-8	
- amyl hydroperoxide, t- 	3425-61-4	
-Acetochlor	34256-82-1	
-dipropylene glycol monomethyl ether	34590-94-8	
-pentaerthyritol triacrylate       	3524-68-3	
+Methomyl   	16752-77-5	162.210
+diglycidyl bisphenol A ether	1675-54-3	340.4129
+cobalt hydrocarbonyl	16842-03-8	171.9815
+Bromoxynil	1689-84-5	276.913
+sodium borohydride	16940-66-2	37.833
+Fluoride	16984-48-8	18.9989518
+dimethylaminoethoxyethanol	1704-62-7	133.1888
+ asbestos, all forms  	17068-78-9	
+dichlorofluoroethane	1717-00-6	116.950
+Freon 141b	1717-00-6	116.950
+ 2,3,7,8-TCDD (dioxin) 	1746-01-6	321.971
+ Dioxin (2,3,7,8-TCDD) 	1746-01-6	321.971
+ dioxins,2,3,7,8-tetrachlorinated, dibenzo- 	1746-01-6	321.971
+Tetrachlorodibenzo-p-dioxin 	1746-01-6	321.971
+ tetrachlorodibenzo-p-dioxin,2,3,7,8- 	1746-01-6	321.971
+decaborane	17702-41-9	122.221
+ Benomyl (Fungicide), respirable 	17804-35-2	290.3177
+tetraethylene glycol diacrylate	17831-71-9	
+ diacetoxy-1-butene, 3,4- 	18085-02-4	
+Isopropyl methyl phosphonic acid	1832-54-8	
+ethyl-2-methylallylamine	18328-90-0	99.1741
+Chromium VI	18540-29-9	
+Dacthal	1861-32-1	331.964
+Steptozotocin	18883-66-4	
+hexachloropropene          	1888-71-7	248.750
+diethylene glycol monoisobutyl ether	18912-80-6	162.2267
+Chlorothanonil	1897-45-6	265.911
+Oryzalin	19044-88-3	346.360
+Atrazine                   	1912-24-9	215.683
+Dicamba	1918-00-9	221.037
+dichloromethoxybenzoic acid	1918-00-9	221.037
+ Picloram, respirable                   	1918-02-1	241.459
+Propachlor	1918-16-7	211.688
+diborane	19287-45-7	27.670
+ chloro-6-(trichloromethyl)-pyridine, 2-, respirable 	1929-82-4	230.907
+ Nitrapyrin, respirable  	1929-82-4	230.907
+   Indeno[1,2,3-cd]pyrene 	193-39-5	276.3307
+Hexachlorodibenzo-p-dioxin mixture (HxCDD)	19408-74-3	390.861
+ butyl hydroquinone, t- 	1948-33-0	166.2170
+pentaborane              	19624-22-7	63.126
+Oxadiazon	19666-30-9	345.221
+ methylene bis(4,4'-cyclohexylamine) 	19900-65-3	
+hexanitrostilbene	20062-22-0	450.2304
+Butylate	2008-41-5	217.371
+ chlorostyrene, o- 	2039-87-4	138.594
+  Benzo[b]fluoranthene	205-99-2	252.3093
+benzo[b]fluoranthene	205-99-2	252.3093
+  Fluoranthene	206-44-0	202.2506
+POLYNUCLEAR AROMATIC HYDROCARBONS 	206-44-0	202.2506
+  Benzo[k]fluoranthene	207-08-9	252.3093
+isopropyl methylthionocarbamate	20753-31-5	
+osmium tetroxide        	20816-12-0	254.23
+Daunomycin	20830-81-3	
+EPN	2104-64-5	318.264
+Bromophos	2104-96-3	365.996
+Metribuzin                 	21087-64-9	214.288
+ acetoacetoxyethyl methacrylate,2- 	21287-97-3	
+cesium hydroxide	21351-79-1	149.9128
+ 2,4-Dimethylaniline hydrochloride 	21436-96-4	157.641
+Fluometuron	2164-17-2	232.2023
+Cyanazine	21725-46-2	240.693
+pentachloropyridine	2176-62-7	251.325
+allyl propyl disulfide    	2179-59-1	148.289
+  Chrysene	218-01-9	228.2879
+Fenamiphos	22224-92-6	303.357
+Dienochlor	2227-17-0	474.637
+octachloronaphthalene       	2234-13-1	403.731
+diglycidyl ether	2238-07-5	
+benzoin isobutyl ether	22499-12-3	268.3502
+Mercury (methyl)	22967-92-6	
+Propargite	2312-35-8	350.472
+Oxamyl	23135-22-0	219.261
+ Diquat, respirable 	231-36-7	
+propylene glycol isobutyl ether    	23436-19-3	
+Mirex	2385-85-5	545.543
+Captafol	2425-06-1	349.061
+butyl glycidyl ether	2426-08-6	130.1849
+Mepiquat	24307-26-4	
+ Mepiquat chloride, particulate          	24307-26-4	
+triglycidyl-s-triazinetrione	2451-62-9	
+ tripropylene glycol, particulate 	24800-44-0	192.2527
+ tripropylene glycol, vapor 	24800-44-0	192.2527
+Methyl styrene 	25013-15-4	118.1757
+vinyl toluene	25013-15-4	118.1757
+Bentazon	25057-89-0	240.279
+epoxy resin	25068-38-6	
+isooctyl thioglycolate	25103-09-7	204.330
+ nonylphenol, mixed isomers        	25154-52-3	220.3505
+ dodecyl benzene sulfonic acid, particulate 	25155-30-0	
+ dodecyl benzene sulfonic acid, vapor 	25155-30-0	
+ sodium dodecyl benzene sulfonate, particulate 	25155-30-0	
+ sodium dodecyl benzene sulfonate, vapor 	25155-30-0	
+dimethylpiperazine	25155-35-5	
+ butene, 1-  	25167-67-3	
+di-tert-amyl phenol	25231-47-4	
+ dimethylphosphorochloridothioate, O,O- 	2524-03-0	160.560
+diethyl phosphorochlorodithioate	2524-04-1	188.613
+Texanol	25265-77-4	
+ trimethyl-1,3-pentanediol isobutyrate, 2,2,4- 	25265-77-4	
+dibutyl phenyl phosphate	2528-36-1	286.3038
+Dinitrotoluene mixture	25321-14-6	182.1335
+ dinitrotoluene, all isomers  	25321-14-6	182.1335
+polyethylene glycols (particulate)	25322-68-3	44.0526
+polyethylene glycols (vapor) 	25322-68-3	44.0526
+diethylbenzene	25340-17-4	134.2182
+DIAMINOTOLUENE	25376-45-8	
+dodecenylsuccinic anhydride	25377-73-5	
+sulfur hexafluoride	2551-62-4	146.055
+ dinitrophenol, 2,6- 	25550-58-7	
+trimethyl benzene	25551-13-7	120.1916
+naphthalene diisocyanate	25551-28-4	
+methyl cyclohexanol        	25639-42-3	114.1855
+acridine	260-94-6	179.2173
+ dibenzo[b,e]pyridine 	260-94-6	179.2173
+terphenyls	26140-60-3	230.3038
+cresyl glycidyl ether	26447-14-3	
+tolyl glycidyl ether	26447-14-3	
+tris(nonylphenol)phosphite	26523-78-4	
+tetrapropenylsuccinic anhydride	26544-38-7	
+Sodium azide	26628-22-8	65.0099
+ Chloroneb, particulate 	2675-77-6	207.054
+ octyl pyrrolidone, N-      	2687-94-7	
+cyclotetramethylenetetranitramine	2691-41-0	296.1551
+Octahydro-1357-tetranitro-1357- tetrazocine 	2691-41-0	296.1551
+isooctyl alcohol         	26952-21-6	130.2279
+ chlorobenzylidene malononitrile, o- 	2698-41-1	188.613
+sulfuryl fluoride	2699-79-8	102.061
+octyl phenol               	27193-28-8	206.3239
+dodecyl phenol	27193-86-8	
+ethylhexyl nitrate	27247-96-7	
+Norflurazon	27314-13-2	303.668
+Zorial	27314-13-2	303.668
+tris(hydroxyphenyl) ethane	27955-94-8	306.3551
+triethylene diamine	280-57-9	112.1729
+ethylene glycol monopropyl ether	2807-30-9	104.1476
+propoxyethanol	2807-30-9	104.1476
+adamantane	281-23-2	136.2340
+hexamethylene diisocyanate polymer	28182-81-2	168.1931
+polymeric hexamethylene diisocyanate	28182-81-2	168.1931
+Thiobencarb	28249-77-6	257.780
+chlorotetrafluoroethane	2837-89-0	136.476
+HCFC-124	2837-89-0	136.476
+dimethylaminoethyl methacrylate	2867-47-2	157.2102
+cyclopentane	287-92-3	70.1329
+octadecyl mercaptan        	2885-00-9	286.559
+stearyl mercaptan	2885-00-9	286.559
+trimethylol propane ethoxytriacrylate	28961-43-5	
+biphenylyl phenyl ether	28984-89-6	
+cycloheptane	291-64-5	98.1861
+cetyl mercaptan	2917-26-2	258.506
+hexadecyl mercaptan	2917-26-2	258.506
+ anisidine, o-, p- isomers     	29191-52-4	
+Chlorpyrifos	2921-88-2	350.586
+Dursban	2921-88-2	350.586
+cyclooctane	292-64-8	112.2126
+ phosphorodithioic acid ester, zinc salt  	2929-95-5	
+ Clopidol, respirable 	2971-90-6	
+Methyl parathion	298-00-0	263.207
+Phorate                   	298-02-2	260.377
+Disulfoton	298-04-4	274.404
+glyoxylic acid	298-12-4	74.0355
+isodecyl methacrylate	29964-84-9	
+cyclooctadiene	29965-97-7	108.1809
+Ronnel	299-84-3	321.545
+Cruformate	299-86-5	291.711
+dibrom	300-76-5	380.784
+ dimethyl-1,2-dibromo-2,2-dichloroethyl phosphate 	300-76-5	380.784
+Naled	300-76-5	380.784
+Hydrazine 	302-01-2	32.0452
+hydrazine sulfate	302-01-2	32.0452
+Chloral	302-17-0	165.403
+Lasiocarpine	303-34-4	
+ dimethylaminoethyl, ether, bis 2- 	3033-62-3	160.2572
+DMAEE	3033-62-3	160.2572
+ oxybis(N,N-dimethylethylamine) 	3033-62-3	160.2572
+Texacat ZF-20	3033-62-3	160.2572
+ vinyl-2-norbornene, 5- 	3048-64-4	120.1916
+Chloroambucil	305-03-3	304.212
+paraformaldehyde  	30525-89-4	
+Orthene	30560-19-1	183.166
+triaminotrinitrobenzene	3058-38-6	258.1484
+dichlorotrifluoroethane	306-83-2	152.931
+Freon 123	306-83-2	152.931
+Aldrin                     	309-00-2	364.910
+chlorinated diphenyl oxide	31242-93-0	
+Bromacil                  	314-40-9	261.116
+cyclohexyl isocyanate	3173-53-3	125.1683
+ naphthalene diisocyanate, 1,5- 	3173-72-6	210.1882
+ triazole-3-thiol, 1H-1,2,4- 	3179-31-5	
+dimethyl propanolamine	3179-63-3	103.1628
+HCH (alpha)	319-84-6	290.830
+HCH (beta)	319-85-7	290.830
+dibromoacetonitrile	3252-43-5	198.844
+CHLORINATED DIBENZO-p-DIOXINS	3268-87-9	459.751
+pivaloyl chloride          	3282-30-2	120.577
+Epinephrine	329-65-7	
+Diuron	330-54-1	233.095
+Linuron                   	330-55-2	249.094
+Amitraz      	33089-61-1	293.4060
+Ovasyn       	33089-61-1	293.4060
+tetramethyl succinonitrile	3333-52-6	136.1943
+Diazinon	333-41-5	304.346
+capric acid 	334-48-5	172.2646
+decanoic acid 	334-48-5	172.2646
+Azinethylene	334-88-3	42.0400
+diazirine	334-88-3	42.0400
+diazomethane	334-88-3	42.0400
+ vinyl 2,2-dimethyl propanoate 	3377-92-2	
+vinyl pivalate	3377-92-2	
+Isopropalin	33820-53-0	309.3608
+ Abate, respirable 	3383-96-8	466.469
+Temephos	3383-96-8	466.469
+ amyl hydroperoxide, t- 	3425-61-4	104.1476
+Acetochlor	34256-82-1	269.767
+dipropylene glycol monomethyl ether	34590-94-8	148.2001
+pentaerthyritol triacrylate       	3524-68-3	298.2885
 Diethyl Sulfide	352-93-2	90.18
 ethyl sulfide	352-93-2	90.18
- carbonyl fluoride  	353-50-4	
-Sulprofos	35400-43-2	
-Freon 125	354-33-6	
-pentafluoroethane	354-33-6	
-Brucine	357-57-3	
-Iprodione                 	36734-19-7	
-Sulfotep	3689-24-5	
-TEDP	3689-24-5	
- octadiene, 1,7- 	3710-30-3
-diethyl hydroxylamine	3710-84-7
-hydrogenated terphenyls    	37275-59-5
-sodium pyrithione	3811-73-2
-perfluoroisobutylene     	382-21-8
-ammonium perfluorooctanoate   	3825-26-1
-methyl-3-methoxy proprionate	3852-09-3
-Glyphosate	38641-30-6
-Roundup herbicide	38641-94-0
-Thiofanox	39196-18-4
-Epoxide 8	39390-62-0
- zinc beryllium silicate, particulate  	39413-47-3
-Danitol	39515-41-8
-Fenpropathrin	39515-41-8
-Bis(2-chloroisopropyl)ether	39638-32-9
-isopropyl glycidyl ether	4016-14-2
-Pendimethalin             	40487-42-1
-HFC-365mfc	406-58-6
-pentafluorobutane	406-58-6
-pentaethylene hexamine    	4067-16-7
-fluroxene	406-90-6
-silicon carbide	409-21-2
-isophorone diisocyanate  	4098-71-9
-dichlorosilane	4109-96-0
-propylene glycol phenyl ether	4169-04-4
-crotonaldehyde	4170-30-3
-cyanamide	420-04-2
-Freon 143a	420-46-2
- trifluoroethane, 1,1,1- 	420-46-2
-ethylene glycol butyl vinyl ether	4223-11-4
-hexadiene 	42296-74-2
- Bifenox, particulate 	42576-02-3
+ carbonyl fluoride  	353-50-4	66.0069
+Sulprofos	35400-43-2	322.447
+Freon 125	354-33-6	120.0214
+pentafluoroethane	354-33-6	120.0214
+Brucine	357-57-3	394.4635
+Iprodione                 	36734-19-7	330.167
+Sulfotep	3689-24-5	322.319
+TEDP	3689-24-5	322.319
+ octadiene, 1,7- 	3710-30-3	110.1968
+diethyl hydroxylamine	3710-84-7	89.1362
+hydrogenated terphenyls    	37275-59-5	
+sodium pyrithione	3811-73-2	
+perfluoroisobutylene     	382-21-8	200.0300
+ammonium perfluorooctanoate   	3825-26-1	431.0989
+methyl-3-methoxy proprionate	3852-09-3	118.1311
+Glyphosate	38641-30-6	
+Roundup herbicide	38641-94-0	
+Thiofanox	39196-18-4	218.316
+Epoxide 8	39390-62-0	
+ zinc beryllium silicate, particulate  	39413-47-3	
+Danitol	39515-41-8	349.4229
+Fenpropathrin	39515-41-8	349.4229
+Bis(2-chloroisopropyl)ether	39638-32-9	171.065
+isopropyl glycidyl ether	4016-14-2	116.1583
+Pendimethalin             	40487-42-1	281.3077
+HFC-365mfc	406-58-6	148.0745
+pentafluorobutane	406-58-6	148.0745
+pentaethylene hexamine    	4067-16-7	
+fluroxene	406-90-6	
+silicon carbide	409-21-2	40.0962
+isophorone diisocyanate  	4098-71-9	
+dichlorosilane	4109-96-0	101.007
+propylene glycol phenyl ether	4169-04-4	152.1904
+crotonaldehyde	4170-30-3	70.0898
+cyanamide	420-04-2	42.0400
+Freon 143a	420-46-2	84.0404
+ trifluoroethane, 1,1,1- 	420-46-2	84.0404
+ethylene glycol butyl vinyl ether	4223-11-4	144.2114
+hexadiene 	42296-74-2	
+ Bifenox, particulate 	42576-02-3	310.132
 acrylic polymer	42767-92-0	
-Oxyfluorfen	42874-03-3	
-Difenzoquat (Avenge)	43222-48-6	
-ethylene glycol butyl ethyl ether	4413-13-2	
-ethylene glycol monoisobutyl ether	4439-24-1	
+Oxyfluorfen	42874-03-3	361.700
+Difenzoquat (Avenge)	43222-48-6	360.427
+ethylene glycol butyl ethyl ether	4413-13-2	146.2273
+ethylene glycol monoisobutyl ether	4439-24-1	118.1742
  amyl peroxybenzoate, t- 	4511-39-1	
 nitrosomethylvinylamine	4549-40-0	
-methyl glutaronitrile	4553-62-2	
-  Cyanogen	460-19-5	
-HFC-245fa	460-73-1	
-pentafluoropropane	460-73-1	
-fluorobenzene	462-06-6	
- aminopyridine, 3-           	462-08-8	
-ketene                    	463-51-4	
+methyl glutaronitrile	4553-62-2	108.1411
+  Cyanogen	460-19-5	52.0348
+HFC-245fa	460-73-1	134.0479
+pentafluoropropane	460-73-1	134.0479
+fluorobenzene	462-06-6	96.1023
+ aminopyridine, 3-           	462-08-8	94.1145
+ketene                    	463-51-4	42.0367
 Carbonyl Sulfide	463-58-1	60.07
- pentene nitrile, 3-         	4635-87-4	
-dimethanonaphthalene	465-73-6
-Isodrin	465-73-6
-Paraquat	4685-14-7
-Tetryl	479-45-8
-trinitrophenyl methylnitramine	479-45-8
-Trinitrophenylmethylnitramine	479-45-8
-bis(2-chloroethyl)-2-naphthylamine	494-03-1
-soda ash	497-19-8
-Formaldehyde	50-00-0
-lactic acid                	50-21-5
-caprolactone	502-44-3
-DDT	50-29-3
-Benzo(a)pyrene 	50-32-8
-benzo[a]pyrene        	50-32-8
-isopentanoic acid 	503-74-2
-isovaleric acid            	503-74-2
-4-Aminopyridine	504-24-5
- aminopyridine, 4-          	504-24-5
- aminopyridine, 2-           	504-29-0
- pentadiene, 1,3- 	504-60-9
-piperylene	504-60-9
-Vinclozolin	50471-44-8
- 1,4-Dithiane 	505-29-3
-Reserpine	50-55-5
- trimethoxybenzoate, 3,4,5- 	50-55-5
- Acifluorfen, particulate 	50594-66-6
- Tackle, particulate 	50594-66-6
-  Potassium silver cyanide	506-61-6
-  Silver cyanide	506-64-9
-  Cyanogen bromide	506-68-3
-  Cyanogen chloride	506-77-4
- butyl chloride, tert- 	507-20-0
-acetylsalicylic acid    	50-78-2	
-tetranitromethane	509-14-8	
- 4,4?-dichlorobenzilic acid ethyl ester 	510-15-6	
-Chlorobenzilate	510-15-6	
-CHLORINATED DIBENZO FURANS 	51207-31-9	
-Metolachlor	51218-45-2	
-Hexazinone	51235-04-2	
-Velpar	51235-04-2	
- dicyclohexylmethane-4,4'- diisocyanate 	5124-30-1	
-methylene bis(4-cyclohexylisocyanate) 	5124-30-1	
-Trimethyl phosphate	512-56-1	
- 2,4-Dinitrophenol 	51-28-5	
+ pentene nitrile, 3-         	4635-87-4	81.1158
+dimethanonaphthalene	465-73-6	364.910
+Isodrin	465-73-6	364.910
+Paraquat	4685-14-7	
+Tetryl	479-45-8	287.1433
+trinitrophenyl methylnitramine	479-45-8	287.1433
+Trinitrophenylmethylnitramine	479-45-8	287.1433
+bis(2-chloroethyl)-2-naphthylamine	494-03-1	268.182
+soda ash	497-19-8	105.9884
+Formaldehyde	50-00-0	30.0260
+lactic acid                	50-21-5	90.0779
+caprolactone	502-44-3	114.1424
+DDT	50-29-3	354.486
+Benzo(a)pyrene 	50-32-8	252.3093
+benzo[a]pyrene        	50-32-8	252.3093
+isopentanoic acid 	503-74-2	102.1317
+isovaleric acid            	503-74-2	102.1317
+4-Aminopyridine	504-24-5	94.1145
+ aminopyridine, 4-          	504-24-5	94.1145
+ aminopyridine, 2-           	504-29-0	94.1145
+ pentadiene, 1,3- 	504-60-9	68.1170
+piperylene	504-60-9	68.1170
+Vinclozolin	50471-44-8	286.111
+ 1,4-Dithiane 	505-29-3	120.236
+Reserpine	50-55-5	608.6787
+ trimethoxybenzoate, 3,4,5- 	50-55-5	608.6787
+ Acifluorfen, particulate 	50594-66-6	361.657
+ Tackle, particulate 	50594-66-6	361.657
+  Potassium silver cyanide	506-61-6	
+  Silver cyanide	506-64-9	133.8856
+  Cyanogen bromide	506-68-3	105.921
+  Cyanogen chloride	506-77-4	61.470
+ butyl chloride, tert- 	507-20-0	92.567
+acetylsalicylic acid    	50-78-2	180.1574
+tetranitromethane	509-14-8	196.0327
+ 4,4?-dichlorobenzilic acid ethyl ester 	510-15-6	325.187
+Chlorobenzilate	510-15-6	325.187
+CHLORINATED DIBENZO FURANS 	51207-31-9	305.972
+Metolachlor	51218-45-2	283.794
+Hexazinone	51235-04-2	252.3128
+Velpar	51235-04-2	252.3128
+ dicyclohexylmethane-4,4'- diisocyanate 	5124-30-1	262.3474
+methylene bis(4-cyclohexylisocyanate) 	5124-30-1	262.3474
+Trimethyl phosphate	512-56-1	140.0749
+ 2,4-Dinitrophenol 	51-28-5	184.1064
 Isobutyl Mercaptan	513-44-0	90.18
- butylene glycol, 2,3- 	513-85-9	
-ethyl trichloroacetate 	515-84-4	
-Fenvalerate	51630-58-1	
-Urethane	51-79-6
- p,a,a,a-Tetrachlorotoluene 	5216-25-1
-Baytan	5219-65-3
-triadimenol	5219-65-3
-tris(1-aziridinyl) phosphine sulfide	52-24-4
-Cypermethrin	52315-07-8
-Permethrin	52645-53-1
-hemimellitene	526-73-8
- Dylox, particulate 	52-68-6
- 1,2-Dinitrobenzene 	528-29-0
- dinitrobenzene, all isomers  	528-29-0
-Famphur	52-85-7
-chloroacetophenone	532-27-4
-phenacyl chloride	532-27-4
-undecyl mercaptan	5332-52-5
- methyl furan, 2-           	534-22-5
-dinitro-o-cresol	534-52-1
-  Aroclor 1242	53469-21-9
- chlodiphenyl, 42% chlorine 	53469-21-9
-dibasic ester	53-60-5
-  Dibenz[ah]anthracene	53-70-3
-N-fluoren-2-yl acetamide	53-96-3
-propyl chloride         	540-54-5
-acetylene dichloride   	540-59-0
- dichloroethylene, 1,2- 	540-59-0
- 1,2-Dimethylhydrazine 	540-73-8
-Isooctane	540-84-1
-methyl heptane	540-84-1
- trimethylpentane, 1,2,4- 	540-84-1
- butyl acetate, tert-  	540-88-5
-nicotine                    	54-11-5
-ethyl chlorocarbonate	541-41-3
+ butylene glycol, 2,3- 	513-85-9	90.1210
+ethyl trichloroacetate 	515-84-4	191.440
+Fenvalerate	51630-58-1	419.900
+Urethane	51-79-6	89.0932
+ p,a,a,a-Tetrachlorotoluene 	5216-25-1	229.919
+Baytan	5219-65-3	
+triadimenol	5219-65-3	
+tris(1-aziridinyl) phosphine sulfide	52-24-4	189.218
+Cypermethrin	52315-07-8	416.297
+Permethrin	52645-53-1	391.288
+hemimellitene	526-73-8	120.1916
+ Dylox, particulate 	52-68-6	257.437
+ 1,2-Dinitrobenzene 	528-29-0	168.1070
+ dinitrobenzene, all isomers  	528-29-0	168.1070
+Famphur	52-85-7	325.342
+chloroacetophenone	532-27-4	154.594
+phenacyl chloride	532-27-4	154.594
+undecyl mercaptan	5332-52-5	188.373
+ methyl furan, 2-           	534-22-5	82.1005
+dinitro-o-cresol	534-52-1	198.1329
+  Aroclor 1242	53469-21-9	
+ chlodiphenyl, 42% chlorine 	53469-21-9	
+dibasic ester	53-60-5	
+  Dibenz[ah]anthracene	53-70-3	278.3466
+N-fluoren-2-yl acetamide	53-96-3	223.2698
+propyl chloride         	540-54-5	78.541
+acetylene dichloride   	540-59-0	96.943
+ dichloroethylene, 1,2- 	540-59-0	96.943
+ 1,2-Dimethylhydrazine 	540-73-8	60.0983
+Isooctane	540-84-1	114.2285
+methyl heptane	540-84-1	114.2285
+ trimethylpentane, 1,2,4- 	540-84-1	114.2285
+ butyl acetate, tert-  	540-88-5	116.1583
+nicotine                    	54-11-5	162.2316
+ethyl chlorocarbonate	541-41-3	108.524
  1,3-Dichlorobenzene 	541-73-1	147
  1,3-Dichlorobenzene (m-) 	541-73-1	147
  dichlorobenzene, m- 	541-73-1	147
-ethyl amyl ketone	541-85-5	
- methyl-3-heptanone, 5- 	541-85-5	
+ethyl amyl ketone	541-85-5	128.2120
+ methyl-3-heptanone, 5- 	541-85-5	128.2120
   Barium cyanide	542-62-1	
- 1,3-Dichloropropene 	542-75-6	
- 1,3-DICHLOROPROPYLENE 	542-75-6	
- dichloropropene, 1,3- 	542-75-6	
- chloropropionitrile, 3- 	542-76-7	
-Bis(chloromethyl)ether	542-88-1	
-Bis-chloromethyl ether 	542-88-1	
-dichloromethyl ether     	542-88-1	
-cyclopentadiene	542-92-7	
+ 1,3-Dichloropropene 	542-75-6	110.970
+ 1,3-DICHLOROPROPYLENE 	542-75-6	110.970
+ dichloropropene, 1,3- 	542-75-6	110.970
+ chloropropionitrile, 3- 	542-76-7	89.524
+Bis(chloromethyl)ether	542-88-1	114.959
+Bis-chloromethyl ether 	542-88-1	114.959
+dichloromethyl ether     	542-88-1	114.959
+cyclopentadiene	542-92-7	66.1011
 Cadmium acetate 	543-90-8	
-  Copper cyanide	544-92-3	
- magnesite, respirable                   	546-93-0
-methyl isobutyrate	547-63-7
-N-Nitrosodiethylamine	55-18-5
-Carbosulfan	55285-14-8
-triclopyr	55335-06-3
-Fenthion	55-38-9
-methyl propionate         	554-12-1
- nitrophenol, m- 	554-84-7
-nitroglycerin               	55-63-0
- epoxy-1-propanol, 2,3- 	556-52-5
-glycidol	556-52-5
-methyl isothiocyanate	556-61-6
-methyl mustard oil	556-61-6
- zinc stearate, respirable 	557-05-1
-  Zinc cyanide	557-21-1
-carbon tetrabromide	558-13-4
+  Copper cyanide	544-92-3	89.563
+ magnesite, respirable                   	546-93-0	84.3139
+methyl isobutyrate	547-63-7	102.1317
+N-Nitrosodiethylamine	55-18-5	102.1350
+Carbosulfan	55285-14-8	380.545
+triclopyr	55335-06-3	256.471
+Fenthion	55-38-9	278.328
+methyl propionate         	554-12-1	88.1051
+ nitrophenol, m- 	554-84-7	139.1088
+nitroglycerin               	55-63-0	227.0865
+ epoxy-1-propanol, 2,3- 	556-52-5	74.0785
+glycidol	556-52-5	74.0785
+methyl isothiocyanate	556-61-6	73.117
+methyl mustard oil	556-61-6	73.117
+ zinc stearate, respirable 	557-05-1	632.32
+  Zinc cyanide	557-21-1	
+carbon tetrabromide	558-13-4	331.627
 Epoxide 7	55838-67-0	
-Chlorpyrifos-methyl	5598-13-0	
- diaminodipropylamine, 3,3- 	56-18-8	
-dipropylene triamine	56-18-8	
- iminobispropylamine, 3,3'- 	56-18-8	
+Chlorpyrifos-methyl	5598-13-0	324.549
+ diaminodipropylamine, 3,3- 	56-18-8	131.2193
+dipropylene triamine	56-18-8	131.2193
+ iminobispropylamine, 3,3'- 	56-18-8	131.2193
 Carbon Tetrachloride	56-23-5	153.24
 tetrachloromethane	56-23-5	153.24
-trimetacresyl phosphate	563-04-2	
-Ethion	563-12-2	
-Ethion	563-12-2	
- isoamylene, a- or ß-  	563-45-1	
-tributyltin oxide	56-35-9	
-TBTO	56-35-9	
-Thallium acetate	563-68-8	
-methyl isopropyl ketone  	563-80-4	
-AATP	56-38-2	
-ethyl parathion	56-38-2
-Parathion	56-38-2
-Diethylstilbestrol	56-53-1
-  Benz[a]anthracene	56-55-3
-chloroamphenicol	56-75-7
- glycerin mist, respirable 	56-81-5
-propylene glycol mono-t-butyl ether   	57018-52-7
-  Free cyanide	57-12-5
-urea	57-13-6
-sulfur pentafluoride 	5714-22-7
- 1,1-Dimethylhydrazine 	57-14-7
-Dimazine	57-14-7
- dimethyl hydrazine, 1,1- 	57-14-7
-Garlon 3A	57213-61-9
-Strychnine	57-24-9
- sucrose, respirable 	57-50-1
-Propylene glycol	57-55-6
-2-oxetanone	57-57-8
- propiolactone, ß-        	57-57-8
- 2,6-Dimethylphenol 	576-26-1
-Hexachlorodibenzo-p-dioxin 	57653-85-7
-Chlordane	57-74-9
-Metalaxyl                 	57837-19-1
- methyl cyclohexanone, o-       	583-60-8
- butylene glycol, 1,2- 	584-03-2
-potassium carbonate        	584-08-7
- Toluene diisocyanate, 2,4-  	584-84-9
- toluene-2,4-diisocyanate 	584-84-9
-diphenylethylene	588-59-0
-stilbene	588-59-0
-Benzene hexachloride 	58-89-9
-HCH (gamma) Lindane	58-89-9
- hexachlorocyclohexane, gamma- 	58-89-9	
-Lindane                     	58-89-9	
- 2,3,4,6-Tetrachlorophenol 	58-90-2	
- tetrachlorophenol, 2,3,4,6-  	58-90-2	
-methylbenzyl alcohol     	589-18-4	
- butyl propionate, n- 	590-01-2	
-isovaleraldehyde                  	590-86-3	
-methyl butyraldehyde	590-86-3	
+trimetacresyl phosphate	563-04-2	368.3628
+Ethion	563-12-2	384.476
+Ethion	563-12-2	384.476
+ isoamylene, a- or ß-  	563-45-1	70.1329
+tributyltin oxide	56-35-9	596.105
+TBTO	56-35-9	596.105
+Thallium acetate	563-68-8	263.4273
+methyl isopropyl ketone  	563-80-4	86.1323
+AATP	56-38-2	291.261
+ethyl parathion	56-38-2	291.261
+Parathion	56-38-2	291.261
+Diethylstilbestrol	56-53-1	268.3502
+  Benz[a]anthracene	56-55-3	228.2879
+chloroamphenicol	56-75-7	323.129
+ glycerin mist, respirable 	56-81-5	92.0938
+propylene glycol mono-t-butyl ether   	57018-52-7	132.2007
+  Free cyanide	57-12-5	26.0179
+urea	57-13-6	60.0553
+sulfur pentafluoride 	5714-22-7	254.114
+ 1,1-Dimethylhydrazine 	57-14-7	60.0983
+Dimazine	57-14-7	60.0983
+ dimethyl hydrazine, 1,1- 	57-14-7	60.0983
+Garlon 3A	57213-61-9	
+Strychnine	57-24-9	334.4116
+ sucrose, respirable 	57-50-1	342.2965
+Propylene glycol	57-55-6	76.0944
+2-oxetanone	57-57-8	72.0627
+ propiolactone, ß-        	57-57-8	72.0627
+ 2,6-Dimethylphenol 	576-26-1	122.1644
+Hexachlorodibenzo-p-dioxin 	57653-85-7	390.861
+Chlordane	57-74-9	409.779
+Metalaxyl                 	57837-19-1	279.3315
+ methyl cyclohexanone, o-       	583-60-8	112.1696
+ butylene glycol, 1,2- 	584-03-2	90.1210
+potassium carbonate        	584-08-7	138.2055
+ Toluene diisocyanate, 2,4-  	584-84-9	174.1561
+ toluene-2,4-diisocyanate 	584-84-9	174.1561
+diphenylethylene	588-59-0	180.2451
+stilbene	588-59-0	180.2451
+Benzene hexachloride 	58-89-9	290.830
+HCH (gamma) Lindane	58-89-9	290.830
+ hexachlorocyclohexane, gamma- 	58-89-9	290.830
+Lindane                     	58-89-9	290.830
+ 2,3,4,6-Tetrachlorophenol 	58-90-2	231.891
+ tetrachlorophenol, 2,3,4,6-  	58-90-2	231.891
+methylbenzyl alcohol     	589-18-4	122.1644
+ butyl propionate, n- 	590-01-2	130.1849
+isovaleraldehyde                  	590-86-3	86.1323
+methyl butyraldehyde	590-86-3	86.1323
 ethyl thioacetate	59094-77-8	
 2-Hexanone  	591-78-6	100.16
 Methyl Butyl Ketone	591-78-6	100.16
@@ -1234,201 +1234,201 @@ methyl n-butyl ketone      	591-78-6	100.16
   Calcium cyanide	592-01-8	
 calcium cyanide (as CN)	592-01-8	
 hexene 	592-41-5	
-butyl formate	592-84-7	
-fluoromethane	593-53-3
-Freon 41	593-53-3
-MAPP     	59355-75-8
-methyl acetylene-propadiene mixture	59355-75-8
-Bromoethane	593-60-2
-Vinyl bromide	593-60-2
-chloroacetylene 	593-63-5
-ethylene amine	593-67-9
-perchloromethyl mercaptan 	594-42-3
- dichloro-1-nitroethane,1,1- 	594-72-9
-chlorocresol 	59-50-7
- dimethyl ethyl amine, N,N- 	598-56-1
-Nitrofurazone	59-87-0
- 1,1,2-Trichloropropane 	598-77-6
- chloropropionic acid, 2- 	598-78-7
-4-nitrosomorpholine	59-89-2
- nitrosomorpholine, N- 	59-89-2	
+butyl formate	592-84-7	102.1317
+fluoromethane	593-53-3	34.0329
+Freon 41	593-53-3	34.0329
+MAPP     	59355-75-8	
+methyl acetylene-propadiene mixture	59355-75-8	
+Bromoethane	593-60-2	106.949
+Vinyl bromide	593-60-2	106.949
+chloroacetylene 	593-63-5	60.482
+ethylene amine	593-67-9	43.0678
+perchloromethyl mercaptan 	594-42-3	185.888
+ dichloro-1-nitroethane,1,1- 	594-72-9	143.957
+chlorocresol 	59-50-7	142.583
+ dimethyl ethyl amine, N,N- 	598-56-1	73.1368
+Nitrofurazone	59-87-0	198.1362
+ 1,1,2-Trichloropropane 	598-77-6	147.431
+ chloropropionic acid, 2- 	598-78-7	108.524
+4-nitrosomorpholine	59-89-2	116.1185
+ nitrosomorpholine, N- 	59-89-2	116.1185
 d-Limonene	5989-27-5	136.24
- cumyl phenol, p- 	599-64-4	
+ cumyl phenol, p- 	599-64-4	212.2869
 chloronitropropane	600-25-9	
-4-dimethylaminoazobenzene	60-11-7	
-benzyl carbinol            	60-12-8	
-phenyl ethyl alcohol      	60-12-8	
+4-dimethylaminoazobenzene	60-11-7	225.2890
+benzyl carbinol            	60-12-8	122.1644
+phenyl ethyl alcohol      	60-12-8	122.1644
 Propiconazole	60207-90-1	
 Propiconazole	60207-90-1	
-diethyl ether 	60-29-7	
-Ethyl ether	60-29-7	
-triphenylamine	603-34-9	
-triphenyl phosphine	603-35-0	
-Methyl hydrazine	60-34-4	
-acetamide                 	60-35-5	
+diethyl ether 	60-29-7	74.1216
+Ethyl ether	60-29-7	74.1216
+triphenylamine	603-34-9	245.3184
+triphenyl phosphine	603-35-0	262.2855
+Methyl hydrazine	60-34-4	46.0717
+acetamide                 	60-35-5	59.0672
 Versamine	60-40-2	
-Dieldrin	60-57-1	
- 2,6-Dinitrotoluene 	606-20-2	
-silica-amorphos: silica fused	60676-86-0	
-HCH-technical	608-73-1	
-Pentachlorobenzene	608-93-5	
- ethyltoluene, o- 	611-14-3	
- butyl peroxybenzoate, t- 	614-45-9	
- 1,2,4-Tribromobenzene 	615-54-3	
-citraconic anhydride	616-02-4	
-methylmaleic anhydride	616-02-4	
- 2,3-Dichloropropanol 	616-23-9	
+Dieldrin	60-57-1	380.909
+ 2,6-Dinitrotoluene 	606-20-2	182.1335
+silica-amorphos: silica fused	60676-86-0	60.0843
+HCH-technical	608-73-1	290.830
+Pentachlorobenzene	608-93-5	250.337
+ ethyltoluene, o- 	611-14-3	120.1916
+ butyl peroxybenzoate, t- 	614-45-9	194.2271
+ 1,2,4-Tribromobenzene 	615-54-3	314.800
+citraconic anhydride	616-02-4	112.0835
+methylmaleic anhydride	616-02-4	112.0835
+ 2,3-Dichloropropanol 	616-23-9	128.985
 3-Methylthiophene	616-44-4	98.16
- butyrolactam, gamma- 	616-45-5	
- pyrrolidone, 2- 	616-45-5	
- methylimidazole, 1- 	616-47-7	
+ butyrolactam, gamma- 	616-45-5	85.1045
+ pyrrolidone, 2- 	616-45-5	85.1045
+ methylimidazole, 1- 	616-47-7	82.1038
 octyl epoxy tallate	61789-01-3	
 diatomaceous earth	61790-53-2	
 silica-amorphous: diatomaceous earth	61790-53-2	
 1-(2-hydroxyethyl)-2-(tall oil-alkyl)-2-imidazoline	61791-39-7	
 Unamine T 	61791-39-7	
 tallow diamine	61791-55-7	
- amino-1,2,4-triazole, 3- 	61-82-5	
-Amitrole	61-82-5	
- ethyltoluene, m- 	620-14-4	
-N-Nitroso di-n-propylamine	621-64-7	
-ethylene glycol monobenzyl ether	622-08-2	
+ amino-1,2,4-triazole, 3- 	61-82-5	84.0800
+Amitrole	61-82-5	84.0800
+ ethyltoluene, m- 	620-14-4	120.1916
+N-Nitroso di-n-propylamine	621-64-7	130.1882
+ethylene glycol monobenzyl ether	622-08-2	152.1904
 4-Ethyltoluene (p-)	622-96-8	120.19
  ethyltoluene, p- 	622-96-8	120.19
-methyl butyrate            	623-42-7	
-Phenylmercuric acetate	62-38-4	
+methyl butyrate            	623-42-7	102.1317
+Phenylmercuric acetate	62-38-4	336.74
  Blazer, particulate 	62476-59-9	
  sodium acifluorfen, particulate 	62476-59-9	
-methyl isocyanate        	624-83-9	
+methyl isocyanate        	624-83-9	57.0513
 Ethyl Methyl Sulfide	624-89-5	76.16
 Dimethyl Disulfide	624-92-0	94.19
 Dimethyl Disulfide	624-92-0	94.19
-Aniline	62-53-3	
-nitroethanol             	625-48-9	
-thiourea	62-56-6	
- phthalodinitrile, m-            	626-17-5	
-propyl nitrate           	627-13-4	
- 2,2-dichlorovinyl dimethyl phosphate 	62-73-7	
-Dichlorvos	62-73-7	
+Aniline	62-53-3	93.1265
+nitroethanol             	625-48-9	91.0660
+thiourea	62-56-6	76.121
+ phthalodinitrile, m-            	626-17-5	128.1308
+propyl nitrate           	627-13-4	105.0926
+ 2,2-dichlorovinyl dimethyl phosphate 	62-73-7	220.976
+Dichlorvos	62-73-7	220.976
 Sodium fluoroacetate	62-74-8	
-dimethylnitrosoamine	62-75-9	
-DMN	62-75-9	
-N-Nitrosodimethylamine	62-75-9	
-dimethyl adipate	627-93-0	
- amyl acetate, sec-          	628-38-0
- amyl acetate, n-  	628-63-7
- amyl methyl ether, n-  	628-80-8
- methyl amyl ether, n-  	628-80-8
-ethyl-n-butyl ether	628-81-9
-ethylene glycol dinitrate	628-96-6
-hexamethylene glycol      	629-11-8
-ethylene glycol diethyl ether	629-14-1
-carbon monoxide	630-08-0
- 1,1,1,2-Tetrachloroethane 	630-20-6
-alkyd resins	63148-69-6
-ammonium acetate	631-63-8
-1-naphthalenol	63-25-2
-Carbaryl	63-25-2
-methylcarbonate	63-25-2
-Sevin	63-25-2
-lactose	63-42-3	
-milk sugar	63-42-3	
-tetrachlorobenzenes 	634-66-2	
- 2,4,6-Trichloroaniline 	634-93-5	
-ethyl-t-butyl ether	637-92-3	
+dimethylnitrosoamine	62-75-9	74.0818
+DMN	62-75-9	74.0818
+N-Nitrosodimethylamine	62-75-9	74.0818
+dimethyl adipate	627-93-0	174.1944
+ amyl acetate, sec-          	628-38-0	
+ amyl acetate, n-  	628-63-7	130.1849
+ amyl methyl ether, n-  	628-80-8	102.1748
+ methyl amyl ether, n-  	628-80-8	102.1748
+ethyl-n-butyl ether	628-81-9	102.1748
+ethylene glycol dinitrate	628-96-6	152.0630
+hexamethylene glycol      	629-11-8	118.1742
+ethylene glycol diethyl ether	629-14-1	118.1742
+carbon monoxide	630-08-0	28.0101
+ 1,1,1,2-Tetrachloroethane 	630-20-6	167.849
+alkyd resins	63148-69-6	
+ammonium acetate	631-63-8	
+1-naphthalenol	63-25-2	201.2212
+Carbaryl	63-25-2	201.2212
+methylcarbonate	63-25-2	201.2212
+Sevin	63-25-2	201.2212
+lactose	63-42-3	342.2965
+milk sugar	63-42-3	342.2965
+tetrachlorobenzenes 	634-66-2	215.892
+ 2,4,6-Trichloroaniline 	634-93-5	196.462
+ethyl-t-butyl ether	637-92-3	102.1748
  2,5-Dimethylthiophene 	638-02-8	112.19
-phenylphosphine           	638-21-1	
+phenylphosphine           	638-21-1	110.0935
  Diquat dibromide monohydrate, respirable 	6385-62-2	
 tri(isobutenyl)succinic anhydride	63979-83-9	
 Ethanol	64-17-5	46.07
 ethyl alcohol	64-17-5	46.07
-Formic Acid	64-18-6	
-Acetic acid 	64-19-7	
-PROPYLENE GLYCOL DINITRATE	6423-43-4	
+Formic Acid	64-18-6	46.0254
+Acetic acid 	64-19-7	60.0520
+PROPYLENE GLYCOL DINITRATE	6423-43-4	166.0895
 propylene glycol dinitrate      	6433-43-4	
-ethyl-3-propyl acrolein	645-62-5	
- dioxolane, 1,3- 	646-06-0
-diethyl sulfate 	64-67-5
-Ethyl sulfate	64-67-5
-Aromatic Solvent 104	64741-68-0
- petroleum coke, uncalcined (green) if PAH content is < 10,000 ppm         	64741-79-3
-parrafinic distillate	64741-89-5
- Aromatic Naphtha, Heavy 	64742-06-9
-lactol spirits           	64742-89-8
-Aromatic 100	64742-95-6
-Sol 100	64742-95-6
-hexafluoroacetone         	648-16-2
-ammonium nitrate           	6484-52-2
-Thallium carbonate	6533-73-9
-Benzoic acid	65-85-0
-coal tar distillate	65996-92-1
- coal tar pitch volatiles, PAH<10% b(a)p 	65996-93-2
+ethyl-3-propyl acrolein	645-62-5	126.1962
+ dioxolane, 1,3- 	646-06-0	74.0785
+diethyl sulfate 	64-67-5	154.185
+Ethyl sulfate	64-67-5	154.185
+Aromatic Solvent 104	64741-68-0	
+ petroleum coke, uncalcined (green) if PAH content is < 10,000 ppm         	64741-79-3	
+parrafinic distillate	64741-89-5	
+ Aromatic Naphtha, Heavy 	64742-06-9	
+lactol spirits           	64742-89-8	
+Aromatic 100	64742-95-6	
+Sol 100	64742-95-6	
+hexafluoroacetone         	648-16-2	
+ammonium nitrate           	6484-52-2	80.0434
+Thallium carbonate	6533-73-9	
+Benzoic acid	65-85-0	122.1213
+coal tar distillate	65996-92-1	
+ coal tar pitch volatiles, PAH<10% b(a)p 	65996-93-2	
  Portland cement, respirable           	65997-15-1	
-Cyromazine	66215-27-8	
-uracil mustard	66-75-1	
+Cyromazine	66215-27-8	166.1838
+uracil mustard	66-75-1	252.098
 cypermethrin	66841-24-5	
-Nitrofurantoin	67-20-9	
-Furazolidone	67-45-8	
-Amdro	67485-29-4	
-Amdro	67485-29-4	
-Combat	67485-29-4	
-hydramethylnon	67485-29-4	
-Methanol	67-56-1	
+Nitrofurantoin	67-20-9	238.1570
+Furazolidone	67-45-8	225.1583
+Amdro	67485-29-4	494.4753
+Amdro	67485-29-4	494.4753
+Combat	67485-29-4	494.4753
+hydramethylnon	67485-29-4	494.4753
+Methanol	67-56-1	32.0419
 Isopropyl Alcohol	67-63-0	60.09
 Acetone	67-64-1	58.08
 Chloroform	67-66-3	119.49
 trichloromethane	67-66-3	119.49
-dimethyl sulfoxide	67-68-5	
-dichloromethyl phosphine oxide 	676-97-1
-methyl phosphonic dichloride          	676-97-1
-Hexachloroethane	67-72-1
-alkenyl succinic anhydride	67762-77-0
- Aromatic Distillate, Heavy 	67891-79-6
-hempa	680-31-9
-HMPA	680-31-9
-MEMPA	680-31-9
-Cyhalothrin/Karate	68085-85-8
- benzocyclobutyl pentanone, 1- 	6809-93-4
-thioglycolic acid 	68-11-1
-dimethylformamide	68-12-2
-DMF	68-12-2
-DMFA	68-12-2
-methyl silicate            	681-84-5
-aliphatic diisocyanate    	68239-06-5
-dimeryl diisocyanate	68239-06-5
-sodium metasilicate	6834-92-0
-Baythroid	68359-37-5
- Baythroid, particulate                 	68359-37-5
-Cyfluthrin	68359-37-5
-cyclohexyl-2-pyrrolidone	6837-24-7
- pyridines, alkyl           	68391-11-7
-benzene raffinate	68410-71-9
-sulfolane raffinate	68410-71-9
-diphenyldimethoxysilane	6843-66-9
-black grit	68475-96-0
-boiler slag	68475-96-0
-N-methyl-N-nitrosourea	684-93-5
-liquified petroleum gas	68746-85-7
-Primen	68955-53-3
-terpenes	68956-56-9
- vegetable oil mists, respirable 	68956-68-3
- silica-amorphos: silica fume, respirable 	69012-64-2
-Monocrotophos	6923-22-4
- methylimidazole, 2- 	693-98-1
-cyclohexanediamine	694-83-7
-nitrosoguanidine	70-25-7
-Hexachlorophene	70-30-4
- methoxy-1-propyl acetate, 2- 	70657-70-4
-propylene glycol-2-methyl ether acetate	70657-70-4
-ethylcyanoacrylate	7085-85-0
-dichloropropionanilide	709-98-8
-Propanil	709-98-8
-isocyanobenzotrifluoride 	71121-36-3
-propyl alcohol           	71-23-8
-1-Butanol	71-36-3
- butyl alcohol, n- 	71-36-3
-n-BUTYL ALCOHOL	71-36-3	
- amyl alcohol, n-  	71-41-0	
+dimethyl sulfoxide	67-68-5	78.133
+dichloromethyl phosphine oxide 	676-97-1	132.914
+methyl phosphonic dichloride          	676-97-1	132.914
+Hexachloroethane	67-72-1	236.739
+alkenyl succinic anhydride	67762-77-0	
+ Aromatic Distillate, Heavy 	67891-79-6	
+hempa	680-31-9	179.2004
+HMPA	680-31-9	179.2004
+MEMPA	680-31-9	179.2004
+Cyhalothrin/Karate	68085-85-8	
+ benzocyclobutyl pentanone, 1- 	6809-93-4	
+thioglycolic acid 	68-11-1	92.117
+dimethylformamide	68-12-2	73.0938
+DMF	68-12-2	73.0938
+DMFA	68-12-2	73.0938
+methyl silicate            	681-84-5	152.2212
+aliphatic diisocyanate    	68239-06-5	
+dimeryl diisocyanate	68239-06-5	
+sodium metasilicate	6834-92-0	122.0632
+Baythroid	68359-37-5	434.288
+ Baythroid, particulate                 	68359-37-5	434.288
+Cyfluthrin	68359-37-5	434.288
+cyclohexyl-2-pyrrolidone	6837-24-7	167.2481
+ pyridines, alkyl           	68391-11-7	
+benzene raffinate	68410-71-9	
+sulfolane raffinate	68410-71-9	
+diphenyldimethoxysilane	6843-66-9	244.3611
+black grit	68475-96-0	
+boiler slag	68475-96-0	
+N-methyl-N-nitrosourea	684-93-5	103.0800
+liquified petroleum gas	68746-85-7	
+Primen	68955-53-3	
+terpenes	68956-56-9	
+ vegetable oil mists, respirable 	68956-68-3	
+ silica-amorphos: silica fume, respirable 	69012-64-2	
+Monocrotophos	6923-22-4	223.1635
+ methylimidazole, 2- 	693-98-1	82.1038
+cyclohexanediamine	694-83-7	114.1888
+nitrosoguanidine	70-25-7	147.0928
+Hexachlorophene	70-30-4	406.904
+ methoxy-1-propyl acetate, 2- 	70657-70-4	
+propylene glycol-2-methyl ether acetate	70657-70-4	
+ethylcyanoacrylate	7085-85-0	
+dichloropropionanilide	709-98-8	218.080
+Propanil	709-98-8	218.080
+isocyanobenzotrifluoride 	71121-36-3	
+propyl alcohol           	71-23-8	60.0950
+1-Butanol	71-36-3	74.1216
+ butyl alcohol, n- 	71-36-3	74.1216
+n-BUTYL ALCOHOL	71-36-3	74.1216
+ amyl alcohol, n-  	71-41-0	88.1482
 Benzene	71-43-2	78.1
  1,1,1-Trichloroethane 	71-55-6	133.42
 TCA	71-55-6	133.42
@@ -1436,156 +1436,156 @@ Methyl chloroform 	71-55-6	133.42
  trichloroethane, 1,1,1- 	71-55-6	133.42
 Abamectin	71751-41-2	
 Affirm                    	71751-41-2	
-tetraethyl ammonium bromide	71-91-0	
+tetraethyl ammonium bromide	71-91-0	210.155
 Fomesafen	72178-02-0	
-Endrin	72-20-8	
-Dimethoxy-DDT	72-43-5	
-DMDT	72-43-5	
-Methoxy DDT	72-43-5	
-Methoxychlor	72-43-5	
- Methoxychlor, respirable               	72-43-5
-DDD	72-54-8
-DDE	72-55-9
- p,p?-dichlorodiphenyldichloroethylene 	72-55-9
-Prometryn	7287-19-6
-pivalic acid              	72-98-9
-Phosmet    	732-11-6
-butyl glycolate	7397-62-8
-p-Chlorobenzoic acid	74-11-3
- dichloro-2-butene, 1,3-         	7415-31-8
-sulfometuron methyl	74222-97-2
-Aluminum	7429-90-5
-aluminum: metal and oxide 	7429-90-5
-Iron	7439-89-6
-Lead	7439-92-1
-Lithium	7439-93-2
-Manganese and compounds	7439-96-5
-manganese dust & inorganic compounds 	7439-96-5
-manganese fume             	7439-96-5
-Mercury 	7439-97-6
- mercury, alkyls            	7439-97-6
- Mercury, vapor  	7439-97-6
-Molybdenum	7439-98-7
-molybdenum  soluble        	7439-98-7
-molybdenum insoluble                	7439-98-7
-neon                        	7440-01-9
-NICKEL (AND COMPOUNDS) 	7440-02-0
-NICKEL (REFINERY DUST) 	7440-02-0
-Nickel and compounds	7440-02-0
-Nickel metal 	7440-02-0
- nickel, metal & insoluble cpds 	7440-02-0
- nickel, soluble compounds 	7440-02-0
- platinum, metal                      	7440-06-4
- platinum, soluble salts   	7440-06-4
-potassium 	7440-09-7
- rhodium, metal & insoluble cpds  	7440-16-6
- rhodium, soluble cpds  	7440-16-6
-rubidium	7440-17-7
- silicon, respirable  	7440-21-3
-Silver and compounds	7440-22-4
-silver metal	7440-22-4
- silver, soluble compounds 	7440-22-4
- Strontium, stable 	7440-24-6
- tantalum, metal  	7440-25-7
-thallium & compounds	7440-28-0
- tin compounds: metal, oxide, and inorganic cpds 	7440-31-5
-tin compounds: organic compounds	7440-31-5
- tungsten, insoluble compounds 	7440-33-7
- tungsten, soluble compounds 	7440-33-7
-ANTIMONY (AND COMPOUNDS)	7440-36-0
-antimony (as Sb)                    	7440-36-0
-Antimony and compounds	7440-36-0
-argon	7440-37-1
-arsenic & inorganic cpds       	7440-38-2
-ARSENIC (AND COMPOUNDS) 	7440-38-2
-Arsenic (cancer endpoint)	7440-38-2
-Arsenic (noncancer endpoint)	7440-38-2
-barium & compounds (as Ba)   	7440-39-3
-BARIUM (AND COMPOUNDS) 	7440-39-3
-Barium and compounds	7440-39-3
-Beryllium 	7440-41-7
-BERYLLIUM (AND COMPOUNDS)	7440-41-7
-Beryllium and compounds	7440-41-7
- beryllium, particulate           	7440-41-7
-Boron	7440-42-8
-boron                     	7440-42-8
-Cadmium 	7440-43-9
-CADMIUM (AND COMPOUNDS) 	7440-43-9
-Cadmium and compounds	7440-43-9
-chromium metal	7440-47-3
-CHROMIUM VI (AND COMPOUNDS)	7440-47-3
-Total Chromium (1/6 ratio Cr VI/Cr III)	7440-47-3
-Cobalt	7440-48-4
-cobalt & inorganic cpds 	7440-48-4
-COPPER (AND COMPOUNDS) 	7440-50-8
-Copper and compounds	7440-50-8
-copper dusts & mists	7440-50-8
-copper fume	7440-50-8
-hafnium	7440-58-6	
-helium	7440-59-7	
- uranium, insoluble compounds 	7440-61-1	
- uranium, soluble compounds 	7440-61-1	
-Vanadium 	7440-62-2	
-yttrium	7440-65-5	
-Zinc 	7440-66-6	
-ZINC (AND COMPOUNDS)	7440-66-6	
-zirconium compounds (as Zr)	7440-67-7	
+Endrin	72-20-8	380.909
+Dimethoxy-DDT	72-43-5	345.648
+DMDT	72-43-5	345.648
+Methoxy DDT	72-43-5	345.648
+Methoxychlor	72-43-5	345.648
+ Methoxychlor, respirable               	72-43-5	345.648
+DDD	72-54-8	320.041
+DDE	72-55-9	318.025
+ p,p?-dichlorodiphenyldichloroethylene 	72-55-9	318.025
+Prometryn	7287-19-6	241.356
+pivalic acid              	72-98-9	
+Phosmet    	732-11-6	317.321
+butyl glycolate	7397-62-8	132.1577
+p-Chlorobenzoic acid	74-11-3	156.566
+ dichloro-2-butene, 1,3-         	7415-31-8	
+sulfometuron methyl	74222-97-2	
+Aluminum	7429-90-5	26.9815386
+aluminum: metal and oxide 	7429-90-5	26.9815386
+Iron	7439-89-6	55.845
+Lead	7439-92-1	207.2
+Lithium	7439-93-2	6.941
+Manganese and compounds	7439-96-5	54.938045
+manganese dust & inorganic compounds 	7439-96-5	54.938045
+manganese fume             	7439-96-5	54.938045
+Mercury 	7439-97-6	200.59
+ mercury, alkyls            	7439-97-6	200.59
+ Mercury, vapor  	7439-97-6	200.59
+Molybdenum	7439-98-7	95.96
+molybdenum  soluble        	7439-98-7	95.96
+molybdenum insoluble                	7439-98-7	95.96
+neon                        	7440-01-9	20.1797
+NICKEL (AND COMPOUNDS) 	7440-02-0	58.6934
+NICKEL (REFINERY DUST) 	7440-02-0	58.6934
+Nickel and compounds	7440-02-0	58.6934
+Nickel metal 	7440-02-0	58.6934
+ nickel, metal & insoluble cpds 	7440-02-0	58.6934
+ nickel, soluble compounds 	7440-02-0	58.6934
+ platinum, metal                      	7440-06-4	195.084
+ platinum, soluble salts   	7440-06-4	195.084
+potassium 	7440-09-7	39.0983
+ rhodium, metal & insoluble cpds  	7440-16-6	102.90550
+ rhodium, soluble cpds  	7440-16-6	102.90550
+rubidium	7440-17-7	85.4678
+ silicon, respirable  	7440-21-3	28.0855
+Silver and compounds	7440-22-4	107.8682
+silver metal	7440-22-4	107.8682
+ silver, soluble compounds 	7440-22-4	107.8682
+ Strontium, stable 	7440-24-6	87.62
+ tantalum, metal  	7440-25-7	180.94788
+thallium & compounds	7440-28-0	204.3833
+ tin compounds: metal, oxide, and inorganic cpds 	7440-31-5	118.710
+tin compounds: organic compounds	7440-31-5	118.710
+ tungsten, insoluble compounds 	7440-33-7	183.84
+ tungsten, soluble compounds 	7440-33-7	183.84
+ANTIMONY (AND COMPOUNDS)	7440-36-0	121.760
+antimony (as Sb)                    	7440-36-0	121.760
+Antimony and compounds	7440-36-0	121.760
+argon	7440-37-1	39.948
+arsenic & inorganic cpds       	7440-38-2	74.92160
+ARSENIC (AND COMPOUNDS) 	7440-38-2	74.92160
+Arsenic (cancer endpoint)	7440-38-2	74.92160
+Arsenic (noncancer endpoint)	7440-38-2	74.92160
+barium & compounds (as Ba)   	7440-39-3	137.327
+BARIUM (AND COMPOUNDS) 	7440-39-3	137.327
+Barium and compounds	7440-39-3	137.327
+Beryllium 	7440-41-7	9.012182
+BERYLLIUM (AND COMPOUNDS)	7440-41-7	9.012182
+Beryllium and compounds	7440-41-7	9.012182
+ beryllium, particulate           	7440-41-7	9.012182
+Boron	7440-42-8	10.811
+boron                     	7440-42-8	10.811
+Cadmium 	7440-43-9	112.411
+CADMIUM (AND COMPOUNDS) 	7440-43-9	112.411
+Cadmium and compounds	7440-43-9	112.411
+chromium metal	7440-47-3	51.9961
+CHROMIUM VI (AND COMPOUNDS)	7440-47-3	51.9961
+Total Chromium (1/6 ratio Cr VI/Cr III)	7440-47-3	51.9961
+Cobalt	7440-48-4	58.933195
+cobalt & inorganic cpds 	7440-48-4	58.933195
+COPPER (AND COMPOUNDS) 	7440-50-8	63.546
+Copper and compounds	7440-50-8	63.546
+copper dusts & mists	7440-50-8	63.546
+copper fume	7440-50-8	63.546
+hafnium	7440-58-6	178.49
+helium	7440-59-7	4.002602
+ uranium, insoluble compounds 	7440-61-1	238.02891
+ uranium, soluble compounds 	7440-61-1	238.02891
+Vanadium 	7440-62-2	50.9415
+yttrium	7440-65-5	88.90585
+Zinc 	7440-66-6	65.38
+ZINC (AND COMPOUNDS)	7440-66-6	65.38
+zirconium compounds (as Zr)	7440-67-7	91.224
 chlorodifluoromethane	74-45-6	
-SULFUR DIOXIDE	7446-09-5	
-sulfur trioxide	7446-11-9	
-Thallium sulfate	7446-18-6	
-methane                     	74-82-8	
+SULFUR DIOXIDE	7446-09-5	64.064
+sulfur trioxide	7446-11-9	80.063
+Thallium sulfate	7446-18-6	504.829
+methane                     	74-82-8	16.0425
 Bromomethane	74-83-9	94.94
 Methyl Bromide	74-83-9	94.94
 ethane	74-84-0	30.07
-ethylene	74-85-1	28.05	
-acetylene               	74-86-2	
+ethylene	74-85-1	28.05
+acetylene               	74-86-2	26.0373
 Chloromethane	74-87-3	50.49
 Methyl Chloride	74-87-3	50.49
-Mercury and compounds	7487-94-7	
-Iodomethane	74-88-4	
-methyl iodide              	74-88-4	
-methylamine               	74-89-5	
-Hydrogen cyanide 	74-90-8	
+Mercury and compounds	7487-94-7	271.50
+Iodomethane	74-88-4	141.9390
+methyl iodide              	74-88-4	141.9390
+methylamine               	74-89-5	31.0571
+Hydrogen cyanide 	74-90-8	27.0253
 methanethiol 	74-93-1	48.11
 Methyl Mercaptan	74-93-1	48.11
-Methylene bromide	74-95-3	
-bromoethane	74-96-4	
-ethyl bromide	74-96-4	
-bromochloromethane	74-97-5	
-chlorobromomethane	74-97-5	
-methylene chlorobromide	74-97-5	
-propane                 	74-98-6	44.1	
-methyl acetylene        	74-99-7	
-propyne	74-99-7	
+Methylene bromide	74-95-3	173.835
+bromoethane	74-96-4	108.965
+ethyl bromide	74-96-4	108.965
+bromochloromethane	74-97-5	129.384
+chlorobromomethane	74-97-5	129.384
+methylene chlorobromide	74-97-5	129.384
+propane                 	74-98-6	44.1
+methyl acetylene        	74-99-7	40.0639
+propyne	74-99-7	40.0639
 Chloroethane	75-00-3	64.51
 Ethyl chloride	75-00-3	64.51
 chloroethylene	75-01-4	62.5
 Vinyl Chloride	75-01-4	62.5
-vinyl fluoride 	75-02-5	
-ethylamine	75-04-7	
+vinyl fluoride 	75-02-5	46.0436
+ethylamine	75-04-7	45.0837
 Acetonitrile	75-05-8	41.05
 Methyl Cyanide	75-05-8	41.05
-Acetaldehyde	75-07-0	
+Acetaldehyde	75-07-0	44.0526
 Ethyl Mercaptan	75-08-1	62.13
 dichloromethane	75-09-2	84.93
 Methylene Chloride 	75-09-2	84.93
-difluoromethane	75-10-5	
-Freon 32	75-10-5	
-formamide	75-12-7	
+difluoromethane	75-10-5	52.0234
+Freon 32	75-10-5	52.0234
+formamide	75-12-7	45.0406
 Carbon Disulfide	75-15-0	76.14
 Dimethyl Sulfide	75-18-3	62.13
 methyl sulfide	75-18-3	62.13
-Ethylene oxide 	75-21-8	
+Ethylene oxide 	75-21-8	44.0526
 Sulfonic N-95	75-22-4	
 Bromoform	75-25-2	252.73
 Tribromomethane	75-25-2	252.73
 Bromodichloromethane	75-27-4	163.83
-isobutane                 	75-28-5	
-ethylene glycol diallyl ether	7529-27-3	
-2-Chloropropane	75-29-6	
-isopropyl chloride  	75-29-6	
-isopropylamine            	75-31-0	
+isobutane                 	75-28-5	58.1222
+ethylene glycol diallyl ether	7529-27-3	142.1956
+2-Chloropropane	75-29-6	78.541
+isopropyl chloride  	75-29-6	78.541
+isopropylamine            	75-31-0	59.1103
 Isopropylmercaptan	75-33-2	76.16
  1,1-dichloroethane 	75-34-3	98.96
  dichloroethane, 1,1-  	75-34-3	98.96
@@ -1594,84 +1594,84 @@ ethylidene chloride	75-34-3	98.96
  1,1-Dichloroethylene 	75-35-4	96.94
  dichloroethylene, 1,1- 	75-35-4	96.94
 Vinylidene chloride	75-35-4	96.94
-acetyl chloride             	75-36-5	
- 1,1-Difluoroethane 	75-37-6	
-difluoroethane	75-37-6	
-Freon 152A	75-37-6	
-vinylidene fluoride	75-38-7	
+acetyl chloride             	75-36-5	78.498
+ 1,1-Difluoroethane 	75-37-6	66.0500
+difluoroethane	75-37-6	66.0500
+Freon 152A	75-37-6	66.0500
+vinylidene fluoride	75-38-7	64.0341
 allyl succinic anhydride	7539-12-0	
-Dichlorofluoromethane 	75-43-4	
-Freon 21	75-43-4	
-carbonyl chloride 	75-44-5	
-Phosgene 	75-44-5
-Chlorodifluoromethane	75-45-6
-Freon 22	75-45-6
-carbon trifluoride	75-46-7
-Freon 23	75-46-7
-trifluoromethane	75-46-7
-iodoform                     	75-47-8
-trimethylamine 	75-50-3
-Titanic chloride	7550-45-0
-nitromethane              	75-52-5
-iodine                     	7553-56-2
-titanium tetrachloride	755-45-0
-methyl dichlorosilane	75-54-7
-2-methyl aziridine	75-55-8
-methylaziridine 	75-55-8	
-Propylene imine	75-55-8	
+Dichlorofluoromethane 	75-43-4	102.923
+Freon 21	75-43-4	102.923
+carbonyl chloride 	75-44-5	98.916
+Phosgene 	75-44-5	98.916
+Chlorodifluoromethane	75-45-6	86.468
+Freon 22	75-45-6	86.468
+carbon trifluoride	75-46-7	70.0138
+Freon 23	75-46-7	70.0138
+trifluoromethane	75-46-7	70.0138
+iodoform                     	75-47-8	393.7321
+trimethylamine 	75-50-3	59.1103
+Titanic chloride	7550-45-0	189.679
+nitromethane              	75-52-5	61.0400
+iodine                     	7553-56-2	253.80894
+titanium tetrachloride	755-45-0	
+methyl dichlorosilane	75-54-7	115.034
+2-methyl aziridine	75-55-8	57.0944
+methylaziridine 	75-55-8	57.0944
+Propylene imine	75-55-8	57.0944
 epoxypropane	75-56-9	58.08
 Propylene oxide	75-56-9	58.08
- disodium phosphate, particulate 	7558-79-4	
+ disodium phosphate, particulate 	7558-79-4	141.9588
 propylene imine 	75-58-8	
 tetramethylammonium hydroxide	75-59-2	
-Cacodylic acid 	75-60-5	
-dimethyl arsenic acid 	75-60-5	
-difluorodibromomethane	75-61-6	
-Freon 12B2	75-61-6	
-Freon 13B1	75-63-8	
-trifluorobromomethane	75-63-8	
- butylamine, tert- 	75-64-9	
- butyl alcohol, tert- 	75-65-0	
+Cacodylic acid 	75-60-5	137.9974
+dimethyl arsenic acid 	75-60-5	137.9974
+difluorodibromomethane	75-61-6	209.816
+Freon 12B2	75-61-6	209.816
+Freon 13B1	75-63-8	148.910
+trifluorobromomethane	75-63-8	148.910
+ butylamine, tert- 	75-64-9	73.1368
+ butyl alcohol, tert- 	75-65-0	74.1216
 tert-Butyl Mercaptan	75-66-1	90.18
- 1-Chloro-1,1-difluoroethane 	75-68-3	
- chlorodifluoroethane, 1,1,1- 	75-68-3	
-Freon 142b	75-68-3	
+ 1-Chloro-1,1-difluoroethane 	75-68-3	100.495
+ chlorodifluoroethane, 1,1,1- 	75-68-3	100.495
+Freon 142b	75-68-3	100.495
 fluorotrichloromethane 	75-69-4	137.37
 Freon 11	75-69-4	137.37
 Trichloroflouromethane	75-69-4	137.37
 Dichlorodifluoromethane	75-71-8	120.91
 Freon 12	75-71-8	120.91
-dichloroacetylene	7572-29-4	
-chlorotrifluoromethane	75-72-9	
-carbon tetrafluoride	75-73-0	
-Freon 14	75-73-0	
-tetrafluoromethane	75-73-0	
-tetramethyl lead	75-74-1	
-methanesulfonic acid	75-75-2	
-methyl trichlorosilane   	75-79-6	
+dichloroacetylene	7572-29-4	94.927
+chlorotrifluoromethane	75-72-9	104.459
+carbon tetrafluoride	75-73-0	88.0043
+Freon 14	75-73-0	88.0043
+tetrafluoromethane	75-73-0	88.0043
+tetramethyl lead	75-74-1	267.3
+methanesulfonic acid	75-75-2	96.106
+methyl trichlorosilane   	75-79-6	149.479
 lithium hydride          	7580-67-0	
-dimethyl butane	75-83-2	
-neohexane                	75-83-2	
-acetone cyanohydrin        	75-86-5	
- butyl hydroperoxide, t- 	75-91-2	
-trimethyl acetic acid	75-98-9	
-Dalapon	75-99-0	
-Dalapon	75-99-0
- dichloropropionic acid, 2,2- 	75-99-0
-trisodium phosphate	7601-54-9
-pentachloroethane         	76-01-7
-Perchlorate	7601-90-3
- dichloro-1-butene, 3,4- 	760-23-6
-trichloroacetyl chloride	76-02-8
-trichloroacetic acid	76-03-9
-chloropicrin	76-06-2
-nitrotrichloromethane	76-06-2
-trichloronitromethane	76-06-2
- 1,1,1,2-tetrachloro-2,2,-difluoroethane  	76-11-9
-Freon 112	76-11-9
- tetrachloro-2,2-difluoroethane,1,1,1,2- 	76-11-9
- 1,1,2,2-tetrachloro-1,2-difluoroethane  	76-12-0
- tetrachloro-1,2-difluoroethane,1,1,1,2- 	76-12-0
+dimethyl butane	75-83-2	86.1754
+neohexane                	75-83-2	86.1754
+acetone cyanohydrin        	75-86-5	85.1045
+ butyl hydroperoxide, t- 	75-91-2	90.1210
+trimethyl acetic acid	75-98-9	102.1317
+Dalapon	75-99-0	142.969
+Dalapon	75-99-0	142.969
+ dichloropropionic acid, 2,2- 	75-99-0	142.969
+trisodium phosphate	7601-54-9	163.9407
+pentachloroethane         	76-01-7	202.294
+Perchlorate	7601-90-3	100.459
+ dichloro-1-butene, 3,4- 	760-23-6	124.996
+trichloroacetyl chloride	76-02-8	181.833
+trichloroacetic acid	76-03-9	163.387
+chloropicrin	76-06-2	164.375
+nitrotrichloromethane	76-06-2	164.375
+trichloronitromethane	76-06-2	164.375
+ 1,1,1,2-tetrachloro-2,2,-difluoroethane  	76-11-9	203.830
+Freon 112	76-11-9	203.830
+ tetrachloro-2,2-difluoroethane,1,1,1,2- 	76-11-9	203.830
+ 1,1,2,2-tetrachloro-1,2-difluoroethane  	76-12-0	203.830
+ tetrachloro-1,2-difluoroethane,1,1,1,2- 	76-12-0	203.830
  1,1,2-Trichloro-1,2,2-trifluoroethane 	76-13-1	187.38
  1,1,2-trichloro-1,2,2-trifluoroethane  	76-13-1	187.38
 Freon 113	76-13-1	187.38
@@ -1683,492 +1683,490 @@ trichlorotrifluoroethane	76-13-1	187.38
 Dichlorotetraflouroethane	76-14-2	170.92
 dichlorotetrafluoroethane	76-14-2	170.92
 Freon 114	76-14-2	170.92
-chloropentafluoroethane	76-15-3	
-Freon 116	76-16-4	
-hexafluoroethane	76-16-4	
-perfluoroethane 	76-16-4	
- perchloryl fluoride    	7616-94-6	
- camphor, synthetic 	76-22-2
-sodium bisulfite	7631-90-5
-ethyl-3-ethoxypropionate	763-69-9
-Boron trifluoride	7637-07-2
-methoxyflurane	76-38-0
- 1,4-Dichloro-2-butene 	764-41-0
-3-chlorochlordene	76-44-8
-Heptachlor	76-44-8
-zinc chloride fume	7646-85-7
-HYDROCHLORIC ACID	7647-01-0
-Hydrogen chloride	7647-01-0
-diethylene glycol divinyl ether	764-99-8
-Glycidaldehyde	765-34-4
-Assure	76578-12-6
-Phosphoric acid	7664-38-2
-Hydrogen fluoride 	7664-39-3
-Ammonia	7664-41-7
-Sulfuric acid 	7664-93-9
-sodium hypochlorite	7681-52-9
-sodium metabisulfite	7681-57-4
-famotidine	76824-35-6
-isopropylaniline          	768-52-5
-Nitric acid 	7697-37-2
-zinc bromide	7699-45-8
-sulfur	7704-34-9
-thionyl chloride	7719-09-7
-phosphorus trichloride     	7719-12-2
-potassium permanganate     	7722-64-7
-hydrogen peroxide          	7722-84-1
-sodium pyrophosphate	7722-88-5
-tetrasodium pyrophosphate	7722-88-5
-Phosphorus (white)	7723-14-0
-phosphorus (yellow)         	7723-14-0
-Bromine 	7726-95-6
-bromine	7726-95-6
- potassium persulfate, particulate 	7727-21-1
- barite, respirable 	7727-43-7
- barium sulfate, respirable             	7727-43-7
- ammonium persulfate, particulate 	7727-54-0
-chromium: chromic acid (H2CrO4) & chromate 	7738-94-5
-indium & compounds (as In)	7740-74-6
-HCCPD	77-47-4
-Hexachlorocyclopentadiene	77-47-4
-Cobra	77501-63-4
-Lactofen	77501-63-4
-PPG-884	77501-63-4
-sodium sulfate	7757-82-6
-potassium bromate           	7758-01-2
-lead chromate (as Cr)  	7758-97-6
-silver nitrate	7761-88-8
- oils, fuel                	77650-28-3
-sodium thiosulfate	7772-98-7
- ammonium sulfamate, particulate       	7773-06-0
-Dicyclopentadiene	77-73-6
-sodium chlorate	7775-09-9
-sodium hydrosulfide	7775-14-6
- sodium persulfate, particulate 	7775-27-1
-Dimethyl sulfate 	77-78-1
-DMS	77-78-1
-Methyl sulfate	77-78-1
- gypsum, respirable 	7778-18-9	
+chloropentafluoroethane	76-15-3	154.466
+Freon 116	76-16-4	138.0118
+hexafluoroethane	76-16-4	138.0118
+perfluoroethane 	76-16-4	138.0118
+ perchloryl fluoride    	7616-94-6	102.450
+ camphor, synthetic 	76-22-2	152.2334
+sodium bisulfite	7631-90-5	104.061
+ethyl-3-ethoxypropionate	763-69-9	146.1843
+Boron trifluoride	7637-07-2	67.806
+methoxyflurane	76-38-0	164.966
+ 1,4-Dichloro-2-butene 	764-41-0	124.996
+3-chlorochlordene	76-44-8	373.318
+Heptachlor	76-44-8	373.318
+zinc chloride fume	7646-85-7	136.29
+HYDROCHLORIC ACID	7647-01-0	36.461
+Hydrogen chloride	7647-01-0	36.461
+diethylene glycol divinyl ether	764-99-8	158.1950
+Glycidaldehyde	765-34-4	72.0627
+Assure	76578-12-6	
+Phosphoric acid	7664-38-2	97.9952
+Hydrogen fluoride 	7664-39-3	20.00634
+Ammonia	7664-41-7	17.0305
+Sulfuric acid 	7664-93-9	98.078
+sodium hypochlorite	7681-52-9	
+sodium metabisulfite	7681-57-4	
+famotidine	76824-35-6	337.445
+isopropylaniline          	768-52-5	135.2062
+Nitric acid 	7697-37-2	63.0128
+zinc bromide	7699-45-8	225.19
+sulfur	7704-34-9	32.065
+thionyl chloride	7719-09-7	118.970
+phosphorus trichloride     	7719-12-2	137.333
+potassium permanganate     	7722-64-7	158.0339
+hydrogen peroxide          	7722-84-1	34.0147
+sodium pyrophosphate	7722-88-5	
+tetrasodium pyrophosphate	7722-88-5	
+Phosphorus (white)	7723-14-0	30.973762
+phosphorus (yellow)         	7723-14-0	30.973762
+Bromine 	7726-95-6	159.808
+bromine	7726-95-6	159.808
+ potassium persulfate, particulate 	7727-21-1	270.322
+ barite, respirable 	7727-43-7	233.390
+ barium sulfate, respirable             	7727-43-7	233.390
+ ammonium persulfate, particulate 	7727-54-0	228.202
+chromium: chromic acid (H2CrO4) & chromate 	7738-94-5	
+indium & compounds (as In)	7740-74-6	
+HCCPD	77-47-4	272.772
+Hexachlorocyclopentadiene	77-47-4	272.772
+Cobra	77501-63-4	
+Lactofen	77501-63-4	
+PPG-884	77501-63-4	
+sodium sulfate	7757-82-6	142.042
+potassium bromate           	7758-01-2	167.000
+lead chromate (as Cr)  	7758-97-6	
+silver nitrate	7761-88-8	169.8731
+ oils, fuel                	77650-28-3	
+sodium thiosulfate	7772-98-7	158.108
+ ammonium sulfamate, particulate       	7773-06-0	114.124
+Dicyclopentadiene	77-73-6	132.2023
+sodium chlorate	7775-09-9	106.441
+sodium hydrosulfide	7775-14-6	
+ sodium persulfate, particulate 	7775-27-1	
+Dimethyl sulfate 	77-78-1	126.132
+DMS	77-78-1	126.132
+Methyl sulfate	77-78-1	126.132
+ gypsum, respirable 	7778-18-9	136.141
 calcium arsenate (as As)	7778-44-1	
-fluorine	7782-41-4	
- graphite, natural, respirable  	7782-42-5	
- graphite, synthetic, respirable 	7782-42-5	
-Selenium 	7782-49-2	
-selenium & compounds	7782-49-2	
-SELENIUM (AND COMPOUNDS) 	7782-49-2	
-Chlorine	7782-50-5	
-germanium tetrahydride	7782-65-2	
-hydrazoic acid       	7782-79-8	
-Selenious Acid	7783-00-8	
+fluorine	7782-41-4	37.9968064
+ graphite, natural, respirable  	7782-42-5	12.0107
+ graphite, synthetic, respirable 	7782-42-5	12.0107
+Selenium 	7782-49-2	78.96
+selenium & compounds	7782-49-2	78.96
+SELENIUM (AND COMPOUNDS) 	7782-49-2	78.96
+Chlorine	7782-50-5	70.906
+germanium tetrahydride	7782-65-2	76.67
+hydrazoic acid       	7782-79-8	43.0280
+Selenious Acid	7783-00-8	128.97
 Hydrogen sulfide	7783-06-4	34.1
-hydrogen selenide      	7783-07-5
-ammonium sulfate           	7783-20-2
-oxygen difluoride   	7783-41-7
-nitrogen trifluoride	7783-54-2
-sulfur tetrafluoride 	7783-60-0
- silicon fluoride  	7783-61-1
- selenium hexafluoride, (as Se, also evaluate total HF) 	7783-79-1
-tellurium hexafluoride (as Te)	7783-80-4
- tungsten hexafluoride (as HF, 3hr) 	7783-82-6
-lead arsenate (as As)  	7784-40-9
-Arsine	7784-42-1
- methyloctanal, 2- 	7786-29-0
-magnesium chloride        	7786-30-3
-Mevinphos                	7786-34-7
-Phosdrin	7786-34-7
-Beryllium chloride 	7787-47-5
-Beryllium fluoride 	7787-49-7
- strontium chromate, as Cr 	7789-06-2
- bromine pentafluoride (as HF, 3hr) 	7789-30-2
-triethyl acetyl citrate	77-89-4
-calcium bromide	7789-41-5
-Cadmium bromide 	7789-42-6
-silicon tetrabromide	7789-66-4
-chlorine trifluoride (also evaluate HF)	7790-91-2
-chlorosulfonic acid	7790-94-5
-Thallium chloride	7791-12-0
-sulfuryl chloride	7791-25-5
-citric acid	77-92-9
-ethylene glycol mono-sec-butyl ether	7795-91-7
-trimethylol propane	77-99-6
-Lead (tetraethyl)	78-00-2
-tetraethyl lead	78-00-2
-hydroxylamine	7803-49-8
-Hydrogen phosphide	7803-51-2
-Phosphine	7803-51-2
-stibine	7803-52-3
-silane	7803-62-5
-silicon tetrahydride	7803-62-5
-ethyl silicate	78-10-4
-tetraethylorthosilicate	78-10-4
-pentaerthryitol tetranitrate	78-11-5
-triorthocresyl phosphate	78-30-8
-triparacresyl phosphate	78-32-0
-Delnav	78-34-2
-Dioxathion	78-34-2
-triethyl phosphate	78-40-0
-Isoacetophorone	78-59-1
-Isophorone	78-59-1
- chlorophenolthio-methyl-O,O-diethyl phosphorodithioate  	786-19-6
-Trithion	786-19-6
-isopentane	78-78-4
-methyl vinyl ketone	78-79-4
-vinyl methyl ketone	78-79-4
-isoprene        	78-79-5
-isobutylamine             	78-81-9
-isobutyronitrile          	78-82-0	
-Isobutanol	78-83-1	
-isobutyl alcohol         	78-83-1	
-isobutyraldehyde          	78-84-2	
-methacrolein	78-85-3	
- butyl chloride, sec- 	78-86-4	
+hydrogen selenide      	7783-07-5	80.98
+ammonium sulfate           	7783-20-2	132.140
+oxygen difluoride   	7783-41-7	53.9962
+nitrogen trifluoride	7783-54-2	71.0019
+sulfur tetrafluoride 	7783-60-0	108.059
+ silicon fluoride  	7783-61-1	104.0791
+ selenium hexafluoride, (as Se, also evaluate total HF) 	7783-79-1	192.95
+tellurium hexafluoride (as Te)	7783-80-4	241.59
+ tungsten hexafluoride (as HF, 3hr) 	7783-82-6	297.83
+lead arsenate (as As)  	7784-40-9	
+Arsine	7784-42-1	77.94542
+ methyloctanal, 2- 	7786-29-0	
+magnesium chloride        	7786-30-3	95.211
+Mevinphos                	7786-34-7	224.1483
+Phosdrin	7786-34-7	224.1483
+Beryllium chloride 	7787-47-5	79.918
+Beryllium fluoride 	7787-49-7	47.008988
+ strontium chromate, as Cr 	7789-06-2	
+ bromine pentafluoride (as HF, 3hr) 	7789-30-2	174.896
+triethyl acetyl citrate	77-89-4	318.3197
+calcium bromide	7789-41-5	199.886
+Cadmium bromide 	7789-42-6	272.219
+silicon tetrabromide	7789-66-4	347.702
+chlorine trifluoride (also evaluate HF)	7790-91-2	92.448
+chlorosulfonic acid	7790-94-5	116.524
+Thallium chloride	7791-12-0	239.836
+sulfuryl chloride	7791-25-5	134.970
+citric acid	77-92-9	192.1235
+ethylene glycol mono-sec-butyl ether	7795-91-7	118.1742
+trimethylol propane	77-99-6	134.1736
+Lead (tetraethyl)	78-00-2	323.4
+tetraethyl lead	78-00-2	323.4
+hydroxylamine	7803-49-8	33.0299
+Hydrogen phosphide	7803-51-2	33.99758
+Phosphine	7803-51-2	33.99758
+stibine	7803-52-3	124.784
+silane	7803-62-5	32.1173
+silicon tetrahydride	7803-62-5	32.1173
+ethyl silicate	78-10-4	208.3275
+tetraethylorthosilicate	78-10-4	208.3275
+pentaerthryitol tetranitrate	78-11-5	316.1366
+triorthocresyl phosphate	78-30-8	368.3628
+triparacresyl phosphate	78-32-0	368.3628
+Delnav	78-34-2	456.539
+Dioxathion	78-34-2	456.539
+triethyl phosphate	78-40-0	182.1547
+Isoacetophorone	78-59-1	138.2069
+Isophorone	78-59-1	138.2069
+ chlorophenolthio-methyl-O,O-diethyl phosphorodithioate  	786-19-6	342.865
+Trithion	786-19-6	342.865
+isopentane	78-78-4	72.1488
+methyl vinyl ketone	78-79-4	
+vinyl methyl ketone	78-79-4	
+isoprene        	78-79-5	68.1170
+isobutylamine             	78-81-9	73.1368
+isobutyronitrile          	78-82-0	69.1051
+Isobutanol	78-83-1	74.1216
+isobutyl alcohol         	78-83-1	74.1216
+isobutyraldehyde          	78-84-2	72.1057
+methacrolein	78-85-3	70.0898
+ butyl chloride, sec- 	78-86-4	92.567
  1,2-Dichloropropane 	78-87-5	112.99
  dichloropropane, 1,2-  	78-87-5	112.99
 propylene dichloride 	78-87-5	112.99
-propylene chlorohydrin    	78-89-7	
-propylene diamine    	78-90-0	
- butyl alcohol, sec- 	78-92-2	
+propylene chlorohydrin    	78-89-7	94.540
+propylene diamine    	78-90-0	74.1249
+ butyl alcohol, sec- 	78-92-2	74.1216
 2-Butanone 	78-93-3	72.1
 butanone 	78-93-3	72.1
 Methyl ethyl ketone 	78-93-3	72.1
 MEK 	78-93-3	72.1
-chloroacetone	78-95-5	
-isopropanolamine	78-96-6	
+chloroacetone	78-95-5	92.524
+isopropanolamine	78-96-6	75.1097
  1,1,2-Trichloroethane 	79-00-5	133.4
  trichloroethane, 1,1,2- 	79-00-5	133.4
 Trichloroethene	79-01-6	131.39
 trichloroethylene	79-01-6	131.39
 TCE	79-01-6	131.39
-chloroacetylchloride	79-04-9	
-Acrylamide	79-06-1	
-propionic acid 	79-09-4	
-Acrylic acid	79-10-7	
-Chloroacetic acid	79-11-8	
-Methyl acetate	79-20-9	
-methyl chloroformate        	79-22-1	
-nitroethane              	79-24-3	
-acetylene tetrabromide    	79-27-6	
- tetrabromoethane, 1,1,2,2- 	79-27-6	
-isobutyric acid           	79-31-2	
+chloroacetylchloride	79-04-9	112.943
+Acrylamide	79-06-1	71.0779
+propionic acid 	79-09-4	74.0785
+Acrylic acid	79-10-7	72.0627
+Chloroacetic acid	79-11-8	94.497
+Methyl acetate	79-20-9	74.0785
+methyl chloroformate        	79-22-1	94.497
+nitroethane              	79-24-3	75.0666
+acetylene tetrabromide    	79-27-6	345.653
+ tetrabromoethane, 1,1,2,2- 	79-27-6	345.653
+isobutyric acid           	79-31-2	88.1051
  1,1,2,2-Tetrachloroethane 	79-34-5	167.85
  tetrachloroethane, 1,1,2,2- 	79-34-5	167.85
-chlorotrifluoroethylene	79-38-9	
-methacrylamide	79-39-0	
-methacrylic acid          	79-41-4	
-(Dimethylamino)carbonyl chloride	79-44-7	
-dimethylcarbamoyl chloride	79-44-7	
-2-Nitropropane	79-46-9	
- nitropropane, 2-            	79-46-9	
-furatone	794-93-4
-hydroxymethyl amino-nitrofurylethenyltriazine	794-93-4
-camphene	79-92-5
-chlorinated camphene	8001-35-2
-Toxaphene	8001-35-2
-coal tar oil	8001-58-9
-creosote	8001-58-9
- oil, crude (vapor)      	8002-05-9
-petroleum oil (vapor)	8002-05-9
-paraffin wax fume          	8002-74-2
-Pyrethrum	8003-34-7
- bisphenol A, particulate 	80-05-7
- bisphenol A, vapor 	80-05-7
- gasoline, < 0.9% benzene 	8006-61-9
-turpentine	8006-64-2
-coal tar	8007-45-2
-Coke Oven Emissions	8007-45-2
-kerosene                 	8008-20-6
-mineral oil mist        	8012-95-1
- oil mist, mineral, severely refined 	8012-95-1
-paraffin oil	8012-95-1
-soybean oil epoxide	8013-07-8
-cumene hydroperoxide	80-15-9
-demeton-methyl	8022-00-2
-methyl demeton              	8022-00-2
-coal tar naphtha	8030-30-6
- naphtha, coal tar 	8030-30-6
-petroleum ether	8030-30-6
-rubber solvent	8030-30-6
-benzine	8032-32-4
+chlorotrifluoroethylene	79-38-9	116.470
+methacrylamide	79-39-0	85.1045
+methacrylic acid          	79-41-4	86.0892
+(Dimethylamino)carbonyl chloride	79-44-7	107.539
+dimethylcarbamoyl chloride	79-44-7	107.539
+2-Nitropropane	79-46-9	89.0932
+ nitropropane, 2-            	79-46-9	89.0932
+furatone	794-93-4	
+hydroxymethyl amino-nitrofurylethenyltriazine	794-93-4	
+camphene	79-92-5	136.2340
+chlorinated camphene	8001-35-2	
+Toxaphene	8001-35-2	
+coal tar oil	8001-58-9	
+creosote	8001-58-9	
+ oil, crude (vapor)      	8002-05-9	
+petroleum oil (vapor)	8002-05-9	
+paraffin wax fume          	8002-74-2	
+Pyrethrum	8003-34-7	
+ bisphenol A, particulate 	80-05-7	228.2863
+ bisphenol A, vapor 	80-05-7	228.2863
+ gasoline, < 0.9% benzene 	8006-61-9	
+turpentine	8006-64-2	
+coal tar	8007-45-2	
+Coke Oven Emissions	8007-45-2	
+kerosene                 	8008-20-6	
+mineral oil mist        	8012-95-1	
+ oil mist, mineral, severely refined 	8012-95-1	
+paraffin oil	8012-95-1	
+soybean oil epoxide	8013-07-8	
+cumene hydroperoxide	80-15-9	152.1904
+demeton-methyl	8022-00-2	
+methyl demeton              	8022-00-2	
+coal tar naphtha	8030-30-6	
+ naphtha, coal tar 	8030-30-6	
+petroleum ether	8030-30-6	
+rubber solvent	8030-30-6	
+benzine	8032-32-4	
 Ligroine	8032-32-4	
 mineral spirits	8032-32-4	
  naphtha, VM&P 	8032-32-4	
 petroleum spirits	8032-32-4	
  V,M&P naphtha 	8032-32-4	
- amyl phenol, p-tert-, particulate 	80-46-6	
- amyl phenol, p-tert-, vapor  	80-46-6	
+ amyl phenol, p-tert-, particulate 	80-46-6	164.2441
+ amyl phenol, p-tert-, vapor  	80-46-6	164.2441
  rosin core solder, decomposition products 	8050-09-7	
- menthane-1,8-diamine, p- 	80-52-4	
+ menthane-1,8-diamine, p- 	80-52-4	170.2951
 Stoddard solvent	8052-41-3	
  asphalt, fumes (cyclohexane extractable) 	8052-42-4	
  asphalt, vapors  	8052-42-4	
 a-Pinene	80-56-8	136.24
-Methyl methacrylate	80-62-6	
-Demeton	8065-48-3
-Systox	8065-48-3
-Saccharine	81-07-2
-HFC-134A	811-97-2
- tetrafluroethane, 1,1,1,2- 	811-97-2
-Pursuit	81335-77-5
-Warfarin	81-81-2
- 1,6-diisocyanatohexane 	822-06-0
- 1,6-Hexamethylene diisocyanate 	822-06-0
-hexamethylene diisocyanate	822-06-0
- methylimidazole, 4- 	822-36-6
- Toluene-2,6-diamine 	823-40-5
-triacetone amine	825-36-8
-Bifenthrin	82657-04-3
-PCNB	82-68-8
-Pentachloronitrobenzene	82-68-8
-Quintobenzene	82-68-8
-2-(2-(2-dimethylamino ethoxy)-ethylmethylamino)-ethanol	83016-70-0
-Texacat ZF-10	83016-70-0
-Pindone                     	83-26-1
- pivaloyl-1,3-indaione, 2- 	83-26-1
-  Acenaphthene	83-32-9
-acenaphthene	83-32-9
-ethylene naphthalene	83-32-9
-Rotenone	83-79-4
-ethylanthraquinone	84-51-5
- anthraquinone, particulate 	84-65-1
-Diethyl phthalate	84-66-2
-diisobutyl phthalate	84-69-5
-Dibutyl phthalate	84-74-2
-Diquat	85-00-7
- Diquat dibromide, respirable 	85-00-7
-phenanthrene	85-01-8
-PHTHALIC ANHYDRIDE	85-44-9
-NuStar	85509-19-9
-butyl benzyl phthalate	85-68-7
-N-Nitrosodiphenylamine	86-30-6
-azinphos-methyl             	86-50-0
-guthion	86-50-0	
+Methyl methacrylate	80-62-6	100.1158
+Demeton	8065-48-3	
+Systox	8065-48-3	
+Saccharine	81-07-2	183.184
+HFC-134A	811-97-2	102.0309
+ tetrafluroethane, 1,1,1,2- 	811-97-2	102.0309
+Pursuit	81335-77-5	
+Warfarin	81-81-2	308.3279
+ 1,6-diisocyanatohexane 	822-06-0	168.1931
+ 1,6-Hexamethylene diisocyanate 	822-06-0	168.1931
+hexamethylene diisocyanate	822-06-0	168.1931
+ methylimidazole, 4- 	822-36-6	82.1038
+ Toluene-2,6-diamine 	823-40-5	122.1677
+triacetone amine	825-36-8	
+Bifenthrin	82657-04-3	422.868
+PCNB	82-68-8	295.335
+Pentachloronitrobenzene	82-68-8	295.335
+Quintobenzene	82-68-8	295.335
+2-(2-(2-dimethylamino ethoxy)-ethylmethylamino)-ethanol	83016-70-0	
+Texacat ZF-10	83016-70-0	
+Pindone                     	83-26-1	230.2592
+ pivaloyl-1,3-indaione, 2- 	83-26-1	230.2592
+  Acenaphthene	83-32-9	154.2078
+acenaphthene	83-32-9	154.2078
+ethylene naphthalene	83-32-9	154.2078
+Rotenone	83-79-4	394.4172
+ethylanthraquinone	84-51-5	236.2653
+ anthraquinone, particulate 	84-65-1	208.2121
+Diethyl phthalate	84-66-2	222.2372
+diisobutyl phthalate	84-69-5	278.3435
+Dibutyl phthalate	84-74-2	278.3435
+Diquat	85-00-7	
+ Diquat dibromide, respirable 	85-00-7	
+phenanthrene	85-01-8	178.2292
+PHTHALIC ANHYDRIDE	85-44-9	148.1156
+NuStar	85509-19-9	
+butyl benzyl phthalate	85-68-7	312.3597
+N-Nitrosodiphenylamine	86-30-6	198.2206
+azinphos-methyl             	86-50-0	317.324
+guthion	86-50-0	317.324
 perfluoro compounds	86508-42-1	
-  Fluorene	86-73-7	
-fluorene	86-73-7	
-Carbazole	86-74-8	
-dibenzopyrrole	86-74-8	
- hydroxyethyl methacrylate, 2-        	868-77-9	
-ANTU	86-88-4	
- naphthylthiourea, a-  	86-88-4	
- methyl-2-pyrrolidone, N-  	872-50-4	
+  Fluorene	86-73-7	166.2185
+fluorene	86-73-7	166.2185
+Carbazole	86-74-8	167.2066
+dibenzopyrrole	86-74-8	167.2066
+ hydroxyethyl methacrylate, 2-        	868-77-9	130.1418
+ANTU	86-88-4	202.275
+ naphthylthiourea, a-  	86-88-4	202.275
+ methyl-2-pyrrolidone, N-  	872-50-4	99.1311
 2-Ethylthiophene	872-55-9	112.19
- dichlorophenol, 2,6-  	87-65-0	
+ dichlorophenol, 2,6-  	87-65-0	163.001
  HEXACHLORO-1,3-BUTADIENE 	87-68-3	260.76
 Hexachlorobutadiene	87-68-3	260.76
-Hexabromobenzene	87-82-1	
-PCP	87-86-5	
-Pentachlorophenol	87-86-5	
- 2,4,6-T 	88-06-2	
- 2,4,6-Trichlorophenol 	88-06-2	
- trichlorophenol, 2,4,6  	88-06-2	
- vinyl-2-pyrrolidone, 1- 	88-12-0	
+Hexabromobenzene	87-82-1	551.488
+PCP	87-86-5	266.337
+Pentachlorophenol	87-86-5	266.337
+ 2,4,6-T 	88-06-2	197.446
+ 2,4,6-Trichlorophenol 	88-06-2	197.446
+ trichlorophenol, 2,4,6  	88-06-2	197.446
+ vinyl-2-pyrrolidone, 1- 	88-12-0	111.1418
 Exxate 600	88230-35-7	
 oxo-hexyl acetate	88230-35-7	
-isopropyl phenol          	88-69-7	
- nitrotoluene, o-               	88-72-2	
-o-Chloronitrobenzene	88-73-3	
-2-Nitroaniline	88-74-4	
- nitrophenol, o- 	88-75-5
-Dinoseb	88-85-7
-picric acid 	88-89-1
-trinitrophenol 	88-89-1
-phthalic acid              	88-99-3
-pyromelletic acid	89-05-4
- butyl phenol, o-sec- 	89-72-5
-polyvinyl chloride	9002-86-2
-PVC	9002-86-2
-polyethylene	9002-88-4
-Triton X-100 Surfactant	9002-93-1
-polypropylene              	9003-07-0
- vinyl acetate polymer, particulate 	9003-20-7
-polyisobutylenes	9003-27-4
-poly(1-vinyl-2-pyrrolidinone)	9003-39-8
-polystyrene               	9003-53-6
- cellulose, respirable 	9004-34-6
-cellulose acetate butyrate	9004-36-8
-cellulose acetate phthalate	9004-38-0
-Dextrin	9004-53-9
- starch, respirable  	9005-25-8
-rubber dust 	9006-04-6
-polyurethane 	9009-54-5
- methyl naphthalenes, a- [odor]             	90-12-0
-tetramethyl decyndiol	9014-85-1
-nonyl phenol ethoxylate  	9016-45-9
- nonylphenyl polyethyleneglycol ether, nonionic 	9016-45-9
- polyethylene glycol 450 nonyl phenyl ether, nonionic surfactant 	9016-45-9
-Tergitol TP-9	9016-45-9
- methylene bisphenyl diioscyanate, polymer 	9016-87-9
-polymethylene polyphenylisocyanate	9016-87-9
-2-Phenylphenol	90-43-7
+isopropyl phenol          	88-69-7	136.1910
+ nitrotoluene, o-               	88-72-2	137.1360
+o-Chloronitrobenzene	88-73-3	157.554
+2-Nitroaniline	88-74-4	138.1240
+ nitrophenol, o- 	88-75-5	139.1088
+Dinoseb	88-85-7	240.2127
+picric acid 	88-89-1	229.1039
+trinitrophenol 	88-89-1	229.1039
+phthalic acid              	88-99-3	166.1308
+pyromelletic acid	89-05-4	254.1498
+ butyl phenol, o-sec- 	89-72-5	150.2176
+polyvinyl chloride	9002-86-2	
+PVC	9002-86-2	
+polyethylene	9002-88-4	14.0266
+Triton X-100 Surfactant	9002-93-1	
+polypropylene              	9003-07-0	42.0797
+ vinyl acetate polymer, particulate 	9003-20-7	
+polyisobutylenes	9003-27-4	56.1063
+poly(1-vinyl-2-pyrrolidinone)	9003-39-8	
+polystyrene               	9003-53-6	104.1491
+ cellulose, respirable 	9004-34-6	
+cellulose acetate butyrate	9004-36-8	
+cellulose acetate phthalate	9004-38-0	
+Dextrin	9004-53-9	
+ starch, respirable  	9005-25-8	
+rubber dust 	9006-04-6	
+polyurethane 	9009-54-5	
+ methyl naphthalenes, a- [odor]             	90-12-0	142.1971
+tetramethyl decyndiol	9014-85-1	
+nonyl phenol ethoxylate  	9016-45-9	
+ nonylphenyl polyethyleneglycol ether, nonionic 	9016-45-9	
+ polyethylene glycol 450 nonyl phenyl ether, nonionic surfactant 	9016-45-9	
+Tergitol TP-9	9016-45-9	
+ methylene bisphenyl diioscyanate, polymer 	9016-87-9	
+polymethylene polyphenylisocyanate	9016-87-9	
+2-Phenylphenol	90-43-7	170.2072
 nonyl phenol propoxylate	9064-15-7	
-tris(dimethylaminomethyl)phenol	90-72-2	
- Toluene diisocyanate, 2,6-  	91-08-7	
- toluene-2,6-diisocyanate 	91-08-7	
- dimethxoybenzene, 1,2- 	91-16-7	
-Veratrole	91-16-7	
-decahydronaphthalene	91-17-8	
-decalin	91-17-8	
+tris(dimethylaminomethyl)phenol	90-72-2	265.3944
+ Toluene diisocyanate, 2,6-  	91-08-7	174.1561
+ toluene-2,6-diisocyanate 	91-08-7	174.1561
+ dimethxoybenzene, 1,2- 	91-16-7	138.1638
+Veratrole	91-16-7	138.1638
+decahydronaphthalene	91-17-8	138.2499
+decalin	91-17-8	138.2499
   Naphthalene	91-20-3	128.17
-Chinoline	91-22-5	
-quinoline	91-22-5	
- methyl naphthalenes, ß-             	91-57-6
-beta-Chloronaphthalene	91-58-7
- diethylaniline, N,N- 	91-66-7
-methapyrilene	91-80-5
- 3,3-Dichlorobenzidine 	91-94-1
-Dichlorobenzidene Base	91-94-1
-N-Nitrosodi-n-butylamine	924-16-3
- 1,1-Biphenyl 	92-52-4
-BIPHENYL	92-52-4
-propyl acrylate         	925-60-0
-4-aminodiphenyl	92-67-1
-4-biphenylamine	92-67-1
-Phenothiazine	92-84-2
-phenothiazine              	92-84-2
-Benzidine	92-87-5
-aminoethoxyethanol	929-06-6
-diglycolamine	929-06-6
-4-nitrodiphenyl	92-93-3
-p-nitrobiphenyl	92-93-3
-diethylene glycol monovinyl ether	929-37-3
-N-Nitrosopyrrolidine	930-55-2
-guaifenesin	93-14-1
-propiophenone            	93-55-0
-methyl benzoate	93-58-3
-2-(2-Methyl-4-chlorophenoxy) propionic acid	93-65-2
- 2-(2,4,5-Trichlorophenoxy) propionic acid 	93-72-1
- 2,4,5-TP 	93-72-1
- perlite, respirable                   	93763-70-3
- 2,4,5-T 	93-76-5
- 2,4,5-Trichlorophenoxyacetic Acid 	93-76-5
-oleic diethanol amide      	93-83-4
-ethyl benzoate	93-89-0
-vinyl-2-ethylhexoate	94-04-2
-benzoyl peroxide           	94-36-0
-Fonofos	944-22-9
-Fonophos	944-22-9
-dipropylene glycol dibenzoate	94-51-9
-safrole	94-59-7
-2-Methyl-4-chlorophenoxyacetic acid	94-74-6
- 2,4-D 	94-75-7
- 2,4-dichlorophenoxy-acetic acid 	94-75-7
- 2,4-Dichlorophenoxyacetic Acid (2,4-D) 	94-75-7
-dichlorophenoxy acetic acid	94-75-7
-4-(2-Methyl-4-chlorophenoxy) butyric acid 	94-81-5
-MCPB	94-81-5
- 4-(2,4-Dichlorophenoxy)butyric Acid (2,4-DB) 	94-82-6
- ethyl hexanediol, 2- 	94-96-2	
+Chinoline	91-22-5	129.1586
+quinoline	91-22-5	129.1586
+ methyl naphthalenes, ß-             	91-57-6	142.1971
+beta-Chloronaphthalene	91-58-7	162.616
+ diethylaniline, N,N- 	91-66-7	149.2328
+methapyrilene	91-80-5	261.386
+ 3,3-Dichlorobenzidine 	91-94-1	253.127
+Dichlorobenzidene Base	91-94-1	253.127
+N-Nitrosodi-n-butylamine	924-16-3	158.2413
+ 1,1-Biphenyl 	92-52-4	154.2078
+BIPHENYL	92-52-4	154.2078
+propyl acrylate         	925-60-0	114.1424
+4-aminodiphenyl	92-67-1	169.2224
+4-biphenylamine	92-67-1	169.2224
+Phenothiazine	92-84-2	199.272
+phenothiazine              	92-84-2	199.272
+Benzidine	92-87-5	184.2371
+aminoethoxyethanol	929-06-6	105.1356
+diglycolamine	929-06-6	105.1356
+4-nitrodiphenyl	92-93-3	199.2054
+p-nitrobiphenyl	92-93-3	199.2054
+diethylene glycol monovinyl ether	929-37-3	132.1577
+N-Nitrosopyrrolidine	930-55-2	100.1191
+guaifenesin	93-14-1	198.2158
+propiophenone            	93-55-0	134.1751
+methyl benzoate	93-58-3	136.1479
+2-(2-Methyl-4-chlorophenoxy) propionic acid	93-65-2	214.646
+ 2-(2,4,5-Trichlorophenoxy) propionic acid 	93-72-1	269.509
+ 2,4,5-TP 	93-72-1	269.509
+ perlite, respirable                   	93763-70-3	
+ 2,4,5-T 	93-76-5	255.483
+ 2,4,5-Trichlorophenoxyacetic Acid 	93-76-5	255.483
+oleic diethanol amide      	93-83-4	369.5817
+ethyl benzoate	93-89-0	150.1745
+vinyl-2-ethylhexoate	94-04-2	170.2487
+benzoyl peroxide           	94-36-0	242.2268
+Fonofos	944-22-9	246.329
+Fonophos	944-22-9	246.329
+dipropylene glycol dibenzoate	94-51-9	342.3857
+safrole	94-59-7	162.1852
+2-Methyl-4-chlorophenoxyacetic acid	94-74-6	200.619
+ 2,4-D 	94-75-7	221.037
+ 2,4-dichlorophenoxy-acetic acid 	94-75-7	221.037
+ 2,4-Dichlorophenoxyacetic Acid (2,4-D) 	94-75-7	221.037
+dichlorophenoxy acetic acid	94-75-7	221.037
+4-(2-Methyl-4-chlorophenoxy) butyric acid 	94-81-5	228.672
+MCPB	94-81-5	228.672
+ 4-(2,4-Dichlorophenoxy)butyric Acid (2,4-DB) 	94-82-6	249.091
+ ethyl hexanediol, 2- 	94-96-2	146.2273
 Mephosfolan	950-10-7	
-Methidathion	950-37-8	
-indene                  	95-13-6	
-benzene azimide	95-14-7	
-benzotriazole	95-14-7	
+Methidathion	950-37-8	302.331
+indene                  	95-13-6	116.1598
+benzene azimide	95-14-7	119.1240
+benzotriazole	95-14-7	119.1240
 o-Xylene	95-47-6	106.2
-2-Methylphenol	95-48-7	
- chlorotoluene, all isomers  	95-49-8	
-o-Chlorotoluene	95-49-8	
+2-Methylphenol	95-48-7	108.1378
+ chlorotoluene, all isomers  	95-49-8	126.583
+o-Chlorotoluene	95-49-8	126.583
  1,2-Dichlorobenzene 	95-50-1	147
  1,2-Dichlorobenzene (o-) 	95-50-1	147
  dichlorobenzene, o- 	95-50-1	147
- chloroaniline, o- 	95-51-2	
-2-Methylaniline (o-toluidine)	95-53-4	
-o-aminotoluene	95-53-4	
- toluidine, o- 	95-53-4	
- phenylene diamine, o-        	95-54-5	
-2-Chlorophenol	95-57-8	
- chlorophenol, o-  	95-57-8	
+ chloroaniline, o- 	95-51-2	127.572
+2-Methylaniline (o-toluidine)	95-53-4	107.1531
+o-aminotoluene	95-53-4	107.1531
+ toluidine, o- 	95-53-4	107.1531
+ phenylene diamine, o-        	95-54-5	108.1411
+2-Chlorophenol	95-57-8	128.556
+ chlorophenol, o-  	95-57-8	128.556
  1,2,4-Trimethylbenzene 	95-63-6	120.19
 pseudocumene 	95-63-6	120.19
- 3,4-Dimethylphenol 	95-65-8	
- 2,4-Dimethylaniline 	95-68-1	
-4-Chloro-2-methylaniline	95-69-2	
- Toluene-2,5-diamine 	95-70-5	
- dichloroaniline, 3,4- 	95-76-1	
-MTD	95-80-7	
- Toluene-2,4-diamine 	95-80-7	
- dichloroaniline, 2,5- 	95-82-9	
- 1,2,4,5-Tetrachlorobenzene 	95-94-3	
- 2,4,5-Trichlorophenol 	95-95-4	
- trichlorophenol, 2,4,5- 	95-95-4	
-allyl methacrylate	96-05-9	
- 1,2-epoxyethylbenzene 	96-09-3	
-styrene oxide	96-09-3	
-Tetrachlorovinphos	961-11-5	
+ 3,4-Dimethylphenol 	95-65-8	122.1644
+ 2,4-Dimethylaniline 	95-68-1	121.1796
+4-Chloro-2-methylaniline	95-69-2	141.598
+ Toluene-2,5-diamine 	95-70-5	122.1677
+ dichloroaniline, 3,4- 	95-76-1	162.017
+MTD	95-80-7	122.1677
+ Toluene-2,4-diamine 	95-80-7	122.1677
+ dichloroaniline, 2,5- 	95-82-9	162.017
+ 1,2,4,5-Tetrachlorobenzene 	95-94-3	215.892
+ 2,4,5-Trichlorophenol 	95-95-4	197.446
+ trichlorophenol, 2,4,5- 	95-95-4	197.446
+allyl methacrylate	96-05-9	126.1531
+ 1,2-epoxyethylbenzene 	96-09-3	120.1485
+styrene oxide	96-09-3	120.1485
+Tetrachlorovinphos	961-11-5	365.962
  1,2-Dibromo-3-chloropropane 	96-12-8	236.33
 DBCP	96-12-8	236.33
 dibromochloropropane	96-12-8	236.33
 3-Methylpentane	96-14-0	86.18
- methyl pentane, 3- 	96-14-0	
- 1,2,3-Trichloropropane 	96-18-4
- trichloropropane, 1,2,3- 	96-18-4
- 1,2,3-Trichloropropene 	96-19-5
- trichloropropene, 1,2,3- 	96-19-5
-diethyl ketone	96-22-0
-dichlorohydrin	96-23-1
-monochlorohydrin	96-24-2
- acrylic acid, methyl ester  	96-33-3
-Methyl acrylate	96-33-3
-chloroacetic acid methyl ester	96-34-4
-methyl cyclopentane      	96-37-7
-cyclopentyl alcohol	96-41-3
-2-imidazolidinethione	96-45-7
-ethylene thiourea	96-45-7
-Ethylene thiourea 	96-45-7
-ETU	96-45-7
- butyrolactone, gamma- 	96-48-0
-ethylene glycol carbonate	96-49-1
- thiobis(6-t-butyl-m-cresol), 4,4'- 	96-69-5
-Ethyl methacrylate	97-63-2
-ethyl lactate 	97-64-3
-IBIB	97-85-8
-isobutyl isobutyrate   	97-85-8
-isobutyl methacrylate    	97-86-9
-butyl methacrylate	97-88-1
-furfuryl alcohol	98-00-0
-Furfural	98-01-1
-benzotrichloride	98-07-7
-Benzyl trichloride	98-07-7
- butyl-m-xylene, tert-  	98-19-1	
+ methyl pentane, 3- 	96-14-0	86.1754
+ 1,2,3-Trichloropropane 	96-18-4	147.431
+ trichloropropane, 1,2,3- 	96-18-4	147.431
+ 1,2,3-Trichloropropene 	96-19-5	145.415
+ trichloropropene, 1,2,3- 	96-19-5	145.415
+diethyl ketone	96-22-0	86.1323
+dichlorohydrin	96-23-1	128.985
+monochlorohydrin	96-24-2	110.539
+ acrylic acid, methyl ester  	96-33-3	86.0892
+Methyl acrylate	96-33-3	86.0892
+chloroacetic acid methyl ester	96-34-4	108.524
+methyl cyclopentane      	96-37-7	84.1595
+cyclopentyl alcohol	96-41-3	86.1323
+2-imidazolidinethione	96-45-7	102.158
+ethylene thiourea	96-45-7	102.158
+Ethylene thiourea 	96-45-7	102.158
+ETU	96-45-7	102.158
+ butyrolactone, gamma- 	96-48-0	86.0892
+ethylene glycol carbonate	96-49-1	88.0621
+ thiobis(6-t-butyl-m-cresol), 4,4'- 	96-69-5	358.537
+Ethyl methacrylate	97-63-2	114.1424
+ethyl lactate 	97-64-3	118.1311
+IBIB	97-85-8	144.2114
+isobutyl isobutyrate   	97-85-8	144.2114
+isobutyl methacrylate    	97-86-9	142.1956
+butyl methacrylate	97-88-1	142.1956
+furfuryl alcohol	98-00-0	98.0999
+Furfural	98-01-1	96.0841
+benzotrichloride	98-07-7	195.474
+Benzyl trichloride	98-07-7	195.474
+ butyl-m-xylene, tert-  	98-19-1	162.2713
  methyl amyl ether, tert-  	984-05-2	
- butyl toluene, p-tert- 	98-51-1	
- butyl phenol, p-tert- 	98-54-4	
-4-Chlorobenzotrifluoride	98-56-6	
+ butyl toluene, p-tert- 	98-51-1	148.2447
+ butyl phenol, p-tert- 	98-54-4	150.2176
+4-Chlorobenzotrifluoride	98-56-6	180.555
 Cumene	98-82-8	120.19
 isopropyl benzene 	98-82-8	120.19
-Methyl styrene (alpha)	98-83-9	
- methyl styrene, a-     	98-83-9	
-Acetophenone	98-86-2	
-acetophenone              	98-86-2	
-benzyl chloride            	98-87-3	
-benzyl dichloride          	98-87-3	
-benzoyl chloride           	98-88-4
- dimethylcyclohexylamine, N,N- 	98-94-2
-Nitrobenzene	98-95-3
-m-Nitrotoluene	99-08-1
- nitrotoluene, m-               	99-08-1
-o-Nitrotoluene	99-08-1
-Botran 75W	99-30-9
- dichloro-4-nitroaniline, 2,6- 	99-30-9
-Methyl phosphonic acid	993-13-5
- 1,3,5-Trinitrobenzene 	99-35-4
- amyl methyl ether, t-  	994-05-8
-tert-amyl methyl ether 	994-05-8
-2-Methyl-5-nitroaniline	99-55-8
- 1,3-Dinitrobenzene 	99-65-0
- butyl phenol, p-sec- 	99-71-8
-Disulfiram	99-77-8
-tributyl phosphine	998-40-3
- cymene, p- 	99-87-6
- methyl cumene, p- 	99-87-6
- methyl isopropylbenzene, 4- 	99-87-6
- hydroxyacetophenone, 4-  	99-93-4
- hydroxypropyl acrylate, 2-      	999-61-1
- nitrotoluene, p-               	99-99-0
-p-Nitrotoluene	99-99-0
-hexamethyl disilizane     	999-97-3
-Cyanides	n/a
-Nickel refinery dust	n/a
-Thiocyanate	N/A
-Tin and compounds	n/a
-Polybrominated biphenyls	
-Polynuclear aromatic hydrocarbons	
+Methyl styrene (alpha)	98-83-9	118.1757
+ methyl styrene, a-     	98-83-9	118.1757
+Acetophenone	98-86-2	120.1485
+acetophenone              	98-86-2	120.1485
+benzyl chloride            	98-87-3	161.029
+benzyl dichloride          	98-87-3	161.029
+benzoyl chloride           	98-88-4	140.567
+ dimethylcyclohexylamine, N,N- 	98-94-2	127.2273
+Nitrobenzene	98-95-3	123.1094
+m-Nitrotoluene	99-08-1	137.1360
+ nitrotoluene, m-               	99-08-1	137.1360
+o-Nitrotoluene	99-08-1	137.1360
+Botran 75W	99-30-9	207.014
+ dichloro-4-nitroaniline, 2,6- 	99-30-9	207.014
+Methyl phosphonic acid	993-13-5	96.0224
+ 1,3,5-Trinitrobenzene 	99-35-4	213.1045
+ amyl methyl ether, t-  	994-05-8	102.1748
+tert-amyl methyl ether 	994-05-8	102.1748
+2-Methyl-5-nitroaniline	99-55-8	152.1506
+ 1,3-Dinitrobenzene 	99-65-0	168.1070
+ butyl phenol, p-sec- 	99-71-8	150.2176
+Disulfiram	99-77-8	
+tributyl phosphine	998-40-3	202.3165
+ cymene, p- 	99-87-6	134.2182
+ methyl cumene, p- 	99-87-6	134.2182
+ methyl isopropylbenzene, 4- 	99-87-6	134.2182
+ hydroxyacetophenone, 4-  	99-93-4	136.1479
+ hydroxypropyl acrylate, 2-      	999-61-1	
+ nitrotoluene, p-               	99-99-0	137.1360
+p-Nitrotoluene	99-99-0	137.1360
+hexamethyl disilizane     	999-97-3	161.3928
+Cyanides	n/a	
+Nickel refinery dust	n/a	
+Thiocyanate	N/A	
+Tin and compounds	n/a	
