@@ -5,6 +5,10 @@ function validateChemicalName() {
 	    if (elem.next().next(".warning").length == 0) {
 		elem.next().after($("<span class='warning'> \"" + elem.val() + "\" is either misspelled, or not in the database</span>"))
 	    }
+	} else if (data == "NS") {
+	    if (elem.next().next(".warning").length == 0) {
+		elem.next().after($("<span class='warning'> \"" + elem.val() + "\" is a valid chemical name, but there are no standards available for it in the database</span>"))
+	    }
 	} else {
 	    elem.next().next(".warning").remove()
 	}
