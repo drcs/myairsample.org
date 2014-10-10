@@ -95,7 +95,15 @@ class API():
     @cherrypy.expose
     def validate(self, chemical_name):
         cherrypy.response.headers['Content-Type']='text/plain'
-        return name2cas(chemical_name) or "NA"
+        cas = name2cas(chemical_name)
+        if not cas: return "NA"
+        has_standards = False
+        for standard in all_standards.values():
+            has_standards = has_standards or standard.lookup(cas)
+        if has_standards:
+            return cas
+        else:
+            return "NS"
 
 class About():
     @cherrypy.expose
