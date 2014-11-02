@@ -149,6 +149,7 @@ div#main {
 #main > form {
     float: left;
     margin-bottom: 0px;
+    margin-left:   2em;
 }
 
 #main > form > div {
