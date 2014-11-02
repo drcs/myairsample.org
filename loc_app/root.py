@@ -1,6 +1,8 @@
 import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
+import subprocess
+import re
 import cherrypy
 import units
 from genshi.template import TemplateLoader
@@ -98,10 +100,31 @@ class API():
         cherrypy.response.headers['Content-Type']='text/plain'
         return name2cas(chemical_name) or "NA"
 
+MIN_EXPECTED_PDF_SIZE = 100000
+
 class Status():
+ 
     @cherrypy.expose
     def available(self):
         return "STATUS_OK"
+
+    @cherrypy.expose
+    def selfcheck(self):
+        report = LabbFull(
+            units  = { 'in' : 'ppb', 'out' : 'ppb'},
+            sample = { 'name' : 'test sample', 'date' : '2014-01-01' },
+            user   = { 'first' : 'self-check', 'second' : 'von self-checker' },
+            form   = { 'chem1' : 'nitrous oxide', 'report1' : '666', 'chem2' : 'propane', 'report2' : '55' }
+        )
+        (content_fname, headers) = report.reply()
+        pdfinfo = subprocess.check_output(["pdfinfo", content_fname])
+        file_size = int(re.search('File size[^0-9]*(\d+)', pdfinfo).group(1))
+        if (file_size > MIN_EXPECTED_PDF_SIZE):
+            result = 'STATUS_OK'
+        else:
+            result = "ERROR: expected min PDF size {0} got {1}".format(MIN_EXPECTED_PDF_SIZE, file_size)
+        os.remove(content_fname)
+        return result
 
 class About():
     @cherrypy.expose
