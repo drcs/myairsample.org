@@ -1,5 +1,8 @@
 RewriteEngine On
 
+SetEnvIf Request_URI ^/status/? ALWAYS_AUTHORIZED=true
+SetEnvIf Request_URI ^/loc.fcgi/status/? ALWAYS_AUTHORIZED=true
+
 RewriteBase /
 
 RewriteRule ^(media|css|html|scripts)/(.*)$ loc_app/data/$1/$2 [L]
@@ -13,6 +16,14 @@ AuthType Basic
 AuthName "Restricted Files"
 AuthBasicProvider file
 AuthUserFile /home/gbenison/gwenomatic/passwords.alpha
+
+Order Deny,Allow
+Satisfy any
+
+Deny from all
+Allow from env=ALWAYS_AUTHORIZED
 require valid-user
+
+# SetEnv CLEANUP no
 
 

@@ -24,6 +24,7 @@ class Root():
     def __init__(self):
         self.api = API()
         self.about = About()
+        self.status = Status()
         self.text_options = TextOptions()
 
     @cherrypy.expose
@@ -96,6 +97,11 @@ class API():
     def validate(self, chemical_name):
         cherrypy.response.headers['Content-Type']='text/plain'
         return name2cas(chemical_name) or "NA"
+
+class Status():
+    @cherrypy.expose
+    def available(self):
+        return "STATUS_OK"
 
 class About():
     @cherrypy.expose
