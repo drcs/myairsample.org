@@ -31,8 +31,18 @@ class Root():
 
     @cherrypy.expose
     def index(self):
-        """Serves the landing page, including entry form"""
+        """Serves the landing page"""
         tmpl = loader.load('index.html')
+        page = tmpl.generate(all_standards  = all_standards,
+                             text_options   = self.text_options.group_names(),
+                             unit_keys      = units.units.keys(),
+                             unit_represent = lambda key: HTML(md.convert(units.represent(key))))
+        return page.render('html', doctype='html')
+ 
+    @cherrypy.expose
+    def create_report(self):
+        """Serves the report entry form"""
+        tmpl = loader.load('create-report.html')
         page = tmpl.generate(all_standards  = all_standards,
                              text_options   = self.text_options.group_names(),
                              unit_keys      = units.units.keys(),

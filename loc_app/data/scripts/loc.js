@@ -31,3 +31,19 @@ $( document ).ready(function () {
 
     $("#chemical_input input[name*=chem]").focusout(validateChemicalName)
 });
+
+// Display a navigation bar at the top of the page when it is scrolled down
+var show_middle_nav = false;
+
+$(window).on('scroll', function() {
+    var old_show_middle_nav = show_middle_nav;
+    var scroll_pos_test = 50;
+    show_middle_nav = (window.pageYOffset > scroll_pos_test);
+    if (show_middle_nav != old_show_middle_nav) {
+	if (show_middle_nav) {
+	    $("#middle-nav").show();
+	} else {
+	    $("#middle-nav").hide();
+	}
+    }
+});

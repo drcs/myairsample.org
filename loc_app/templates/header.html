@@ -5,10 +5,36 @@
   </head>
   <body>
     <div py:def="header()" id="header">
+      <script src="/scripts/jquery.js"></script>
+      <script src="/scripts/loc.js"></script>
+      <div id="contact">
+	<ul>
+	  <li><a href="">Get Updates</a></li>
+	  <li><a href="">f</a></li>
+	  <li><a href="">t</a></li>
+	</ul>
+      </div>
       <div id="titles">
 	<h1>MyAirSample.org</h1>
-	<h2>An online tool to compare air sample results to levels of concern</h2>
+	<h2>Clean up your data, clean up your air</h2>
       </div>
+      <div id="top-nav">
+	${nav()}
+      </div>
+      <div id="middle-nav">
+        ${nav()}
+      </div>
+    </div>
+    <div py:def="nav()" class="nav">
+      <ul>
+	<li><a tabindex="1000" href="/about/levels">About</a></li>
+	<li><a tabindex="1000" href="/about/faq">Learn</a></li>
+	<li><a tabindex="1000" href="/about/tool">Tools</a></li>
+	<li><a tabindex="1000" href="">Community Groups</a></li>
+	<li><a tabindex="1000" href="">Donate</a></li>
+      </ul>
+    </div>
+    <div py:def="footer()" id="footer">
       <div id="logos">
 	<ul>
 	  <li><a href="http://www.labucketbrigade.org/"><img src="/media/labb_logo" alt="LABB logo"></img></a></li>
@@ -16,16 +42,6 @@
 	  <li><a href="/media/RANlogo-text.png"><img src="/media/RANlogo-text.png" alt="RAN logo"></img></a></li>
 	</ul>
       </div>
-    </div>
-    <div py:def="nav()" id="nav">
-      <ul>
-	<li><a tabindex="1000" href="/">Create a report</a></li>
-	<li><a tabindex="1000" href="/about/levels">About the levels of concern</a></li>
-	<li><a tabindex="1000" href="/about/faq">About bucket samples and monitoring</a></li>
-	<li><a tabindex="1000" href="/about/tool">About this tool</a></li>
-	<li><a tabindex="1000" href="/contact">Contact us</a></li>
-	<li><a tabindex="1000" href="/about/implementation">Technical details</a></li>
-      </ul>
     </div>
   </body>
 </html>

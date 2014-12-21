@@ -61,7 +61,6 @@ div#header {
     width:  100%;
     float:  left;
     border-bottom: 5px solid green;
-    border-top: 15px solid green;
 }
 
 .left-column {
@@ -87,7 +86,21 @@ div#logos img {
     margin-left: 10px;
 }
 
-div#nav {
+div#top-nav {
+    margin-top: 2em;
+}
+
+/* FIXME make this magically appear via javascript */
+div#middle-nav {
+    display:    none;
+    background: white;
+    position:   fixed;
+    left:       0;
+    top:        0;
+    width:      100%;
+}
+
+div#middle-nav > .nav {
     border-bottom:  5px solid green;
     float:          left;
     width:          100%;
@@ -114,31 +127,50 @@ div#nav {
     left: 50%;
 }
 
-div#nav ul {
+#contact {
+    right:      0px;
+    top:        0px;
+    background: green;
+    width:      100%;
+    min-height: 3em;
+}
+
+#contact ul {
+    position:      absolute;
+    right:         0px;
+    list-style:    none;
+    padding-right: 3em;
+}
+
+#contact ul > li {
+    display:    inline;
+}
+
+#contact a {
+    color:         white;
+}
+
+div.nav ul {
     margin:     0 10em 0 0;
     padding:    0;
     list-style: none;
     text-align: center;
 }
 
-div#nav ul li {
+div.nav ul li {
     display:      inline;
     margin-left:  0.5em;
     margin-right: 0.5em;
     padding:      0.5em;
 }
 
-div#nav ul li:hover {
+div.nav ul li:hover {
     background-color: #cccccc;
 }
 
 div.static {
     margin-left:  8em;
     margin-right: 8em;
-    float:        left;
-}
-
-div#main {
     float:        left;
 }
 
@@ -281,4 +313,8 @@ fieldset label p {
 
 span.select_label {
     font-size:   75%;
+}
+
+#footer {
+    border-top:  5px solid green;
 }
