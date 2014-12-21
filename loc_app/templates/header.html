@@ -2,6 +2,7 @@
   <head py:def="head()">
     <title>Levels of Concern</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"></link>
   </head>
   <body>
     <div py:def="header()" id="header">
@@ -9,13 +10,14 @@
       <script src="/scripts/loc.js"></script>
       <div id="contact">
 	<ul>
-	  <li><a href="">Get Updates</a></li>
-	  <li><a href="">f</a></li>
-	  <li><a href="">t</a></li>
+	  <li><a href="/contact">Get Updates</a></li>
+	  <li>|</li>
+	  <li><a href="/"><i class="fa fa-facebook"></i></a></li>
+	  <li><a href="/"><i class="fa fa-twitter"></i></a></li>
 	</ul>
       </div>
       <div id="titles">
-	<h1>MyAirSample.org</h1>
+	<h1><a href="/" class="title-color">MyAirSample.org</a></h1>
 	<h2>Clean up your data, clean up your air</h2>
       </div>
       <div id="top-nav">
@@ -30,8 +32,8 @@
 	<li><a tabindex="1000" href="/about/levels">About</a></li>
 	<li><a tabindex="1000" href="/about/faq">Learn</a></li>
 	<li><a tabindex="1000" href="/about/tool">Tools</a></li>
-	<li><a tabindex="1000" href="">Community Groups</a></li>
-	<li><a tabindex="1000" href="">Donate</a></li>
+	<li><a tabindex="1000" href="/">Community Groups</a></li>
+	<li><span class="big-blue-button"><a tabindex="1000" href="/">Donate</a></span></li>
       </ul>
     </div>
     <div py:def="footer()" id="footer">

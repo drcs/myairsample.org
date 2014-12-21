@@ -9,21 +9,25 @@ body {
     min-width: 86em;
 }
 
-h1 {
+#titles h1 {
     padding:     2pt;
     margin:      0pt;
     font-size:   3em;
     font-weight: normal;
+    box-shadow:  8px -8px 0 #add8e6;
+    border:      solid 2px #add8e6;
 }
 
-h1 a {
-    color:       black;
+#titles {
+    text-align:  center;
+    margin-left: 3em;
 }
 
-h2 {
+#titles > h2 {
     margin:      2pt;
     font-size:   1.3em;
     font-weight: normal;
+    color:       green;
 }
 
 ul {
@@ -90,7 +94,6 @@ div#top-nav {
     margin-top: 2em;
 }
 
-/* FIXME make this magically appear via javascript */
 div#middle-nav {
     display:    none;
     background: white;
@@ -146,7 +149,7 @@ div#middle-nav > .nav {
     display:    inline;
 }
 
-#contact a {
+#contact a, #contact li {
     color:         white;
 }
 
@@ -317,4 +320,67 @@ span.select_label {
 
 #footer {
     border-top:  5px solid green;
+    clear:       both;
 }
+
+#landing {
+    float:       left;
+    background:  -webkit-linear-gradient(    left bottom, lightblue, white); /* For Safari 5.1 to 6.0 */
+    background:  -o-linear-gradient(         top  right,  lightblue, white); /* For Opera 11.1 to 12.0 */
+    background:  -moz-linear-gradient(       top  right,  lightblue, white); /* For Firefox 3.6 to 15 */
+    background:  linear-gradient(         to top  right,  lightblue, white); /* Standard syntax */
+}
+
+#landing > img {
+    float:       left;
+}
+
+.title-color {
+    color:       #004000;
+}
+
+#landing-text {
+    float:        left;
+    margin:       3em;
+    max-width:    45%;
+}
+
+#landing-text > h3, #landing-text > p {
+    font-size:    200%;
+}
+
+#landing-email {
+    width:         100%;
+    clear:         both;
+    padding-left:  2em;
+    margin-bottom: 3em;
+    border-top:    5px solid green;
+}
+
+#landing-email > span > span {
+    background:     white;
+    padding-top:    5px;
+    padding-bottom: 5px;
+    padding-left:   5px;
+    border:         2px solid grey;
+    border-radius:  5px;
+}
+
+#landing-email span a {
+    color:        black;
+    background:   green;
+    margin-left:  15px;
+    padding:      5px;
+}
+
+.big-blue-button {
+    border-radius:  5px;
+    background:     #add8e6;
+    padding:        1em;
+}
+
+.big-blue-button a {
+    color:          white;
+    font-weight:    bold;
+}
+
