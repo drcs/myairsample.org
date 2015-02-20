@@ -14,20 +14,6 @@ set :normalize_asset_timestamps, false
 
 role :web,        "cameronbridge.dreamhost.com"
 
-namespace :version do
-  desc "Beta version"
-  task :beta do
-    set :branch,      "release/beta"
-    set :deploy_to,   "/home/gbenison/gwenomatic/beta"
-  end
-  desc "Alpha version"
-  task :alpha do
-    set :branch,      "release/alpha"
-    set :deploy_to,   "/home/gbenison/gwenomatic/alpha"
-  end
-end
-
-
 load 'deploy' if respond_to?(:namespace) # cap2 differentiator
 
 namespace :deploy do
