@@ -328,10 +328,7 @@ span.select_label {
 
 #landing {
     float:       left;
-    background:  -webkit-linear-gradient(    left bottom, lightblue, white); /* For Safari 5.1 to 6.0 */
-    background:  -o-linear-gradient(         top  right,  lightblue, white); /* For Opera 11.1 to 12.0 */
-    background:  -moz-linear-gradient(       top  right,  lightblue, white); /* For Firefox 3.6 to 15 */
-    background:  linear-gradient(         to top  right,  lightblue, white); /* Standard syntax */
+    background-image: url("/media/Gradient.png");
 }
 
 #landing > img {
