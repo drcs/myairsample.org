@@ -79,15 +79,15 @@ class Root():
                           'second'  : username2 },
                 text_options = self.text_options.selection(),
                 form   = kwargs)
-            (content_fname, headers) = report.reply()
             try:
+                (content_fname, headers) = report.reply()
                 content=open(content_fname, 'r').read()
                 for key,value in headers.items():
                     cherrypy.response.headers[key]=value
                 return content
             except (IOError, TypeError):
                 cherrypy.response.headers['Content-Type']='text/plain'
-                return "Something went wrong generating content.  That's all I know."
+                return "Oops, internal error generating content.  Please try re-loading this page in a few minutes, or starting with a new report."
 
 class API():
     @cherrypy.expose
