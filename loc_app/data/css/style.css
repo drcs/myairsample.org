@@ -327,12 +327,16 @@ span.select_label {
 }
 
 #landing {
-    float:       left;
+    float:            left;
     background-image: url("/media/Gradient.png");
+    border-bottom:    5px solid green;
+    margin-bottom:    2em;
 }
 
 #landing > img {
     float:       left;
+    margin-top:  1em;
+    margin-left: 4em;
 }
 
 .title-color {
@@ -341,23 +345,35 @@ span.select_label {
 
 #landing-text {
     float:        left;
-    margin:       3em;
+    margin:       0 3em;
     max-width:    45%;
 }
 
 #landing-text > h3, #landing-text > p {
-    font-size:    200%;
+    font-size:    175%;
 }
 
-#landing-email {
-    width:         100%;
-    clear:         both;
+.middle-tier {
+    width:         50%;
+    float:         left;
+}
+
+.middle-tier > div {
     padding-left:  2em;
-    margin-bottom: 3em;
-    border-top:    5px solid green;
+    padding-right: 2em;
 }
 
-#landing-email > span > span {
+#landing-email > div > p {
+    display: inline;
+    float:   left;
+}
+
+#landing-email > div > span {
+    float:       left;
+    margin-left: 1em;
+}
+
+#landing-email > div > span > span {
     background:     white;
     padding-top:    5px;
     padding-bottom: 5px;
@@ -373,9 +389,15 @@ span.select_label {
     padding:      5px;
 }
 
+#landing-donate  > div {
+    border-left:    2px solid green;
+    padding-bottom: 1em;
+    margin-bottom:  1em;
+}
+
 .big-blue-button {
     border-radius:  5px;
-    background:     #add8e6;
+    background:     #0099ff;
     padding:        1em;
 }
 
@@ -384,3 +406,23 @@ span.select_label {
     font-weight:    bold;
 }
 
+.medium-blue-button {
+    border-radius:  5px;
+    background:     #0099ff;
+    padding:        10px;
+}
+
+.medium-blue-button a {
+    color:          white;
+}
+
+.psuedo-header {
+    font-size:       150%;
+    margin:          0;
+}
+
+#footer > p {
+    margin-left: 2em;
+    width:       20em;
+    float:       left;
+}
