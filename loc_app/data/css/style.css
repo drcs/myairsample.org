@@ -157,13 +157,15 @@ div#middle-nav > .nav {
 }
 
 div.nav ul {
-    margin:     0 10em 0 0;
+    float:      right;
+    margin:     1em 2em 0 0;
     padding:    0;
     list-style: none;
     text-align: center;
 }
 
 div.nav ul li {
+    font-size:    120%;
     display:      inline;
     margin-left:  0.5em;
     margin-right: 0.5em;
