@@ -13,12 +13,11 @@ body {
     padding:     0pt;
     margin:      0pt;
     font-weight: normal;
-    height:      100px;
 }
 
 #titles h1 img {
-    position:    relative;
-    top:         -50px;
+    vertical-align: bottom;
+    width:          300px;
 }
 
 #titles {
@@ -27,7 +26,7 @@ body {
 }
 
 #titles > h2 {
-    margin:      2pt;
+    margin:      6pt;
     font-size:   1.3em;
     font-weight: normal;
     color:       green;
@@ -133,12 +132,16 @@ div#middle-nav > .nav {
     left: 50%;
 }
 
+#contact-wrapper {
+    height:     2.2em;
+}
+
 #contact {
     right:      0px;
     top:        0px;
     background: green;
     width:      100%;
-    min-height: 3em;
+    min-height: 3.75em;
 }
 
 #contact ul {
@@ -158,7 +161,7 @@ div#middle-nav > .nav {
 
 div.nav ul {
     float:      right;
-    margin:     1em 2em 0 0;
+    margin:     2em 2em 0 0;
     padding:    0;
     list-style: none;
     text-align: center;
