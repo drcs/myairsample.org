@@ -26,7 +26,9 @@ Hydrogen Cyanide	74-90-8	0.83
 "Indeno[1,2,3-cd]pyrene"	193-39-5	0.0092
 Lead acetate	301-04-2	0.035
 Lead and Compounds	7439-92-1	0.15
-Lead subacetate	1335-32-6	0.26
+Lead Chromate	7758-97-6	0.0000068
+Lead Phosphate	7446-27-7	0.23
+Lead subacetate	1335-32-6	0.23
 Mercuric Chloride (and other Mercury salts)	7487-94-7	0.31
 Mercury (elemental)	7439-97-6	0.31
 Naphthalene	91-20-3	0.083
@@ -71,6 +73,7 @@ Auramine	492-80-8	0.011
 Azobenzene	103-33-3	0.091
 Azodicarbonamide	123-77-3	0.0073
 Barium	7440-39-3	0.52
+Barium Chromate	10294-40-3	0.0000068
 Benzene	71-43-2	0.36
 Benzidine	92-87-5	0.000015
 Benzyl Chloride	100-44-7	0.057
@@ -92,6 +95,7 @@ Bromomethane	74-83-9	5.2
 "Butyl alcohol, sec-"	78-92-2	31000
 Butylated hydroxyanisole	25013-16-5	49
 Cadmium (Water)	7440-43-9	0.0016
+Calcium Chromate	13765-19-0	0.0000068
 Caprolactam	105-60-2	2.3
 Captafol	2425-06-1	0.065
 Captan	133-06-2	4.3
@@ -168,14 +172,15 @@ Dimethylvinylchloride	513-37-1	0.22
 "Dinitrotoluene, 2,4-"	121-14-2	0.032
 "Dioxane, 1,4-"	123-91-1	0.56
 "Diphenylhydrazine, 1,2-"	122-66-7	0.013
-Direct Black 38	1937-37-7	0.0013
-Direct Blue 6	2602-46-2	0.0013
-Direct Brown 95	16071-86-6	0.0015
+Direct Black 38	1937-37-7	0.00002
+Direct Blue 6	2602-46-2	0.00002
+Direct Brown 95	16071-86-6	0.00002
 Epichlorohydrin	106-89-8	1
 "Epoxybutane, 1,2-"	106-88-7	21
 "Ethoxyethanol Acetate, 2-"	111-15-9	63
 "Ethoxyethanol, 2-"	110-80-5	210
 Ethyl Acetate	141-78-6	73
+Ethyl Acrylate	140-88-5	8.3
 Ethyl Chloride (Chloroethane)	75-00-3	10000
 Ethyl Methacrylate	97-63-2	310
 Ethylbenzene	100-41-4	1.1
@@ -213,7 +218,7 @@ Hydrogen Chloride	7647-01-0	21
 Hydrogen Fluoride	7664-39-3	15
 Hydrogen Sulfide	7783-06-4	2.1
 Isophorone	78-59-1	2100
-Isopropanol	67-63-0	7300
+Isopropanol	67-63-0	210
 JP-7	NA	310
 Maleic Anhydride	108-31-6	0.73
 Manganese (Non-diet)	7439-96-5	0.052
@@ -240,12 +245,16 @@ Methylene Chloride	75-09-2	100
 Methylenediphenyl Diisocyanate	101-68-8	0.63
 "Methyl-N-nitro-N-nitrosoguanidine, N-"	70-25-7	0.0012
 Mirex	2385-85-5	0.00055
-"Naphtha, High Flash Aromatic (HFAN)"	64724-95-6	100
-Nickel Carbonyl	13463-39-3	0.015
-Nickel Oxide	1313-99-1	0.021
+"Naphtha, High Flash Aromatic (HFAN)"	64742-95-6	100
+Nickel Acetate	373-02-4	0.011
+Nickel Carbonate	3333-67-3	0.011
+Nickel Carbonyl	13463-39-3	0.011
+Nickel Hydroxide	12054-48-7	0.011
+Nickel Oxide	1313-99-1	0.011
 Nickel Refinery Dust	NA	0.012
 Nickel Soluble Salts	7440-02-0	0.011
 Nickel Subsulfide	12035-72-2	0.0058
+Nickelocene	1271-28-9	0.011
 "Nitroaniline, 2-"	88-74-4	0.052
 "Nitroaniline, 4-"	100-01-6	6.3
 Nitrobenzene	98-95-3	0.07
@@ -285,9 +294,12 @@ Safrole	94-59-7	0.016
 Selenium	7782-49-2	21
 Selenium Sulfide	7446-34-6	21
 "Silica (crystalline, respirable)"	7631-86-9	3.1
+Sodium Dichromate	10588-01-9	0.0000068
 Sodium Fluoride	7681-49-4	14
+Strontium Chromate	7789-06-2	0.0000068
 Styrene	100-42-5	1000
 Sulfolane	126-33-0	2.1
+Sulfur Trioxide	7446-71-9	1
 Sulfuric Acid	7664-93-9	1
 "Tetrachloroethane, 1,1,1,2-"	630-20-6	0.38
 "Tetrachloroethane, 1,1,2,2-"	79-34-5	0.048
