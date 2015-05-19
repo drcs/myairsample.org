@@ -46,7 +46,8 @@
 		<label>
 		  <span class="select_label">Select</span>
 		  <select name="inunits" tabindex="101">
-		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
+		    <option py:attrs="{'value': unit_keys[0], 'selected': 'selected'}">${unit_represent(unit_keys[0])}</option>
+		    <option py:for="key in unit_keys[1:]" value="${key}">${unit_represent(key)}</option>
 		  </select>
 		</label>
 	      </p>
@@ -55,7 +56,8 @@
 		<label>
 		  <span class="select_label">Select</span>
 		  <select name="outunits" tabindex="102">
-		    <option py:for="key in unit_keys" value="${key}">${unit_represent(key)}</option>
+		    <option py:attrs="{'value': unit_keys[0], 'selected': 'selected'}">${unit_represent(unit_keys[0])}</option>
+		    <option py:for="key in unit_keys[1:]" value="${key}">${unit_represent(key)}</option>
 		  </select>
 		</label>
 	      </p>

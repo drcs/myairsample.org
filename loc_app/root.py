@@ -35,7 +35,7 @@ class Root():
         tmpl = loader.load('index.html')
         page = tmpl.generate(all_standards  = all_standards,
                              text_options   = self.text_options.group_names(),
-                             unit_keys      = units.units.keys(),
+                             unit_keys      = units.unit_keys(),
                              unit_represent = lambda key: HTML(md.convert(units.represent(key))))
         return page.render('html', doctype='html')
     
