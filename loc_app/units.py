@@ -1,8 +1,9 @@
 
 units = {
-    'ppb'  : {'description' : 'parts per billion',           'sort' : 3},
-    'ppbv' : {'description' : 'parts per billion by volume', 'sort' : 2},
-    'ug/m3': { 'description': 'micrograms per cubic meter',  'sort' : 1,
+    'ppb'  : { 'description' : 'parts per billion',           'sort' : 3,
+               'representation': 'ppbm' },
+    'ppbv' : { 'description' : 'parts per billion by volume', 'sort' : 2},
+    'ug/m3': { 'description' : 'micrograms per cubic meter',  'sort' : 1,
                'representation': '&micro;g/m^3^'}
 }
 
