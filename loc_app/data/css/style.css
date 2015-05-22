@@ -354,8 +354,13 @@ span.select_label {
     max-width:    45%;
 }
 
-#landing-text > h3, #landing-text > p {
+#landing-text > h3 {
+    font-weight:  normal;
     font-size:    175%;
+}
+
+#landing-text > p {
+    font-size:    150%;
 }
 
 .middle-tier {
@@ -400,15 +405,21 @@ span.select_label {
     margin-bottom:  1em;
 }
 
+#landing-donate img {
+    width:   200px;
+    float:   left;
+    margin-right: 1em;
+}
+
 .big-blue-button {
     border-radius:  5px;
     background:     #0099ff;
-    padding:        1em;
+    padding:        10pt 18pt;
 }
 
 .big-blue-button a {
     color:          white;
-    font-weight:    bold;
+/*    font-weight:    bold; */
 }
 
 .medium-blue-button {
