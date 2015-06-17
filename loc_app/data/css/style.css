@@ -66,7 +66,8 @@ input ~ a.help > img {
 div#header {
     width:  100%;
     float:  left;
-    border-bottom: 5px solid green;
+    padding-bottom: 10px;
+    border-bottom: 10px solid green;
 }
 
 .left-column {
@@ -175,7 +176,7 @@ div.nav ul li {
     font-size:    120%;
     display:      inline;
     margin-left:  0.5em;
-    margin-right: 0.5em;
+    margin-right: 1.0em;
     padding:      0.5em;
 }
 
@@ -339,15 +340,17 @@ span.select_label {
     float:            left;
     background-image: url("/media/Gradient.png");
     background-size:  cover;
-    border-bottom:    5px solid green;
+    border-bottom:    10px solid green;
     margin-bottom:    2em;
+    padding-bottom:   1em;
 }
 
 #landing > img {
     float:       left;
     margin-top:  1em;
     margin-left: 4em;
-    width:       48%;
+    width:       45%;
+    margin-right: 3%;
 }
 
 .title-color {
@@ -409,12 +412,12 @@ span.select_label {
 
 #landing-donate  > div {
     border-left:    2px solid green;
-    padding-bottom: 1em;
+    min-height:     200px;
     margin-bottom:  1em;
 }
 
 #landing-donate img {
-    width:   200px;
+    height:   200px;
     float:   left;
     margin-right: 1em;
 }
