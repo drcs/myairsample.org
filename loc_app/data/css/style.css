@@ -417,34 +417,39 @@ span.select_label {
 }
 
 #landing-donate img {
-    height:   200px;
-    float:   left;
+    height:       200px;
+    float:        left;
     margin-right: 1em;
 }
 
-.big-blue-button {
+#landing-donate p:not(.psuedo-header) {
+    line-height: 150%;
+}
+
+.big-blue-button, .medium-blue-button, .donate-blue-button {
     border-radius:  5px;
     background:     #0099ff;
+}
+
+.big-blue-button a, .medium-blue-button a, .donate-blue-button a {
+    color:          white;
+}
+
+.big-blue-button {
     padding:        10pt 18pt;
 }
 
-.big-blue-button a {
-    color:          white;
-/*    font-weight:    bold; */
-}
-
 .medium-blue-button {
-    border-radius:  5px;
-    background:     #0099ff;
     padding:        10px;
 }
 
-.medium-blue-button a {
-    color:          white;
+.donate-blue-button {
+    padding:        3px 15px;
+    font-size:      170%;
 }
 
 .psuedo-header {
-    font-size:       150%;
+    font-size:       165%;
     margin:          0;
 }
 
