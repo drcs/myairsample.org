@@ -458,3 +458,29 @@ span.select_label {
     width:       20em;
     float:       left;
 }
+
+#lorem-ipsum p {
+    font-family: Times, serif;
+    font-weight: bold;
+    font-size:   150%;
+    width:  80%;
+    margin: auto;
+}
+
+#example-slide-2 {
+    margin: 5em 10em;
+}
+
+#example-slide-2 ul {
+    width: 30%;
+}
+
+#example-slide-2 img {
+    width:  200px;
+    float:  right;
+}
+
+#example-slide-2 .placeholder {
+    display: block;
+    clear:   both;
+}
