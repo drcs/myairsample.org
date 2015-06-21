@@ -12,12 +12,12 @@ var seconds_per_slide = 4;
 $(function() {
 
     setInterval(function() {
-	$('#slideshow > div:first')
+	$('#slideshow > div.slides > div:first')
 	    .animate({left: '-100%'}, 1000, 'swing', function() { $(this).css("left", "100%") })
 	    .next()
 	    .animate({left: '0%'}, 1000)
 	    .end()
-	    .appendTo('#slideshow');
+	    .appendTo('#slideshow > div.slides');
     }, seconds_per_slide * 1000);
 
 });
