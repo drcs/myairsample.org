@@ -20,5 +20,11 @@ $(function() {
 	    .appendTo('#slideshow > div.slides');
     }, seconds_per_slide * 1000);
 
+    $('#slideshow-pager > div').click(function() {
+	$('#slideshow-pager > div').removeClass("selected");
+	$(this).addClass("selected");
+	/* FIXME now actually select the slide */
+    });
+
 });
 
