@@ -20,11 +20,19 @@ $(function() {
 	    .appendTo('#slideshow > div.slides');
     }, seconds_per_slide * 1000);
 
+    $('#slideshow > div.slides > div').each(function() {
+	var pager_element = $('<div />').addClass('synthetic');
+	$('#slideshow-pager').append(pager_element);
+    });
+
+    $('#slideshow-pager > div:first').addClass("selected");
+
     $('#slideshow-pager > div').click(function() {
 	$('#slideshow-pager > div').removeClass("selected");
 	$(this).addClass("selected");
 	/* FIXME now actually select the slide */
     });
+
 
 });
 
