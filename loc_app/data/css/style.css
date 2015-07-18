@@ -524,9 +524,9 @@ span.select_label {
     margin-right:  1em;
     width:         10px;
     height:        10px;
-    background:    green;
+    background:    blue;
 }
 
 #slideshow-pager > div.selected {
-    background:    blue;
+    background:    green;
 }

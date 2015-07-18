@@ -1,5 +1,6 @@
 
-var seconds_per_slide = 30;
+// var seconds_per_slide = 30;
+var seconds_per_slide = 30000;
 
 /*
   Slideshow program:
