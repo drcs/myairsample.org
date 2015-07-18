@@ -419,6 +419,14 @@ span.select_label {
     padding:      5px;
 }
 
+#landing-email ul img {
+    width:  25px;
+}
+
+#landing-email ul > li {
+    display:  inline;
+}
+
 #landing-donate  > div {
     border-left:    2px solid green;
     min-height:     200px;
