@@ -50,8 +50,10 @@ $(function() {
 	    $('#slideshow > div.slides > div:first')
 		.next()
 		.css({left: '0%'})
+		.css({display: 'block'})
 		.end()
 		.css({left: '100%'})
+		.css({display: 'none'})
 		.appendTo('#slideshow > div.slides');
 
 	});

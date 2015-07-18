@@ -488,6 +488,7 @@ span.select_label {
 
 #slideshow > div.slides > div ~ div {
     left:        100%;  /* will be adjusted by slideshow program */
+    display:     none;
 }
 
 #lorem-ipsum p {
