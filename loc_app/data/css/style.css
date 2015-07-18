@@ -379,18 +379,28 @@ span.select_label {
 }
 
 .middle-tier > div {
-    padding-left:  2em;
-    padding-right: 2em;
+    padding: 0 3em;
+}
+
+#landing-email {
+}
+
+#landing-email > div {
+    float: right;
 }
 
 #landing-email > div > p {
-    display: inline;
-    float:   left;
+    display:     inline;
+    float:       left;
+    padding-top: 8px;
 }
 
 #landing-email > div > span {
     float:       left;
     margin-left: 1em;
+    background:  #7fccff;
+    font-size:   115%;
+    padding:     12px 5px;
 }
 
 #landing-email > div > span > span {
@@ -524,9 +534,10 @@ span.select_label {
     margin-right:  1em;
     width:         10px;
     height:        10px;
-    background:    blue;
+    background:    #0099ff;
 }
 
 #slideshow-pager > div.selected {
     background:    green;
 }
+
