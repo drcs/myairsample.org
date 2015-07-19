@@ -115,23 +115,24 @@ div#middle-nav > .nav {
     padding-bottom: 0.4em;
 }
 
-.centering {
-    float:  left;
-    width:  100%;
-    position: relative;
+div.centering  {
+    float:      left;
+    position:   relative;
+    clear:      both;
+    width:      100%;
+    overflow-x: hidden;
 }
 
-.centering > * {
-    position: relative;
-    clear: left;
-    float: right;
-    right: 50%;
-}
-
-.centering > * > * {
-    position: relative;
+div.centering > div {
     float: left;
+    position: relative;
     left: 50%;
+}
+
+div.centering > div > div {
+    float: left;
+    position: relative;
+    left: -50%;
 }
 
 #contact-wrapper {
@@ -419,12 +420,29 @@ span.select_label {
     padding:      5px;
 }
 
+#landing-email ul {
+    padding-left: 0;
+    padding-top:  4em;
+}
+
 #landing-email ul img {
-    width:  25px;
+    width:         32px;
+    padding-right:  8px;
 }
 
 #landing-email ul > li {
     display:  inline;
+    padding:  0;
+}
+
+#landing-email ul > li:first-child {
+    padding-left:  2em;
+    padding-right: 6em;
+}
+
+#landing-email ul > li span {
+    position: relative;
+    bottom:   10px;
 }
 
 #landing-donate  > div {
@@ -550,3 +568,7 @@ span.select_label {
     background:    green;
 }
 
+.hseparator {
+    width:  100%;
+    clear:  both;
+}
