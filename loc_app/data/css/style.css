@@ -104,7 +104,8 @@ div#middle-nav {
     left:       0;
     top:        0;
     width:      100%;
-    z-index:    1;
+    min-width:  50em;
+    z-index:    99;
 }
 
 div#middle-nav > .nav {
