@@ -79,13 +79,13 @@ div#header #logos  { float: left; }
 
 div#logos ul {
     float:    left;
-    padding:  0pt;
+    padding:  20pt 0;
     margin:   4pt;
 }
 
 div#logos ul li {
     float:    left;
-    margin:   2pt;
+    margin:   2pt 20pt;
 }
 
 div#logos img {
@@ -488,9 +488,14 @@ span.select_label {
     margin:          0;
 }
 
-#footer > p {
+#footer p {
     margin-left: 2em;
-    width:       20em;
+    width:       19em;
+    float:       left;
+    font-size:   140%;
+}
+
+#footer #logos {
     float:       left;
 }
 
