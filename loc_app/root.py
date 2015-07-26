@@ -26,6 +26,7 @@ class Root():
     def __init__(self):
         self.api = API()
         self.about = About()
+        self.learn = Learn()
         self.status = Status()
         self.text_options = TextOptions()
 
@@ -144,25 +145,27 @@ class Status():
         os.remove(content_fname)
         return result
 
-class About():
+class Learn():
     @cherrypy.expose
     def levels(self):
         """Serves the "About the levels of concern" page"""
-        tmpl = loader.load('about-levels.html')
+        tmpl = loader.load('learn/levels.html')
         page = tmpl.generate()
         return page.render('html', doctype='html')
 
     @cherrypy.expose
-    def faq(self):
+    def bucketsamples(self):
         """Serves the "About bucket samples and monitoring" page"""
-        tmpl = loader.load('about-faq.html')
+        tmpl = loader.load('learn/bucketsamples.html')
         page = tmpl.generate()
         return page.render('html', doctype='html')
 
+class About():
+
     @cherrypy.expose
-    def tool(self):
+    def index(self):
         """Serves the "About this tool" page"""
-        tmpl = loader.load('about-tool.html')
+        tmpl = loader.load('about.html')
         page = tmpl.generate()
         return page.render('html', doctype='html')
 
