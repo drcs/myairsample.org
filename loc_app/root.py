@@ -51,13 +51,6 @@ class Root():
         return page.render('html', doctype='html')
     
     @cherrypy.expose
-    def contact(self):
-        """Serves the "contact us" page"""
-        tmpl = loader.load('contact.html')
-        page = tmpl.generate()
-        return page.render('html', doctype='html')
-
-    @cherrypy.expose
     def report(self,
                report_type    = 'pdf',
                text_options   = None,
