@@ -199,10 +199,12 @@ div.nav ul li > ul:hover {
 div.nav ul li > ul {
     position:         absolute;
     margin:           0;
-    width:            20em;
+    width:            16em;
     visibility:       hidden;
-    top:              15pt;
-    left:             10pt;
+    background-color: #cccccc;
+    top:              2em;
+    left:             0pt;
+    text-align:       left;
 }
 
 div.nav ul li > ul > li {
