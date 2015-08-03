@@ -156,7 +156,8 @@ div.centering > div > div {
 }
 
 #contact ul > li {
-    display:    inline;
+    display:      inline;
+    margin-right: 10px;
 }
 
 #contact ul > li ~ li {
