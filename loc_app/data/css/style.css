@@ -183,6 +183,7 @@ div.nav ul li {
     margin-left:  0.5em;
     margin-right: 1.0em;
     padding:      0.5em;
+    color:        green;
 }
 
 div.nav ul li:hover {
