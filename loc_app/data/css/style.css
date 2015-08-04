@@ -1,3 +1,4 @@
+
 body, html {
     font-family: sans-serif;
     padding: 0;
@@ -187,7 +188,7 @@ div.nav ul li {
 }
 
 div.nav ul li:hover {
-    background-color: #cccccc;
+    background-color: #eaf4fc;  /* nav_bar_highlight */
 }
 
 div.nav ul li:hover > ul {
@@ -203,7 +204,7 @@ div.nav ul li > ul {
     margin:           0;
     width:            16em;
     visibility:       hidden;
-    background-color: #cccccc;
+    background-color: #eaf4fc;  /* nav_bar_highlight */
     top:              2em;
     left:             0pt;
     text-align:       left;
