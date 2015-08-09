@@ -208,6 +208,7 @@ div.nav ul li > ul {
     top:              2em;
     left:             0pt;
     text-align:       left;
+    z-index:          99;
 }
 
 div.nav ul li > ul > li {
