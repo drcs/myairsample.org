@@ -14,21 +14,11 @@ set :normalize_asset_timestamps, false
 
 role :web,        "cameronbridge.dreamhost.com"
 
-namespace :version do
-  desc "Beta version"
-  task :beta do
-    set :branch,      "release/beta"
-    set :deploy_to,   "/home/gbenison/gwenomatic/beta"
-  end
-  desc "Alpha version"
-  task :alpha do
-    set :branch,      "release/alpha"
-    set :deploy_to,   "/home/gbenison/gwenomatic/alpha"
-  end
-end
-
-
 load 'deploy' if respond_to?(:namespace) # cap2 differentiator
+
+after 'deploy:update_code' do
+    run "echo test -d #{deploy_to}/local-scripts && cp #{deploy_to}/local-scripts/* #{release_path}/loc_app/data/scripts"
+end
 
 namespace :deploy do
   task :restart do

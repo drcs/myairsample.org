@@ -49,8 +49,9 @@ def convert_units(level, from_units, to_units, mw=None):
                'ug/m3'       : mw_air * P / (R * T) ,
                'mg/m3'       : 0.001 * mw_air * P / (R * T) ,
     }
-    if ((from_units == 'ppbv') or (to_units == 'ppbv')):
+    if ((from_units in ('ppbv','ppmv')) or (to_units in ('ppbv','ppmv'))):
         factor['ppbv'] = mw_air * 1000 / mw
+        factor['ppmv'] = mw_air / mw
     return level / factor[from_units] * factor[to_units]
 
 def fmt_sigfigs_past_decimal(x,n=3):

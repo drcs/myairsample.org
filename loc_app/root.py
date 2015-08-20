@@ -36,7 +36,7 @@ class Root():
         tmpl = loader.load('index.html')
         page = tmpl.generate(all_standards  = all_standards,
                              text_options   = self.text_options.group_names(),
-                             unit_keys      = units.units.keys(),
+                             unit_keys      = units.unit_keys(),
                              unit_represent = lambda key: HTML(md.convert(units.represent(key))))
         return page.render('html', doctype='html')
  
@@ -83,15 +83,15 @@ class Root():
                           'second'  : username2 },
                 text_options = self.text_options.selection(),
                 form   = kwargs)
-            (content_fname, headers) = report.reply()
             try:
+                (content_fname, headers) = report.reply()
                 content=open(content_fname, 'r').read()
                 for key,value in headers.items():
                     cherrypy.response.headers[key]=value
                 return content
             except (IOError, TypeError):
                 cherrypy.response.headers['Content-Type']='text/plain'
-                return "Something went wrong generating content.  That's all I know."
+                return "Oops, internal error generating content.  Please try re-loading this page in a few minutes, or starting with a new report."
 
 class API():
     @cherrypy.expose

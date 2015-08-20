@@ -1,5 +1,5 @@
 {
-    "units": "ppm", 
+    "units": "ppmv", 
     "name": "ATSDRMRLs",
     "oneline_description": "ATSDR Minimal Risk Levels",
     "columns": [

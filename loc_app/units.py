@@ -1,10 +1,12 @@
 
 units = {
-    'ppb'  : {'description' : 'parts per billion'},
-    'ppbv' : {'description' : 'parts per billion by volume'},
-    'ug/m3': { 'description': 'micrograms per cubic meter',
+    'ppbv' : { 'description' : 'parts per billion by volume', 'sort' : 2},
+    'ug/m3': { 'description' : 'micrograms per cubic meter',  'sort' : 1,
                'representation': '&micro;g/m^3^'}
 }
+
+def unit_keys():
+    return sorted(units.keys(), key=lambda k: units[k]['sort'])
 
 # 'md' is a Markdown instance implementing a 'conert' method
 def represent(key):
