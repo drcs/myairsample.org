@@ -425,7 +425,7 @@ span.select_label {
 
 #slide-2 p {
     color:        #030;
-    margin-left:  30px;
+    margin-left:  80px;
     margin-top:   0;
     font-size:    150%;
 }
@@ -443,6 +443,7 @@ span.select_label {
     padding:       5px 25px;
     margin-left:   150px;
     border-radius: 5px;
+    box-shadow:    3px 3px #a090d0;
 }
 
 #slide-2 span a {
