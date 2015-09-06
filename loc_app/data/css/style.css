@@ -427,27 +427,32 @@ span.select_label {
     color:        #030;
     margin-left:  80px;
     margin-top:   0;
-    font-size:    150%;
+    font-size:    130%;
 }
 
 #slide-2 .brownish {
+    font-size:    150%;
+    font-weight:  bold;
     color:        #984806;
+    padding-left: 10px;
 }
 
 #slide-2 .brownish ~ .brownish {
-    padding-left: 15px;
+    padding-left: 25px;
 }
 
 #slide-2 span {
     background:    #8064a2;
-    padding:       5px 25px;
+    padding:       5px 50px;
     margin-left:   150px;
     border-radius: 5px;
     box-shadow:    3px 3px #a090d0;
 }
 
 #slide-2 span a {
-    color:        white;
+    color:          white;
+    text-transform: uppercase;
+    font-weight:    bold;
 }
 
 .middle-tier {
